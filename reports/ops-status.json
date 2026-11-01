@@ -2,45 +2,141 @@
   "counts": {
     "backlog_episodes": 114012,
     "manifest_upload_ready_episodes": 31,
-    "uploaded_episodes": 77695,
+    "uploaded_episodes": 77698,
     "prepared_source_episodes": 66540,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 56,
-    "language_whisper_attempted_sources": 34,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54085,
     "whisper_review_pending_sources": 38248,
-    "upload_pending_checkpoints": 0,
+    "upload_pending_checkpoints": 1,
     "subtitle_followup_sources": 49195,
     "subtitle_followup_pending_sources": 49195
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-01T17:34:14Z",
-      "databaseId": 41332143899,
+      "createdAt": "2026-11-01T17:39:29Z",
+      "databaseId": 41332590723,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:38:08Z",
+      "databaseId": 41332478867,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-01T17:36:08Z",
+      "databaseId": 41332308872,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-01T17:35:51Z",
+      "databaseId": 41332284317,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:35:45Z",
+      "databaseId": 41332276165,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:35:32Z",
+      "databaseId": 41332257394,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:35:08Z",
+      "databaseId": 41332219718,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:34:47Z",
+      "databaseId": 41332189285,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:34:44Z",
+      "databaseId": 41332185127,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:34:41Z",
+      "databaseId": 41332181417,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-01T17:34:41Z",
+      "databaseId": 41332180378,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:34:37Z",
+      "databaseId": 41332175136,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-01T17:34:14Z",
+      "databaseId": 41332143899,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-01T17:34:09Z",
       "databaseId": 41332136090,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-01T17:33:36Z",
       "databaseId": 41332088342,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,15 +152,15 @@
       "createdAt": "2026-11-01T17:32:01Z",
       "databaseId": 41331951312,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T17:31:00Z",
       "databaseId": 41331860453,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -82,102 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T17:25:30Z",
-      "databaseId": 41331391991,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T17:25:26Z",
-      "databaseId": 41331387680,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T17:24:42Z",
-      "databaseId": 41331324356,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T17:24:39Z",
-      "databaseId": 41331320793,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T17:24:37Z",
-      "databaseId": 41331318349,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T17:23:36Z",
-      "databaseId": 41331233602,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T17:23:35Z",
-      "databaseId": 41331232110,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T17:23:04Z",
-      "databaseId": 41331191128,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T17:21:17Z",
-      "databaseId": 41331041181,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-01T17:20:56Z",
-      "databaseId": 41331012439,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T17:19:51Z",
-      "databaseId": 41330913226,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T17:18:40Z",
-      "databaseId": 41330816601,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -190677,6 +190677,11 @@
         "video_id": 30702201
       },
       {
+        "episode_id": 54520,
+        "display_name": "Normálka S02E06 - Moje bába CZ Titulky",
+        "video_id": 30702276
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -362895,6 +362900,16 @@
         "episode_id": 74639,
         "display_name": "Zig a Sharko S03E58 - Saturday Night Dance CZ Titulky",
         "video_id": 30701114
+      },
+      {
+        "episode_id": 111899,
+        "display_name": "Život uprostřed S01E08 - Problém s kometou CZ Dabing",
+        "video_id": 30702293
+      },
+      {
+        "episode_id": 187459,
+        "display_name": "Gábinin kouzelný domek S01E08 - Kolo štěstí CZ Dabing",
+        "video_id": 30702322
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -553289,6 +553304,11 @@
         "video_id": 30702201
       },
       {
+        "episode_id": 54520,
+        "display_name": "Normálka S02E06 - Moje bába CZ Titulky",
+        "video_id": 30702276
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -725507,6 +725527,16 @@
         "episode_id": 74639,
         "display_name": "Zig a Sharko S03E58 - Saturday Night Dance CZ Titulky",
         "video_id": 30701114
+      },
+      {
+        "episode_id": 111899,
+        "display_name": "Život uprostřed S01E08 - Problém s kometou CZ Dabing",
+        "video_id": 30702293
+      },
+      {
+        "episode_id": 187459,
+        "display_name": "Gábinin kouzelný domek S01E08 - Kolo štěstí CZ Dabing",
+        "video_id": 30702322
       }
     ],
     "prepared_not_upload_ready": [
@@ -726668,8 +726698,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 22,
-    "ok": 33,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
