@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 113928,
     "manifest_upload_ready_episodes": 75,
-    "uploaded_episodes": 77788,
+    "uploaded_episodes": 77789,
     "prepared_source_episodes": 66625,
     "description_series": 60,
     "description_episodes": 753,
@@ -20,11 +20,43 @@
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-01T23:30:11Z",
+      "databaseId": 41362402634,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T23:30:05Z",
+      "databaseId": 41362394154,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T23:29:56Z",
+      "databaseId": 41362380859,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T23:29:53Z",
+      "databaseId": 41362376528,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-01T23:28:55Z",
       "databaseId": 41362303237,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +68,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T23:22:40Z",
       "databaseId": 41361811112,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T23:14:38Z",
-      "databaseId": 41361138024,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T23:13:21Z",
-      "databaseId": 41361038872,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T23:13:01Z",
-      "databaseId": 41361012322,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T23:12:01Z",
-      "databaseId": 41360929194,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -363360,6 +363360,11 @@
         "episode_id": 202083,
         "display_name": "Soul Mate S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30709931
+      },
+      {
+        "episode_id": 188891,
+        "display_name": "Daleká cesta za domovem S01E12 - 12. epizoda CZ Dabing",
+        "video_id": 30710020
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -726437,6 +726442,11 @@
         "episode_id": 202083,
         "display_name": "Soul Mate S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30709931
+      },
+      {
+        "episode_id": 188891,
+        "display_name": "Daleká cesta za domovem S01E12 - 12. epizoda CZ Dabing",
+        "video_id": 30710020
       }
     ],
     "prepared_not_upload_ready": [
