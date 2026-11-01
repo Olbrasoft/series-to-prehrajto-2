@@ -1,0 +1,83 @@
+name: prepare-subtitles
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode_id:
+        description: "Prepare only this episode (optional targeted acceptance test)"
+        required: false
+        default: ""
+  schedule:
+    - cron: "2,17,32,47 * * * *"
+  workflow_run:
+    workflows: [backfill-subtitles]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/prepare-subtitles.yml"
+      - "src/prepare_subtitle_sources.py"
+      - "src/subtitle_source_cache.py"
+      - "src/backfill_uploaded_subtitles.py"
+
+concurrency:
+  group: series-to-prehrajto-1-subtitle-discovery
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: vars.ALTERNATE_SUBTITLE_SEARCH_PAUSED != 'true' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Restore prepared subtitle files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python src/subtitle_source_cache.py .cache/subtitles
+      - name: Prepare subtitle sources for both accounts
+        id: sources
+        env:
+          CZ_PROXY_URL: ${{ secrets.CZ_PROXY_URL }}
+          CZ_PROXY_KEY: ${{ secrets.CZ_PROXY_KEY }}
+          CZ_PROXY_MIN_GAP_SECONDS: "30"
+          PREHRAJTO_SEARCH_MIN_INTERVAL: "30"
+          PYTHONUNBUFFERED: "1"
+          EPISODE_ID: ${{ inputs.episode_id }}
+        run: |
+          ARGS=(--limit 30 --max-ready 100 --max-runtime 600 --episode-runtime 180 --github-output "$GITHUB_OUTPUT")
+          if [ -n "$EPISODE_ID" ]; then
+            ARGS+=(--episode-id "$EPISODE_ID")
+          fi
+          python src/prepare_subtitle_sources.py "${ARGS[@]}"
+      - name: Save prepared subtitle files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: subtitle-source-cache
+          path: .cache/subtitles/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 9
+      - name: Queue attachment of prepared subtitles
+        if: success() && steps.sources.outputs.ready != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ACTIVE=$(gh run list --workflow backfill-subtitles.yml --limit 20 --json status \
+            --jq '[.[] | select(.status == "in_progress" or .status == "pending" or .status == "queued" or .status == "waiting")] | length')
+          if [ "$ACTIVE" = "0" ]; then
+            gh workflow run backfill-subtitles.yml -f account=both -f continue_backfill=true
+          fi

@@ -1,0 +1,353 @@
+#!/usr/bin/env python3
+"""Verify ambiguous episode sources with Whisper and promote Czech audio hits."""
+
+from __future__ import annotations
+
+import argparse
+import contextlib
+import datetime as dt
+import io
+import json
+import os
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from audit_language_sources import audit_one, append_jsonl, write_latest_index  # noqa: E402
+from prepare_episode_sources import (  # noqa: E402
+    source_exclusions,
+    source_has_cz_audio_hint,
+    latest_usable_prepared_episode_ids,
+    load_jsonl,
+    source_quality_tier,
+    update_subtitle_followup_queue,
+    uploaded_episode_exclusions,
+    write_compacted_prepared,
+    write_jsonl,
+)
+from source_quality import MIN_UPLOAD_FILESIZE_BYTES, measured_upload_filesize, source_quality_score  # noqa: E402
+from prehrajto_upload import login  # noqa: E402
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+REVIEW_RECOVERY_VERSION = 1
+
+
+def review_due(row: dict, *, now: dt.datetime, allow_original: bool = False) -> bool:
+    status = row.get('status')
+    if status in {None, 'needs_whisper'}:
+        return True
+    if status in {'whisper_confirmed_cz', 'whisper_non_cz_needs_subtitles'}:
+        return int(row.get('recovery_version') or 0) < REVIEW_RECOVERY_VERSION
+    if status != 'whisper_failed':
+        return False
+    failure = row.get('whisper') or {}
+    if failure.get('status') in {'stream_undersized', 'stream_size_unknown'}:
+        # One new capability check, not another attempt against the same
+        # undersized transcode. Persist even unavailable original lookups.
+        return (allow_original and not row.get('official_original')
+                and int(row.get('filesize_bytes') or 0) >= MIN_UPLOAD_FILESIZE_BYTES)
+    if int(row.get('retry_attempts') or 0) >= 3:
+        return False
+    legacy_proxy = (not failure.get('failure_policy_version')
+                    and 'wrapping permanent upstream error' in str(failure.get('error') or ''))
+    if failure.get('permanent') and not legacy_proxy:
+        return False
+    try:
+        if row.get('retry_after'):
+            return dt.datetime.fromisoformat(row['retry_after'].replace('Z', '+00:00')) <= now
+        checked = dt.datetime.fromisoformat(row['checked_at'].replace('Z', '+00:00'))
+        return checked + dt.timedelta(hours=6) <= now
+    except (KeyError, ValueError, TypeError, AttributeError):
+        return True
+
+
+def select_review_batch(rows: list[dict], *, limit: int, recovery_limit: int) -> list[dict]:
+    """Fresh work leads; bounded recovery cannot monopolize the review worker."""
+    fresh = [r for r in rows if r.get('status') in {None, 'needs_whisper'}][:limit]
+    budget = min(max(0, limit - len(fresh)), max(0, recovery_limit))
+    recovery = [r for r in rows if r.get('status') not in {None, 'needs_whisper'}]
+    recovery.sort(key=lambda r: (
+        r.get('status') != 'whisper_confirmed_cz',
+        # Resolution describes the original upload, not the size of its
+        # transcoded stream. Short 1080p cartoons repeatedly starved usable
+        # full-length episodes once the first HD recovery sources ran out.
+        int(r.get('duration_sec') or 0) < 1800,
+        int(r.get('filesize_bytes') or 0) < 2 * MIN_UPLOAD_FILESIZE_BYTES,
+        -source_quality_score(r)[1],
+        not source_has_cz_audio_hint(r),
+        -int(r.get('filesize_bytes') or 0),
+        str(r.get('checked_at') or ''),
+    ))
+    # Reserve one recovery slot for old failures rather than starving them
+    # behind historical successful checks whose prepared rows were lost.
+    failures = [r for r in recovery if r.get('status') == 'whisper_failed']
+    if failures and budget:
+        recovery = [failures[0]] + [r for r in recovery if r is not failures[0]]
+    chosen, series, identities = [], set(), {int(r['episode_id']) for r in fresh}
+    # Prefer different series, then fill unused slots from the remaining
+    # episodes. A small eligible pool must not leave the recovery budget idle.
+    for require_new_series in (True, False):
+        for row in recovery:
+            if len(chosen) >= budget:
+                break
+            if int(row['episode_id']) in identities or (require_new_series and row['series_id'] in series):
+                continue
+            chosen.append(row)
+            series.add(row['series_id'])
+            identities.add(int(row['episode_id']))
+    return fresh + chosen
+
+
+def now_iso() -> str:
+    return dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def source_quality_resolution(audit: dict) -> int:
+    probe = (audit.get("signals") or {}).get("provider_probe") or {}
+    streams = probe.get("streams") or []
+    if streams:
+        return max(int(stream.get("res") or 0) for stream in streams)
+    hint = str(audit.get("resolution_hint") or "")
+    for value in ("2160", "1440", "1080", "720"):
+        if value in hint:
+            return int(value)
+    return 0
+
+
+def prepared_row_from_audit(audit: dict, *, upload_kind: str) -> dict:
+    needs_subtitles = upload_kind == "subtitles"
+    source_verdict = "CZ_SUBTITLES_ONLY" if needs_subtitles else "CZ_AUDIO"
+    verification_status = (
+        "whisper_confirmed_non_cz_audio_needs_cz_subtitles"
+        if needs_subtitles
+        else audit.get("verification_status")
+    )
+    selected = {
+        **audit,
+        "original_verdict": audit.get("verdict"),
+        "verdict": source_verdict,
+        "verification_status": verification_status,
+        "resolution_score": source_quality_resolution(audit),
+        "quality_tier": source_quality_tier(
+            {
+                "source_title": audit.get("source_title"),
+                "resolution_hint": audit.get("resolution_hint"),
+                "filesize_bytes": audit.get("filesize_bytes"),
+            },
+            resolved_resolution=source_quality_resolution(audit),
+        ),
+    }
+    return {
+        "prepared_at": audit.get("audited_at") or now_iso(),
+        "episode_id": audit["episode_id"],
+        "series_id": audit["series_id"],
+        "series_slug": audit["series_slug"],
+        "series_title": audit["series_title"],
+        "season": audit["season"],
+        "episode": audit["episode"],
+        "imdb_votes": 0,
+        "imdb_rating": 0,
+        "csfd_rating": 0,
+        "episode_name": audit.get("episode_name"),
+        "tested_source_count": 1,
+        "upload_ready": True,
+        "upload_kind": upload_kind,
+        "needs_subtitles_after_upload": needs_subtitles,
+        "selected_source": selected,
+        "tested_sources": [selected],
+        "whisper_review_sources": [],
+    }
+
+
+def queue_key(row: dict) -> tuple[int, int]:
+    return int(row["episode_id"]), int(row["source_id"])
+
+
+def eligible_review_sources(rows, *, uploaded_ids, uploaded_keys, burned, prepared_ids):
+    """Spend language checks only on sources that can replenish uploads."""
+    return [row for row in rows
+            if int(row["episode_id"]) not in uploaded_ids
+            and (int(row["series_id"]), int(row["season"]), int(row["episode"])) not in uploaded_keys
+            and int(row["source_id"]) not in burned
+            and int(row["episode_id"]) not in prepared_ids
+            and row.get("provider") == "prehrajto"
+            and int(row.get("filesize_bytes") or 0) >= MIN_UPLOAD_FILESIZE_BYTES]
+
+
+def audit_has_upload_size(audit: dict) -> bool:
+    """Promotion requires measured media, never a metadata size estimate."""
+    probe = (audit.get("signals") or {}).get("provider_probe") or {}
+    measured = measured_upload_filesize(probe)
+    return (probe.get("status") == "ok" and bool(probe.get("streams"))
+            and measured is not None and int(measured) >= MIN_UPLOAD_FILESIZE_BYTES)
+
+
+def best_promotions(rows: list[dict]) -> list[dict]:
+    """Do not overwrite Czech audio with a later foreign candidate."""
+    best = {}
+    for row in rows:
+        episode_id = int(row["episode_id"])
+        def score(item):
+            source = item["selected_source"]
+            return (item["upload_kind"] == "audio", source.get("resolution_score") or 0,
+                    source.get("filesize_bytes") or 0)
+        if episode_id not in best or score(row) > score(best[episode_id]):
+            best[episode_id] = row
+    return list(best.values())
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--queue", default="plans/whisper-review-queue.jsonl")
+    ap.add_argument("--prepared", default="plans/prepared-episodes.jsonl")
+    ap.add_argument("--audit-out", default="audits/language-audit.jsonl")
+    ap.add_argument("--audit-latest-out", default="audits/language-audit-latest.jsonl.gz")
+    ap.add_argument("--subtitle-followup-out", default="plans/subtitle-followup-queue.jsonl")
+    ap.add_argument("--limit", type=int, default=10)
+    ap.add_argument("--recovery-limit", type=int, default=4)
+    ap.add_argument("--series-slug")
+    ap.add_argument("--season", type=int)
+    ap.add_argument("--episode", type=int)
+    ap.add_argument("--sample-seconds", type=int, default=30)
+    ap.add_argument("--refresh", action="store_true")
+    args = ap.parse_args()
+
+    original_credentials = (os.environ.get('UPLOAD_PREHRAJTO_EMAIL'), os.environ.get('UPLOAD_PREHRAJTO_PASSWORD'))
+    allow_original = all(original_credentials)
+    queue_path = REPO_ROOT / args.queue
+    rows = load_jsonl(queue_path)
+    wanted = []
+    for row in rows:
+        if not args.refresh and not review_due(row, now=dt.datetime.now(dt.timezone.utc), allow_original=allow_original):
+            continue
+        if args.series_slug and row.get("series_slug") != args.series_slug:
+            continue
+        if args.season is not None and int(row.get("season") or 0) != args.season:
+            continue
+        if args.episode is not None and int(row.get("episode") or 0) != args.episode:
+            continue
+        wanted.append(row)
+    uploaded_ids, uploaded_keys = uploaded_episode_exclusions()
+    burned, cooling = source_exclusions()
+    unavailable = burned | cooling
+    prepared_ids = latest_usable_prepared_episode_ids(REPO_ROOT / args.prepared, unavailable)
+    eligible = eligible_review_sources(wanted, uploaded_ids=uploaded_ids,
+        uploaded_keys=uploaded_keys, burned=unavailable, prepared_ids=prepared_ids)
+    print(f"Review selection: pending={len(wanted)} eligible={len(eligible)} skipped={len(wanted) - len(eligible)}", flush=True)
+    wanted = (eligible[:args.limit] if args.refresh else
+              select_review_batch(eligible, limit=args.limit, recovery_limit=args.recovery_limit))
+    print(f"Review batch: sources={len(wanted)} recovery={sum(r.get('status') not in {None, 'needs_whisper'} for r in wanted)}", flush=True)
+    for row in wanted:
+        print(json.dumps({
+            'review_selected_episode_id': row['episode_id'],
+            'series_title': row['series_title'],
+            'duration_sec': row.get('duration_sec'),
+            'metadata_filesize_bytes': row.get('filesize_bytes'),
+        }, ensure_ascii=False), flush=True)
+
+    old_whisper = os.environ.get("WHISPER_LANGUAGE_CHECK")
+    os.environ["WHISPER_LANGUAGE_CHECK"] = "1"
+    try:
+        original_options = {}
+        if wanted and allow_original:
+            # Login diagnostics may contain portal response data; keep them
+            # outside persisted review logs and never store session cookies.
+            with contextlib.redirect_stdout(io.StringIO()):
+                original_options['original_session'] = login(*original_credentials)
+        audits = []
+        for row in wanted:
+            audit = audit_one(row, use_whisper=True, sample_seconds=args.sample_seconds, probe_stream=True,
+                              minimum_stream_bytes=MIN_UPLOAD_FILESIZE_BYTES, **original_options)
+            audits.append(audit)
+            failure = (audit.get('signals') or {}).get('whisper') or {}
+            if failure.get('retry_after_seconds') is not None:
+                print('Review paused after source rate limit', flush=True)
+                break
+    finally:
+        if old_whisper is None:
+            os.environ.pop("WHISPER_LANGUAGE_CHECK", None)
+        else:
+            os.environ["WHISPER_LANGUAGE_CHECK"] = old_whisper
+
+    append_jsonl(REPO_ROOT / args.audit_out, audits)
+    write_latest_index(REPO_ROOT / args.audit_out, REPO_ROOT / args.audit_latest_out)
+
+    audit_by_key = {queue_key(audit): audit for audit in audits}
+    updated_queue = []
+    promoted = []
+    promoted_keys: set[tuple[int, int]] = set()
+    for row in rows:
+        audit = audit_by_key.get(queue_key(row))
+        if not audit:
+            updated_queue.append(row)
+            continue
+        whisper = (audit.get("signals") or {}).get("whisper") or {}
+        status = "whisper_confirmed_cz" if audit.get("verdict") == "CZ_AUDIO" else "whisper_non_cz_needs_subtitles"
+        if whisper.get("status") != "ok":
+            status = "whisper_failed"
+        updated = {
+            **row,
+            "checked_at": audit.get("audited_at") or now_iso(),
+            "status": status,
+            "verdict": audit.get("verdict"),
+            "detected_by": audit.get("detected_by"),
+            "verification_status": audit.get("verification_status"),
+            "whisper": whisper,
+            "recovery_version": REVIEW_RECOVERY_VERSION,
+        }
+        original = ((audit.get('signals') or {}).get('provider_probe') or {}).get('official_original')
+        if original:
+            updated['official_original'] = original
+        if status == 'whisper_failed':
+            attempts = int(row.get('retry_attempts') or 0) + 1
+            updated['retry_attempts'] = attempts
+            delay = max(min(24 * 3600, 6 * 3600 * 2 ** (attempts - 1)),
+                        int(whisper.get('retry_after_seconds') or 0))
+            updated['retry_after'] = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(seconds=delay)).isoformat()
+        updated_queue.append(updated)
+        if (
+            status == "whisper_confirmed_cz"
+            and audit_has_upload_size(audit)
+        ):
+            promoted.append(prepared_row_from_audit(audit, upload_kind="audio"))
+            promoted_keys.add(queue_key(audit))
+        elif (
+            status == "whisper_non_cz_needs_subtitles"
+            and audit_has_upload_size(audit)
+        ):
+            promoted.append(prepared_row_from_audit(audit, upload_kind="subtitles"))
+            promoted_keys.add(queue_key(audit))
+
+    promoted = best_promotions(promoted)
+    promoted_keys = {queue_key(row["selected_source"]) for row in promoted}
+    write_jsonl(queue_path, updated_queue)
+    if promoted:
+        write_compacted_prepared(REPO_ROOT / args.prepared, promoted)
+        update_subtitle_followup_queue(REPO_ROOT / args.subtitle_followup_out, promoted)
+
+    for audit in audits:
+        whisper = (audit.get("signals") or {}).get("whisper") or {}
+        print(
+            json.dumps(
+                {
+                    "episode": f"{audit['series_title']} S{int(audit['season']):02d}E{int(audit['episode']):02d}",
+                    "source_title": audit.get("source_title"),
+                    "verdict": audit.get("verdict"),
+                    "detected_by": audit.get("detected_by"),
+                    "whisper_status": whisper.get("status"),
+                    "whisper_language": whisper.get("language"),
+                    "whisper_probability": whisper.get("probability"),
+                    "official_original": ((audit.get('signals') or {}).get('provider_probe') or {}).get('official_original'),
+                    "promoted": queue_key(audit) in promoted_keys,
+                },
+                ensure_ascii=False,
+            )
+        )
+    print(f"Processed {len(audits)} whisper review sources")
+    print(f"Promoted {len(promoted)} sources to prepared upload plans")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
