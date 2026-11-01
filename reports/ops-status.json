@@ -1,30 +1,38 @@
 {
   "counts": {
     "backlog_episodes": 114012,
-    "manifest_upload_ready_episodes": 28,
-    "uploaded_episodes": 77694,
+    "manifest_upload_ready_episodes": 31,
+    "uploaded_episodes": 77695,
     "prepared_source_episodes": 66540,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 52,
-    "language_whisper_attempted_sources": 30,
+    "language_audited_sources": 56,
+    "language_whisper_attempted_sources": 34,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 54086,
-    "whisper_review_pending_sources": 38250,
-    "upload_pending_checkpoints": 1,
-    "subtitle_followup_sources": 49192,
-    "subtitle_followup_pending_sources": 49192
+    "whisper_review_sources": 54085,
+    "whisper_review_pending_sources": 38248,
+    "upload_pending_checkpoints": 0,
+    "subtitle_followup_sources": 49195,
+    "subtitle_followup_pending_sources": 49195
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:33:36Z",
+      "databaseId": 41332088342,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-01T17:32:28Z",
       "databaseId": 41331991264,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -32,7 +40,7 @@
       "createdAt": "2026-11-01T17:32:01Z",
       "databaseId": 41331951312,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -40,7 +48,7 @@
       "createdAt": "2026-11-01T17:31:00Z",
       "databaseId": 41331860453,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +60,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T17:27:11Z",
       "databaseId": 41331532550,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,19 +84,19 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T17:24:42Z",
       "databaseId": 41331324356,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T17:24:39Z",
       "databaseId": 41331320793,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -112,7 +120,7 @@
       "createdAt": "2026-11-01T17:23:35Z",
       "databaseId": 41331232110,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T17:16:20Z",
-      "databaseId": 41330616018,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -190670,6 +190670,11 @@
         "episode_id": 188881,
         "display_name": "Daleká cesta za domovem S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30701867
+      },
+      {
+        "episode_id": 187453,
+        "display_name": "Gábinin kouzelný domek S01E01 - Raketa CZ Dabing",
+        "video_id": 30702201
       },
       {
         "episode_id": 114182,
@@ -553279,6 +553284,11 @@
         "video_id": 30701867
       },
       {
+        "episode_id": 187453,
+        "display_name": "Gábinin kouzelný domek S01E01 - Raketa CZ Dabing",
+        "video_id": 30702201
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -726659,16 +726669,16 @@
   "language_verdicts": {},
   "language_whisper_statuses": {
     "disabled": 22,
-    "ok": 29,
+    "ok": 33,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36634,
-    "whisper_confirmed_cz": 3507,
+    "needs_whisper": 36633,
+    "whisper_confirmed_cz": 3508,
     "whisper_non_cz_needs_subtitles": 12329,
-    "whisper_failed": 1616
+    "whisper_failed": 1615
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49192
+    "needs_subtitle_setup_after_prehrajto_processing": 49195
   }
 }
