@@ -54,6 +54,9 @@ jobs:
       SYNC_SHARD_ID: ${{ matrix.shard }}
       UPLOAD_ACCOUNT: ${{ matrix.upload_account }}
     steps:
+      - name: Configure reliable Git transport
+        run: git config --global http.version HTTP/1.1
+
       - uses: actions/checkout@v4
         with:
           ref: main
@@ -64,8 +67,15 @@ jobs:
 
       - name: Refresh to latest origin/main
         run: |
-          git fetch origin main
-          git reset --hard origin/main
+          for attempt in 1 2 3; do
+            if git fetch origin main; then
+              git reset --hard origin/main
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo "::error::Unable to refresh the upload snapshot after three attempts"
+          exit 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
