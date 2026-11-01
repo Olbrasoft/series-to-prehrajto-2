@@ -228,3 +228,60 @@ def test_portal_caption_wrapping_preserves_words_and_exact_times():
     assert comparison_srt(expected) != comparison_srt(delivered.replace(b'Title', b'Changed'))
     assert comparison_srt(expected) != comparison_srt(delivered.replace(b'01,123', b'01,124'))
     assert comparison_srt(expected) != comparison_srt(delivered.replace(b'</b> <i>', b'</b>  <i>'))
+
+
+def test_migration_bootstrap_preserves_review_and_provider_state(tmp_path):
+    import shutil
+    import zipfile
+    from external_subtitle_pipeline import restore_bootstrap
+    archive = tmp_path / 'source.zip'
+    with zipfile.ZipFile(archive, 'w') as snapshot:
+        snapshot.writestr('state.json', json.dumps({'version': 1, 'candidates': {'review': {'status': 'awaiting_manual_review'}}, 'episodes': {}}))
+        snapshot.writestr('provider/provider.json', json.dumps({'quota': {'remaining': 12}}))
+    pipeline = Pipeline(tmp_path / 'restored')
+    metadata = {'release': 'migration', 'asset': 'snapshot.zip',
+                'sha256': hashlib.sha256(archive.read_bytes()).hexdigest(),
+                'expires_at': '2999-01-01T00:00:00+00:00'}
+    def download(command, **kwargs):
+        shutil.copyfile(archive, Path(command[-1]) / metadata['asset'])
+    with patch('external_subtitle_pipeline.subprocess.run', side_effect=download):
+        restore_bootstrap(pipeline, 'owner/successor', metadata)
+    assert Pipeline(pipeline.root).state['candidates']['review']['status'] == 'awaiting_manual_review'
+    assert json.loads((pipeline.root / 'provider/provider.json').read_text())['quota']['remaining'] == 12
+
+
+@pytest.mark.parametrize('failure', ['expired', 'checksum', 'path'])
+def test_migration_bootstrap_rejects_untrusted_or_stale_snapshots(tmp_path, failure):
+    import shutil
+    import zipfile
+    from external_subtitle_pipeline import restore_bootstrap
+    archive = tmp_path / 'source.zip'
+    with zipfile.ZipFile(archive, 'w') as snapshot:
+        snapshot.writestr('../escaped.json' if failure == 'path' else 'state.json', '{}')
+    metadata = {'release': 'migration', 'asset': 'snapshot.zip',
+                'sha256': 'wrong' if failure == 'checksum' else hashlib.sha256(archive.read_bytes()).hexdigest(),
+                'expires_at': '2000-01-01T00:00:00+00:00' if failure == 'expired' else '2999-01-01T00:00:00+00:00'}
+    def download(command, **kwargs):
+        shutil.copyfile(archive, Path(command[-1]) / metadata['asset'])
+    with patch('external_subtitle_pipeline.subprocess.run', side_effect=download) as run:
+        with pytest.raises((RuntimeError, ValueError)):
+            restore_bootstrap(Pipeline(tmp_path / 'restored'), 'owner/successor', metadata)
+        if failure == 'expired':
+            run.assert_not_called()
+    assert not (tmp_path / 'escaped.json').exists()
+    assert not (tmp_path / 'restored/state.json').exists()
+
+
+def test_successor_checkpoint_takes_precedence_over_migration(tmp_path):
+    from external_subtitle_pipeline import restore
+    workflow = {'id': 100}
+    artifact = {'id': 200, 'expired': False, 'name': 'external-subtitle-state-final',
+                'created_at': '2026-11-01T17:00:00Z',
+                'workflow_run': {'id': 300, 'head_branch': 'main'}}
+    replies = [workflow, {'artifacts': [artifact]}, {'workflow_id': 100}, {'artifacts': []}]
+    with patch('external_subtitle_pipeline.subprocess.check_output', side_effect=[json.dumps(r) for r in replies]), \
+         patch('external_subtitle_pipeline.subprocess.run') as run, \
+         patch('external_subtitle_pipeline.restore_bootstrap') as bootstrap:
+        assert not restore(Pipeline(tmp_path), 'owner/successor')
+    bootstrap.assert_not_called()
+    assert run.call_args.args[0][:3] == ['gh', 'run', 'download']
