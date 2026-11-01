@@ -270,3 +270,18 @@ def test_migration_bootstrap_rejects_untrusted_or_stale_snapshots(tmp_path, fail
             run.assert_not_called()
     assert not (tmp_path / 'escaped.json').exists()
     assert not (tmp_path / 'restored/state.json').exists()
+
+
+def test_successor_checkpoint_takes_precedence_over_migration(tmp_path):
+    from external_subtitle_pipeline import restore
+    workflow = {'id': 100}
+    artifact = {'id': 200, 'expired': False, 'name': 'external-subtitle-state-final',
+                'created_at': '2026-11-01T17:00:00Z',
+                'workflow_run': {'id': 300, 'head_branch': 'main'}}
+    replies = [workflow, {'artifacts': [artifact]}, {'workflow_id': 100}, {'artifacts': []}]
+    with patch('external_subtitle_pipeline.subprocess.check_output', side_effect=[json.dumps(r) for r in replies]), \
+         patch('external_subtitle_pipeline.subprocess.run') as run, \
+         patch('external_subtitle_pipeline.restore_bootstrap') as bootstrap:
+        assert not restore(Pipeline(tmp_path), 'owner/successor')
+    bootstrap.assert_not_called()
+    assert run.call_args.args[0][:3] == ['gh', 'run', 'download']
