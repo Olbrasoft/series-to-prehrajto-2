@@ -118,7 +118,7 @@ def load_upload_state_exclusions() -> tuple[set[int], set[tuple[int, int, int]],
             state = json.loads(path.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             continue
-        for upload in state.get("uploads", []):
+        for upload in [*state.get("uploads", []), *state.get("pending_uploads", [])]:
             if upload.get("episode_id") is not None:
                 uploaded_ids.add(int(upload["episode_id"]))
             key = episode_key(upload)

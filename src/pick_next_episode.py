@@ -10,6 +10,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from download_policy import legacy_preview_failure
+from upload_state_merge import merge_pending_uploads
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_BACKLOG = REPO_ROOT / "backlog" / "series-episodes.jsonl.gz"
@@ -62,10 +63,12 @@ def _merge_states(paths: list[Path]) -> dict:
     failures_by_key: dict[tuple[int, int, str], dict] = {}
     failure_order: list[tuple[int, int, str]] = []
     last_updated = None
+    pending = []
     for path in paths:
         if not path.exists() or path.stat().st_size == 0:
             continue
         state = json.loads(path.read_text(encoding="utf-8"))
+        pending.extend(state.get('pending_uploads', []))
         last_updated = max(last_updated or "", state.get("last_updated") or "") or last_updated
         for upload in state.get("uploads", []):
             if upload.get("series_id") is not None and upload.get("season") is not None and upload.get("episode") is not None:
@@ -87,6 +90,8 @@ def _merge_states(paths: list[Path]) -> dict:
             if (failure.get("failed_at") or "") > (failures_by_key.get(key, {}).get("failed_at") or ""):
                 failures_by_key[key] = failure
     merged["failed_attempts"] = [failures_by_key[key] for key in failure_order]
+    if pending:
+        merged['pending_uploads'] = merge_pending_uploads(pending, merged['uploads'])
     if last_updated:
         merged["last_updated"] = last_updated
     return merged
@@ -97,7 +102,7 @@ def load_state(path: Path | None = None) -> dict:
         paths = [REPO_ROOT / "state" / "uploaded.json"]
         paths.extend(sorted((REPO_ROOT / "state").glob("uploaded-shard-*.json")))
         merged = _merge_states(paths)
-        if merged["uploads"] or merged["failed_attempts"]:
+        if merged["uploads"] or merged["failed_attempts"] or merged.get('pending_uploads'):
             return merged
     p = path or state_path()
     if not p.exists():
@@ -106,7 +111,7 @@ def load_state(path: Path | None = None) -> dict:
 
 
 def uploaded_episode_ids(state: dict) -> set[int]:
-    return {int(u["episode_id"]) for u in state.get("uploads", [])}
+    return {int(u["episode_id"]) for key in ('uploads', 'pending_uploads') for u in state.get(key, [])}
 
 
 def episode_key(row: dict) -> tuple[int, int, int]:
@@ -114,7 +119,7 @@ def episode_key(row: dict) -> tuple[int, int, int]:
 
 
 def uploaded_episode_keys(state: dict) -> set[tuple[int, int, int]]:
-    return {episode_key(u) for u in state.get("uploads", [])}
+    return {episode_key(u) for key in ('uploads', 'pending_uploads') for u in state.get(key, [])}
 
 
 def burned_source_ids(state: dict) -> set[int]:

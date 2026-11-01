@@ -11,6 +11,7 @@ import re
 import subprocess
 import sys
 import time
+import uuid
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -56,30 +57,49 @@ def save_state(state: dict) -> None:
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def push_state(reason: str) -> None:
+class StatePersistenceError(RuntimeError):
+    """A remote upload must never continue without a durable checkpoint."""
+
+
+class UploadOutcomeError(RuntimeError):
+    """The portal may have accepted a file whose response was lost."""
+
+
+def push_state(reason: str) -> dict | None:
     if not os.environ.get("CI"):
         return
     try:
         state_rel = str(STATE.relative_to(REPO_ROOT))
         state_snapshot = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() and STATE.stat().st_size > 0 else {}
+        snapshot = REPO_ROOT / '.upload-checkpoints' / f'shard-{SHARD_ID}.json'
+        snapshot.parent.mkdir(parents=True, exist_ok=True)
+        snapshot.write_text(json.dumps(state_snapshot, ensure_ascii=False), encoding='utf-8')
         tag = f"{UPLOAD_ACCOUNT} shard {SHARD_ID}/{NUM_SHARDS}" if NUM_SHARDS > 1 else f"{UPLOAD_ACCOUNT} sync"
         for _ in range(5):
-            subprocess.run(["git", "fetch", "origin", "main"], check=False)
-            subprocess.run(["git", "reset", "--hard", "origin/main"], check=False)
+            subprocess.run(["git", "fetch", "origin", "main"], check=True)
+            subprocess.run(["git", "reset", "--hard", "origin/main"], check=True)
             STATE.parent.mkdir(parents=True, exist_ok=True)
             current_state = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() and STATE.stat().st_size > 0 else {}
-            merged_state = merge_state(current_state, state_snapshot, upload_account=UPLOAD_ACCOUNT)
+            # The Git ref serializes claims across every account/shard, not
+            # just writers of this one state file. A committed claim wins.
+            global_state = merge_state(load_state(), state_snapshot)
+            merged_state = merge_state(current_state, global_state, upload_account=UPLOAD_ACCOUNT)
+            if 'pending_uploads' in global_state:
+                merged_state['pending_uploads'] = [row for row in global_state['pending_uploads']
+                                                   if row.get('upload_account') == UPLOAD_ACCOUNT]
             STATE.write_text(json.dumps(merged_state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             subprocess.run(["git", "add", state_rel], check=True)
             if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
-                return
+                snapshot.unlink(missing_ok=True)
+                return global_state
             subprocess.run(["git", "commit", "-m", f"chore({tag}): {reason}"], check=True)
             if subprocess.run(["git", "push", "origin", "HEAD:main"], check=False).returncode == 0:
-                return
+                snapshot.unlink(missing_ok=True)
+                return global_state
             time.sleep(2)
-        log("push_state failed after retries; continuing")
+        raise StatePersistenceError('Upload checkpoint was not persisted after retries')
     except Exception as exc:
-        log(f"push_state non-fatal: {type(exc).__name__}: {exc}")
+        raise StatePersistenceError(f'Upload checkpoint failed: {type(exc).__name__}; inspect the checkpoint artifact') from exc
 
 
 def safe_filename(name: str) -> str:
@@ -306,14 +326,35 @@ def try_candidate(episode: dict, candidate: dict, session, state: dict, *, allow
     if whisper_status != "disabled":
         log(f"  whisper status={whisper_status} language={lang} prob={prob}")
 
+    intent = {key: episode[key] for key in ('episode_id', 'series_id', 'series_title', 'season', 'episode', 'display_name')}
+    intent.update(intent_id=uuid.uuid4().hex, started_at=now_iso(), upload_account=UPLOAD_ACCOUNT,
+                  source_id=candidate['source_id'], source_url=candidate.get('url'), size_bytes=size,
+                  source_container=suffix.lstrip('.'), source_download_kind=download_kind)
+    state.setdefault('pending_uploads', []).append(intent)
+    save_state(state)
+    try:
+        checkpoint = push_state(f"reserve {episode['display_name']}")
+    except StatePersistenceError:
+        tmp_path.unlink(missing_ok=True)
+        raise
+    if checkpoint is not None:
+        merged = merge_state(checkpoint, state)
+        state.clear()
+        state.update(merged)
+        if not any(row['intent_id'] == intent['intent_id'] for row in state.get('pending_uploads', [])):
+            log('  upload already completed or reserved by another worker')
+            tmp_path.unlink(missing_ok=True)
+            return False
+
     t = time.monotonic()
     try:
         video_id = upload_video(session, tmp_path, display_name=episode["display_name"], description=description)
     except Exception as exc:
         up_sec = round(time.monotonic() - t, 1)
-        log(f"  upload FAILED after {up_sec}s: {exc}")
-        record_failure(state, episode, candidate, f"upload_failed: {type(exc).__name__}: {exc}", permanent=False, timing={"resolve_sec": resolve_sec, "download_sec": dl_sec, "upload_sec": up_sec})
-        return False
+        detail = re.sub(r'https?://\S+', '<upload-url>', str(exc))
+        log(f"  upload FAILED after {up_sec}s: {detail}")
+        record_failure(state, episode, candidate, f"upload_failed: {type(exc).__name__}: {detail}", permanent=False, timing={"resolve_sec": resolve_sec, "download_sec": dl_sec, "upload_sec": up_sec})
+        raise UploadOutcomeError('Upload outcome is unknown; reconcile the durable reservation before retrying') from exc
     finally:
         tmp_path.unlink(missing_ok=True)
     up_sec = round(time.monotonic() - t, 1)
@@ -343,6 +384,8 @@ def try_candidate(episode: dict, candidate: dict, session, state: dict, *, allow
             "timing": {"resolve_sec": resolve_sec, "download_sec": dl_sec, "upload_sec": up_sec},
         }
     )
+    state['pending_uploads'] = [row for row in state.get('pending_uploads', [])
+                                if row['intent_id'] != intent['intent_id']]
     save_state(state)
     push_state(f"+{episode['display_name']}")
     return True

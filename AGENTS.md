@@ -1,3 +1,12 @@
+# Current production override (2026-11-01)
+
+Production is `Olbrasoft/series-to-prehrajto-2` in this checkout. All predecessor
+production workflows must stay disabled. Current sync uses four shards: primary
+0/1 and serialy 2/3. Read `MIGRATION_HANDOFF.md` before operations. Durable pending
+upload reservations must be reconciled from portal evidence and checkpoint
+artifacts, never blindly cleared. The current workflow files take precedence over
+the older two-shard examples below.
+
 # Pokyny pro agenty
 
 Tento repozitar je produkcni provozni stav pro kontinuální pripravu a nahravani
@@ -183,13 +192,13 @@ porovnávej skutečný stav uploadů a fronty.
 Používej čistý worktree nebo nejdřív fetchni aktuální `origin/main`.
 
 ```bash
-gh run list --repo Olbrasoft/series-to-prehrajto --limit 40 \
+gh run list --repo Olbrasoft/series-to-prehrajto-2 --limit 40 \
   --json databaseId,workflowName,status,conclusion,createdAt,updatedAt,event,headSha
 
-gh run list --repo Olbrasoft/series-to-prehrajto --workflow sync.yml --limit 12 \
+gh run list --repo Olbrasoft/series-to-prehrajto-2 --workflow sync.yml --limit 12 \
   --json databaseId,status,conclusion,createdAt,updatedAt,event,headSha
 
-gh run view RUN_ID --repo Olbrasoft/series-to-prehrajto --json status,conclusion,jobs \
+gh run view RUN_ID --repo Olbrasoft/series-to-prehrajto-2 --json status,conclusion,jobs \
   --jq '{status,conclusion,jobs:[.jobs[]|{name,status,conclusion,startedAt,completedAt,current:[.steps[]|select(.status=="in_progress")|.name]}]}'
 ```
 
@@ -234,7 +243,7 @@ Když je upload-ready fronta zdravá, ale upload stojí na starém zaseknutém
 5. Zruš starý běh:
 
 ```bash
-gh run cancel RUN_ID --repo Olbrasoft/series-to-prehrajto
+gh run cancel RUN_ID --repo Olbrasoft/series-to-prehrajto-2
 ```
 
 6. Počkej, až pending `sync` přejde do `in_progress`.
@@ -244,7 +253,7 @@ gh run cancel RUN_ID --repo Olbrasoft/series-to-prehrajto
 Pokud žádný `sync` neběží ani nečeká a fronta má připravené epizody, spusť:
 
 ```bash
-gh workflow run sync.yml --repo Olbrasoft/series-to-prehrajto \
+gh workflow run sync.yml --repo Olbrasoft/series-to-prehrajto-2 \
   -f batch_size=30 \
   -f num_shards=2 \
   -f allow_subtitles=true \
