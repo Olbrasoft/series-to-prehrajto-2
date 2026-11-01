@@ -102,6 +102,20 @@ def test_another_workers_reservation_prevents_duplicate_upload(upload_fixture, m
     assert state['pending_uploads'][0]['intent_id'] == 'first'
 
 
+def test_ambiguous_upload_failure_stays_reserved_and_fails_visibly(upload_fixture, monkeypatch):
+    episode, candidate, state = upload_fixture
+    monkeypatch.setattr(sync, 'push_state', lambda reason: copy.deepcopy(state))
+    def lost_response(*a, **kw):
+        raise RuntimeError('Lost response https://uploads.test/file?token=private')
+    monkeypatch.setattr(sync, 'upload_video', lost_response)
+    with pytest.raises(sync.UploadOutcomeError):
+        sync.try_candidate(episode, candidate, object(), state, allow_subtitles=True, description='')
+    assert state['pending_uploads']
+    assert not state.get('uploads')
+    assert 'private' not in state['failed_attempts'][0]['reason']
+    assert picker.pick_next(state, [dict(episode, candidates=[candidate])]) is None
+
+
 def test_git_push_failure_is_fatal_and_preserves_checkpoint_artifact(tmp_path, monkeypatch):
     monkeypatch.setenv('CI', 'true')
     monkeypatch.setattr(sync, 'REPO_ROOT', tmp_path)

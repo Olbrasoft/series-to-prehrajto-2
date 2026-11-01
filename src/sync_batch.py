@@ -61,6 +61,10 @@ class StatePersistenceError(RuntimeError):
     """A remote upload must never continue without a durable checkpoint."""
 
 
+class UploadOutcomeError(RuntimeError):
+    """The portal may have accepted a file whose response was lost."""
+
+
 def push_state(reason: str) -> dict | None:
     if not os.environ.get("CI"):
         return
@@ -347,9 +351,10 @@ def try_candidate(episode: dict, candidate: dict, session, state: dict, *, allow
         video_id = upload_video(session, tmp_path, display_name=episode["display_name"], description=description)
     except Exception as exc:
         up_sec = round(time.monotonic() - t, 1)
-        log(f"  upload FAILED after {up_sec}s: {exc}")
-        record_failure(state, episode, candidate, f"upload_failed: {type(exc).__name__}: {exc}", permanent=False, timing={"resolve_sec": resolve_sec, "download_sec": dl_sec, "upload_sec": up_sec})
-        return False
+        detail = re.sub(r'https?://\S+', '<upload-url>', str(exc))
+        log(f"  upload FAILED after {up_sec}s: {detail}")
+        record_failure(state, episode, candidate, f"upload_failed: {type(exc).__name__}: {detail}", permanent=False, timing={"resolve_sec": resolve_sec, "download_sec": dl_sec, "upload_sec": up_sec})
+        raise UploadOutcomeError('Upload outcome is unknown; reconcile the durable reservation before retrying') from exc
     finally:
         tmp_path.unlink(missing_ok=True)
     up_sec = round(time.monotonic() - t, 1)
