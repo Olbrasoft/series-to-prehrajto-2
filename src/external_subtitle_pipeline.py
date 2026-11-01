@@ -17,7 +17,9 @@ import json
 import os
 import shutil
 import subprocess
+import tempfile
 import time
+import zipfile
 from collections import Counter
 from itertools import zip_longest
 from pathlib import Path
@@ -518,6 +520,29 @@ def restore(pipeline, repo):
         subprocess.run(["gh", "run", "download", str(selected["workflow_run"]["id"]), "--repo", repo,
                         "--name", selected["name"], "--dir", str(pipeline.root)], check=True)
         print(f"restored_artifact={selected['id']}")
+    else:
+        bootstrap = REPO / "plans/external-subtitle-bootstrap.json"
+        if bootstrap.exists():
+            restore_bootstrap(pipeline, repo, json.loads(bootstrap.read_text()))
+
+
+def restore_bootstrap(pipeline, repo, metadata):
+    """Import the verified predecessor snapshot once, without replaying old state later."""
+    expires = dt.datetime.fromisoformat(metadata["expires_at"])
+    if dt.datetime.now(dt.timezone.utc) >= expires:
+        raise RuntimeError("No current subtitle checkpoint; migration bootstrap expired")
+    with tempfile.TemporaryDirectory() as directory:
+        subprocess.run(["gh", "release", "download", metadata["release"], "--repo", repo,
+                        "--pattern", metadata["asset"], "--dir", directory], check=True)
+        archive = Path(directory) / metadata["asset"]
+        if hashlib.sha256(archive.read_bytes()).hexdigest() != metadata["sha256"]:
+            raise ValueError("Subtitle migration checkpoint checksum mismatch")
+        with zipfile.ZipFile(archive) as snapshot:
+            for name in snapshot.namelist():
+                if not (pipeline.root / name).resolve().is_relative_to(pipeline.root):
+                    raise ValueError("Unsafe subtitle migration checkpoint path")
+            snapshot.extractall(pipeline.root)
+    print("Restored verified predecessor subtitle checkpoint")
 
 
 def import_pilot(pipeline, directory, reviews):
