@@ -1,30 +1,70 @@
 {
   "counts": {
     "backlog_episodes": 114012,
-    "manifest_upload_ready_episodes": 16,
-    "uploaded_episodes": 77693,
-    "prepared_source_episodes": 66528,
+    "manifest_upload_ready_episodes": 21,
+    "uploaded_episodes": 77694,
+    "prepared_source_episodes": 66526,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 41,
-    "language_whisper_attempted_sources": 24,
+    "language_audited_sources": 27,
+    "language_whisper_attempted_sources": 27,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 54086,
-    "whisper_review_pending_sources": 38252,
+    "whisper_review_sources": 54085,
+    "whisper_review_pending_sources": 38248,
     "upload_pending_checkpoints": 0,
-    "subtitle_followup_sources": 49183,
-    "subtitle_followup_pending_sources": 49183
+    "subtitle_followup_sources": 49188,
+    "subtitle_followup_pending_sources": 49188
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-01T17:23:36Z",
+      "databaseId": 41331233602,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:23:35Z",
+      "databaseId": 41331232110,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T17:23:04Z",
+      "databaseId": 41331191128,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-01T17:21:17Z",
+      "databaseId": 41331041181,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-01T17:20:56Z",
+      "databaseId": 41331012439,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-01T17:19:51Z",
       "databaseId": 41330913226,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -36,11 +76,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T17:16:33Z",
       "databaseId": 41330634265,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,11 +140,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T17:13:37Z",
       "databaseId": 41330380766,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -120,7 +160,7 @@
       "createdAt": "2026-11-01T17:11:26Z",
       "databaseId": 41330195982,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T17:08:20Z",
-      "databaseId": 41329909617,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T17:08:14Z",
-      "databaseId": 41329901070,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T17:07:55Z",
-      "databaseId": 41329873177,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T17:07:51Z",
-      "databaseId": 41329867165,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T17:07:34Z",
-      "databaseId": 41329840181,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -190665,6 +190665,11 @@
         "episode_id": 74617,
         "display_name": "Zig a Sharko S03E34 - The Mermaid's Feast CZ Titulky",
         "video_id": 30701805
+      },
+      {
+        "episode_id": 188881,
+        "display_name": "Daleká cesta za domovem S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30701867
       },
       {
         "episode_id": 114182,
@@ -553269,6 +553274,11 @@
         "video_id": 30701805
       },
       {
+        "episode_id": 188881,
+        "display_name": "Daleká cesta za domovem S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30701867
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -726648,17 +726658,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 17,
-    "ok": 22,
-    "resolve_failed": 2
+    "ok": 26,
+    "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36635,
-    "whisper_confirmed_cz": 3506,
-    "whisper_non_cz_needs_subtitles": 12328,
-    "whisper_failed": 1617
+    "needs_whisper": 36632,
+    "whisper_confirmed_cz": 3507,
+    "whisper_non_cz_needs_subtitles": 12330,
+    "whisper_failed": 1616
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49183
+    "needs_subtitle_setup_after_prehrajto_processing": 49188
   }
 }
