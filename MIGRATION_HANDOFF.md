@@ -69,3 +69,15 @@ accounting. Normal successor artifacts take precedence. Bootstrap is allowed
 only through 2026-11-08, and forces creation of a successor artifact even if no
 new subtitles are attached. Never initialize an empty external pipeline to work
 around an expired or missing checkpoint.
+
+## Public repository security migration (2026-11-01)
+
+Read `docs/publication-security-audit.md`. Exact-credential review found the proxy
+shared secret in historical failure URLs inherited from the public predecessor.
+The credential was rotated on the proxy and in all six configured repository
+clients, access documents and the running web consumer. Old authentication now
+returns 403; the replacement returns a working player. Original refs and logs are
+backed up privately before the owner-approved history rewrite and log cleanup.
+Never restore the old secret or merge pre-cleanup Git history into the new main.
+Use fresh post-cleanup refs. `upload_state_merge` sanitizes credential-bearing
+query parameters, including incoming stale snapshots, before saving or merging.
