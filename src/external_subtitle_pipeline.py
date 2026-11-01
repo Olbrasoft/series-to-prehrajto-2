@@ -524,6 +524,7 @@ def restore(pipeline, repo):
         bootstrap = REPO / "plans/external-subtitle-bootstrap.json"
         if bootstrap.exists():
             restore_bootstrap(pipeline, repo, json.loads(bootstrap.read_text()))
+            return True
 
 
 def restore_bootstrap(pipeline, repo, metadata):
@@ -598,10 +599,11 @@ def main():
     os.umask(0o077)
     pipeline = Pipeline(args.directory)
     if args.command == "restore":
-        restore(pipeline, args.repo)
+        migrated = restore(pipeline, args.repo)
         # Reload after downloading; the initial object predates the snapshot.
         pipeline = Pipeline(args.directory)
-        (pipeline.root / ".initial-fingerprint").write_text(pipeline.fingerprint())
+        # A migrated snapshot needs a successor artifact even without new work.
+        (pipeline.root / ".initial-fingerprint").write_text("" if migrated else pipeline.fingerprint())
     elif args.command == "prepare":
         prepare(pipeline, args)
     elif args.command == "whisper":
