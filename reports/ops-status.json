@@ -1,38 +1,126 @@
 {
   "counts": {
     "backlog_episodes": 114012,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 77678,
-    "prepared_source_episodes": 66507,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 77679,
+    "prepared_source_episodes": 66506,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 30,
-    "language_whisper_attempted_sources": 30,
+    "language_audited_sources": 34,
+    "language_whisper_attempted_sources": 34,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54088,
-    "whisper_review_pending_sources": 38253,
+    "whisper_review_pending_sources": 38252,
     "upload_pending_checkpoints": 0,
-    "subtitle_followup_sources": 49169,
-    "subtitle_followup_pending_sources": 49169
+    "subtitle_followup_sources": 49170,
+    "subtitle_followup_pending_sources": 49170
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-01T16:13:26Z",
-      "databaseId": 41325203062,
+      "createdAt": "2026-11-01T16:23:25Z",
+      "databaseId": 41326083681,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
+      "status": "queued",
+      "workflowName": "prepare-sources"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-01T16:22:38Z",
+      "databaseId": 41326017262,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-01T16:21:36Z",
+      "databaseId": 41325927567,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T16:21:03Z",
+      "databaseId": 41325880855,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-01T16:19:19Z",
+      "databaseId": 41325723629,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-01T16:18:38Z",
+      "databaseId": 41325663972,
+      "headBranch": "fix/preserve-external-subtitle-checkpoint",
+      "status": "completed",
+      "workflowName": "external-subtitles-tests"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-01T16:16:40Z",
+      "databaseId": 41325495229,
+      "headBranch": "fix/preserve-external-subtitle-checkpoint",
+      "status": "completed",
+      "workflowName": "external-subtitles-tests"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-01T16:15:50Z",
+      "databaseId": 41325420956,
+      "headBranch": "fix/preserve-external-subtitle-checkpoint",
+      "status": "completed",
+      "workflowName": "external-subtitles-tests"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-01T16:14:18Z",
+      "databaseId": 41325281346,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T16:14:15Z",
+      "databaseId": 41325278173,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T16:14:13Z",
+      "databaseId": 41325274616,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-01T16:13:26Z",
+      "databaseId": 41325203062,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-01T16:13:24Z",
       "databaseId": 41325200034,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -362722,6 +362810,11 @@
         "episode_id": 187455,
         "display_name": "Gábinin kouzelný domek S01E04 - Kočičí škola CZ Dabing",
         "video_id": 30697199
+      },
+      {
+        "episode_id": 181023,
+        "display_name": "Love Me S02E05 - 5. epizoda CZ Titulky",
+        "video_id": 30700127
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -725249,6 +725342,11 @@
         "episode_id": 187455,
         "display_name": "Gábinin kouzelný domek S01E04 - Kočičí škola CZ Dabing",
         "video_id": 30697199
+      },
+      {
+        "episode_id": 181023,
+        "display_name": "Love Me S02E05 - 5. epizoda CZ Titulky",
+        "video_id": 30700127
       }
     ],
     "prepared_not_upload_ready": [
@@ -726410,17 +726508,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 27,
-    "sample_failed": 2,
-    "resolve_failed": 1
+    "ok": 29,
+    "resolve_failed": 3,
+    "sample_failed": 2
   },
   "whisper_review_statuses": {
     "needs_whisper": 36628,
-    "whisper_confirmed_cz": 3498,
+    "whisper_confirmed_cz": 3499,
     "whisper_non_cz_needs_subtitles": 12337,
-    "whisper_failed": 1625
+    "whisper_failed": 1624
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49169
+    "needs_subtitle_setup_after_prehrajto_processing": 49170
   }
 }
