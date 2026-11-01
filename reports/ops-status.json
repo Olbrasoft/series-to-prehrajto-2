@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 113928,
     "manifest_upload_ready_episodes": 66,
-    "uploaded_episodes": 77772,
+    "uploaded_episodes": 77776,
     "prepared_source_episodes": 66610,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,33 +14,113 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54067,
     "whisper_review_pending_sources": 38190,
-    "upload_pending_checkpoints": 2,
+    "upload_pending_checkpoints": 0,
     "subtitle_followup_sources": 49251,
     "subtitle_followup_pending_sources": 49251
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-01T22:47:04Z",
-      "databaseId": 41358853194,
+      "createdAt": "2026-11-01T22:53:07Z",
+      "databaseId": 41359346486,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
-      "createdAt": "2026-11-01T22:44:31Z",
-      "databaseId": 41358637937,
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-01T22:52:30Z",
+      "databaseId": 41359297267,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "update-descriptions"
+      "status": "completed",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-01T22:52:27Z",
+      "databaseId": 41359293471,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-01T22:51:56Z",
+      "databaseId": 41359252039,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:51:55Z",
+      "databaseId": 41359251360,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:51:52Z",
+      "databaseId": 41359246960,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-01T22:50:12Z",
+      "databaseId": 41359110309,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:49:39Z",
+      "databaseId": 41359067082,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:48:51Z",
+      "databaseId": 41359002616,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:48:48Z",
+      "databaseId": 41358999001,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:47:04Z",
+      "databaseId": 41358853194,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-01T22:44:31Z",
+      "databaseId": 41358637937,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-01T22:42:53Z",
       "databaseId": 41358507504,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,19 +132,19 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-01T22:42:14Z",
       "databaseId": 41358456828,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-01T22:41:43Z",
       "databaseId": 41358414477,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -80,7 +160,7 @@
       "createdAt": "2026-11-01T22:39:11Z",
       "databaseId": 41358206724,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:35:03Z",
-      "databaseId": 41357859697,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T22:33:04Z",
-      "databaseId": 41357693088,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:33:01Z",
-      "databaseId": 41357688803,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T22:32:54Z",
-      "databaseId": 41357679933,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T22:32:50Z",
-      "databaseId": 41357673749,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T22:32:27Z",
-      "databaseId": 41357642572,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T22:32:12Z",
-      "databaseId": 41357621875,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T22:30:53Z",
-      "databaseId": 41357508251,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:28:55Z",
-      "databaseId": 41357341092,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T22:28:02Z",
-      "databaseId": 41357270090,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -363280,6 +363280,26 @@
         "episode_id": 173842,
         "display_name": "Svatá Evita S01E07 - 7. epizoda CZ Titulky",
         "video_id": 30709074
+      },
+      {
+        "episode_id": 147214,
+        "display_name": "Rising Impact S01E07 - Nebezpečná situace CZ Titulky",
+        "video_id": 30709230
+      },
+      {
+        "episode_id": 147218,
+        "display_name": "Rising Impact S01E11 - Vážený host CZ Titulky",
+        "video_id": 30709269
+      },
+      {
+        "episode_id": 203687,
+        "display_name": "Postarej se o mé srdce S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30709214
+      },
+      {
+        "episode_id": 127347,
+        "display_name": "American Woman S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30709296
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -726277,6 +726297,26 @@
         "episode_id": 173842,
         "display_name": "Svatá Evita S01E07 - 7. epizoda CZ Titulky",
         "video_id": 30709074
+      },
+      {
+        "episode_id": 147214,
+        "display_name": "Rising Impact S01E07 - Nebezpečná situace CZ Titulky",
+        "video_id": 30709230
+      },
+      {
+        "episode_id": 147218,
+        "display_name": "Rising Impact S01E11 - Vážený host CZ Titulky",
+        "video_id": 30709269
+      },
+      {
+        "episode_id": 203687,
+        "display_name": "Postarej se o mé srdce S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30709214
+      },
+      {
+        "episode_id": 127347,
+        "display_name": "American Woman S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30709296
       }
     ],
     "prepared_not_upload_ready": [
