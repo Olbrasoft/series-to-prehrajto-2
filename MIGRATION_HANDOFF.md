@@ -49,3 +49,23 @@ Full catalog exports are rate-limited to the existing three-hour cadence even
 when the database contains fewer episodes than the requested upper limit. Backlog
 gzip exports have deterministic headers, so unchanged data does not add a new
 binary object solely because the export time or output filename changed.
+
+## Successor acceptance and external subtitle state
+
+Production workflows were enabled on 2026-11-01 after the 195-test upload
+regression suite passed in Actions. Upload run `41325191296` completed Love Me
+S02E05 (episode `181023`, target `30700127`) at `16:16:28Z`, committed the result,
+and cleared its pending reservation. An authenticated profile lookup at
+`16:17:46Z` independently confirmed the target on the serialy account; it was
+still processing on the portal. Primary shards had no ready episodes in that
+initial batch. Source preparation and Whisper review continue refilling them.
+
+The external subtitle pipeline has a separate artifact lineage. The predecessor
+artifact `13063514792` from run `41258365096` was preserved as the private release
+asset `migration-20261101/external-subtitle-state-final.zip`. Its pinned checksum
+is in `plans/external-subtitle-bootstrap.json`. It contains 96 uploaded subtitle
+proofs, 73 pending manual reviews, other checked candidates and provider quota
+accounting. Normal successor artifacts take precedence. Bootstrap is allowed
+only through 2026-11-08, and forces creation of a successor artifact even if no
+new subtitles are attached. Never initialize an empty external pipeline to work
+around an expired or missing checkpoint.
