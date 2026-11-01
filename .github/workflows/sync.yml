@@ -34,7 +34,7 @@ on:
 # replaces an older pending run when another trigger arrives, but never stops
 # the run that is currently uploading.
 concurrency:
-  group: series-to-prehrajto-1-sync-v3
+  group: series-to-prehrajto-2-sync-v3
   cancel-in-progress: false
 
 jobs:
@@ -168,8 +168,19 @@ jobs:
             sleep $((attempt * 2))
           done
 
-          echo "::warning::failed to push final state snapshot after retries; per-upload state pushes are best-effort and the next run will merge current main state"
-          exit 0
+          echo "::error::failed to persist upload state; reconcile the checkpoint artifact before retrying pending episodes"
+          exit 1
+
+      - name: Preserve failed upload checkpoints
+        if: failure() || cancelled()
+        uses: actions/upload-artifact@v4
+        with:
+          name: upload-checkpoint-${{ github.run_id }}-${{ env.SYNC_SHARD_ID }}
+          path: |
+            .upload-checkpoints/*.json
+            state/uploaded-shard-${{ env.SYNC_SHARD_ID }}.json
+          include-hidden-files: true
+          retention-days: 90
 
   queue-next:
     name: Queue next upload and preparation

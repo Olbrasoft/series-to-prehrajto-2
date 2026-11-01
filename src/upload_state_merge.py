@@ -44,6 +44,19 @@ def account_matches(upload: dict, upload_account: str | None) -> bool:
     return upload.get("upload_account") == upload_account
 
 
+def merge_pending_uploads(rows: list[dict], uploads: list[dict]) -> list[dict]:
+    """Keep the first durable reservation until its upload is reconciled."""
+    completed = {upload_key(row) for row in uploads}
+    pending = {}
+    for row in rows:
+        key = upload_key(row)
+        if key in completed:
+            continue
+        if key not in pending:
+            pending[key] = row
+    return list(pending.values())
+
+
 def merge_state(current: dict, incoming: dict, *, upload_account: str | None = None) -> dict:
     merged = {"schema_version": current.get("schema_version") or incoming.get("schema_version") or 1}
 
@@ -66,6 +79,10 @@ def merge_state(current: dict, incoming: dict, *, upload_account: str | None = N
         else:
             uploads_by_key[key] = merge_upload(uploads_by_key[key], source)
     merged["uploads"] = [uploads_by_key[key] for key in order]
+    if 'pending_uploads' in current or 'pending_uploads' in incoming:
+        pending = [row for state in (current, incoming) for row in state.get('pending_uploads', [])
+                   if account_matches(row, upload_account)]
+        merged['pending_uploads'] = merge_pending_uploads(pending, merged['uploads'])
 
     failures_by_key: dict[tuple[int, int, str], dict] = {}
     failure_order: list[tuple[int, int, str]] = []
