@@ -22,9 +22,8 @@ ACCEPT_LANG = "cs,en;q=0.9,en-GB;q=0.8,en-US;q=0.7"
 
 
 def _redact_cookie_value(name: str, value: str) -> str:
-    if any(token in name.lower() for token in ("token", "session", "refresh", "access")):
-        return "***"
-    return value
+    # Cookie names are not a reliable indication of authentication material.
+    return "***"
 
 
 def _safe_cookies(cookies) -> dict[str, str]:
@@ -32,18 +31,7 @@ def _safe_cookies(cookies) -> dict[str, str]:
 
 
 def _safe_set_cookie(header: str | None) -> str:
-    if not header:
-        return ""
-    redacted_parts: list[str] = []
-    for part in header.split(", "):
-        if "=" not in part:
-            redacted_parts.append(part)
-            continue
-        name, rest = part.split("=", 1)
-        if any(token in name.lower() for token in ("token", "session", "refresh", "access")):
-            rest = "***;" + rest.split(";", 1)[1] if ";" in rest else "***"
-        redacted_parts.append(f"{name}={rest}")
-    return ", ".join(redacted_parts)
+    return "[redacted]" if header else ""
 
 
 def login(email: str, password: str) -> requests.Session:
@@ -70,7 +58,6 @@ def login(email: str, password: str) -> requests.Session:
         allow_redirects=False,
     )
     print(f"[login] status={r.status_code}, ctype={r.headers.get('content-type')}")
-    print(f"[login] response text (first 500): {r.text[:500]!r}")
     print(f"[login] set-cookie headers: {_safe_set_cookie(r.headers.get('set-cookie'))!r}")
     print(f"[login] session cookies after login: {_safe_cookies(s.cookies)}")
     r.raise_for_status()
@@ -148,7 +135,6 @@ def upload_video(
     print(f"[upload] prepareVideo status={prep.status_code}")
     prep.raise_for_status()
     prep_data = prep.json()
-    print(f"[upload] prepare response: {prep_data}")
     video_id = json.loads(prep_data["params"])["video_id"]
     print(f"[upload] video_id={video_id}")
 
@@ -186,7 +172,6 @@ def upload_video(
             timeout=3600,
         )
     print(f"[upload] CDN status={r.status_code}")
-    print(f"[upload] CDN response: {r.text[:300]!r}")
     r.raise_for_status()
 
     # If caller wanted a display name different from upload_name (e.g. without
