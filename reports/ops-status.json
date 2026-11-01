@@ -2,15 +2,15 @@
   "counts": {
     "backlog_episodes": 113928,
     "manifest_upload_ready_episodes": 62,
-    "uploaded_episodes": 77764,
+    "uploaded_episodes": 77769,
     "prepared_source_episodes": 66609,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 80,
-    "language_whisper_attempted_sources": 50,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54069,
     "whisper_review_pending_sources": 38197,
@@ -21,10 +21,58 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-01T22:41:43Z",
+      "databaseId": 41358414477,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:40:56Z",
+      "databaseId": 41358350952,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:39:11Z",
+      "databaseId": 41358206724,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:37:03Z",
+      "databaseId": 41358029786,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-01T22:36:15Z",
+      "databaseId": 41357964256,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-01T22:35:03Z",
+      "databaseId": 41357859697,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-01T22:33:04Z",
       "databaseId": 41357693088,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +96,7 @@
       "createdAt": "2026-11-01T22:32:50Z",
       "databaseId": 41357673749,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "update-descriptions"
     },
     {
@@ -72,7 +120,7 @@
       "createdAt": "2026-11-01T22:30:53Z",
       "databaseId": 41357508251,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -84,19 +132,19 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T22:28:02Z",
       "databaseId": 41357270090,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T22:27:23Z",
       "databaseId": 41357215969,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -128,56 +176,8 @@
       "createdAt": "2026-11-01T22:24:25Z",
       "databaseId": 41356968291,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:23:56Z",
-      "databaseId": 41356928556,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:23:54Z",
-      "databaseId": 41356925482,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T22:22:45Z",
-      "databaseId": 41356831879,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T22:22:44Z",
-      "databaseId": 41356831530,
-      "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:22:42Z",
-      "databaseId": 41356828032,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T22:21:30Z",
-      "databaseId": 41356729934,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
+      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -190847,6 +190847,11 @@
         "video_id": 30708486
       },
       {
+        "episode_id": 187517,
+        "display_name": "Gábinin kouzelný domek S03E03 - DJova zářná jízda CZ Dabing",
+        "video_id": 30709032
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -363240,6 +363245,26 @@
         "episode_id": 86631,
         "display_name": "Počtyřech S02E02 - Všichni jsou dospělí CZ Titulky",
         "video_id": 30708834
+      },
+      {
+        "episode_id": 202967,
+        "display_name": "Poslední světlo S01E01 - Úsvit CZ Dabing",
+        "video_id": 30708923
+      },
+      {
+        "episode_id": 203686,
+        "display_name": "Postarej se o mé srdce S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30708808
+      },
+      {
+        "episode_id": 165138,
+        "display_name": "My Stubborn S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30709015
+      },
+      {
+        "episode_id": 203791,
+        "display_name": "Coven Academy S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30709060
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -553804,6 +553829,11 @@
         "video_id": 30708486
       },
       {
+        "episode_id": 187517,
+        "display_name": "Gábinin kouzelný domek S03E03 - DJova zářná jízda CZ Dabing",
+        "video_id": 30709032
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -726197,6 +726227,26 @@
         "episode_id": 86631,
         "display_name": "Počtyřech S02E02 - Všichni jsou dospělí CZ Titulky",
         "video_id": 30708834
+      },
+      {
+        "episode_id": 202967,
+        "display_name": "Poslední světlo S01E01 - Úsvit CZ Dabing",
+        "video_id": 30708923
+      },
+      {
+        "episode_id": 203686,
+        "display_name": "Postarej se o mé srdce S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30708808
+      },
+      {
+        "episode_id": 165138,
+        "display_name": "My Stubborn S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30709015
+      },
+      {
+        "episode_id": 203791,
+        "display_name": "Coven Academy S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30709060
       }
     ],
     "prepared_not_upload_ready": [
@@ -727358,9 +727408,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 30,
-    "ok": 48,
-    "resolve_failed": 2
+    "ok": 39,
+    "resolve_failed": 1
   },
   "whisper_review_statuses": {
     "needs_whisper": 36588,
