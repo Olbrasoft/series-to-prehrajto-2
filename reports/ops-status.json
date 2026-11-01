@@ -2,29 +2,101 @@
   "counts": {
     "backlog_episodes": 113928,
     "manifest_upload_ready_episodes": 69,
-    "uploaded_episodes": 77778,
+    "uploaded_episodes": 77782,
     "prepared_source_episodes": 66621,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54065,
     "whisper_review_pending_sources": 38186,
-    "upload_pending_checkpoints": 2,
+    "upload_pending_checkpoints": 4,
     "subtitle_followup_sources": 49254,
     "subtitle_followup_pending_sources": 49254
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-01T23:13:21Z",
+      "databaseId": 41361038872,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T23:13:01Z",
+      "databaseId": 41361012322,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T23:12:01Z",
+      "databaseId": 41360929194,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T23:11:18Z",
+      "databaseId": 41360866813,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T23:10:35Z",
+      "databaseId": 41360803786,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-01T23:10:34Z",
+      "databaseId": 41360801309,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-01T23:05:38Z",
+      "databaseId": 41360372246,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T23:05:37Z",
+      "databaseId": 41360370609,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-01T23:05:32Z",
+      "databaseId": 41360363717,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-01T23:04:23Z",
       "databaseId": 41360262689,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -32,7 +104,7 @@
       "createdAt": "2026-11-01T23:04:10Z",
       "databaseId": 41360246372,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -44,19 +116,19 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T23:03:36Z",
       "databaseId": 41360199256,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T23:03:30Z",
       "databaseId": 41360190197,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -68,11 +140,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-01T23:02:26Z",
       "databaseId": 41360099302,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -88,7 +160,7 @@
       "createdAt": "2026-11-01T23:02:08Z",
       "databaseId": 41360075673,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -100,84 +172,12 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T23:01:42Z",
       "databaseId": 41360039369,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T23:01:04Z",
-      "databaseId": 41359982843,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T23:00:41Z",
-      "databaseId": 41359947425,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T22:59:27Z",
-      "databaseId": 41359841777,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T22:59:25Z",
-      "databaseId": 41359838878,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:59:14Z",
-      "databaseId": 41359824878,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:58:16Z",
-      "databaseId": 41359752617,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:58:13Z",
-      "databaseId": 41359748533,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:58:11Z",
-      "databaseId": 41359746194,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-01T22:58:07Z",
-      "databaseId": 41359740968,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -190857,6 +190857,16 @@
         "video_id": 30709174
       },
       {
+        "episode_id": 74372,
+        "display_name": "Digimon S01E37 - 37. epizoda CZ Titulky",
+        "video_id": 30709585
+      },
+      {
+        "episode_id": 74384,
+        "display_name": "Digimon S01E51 - 51. epizoda CZ Titulky",
+        "video_id": 30709629
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -363310,6 +363320,16 @@
         "episode_id": 64587,
         "display_name": "Naruto: Šippúden S01E17 - Gaarova smrt! CZ Titulky",
         "video_id": 30709459
+      },
+      {
+        "episode_id": 203802,
+        "display_name": "Coven Academy S01E14 CZ Dabing",
+        "video_id": 30709594
+      },
+      {
+        "episode_id": 203806,
+        "display_name": "Coven Academy S01E18 CZ Dabing",
+        "video_id": 30709674
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -553884,6 +553904,16 @@
         "video_id": 30709174
       },
       {
+        "episode_id": 74372,
+        "display_name": "Digimon S01E37 - 37. epizoda CZ Titulky",
+        "video_id": 30709585
+      },
+      {
+        "episode_id": 74384,
+        "display_name": "Digimon S01E51 - 51. epizoda CZ Titulky",
+        "video_id": 30709629
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -726337,6 +726367,16 @@
         "episode_id": 64587,
         "display_name": "Naruto: Šippúden S01E17 - Gaarova smrt! CZ Titulky",
         "video_id": 30709459
+      },
+      {
+        "episode_id": 203802,
+        "display_name": "Coven Academy S01E14 CZ Dabing",
+        "video_id": 30709594
+      },
+      {
+        "episode_id": 203806,
+        "display_name": "Coven Academy S01E18 CZ Dabing",
+        "video_id": 30709674
       }
     ],
     "prepared_not_upload_ready": [
@@ -727498,7 +727538,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
