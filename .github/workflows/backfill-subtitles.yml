@@ -1,0 +1,268 @@
+name: backfill-subtitles
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/backfill-subtitles.yml"
+      - "src/backfill_uploaded_subtitles.py"
+      - "src/resolve_stream.py"
+      - "src/subtitle_source_cache.py"
+      - "src/subtitle_queue_status.py"
+      - "src/subtitle_source_priority.py"
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+    inputs:
+      account:
+        description: "Upload account whose CZ Titulky videos should be repaired"
+        type: choice
+        options:
+          - both
+          - primary
+          - serialy
+        default: both
+      limit:
+        description: "Maximum missing-subtitle uploads to attempt"
+        required: false
+        default: "30"
+      max_rows:
+        description: "Maximum uploaded subtitle-followup rows to inspect"
+        required: false
+        default: "400"
+      episode_id:
+        description: "Process only this episode ID"
+        required: false
+        default: ""
+      dry_run:
+        description: "Only inspect targets and write report rows"
+        required: false
+        default: "false"
+      retry_reported:
+        description: "Retry episodes already recorded in the backfill report"
+        required: false
+        default: "false"
+      continue_backfill:
+        description: "Queue another bounded subtitle backfill run when pending rows remain"
+        required: false
+        default: "true"
+      verify_immediately:
+        description: "Wait for the server track after a targeted subtitle upload"
+        type: boolean
+        default: false
+
+concurrency:
+  group: series-to-prehrajto-1-backfill-subtitles
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    name: Backfill subtitles (${{ matrix.account }})
+    strategy:
+      fail-fast: false
+      matrix:
+        account: ${{ fromJSON((inputs.account || 'both') == 'primary' && '["primary"]' || inputs.account == 'serialy' && '["serialy"]' || '["primary","serialy"]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      actions: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Refresh to latest origin/main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore prepared subtitle files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python src/subtitle_source_cache.py .cache/subtitles
+
+      - name: Configure git for report pushes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run account subtitle backfill
+        env:
+          UPLOAD_ACCOUNT: ${{ matrix.account }}
+          PRIMARY_PREHRAJTO_EMAIL: ${{ secrets.UPLOAD_PREHRAJTO_EMAIL || secrets.PREHRAJTO_EMAIL }}
+          PRIMARY_PREHRAJTO_PASSWORD: ${{ secrets.UPLOAD_PREHRAJTO_PASSWORD || secrets.PREHRAJTO_PASSWORD }}
+          SERIALY_PREHRAJTO_EMAIL: ${{ secrets.SERIALY_PREHRAJTO_EMAIL }}
+          SERIALY_PREHRAJTO_PASSWORD: ${{ secrets.SERIALY_PREHRAJTO_PASSWORD }}
+          CZ_PROXY_URL: ${{ secrets.CZ_PROXY_URL }}
+          CZ_PROXY_KEY: ${{ secrets.CZ_PROXY_KEY }}
+          CZ_PROXY_MIN_GAP_SECONDS: "20"
+        run: |
+          case "$UPLOAD_ACCOUNT" in
+            primary)
+              export PREHRAJTO_EMAIL="$PRIMARY_PREHRAJTO_EMAIL"
+              export PREHRAJTO_PASSWORD="$PRIMARY_PREHRAJTO_PASSWORD"
+              STATE_FILES=(state/uploaded-shard-0.json state/uploaded-shard-1.json)
+              ;;
+            serialy)
+              export PREHRAJTO_EMAIL="$SERIALY_PREHRAJTO_EMAIL"
+              export PREHRAJTO_PASSWORD="$SERIALY_PREHRAJTO_PASSWORD"
+              STATE_FILES=(state/uploaded-shard-2.json state/uploaded-shard-3.json)
+              ;;
+            *) exit 2 ;;
+          esac
+          ARGS=(
+            "--upload-account" "$UPLOAD_ACCOUNT"
+            "--limit" "${{ inputs.limit || '30' }}"
+            "--max-rows" "${{ inputs.max_rows || '400' }}"
+            "--search-min-interval" "20"
+            "--verify-timeout" "600"
+            "--lookup" "profile-search"
+            "--max-runtime" "600"
+            "--alternate-limit" "1"
+            "--prepared-only"
+            "--subtitle-cache" ".cache/subtitles"
+            "--allow-partial"
+          )
+          if [ "${{ inputs.verify_immediately || 'false' }}" != "true" ]; then
+            ARGS+=("--defer-verification")
+          fi
+          for state_file in "${STATE_FILES[@]}"; do
+            ARGS+=("--state-file" "$state_file")
+          done
+          for evidence_file in state/uploaded-shard-*.json; do
+            ARGS+=("--evidence-state-file" "$evidence_file")
+          done
+          if [ "${{ inputs.dry_run || 'false' }}" = "true" ]; then
+            ARGS+=("--dry-run")
+          fi
+          if [ "${{ inputs.retry_reported || 'false' }}" = "true" ]; then
+            ARGS+=("--retry-reported")
+          fi
+          if [ -n "${{ inputs.episode_id || '' }}" ]; then
+            ARGS+=("--episode-id" "${{ inputs.episode_id }}")
+          fi
+          python src/backfill_uploaded_subtitles.py "${ARGS[@]}"
+
+      - name: Commit subtitle report
+        if: always()
+        run: |
+          set -e
+          mkdir -p reports
+          touch reports/subtitle-backfill-status.jsonl
+          TMP_DIR="$(mktemp -d)"
+          cp reports/subtitle-backfill-status.jsonl "$TMP_DIR/subtitle-backfill-status.jsonl"
+
+          for attempt in $(seq 1 20); do
+            rm -rf .git/rebase-merge .git/rebase-apply
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p reports
+            if [ -f reports/subtitle-backfill-status.jsonl ]; then
+              cat "$TMP_DIR/subtitle-backfill-status.jsonl" >> reports/subtitle-backfill-status.jsonl
+              python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("reports/subtitle-backfill-status.jsonl")
+          import sys
+          sys.path.insert(0, "src")
+          from backfill_uploaded_subtitles import load_latest_status
+
+          latest = load_latest_status(path)
+          with path.open("w", encoding="utf-8") as fh:
+              for row in sorted(latest.values(), key=lambda item: (str(item.get("series_title") or ""), int(item.get("season") or 0), int(item.get("episode") or 0), int(item.get("episode_id") or 0))):
+                  fh.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
+          PY
+            else
+              cp "$TMP_DIR/subtitle-backfill-status.jsonl" reports/subtitle-backfill-status.jsonl
+            fi
+
+            git add reports/subtitle-backfill-status.jsonl
+            if git diff --cached --quiet; then
+              echo "no subtitle report changes to commit"
+              exit 0
+            fi
+
+            COUNT=$(python - <<'PY'
+          from pathlib import Path
+          print(sum(1 for line in Path("reports/subtitle-backfill-status.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()))
+          PY
+            )
+            git commit -m "chore: update subtitle backfill report (${COUNT} rows)"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "push race on attempt ${attempt}, retrying"
+            sleep $((attempt * 2))
+          done
+
+          echo "failed to push subtitle report after retries"
+          exit 1
+
+  queue-next:
+    name: Queue next subtitle batch
+    needs: backfill
+    if: success() && (inputs.continue_backfill || 'true') == 'true' && (inputs.dry_run || 'false') != 'true' && (inputs.episode_id || '') == ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore prepared subtitle files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python src/subtitle_source_cache.py .cache/subtitles
+
+      - name: Count actionable subtitle work
+        id: work
+        env:
+          SUBTITLE_ACCOUNT: ${{ inputs.account || 'both' }}
+        run: python src/subtitle_queue_status.py --account "$SUBTITLE_ACCOUNT" --github-output "$GITHUB_OUTPUT"
+
+      - name: Queue next subtitle backfill
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SUBTITLE_ACCOUNT: ${{ inputs.account || 'both' }}
+        run: |
+          PENDING="${{ steps.work.outputs.actionable }}"
+          echo "actionable fast/verification rows: ${PENDING}"
+          if [ "$PENDING" -gt 0 ]; then
+            QUEUED=$(gh run list --workflow backfill-subtitles.yml --limit 10 --json status \
+              --jq '[.[] | select(.status == "pending" or .status == "queued" or .status == "waiting")] | length')
+            if [ "$QUEUED" -gt 0 ]; then
+              echo "A successor is already queued; preserving the pending run"
+              exit 0
+            fi
+            gh workflow run backfill-subtitles.yml \
+              -f account="$SUBTITLE_ACCOUNT" \
+              -f limit="${{ inputs.limit || '30' }}" \
+              -f max_rows="${{ inputs.max_rows || '400' }}" \
+              -f dry_run="false" \
+              -f retry_reported="false" \
+              -f continue_backfill="true"
+          fi

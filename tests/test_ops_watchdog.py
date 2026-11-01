@@ -1,0 +1,112 @@
+import datetime as dt
+
+from src.ops_watchdog import active_workflows, is_recent_active_run
+from src import ops_watchdog
+
+
+NOW = dt.datetime(2026, 8, 27, 8, 0, tzinfo=dt.timezone.utc)
+
+
+def test_recent_queued_run_is_active():
+    row = {"status": "queued", "createdAt": "2026-08-27T07:00:00Z"}
+
+    assert is_recent_active_run(row, now=NOW)
+
+
+def test_stale_queued_run_is_ignored():
+    row = {"status": "queued", "createdAt": "2026-08-26T15:37:13Z"}
+
+    assert not is_recent_active_run(row, now=NOW)
+
+
+def test_unknown_creation_time_is_treated_conservatively():
+    assert is_recent_active_run({"status": "in_progress"}, now=NOW)
+
+
+def test_completed_run_is_not_active():
+    row = {"status": "completed", "createdAt": "2026-08-27T07:59:00Z"}
+
+    assert not is_recent_active_run(row, now=NOW)
+
+
+def test_active_workflows_excludes_stale_runs(monkeypatch):
+    monkeypatch.setattr("src.ops_watchdog.dt.datetime", FixedDateTime)
+    report = {
+        "workflow_runs": [
+            {
+                "workflowName": "sync",
+                "status": "queued",
+                "createdAt": "2026-08-26T15:37:13Z",
+            },
+            {
+                "workflowName": "prepare-manifest",
+                "status": "in_progress",
+                "createdAt": "2026-08-27T07:30:00Z",
+            },
+        ]
+    }
+
+    assert active_workflows(report) == {"prepare-manifest"}
+
+
+class FixedDateTime(dt.datetime):
+    @classmethod
+    def now(cls, tz=None):
+        return NOW
+
+
+def test_operator_pause_blocks_sync_without_calling_github(monkeypatch):
+    monkeypatch.setenv("VIDEO_UPLOADS_PAUSED", "true")
+    calls = []
+    monkeypatch.setattr(ops_watchdog, "workflow_active_run_count", lambda name: calls.append(name) or 0)
+    monkeypatch.setattr(ops_watchdog, "run_gh", lambda *args, **kwargs: calls.append(args))
+    active = set()
+
+    assert not ops_watchdog.queue_workflow("sync", {}, active=active, dry_run=False)
+    assert calls == []
+    assert active == set()
+
+
+def test_operator_pause_does_not_block_subtitle_dispatch(monkeypatch):
+    monkeypatch.setenv("VIDEO_UPLOADS_PAUSED", "true")
+    monkeypatch.setattr(ops_watchdog, "workflow_active_run_count", lambda name: 0)
+    dispatched = []
+    monkeypatch.setattr(ops_watchdog, "run_gh", lambda args, **kwargs: dispatched.append(args))
+    active = set()
+
+    assert not ops_watchdog.queue_workflow("sync", {}, active=active, dry_run=False)
+    assert ops_watchdog.queue_workflow("backfill-subtitles", {}, active=active, dry_run=False)
+    assert dispatched == [["workflow", "run", "backfill-subtitles.yml"]]
+
+
+def test_explicit_resume_allows_sync_dispatch(monkeypatch):
+    monkeypatch.setenv("VIDEO_UPLOADS_PAUSED", "false")
+    monkeypatch.setattr(ops_watchdog, "workflow_active_run_count", lambda name: 0)
+    dispatched = []
+    monkeypatch.setattr(ops_watchdog, "run_gh", lambda args, **kwargs: dispatched.append(args))
+
+    assert ops_watchdog.queue_workflow("sync", {}, active=set(), dry_run=False)
+    assert dispatched == [["workflow", "run", "sync.yml"]]
+
+
+def test_slow_backlog_does_not_dispatch_empty_fast_batches(monkeypatch):
+    calls = []
+    monkeypatch.setattr(ops_watchdog, "queue_workflow", lambda name, fields, **kw: calls.append(name))
+    monkeypatch.setattr(ops_watchdog, "recently_started", lambda name, minutes: False)
+    ops_watchdog.queue_subtitle_work({"actionable": 0, "alternate_pending": 100}, active=set(), dry_run=False)
+    assert calls == ["prepare-subtitles"]
+
+
+def test_discovery_recovery_obeys_fifteen_minute_interval(monkeypatch):
+    calls = []
+    monkeypatch.setattr(ops_watchdog, "queue_workflow", lambda name, fields, **kw: calls.append(name))
+    monkeypatch.setattr(ops_watchdog, "recently_started", lambda name, minutes: minutes == 15)
+    ops_watchdog.queue_subtitle_work({"actionable": 3, "alternate_pending": 100}, active=set(), dry_run=False)
+    assert calls == ["backfill-subtitles"]
+def test_paused_alternate_lookup_keeps_attachment_running(monkeypatch):
+    monkeypatch.setenv("ALTERNATE_SUBTITLE_SEARCH_PAUSED", "true")
+    calls = []
+    monkeypatch.setattr(ops_watchdog, "queue_workflow", lambda name, *a, **kw: calls.append(name))
+    monkeypatch.setattr(ops_watchdog, "recently_started", lambda *a: (_ for _ in ()).throw(AssertionError("Paused search needs no API check")))
+    ops_watchdog.queue_subtitle_work({"actionable": 3, "alternate_pending": 2000}, active=set(), dry_run=False)
+    assert calls == ["backfill-subtitles"]
