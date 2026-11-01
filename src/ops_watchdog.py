@@ -282,7 +282,7 @@ def main() -> int:
     if prepared_source_episodes < args.target_prepared_episodes and not subtitles_first:
         missing_prepared = args.target_prepared_episodes - prepared_source_episodes
         queued_refresh = False
-        if (
+        if not recently_started('refresh-backlog', 180) and (
             backlog_count < args.target_backlog_episodes
             or language_queue_sources < args.min_language_queue_sources
             or unprepared_queue_episodes < min(args.prepare_sources_batch, missing_prepared)
