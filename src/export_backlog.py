@@ -12,6 +12,7 @@ import argparse
 import datetime as dt
 import decimal
 import gzip
+import io
 import json
 import os
 import sys
@@ -110,6 +111,19 @@ def load_jsonl(path: Path) -> list[dict[str, Any]]:
     opener = gzip.open if path.suffix == ".gz" else open
     with opener(path, "rt", encoding="utf-8") as fh:
         return [json.loads(line) for line in fh if line.strip()]
+
+
+def write_backlog(path: Path, episodes: list[dict]) -> None:
+    """Identical exports must not add timestamp-only binary blobs to Git."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open('wb') as raw:
+        if path.suffix == '.gz':
+            binary = gzip.GzipFile(fileobj=raw, filename='', mode='wb', mtime=0)
+        else:
+            binary = raw
+        with io.TextIOWrapper(binary, encoding='utf-8') as fh:
+            for episode in episodes:
+                fh.write(json.dumps(episode, ensure_ascii=False, default=json_default) + '\n')
 
 
 def add_episode_exclusion(row: dict[str, Any], episode_ids: set[int], episode_keys: set[str]) -> None:
@@ -517,10 +531,7 @@ def main() -> int:
 
     episodes = group_rows(rows)
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
-    opener = gzip.open if args.out.endswith(".gz") else open
-    with opener(args.out, "wt", encoding="utf-8") as fh:
-        for episode in episodes:
-            fh.write(json.dumps(episode, ensure_ascii=False, default=json_default) + "\n")
+    write_backlog(Path(args.out), episodes)
 
     counts: dict[str, int] = defaultdict(int)
     for episode in episodes:

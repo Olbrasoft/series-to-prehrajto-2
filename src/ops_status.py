@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import gzip
 import json
+import os
 import subprocess
 from collections import Counter
 from pathlib import Path
@@ -34,7 +35,7 @@ def gh_runs() -> list[dict]:
         out = subprocess.check_output(
             [
                 "gh", "run", "list",
-                "--repo", "Olbrasoft/series-to-prehrajto-1",
+                "--repo", os.environ.get("GITHUB_REPOSITORY", "Olbrasoft/series-to-prehrajto-2"),
                 "--limit", "20",
                 "--json", "databaseId,workflowName,status,conclusion,createdAt,headBranch",
             ],
@@ -150,6 +151,7 @@ def main() -> int:
             "language_pending_whisper_sources": len(queue_source_ids - whisper_attempted_source_ids),
             "whisper_review_sources": len(whisper_review),
             "whisper_review_pending_sources": len(pending_whisper_review),
+            "upload_pending_checkpoints": len(state.get('pending_uploads', [])),
             "subtitle_followup_sources": len(subtitle_followup),
             "subtitle_followup_pending_sources": len(pending_subtitles),
         },
