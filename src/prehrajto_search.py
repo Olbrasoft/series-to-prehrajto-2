@@ -246,7 +246,7 @@ def search_pages(
         page_fetch_urls = fetch_urls if page_index == 0 else (_proxy_fetch_urls(next_url) or [("direct", next_url)])
         response: requests.Response | None = None
         for attempt in range(max(retries, 1)):
-            for _fetch_label, fetch_url in page_fetch_urls:
+            for fetch_label, fetch_url in page_fetch_urls:
                 wait = min_interval - (time.monotonic() - _last_search_at)
                 if wait > 0:
                     time.sleep(wait)
@@ -256,6 +256,9 @@ def search_pages(
                         timeout=timeout,
                         headers=BROWSER_HEADERS,
                     )
+                except requests.RequestException as exc:
+                    # Request exception text includes the proxy URL and its key.
+                    raise type(exc)(f"{fetch_label} transport error: {type(exc).__name__}") from None
                 finally:
                     _last_search_at = time.monotonic()
                 if response.ok:
@@ -278,6 +281,6 @@ def search_pages(
             time.sleep(max(retry_seconds, 10.0 * (attempt + 1)))
         else:
             if response is not None:
-                response.raise_for_status()
+                raise requests.HTTPError(f"Search HTTP {response.status_code}", response=response) from None
             raise RuntimeError(f"Search failed without a response for {query!r}")
     return pages

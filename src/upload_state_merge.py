@@ -6,6 +6,10 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+if __package__:
+    from .diagnostic_redaction import redact_diagnostics
+else:
+    from diagnostic_redaction import redact_diagnostics
 
 
 DESCRIPTION_FIELDS = {"description_updated_at", "description_text_hash", "description_source"}
@@ -58,6 +62,8 @@ def merge_pending_uploads(rows: list[dict], uploads: list[dict]) -> list[dict]:
 
 
 def merge_state(current: dict, incoming: dict, *, upload_account: str | None = None) -> dict:
+    current = redact_diagnostics(current)
+    incoming = redact_diagnostics(incoming)
     merged = {"schema_version": current.get("schema_version") or incoming.get("schema_version") or 1}
 
     uploads_by_key: dict[tuple[str, int] | tuple[int, int, int], dict] = {}
@@ -114,7 +120,7 @@ def load_state(path: Path) -> dict:
 
 def save_state(path: Path, state: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(redact_diagnostics(state), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def main() -> int:

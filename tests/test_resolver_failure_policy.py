@@ -64,3 +64,31 @@ def test_undersized_stream_never_starts_audio_download(monkeypatch):
     result = audit.audit_provider({'provider': 'prehrajto', 'source_url': 'https://prehraj.to/example'},
         sample_seconds=30, probe_stream=True, minimum_stream_bytes=300 * 1024 ** 2)
     assert result['whisper']['status'] == 'stream_undersized'
+
+
+@pytest.mark.parametrize('transport', [False, True])
+def test_search_failures_never_expose_proxy_key(monkeypatch, transport):
+    import traceback
+    import requests
+    import prehrajto_search as search
+    url = 'https://proxy.invalid/?key=private-proxy-value&url=episode'
+    monkeypatch.setattr(search, '_proxy_fetch_urls', lambda _: [('cz_proxy_1', url)])
+    monkeypatch.setattr(search.time, 'sleep', lambda _: None)
+    session = requests.Session()
+    if transport:
+        def get(*args, **kwargs):
+            raise requests.Timeout('Timed out requesting ' + url)
+    else:
+        def get(*args, **kwargs):
+            response = requests.Response()
+            response.status_code = 503
+            response.url = url
+            response._content = b'Unavailable'
+            return response
+    monkeypatch.setattr(session, 'get', get)
+    with pytest.raises(requests.RequestException) as error:
+        search.search_pages('Example S01E01', session=session, retries=1, min_interval=0)
+    assert 'private-proxy-value' not in str(error.value)
+    assert 'private-proxy-value' not in ''.join(traceback.format_exception(error.value))
+    if not transport:
+        assert error.value.response.status_code == 503
