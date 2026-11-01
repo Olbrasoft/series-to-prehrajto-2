@@ -1,30 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 113928,
-    "manifest_upload_ready_episodes": 62,
-    "uploaded_episodes": 77741,
-    "prepared_source_episodes": 66603,
+    "manifest_upload_ready_episodes": 65,
+    "uploaded_episodes": 77742,
+    "prepared_source_episodes": 66612,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 34,
-    "language_whisper_attempted_sources": 28,
+    "language_audited_sources": 50,
+    "language_whisper_attempted_sources": 31,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54072,
-    "whisper_review_pending_sources": 38209,
-    "upload_pending_checkpoints": 1,
+    "whisper_review_pending_sources": 38210,
+    "upload_pending_checkpoints": 0,
     "subtitle_followup_sources": 49240,
     "subtitle_followup_pending_sources": 49240
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-01T20:22:07Z",
+      "databaseId": 41346493449,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-01T20:21:05Z",
+      "databaseId": 41346404119,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T20:20:45Z",
+      "databaseId": 41346373967,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T20:20:11Z",
+      "databaseId": 41346320874,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-01T20:19:41Z",
       "databaseId": 41346277074,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -32,15 +64,15 @@
       "createdAt": "2026-11-01T20:19:09Z",
       "databaseId": 41346231272,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-01T20:19:05Z",
       "databaseId": 41346225060,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -76,11 +108,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T20:15:13Z",
       "databaseId": 41345893613,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +136,7 @@
       "createdAt": "2026-11-01T20:12:38Z",
       "databaseId": 41345668804,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "pending",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T20:10:05Z",
-      "databaseId": 41345436063,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T20:10:02Z",
-      "databaseId": 41345429935,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-01T20:08:39Z",
-      "databaseId": 41345312142,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T20:08:37Z",
-      "databaseId": 41345308718,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -363125,6 +363125,11 @@
         "episode_id": 85843,
         "display_name": "Blunt Talk - Plané řeči S01E08 - 8. epizoda CZ Titulky",
         "video_id": 30705986
+      },
+      {
+        "episode_id": 74394,
+        "display_name": "Zig a Sharko S03E08 - Under the Sea CZ Titulky",
+        "video_id": 30706050
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -725967,6 +725972,11 @@
         "episode_id": 85843,
         "display_name": "Blunt Talk - Plané řeči S01E08 - 8. epizoda CZ Titulky",
         "video_id": 30705986
+      },
+      {
+        "episode_id": 74394,
+        "display_name": "Zig a Sharko S03E08 - Under the Sea CZ Titulky",
+        "video_id": 30706050
       }
     ],
     "prepared_not_upload_ready": [
@@ -727128,14 +727138,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 26,
-    "disabled": 6,
+    "disabled": 19,
+    "ok": 29,
     "resolve_failed": 2
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36598,
+    "needs_whisper": 36599,
     "whisper_confirmed_cz": 3525,
-    "whisper_non_cz_needs_subtitles": 12338,
+    "whisper_non_cz_needs_subtitles": 12337,
     "whisper_failed": 1611
   },
   "subtitle_followup_statuses": {
