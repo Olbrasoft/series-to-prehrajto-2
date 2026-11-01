@@ -1,8 +1,8 @@
 # Public repository security preflight
 
-2026-11-01: publication remains blocked pending credential and history cleanup.
+2026-11-01: publication completed after credential rotation and reviewed history cleanup.
 
-The repository is private. A full-history review included all remote branches,
+The repository remained private throughout the audit. The initial review included all remote branches,
 tags and pull-request refs (360 commits, 776 unique blobs), gzip-expanded state,
 the migration release attachment, the external subtitle artifact and 318 Actions
 log archives. The Git-diff scanner missed the custom proxy shared secret; scanning complete
@@ -19,14 +19,14 @@ cookie values, login bodies, upload nonces or CDN signatures. The regression
 suite passes 201 tests locally.
 
 A mirror of all original remote refs and downloaded log archives is retained
-privately under `/home/jirka/.cache/series-public-audit-20261101`. An offline
-filtered mirror is being prepared for review. No remote history has been
-rewritten, no logs have been deleted and no shared server credential has been
-changed. GitHub pull-request/cached commit views can retain original objects even
-after a branch force-push. Before publication, reconcile those views and revoke
-or rotate the exposed shared credential across all dependent services. A normal
-cleanup commit is insufficient for publishing a repository containing a live
-credential in historical refs.
+privately under `/home/jirka/.cache/series-public-audit-20261101`. A reviewed filtered mirror was installed atomically across all five branch/tag
+refs, with explicit leases against the audited originals. The final candidate
+contained 363 commits and 787 unique blobs: 612 previously scanned unchanged
+blobs plus 175 rescanned changed/new blobs. All commit/tag metadata was checked.
+No configured credentials remained and the current application tree matched
+the tested tree exactly. GitHub cached PR views can retain revoked originals;
+the exposed shared credential was invalidated before publication. A normal
+cleanup commit alone would not have made the original live credential safe.
 
 Historical upload logs also contain scoped upload nonces/signatures and
 ancillary cookie values. Treat these logs conservatively before making
@@ -56,7 +56,25 @@ working changes were preserved by using separate worktrees.
 
 Original Git refs, release/artifact copies and 318 downloaded log archives remain
 in the private audit directory. Five run log sets containing authentication
-response diagnostics were selected for removal from GitHub after backup. Normal
+response diagnostics were removed from GitHub after backup. Normal
 workflow records and durable upload/subtitle state are preserved. Cached PR views
 may retain the revoked historical key; it no longer grants access. The new key
 must never be included in the rewritten Git history or audit reports.
+
+## Public production acceptance
+
+Both public regression suites completed successfully: upload run
+[41355430210](https://github.com/Olbrasoft/series-to-prehrajto-2/actions/runs/41355430210)
+passed 201 tests; subtitle run
+[41355444546](https://github.com/Olbrasoft/series-to-prehrajto-2/actions/runs/41355444546)
+passed 94 tests and 5 subtests. Secret scanning and push protection are enabled.
+Normal production workflows and both upload accounts were restored; alternate
+subtitle discovery remains paused as requested.
+
+Sync run 41355609280 durably recorded primary target 30708445 (Až po uši S01E09)
+and serialy target 30708436 (Život s Louiem S03E08) at 22:11:37Z. Authenticated
+profile checks independently found both targets on the expected accounts,
+neither deleted nor processing. The external subtitle attachment pipeline also
+completed successfully. One startup shard hit an unrelated GitHub HTTP/2 fetch
+error before any upload; a separate workflow fix adds HTTP/1.1 and bounded
+startup fetch retries while the other three shards continue uploading.

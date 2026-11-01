@@ -81,3 +81,11 @@ backed up privately before the owner-approved history rewrite and log cleanup.
 Never restore the old secret or merge pre-cleanup Git history into the new main.
 Use fresh post-cleanup refs. `upload_state_merge` sanitizes credential-bearing
 query parameters, including incoming stale snapshots, before saving or merging.
+
+Publication completed after the reviewed, owner-approved rewrite. All five
+branch/tag refs were updated atomically and local task branches were aligned.
+Public Actions runs 41355430210 and 41355444546 passed 201 and 94 tests respectively.
+Secret scanning and push protection are enabled. Production uploads were resumed
+and new targets 30708445 (primary) and 30708436 (serialy) were independently
+verified on their accounts, fully processed. The public billing block is gone.
+Original Git history and sensitive log backups remain private in the audit cache.
