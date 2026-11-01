@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 113928,
     "manifest_upload_ready_episodes": 66,
-    "uploaded_episodes": 77756,
+    "uploaded_episodes": 77760,
     "prepared_source_episodes": 66613,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,75 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54071,
     "whisper_review_pending_sources": 38206,
-    "upload_pending_checkpoints": 0,
+    "upload_pending_checkpoints": 1,
     "subtitle_followup_sources": 49243,
     "subtitle_followup_pending_sources": 49243
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:15:22Z",
+      "databaseId": 41356202810,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:14:52Z",
+      "databaseId": 41356156144,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:12:12Z",
+      "databaseId": 41355929402,
+      "headBranch": "fix/retry-upload-startup-fetch",
+      "status": "queued",
+      "workflowName": "upload-manifest-tests"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-01T22:09:57Z",
+      "databaseId": 41355722761,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:09:55Z",
+      "databaseId": 41355719474,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:09:53Z",
+      "databaseId": 41355716405,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-01T22:09:51Z",
+      "databaseId": 41355713313,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T22:09:47Z",
+      "databaseId": 41355708454,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
     {
       "conclusion": "success",
       "createdAt": "2026-11-01T22:08:48Z",
@@ -28,11 +92,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T22:08:46Z",
       "databaseId": 41355614950,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-01T21:53:14Z",
-      "databaseId": 41354279994,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-01T21:50:08Z",
-      "databaseId": 41354026723,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-01T21:49:45Z",
-      "databaseId": 41353994390,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-01T21:45:03Z",
-      "databaseId": 41353593519,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-01T21:44:48Z",
-      "databaseId": 41353572250,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-01T21:44:41Z",
-      "databaseId": 41353563511,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-01T21:43:15Z",
-      "databaseId": 41353445931,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-01T21:43:09Z",
-      "databaseId": 41353437180,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -190837,6 +190837,16 @@
         "video_id": 30706585
       },
       {
+        "episode_id": 165253,
+        "display_name": "Až po uši S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30708445
+      },
+      {
+        "episode_id": 128357,
+        "display_name": "Grimsburg S01E13 - 13. epizoda CZ Titulky",
+        "video_id": 30708486
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -363200,6 +363210,16 @@
         "episode_id": 165134,
         "display_name": "My Stubborn S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30706894
+      },
+      {
+        "episode_id": 188058,
+        "display_name": "Život s Louiem S03E08 - Louvieho blízká setkání CZ Dabing",
+        "video_id": 30708436
+      },
+      {
+        "episode_id": 64591,
+        "display_name": "Naruto: Šippúden S01E26 - Deset loutek vs. sto loutek CZ Titulky",
+        "video_id": 30708503
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -553754,6 +553774,16 @@
         "video_id": 30706585
       },
       {
+        "episode_id": 165253,
+        "display_name": "Až po uši S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30708445
+      },
+      {
+        "episode_id": 128357,
+        "display_name": "Grimsburg S01E13 - 13. epizoda CZ Titulky",
+        "video_id": 30708486
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -726117,6 +726147,16 @@
         "episode_id": 165134,
         "display_name": "My Stubborn S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30706894
+      },
+      {
+        "episode_id": 188058,
+        "display_name": "Život s Louiem S03E08 - Louvieho blízká setkání CZ Dabing",
+        "video_id": 30708436
+      },
+      {
+        "episode_id": 64591,
+        "display_name": "Naruto: Šippúden S01E26 - Deset loutek vs. sto loutek CZ Titulky",
+        "video_id": 30708503
       }
     ],
     "prepared_not_upload_ready": [
