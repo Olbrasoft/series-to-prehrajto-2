@@ -2,37 +2,61 @@
   "counts": {
     "backlog_episodes": 114012,
     "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 77682,
-    "prepared_source_episodes": 66520,
+    "uploaded_episodes": 77684,
+    "prepared_source_episodes": 66521,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 60,
+    "language_audited_sources": 61,
     "language_whisper_attempted_sources": 49,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54087,
-    "whisper_review_pending_sources": 38252,
-    "upload_pending_checkpoints": 1,
+    "whisper_review_pending_sources": 38253,
+    "upload_pending_checkpoints": 0,
     "subtitle_followup_sources": 49176,
     "subtitle_followup_pending_sources": 49176
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-01T16:50:27Z",
+      "databaseId": 41328373213,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-01T16:49:07Z",
+      "databaseId": 41328259639,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-01T16:49:03Z",
+      "databaseId": 41328253147,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-01T16:48:04Z",
       "databaseId": 41328169903,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-01T16:47:59Z",
       "databaseId": 41328163443,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -40,15 +64,15 @@
       "createdAt": "2026-11-01T16:44:35Z",
       "databaseId": 41327868537,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T16:43:51Z",
       "databaseId": 41327808054,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +108,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-01T16:41:31Z",
       "databaseId": 41327616330,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T16:34:13Z",
-      "databaseId": 41327001711,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T16:33:15Z",
-      "databaseId": 41326920627,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-01T16:33:06Z",
-      "databaseId": 41326907214,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -190625,6 +190625,16 @@
         "episode_id": 180909,
         "display_name": "Po stopách 11. září S01E02 - 2. epizoda CZ Dabing",
         "video_id": 30700768
+      },
+      {
+        "episode_id": 175797,
+        "display_name": "Kdo zabil Jill Dandovou? S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30700821
+      },
+      {
+        "episode_id": 74597,
+        "display_name": "Zig a Sharko S03E01 - Welcome on Board CZ Titulky",
+        "video_id": 30700910
       },
       {
         "episode_id": 114182,
@@ -553174,6 +553184,16 @@
         "video_id": 30700768
       },
       {
+        "episode_id": 175797,
+        "display_name": "Kdo zabil Jill Dandovou? S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30700821
+      },
+      {
+        "episode_id": 74597,
+        "display_name": "Zig a Sharko S03E01 - Welcome on Board CZ Titulky",
+        "video_id": 30700910
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -726538,14 +726558,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 11,
+    "disabled": 12,
     "ok": 48,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36632,
+    "needs_whisper": 36633,
     "whisper_confirmed_cz": 3503,
-    "whisper_non_cz_needs_subtitles": 12332,
+    "whisper_non_cz_needs_subtitles": 12331,
     "whisper_failed": 1620
   },
   "subtitle_followup_statuses": {
