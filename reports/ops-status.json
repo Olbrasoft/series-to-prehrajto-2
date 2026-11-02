@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 113456,
     "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 78224,
+    "uploaded_episodes": 78227,
     "prepared_source_episodes": 66852,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,49 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54005,
     "whisper_review_pending_sources": 37960,
-    "upload_pending_checkpoints": 26,
+    "upload_pending_checkpoints": 25,
     "subtitle_followup_sources": 49453,
     "subtitle_followup_pending_sources": 49453
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T15:12:06Z",
+      "databaseId": 41469240538,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T15:11:54Z",
+      "databaseId": 41469205282,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T15:11:50Z",
+      "databaseId": 41469194607,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T15:11:40Z",
+      "databaseId": 41469168197,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T15:10:45Z",
       "databaseId": 41469018207,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,15 +64,15 @@
       "createdAt": "2026-11-02T15:09:42Z",
       "databaseId": 41468845629,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T15:09:19Z",
       "databaseId": 41468779260,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "pending",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T14:57:45Z",
-      "databaseId": 41466915351,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T14:57:36Z",
-      "databaseId": 41466892007,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T14:55:55Z",
-      "databaseId": 41466629296,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T14:55:41Z",
-      "databaseId": 41466591794,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -191992,6 +191992,11 @@
         "video_id": 30734687
       },
       {
+        "episode_id": 160673,
+        "display_name": "World of Winx S01E11 - 11. epizoda CZ Dabing",
+        "video_id": 30734947
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365540,6 +365545,16 @@
         "episode_id": 155202,
         "display_name": "The Café Terrace and Its Goddesses S01E07 - 7. epizoda CZ Titulky",
         "video_id": 30734643
+      },
+      {
+        "episode_id": 163798,
+        "display_name": "Město andělů, město smrti S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30734903
+      },
+      {
+        "episode_id": 144211,
+        "display_name": "Backstage S01E12 - Dobré vztahy CZ Dabing",
+        "video_id": 30734929
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -557249,6 +557264,11 @@
         "video_id": 30734687
       },
       {
+        "episode_id": 160673,
+        "display_name": "World of Winx S01E11 - 11. epizoda CZ Dabing",
+        "video_id": 30734947
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -730797,6 +730817,16 @@
         "episode_id": 155202,
         "display_name": "The Café Terrace and Its Goddesses S01E07 - 7. epizoda CZ Titulky",
         "video_id": 30734643
+      },
+      {
+        "episode_id": 163798,
+        "display_name": "Město andělů, město smrti S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30734903
+      },
+      {
+        "episode_id": 144211,
+        "display_name": "Backstage S01E12 - Dobré vztahy CZ Dabing",
+        "video_id": 30734929
       }
     ],
     "prepared_not_upload_ready": [
