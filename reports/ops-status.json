@@ -2,16 +2,16 @@
   "counts": {
     "backlog_episodes": 113387,
     "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 78234,
+    "uploaded_episodes": 78235,
     "prepared_source_episodes": 66860,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 56,
-    "language_whisper_attempted_sources": 25,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54006,
     "whisper_review_pending_sources": 37971,
     "upload_pending_checkpoints": 25,
@@ -19,6 +19,22 @@
     "subtitle_followup_pending_sources": 49456
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T15:37:01Z",
+      "databaseId": 41473339371,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T15:35:02Z",
+      "databaseId": 41473005658,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T15:34:57Z",
@@ -28,11 +44,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T15:33:53Z",
       "databaseId": 41472816786,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -52,11 +68,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T15:33:07Z",
       "databaseId": 41472689346,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +80,7 @@
       "createdAt": "2026-11-02T15:32:47Z",
       "databaseId": 41472636255,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -96,15 +112,15 @@
       "createdAt": "2026-11-02T15:30:54Z",
       "databaseId": 41472327302,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T15:29:30Z",
       "databaseId": 41472087067,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T15:22:07Z",
-      "databaseId": 41470887258,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T15:21:55Z",
-      "databaseId": 41470855824,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -192020,6 +192020,11 @@
         "episode_id": 144212,
         "display_name": "Backstage S01E13 - Vydrž CZ Dabing",
         "video_id": 30735284
+      },
+      {
+        "episode_id": 158004,
+        "display_name": "John Carpenter's Suburban Screams S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30735372
       },
       {
         "episode_id": 114182,
@@ -557329,6 +557334,11 @@
         "video_id": 30735284
       },
       {
+        "episode_id": 158004,
+        "display_name": "John Carpenter's Suburban Screams S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30735372
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -732058,8 +732068,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 24,
-    "disabled": 31,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
