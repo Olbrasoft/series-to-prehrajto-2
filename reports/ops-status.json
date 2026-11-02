@@ -1,30 +1,46 @@
 {
   "counts": {
     "backlog_episodes": 113335,
-    "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 78311,
-    "prepared_source_episodes": 66974,
+    "manifest_upload_ready_episodes": 16,
+    "uploaded_episodes": 78312,
+    "prepared_source_episodes": 66973,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 54,
-    "language_whisper_attempted_sources": 42,
+    "language_whisper_attempted_sources": 47,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53998,
-    "whisper_review_pending_sources": 37979,
+    "whisper_review_sources": 53997,
+    "whisper_review_pending_sources": 37974,
     "upload_pending_checkpoints": 27,
-    "subtitle_followup_sources": 49507,
-    "subtitle_followup_pending_sources": 49507
+    "subtitle_followup_sources": 49510,
+    "subtitle_followup_pending_sources": 49510
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T20:26:02Z",
+      "databaseId": 41519142873,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T20:25:47Z",
+      "databaseId": 41519105467,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T20:23:33Z",
       "databaseId": 41518767359,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +80,7 @@
       "createdAt": "2026-11-02T20:22:59Z",
       "databaseId": 41518680569,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -132,11 +148,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T20:15:28Z",
       "databaseId": 41517555533,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T20:14:38Z",
-      "databaseId": 41517420936,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T20:13:16Z",
-      "databaseId": 41517205678,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -192215,6 +192215,11 @@
         "episode_id": 124485,
         "display_name": "Melancholia S01E11 - 11. epizoda CZ Titulky",
         "video_id": 30741025
+      },
+      {
+        "episode_id": 155993,
+        "display_name": "Mary Shelley's Frankenhole S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30741243
       },
       {
         "episode_id": 114182,
@@ -557909,6 +557914,11 @@
         "video_id": 30741025
       },
       {
+        "episode_id": 155993,
+        "display_name": "Mary Shelley's Frankenhole S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30741243
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -732828,17 +732838,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 12,
-    "ok": 41,
+    "ok": 46,
+    "disabled": 7,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36371,
+    "needs_whisper": 36366,
     "whisper_confirmed_cz": 3578,
-    "whisper_non_cz_needs_subtitles": 12441,
+    "whisper_non_cz_needs_subtitles": 12445,
     "whisper_failed": 1608
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49507
+    "needs_subtitle_setup_after_prehrajto_processing": 49510
   }
 }
