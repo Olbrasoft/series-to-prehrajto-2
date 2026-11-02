@@ -2,29 +2,117 @@
   "counts": {
     "backlog_episodes": 113531,
     "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 78131,
-    "prepared_source_episodes": 66767,
+    "uploaded_episodes": 78134,
+    "prepared_source_episodes": 66768,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 37,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 54020,
-    "whisper_review_pending_sources": 38014,
-    "upload_pending_checkpoints": 21,
-    "subtitle_followup_sources": 49381,
-    "subtitle_followup_pending_sources": 49381
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 54017,
+    "whisper_review_pending_sources": 38002,
+    "upload_pending_checkpoints": 23,
+    "subtitle_followup_sources": 49384,
+    "subtitle_followup_pending_sources": 49384
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:15:57Z",
+      "databaseId": 41435427417,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:15:20Z",
+      "databaseId": 41435340576,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:15:01Z",
+      "databaseId": 41435294635,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:13:35Z",
+      "databaseId": 41435090008,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T11:13:27Z",
+      "databaseId": 41435071001,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:13:22Z",
+      "databaseId": 41435061269,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:13:17Z",
+      "databaseId": 41435049039,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T11:12:55Z",
+      "databaseId": 41434999038,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T11:08:47Z",
+      "databaseId": 41434427317,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T11:08:43Z",
+      "databaseId": 41434417632,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:08:43Z",
+      "databaseId": 41434417143,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T11:08:24Z",
       "databaseId": 41434373141,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +124,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T11:08:19Z",
       "databaseId": 41434361129,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -52,11 +140,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T11:04:52Z",
       "databaseId": 41433884605,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +152,7 @@
       "createdAt": "2026-11-02T11:04:48Z",
       "databaseId": 41433875831,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -90,94 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T11:02:48Z",
-      "databaseId": 41433605390,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T11:02:42Z",
-      "databaseId": 41433591590,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T11:02:04Z",
-      "databaseId": 41433509657,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T11:00:08Z",
-      "databaseId": 41433234877,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:58:57Z",
-      "databaseId": 41433082559,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T10:56:44Z",
-      "databaseId": 41432803284,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:56:13Z",
-      "databaseId": 41432738173,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T10:56:10Z",
-      "databaseId": 41432730751,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T10:55:57Z",
-      "databaseId": 41432702772,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T10:55:51Z",
-      "databaseId": 41432688720,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:55:34Z",
-      "databaseId": 41432652310,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -191782,6 +191782,16 @@
         "video_id": 30725627
       },
       {
+        "episode_id": 153544,
+        "display_name": "A Man Who Defies the World of BL S03E01 - 1. epizoda CZ Titulky",
+        "video_id": 30725907
+      },
+      {
+        "episode_id": 201761,
+        "display_name": "Město tučňáků S01E04 - Ztráty a nálezy CZ Titulky",
+        "video_id": 30725891
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365075,6 +365085,11 @@
         "episode_id": 135982,
         "display_name": "Red Swan S01E07 - 7. epizoda CZ Titulky",
         "video_id": 30725643
+      },
+      {
+        "episode_id": 144823,
+        "display_name": "The End S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30725884
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -556574,6 +556589,16 @@
         "video_id": 30725627
       },
       {
+        "episode_id": 153544,
+        "display_name": "A Man Who Defies the World of BL S03E01 - 1. epizoda CZ Titulky",
+        "video_id": 30725907
+      },
+      {
+        "episode_id": 201761,
+        "display_name": "Město tučňáků S01E04 - Ztráty a nálezy CZ Titulky",
+        "video_id": 30725891
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -729867,6 +729892,11 @@
         "episode_id": 135982,
         "display_name": "Red Swan S01E07 - 7. epizoda CZ Titulky",
         "video_id": 30725643
+      },
+      {
+        "episode_id": 144823,
+        "display_name": "The End S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30725884
       }
     ],
     "prepared_not_upload_ready": [
@@ -731028,16 +731058,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36406,
+    "needs_whisper": 36394,
     "whisper_confirmed_cz": 3577,
-    "whisper_non_cz_needs_subtitles": 12429,
+    "whisper_non_cz_needs_subtitles": 12438,
     "whisper_failed": 1608
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49381
+    "needs_subtitle_setup_after_prehrajto_processing": 49384
   }
 }
