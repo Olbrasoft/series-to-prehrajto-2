@@ -1,30 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 113531,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 78126,
+    "manifest_upload_ready_episodes": 11,
+    "uploaded_episodes": 78129,
     "prepared_source_episodes": 66767,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 37,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 56,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 59,
+    "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54020,
     "whisper_review_pending_sources": 38014,
     "upload_pending_checkpoints": 22,
-    "subtitle_followup_sources": 49380,
-    "subtitle_followup_pending_sources": 49380
+    "subtitle_followup_sources": 49381,
+    "subtitle_followup_pending_sources": 49381
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T10:58:57Z",
+      "databaseId": 41433082559,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T10:56:44Z",
+      "databaseId": 41432803284,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T10:56:13Z",
+      "databaseId": 41432738173,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T10:56:10Z",
+      "databaseId": 41432730751,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T10:55:57Z",
+      "databaseId": 41432702772,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T10:55:51Z",
+      "databaseId": 41432688720,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T10:55:34Z",
       "databaseId": 41432652310,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +80,7 @@
       "createdAt": "2026-11-02T10:54:58Z",
       "databaseId": 41432574723,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -64,7 +112,7 @@
       "createdAt": "2026-11-02T10:52:04Z",
       "databaseId": 41432206673,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
@@ -100,11 +148,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T10:49:40Z",
       "databaseId": 41431891204,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:44:51Z",
-      "databaseId": 41431258421,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T10:44:50Z",
-      "databaseId": 41431256564,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T10:44:46Z",
-      "databaseId": 41431247239,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:43:39Z",
-      "databaseId": 41431101562,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:43:31Z",
-      "databaseId": 41431084447,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T10:43:04Z",
-      "databaseId": 41431026661,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -191772,6 +191772,11 @@
         "video_id": 30725348
       },
       {
+        "episode_id": 153545,
+        "display_name": "A Man Who Defies the World of BL S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 30725566
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365050,6 +365055,16 @@
         "episode_id": 201758,
         "display_name": "Město tučňáků S01E01 - Návrat CZ Titulky",
         "video_id": 30725433
+      },
+      {
+        "episode_id": 201759,
+        "display_name": "Město tučňáků S01E02 - Co nového v hnízdě CZ Titulky",
+        "video_id": 30725475
+      },
+      {
+        "episode_id": 144822,
+        "display_name": "The End S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30725536
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -556539,6 +556554,11 @@
         "video_id": 30725348
       },
       {
+        "episode_id": 153545,
+        "display_name": "A Man Who Defies the World of BL S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 30725566
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -729817,6 +729837,16 @@
         "episode_id": 201758,
         "display_name": "Město tučňáků S01E01 - Návrat CZ Titulky",
         "video_id": 30725433
+      },
+      {
+        "episode_id": 201759,
+        "display_name": "Město tučňáků S01E02 - Co nového v hnízdě CZ Titulky",
+        "video_id": 30725475
+      },
+      {
+        "episode_id": 144822,
+        "display_name": "The End S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30725536
       }
     ],
     "prepared_not_upload_ready": [
@@ -730978,8 +731008,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 16,
-    "ok": 39,
+    "disabled": 18,
+    "ok": 40,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -730989,6 +731019,6 @@
     "whisper_failed": 1608
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49380
+    "needs_subtitle_setup_after_prehrajto_processing": 49381
   }
 }
