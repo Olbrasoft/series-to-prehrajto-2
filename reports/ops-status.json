@@ -2,29 +2,85 @@
   "counts": {
     "backlog_episodes": 113335,
     "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 78323,
-    "prepared_source_episodes": 66979,
+    "uploaded_episodes": 78325,
+    "prepared_source_episodes": 66981,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 28,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53996,
     "whisper_review_pending_sources": 37969,
     "upload_pending_checkpoints": 26,
-    "subtitle_followup_sources": 49516,
-    "subtitle_followup_pending_sources": 49516
+    "subtitle_followup_sources": 49517,
+    "subtitle_followup_pending_sources": 49517
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T21:12:57Z",
+      "databaseId": 41526288239,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T21:12:57Z",
+      "databaseId": 41526288147,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "refresh-backlog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T21:12:38Z",
+      "databaseId": 41526239811,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T21:12:34Z",
+      "databaseId": 41526230776,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T21:12:29Z",
+      "databaseId": 41526217112,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T21:11:28Z",
+      "databaseId": 41526058551,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T21:06:06Z",
+      "databaseId": 41525229336,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T21:05:00Z",
       "databaseId": 41525053785,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -40,7 +96,7 @@
       "createdAt": "2026-11-02T21:04:38Z",
       "databaseId": 41524998612,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -56,15 +112,15 @@
       "createdAt": "2026-11-02T21:04:26Z",
       "databaseId": 41524971072,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T21:04:22Z",
       "databaseId": 41524961955,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +140,11 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T21:02:51Z",
       "databaseId": 41524727673,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T20:55:26Z",
-      "databaseId": 41523622446,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T20:55:20Z",
-      "databaseId": 41523606704,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T20:54:45Z",
-      "databaseId": 41523518739,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T20:52:52Z",
-      "databaseId": 41523234755,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T20:52:46Z",
-      "databaseId": 41523220656,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T20:52:14Z",
-      "databaseId": 41523136366,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T20:52:02Z",
-      "databaseId": 41523104414,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -192245,6 +192245,16 @@
         "episode_id": 156000,
         "display_name": "Mary Shelley's Frankenhole S02E01 - 1. epizoda CZ Titulky",
         "video_id": 30742033
+      },
+      {
+        "episode_id": 156004,
+        "display_name": "Mary Shelley's Frankenhole S02E05 - 5. epizoda CZ Titulky",
+        "video_id": 30742320
+      },
+      {
+        "episode_id": 156001,
+        "display_name": "Mary Shelley's Frankenhole S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 30742363
       },
       {
         "episode_id": 114182,
@@ -557999,6 +558009,16 @@
         "video_id": 30742033
       },
       {
+        "episode_id": 156004,
+        "display_name": "Mary Shelley's Frankenhole S02E05 - 5. epizoda CZ Titulky",
+        "video_id": 30742320
+      },
+      {
+        "episode_id": 156001,
+        "display_name": "Mary Shelley's Frankenhole S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 30742363
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -732948,6 +732968,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 8,
     "ok": 19,
     "resolve_failed": 1
   },
@@ -732958,6 +732979,6 @@
     "whisper_failed": 1608
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49516
+    "needs_subtitle_setup_after_prehrajto_processing": 49517
   }
 }
