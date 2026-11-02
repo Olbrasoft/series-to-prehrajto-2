@@ -2,29 +2,69 @@
   "counts": {
     "backlog_episodes": 113292,
     "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 78361,
-    "prepared_source_episodes": 67022,
+    "uploaded_episodes": 78362,
+    "prepared_source_episodes": 67021,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53994,
     "whisper_review_pending_sources": 37961,
-    "upload_pending_checkpoints": 27,
+    "upload_pending_checkpoints": 28,
     "subtitle_followup_sources": 49532,
     "subtitle_followup_pending_sources": 49532
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T23:12:52Z",
+      "databaseId": 41543647623,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T23:11:28Z",
+      "databaseId": 41543454717,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T23:11:03Z",
+      "databaseId": 41543401243,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T23:10:56Z",
+      "databaseId": 41543386430,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T23:08:46Z",
+      "databaseId": 41543086601,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T23:07:40Z",
       "databaseId": 41542932478,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +76,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T23:07:12Z",
       "databaseId": 41542868956,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T23:06:38Z",
       "databaseId": 41542790075,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -72,7 +112,7 @@
       "createdAt": "2026-11-02T23:04:53Z",
       "databaseId": 41542542895,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T23:01:49Z",
-      "databaseId": 41542128221,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T23:00:12Z",
-      "databaseId": 41541900581,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T22:59:35Z",
-      "databaseId": 41541817756,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T22:59:32Z",
-      "databaseId": 41541811632,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T22:56:40Z",
-      "databaseId": 41541442409,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -366225,6 +366225,11 @@
         "episode_id": 164486,
         "display_name": "El niñero S01E10 - 10. epizoda CZ Titulky",
         "video_id": 30744224
+      },
+      {
+        "episode_id": 176946,
+        "display_name": "Providence Falls S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30744493
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -732167,6 +732172,11 @@
         "episode_id": 164486,
         "display_name": "El niñero S01E10 - 10. epizoda CZ Titulky",
         "video_id": 30744224
+      },
+      {
+        "episode_id": 176946,
+        "display_name": "Providence Falls S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30744493
       }
     ],
     "prepared_not_upload_ready": [
@@ -733328,7 +733338,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
