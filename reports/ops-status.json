@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 113387,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 78271,
-    "prepared_source_episodes": 66901,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 78275,
+    "prepared_source_episodes": 66899,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
@@ -14,25 +14,49 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54004,
     "whisper_review_pending_sources": 37973,
-    "upload_pending_checkpoints": 29,
+    "upload_pending_checkpoints": 26,
     "subtitle_followup_sources": 49475,
     "subtitle_followup_pending_sources": 49475
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T17:33:44Z",
-      "databaseId": 41492324080,
+      "createdAt": "2026-11-02T17:39:03Z",
+      "databaseId": 41493157990,
       "headBranch": "main",
       "status": "pending",
-      "workflowName": "update-descriptions"
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T17:38:21Z",
+      "databaseId": 41493053035,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T17:37:24Z",
+      "databaseId": 41492905750,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T17:33:44Z",
+      "databaseId": 41492324080,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T17:33:43Z",
       "databaseId": 41492320228,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +84,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T17:33:08Z",
       "databaseId": 41492230130,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -80,7 +104,7 @@
       "createdAt": "2026-11-02T17:32:42Z",
       "databaseId": 41492160840,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -96,7 +120,7 @@
       "createdAt": "2026-11-02T17:30:27Z",
       "databaseId": 41491807308,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -112,7 +136,7 @@
       "createdAt": "2026-11-02T17:26:43Z",
       "databaseId": 41491235650,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T17:22:28Z",
-      "databaseId": 41490559963,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T17:22:25Z",
-      "databaseId": 41490550166,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T17:21:46Z",
-      "databaseId": 41490448159,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -192117,6 +192117,16 @@
         "video_id": 30737589
       },
       {
+        "episode_id": 150852,
+        "display_name": "Zrazená víra: Když nic není svaté S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30737964
+      },
+      {
+        "episode_id": 150853,
+        "display_name": "Zrazená víra: Když nic není svaté S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30737953
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365775,6 +365785,16 @@
         "episode_id": 161967,
         "display_name": "Burza S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30737882
+      },
+      {
+        "episode_id": 140187,
+        "display_name": "Lucky Luke S01E05 - Kořeny CZ Dabing",
+        "video_id": 30737982
+      },
+      {
+        "episode_id": 150854,
+        "display_name": "Zrazená víra: Když nic není svaté S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30737972
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -557609,6 +557629,16 @@
         "video_id": 30737589
       },
       {
+        "episode_id": 150852,
+        "display_name": "Zrazená víra: Když nic není svaté S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30737964
+      },
+      {
+        "episode_id": 150853,
+        "display_name": "Zrazená víra: Když nic není svaté S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30737953
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -731267,6 +731297,16 @@
         "episode_id": 161967,
         "display_name": "Burza S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30737882
+      },
+      {
+        "episode_id": 140187,
+        "display_name": "Lucky Luke S01E05 - Kořeny CZ Dabing",
+        "video_id": 30737982
+      },
+      {
+        "episode_id": 150854,
+        "display_name": "Zrazená víra: Když nic není svaté S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30737972
       }
     ],
     "prepared_not_upload_ready": [
