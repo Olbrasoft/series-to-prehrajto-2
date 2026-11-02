@@ -1,38 +1,102 @@
 {
   "counts": {
     "backlog_episodes": 113928,
-    "manifest_upload_ready_episodes": 83,
-    "uploaded_episodes": 77817,
-    "prepared_source_episodes": 66645,
+    "manifest_upload_ready_episodes": 82,
+    "uploaded_episodes": 77824,
+    "prepared_source_episodes": 66646,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 48,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 44,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 54056,
-    "whisper_review_pending_sources": 38155,
+    "whisper_review_sources": 54053,
+    "whisper_review_pending_sources": 38146,
     "upload_pending_checkpoints": 3,
-    "subtitle_followup_sources": 49276,
-    "subtitle_followup_pending_sources": 49276
+    "subtitle_followup_sources": 49278,
+    "subtitle_followup_pending_sources": 49278
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T00:22:48Z",
-      "databaseId": 41366828416,
+      "createdAt": "2026-11-02T00:36:23Z",
+      "databaseId": 41368041485,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T00:35:49Z",
+      "databaseId": 41367990339,
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T00:35:25Z",
+      "databaseId": 41367953419,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-02T00:34:52Z",
+      "databaseId": 41367900721,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T00:33:52Z",
+      "databaseId": 41367814365,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T00:33:30Z",
+      "databaseId": 41367784125,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T00:24:06Z",
+      "databaseId": 41366944309,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T00:24:01Z",
+      "databaseId": 41366937824,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T00:22:48Z",
+      "databaseId": 41366828416,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T00:20:32Z",
       "databaseId": 41366626502,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -44,11 +108,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T00:15:19Z",
       "databaseId": 41366151032,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T00:11:10Z",
-      "databaseId": 41365778518,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T00:11:07Z",
-      "databaseId": 41365773488,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T00:11:04Z",
-      "databaseId": 41365769909,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T00:09:49Z",
-      "databaseId": 41365649036,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T00:09:05Z",
-      "databaseId": 41365588391,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T00:07:22Z",
-      "databaseId": 41365437384,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T00:06:41Z",
-      "databaseId": 41365377824,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T00:06:35Z",
-      "databaseId": 41365369146,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -190937,6 +190937,16 @@
         "video_id": 30710982
       },
       {
+        "episode_id": 203796,
+        "display_name": "Coven Academy S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30711030
+      },
+      {
+        "episode_id": 203800,
+        "display_name": "Coven Academy S01E12 CZ Dabing",
+        "video_id": 30711079
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -363505,6 +363515,31 @@
         "episode_id": 203851,
         "display_name": "Znovu mladá S01E07 - 7. epizoda CZ Dabing",
         "video_id": 30711001
+      },
+      {
+        "episode_id": 74362,
+        "display_name": "Digimon S01E27 - 27. epizoda CZ Titulky",
+        "video_id": 30711018
+      },
+      {
+        "episode_id": 165139,
+        "display_name": "My Stubborn S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30711034
+      },
+      {
+        "episode_id": 74366,
+        "display_name": "Digimon S01E31 - 31. epizoda CZ Titulky",
+        "video_id": 30711047
+      },
+      {
+        "episode_id": 74370,
+        "display_name": "Digimon S01E35 - 35. epizoda CZ Titulky",
+        "video_id": 30711087
+      },
+      {
+        "episode_id": 203754,
+        "display_name": "Znovu mladá S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30711131
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -554159,6 +554194,16 @@
         "video_id": 30710982
       },
       {
+        "episode_id": 203796,
+        "display_name": "Coven Academy S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30711030
+      },
+      {
+        "episode_id": 203800,
+        "display_name": "Coven Academy S01E12 CZ Dabing",
+        "video_id": 30711079
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -726727,6 +726772,31 @@
         "episode_id": 203851,
         "display_name": "Znovu mladá S01E07 - 7. epizoda CZ Dabing",
         "video_id": 30711001
+      },
+      {
+        "episode_id": 74362,
+        "display_name": "Digimon S01E27 - 27. epizoda CZ Titulky",
+        "video_id": 30711018
+      },
+      {
+        "episode_id": 165139,
+        "display_name": "My Stubborn S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30711034
+      },
+      {
+        "episode_id": 74366,
+        "display_name": "Digimon S01E31 - 31. epizoda CZ Titulky",
+        "video_id": 30711047
+      },
+      {
+        "episode_id": 74370,
+        "display_name": "Digimon S01E35 - 35. epizoda CZ Titulky",
+        "video_id": 30711087
+      },
+      {
+        "episode_id": 203754,
+        "display_name": "Znovu mladá S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30711131
       }
     ],
     "prepared_not_upload_ready": [
@@ -727888,17 +727958,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 6,
-    "ok": 41,
+    "disabled": 4,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36546,
-    "whisper_confirmed_cz": 3536,
-    "whisper_non_cz_needs_subtitles": 12365,
+    "needs_whisper": 36537,
+    "whisper_confirmed_cz": 3540,
+    "whisper_non_cz_needs_subtitles": 12367,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49276
+    "needs_subtitle_setup_after_prehrajto_processing": 49278
   }
 }
