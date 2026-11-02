@@ -2,14 +2,14 @@
   "counts": {
     "backlog_episodes": 113292,
     "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 78336,
-    "prepared_source_episodes": 67000,
+    "uploaded_episodes": 78337,
+    "prepared_source_episodes": 67004,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 43,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53995,
@@ -21,18 +21,66 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T22:05:13Z",
-      "databaseId": 41534153611,
+      "createdAt": "2026-11-02T22:09:59Z",
+      "databaseId": 41534868743,
       "headBranch": "main",
       "status": "pending",
-      "workflowName": "update-descriptions"
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T22:09:55Z",
+      "databaseId": 41534859756,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T22:08:39Z",
+      "databaseId": 41534675059,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T22:08:33Z",
+      "databaseId": 41534657268,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T22:08:06Z",
+      "databaseId": 41534588289,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T22:07:56Z",
+      "databaseId": 41534562658,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T22:05:13Z",
+      "databaseId": 41534153611,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T22:05:05Z",
       "databaseId": 41534133884,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,27 +100,27 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T22:04:30Z",
       "databaseId": 41534048166,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T22:03:15Z",
       "databaseId": 41533860201,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T22:03:10Z",
       "databaseId": 41533848211,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -80,15 +128,15 @@
       "createdAt": "2026-11-02T22:02:02Z",
       "databaseId": 41533685360,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T22:01:45Z",
       "databaseId": 41533642237,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T21:55:17Z",
-      "databaseId": 41532695785,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T21:52:59Z",
-      "databaseId": 41532360223,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T21:52:55Z",
-      "databaseId": 41532350085,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T21:52:30Z",
-      "databaseId": 41532291306,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T21:51:37Z",
-      "databaseId": 41532158970,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T21:51:32Z",
-      "databaseId": 41532148061,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -366100,6 +366100,11 @@
         "episode_id": 148975,
         "display_name": "SHIBOYUGI: Playing Death Games to Put Food on the Table S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30743076
+      },
+      {
+        "episode_id": 148983,
+        "display_name": "SHIBOYUGI: Playing Death Games to Put Food on the Table S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30743248
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -731917,6 +731922,11 @@
         "episode_id": 148975,
         "display_name": "SHIBOYUGI: Playing Death Games to Put Food on the Table S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30743076
+      },
+      {
+        "episode_id": 148983,
+        "display_name": "SHIBOYUGI: Playing Death Games to Put Food on the Table S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30743248
       }
     ],
     "prepared_not_upload_ready": [
@@ -733078,6 +733088,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 3,
     "ok": 39,
     "resolve_failed": 1
   },
