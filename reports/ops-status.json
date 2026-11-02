@@ -2,16 +2,16 @@
   "counts": {
     "backlog_episodes": 113735,
     "manifest_upload_ready_episodes": 49,
-    "uploaded_episodes": 77994,
+    "uploaded_episodes": 77995,
     "prepared_source_episodes": 66713,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 36,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 56,
-    "language_whisper_attempted_sources": 43,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54034,
     "whisper_review_pending_sources": 38067,
     "upload_pending_checkpoints": 16,
@@ -19,6 +19,62 @@
     "subtitle_followup_pending_sources": 49328
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:10:57Z",
+      "databaseId": 41398313401,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:10:54Z",
+      "databaseId": 41398309157,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:10:46Z",
+      "databaseId": 41398295686,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:07:13Z",
+      "databaseId": 41397939903,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:06:26Z",
+      "databaseId": 41397863086,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T06:05:03Z",
+      "databaseId": 41397724151,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:04:59Z",
+      "databaseId": 41397717504,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-02T06:03:50Z",
@@ -28,11 +84,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T06:03:50Z",
       "databaseId": 41397607243,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +100,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T06:02:06Z",
       "databaseId": 41397443093,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -100,11 +156,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T05:58:07Z",
       "databaseId": 41397051799,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T05:52:14Z",
-      "databaseId": 41396508947,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T05:52:11Z",
-      "databaseId": 41396503701,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T05:51:39Z",
-      "databaseId": 41396453719,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T05:51:35Z",
-      "databaseId": 41396447987,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T05:50:09Z",
-      "databaseId": 41396310781,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T05:50:04Z",
-      "databaseId": 41396301398,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T05:49:55Z",
-      "databaseId": 41396288109,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -191365,6 +191365,11 @@
         "episode_id": 17312,
         "display_name": "Ochránci S01E05 - Epizoda 5 CZ Dabing",
         "video_id": 30718376
+      },
+      {
+        "episode_id": 151808,
+        "display_name": "LEGO Masters Australia S02E04 - 4. epizoda CZ Dabing",
+        "video_id": 30718490
       },
       {
         "episode_id": 114182,
@@ -555474,6 +555479,11 @@
         "video_id": 30718376
       },
       {
+        "episode_id": 151808,
+        "display_name": "LEGO Masters Australia S02E04 - 4. epizoda CZ Dabing",
+        "video_id": 30718490
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -729658,8 +729668,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 13,
-    "ok": 42,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
