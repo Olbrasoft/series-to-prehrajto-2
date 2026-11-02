@@ -2,23 +2,31 @@
   "counts": {
     "backlog_episodes": 113335,
     "manifest_upload_ready_episodes": 14,
-    "uploaded_episodes": 78291,
+    "uploaded_episodes": 78294,
     "prepared_source_episodes": 66935,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 46,
-    "language_whisper_attempted_sources": 46,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54001,
     "whisper_review_pending_sources": 37979,
-    "upload_pending_checkpoints": 27,
+    "upload_pending_checkpoints": 26,
     "subtitle_followup_sources": 49487,
     "subtitle_followup_pending_sources": 49487
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T18:55:10Z",
+      "databaseId": 41505061830,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T18:52:33Z",
@@ -28,11 +36,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T18:52:33Z",
       "databaseId": 41504659693,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,19 +60,19 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T18:50:22Z",
       "databaseId": 41504323719,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T18:50:15Z",
       "databaseId": 41504306483,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +100,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T18:47:06Z",
       "databaseId": 41503823608,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -136,7 +144,7 @@
       "createdAt": "2026-11-02T18:42:35Z",
       "databaseId": 41503126384,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T18:41:35Z",
-      "databaseId": 41502974883,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -192172,6 +192172,16 @@
         "video_id": 30739517
       },
       {
+        "episode_id": 150856,
+        "display_name": "Zrazená víra: Když nic není svaté S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30739592
+      },
+      {
+        "episode_id": 130264,
+        "display_name": "Mladí milionáři S01E05 - 5. díl CZ Dabing",
+        "video_id": 30739665
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365875,6 +365885,11 @@
         "episode_id": 124482,
         "display_name": "Melancholia S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30739495
+      },
+      {
+        "episode_id": 163475,
+        "display_name": "Princezna Triád S01E05 - Dohoda je dohoda CZ Titulky",
+        "video_id": 30739645
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -557764,6 +557779,16 @@
         "video_id": 30739517
       },
       {
+        "episode_id": 150856,
+        "display_name": "Zrazená víra: Když nic není svaté S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30739592
+      },
+      {
+        "episode_id": 130264,
+        "display_name": "Mladí milionáři S01E05 - 5. díl CZ Dabing",
+        "video_id": 30739665
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -731467,6 +731492,11 @@
         "episode_id": 124482,
         "display_name": "Melancholia S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30739495
+      },
+      {
+        "episode_id": 163475,
+        "display_name": "Princezna Triád S01E05 - Dohoda je dohoda CZ Titulky",
+        "video_id": 30739645
       }
     ],
     "prepared_not_upload_ready": [
@@ -732628,7 +732658,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 45,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
