@@ -1,62 +1,142 @@
 {
   "counts": {
     "backlog_episodes": 113531,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 78124,
-    "prepared_source_episodes": 66758,
+    "manifest_upload_ready_episodes": 12,
+    "uploaded_episodes": 78126,
+    "prepared_source_episodes": 66767,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 37,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 56,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54020,
     "whisper_review_pending_sources": 38014,
-    "upload_pending_checkpoints": 21,
-    "subtitle_followup_sources": 49376,
-    "subtitle_followup_pending_sources": 49376
+    "upload_pending_checkpoints": 22,
+    "subtitle_followup_sources": 49380,
+    "subtitle_followup_pending_sources": 49380
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T10:49:40Z",
-      "databaseId": 41431891204,
+      "createdAt": "2026-11-02T10:55:34Z",
+      "databaseId": 41432652310,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T10:48:05Z",
-      "databaseId": 41431689007,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T10:48:02Z",
-      "databaseId": 41431680717,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T10:46:47Z",
-      "databaseId": 41431517795,
+      "createdAt": "2026-11-02T10:54:58Z",
+      "databaseId": 41432574723,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T10:53:16Z",
+      "databaseId": 41432358769,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T10:53:10Z",
+      "databaseId": 41432347556,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-02T10:52:28Z",
+      "databaseId": 41432258368,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T10:52:04Z",
+      "databaseId": 41432206673,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T10:51:58Z",
+      "databaseId": 41432193717,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T10:50:26Z",
+      "databaseId": 41431994356,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T10:50:06Z",
+      "databaseId": 41431947111,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T10:49:47Z",
+      "databaseId": 41431906930,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T10:49:40Z",
+      "databaseId": 41431891204,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T10:48:05Z",
+      "databaseId": 41431689007,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T10:48:02Z",
+      "databaseId": 41431680717,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T10:46:47Z",
+      "databaseId": 41431517795,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T10:44:51Z",
       "databaseId": 41431258421,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T10:43:01Z",
-      "databaseId": 41431020101,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T10:43:00Z",
-      "databaseId": 41431019494,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T10:42:29Z",
-      "databaseId": 41430949536,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:41:42Z",
-      "databaseId": 41430850045,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:41:40Z",
-      "databaseId": 41430844439,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:41:37Z",
-      "databaseId": 41430838681,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T10:41:34Z",
-      "databaseId": 41430831797,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T10:39:32Z",
-      "databaseId": 41430565581,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:38:55Z",
-      "databaseId": 41430486700,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:38:51Z",
-      "databaseId": 41430478558,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -365040,6 +365040,16 @@
         "episode_id": 35914,
         "display_name": "Obnažené S01E05 - 5. epizoda CZ Dabing",
         "video_id": 30724917
+      },
+      {
+        "episode_id": 187495,
+        "display_name": "Gábinin kouzelný domek S09E01 - Hudební Festival CZ Dabing",
+        "video_id": 30725414
+      },
+      {
+        "episode_id": 201758,
+        "display_name": "Město tučňáků S01E01 - Návrat CZ Titulky",
+        "video_id": 30725433
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -729797,6 +729807,16 @@
         "episode_id": 35914,
         "display_name": "Obnažené S01E05 - 5. epizoda CZ Dabing",
         "video_id": 30724917
+      },
+      {
+        "episode_id": 187495,
+        "display_name": "Gábinin kouzelný domek S09E01 - Hudební Festival CZ Dabing",
+        "video_id": 30725414
+      },
+      {
+        "episode_id": 201758,
+        "display_name": "Město tučňáků S01E01 - Návrat CZ Titulky",
+        "video_id": 30725433
       }
     ],
     "prepared_not_upload_ready": [
@@ -730958,6 +730978,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 16,
     "ok": 39,
     "resolve_failed": 1
   },
@@ -730968,6 +730989,6 @@
     "whisper_failed": 1608
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49376
+    "needs_subtitle_setup_after_prehrajto_processing": 49380
   }
 }
