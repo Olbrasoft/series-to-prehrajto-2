@@ -2,29 +2,93 @@
   "counts": {
     "backlog_episodes": 113816,
     "manifest_upload_ready_episodes": 84,
-    "uploaded_episodes": 77891,
+    "uploaded_episodes": 77895,
     "prepared_source_episodes": 66683,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 46,
-    "language_whisper_attempted_sources": 44,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54041,
     "whisper_review_pending_sources": 38102,
-    "upload_pending_checkpoints": 7,
+    "upload_pending_checkpoints": 8,
     "subtitle_followup_sources": 49298,
     "subtitle_followup_pending_sources": 49298
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T03:04:15Z",
+      "databaseId": 41381030495,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:04:02Z",
+      "databaseId": 41381010736,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:03:57Z",
+      "databaseId": 41381002597,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:01:55Z",
+      "databaseId": 41380823668,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T02:59:00Z",
+      "databaseId": 41380561306,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T02:55:32Z",
+      "databaseId": 41380273809,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T02:55:28Z",
+      "databaseId": 41380268441,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T02:55:25Z",
+      "databaseId": 41380264661,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T02:54:52Z",
       "databaseId": 41380214933,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +112,7 @@
       "createdAt": "2026-11-02T02:52:04Z",
       "databaseId": 41379977381,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -84,11 +148,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T02:51:13Z",
       "databaseId": 41379906167,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -108,76 +172,12 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T02:46:05Z",
       "databaseId": 41379467715,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T02:44:42Z",
-      "databaseId": 41379336840,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T02:43:56Z",
-      "databaseId": 41379272685,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T02:43:51Z",
-      "databaseId": 41379265469,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T02:43:48Z",
-      "databaseId": 41379261338,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T02:43:45Z",
-      "databaseId": 41379258179,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T02:42:36Z",
-      "databaseId": 41379161695,
-      "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T02:42:32Z",
-      "databaseId": 41379156278,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T02:41:58Z",
-      "databaseId": 41379109933,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -191117,6 +191117,11 @@
         "video_id": 30714414
       },
       {
+        "episode_id": 147212,
+        "display_name": "Rising Impact S01E05 - Akademie Camelot CZ Titulky",
+        "video_id": 30714476
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -363875,6 +363880,21 @@
         "episode_id": 200467,
         "display_name": "Twelve S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30714399
+      },
+      {
+        "episode_id": 127258,
+        "display_name": "Mission: Yozakura Family S01E17 - 17. epizoda CZ Titulky",
+        "video_id": 30714509
+      },
+      {
+        "episode_id": 127262,
+        "display_name": "Mission: Yozakura Family S01E23 - 23. epizoda CZ Titulky",
+        "video_id": 30714559
+      },
+      {
+        "episode_id": 134414,
+        "display_name": "Vaka S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30714624
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -554709,6 +554729,11 @@
         "video_id": 30714414
       },
       {
+        "episode_id": 147212,
+        "display_name": "Rising Impact S01E05 - Akademie Camelot CZ Titulky",
+        "video_id": 30714476
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -727467,6 +727492,21 @@
         "episode_id": 200467,
         "display_name": "Twelve S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30714399
+      },
+      {
+        "episode_id": 127258,
+        "display_name": "Mission: Yozakura Family S01E17 - 17. epizoda CZ Titulky",
+        "video_id": 30714509
+      },
+      {
+        "episode_id": 127262,
+        "display_name": "Mission: Yozakura Family S01E23 - 23. epizoda CZ Titulky",
+        "video_id": 30714559
+      },
+      {
+        "episode_id": 134414,
+        "display_name": "Vaka S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30714624
       }
     ],
     "prepared_not_upload_ready": [
@@ -728628,8 +728668,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 43,
-    "disabled": 2,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
