@@ -1,30 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 113613,
-    "manifest_upload_ready_episodes": 17,
-    "uploaded_episodes": 78068,
-    "prepared_source_episodes": 66723,
+    "manifest_upload_ready_episodes": 21,
+    "uploaded_episodes": 78069,
+    "prepared_source_episodes": 66727,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 36,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 29,
+    "language_whisper_attempted_sources": 23,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 54029,
-    "whisper_review_pending_sources": 38048,
-    "upload_pending_checkpoints": 21,
-    "subtitle_followup_sources": 49351,
-    "subtitle_followup_pending_sources": 49351
+    "whisper_review_sources": 54028,
+    "whisper_review_pending_sources": 38045,
+    "upload_pending_checkpoints": 23,
+    "subtitle_followup_sources": 49352,
+    "subtitle_followup_pending_sources": 49352
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T08:39:22Z",
+      "databaseId": 41414651660,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:38:59Z",
+      "databaseId": 41414605063,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T08:37:09Z",
+      "databaseId": 41414394931,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:37:07Z",
+      "databaseId": 41414391632,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:37:05Z",
+      "databaseId": 41414387578,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T08:36:54Z",
+      "databaseId": 41414363924,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T08:35:23Z",
       "databaseId": 41414177773,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,11 +164,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T08:31:33Z",
       "databaseId": 41413708594,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T08:31:30Z",
-      "databaseId": 41413703508,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T08:31:30Z",
-      "databaseId": 41413702870,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T08:31:27Z",
-      "databaseId": 41413696676,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T08:25:52Z",
-      "databaseId": 41413006191,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T08:25:43Z",
-      "databaseId": 41412989740,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T08:22:50Z",
-      "databaseId": 41412630741,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -364760,6 +364760,11 @@
         "episode_id": 35910,
         "display_name": "Obnažené S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30721969
+      },
+      {
+        "episode_id": 140178,
+        "display_name": "Gremlins: Tajemství Mogwaiů S02E07 - Vždycky chtěj slyšet celý příběh CZ Dabing",
+        "video_id": 30722054
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -729237,6 +729242,11 @@
         "episode_id": 35910,
         "display_name": "Obnažené S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30721969
+      },
+      {
+        "episode_id": 140178,
+        "display_name": "Gremlins: Tajemství Mogwaiů S02E07 - Vždycky chtěj slyšet celý příběh CZ Dabing",
+        "video_id": 30722054
       }
     ],
     "prepared_not_upload_ready": [
@@ -730398,16 +730408,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 22,
+    "disabled": 6,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36439,
-    "whisper_confirmed_cz": 3573,
-    "whisper_non_cz_needs_subtitles": 12408,
+    "needs_whisper": 36436,
+    "whisper_confirmed_cz": 3574,
+    "whisper_non_cz_needs_subtitles": 12409,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49351
+    "needs_subtitle_setup_after_prehrajto_processing": 49352
   }
 }
