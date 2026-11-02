@@ -1,15 +1,15 @@
 {
   "counts": {
     "backlog_episodes": 113531,
-    "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 78154,
-    "prepared_source_episodes": 66781,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 78155,
+    "prepared_source_episodes": 66784,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 42,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54014,
@@ -21,10 +21,42 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T12:05:24Z",
+      "databaseId": 41441854793,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T12:05:21Z",
+      "databaseId": 41441848021,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T12:05:20Z",
+      "databaseId": 41441845897,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T12:05:01Z",
+      "databaseId": 41441802292,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T12:02:44Z",
       "databaseId": 41441508292,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,19 +68,19 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T12:00:03Z",
       "databaseId": 41441146626,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T11:59:59Z",
       "databaseId": 41441137484,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -100,11 +132,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T11:55:16Z",
       "databaseId": 41440554783,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T11:51:58Z",
-      "databaseId": 41440134445,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T11:51:42Z",
-      "databaseId": 41440101176,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T11:51:02Z",
-      "databaseId": 41440016069,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T11:50:27Z",
-      "databaseId": 41439942447,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -365190,6 +365190,11 @@
         "episode_id": 149643,
         "display_name": "Silverpoint S01E01 - Vážky CZ Titulky",
         "video_id": 30728914
+      },
+      {
+        "episode_id": 7310,
+        "display_name": "Pacienti doktora Garcíi S01E01 - Guillermo CZ Dabing",
+        "video_id": 30729246
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -730097,6 +730102,11 @@
         "episode_id": 149643,
         "display_name": "Silverpoint S01E01 - Vážky CZ Titulky",
         "video_id": 30728914
+      },
+      {
+        "episode_id": 7310,
+        "display_name": "Pacienti doktora Garcíi S01E01 - Guillermo CZ Dabing",
+        "video_id": 30729246
       }
     ],
     "prepared_not_upload_ready": [
@@ -731258,6 +731268,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 2,
     "ok": 39,
     "resolve_failed": 1
   },
