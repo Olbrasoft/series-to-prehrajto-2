@@ -2,23 +2,47 @@
   "counts": {
     "backlog_episodes": 113456,
     "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 78193,
+    "uploaded_episodes": 78197,
     "prepared_source_episodes": 66843,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 46,
+    "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54008,
     "whisper_review_pending_sources": 37965,
-    "upload_pending_checkpoints": 25,
+    "upload_pending_checkpoints": 22,
     "subtitle_followup_sources": 49431,
     "subtitle_followup_pending_sources": 49431
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T14:04:43Z",
+      "databaseId": 41458537820,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T14:04:27Z",
+      "databaseId": 41458500231,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T14:03:20Z",
+      "databaseId": 41458329677,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T14:02:07Z",
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-02T14:01:43Z",
       "databaseId": 41458094256,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,23 +80,23 @@
       "createdAt": "2026-11-02T13:55:53Z",
       "databaseId": 41457243772,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T13:55:50Z",
       "databaseId": 41457237350,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T13:54:40Z",
       "databaseId": 41457064870,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -140,11 +164,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T13:50:03Z",
       "databaseId": 41456397648,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T13:49:03Z",
-      "databaseId": 41456249922,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T13:46:20Z",
-      "databaseId": 41455856584,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T13:46:17Z",
-      "databaseId": 41455847088,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -191932,6 +191932,11 @@
         "video_id": 30733187
       },
       {
+        "episode_id": 149648,
+        "display_name": "Silverpoint S01E06 - Krok do neznáma - část 1. CZ Titulky",
+        "video_id": 30733212
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365385,6 +365390,21 @@
         "episode_id": 149650,
         "display_name": "Silverpoint S01E08 - Co se stalo s Meg? CZ Titulky",
         "video_id": 30733137
+      },
+      {
+        "episode_id": 144206,
+        "display_name": "Backstage S01E07 - Na jejich místě CZ Dabing",
+        "video_id": 30733248
+      },
+      {
+        "episode_id": 7315,
+        "display_name": "Pacienti doktora Garcíi S01E06 - Sjednocení CZ Dabing",
+        "video_id": 30733240
+      },
+      {
+        "episode_id": 138066,
+        "display_name": "Love, Nina S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30733299
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -557034,6 +557054,11 @@
         "video_id": 30733187
       },
       {
+        "episode_id": 149648,
+        "display_name": "Silverpoint S01E06 - Krok do neznáma - část 1. CZ Titulky",
+        "video_id": 30733212
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -730487,6 +730512,21 @@
         "episode_id": 149650,
         "display_name": "Silverpoint S01E08 - Co se stalo s Meg? CZ Titulky",
         "video_id": 30733137
+      },
+      {
+        "episode_id": 144206,
+        "display_name": "Backstage S01E07 - Na jejich místě CZ Dabing",
+        "video_id": 30733248
+      },
+      {
+        "episode_id": 7315,
+        "display_name": "Pacienti doktora Garcíi S01E06 - Sjednocení CZ Dabing",
+        "video_id": 30733240
+      },
+      {
+        "episode_id": 138066,
+        "display_name": "Love, Nina S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30733299
       }
     ],
     "prepared_not_upload_ready": [
@@ -731648,7 +731688,6 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 6,
     "ok": 39,
     "resolve_failed": 1
   },
