@@ -2,18 +2,18 @@
   "counts": {
     "backlog_episodes": 113613,
     "manifest_upload_ready_episodes": 49,
-    "uploaded_episodes": 78005,
-    "prepared_source_episodes": 66724,
+    "uploaded_episodes": 78006,
+    "prepared_source_episodes": 66729,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 36,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 47,
+    "language_audited_sources": 51,
     "language_whisper_attempted_sources": 44,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54032,
-    "whisper_review_pending_sources": 38056,
+    "whisper_review_pending_sources": 38057,
     "upload_pending_checkpoints": 19,
     "subtitle_followup_sources": 49334,
     "subtitle_followup_pending_sources": 49334
@@ -21,10 +21,50 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T06:36:41Z",
+      "databaseId": 41401001419,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T06:36:20Z",
+      "databaseId": 41400965319,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:36:15Z",
+      "databaseId": 41400956231,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:36:01Z",
+      "databaseId": 41400932596,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:35:57Z",
+      "databaseId": 41400924448,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T06:34:43Z",
       "databaseId": 41400790194,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,15 +72,15 @@
       "createdAt": "2026-11-02T06:33:24Z",
       "databaseId": 41400649163,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T06:33:22Z",
       "databaseId": 41400645258,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +100,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T06:32:33Z",
       "databaseId": 41400561726,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -128,7 +168,7 @@
       "createdAt": "2026-11-02T06:19:51Z",
       "databaseId": 41399223275,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:18:43Z",
-      "databaseId": 41399106212,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:18:28Z",
-      "databaseId": 41399080737,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:17:19Z",
-      "databaseId": 41398964867,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T06:16:05Z",
-      "databaseId": 41398836376,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:13:24Z",
-      "databaseId": 41398559992,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -364445,6 +364445,11 @@
         "episode_id": 153539,
         "display_name": "A Man Who Defies the World of BL S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30719036
+      },
+      {
+        "episode_id": 160650,
+        "display_name": "LEGO Masters Australia S03E04 - 4. epizoda CZ Titulky",
+        "video_id": 30719144
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -728607,6 +728612,11 @@
         "episode_id": 153539,
         "display_name": "A Man Who Defies the World of BL S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30719036
+      },
+      {
+        "episode_id": 160650,
+        "display_name": "LEGO Masters Australia S03E04 - 4. epizoda CZ Titulky",
+        "video_id": 30719144
       }
     ],
     "prepared_not_upload_ready": [
@@ -729768,14 +729778,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 3,
+    "disabled": 7,
     "ok": 43,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36447,
+    "needs_whisper": 36448,
     "whisper_confirmed_cz": 3569,
-    "whisper_non_cz_needs_subtitles": 12407,
+    "whisper_non_cz_needs_subtitles": 12406,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
