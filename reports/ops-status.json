@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 113613,
-    "manifest_upload_ready_episodes": 43,
-    "uploaded_episodes": 78015,
-    "prepared_source_episodes": 66725,
+    "manifest_upload_ready_episodes": 40,
+    "uploaded_episodes": 78018,
+    "prepared_source_episodes": 66723,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 36,
@@ -21,18 +21,82 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T06:50:26Z",
-      "databaseId": 41402459490,
+      "createdAt": "2026-11-02T06:56:19Z",
+      "databaseId": 41403069156,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T06:56:16Z",
+      "databaseId": 41403064352,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T06:56:04Z",
+      "databaseId": 41403043611,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:54:46Z",
+      "databaseId": 41402910906,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T06:53:18Z",
+      "databaseId": 41402761252,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T06:52:37Z",
+      "databaseId": 41402691876,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:52:21Z",
+      "databaseId": 41402665391,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T06:52:18Z",
+      "databaseId": 41402660136,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T06:50:26Z",
+      "databaseId": 41402459490,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T06:50:01Z",
       "databaseId": 41402410516,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -60,11 +124,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T06:45:17Z",
       "databaseId": 41401908262,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +148,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T06:44:19Z",
       "databaseId": 41401804893,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T06:43:10Z",
-      "databaseId": 41401686412,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T06:39:56Z",
-      "databaseId": 41401343327,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:38:54Z",
-      "databaseId": 41401231788,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T06:36:41Z",
-      "databaseId": 41401001419,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:36:20Z",
-      "databaseId": 41400965319,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:36:15Z",
-      "databaseId": 41400956231,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:36:01Z",
-      "databaseId": 41400932596,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:35:57Z",
-      "databaseId": 41400924448,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -191422,6 +191422,11 @@
         "video_id": 30719499
       },
       {
+        "episode_id": 179505,
+        "display_name": "Love Between Lines S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30719862
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -364495,6 +364500,16 @@
         "episode_id": 150554,
         "display_name": "Člověk: Svět uvnitř S01E02 - Pulz CZ Titulky",
         "video_id": 30719309
+      },
+      {
+        "episode_id": 36022,
+        "display_name": "Gangy v Oslu S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30719513
+      },
+      {
+        "episode_id": 36026,
+        "display_name": "Gangy v Oslu S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30719955
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -555634,6 +555649,11 @@
         "video_id": 30719499
       },
       {
+        "episode_id": 179505,
+        "display_name": "Love Between Lines S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30719862
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -728707,6 +728727,16 @@
         "episode_id": 150554,
         "display_name": "Člověk: Svět uvnitř S01E02 - Pulz CZ Titulky",
         "video_id": 30719309
+      },
+      {
+        "episode_id": 36022,
+        "display_name": "Gangy v Oslu S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30719513
+      },
+      {
+        "episode_id": 36026,
+        "display_name": "Gangy v Oslu S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30719955
       }
     ],
     "prepared_not_upload_ready": [
