@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 113456,
-    "manifest_upload_ready_episodes": 22,
-    "uploaded_episodes": 78215,
-    "prepared_source_episodes": 66855,
+    "manifest_upload_ready_episodes": 13,
+    "uploaded_episodes": 78219,
+    "prepared_source_episodes": 66850,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
@@ -14,17 +14,97 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54006,
     "whisper_review_pending_sources": 37964,
-    "upload_pending_checkpoints": 25,
+    "upload_pending_checkpoints": 24,
     "subtitle_followup_sources": 49447,
     "subtitle_followup_pending_sources": 49447
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T14:54:58Z",
+      "databaseId": 41466473443,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T14:52:44Z",
+      "databaseId": 41466128329,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T14:52:40Z",
+      "databaseId": 41466117666,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T14:52:39Z",
+      "databaseId": 41466117263,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T14:52:34Z",
+      "databaseId": 41466102944,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T14:51:48Z",
+      "databaseId": 41465982947,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T14:51:39Z",
+      "databaseId": 41465958734,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T14:50:14Z",
+      "databaseId": 41465734371,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T14:50:01Z",
+      "databaseId": 41465696742,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T14:50:00Z",
+      "databaseId": 41465695478,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T14:45:57Z",
       "databaseId": 41465053736,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +116,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T14:45:32Z",
       "databaseId": 41464985981,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -52,11 +132,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T14:42:23Z",
       "databaseId": 41464484706,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -92,92 +172,12 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T14:39:09Z",
       "databaseId": 41463980269,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T14:39:00Z",
-      "databaseId": 41463954907,
-      "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T14:38:54Z",
-      "databaseId": 41463940239,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T14:38:09Z",
-      "databaseId": 41463825348,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T14:37:44Z",
-      "databaseId": 41463759639,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T14:37:39Z",
-      "databaseId": 41463746424,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T14:37:29Z",
-      "databaseId": 41463719213,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T14:37:23Z",
-      "databaseId": 41463704374,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T14:36:45Z",
-      "databaseId": 41463602199,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T14:36:41Z",
-      "databaseId": 41463591186,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T14:33:38Z",
-      "databaseId": 41463105196,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -191967,6 +191967,16 @@
         "video_id": 30734288
       },
       {
+        "episode_id": 144209,
+        "display_name": "Backstage S01E10 - Alternace CZ Dabing",
+        "video_id": 30734355
+      },
+      {
+        "episode_id": 138069,
+        "display_name": "Love, Nina S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30734423
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365495,6 +365505,16 @@
         "episode_id": 7319,
         "display_name": "Pacienti doktora Garcíi S01E10 - Shledání CZ Dabing",
         "video_id": 30734273
+      },
+      {
+        "episode_id": 198846,
+        "display_name": "Tajemství Hunterových S01E01 - Nový Hunter CZ Dabing",
+        "video_id": 30734346
+      },
+      {
+        "episode_id": 179258,
+        "display_name": "Antiques Roadshow S48E06 - 6. epizoda CZ Titulky",
+        "video_id": 30734416
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -557179,6 +557199,16 @@
         "video_id": 30734288
       },
       {
+        "episode_id": 144209,
+        "display_name": "Backstage S01E10 - Alternace CZ Dabing",
+        "video_id": 30734355
+      },
+      {
+        "episode_id": 138069,
+        "display_name": "Love, Nina S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30734423
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -730707,6 +730737,16 @@
         "episode_id": 7319,
         "display_name": "Pacienti doktora Garcíi S01E10 - Shledání CZ Dabing",
         "video_id": 30734273
+      },
+      {
+        "episode_id": 198846,
+        "display_name": "Tajemství Hunterových S01E01 - Nový Hunter CZ Dabing",
+        "video_id": 30734346
+      },
+      {
+        "episode_id": 179258,
+        "display_name": "Antiques Roadshow S48E06 - 6. epizoda CZ Titulky",
+        "video_id": 30734416
       }
     ],
     "prepared_not_upload_ready": [
