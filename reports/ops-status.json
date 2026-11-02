@@ -1,24 +1,72 @@
 {
   "counts": {
     "backlog_episodes": 113816,
-    "manifest_upload_ready_episodes": 84,
-    "uploaded_episodes": 77907,
-    "prepared_source_episodes": 66693,
+    "manifest_upload_ready_episodes": 76,
+    "uploaded_episodes": 77908,
+    "prepared_source_episodes": 66688,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 56,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 54041,
-    "whisper_review_pending_sources": 38101,
-    "upload_pending_checkpoints": 9,
-    "subtitle_followup_sources": 49299,
-    "subtitle_followup_pending_sources": 49299
+    "whisper_review_sources": 54042,
+    "whisper_review_pending_sources": 38105,
+    "upload_pending_checkpoints": 11,
+    "subtitle_followup_sources": 49300,
+    "subtitle_followup_pending_sources": 49300
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:28:50Z",
+      "databaseId": 41383326635,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:28:43Z",
+      "databaseId": 41383317329,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T03:28:38Z",
+      "databaseId": 41383311129,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T03:28:15Z",
+      "databaseId": 41383278295,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:28:11Z",
+      "databaseId": 41383272521,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:26:38Z",
+      "databaseId": 41383134006,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T03:23:53Z",
@@ -44,11 +92,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T03:19:14Z",
       "databaseId": 41382440027,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -64,15 +112,15 @@
       "createdAt": "2026-11-02T03:18:31Z",
       "databaseId": 41382374297,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T03:18:28Z",
       "databaseId": 41382370237,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -88,7 +136,7 @@
       "createdAt": "2026-11-02T03:18:05Z",
       "databaseId": 41382334141,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -100,11 +148,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T03:16:36Z",
       "databaseId": 41382197091,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T03:12:09Z",
-      "databaseId": 41381775495,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T03:11:59Z",
-      "databaseId": 41381758944,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T03:11:02Z",
-      "databaseId": 41381666238,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T03:10:14Z",
-      "databaseId": 41381589860,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T03:10:10Z",
-      "databaseId": 41381582707,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T03:09:53Z",
-      "databaseId": 41381553007,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -363955,6 +363955,11 @@
         "episode_id": 88238,
         "display_name": "Ronja, dcera loupežníka S01E09 - Sněhová past CZ Dabing",
         "video_id": 30715056
+      },
+      {
+        "episode_id": 88242,
+        "display_name": "Ronja, dcera loupežníka S01E13 - Nebozí loupežníci CZ Dabing",
+        "video_id": 30715097
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -727627,6 +727632,11 @@
         "episode_id": 88238,
         "display_name": "Ronja, dcera loupežníka S01E09 - Sněhová past CZ Dabing",
         "video_id": 30715056
+      },
+      {
+        "episode_id": 88242,
+        "display_name": "Ronja, dcera loupežníka S01E13 - Nebozí loupežníci CZ Dabing",
+        "video_id": 30715097
       }
     ],
     "prepared_not_upload_ready": [
@@ -728788,16 +728798,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 16,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36492,
+    "needs_whisper": 36496,
     "whisper_confirmed_cz": 3557,
-    "whisper_non_cz_needs_subtitles": 12383,
+    "whisper_non_cz_needs_subtitles": 12380,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49299
+    "needs_subtitle_setup_after_prehrajto_processing": 49300
   }
 }
