@@ -2,29 +2,53 @@
   "counts": {
     "backlog_episodes": 113531,
     "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 78149,
+    "uploaded_episodes": 78150,
     "prepared_source_episodes": 66782,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 31,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54016,
     "whisper_review_pending_sources": 37995,
-    "upload_pending_checkpoints": 22,
+    "upload_pending_checkpoints": 21,
     "subtitle_followup_sources": 49395,
     "subtitle_followup_pending_sources": 49395
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T11:50:27Z",
+      "databaseId": 41439942447,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:50:09Z",
+      "databaseId": 41439902625,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:48:55Z",
+      "databaseId": 41439746318,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-02T11:47:46Z",
       "databaseId": 41439598719,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,15 +80,15 @@
       "createdAt": "2026-11-02T11:45:31Z",
       "databaseId": 41439308425,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T11:45:20Z",
       "databaseId": 41439283683,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -132,11 +156,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T11:40:46Z",
       "databaseId": 41438704090,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T11:37:24Z",
-      "databaseId": 41438279146,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T11:37:04Z",
-      "databaseId": 41438236821,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T11:34:57Z",
-      "databaseId": 41437956721,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -191825,6 +191825,11 @@
         "episode_id": 198869,
         "display_name": "Tajemství Hunterových S03E03 - Bouřka CZ Titulky",
         "video_id": 30727021
+      },
+      {
+        "episode_id": 156625,
+        "display_name": "Surely Tomorrow S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30727507
       },
       {
         "episode_id": 114182,
@@ -556709,6 +556714,11 @@
         "video_id": 30727021
       },
       {
+        "episode_id": 156625,
+        "display_name": "Surely Tomorrow S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30727507
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -731208,8 +731218,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 11,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
