@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 113735,
     "manifest_upload_ready_episodes": 64,
-    "uploaded_episodes": 77939,
+    "uploaded_episodes": 77940,
     "prepared_source_episodes": 66691,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,27 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54040,
     "whisper_review_pending_sources": 38097,
-    "upload_pending_checkpoints": 11,
+    "upload_pending_checkpoints": 10,
     "subtitle_followup_sources": 49309,
     "subtitle_followup_pending_sources": 49309
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:19:53Z",
+      "databaseId": 41387850686,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:19:49Z",
+      "databaseId": 41387844624,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T04:19:11Z",
@@ -32,7 +48,7 @@
       "createdAt": "2026-11-02T04:18:50Z",
       "databaseId": 41387751835,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +84,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T04:17:07Z",
       "databaseId": 41387590638,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T04:06:11Z",
-      "databaseId": 41386574450,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T04:06:07Z",
-      "databaseId": 41386569310,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -191250,6 +191250,11 @@
         "episode_id": 165141,
         "display_name": "My Stubborn S01E12 - 12. epizoda CZ Titulky",
         "video_id": 30716243
+      },
+      {
+        "episode_id": 173841,
+        "display_name": "Svatá Evita S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30716340
       },
       {
         "episode_id": 114182,
@@ -555082,6 +555087,11 @@
         "episode_id": 165141,
         "display_name": "My Stubborn S01E12 - 12. epizoda CZ Titulky",
         "video_id": 30716243
+      },
+      {
+        "episode_id": 173841,
+        "display_name": "Svatá Evita S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30716340
       },
       {
         "episode_id": 114182,
