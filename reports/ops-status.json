@@ -1,17 +1,17 @@
 {
   "counts": {
     "backlog_episodes": 113816,
-    "manifest_upload_ready_episodes": 80,
-    "uploaded_episodes": 77895,
-    "prepared_source_episodes": 66678,
+    "manifest_upload_ready_episodes": 79,
+    "uploaded_episodes": 77896,
+    "prepared_source_episodes": 66677,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54041,
     "whisper_review_pending_sources": 38102,
     "upload_pending_checkpoints": 8,
@@ -19,6 +19,30 @@
     "subtitle_followup_pending_sources": 49298
   },
   "workflow_runs": [
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T03:06:33Z",
+      "databaseId": 41381241603,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:06:24Z",
+      "databaseId": 41381229286,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:06:21Z",
+      "databaseId": 41381225285,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T03:06:19Z",
@@ -40,15 +64,15 @@
       "createdAt": "2026-11-02T03:05:06Z",
       "databaseId": 41381106650,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T03:04:40Z",
       "databaseId": 41381065868,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -60,11 +84,11 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T03:04:02Z",
       "databaseId": 41381010736,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +100,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T03:01:55Z",
       "databaseId": 41380823668,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T02:51:53Z",
-      "databaseId": 41379962453,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T02:51:42Z",
-      "databaseId": 41379946332,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T02:51:39Z",
-      "databaseId": 41379942775,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -363895,6 +363895,11 @@
         "episode_id": 134414,
         "display_name": "Vaka S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30714624
+      },
+      {
+        "episode_id": 88230,
+        "display_name": "Ronja, dcera loupežníka S01E01 - Zrozena v bouři CZ Dabing",
+        "video_id": 30714706
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -727507,6 +727512,11 @@
         "episode_id": 134414,
         "display_name": "Vaka S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30714624
+      },
+      {
+        "episode_id": 88230,
+        "display_name": "Ronja, dcera loupežníka S01E01 - Zrozena v bouři CZ Dabing",
+        "video_id": 30714706
       }
     ],
     "prepared_not_upload_ready": [
@@ -728668,7 +728678,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
