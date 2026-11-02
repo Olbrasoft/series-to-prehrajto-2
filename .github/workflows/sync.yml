@@ -150,36 +150,10 @@ jobs:
           if [ "$SYNC_NUM_SHARDS" = "1" ]; then
             STATE="state/uploaded.json"
           fi
-          mkdir -p state
-          touch "$STATE"
-          TMP_DIR="$(mktemp -d)"
-          mkdir -p "$TMP_DIR/state"
-          cp "$STATE" "$TMP_DIR/$STATE"
-
-          for attempt in 1 2 3 4 5 6 7 8; do
-            rm -rf .git/rebase-merge .git/rebase-apply
-            git fetch origin main
-            git reset --hard origin/main
-            mkdir -p state
-            python src/upload_state_merge.py --target "$STATE" --incoming "$TMP_DIR/$STATE" --upload-account "$UPLOAD_ACCOUNT"
-
-            git add "$STATE"
-            if git diff --cached --quiet; then
-              echo "no state changes to commit"
-              exit 0
-            fi
-
-            UP_COUNT=$(python -c "import json,os; p='$STATE'; d=json.load(open(p)) if os.path.getsize(p)>0 else {}; print(len(d.get('uploads',[])))")
-            git commit -m "chore: sync series state, total uploads ${UP_COUNT}"
-            if git push origin HEAD:main; then
-              exit 0
-            fi
-            echo "push race on attempt ${attempt}, retrying"
-            sleep $((attempt * 2))
-          done
-
-          echo "::error::failed to persist upload state; reconcile the checkpoint artifact before retrying pending episodes"
-          exit 1
+          # Reuse the same global reservation checks and contention retries as
+          # per-upload checkpoints, including after a failed or cancelled batch.
+          [ -s "$STATE" ] || exit 0
+          PREHRAJTO_ACCOUNT="$UPLOAD_ACCOUNT" python src/sync_batch.py --checkpoint-only
 
       - name: Preserve failed upload checkpoints
         if: failure() || cancelled()
