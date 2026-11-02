@@ -2,23 +2,47 @@
   "counts": {
     "backlog_episodes": 113531,
     "manifest_upload_ready_episodes": 14,
-    "uploaded_episodes": 78091,
+    "uploaded_episodes": 78092,
     "prepared_source_episodes": 66743,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 37,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 45,
-    "language_whisper_attempted_sources": 41,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54025,
     "whisper_review_pending_sources": 38033,
-    "upload_pending_checkpoints": 22,
+    "upload_pending_checkpoints": 21,
     "subtitle_followup_sources": 49359,
     "subtitle_followup_pending_sources": 49359
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T09:37:29Z",
+      "databaseId": 41422192912,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:37:23Z",
+      "databaseId": 41422180313,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T09:36:46Z",
+      "databaseId": 41422098741,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T09:34:26Z",
@@ -28,11 +52,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T09:33:23Z",
       "databaseId": 41421629200,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -60,11 +84,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T09:32:37Z",
       "databaseId": 41421521502,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -80,7 +104,7 @@
       "createdAt": "2026-11-02T09:31:35Z",
       "databaseId": 41421375459,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "audit-language"
     },
     {
@@ -112,15 +136,15 @@
       "createdAt": "2026-11-02T09:26:22Z",
       "databaseId": 41420643751,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T09:26:19Z",
       "databaseId": 41420636678,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -136,7 +160,7 @@
       "createdAt": "2026-11-02T09:24:26Z",
       "databaseId": 41420377298,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T09:22:11Z",
-      "databaseId": 41420066809,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T09:21:41Z",
-      "databaseId": 41419998804,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T09:21:14Z",
-      "databaseId": 41419938621,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -191645,6 +191645,11 @@
         "episode_id": 36025,
         "display_name": "Gangy v Oslu S01E05 - 5. epizoda CZ Dabing",
         "video_id": 30723077
+      },
+      {
+        "episode_id": 137525,
+        "display_name": "Gremlins: Tajemství Mogwaiů S01E01 - Nikdy se nesmí namočit CZ Dabing",
+        "video_id": 30723160
       },
       {
         "episode_id": 114182,
@@ -556239,6 +556244,11 @@
         "video_id": 30723077
       },
       {
+        "episode_id": 137525,
+        "display_name": "Gremlins: Tajemství Mogwaiů S01E01 - Nikdy se nesmí namočit CZ Dabing",
+        "video_id": 30723160
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -730628,8 +730638,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 4,
-    "ok": 40,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
