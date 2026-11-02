@@ -1,46 +1,126 @@
 {
   "counts": {
     "backlog_episodes": 113613,
-    "manifest_upload_ready_episodes": 27,
-    "uploaded_episodes": 78048,
-    "prepared_source_episodes": 66722,
+    "manifest_upload_ready_episodes": 20,
+    "uploaded_episodes": 78055,
+    "prepared_source_episodes": 66711,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 36,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 57,
-    "language_whisper_attempted_sources": 41,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54030,
     "whisper_review_pending_sources": 38051,
-    "upload_pending_checkpoints": 23,
+    "upload_pending_checkpoints": 22,
     "subtitle_followup_sources": 49346,
     "subtitle_followup_pending_sources": 49346
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T07:59:07Z",
-      "databaseId": 41409799630,
+      "createdAt": "2026-11-02T08:08:01Z",
+      "databaseId": 41410814161,
       "headBranch": "main",
       "status": "queued",
       "workflowName": "update-descriptions"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T07:59:03Z",
-      "databaseId": 41409792820,
+      "createdAt": "2026-11-02T08:07:30Z",
+      "databaseId": 41410756096,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "process-whisper-review"
+      "status": "pending",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T08:07:26Z",
+      "databaseId": 41410750008,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:07:06Z",
+      "databaseId": 41410710493,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:05:11Z",
+      "databaseId": 41410487777,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T08:04:36Z",
+      "databaseId": 41410420983,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:04:32Z",
+      "databaseId": 41410413210,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:04:28Z",
+      "databaseId": 41410405967,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T08:04:24Z",
+      "databaseId": 41410398915,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:02:08Z",
+      "databaseId": 41410144052,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T07:59:07Z",
+      "databaseId": 41409799630,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T07:59:03Z",
+      "databaseId": 41409792820,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T07:57:41Z",
       "databaseId": 41409649617,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +136,7 @@
       "createdAt": "2026-11-02T07:57:23Z",
       "databaseId": 41409618155,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -76,19 +156,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T07:54:34Z",
       "databaseId": 41409314193,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T07:52:48Z",
       "databaseId": 41409130160,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T07:51:39Z",
-      "databaseId": 41409010222,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T07:51:25Z",
-      "databaseId": 41408987663,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T07:50:33Z",
-      "databaseId": 41408894865,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T07:50:07Z",
-      "databaseId": 41408847562,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T07:46:30Z",
-      "databaseId": 41408467331,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T07:46:27Z",
-      "databaseId": 41408461718,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T07:45:31Z",
-      "databaseId": 41408356409,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T07:45:25Z",
-      "databaseId": 41408345143,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T07:44:57Z",
-      "databaseId": 41408290342,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T07:44:53Z",
-      "databaseId": 41408284425,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -191527,6 +191527,26 @@
         "video_id": 30721379
       },
       {
+        "episode_id": 137532,
+        "display_name": "Gremlins: Tajemství Mogwaiů S01E10 - Nikdy je nevystavuj světlu CZ Dabing",
+        "video_id": 30721424
+      },
+      {
+        "episode_id": 17309,
+        "display_name": "Ochránci S01E01 - Epizoda 1 CZ Dabing",
+        "video_id": 30721451
+      },
+      {
+        "episode_id": 140176,
+        "display_name": "Gremlins: Tajemství Mogwaiů S02E01 - Vždy buďte připraveni na dobrodružství CZ Dabing",
+        "video_id": 30721497
+      },
+      {
+        "episode_id": 137536,
+        "display_name": "Gremlins: Tajemství Mogwaiů S02E05 - V továrně na sušenky se vždycky skrývá jmění CZ Dabing",
+        "video_id": 30721546
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -364660,6 +364680,21 @@
         "episode_id": 187506,
         "display_name": "Gábinin kouzelný domek S11E01 - Kočičí jesličky CZ Dabing",
         "video_id": 30721387
+      },
+      {
+        "episode_id": 137535,
+        "display_name": "Gremlins: Tajemství Mogwaiů S02E04 - Vždy si s sebou vezměte párátko CZ Dabing",
+        "video_id": 30721404
+      },
+      {
+        "episode_id": 153547,
+        "display_name": "A Man Who Defies the World of BL S03E02 - 2. epizoda CZ Titulky",
+        "video_id": 30721491
+      },
+      {
+        "episode_id": 35911,
+        "display_name": "Obnažené S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30721571
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -555904,6 +555939,26 @@
         "video_id": 30721379
       },
       {
+        "episode_id": 137532,
+        "display_name": "Gremlins: Tajemství Mogwaiů S01E10 - Nikdy je nevystavuj světlu CZ Dabing",
+        "video_id": 30721424
+      },
+      {
+        "episode_id": 17309,
+        "display_name": "Ochránci S01E01 - Epizoda 1 CZ Dabing",
+        "video_id": 30721451
+      },
+      {
+        "episode_id": 140176,
+        "display_name": "Gremlins: Tajemství Mogwaiů S02E01 - Vždy buďte připraveni na dobrodružství CZ Dabing",
+        "video_id": 30721497
+      },
+      {
+        "episode_id": 137536,
+        "display_name": "Gremlins: Tajemství Mogwaiů S02E05 - V továrně na sušenky se vždycky skrývá jmění CZ Dabing",
+        "video_id": 30721546
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -729037,6 +729092,21 @@
         "episode_id": 187506,
         "display_name": "Gábinin kouzelný domek S11E01 - Kočičí jesličky CZ Dabing",
         "video_id": 30721387
+      },
+      {
+        "episode_id": 137535,
+        "display_name": "Gremlins: Tajemství Mogwaiů S02E04 - Vždy si s sebou vezměte párátko CZ Dabing",
+        "video_id": 30721404
+      },
+      {
+        "episode_id": 153547,
+        "display_name": "A Man Who Defies the World of BL S03E02 - 2. epizoda CZ Titulky",
+        "video_id": 30721491
+      },
+      {
+        "episode_id": 35911,
+        "display_name": "Obnažené S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30721571
       }
     ],
     "prepared_not_upload_ready": [
@@ -730198,8 +730268,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 16,
-    "ok": 40,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
