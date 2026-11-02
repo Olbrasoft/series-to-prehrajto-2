@@ -1,17 +1,17 @@
 {
   "counts": {
     "backlog_episodes": 113335,
-    "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 78313,
-    "prepared_source_episodes": 66980,
+    "manifest_upload_ready_episodes": 14,
+    "uploaded_episodes": 78318,
+    "prepared_source_episodes": 66985,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 24,
-    "language_whisper_attempted_sources": 21,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53997,
     "whisper_review_pending_sources": 37976,
     "upload_pending_checkpoints": 27,
@@ -21,10 +21,50 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T20:49:42Z",
+      "databaseId": 41522751350,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T20:43:58Z",
+      "databaseId": 41521882725,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T20:42:58Z",
+      "databaseId": 41521734066,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T20:41:53Z",
+      "databaseId": 41521573167,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T20:41:46Z",
+      "databaseId": 41521555988,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T20:41:26Z",
       "databaseId": 41521506194,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -36,11 +76,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T20:40:49Z",
       "databaseId": 41521411681,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,7 +120,7 @@
       "createdAt": "2026-11-02T20:37:21Z",
       "databaseId": 41520893892,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -92,11 +132,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T20:36:05Z",
       "databaseId": 41520703427,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,11 +156,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T20:33:18Z",
       "databaseId": 41520259829,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T20:32:52Z",
-      "databaseId": 41520191744,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T20:32:32Z",
-      "databaseId": 41520142285,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T20:32:30Z",
-      "databaseId": 41520135588,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T20:32:17Z",
-      "databaseId": 41520103503,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T20:31:37Z",
-      "databaseId": 41519997295,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -192227,6 +192227,16 @@
         "video_id": 30741278
       },
       {
+        "episode_id": 165213,
+        "display_name": "Aftertaste S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30741662
+      },
+      {
+        "episode_id": 190664,
+        "display_name": "Úsvit Croodsových S02E12 - Myslím že jsme samy, mňau CZ Dabing",
+        "video_id": 30741730
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365985,6 +365995,21 @@
         "episode_id": 155999,
         "display_name": "Mary Shelley's Frankenhole S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30741222
+      },
+      {
+        "episode_id": 164482,
+        "display_name": "El niñero S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30741487
+      },
+      {
+        "episode_id": 167379,
+        "display_name": "Indebted S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30741584
+      },
+      {
+        "episode_id": 156003,
+        "display_name": "Mary Shelley's Frankenhole S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30741653
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -557929,6 +557954,16 @@
         "video_id": 30741278
       },
       {
+        "episode_id": 165213,
+        "display_name": "Aftertaste S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30741662
+      },
+      {
+        "episode_id": 190664,
+        "display_name": "Úsvit Croodsových S02E12 - Myslím že jsme samy, mňau CZ Dabing",
+        "video_id": 30741730
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -731687,6 +731722,21 @@
         "episode_id": 155999,
         "display_name": "Mary Shelley's Frankenhole S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30741222
+      },
+      {
+        "episode_id": 164482,
+        "display_name": "El niñero S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30741487
+      },
+      {
+        "episode_id": 167379,
+        "display_name": "Indebted S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30741584
+      },
+      {
+        "episode_id": 156003,
+        "display_name": "Mary Shelley's Frankenhole S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30741653
       }
     ],
     "prepared_not_upload_ready": [
@@ -732848,8 +732898,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 3,
-    "ok": 20,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
