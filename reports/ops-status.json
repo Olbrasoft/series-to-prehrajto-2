@@ -1,30 +1,70 @@
 {
   "counts": {
     "backlog_episodes": 113816,
-    "manifest_upload_ready_episodes": 90,
-    "uploaded_episodes": 77867,
-    "prepared_source_episodes": 66675,
+    "manifest_upload_ready_episodes": 87,
+    "uploaded_episodes": 77870,
+    "prepared_source_episodes": 66671,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 65,
+    "language_audited_sources": 44,
     "language_whisper_attempted_sources": 44,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 54047,
-    "whisper_review_pending_sources": 38124,
-    "upload_pending_checkpoints": 6,
-    "subtitle_followup_sources": 49292,
-    "subtitle_followup_pending_sources": 49292
+    "whisper_review_sources": 54045,
+    "whisper_review_pending_sources": 38118,
+    "upload_pending_checkpoints": 7,
+    "subtitle_followup_sources": 49293,
+    "subtitle_followup_pending_sources": 49293
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T02:07:24Z",
+      "databaseId": 41375994627,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T02:06:50Z",
+      "databaseId": 41375943720,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T02:06:37Z",
+      "databaseId": 41375925427,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T02:05:26Z",
+      "databaseId": 41375820860,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T02:05:23Z",
+      "databaseId": 41375816310,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T02:04:42Z",
       "databaseId": 41375753570,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -40,7 +80,7 @@
       "createdAt": "2026-11-02T02:02:03Z",
       "databaseId": 41375524283,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "audit-language"
     },
     {
@@ -48,7 +88,7 @@
       "createdAt": "2026-11-02T02:01:59Z",
       "databaseId": 41375519688,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +108,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T01:59:43Z",
       "databaseId": 41375310068,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -88,7 +128,7 @@
       "createdAt": "2026-11-02T01:59:15Z",
       "databaseId": 41375274351,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -96,15 +136,15 @@
       "createdAt": "2026-11-02T01:58:31Z",
       "databaseId": 41375216956,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T01:58:16Z",
       "databaseId": 41375198971,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T01:54:50Z",
-      "databaseId": 41374918653,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T01:52:42Z",
-      "databaseId": 41374741777,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T01:52:39Z",
-      "databaseId": 41374737147,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T01:52:34Z",
-      "databaseId": 41374731264,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T01:52:33Z",
-      "databaseId": 41374729559,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -191062,6 +191062,16 @@
         "video_id": 30713120
       },
       {
+        "episode_id": 203864,
+        "display_name": "Matthew Perry nad propastí S01E01 - Část první CZ Dabing",
+        "video_id": 30713185
+      },
+      {
+        "episode_id": 187468,
+        "display_name": "Gábinin kouzelný domek S05E02 - Mise na planetu Kočkoturn CZ Dabing",
+        "video_id": 30713268
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -363755,6 +363765,11 @@
         "episode_id": 74386,
         "display_name": "Digimon S01E53 - 53. epizoda CZ Titulky",
         "video_id": 30713172
+      },
+      {
+        "episode_id": 203554,
+        "display_name": "American Hostage S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30713277
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -554534,6 +554549,16 @@
         "video_id": 30713120
       },
       {
+        "episode_id": 203864,
+        "display_name": "Matthew Perry nad propastí S01E01 - Část první CZ Dabing",
+        "video_id": 30713185
+      },
+      {
+        "episode_id": 187468,
+        "display_name": "Gábinin kouzelný domek S05E02 - Mise na planetu Kočkoturn CZ Dabing",
+        "video_id": 30713268
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -727227,6 +727252,11 @@
         "episode_id": 74386,
         "display_name": "Digimon S01E53 - 53. epizoda CZ Titulky",
         "video_id": 30713172
+      },
+      {
+        "episode_id": 203554,
+        "display_name": "American Hostage S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30713277
       }
     ],
     "prepared_not_upload_ready": [
@@ -728388,17 +728418,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 21,
     "ok": 43,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36515,
-    "whisper_confirmed_cz": 3547,
-    "whisper_non_cz_needs_subtitles": 12376,
+    "needs_whisper": 36509,
+    "whisper_confirmed_cz": 3549,
+    "whisper_non_cz_needs_subtitles": 12378,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49292
+    "needs_subtitle_setup_after_prehrajto_processing": 49293
   }
 }
