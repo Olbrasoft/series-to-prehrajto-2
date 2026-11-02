@@ -1,19 +1,19 @@
 {
   "counts": {
     "backlog_episodes": 113816,
-    "manifest_upload_ready_episodes": 85,
-    "uploaded_episodes": 77897,
-    "prepared_source_episodes": 66694,
+    "manifest_upload_ready_episodes": 84,
+    "uploaded_episodes": 77899,
+    "prepared_source_episodes": 66693,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 54,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 54042,
-    "whisper_review_pending_sources": 38105,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 54041,
+    "whisper_review_pending_sources": 38101,
     "upload_pending_checkpoints": 7,
     "subtitle_followup_sources": 49299,
     "subtitle_followup_pending_sources": 49299
@@ -21,18 +21,66 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T03:12:09Z",
-      "databaseId": 41381775495,
+      "createdAt": "2026-11-02T03:18:05Z",
+      "databaseId": 41382334141,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "update-descriptions"
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T03:17:27Z",
+      "databaseId": 41382273054,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:16:36Z",
+      "databaseId": 41382197091,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T03:16:36Z",
+      "databaseId": 41382196978,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:13:53Z",
+      "databaseId": 41381938047,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T03:13:48Z",
+      "databaseId": 41381929042,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T03:12:09Z",
+      "databaseId": 41381775495,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T03:11:59Z",
       "databaseId": 41381758944,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,19 +116,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T03:09:50Z",
       "databaseId": 41381548510,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T03:09:48Z",
       "databaseId": 41381545109,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -104,7 +152,7 @@
       "createdAt": "2026-11-02T03:06:21Z",
       "databaseId": 41381225285,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -128,56 +176,8 @@
       "createdAt": "2026-11-02T03:05:06Z",
       "databaseId": 41381106650,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T03:04:40Z",
-      "databaseId": 41381065868,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T03:04:15Z",
-      "databaseId": 41381030495,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T03:04:02Z",
-      "databaseId": 41381010736,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T03:03:57Z",
-      "databaseId": 41381002597,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T03:01:55Z",
-      "databaseId": 41380823668,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T02:59:00Z",
-      "databaseId": 41380561306,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -191122,6 +191122,11 @@
         "video_id": 30714476
       },
       {
+        "episode_id": 187488,
+        "display_name": "Gábinin kouzelný domek S07E04 - Houbosaurus CZ Dabing",
+        "video_id": 30714954
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -363905,6 +363910,11 @@
         "episode_id": 88234,
         "display_name": "Ronja, dcera loupežníka S01E05 - Nepřítel za hradbami CZ Dabing",
         "video_id": 30714810
+      },
+      {
+        "episode_id": 201831,
+        "display_name": "Totems S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30714946
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -554744,6 +554754,11 @@
         "video_id": 30714476
       },
       {
+        "episode_id": 187488,
+        "display_name": "Gábinin kouzelný domek S07E04 - Houbosaurus CZ Dabing",
+        "video_id": 30714954
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -727527,6 +727542,11 @@
         "episode_id": 88234,
         "display_name": "Ronja, dcera loupežníka S01E05 - Nepřítel za hradbami CZ Dabing",
         "video_id": 30714810
+      },
+      {
+        "episode_id": 201831,
+        "display_name": "Totems S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30714946
       }
     ],
     "prepared_not_upload_ready": [
@@ -728688,14 +728708,13 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 34,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36496,
-    "whisper_confirmed_cz": 3555,
-    "whisper_non_cz_needs_subtitles": 12382,
+    "needs_whisper": 36492,
+    "whisper_confirmed_cz": 3557,
+    "whisper_non_cz_needs_subtitles": 12383,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
