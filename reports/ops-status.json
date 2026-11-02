@@ -1,15 +1,15 @@
 {
   "counts": {
     "backlog_episodes": 113531,
-    "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 78087,
-    "prepared_source_episodes": 66741,
+    "manifest_upload_ready_episodes": 14,
+    "uploaded_episodes": 78091,
+    "prepared_source_episodes": 66743,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 37,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 41,
+    "language_audited_sources": 45,
     "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54025,
@@ -21,10 +21,114 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T09:34:26Z",
+      "databaseId": 41421774210,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:33:23Z",
+      "databaseId": 41421629200,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T09:33:17Z",
+      "databaseId": 41421613695,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:33:13Z",
+      "databaseId": 41421605143,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:32:57Z",
+      "databaseId": 41421567758,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:32:37Z",
+      "databaseId": 41421521502,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:32:09Z",
+      "databaseId": 41421454736,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:31:35Z",
+      "databaseId": 41421375459,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T09:30:11Z",
+      "databaseId": 41421175604,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:28:46Z",
+      "databaseId": 41420977983,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T09:26:26Z",
+      "databaseId": 41420654757,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:26:22Z",
+      "databaseId": 41420643751,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:26:19Z",
+      "databaseId": 41420636678,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T09:24:37Z",
       "databaseId": 41420402265,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -32,7 +136,7 @@
       "createdAt": "2026-11-02T09:24:26Z",
       "databaseId": 41420377298,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +148,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T09:22:15Z",
       "databaseId": 41420075685,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +160,7 @@
       "createdAt": "2026-11-02T09:22:11Z",
       "databaseId": 41420066809,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,116 +172,12 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T09:21:14Z",
       "databaseId": 41419938621,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T09:20:47Z",
-      "databaseId": 41419874935,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T09:20:16Z",
-      "databaseId": 41419801001,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T09:19:23Z",
-      "databaseId": 41419681329,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "refresh-backlog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T09:19:23Z",
-      "databaseId": 41419679804,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T09:18:58Z",
-      "databaseId": 41419621909,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T09:17:58Z",
-      "databaseId": 41419487930,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T09:17:55Z",
-      "databaseId": 41419481543,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T09:17:53Z",
-      "databaseId": 41419476763,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T09:17:49Z",
-      "databaseId": 41419466899,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T09:17:11Z",
-      "databaseId": 41419385272,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T09:13:17Z",
-      "databaseId": 41418864361,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T09:10:39Z",
-      "databaseId": 41418518893,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T09:10:33Z",
-      "databaseId": 41418505770,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -191632,6 +191632,21 @@
         "video_id": 30722702
       },
       {
+        "episode_id": 150557,
+        "display_name": "Člověk: Svět uvnitř S01E05 - Smysly CZ Titulky",
+        "video_id": 30722866
+      },
+      {
+        "episode_id": 36021,
+        "display_name": "Gangy v Oslu S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30723001
+      },
+      {
+        "episode_id": 36025,
+        "display_name": "Gangy v Oslu S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30723077
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -364855,6 +364870,11 @@
         "episode_id": 160658,
         "display_name": "LEGO Masters Australia S03E13 - 13. epizoda CZ Titulky",
         "video_id": 30722770
+      },
+      {
+        "episode_id": 137534,
+        "display_name": "Gremlins: Tajemství Mogwaiů S02E03 - Nikdy nepoužívejte dvojité zápory CZ Dabing",
+        "video_id": 30722948
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -556204,6 +556224,21 @@
         "video_id": 30722702
       },
       {
+        "episode_id": 150557,
+        "display_name": "Člověk: Svět uvnitř S01E05 - Smysly CZ Titulky",
+        "video_id": 30722866
+      },
+      {
+        "episode_id": 36021,
+        "display_name": "Gangy v Oslu S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30723001
+      },
+      {
+        "episode_id": 36025,
+        "display_name": "Gangy v Oslu S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30723077
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -729427,6 +729462,11 @@
         "episode_id": 160658,
         "display_name": "LEGO Masters Australia S03E13 - 13. epizoda CZ Titulky",
         "video_id": 30722770
+      },
+      {
+        "episode_id": 137534,
+        "display_name": "Gremlins: Tajemství Mogwaiů S02E03 - Nikdy nepoužívejte dvojité zápory CZ Dabing",
+        "video_id": 30722948
       }
     ],
     "prepared_not_upload_ready": [
@@ -730588,6 +730628,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 4,
     "ok": 40,
     "resolve_failed": 1
   },
