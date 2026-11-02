@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 113735,
     "manifest_upload_ready_episodes": 56,
-    "uploaded_episodes": 77968,
+    "uploaded_episodes": 77971,
     "prepared_source_episodes": 66707,
     "description_series": 60,
     "description_episodes": 753,
@@ -21,10 +21,34 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T05:14:48Z",
+      "databaseId": 41392875376,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T05:14:33Z",
+      "databaseId": 41392852216,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T05:11:56Z",
+      "databaseId": 41392596193,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T05:10:40Z",
       "databaseId": 41392479329,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-02T05:09:31Z",
       "databaseId": 41392367306,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T05:06:30Z",
       "databaseId": 41392088764,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -136,7 +160,7 @@
       "createdAt": "2026-11-02T05:01:24Z",
       "databaseId": 41391612985,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T04:56:41Z",
-      "databaseId": 41391198103,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T04:56:17Z",
-      "databaseId": 41391165450,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T04:56:16Z",
-      "databaseId": 41391163584,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -191322,6 +191322,16 @@
         "video_id": 30717239
       },
       {
+        "episode_id": 147217,
+        "display_name": "Rising Impact S01E10 - Play-off CZ Titulky",
+        "video_id": 30717287
+      },
+      {
+        "episode_id": 147221,
+        "display_name": "Rising Impact S02E03 - Camelot Cup začíná! CZ Titulky",
+        "video_id": 30717337
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -364260,6 +364270,11 @@
         "episode_id": 151807,
         "display_name": "LEGO Masters Australia S02E03 - 3. epizoda CZ Dabing",
         "video_id": 30717258
+      },
+      {
+        "episode_id": 151811,
+        "display_name": "LEGO Masters Australia S02E07 - 7. epizoda CZ Dabing",
+        "video_id": 30717330
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -555299,6 +555314,16 @@
         "video_id": 30717239
       },
       {
+        "episode_id": 147217,
+        "display_name": "Rising Impact S01E10 - Play-off CZ Titulky",
+        "video_id": 30717287
+      },
+      {
+        "episode_id": 147221,
+        "display_name": "Rising Impact S02E03 - Camelot Cup začíná! CZ Titulky",
+        "video_id": 30717337
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -728237,6 +728262,11 @@
         "episode_id": 151807,
         "display_name": "LEGO Masters Australia S02E03 - 3. epizoda CZ Dabing",
         "video_id": 30717258
+      },
+      {
+        "episode_id": 151811,
+        "display_name": "LEGO Masters Australia S02E07 - 7. epizoda CZ Dabing",
+        "video_id": 30717330
       }
     ],
     "prepared_not_upload_ready": [
