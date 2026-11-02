@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 113335,
     "manifest_upload_ready_episodes": 14,
-    "uploaded_episodes": 78289,
+    "uploaded_episodes": 78291,
     "prepared_source_episodes": 66935,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,43 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54001,
     "whisper_review_pending_sources": 37979,
-    "upload_pending_checkpoints": 28,
+    "upload_pending_checkpoints": 27,
     "subtitle_followup_sources": 49487,
     "subtitle_followup_pending_sources": 49487
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T18:52:33Z",
+      "databaseId": 41504659856,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T18:52:33Z",
+      "databaseId": 41504659693,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T18:52:29Z",
+      "databaseId": 41504649333,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T18:51:30Z",
+      "databaseId": 41504495152,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T18:50:22Z",
@@ -32,7 +64,7 @@
       "createdAt": "2026-11-02T18:50:15Z",
       "databaseId": 41504306483,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +84,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T18:48:30Z",
       "databaseId": 41504042844,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +100,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T18:44:54Z",
       "databaseId": 41503475882,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T18:41:25Z",
-      "databaseId": 41502949494,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T18:40:59Z",
-      "databaseId": 41502883869,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T18:40:54Z",
-      "databaseId": 41502870414,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T18:40:39Z",
-      "databaseId": 41502834046,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -192167,6 +192167,11 @@
         "video_id": 30739392
       },
       {
+        "episode_id": 163472,
+        "display_name": "Princezna Triád S01E02 - Všude samí sloni CZ Titulky",
+        "video_id": 30739517
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365865,6 +365870,11 @@
         "episode_id": 130258,
         "display_name": "Mladí milionáři S01E06 - 6. díl CZ Dabing",
         "video_id": 30739409
+      },
+      {
+        "episode_id": 124482,
+        "display_name": "Melancholia S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30739495
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -557749,6 +557759,11 @@
         "video_id": 30739392
       },
       {
+        "episode_id": 163472,
+        "display_name": "Princezna Triád S01E02 - Všude samí sloni CZ Titulky",
+        "video_id": 30739517
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -731447,6 +731462,11 @@
         "episode_id": 130258,
         "display_name": "Mladí milionáři S01E06 - 6. díl CZ Dabing",
         "video_id": 30739409
+      },
+      {
+        "episode_id": 124482,
+        "display_name": "Melancholia S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30739495
       }
     ],
     "prepared_not_upload_ready": [
