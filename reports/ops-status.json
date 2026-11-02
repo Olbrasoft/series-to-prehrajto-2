@@ -1,19 +1,19 @@
 {
   "counts": {
     "backlog_episodes": 113735,
-    "manifest_upload_ready_episodes": 64,
-    "uploaded_episodes": 77948,
-    "prepared_source_episodes": 66696,
+    "manifest_upload_ready_episodes": 63,
+    "uploaded_episodes": 77953,
+    "prepared_source_episodes": 66705,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 37,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 51,
-    "language_whisper_attempted_sources": 46,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 54038,
-    "whisper_review_pending_sources": 38088,
+    "whisper_review_sources": 54039,
+    "whisper_review_pending_sources": 38089,
     "upload_pending_checkpoints": 14,
     "subtitle_followup_sources": 49313,
     "subtitle_followup_pending_sources": 49313
@@ -21,10 +21,122 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T04:49:58Z",
+      "databaseId": 41390610523,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T04:49:51Z",
+      "databaseId": 41390601592,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:49:28Z",
+      "databaseId": 41390569226,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:48:29Z",
+      "databaseId": 41390486838,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T04:45:21Z",
+      "databaseId": 41390206465,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:45:17Z",
+      "databaseId": 41390201185,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T04:44:51Z",
+      "databaseId": 41390158973,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T04:44:47Z",
+      "databaseId": 41390153553,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T04:43:42Z",
+      "databaseId": 41390059451,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T04:42:45Z",
+      "databaseId": 41389975092,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:42:41Z",
+      "databaseId": 41389969925,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T04:42:37Z",
+      "databaseId": 41389963502,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:42:30Z",
+      "databaseId": 41389954226,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T04:42:27Z",
+      "databaseId": 41389949722,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T04:39:05Z",
       "databaseId": 41389647307,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -32,23 +144,23 @@
       "createdAt": "2026-11-02T04:38:02Z",
       "databaseId": 41389555155,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T04:37:25Z",
       "databaseId": 41389500569,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T04:37:21Z",
       "databaseId": 41389494476,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -63,118 +175,6 @@
       "conclusion": "skipped",
       "createdAt": "2026-11-02T04:36:59Z",
       "databaseId": 41389459206,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T04:35:25Z",
-      "databaseId": 41389316383,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T04:33:30Z",
-      "databaseId": 41389136395,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T04:33:29Z",
-      "databaseId": 41389134993,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T04:33:24Z",
-      "databaseId": 41389127061,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T04:32:19Z",
-      "databaseId": 41389025908,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T04:31:41Z",
-      "databaseId": 41388967307,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T04:30:11Z",
-      "databaseId": 41388819797,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T04:30:06Z",
-      "databaseId": 41388809905,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T04:29:39Z",
-      "databaseId": 41388766507,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T04:29:05Z",
-      "databaseId": 41388714743,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T04:29:01Z",
-      "databaseId": 41388708113,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T04:28:06Z",
-      "databaseId": 41388625162,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T04:26:59Z",
-      "databaseId": 41388521960,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T04:26:18Z",
-      "databaseId": 41388459251,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
@@ -191277,6 +191277,16 @@
         "video_id": 30716676
       },
       {
+        "episode_id": 179256,
+        "display_name": "Antiques Roadshow S48E01 - 1. epizoda CZ Titulky",
+        "video_id": 30716748
+      },
+      {
+        "episode_id": 134412,
+        "display_name": "Vaka S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30716788
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -364160,6 +364170,21 @@
         "episode_id": 88235,
         "display_name": "Ronja, dcera loupežníka S01E06 - Braní bez ptaní CZ Dabing",
         "video_id": 30716688
+      },
+      {
+        "episode_id": 88239,
+        "display_name": "Ronja, dcera loupežníka S01E10 - Slib bratrství CZ Dabing",
+        "video_id": 30716757
+      },
+      {
+        "episode_id": 88243,
+        "display_name": "Ronja, dcera loupežníka S01E14 - Kouzelné jaro CZ Dabing",
+        "video_id": 30716811
+      },
+      {
+        "episode_id": 88255,
+        "display_name": "Ronja, dcera loupežníka S01E15 - Nekonečný boj (1) CZ Dabing",
+        "video_id": 30716844
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -555154,6 +555179,16 @@
         "video_id": 30716676
       },
       {
+        "episode_id": 179256,
+        "display_name": "Antiques Roadshow S48E01 - 1. epizoda CZ Titulky",
+        "video_id": 30716748
+      },
+      {
+        "episode_id": 134412,
+        "display_name": "Vaka S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30716788
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -728037,6 +728072,21 @@
         "episode_id": 88235,
         "display_name": "Ronja, dcera loupežníka S01E06 - Braní bez ptaní CZ Dabing",
         "video_id": 30716688
+      },
+      {
+        "episode_id": 88239,
+        "display_name": "Ronja, dcera loupežníka S01E10 - Slib bratrství CZ Dabing",
+        "video_id": 30716757
+      },
+      {
+        "episode_id": 88243,
+        "display_name": "Ronja, dcera loupežníka S01E14 - Kouzelné jaro CZ Dabing",
+        "video_id": 30716811
+      },
+      {
+        "episode_id": 88255,
+        "display_name": "Ronja, dcera loupežníka S01E15 - Nekonečný boj (1) CZ Dabing",
+        "video_id": 30716844
       }
     ],
     "prepared_not_upload_ready": [
@@ -729198,12 +729248,11 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 5,
-    "resolve_failed": 2,
-    "ok": 44
+    "ok": 39,
+    "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36479,
+    "needs_whisper": 36480,
     "whisper_confirmed_cz": 3566,
     "whisper_non_cz_needs_subtitles": 12384,
     "whisper_failed": 1609
