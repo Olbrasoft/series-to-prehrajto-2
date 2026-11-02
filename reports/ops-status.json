@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 113531,
     "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 78141,
+    "uploaded_episodes": 78142,
     "prepared_source_episodes": 66771,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54015,
     "whisper_review_pending_sources": 37994,
-    "upload_pending_checkpoints": 22,
+    "upload_pending_checkpoints": 21,
     "subtitle_followup_sources": 49392,
     "subtitle_followup_pending_sources": 49392
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T11:26:54Z",
+      "databaseId": 41436914368,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:26:51Z",
+      "databaseId": 41436907676,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:26:47Z",
+      "databaseId": 41436898215,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T11:23:25Z",
       "databaseId": 41436449149,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +72,7 @@
       "createdAt": "2026-11-02T11:22:12Z",
       "databaseId": 41436287723,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,11 +108,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T11:16:54Z",
       "databaseId": 41435556979,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T11:13:22Z",
-      "databaseId": 41435061269,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T11:13:17Z",
-      "databaseId": 41435049039,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T11:12:55Z",
-      "databaseId": 41434999038,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -365125,6 +365125,11 @@
         "episode_id": 135983,
         "display_name": "Red Swan S01E08 - 8. epizoda CZ Titulky",
         "video_id": 30726216
+      },
+      {
+        "episode_id": 35915,
+        "display_name": "Obnažené S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30726300
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -729967,6 +729972,11 @@
         "episode_id": 135983,
         "display_name": "Red Swan S01E08 - 8. epizoda CZ Titulky",
         "video_id": 30726216
+      },
+      {
+        "episode_id": 35915,
+        "display_name": "Obnažené S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30726300
       }
     ],
     "prepared_not_upload_ready": [
