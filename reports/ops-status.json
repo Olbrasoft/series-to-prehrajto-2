@@ -1,38 +1,94 @@
 {
   "counts": {
     "backlog_episodes": 113456,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 78182,
-    "prepared_source_episodes": 66821,
+    "manifest_upload_ready_episodes": 13,
+    "uploaded_episodes": 78183,
+    "prepared_source_episodes": 66831,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 54,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54009,
-    "whisper_review_pending_sources": 37966,
+    "whisper_review_pending_sources": 37968,
     "upload_pending_checkpoints": 22,
-    "subtitle_followup_sources": 49420,
-    "subtitle_followup_pending_sources": 49420
+    "subtitle_followup_sources": 49421,
+    "subtitle_followup_pending_sources": 49421
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T13:29:14Z",
-      "databaseId": 41453384778,
+      "createdAt": "2026-11-02T13:32:42Z",
+      "databaseId": 41453889756,
       "headBranch": "main",
-      "status": "pending",
-      "workflowName": "ops-watchdog"
+      "status": "queued",
+      "workflowName": "ops-status"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T13:32:32Z",
+      "databaseId": 41453868370,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T13:31:22Z",
+      "databaseId": 41453694138,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T13:30:46Z",
+      "databaseId": 41453606666,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T13:29:53Z",
+      "databaseId": 41453474029,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T13:29:49Z",
+      "databaseId": 41453464521,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T13:29:34Z",
+      "databaseId": 41453432184,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T13:29:14Z",
+      "databaseId": 41453384778,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T13:29:08Z",
       "databaseId": 41453372349,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,11 +124,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T13:25:06Z",
       "databaseId": 41452796950,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -88,7 +144,7 @@
       "createdAt": "2026-11-02T13:24:11Z",
       "databaseId": 41452665517,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -108,11 +164,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T13:21:29Z",
       "databaseId": 41452277315,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T13:17:58Z",
-      "databaseId": 41451773275,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T13:17:33Z",
-      "databaseId": 41451714988,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T13:16:48Z",
-      "databaseId": 41451601436,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T13:16:43Z",
-      "databaseId": 41451590137,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T13:16:34Z",
-      "databaseId": 41451568638,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T13:16:28Z",
-      "databaseId": 41451553492,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T13:16:20Z",
-      "databaseId": 41451535825,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -365330,6 +365330,11 @@
         "episode_id": 144203,
         "display_name": "Backstage S01E03 - Světlá stránka CZ Dabing",
         "video_id": 30732495
+      },
+      {
+        "episode_id": 165210,
+        "display_name": "Aftertaste S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30732644
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -730377,6 +730382,11 @@
         "episode_id": 144203,
         "display_name": "Backstage S01E03 - Světlá stránka CZ Dabing",
         "video_id": 30732495
+      },
+      {
+        "episode_id": 165210,
+        "display_name": "Aftertaste S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30732644
       }
     ],
     "prepared_not_upload_ready": [
@@ -731538,16 +731548,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 14,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36358,
+    "needs_whisper": 36360,
     "whisper_confirmed_cz": 3578,
-    "whisper_non_cz_needs_subtitles": 12465,
+    "whisper_non_cz_needs_subtitles": 12463,
     "whisper_failed": 1608
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49420
+    "needs_subtitle_setup_after_prehrajto_processing": 49421
   }
 }
