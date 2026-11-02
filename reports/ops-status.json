@@ -1,17 +1,17 @@
 {
   "counts": {
     "backlog_episodes": 113387,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 78277,
-    "prepared_source_episodes": 66912,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 78278,
+    "prepared_source_episodes": 66911,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 67,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54004,
     "whisper_review_pending_sources": 37982,
     "upload_pending_checkpoints": 26,
@@ -21,10 +21,26 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T17:59:05Z",
+      "databaseId": 41496232187,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T17:58:25Z",
+      "databaseId": 41496135583,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T17:57:44Z",
       "databaseId": 41496033937,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +48,7 @@
       "createdAt": "2026-11-02T17:57:02Z",
       "databaseId": 41495927854,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T17:52:10Z",
       "databaseId": 41495184015,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -108,11 +124,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T17:50:46Z",
       "databaseId": 41494967146,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T17:48:17Z",
-      "databaseId": 41494583143,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T17:48:13Z",
-      "databaseId": 41494574167,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -192135,6 +192135,11 @@
         "episode_id": 124480,
         "display_name": "Melancholia S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30738359
+      },
+      {
+        "episode_id": 148976,
+        "display_name": "SHIBOYUGI: Playing Death Games to Put Food on the Table S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30738449
       },
       {
         "episode_id": 114182,
@@ -557659,6 +557664,11 @@
         "video_id": 30738359
       },
       {
+        "episode_id": 148976,
+        "display_name": "SHIBOYUGI: Playing Death Games to Put Food on the Table S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30738449
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -732488,8 +732498,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 27,
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
