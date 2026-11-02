@@ -1,30 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 113387,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 78242,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 78246,
     "prepared_source_episodes": 66868,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 30,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54006,
     "whisper_review_pending_sources": 37969,
-    "upload_pending_checkpoints": 27,
+    "upload_pending_checkpoints": 26,
     "subtitle_followup_sources": 49460,
     "subtitle_followup_pending_sources": 49460
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T16:04:33Z",
+      "databaseId": 41477872879,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T16:03:55Z",
+      "databaseId": 41477769016,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T16:02:13Z",
+      "databaseId": 41477486371,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T16:01:37Z",
+      "databaseId": 41477387567,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T16:01:33Z",
+      "databaseId": 41477376159,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T16:01:22Z",
+      "databaseId": 41477345028,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T16:01:14Z",
+      "databaseId": 41477319526,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T16:00:37Z",
       "databaseId": 41477208707,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,19 +108,19 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T15:54:40Z",
       "databaseId": 41476226988,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T15:54:24Z",
       "databaseId": 41476185605,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -72,7 +128,7 @@
       "createdAt": "2026-11-02T15:53:33Z",
       "databaseId": 41476044013,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -88,7 +144,7 @@
       "createdAt": "2026-11-02T15:52:23Z",
       "databaseId": 41475850288,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T15:52:11Z",
-      "databaseId": 41475817838,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T15:52:08Z",
-      "databaseId": 41475808470,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T15:50:52Z",
-      "databaseId": 41475606747,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T15:50:18Z",
-      "databaseId": 41475512113,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T15:48:42Z",
-      "databaseId": 41475253611,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T15:48:37Z",
-      "databaseId": 41475240073,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T15:45:59Z",
-      "databaseId": 41474806230,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -192057,6 +192057,16 @@
         "video_id": 30735753
       },
       {
+        "episode_id": 161964,
+        "display_name": "Burza S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30735789
+      },
+      {
+        "episode_id": 140184,
+        "display_name": "Lucky Luke S01E02 - Po stopách Charlie CZ Dabing",
+        "video_id": 30735854
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365630,6 +365640,16 @@
         "episode_id": 144218,
         "display_name": "Backstage S01E19 - Jednou za život CZ Dabing",
         "video_id": 30735768
+      },
+      {
+        "episode_id": 144215,
+        "display_name": "Backstage S01E16 - Restart CZ Dabing",
+        "video_id": 30735779
+      },
+      {
+        "episode_id": 161962,
+        "display_name": "Burza S01E05 - Tichý partner CZ Titulky",
+        "video_id": 30735847
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -557404,6 +557424,16 @@
         "video_id": 30735753
       },
       {
+        "episode_id": 161964,
+        "display_name": "Burza S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30735789
+      },
+      {
+        "episode_id": 140184,
+        "display_name": "Lucky Luke S01E02 - Po stopách Charlie CZ Dabing",
+        "video_id": 30735854
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -730977,6 +731007,16 @@
         "episode_id": 144218,
         "display_name": "Backstage S01E19 - Jednou za život CZ Dabing",
         "video_id": 30735768
+      },
+      {
+        "episode_id": 144215,
+        "display_name": "Backstage S01E16 - Restart CZ Dabing",
+        "video_id": 30735779
+      },
+      {
+        "episode_id": 161962,
+        "display_name": "Burza S01E05 - Tichý partner CZ Titulky",
+        "video_id": 30735847
       }
     ],
     "prepared_not_upload_ready": [
@@ -732138,8 +732178,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 10,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
