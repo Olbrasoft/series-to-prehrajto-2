@@ -2,16 +2,16 @@
   "counts": {
     "backlog_episodes": 113816,
     "manifest_upload_ready_episodes": 86,
-    "uploaded_episodes": 77876,
+    "uploaded_episodes": 77877,
     "prepared_source_episodes": 66676,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 39,
-    "language_whisper_attempted_sources": 21,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54045,
     "whisper_review_pending_sources": 38118,
     "upload_pending_checkpoints": 6,
@@ -21,10 +21,26 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T02:24:25Z",
+      "databaseId": 41377553264,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T02:23:59Z",
+      "databaseId": 41377511372,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T02:22:02Z",
       "databaseId": 41377336826,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +56,7 @@
       "createdAt": "2026-11-02T02:21:47Z",
       "databaseId": 41377315334,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T02:20:12Z",
       "databaseId": 41377173345,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -124,11 +140,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T02:17:26Z",
       "databaseId": 41376917791,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -144,7 +160,7 @@
       "createdAt": "2026-11-02T02:12:51Z",
       "databaseId": 41376496026,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T02:06:50Z",
-      "databaseId": 41375943720,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T02:06:37Z",
-      "databaseId": 41375925427,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -363800,6 +363800,11 @@
         "episode_id": 187526,
         "display_name": "Gábinin kouzelný domek S05E01 - Gábi, zmenšil jsem kočky! CZ Dabing",
         "video_id": 30713438
+      },
+      {
+        "episode_id": 187474,
+        "display_name": "Gábinin kouzelný domek S06E06 - Kico kočkorožka CZ Dabing",
+        "video_id": 30713549
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -727317,6 +727322,11 @@
         "episode_id": 187526,
         "display_name": "Gábinin kouzelný domek S05E01 - Gábi, zmenšil jsem kočky! CZ Dabing",
         "video_id": 30713438
+      },
+      {
+        "episode_id": 187474,
+        "display_name": "Gábinin kouzelný domek S06E06 - Kico kočkorožka CZ Dabing",
+        "video_id": 30713549
       }
     ],
     "prepared_not_upload_ready": [
@@ -728478,8 +728488,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 18,
-    "ok": 20,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
