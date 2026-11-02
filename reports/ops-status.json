@@ -1,24 +1,32 @@
 {
   "counts": {
     "backlog_episodes": 113613,
-    "manifest_upload_ready_episodes": 20,
-    "uploaded_episodes": 78055,
-    "prepared_source_episodes": 66711,
+    "manifest_upload_ready_episodes": 23,
+    "uploaded_episodes": 78056,
+    "prepared_source_episodes": 66714,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 36,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 29,
+    "language_whisper_attempted_sources": 21,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54030,
     "whisper_review_pending_sources": 38051,
-    "upload_pending_checkpoints": 22,
-    "subtitle_followup_sources": 49346,
-    "subtitle_followup_pending_sources": 49346
+    "upload_pending_checkpoints": 21,
+    "subtitle_followup_sources": 49347,
+    "subtitle_followup_pending_sources": 49347
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:11:46Z",
+      "databaseId": 41411263695,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T08:09:54Z",
@@ -28,11 +36,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T08:08:01Z",
       "databaseId": 41410814161,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -40,7 +48,7 @@
       "createdAt": "2026-11-02T08:07:30Z",
       "databaseId": 41410756096,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +68,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T08:05:11Z",
       "databaseId": 41410487777,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T07:52:48Z",
-      "databaseId": 41409130160,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -191545,6 +191545,11 @@
         "episode_id": 137536,
         "display_name": "Gremlins: Tajemství Mogwaiů S02E05 - V továrně na sušenky se vždycky skrývá jmění CZ Dabing",
         "video_id": 30721546
+      },
+      {
+        "episode_id": 153540,
+        "display_name": "A Man Who Defies the World of BL S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30721610
       },
       {
         "episode_id": 114182,
@@ -555959,6 +555964,11 @@
         "video_id": 30721546
       },
       {
+        "episode_id": 153540,
+        "display_name": "A Man Who Defies the World of BL S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30721610
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -730268,7 +730278,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "disabled": 8,
+    "ok": 20,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -730278,6 +730289,6 @@
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49346
+    "needs_subtitle_setup_after_prehrajto_processing": 49347
   }
 }
