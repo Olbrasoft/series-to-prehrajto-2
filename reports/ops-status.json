@@ -1,30 +1,70 @@
 {
   "counts": {
     "backlog_episodes": 113816,
-    "manifest_upload_ready_episodes": 83,
-    "uploaded_episodes": 77859,
-    "prepared_source_episodes": 66660,
+    "manifest_upload_ready_episodes": 86,
+    "uploaded_episodes": 77862,
+    "prepared_source_episodes": 66667,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 21,
-    "language_whisper_attempted_sources": 21,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 54048,
-    "whisper_review_pending_sources": 38127,
-    "upload_pending_checkpoints": 5,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 54049,
+    "whisper_review_pending_sources": 38130,
+    "upload_pending_checkpoints": 3,
     "subtitle_followup_sources": 49290,
     "subtitle_followup_pending_sources": 49290
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T01:50:36Z",
+      "databaseId": 41374567308,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-02T01:49:22Z",
+      "databaseId": 41374459935,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T01:48:22Z",
+      "databaseId": 41374373406,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T01:47:46Z",
+      "databaseId": 41374324053,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T01:47:43Z",
+      "databaseId": 41374320339,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T01:46:35Z",
       "databaseId": 41374223606,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +132,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T01:42:05Z",
       "databaseId": 41373845499,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -120,7 +160,7 @@
       "createdAt": "2026-11-02T01:40:35Z",
       "databaseId": 41373717221,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T01:40:15Z",
-      "databaseId": 41373686259,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T01:39:10Z",
-      "databaseId": 41373590875,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T01:37:08Z",
-      "databaseId": 41373419863,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T01:37:04Z",
-      "databaseId": 41373413366,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T01:35:33Z",
-      "databaseId": 41373278582,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -191030,6 +191030,21 @@
         "episode_id": 187528,
         "display_name": "Gábinin kouzelný domek S06E04 - Pan Kelímkovač CZ Dabing",
         "video_id": 30712527
+      },
+      {
+        "episode_id": 137768,
+        "display_name": "Káky nad Havolou S01E08 - Velké vystoupení CZ Dabing",
+        "video_id": 30712672
+      },
+      {
+        "episode_id": 203689,
+        "display_name": "Postarej se o mé srdce S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30712574
+      },
+      {
+        "episode_id": 191736,
+        "display_name": "Angry Birds: Střelené léto S01E08 - Nové prase CZ Dabing",
+        "video_id": 30712769
       },
       {
         "episode_id": 114182,
@@ -554464,6 +554479,21 @@
         "video_id": 30712527
       },
       {
+        "episode_id": 137768,
+        "display_name": "Káky nad Havolou S01E08 - Velké vystoupení CZ Dabing",
+        "video_id": 30712672
+      },
+      {
+        "episode_id": 203689,
+        "display_name": "Postarej se o mé srdce S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30712574
+      },
+      {
+        "episode_id": 191736,
+        "display_name": "Angry Birds: Střelené léto S01E08 - Nové prase CZ Dabing",
+        "video_id": 30712769
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -728308,13 +728338,13 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 20,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36518,
+    "needs_whisper": 36521,
     "whisper_confirmed_cz": 3542,
-    "whisper_non_cz_needs_subtitles": 12379,
+    "whisper_non_cz_needs_subtitles": 12377,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
