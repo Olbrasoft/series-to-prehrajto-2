@@ -1,30 +1,102 @@
 {
   "counts": {
     "backlog_episodes": 113335,
-    "manifest_upload_ready_episodes": 14,
-    "uploaded_episodes": 78294,
-    "prepared_source_episodes": 66935,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 78296,
+    "prepared_source_episodes": 66933,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 25,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54001,
     "whisper_review_pending_sources": 37979,
-    "upload_pending_checkpoints": 26,
-    "subtitle_followup_sources": 49487,
-    "subtitle_followup_pending_sources": 49487
+    "upload_pending_checkpoints": 28,
+    "subtitle_followup_sources": 49488,
+    "subtitle_followup_pending_sources": 49488
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T19:03:21Z",
+      "databaseId": 41506336151,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T19:03:16Z",
+      "databaseId": 41506322145,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T19:03:02Z",
+      "databaseId": 41506287259,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T19:02:39Z",
+      "databaseId": 41506230728,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T19:02:36Z",
+      "databaseId": 41506221645,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T19:02:01Z",
+      "databaseId": 41506132238,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T19:01:53Z",
+      "databaseId": 41506111603,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T18:59:19Z",
+      "databaseId": 41505700634,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T18:59:15Z",
+      "databaseId": 41505690414,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T18:55:10Z",
       "databaseId": 41505061830,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +124,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T18:51:30Z",
       "databaseId": 41504495152,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -88,7 +160,7 @@
       "createdAt": "2026-11-02T18:49:31Z",
       "databaseId": 41504196617,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T18:44:54Z",
-      "databaseId": 41503475882,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T18:44:28Z",
-      "databaseId": 41503412284,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T18:43:32Z",
-      "databaseId": 41503268327,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T18:42:40Z",
-      "databaseId": 41503139752,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T18:42:35Z",
-      "databaseId": 41503126384,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T18:42:25Z",
-      "databaseId": 41503100422,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T18:42:23Z",
-      "databaseId": 41503096677,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T18:42:07Z",
-      "databaseId": 41503054087,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T18:42:00Z",
-      "databaseId": 41503037191,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -192182,6 +192182,11 @@
         "video_id": 30739665
       },
       {
+        "episode_id": 130260,
+        "display_name": "Mladí milionáři S01E08 - 8. díl CZ Dabing",
+        "video_id": 30739751
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -365890,6 +365895,11 @@
         "episode_id": 163475,
         "display_name": "Princezna Triád S01E05 - Dohoda je dohoda CZ Titulky",
         "video_id": 30739645
+      },
+      {
+        "episode_id": 155994,
+        "display_name": "Mary Shelley's Frankenhole S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30739740
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -557789,6 +557799,11 @@
         "video_id": 30739665
       },
       {
+        "episode_id": 130260,
+        "display_name": "Mladí milionáři S01E08 - 8. díl CZ Dabing",
+        "video_id": 30739751
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -731497,6 +731512,11 @@
         "episode_id": 163475,
         "display_name": "Princezna Triád S01E05 - Dohoda je dohoda CZ Titulky",
         "video_id": 30739645
+      },
+      {
+        "episode_id": 155994,
+        "display_name": "Mary Shelley's Frankenhole S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30739740
       }
     ],
     "prepared_not_upload_ready": [
@@ -732658,6 +732678,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 5,
     "ok": 19,
     "resolve_failed": 1
   },
@@ -732668,6 +732689,6 @@
     "whisper_failed": 1608
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49487
+    "needs_subtitle_setup_after_prehrajto_processing": 49488
   }
 }
