@@ -1,5 +1,21 @@
 # Operations handoff
 
+## Upload checkpoint contention (November 2, 2026)
+
+Repeated reporting and preparation commits could exhaust the five checkpoint
+attempts: every retry reloaded and merged the entire upload history before pushing.
+Checkpoints now retry up to twelve times and rebase an already merged checkpoint
+when none of the upload state files changed since its parent. A change to any
+shard or legacy upload state always rebuilds the global merge, so a competing
+account's committed reservation still wins. Failed persistence remains fatal and
+retains its recovery artifact. The workflow's final state step uses the same
+checkpoint implementation through `--checkpoint-only`, without portal access.
+
+Regression tests use real local Git remotes: seven consecutive unrelated push
+races must succeed with one full merge, and a cross-account claim arriving after
+a rebase must force a fresh global check. Verify production using new checkpoint
+commits, all active upload shards and actual successful upload timestamps.
+
 ## Dependency-free status reporting (October 27, 2026)
 
 `ops-status.yml` uses Python's standard library without installing application

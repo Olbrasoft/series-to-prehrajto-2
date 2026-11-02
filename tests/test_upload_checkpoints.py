@@ -131,7 +131,7 @@ def test_git_push_failure_is_fatal_and_preserves_checkpoint_artifact(tmp_path, m
         return SimpleNamespace(returncode=1 if args[1] in {'push', 'diff'} else 0)
     monkeypatch.setattr(sync.subprocess, 'run', run)
     with pytest.raises(sync.StatePersistenceError): sync.push_state('reserve fixture')
-    assert len(pushes) == 5
+    assert len(pushes) == sync.STATE_PUSH_ATTEMPTS
     snapshots = list((tmp_path / '.upload-checkpoints').glob('*.json'))
     assert len(snapshots) == 1
     assert json.loads(snapshots[0].read_text())['pending_uploads'] == [intent()]

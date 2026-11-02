@@ -33,6 +33,7 @@ DESCRIPTIONS = REPO_ROOT / "plans" / "descriptions.jsonl"
 PREPARED_SOURCES = REPO_ROOT / "plans" / "prepared-episodes.jsonl"
 UPLOAD_ACCOUNT = os.environ.get("PREHRAJTO_ACCOUNT", "primary")
 MIN_UPLOAD_FILE_SIZE = 300 * 1024 * 1024
+STATE_PUSH_ATTEMPTS = 12
 DOWNLOAD_TIMEOUT_SECONDS = int(os.environ.get("SYNC_DOWNLOAD_TIMEOUT_SECONDS", "360"))
 DOWNLOAD_MIN_SPEED_BYTES = int(os.environ.get("SYNC_DOWNLOAD_MIN_SPEED_BYTES", "250000"))
 DOWNLOAD_SPEED_TIME_SECONDS = int(os.environ.get("SYNC_DOWNLOAD_SPEED_TIME_SECONDS", "90"))
@@ -75,8 +76,28 @@ def push_state(reason: str) -> dict | None:
         snapshot.parent.mkdir(parents=True, exist_ok=True)
         snapshot.write_text(json.dumps(state_snapshot, ensure_ascii=False), encoding='utf-8')
         tag = f"{UPLOAD_ACCOUNT} shard {SHARD_ID}/{NUM_SHARDS}" if NUM_SHARDS > 1 else f"{UPLOAD_ACCOUNT} sync"
-        for _ in range(5):
+        have_commit = False
+        global_state = None
+        for attempt in range(STATE_PUSH_ATTEMPTS):
             subprocess.run(["git", "fetch", "origin", "main"], check=True)
+            if have_commit:
+                # Reporting/preparation commits do not change the claim boundary.
+                # Rebase the already merged checkpoint instead of spending another
+                # full-state merge window racing their next status commit.
+                changed = subprocess.run([
+                    "git", "diff", "--quiet", "HEAD^", "origin/main", "--",
+                    "state/uploaded.json", "state/uploaded-shard-*.json",
+                ], check=False).returncode
+                if changed not in (0, 1):
+                    raise StatePersistenceError('Unable to compare remote upload reservations')
+                if changed == 0:
+                    if subprocess.run(["git", "rebase", "origin/main"], check=False).returncode == 0:
+                        if subprocess.run(["git", "push", "origin", "HEAD:main"], check=False).returncode == 0:
+                            snapshot.unlink(missing_ok=True)
+                            return global_state
+                        time.sleep(min(attempt + 1, 5))
+                        continue
+                    subprocess.run(["git", "rebase", "--abort"], check=True)
             subprocess.run(["git", "reset", "--hard", "origin/main"], check=True)
             STATE.parent.mkdir(parents=True, exist_ok=True)
             current_state = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() and STATE.stat().st_size > 0 else {}
@@ -93,10 +114,11 @@ def push_state(reason: str) -> dict | None:
                 snapshot.unlink(missing_ok=True)
                 return global_state
             subprocess.run(["git", "commit", "-m", f"chore({tag}): {reason}"], check=True)
+            have_commit = True
             if subprocess.run(["git", "push", "origin", "HEAD:main"], check=False).returncode == 0:
                 snapshot.unlink(missing_ok=True)
                 return global_state
-            time.sleep(2)
+            time.sleep(min(attempt + 1, 5))
         raise StatePersistenceError('Upload checkpoint was not persisted after retries')
     except Exception as exc:
         raise StatePersistenceError(f'Upload checkpoint failed: {type(exc).__name__}; inspect the checkpoint artifact') from exc
@@ -419,6 +441,7 @@ def process_episode(episode: dict, session, state: dict, *, allow_subtitles: boo
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--count", type=int, default=10)
+    ap.add_argument("--checkpoint-only", action="store_true", help="Persist local upload state without contacting the portal.")
     ap.add_argument(
         "--max-episode-attempts",
         type=int,
@@ -429,6 +452,9 @@ def main() -> int:
     ap.add_argument("--require-description", action="store_true", default=os.environ.get("REQUIRE_PREPARED_DESCRIPTIONS") == "1")
     ap.add_argument("--require-source-plan", action="store_true", default=os.environ.get("REQUIRE_PREPARED_SOURCES") == "1")
     args = ap.parse_args()
+    if args.checkpoint_only:
+        push_state('persist final upload state')
+        return 0
     max_episode_attempts = args.max_episode_attempts or max(args.count, args.count * 6)
 
     email = os.environ.get("PREHRAJTO_EMAIL")
