@@ -1,30 +1,94 @@
 {
   "counts": {
     "backlog_episodes": 113292,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 78363,
-    "prepared_source_episodes": 67031,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 78364,
+    "prepared_source_episodes": 67035,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 29,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53994,
     "whisper_review_pending_sources": 37961,
-    "upload_pending_checkpoints": 28,
+    "upload_pending_checkpoints": 27,
     "subtitle_followup_sources": 49532,
     "subtitle_followup_pending_sources": 49532
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T23:21:58Z",
+      "databaseId": 41544863411,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T23:21:24Z",
+      "databaseId": 41544789289,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T23:21:18Z",
+      "databaseId": 41544777048,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T23:21:11Z",
+      "databaseId": 41544760274,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T23:20:28Z",
+      "databaseId": 41544663759,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T23:20:08Z",
+      "databaseId": 41544614716,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T23:19:49Z",
+      "databaseId": 41544572152,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T23:19:28Z",
+      "databaseId": 41544526435,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T23:17:26Z",
       "databaseId": 41544258899,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +100,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T23:16:14Z",
       "databaseId": 41544098967,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +120,7 @@
       "createdAt": "2026-11-02T23:16:07Z",
       "databaseId": 41544082989,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -64,7 +128,7 @@
       "createdAt": "2026-11-02T23:15:31Z",
       "databaseId": 41544003625,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -84,11 +148,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "failure",
       "createdAt": "2026-11-02T23:13:54Z",
       "databaseId": 41543786959,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T23:13:15Z",
-      "databaseId": 41543698954,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T23:12:52Z",
-      "databaseId": 41543647623,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T23:11:28Z",
-      "databaseId": 41543454717,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T23:11:03Z",
-      "databaseId": 41543401243,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T23:10:56Z",
-      "databaseId": 41543386430,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T23:08:46Z",
-      "databaseId": 41543086601,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T23:07:40Z",
-      "databaseId": 41542932478,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T23:07:33Z",
-      "databaseId": 41542918474,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -366235,6 +366235,11 @@
         "episode_id": 178907,
         "display_name": "Baraja: La firma del asesino S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30744480
+      },
+      {
+        "episode_id": 123019,
+        "display_name": "Svörtu Sandar S02E04 - 4. epizoda CZ Dabing",
+        "video_id": 30744615
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -732187,6 +732192,11 @@
         "episode_id": 178907,
         "display_name": "Baraja: La firma del asesino S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30744480
+      },
+      {
+        "episode_id": 123019,
+        "display_name": "Svörtu Sandar S02E04 - 4. epizoda CZ Dabing",
+        "video_id": 30744615
       }
     ],
     "prepared_not_upload_ready": [
@@ -733348,8 +733358,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 9,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
