@@ -1,15 +1,15 @@
 {
   "counts": {
     "backlog_episodes": 113735,
-    "manifest_upload_ready_episodes": 48,
-    "uploaded_episodes": 77992,
-    "prepared_source_episodes": 66703,
+    "manifest_upload_ready_episodes": 47,
+    "uploaded_episodes": 77993,
+    "prepared_source_episodes": 66708,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 36,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 44,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54034,
@@ -21,10 +21,58 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T05:59:31Z",
+      "databaseId": 41397180006,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T05:58:15Z",
+      "databaseId": 41397064741,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T05:58:13Z",
+      "databaseId": 41397061088,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T05:58:11Z",
+      "databaseId": 41397058246,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T05:58:09Z",
+      "databaseId": 41397055796,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T05:58:07Z",
+      "databaseId": 41397051799,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T05:56:37Z",
       "databaseId": 41396916738,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,27 +108,27 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T05:51:35Z",
       "databaseId": 41396447987,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T05:50:09Z",
       "databaseId": 41396310781,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T05:50:04Z",
       "databaseId": 41396301398,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T05:42:01Z",
-      "databaseId": 41395536923,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T05:42:01Z",
-      "databaseId": 41395536868,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T05:41:58Z",
-      "databaseId": 41395532375,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T05:41:23Z",
-      "databaseId": 41395477063,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T05:38:54Z",
-      "databaseId": 41395243158,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T05:38:03Z",
-      "databaseId": 41395165883,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -191355,6 +191355,11 @@
         "episode_id": 175932,
         "display_name": "Můj děda je sériový vrah? S01E03 - 3. epizoda CZ Dabing",
         "video_id": 30718216
+      },
+      {
+        "episode_id": 17308,
+        "display_name": "Ochránci S01E02 - Epizoda 2 CZ Dabing",
+        "video_id": 30718298
       },
       {
         "episode_id": 114182,
@@ -555454,6 +555459,11 @@
         "video_id": 30718216
       },
       {
+        "episode_id": 17308,
+        "display_name": "Ochránci S01E02 - Epizoda 2 CZ Dabing",
+        "video_id": 30718298
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -729638,6 +729648,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 4,
     "ok": 39,
     "resolve_failed": 1
   },
