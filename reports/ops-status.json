@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 113335,
-    "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 78319,
-    "prepared_source_episodes": 66981,
+    "manifest_upload_ready_episodes": 13,
+    "uploaded_episodes": 78321,
+    "prepared_source_episodes": 66982,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
@@ -14,11 +14,51 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53996,
     "whisper_review_pending_sources": 37969,
-    "upload_pending_checkpoints": 27,
+    "upload_pending_checkpoints": 26,
     "subtitle_followup_sources": 49516,
     "subtitle_followup_pending_sources": 49516
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T20:54:45Z",
+      "databaseId": 41523518739,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T20:52:52Z",
+      "databaseId": 41523234755,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T20:52:46Z",
+      "databaseId": 41523220656,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T20:52:14Z",
+      "databaseId": 41523136366,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T20:52:02Z",
+      "databaseId": 41523104414,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T20:51:30Z",
@@ -28,11 +68,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T20:50:44Z",
       "databaseId": 41522907452,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -44,11 +84,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T20:50:30Z",
       "databaseId": 41522873512,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +108,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T20:42:58Z",
       "databaseId": 41521734066,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -128,53 +168,13 @@
       "createdAt": "2026-11-02T20:38:38Z",
       "databaseId": 41521086920,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
       "conclusion": "cancelled",
       "createdAt": "2026-11-02T20:38:09Z",
       "databaseId": 41521014813,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T20:37:24Z",
-      "databaseId": 41520902438,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T20:37:21Z",
-      "databaseId": 41520893892,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T20:36:25Z",
-      "databaseId": 41520754433,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T20:36:05Z",
-      "databaseId": 41520703427,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T20:35:53Z",
-      "databaseId": 41520669627,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -366015,6 +366015,16 @@
         "episode_id": 148979,
         "display_name": "SHIBOYUGI: Playing Death Games to Put Food on the Table S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30741738
+      },
+      {
+        "episode_id": 156002,
+        "display_name": "Mary Shelley's Frankenhole S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30741803
+      },
+      {
+        "episode_id": 148982,
+        "display_name": "SHIBOYUGI: Playing Death Games to Put Food on the Table S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30741860
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -731747,6 +731757,16 @@
         "episode_id": 148979,
         "display_name": "SHIBOYUGI: Playing Death Games to Put Food on the Table S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30741738
+      },
+      {
+        "episode_id": 156002,
+        "display_name": "Mary Shelley's Frankenhole S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30741803
+      },
+      {
+        "episode_id": 148982,
+        "display_name": "SHIBOYUGI: Playing Death Games to Put Food on the Table S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30741860
       }
     ],
     "prepared_not_upload_ready": [
