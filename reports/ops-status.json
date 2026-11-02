@@ -2,23 +2,71 @@
   "counts": {
     "backlog_episodes": 113735,
     "manifest_upload_ready_episodes": 56,
-    "uploaded_episodes": 77971,
+    "uploaded_episodes": 77972,
     "prepared_source_episodes": 66707,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 37,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 38,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54038,
     "whisper_review_pending_sources": 38082,
-    "upload_pending_checkpoints": 14,
+    "upload_pending_checkpoints": 15,
     "subtitle_followup_sources": 49317,
     "subtitle_followup_pending_sources": 49317
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T05:17:00Z",
+      "databaseId": 41393095458,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T05:16:57Z",
+      "databaseId": 41393090382,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T05:16:36Z",
+      "databaseId": 41393057703,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T05:16:17Z",
+      "databaseId": 41393028879,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T05:16:08Z",
+      "databaseId": 41393013577,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T05:16:01Z",
+      "databaseId": 41393001774,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T05:14:48Z",
@@ -44,11 +92,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T05:10:40Z",
       "databaseId": 41392479329,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +104,7 @@
       "createdAt": "2026-11-02T05:09:31Z",
       "databaseId": 41392367306,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -76,11 +124,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T05:08:26Z",
       "databaseId": 41392270601,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -108,11 +156,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T05:05:57Z",
       "databaseId": 41392035896,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T05:03:56Z",
-      "databaseId": 41391845323,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T05:01:47Z",
-      "databaseId": 41391648557,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T05:01:30Z",
-      "databaseId": 41391621207,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T05:01:24Z",
-      "databaseId": 41391612985,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T04:58:25Z",
-      "databaseId": 41391343090,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T04:58:22Z",
-      "databaseId": 41391339430,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -364275,6 +364275,11 @@
         "episode_id": 151811,
         "display_name": "LEGO Masters Australia S02E07 - 7. epizoda CZ Dabing",
         "video_id": 30717330
+      },
+      {
+        "episode_id": 151806,
+        "display_name": "LEGO Masters Australia S02E02 - 2. epizoda CZ Dabing",
+        "video_id": 30717320
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -728267,6 +728272,11 @@
         "episode_id": 151811,
         "display_name": "LEGO Masters Australia S02E07 - 7. epizoda CZ Dabing",
         "video_id": 30717330
+      },
+      {
+        "episode_id": 151806,
+        "display_name": "LEGO Masters Australia S02E02 - 2. epizoda CZ Dabing",
+        "video_id": 30717320
       }
     ],
     "prepared_not_upload_ready": [
@@ -729428,8 +729438,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 18,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
