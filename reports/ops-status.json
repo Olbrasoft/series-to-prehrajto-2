@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 113735,
-    "manifest_upload_ready_episodes": 66,
-    "uploaded_episodes": 77944,
+    "manifest_upload_ready_episodes": 64,
+    "uploaded_episodes": 77948,
     "prepared_source_episodes": 66696,
     "description_series": 60,
     "description_episodes": 753,
@@ -21,10 +21,66 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T04:39:05Z",
+      "databaseId": 41389647307,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:38:02Z",
+      "databaseId": 41389555155,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:37:25Z",
+      "databaseId": 41389500569,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:37:21Z",
+      "databaseId": 41389494476,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T04:37:18Z",
+      "databaseId": 41389490012,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T04:36:59Z",
+      "databaseId": 41389459206,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T04:35:25Z",
+      "databaseId": 41389316383,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T04:33:30Z",
       "databaseId": 41389136395,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,19 +92,19 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T04:33:24Z",
       "databaseId": 41389127061,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T04:32:19Z",
       "databaseId": 41389025908,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -80,7 +136,7 @@
       "createdAt": "2026-11-02T04:29:39Z",
       "databaseId": 41388766507,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,19 +148,19 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T04:29:01Z",
       "databaseId": 41388708113,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T04:28:06Z",
       "databaseId": 41388625162,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T04:25:53Z",
-      "databaseId": 41388419776,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T04:25:01Z",
-      "databaseId": 41388336716,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T04:24:06Z",
-      "databaseId": 41388250766,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T04:24:01Z",
-      "databaseId": 41388243123,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T04:23:12Z",
-      "databaseId": 41388168048,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T04:23:08Z",
-      "databaseId": 41388160596,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T04:23:06Z",
-      "databaseId": 41388158248,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -191267,6 +191267,16 @@
         "video_id": 30716517
       },
       {
+        "episode_id": 191740,
+        "display_name": "Angry Birds: Střelené léto S01E12 - Chůvy v akci CZ Dabing",
+        "video_id": 30716608
+      },
+      {
+        "episode_id": 200464,
+        "display_name": "Twelve S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30716676
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -364140,6 +364150,16 @@
         "episode_id": 187482,
         "display_name": "Gábinin kouzelný domek S04E01 - Dortě a jeho košíčkoví bratranci CZ Dabing",
         "video_id": 30716526
+      },
+      {
+        "episode_id": 200463,
+        "display_name": "Twelve S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30716581
+      },
+      {
+        "episode_id": 88235,
+        "display_name": "Ronja, dcera loupežníka S01E06 - Braní bez ptaní CZ Dabing",
+        "video_id": 30716688
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -555124,6 +555144,16 @@
         "video_id": 30716517
       },
       {
+        "episode_id": 191740,
+        "display_name": "Angry Birds: Střelené léto S01E12 - Chůvy v akci CZ Dabing",
+        "video_id": 30716608
+      },
+      {
+        "episode_id": 200464,
+        "display_name": "Twelve S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30716676
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -727997,6 +728027,16 @@
         "episode_id": 187482,
         "display_name": "Gábinin kouzelný domek S04E01 - Dortě a jeho košíčkoví bratranci CZ Dabing",
         "video_id": 30716526
+      },
+      {
+        "episode_id": 200463,
+        "display_name": "Twelve S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30716581
+      },
+      {
+        "episode_id": 88235,
+        "display_name": "Ronja, dcera loupežníka S01E06 - Braní bez ptaní CZ Dabing",
+        "video_id": 30716688
       }
     ],
     "prepared_not_upload_ready": [
