@@ -1,38 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 113613,
-    "manifest_upload_ready_episodes": 16,
-    "uploaded_episodes": 78079,
+    "manifest_upload_ready_episodes": 17,
+    "uploaded_episodes": 78083,
     "prepared_source_episodes": 66732,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 37,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 54028,
-    "whisper_review_pending_sources": 38046,
-    "upload_pending_checkpoints": 22,
-    "subtitle_followup_sources": 49354,
-    "subtitle_followup_pending_sources": 49354
+    "language_audited_sources": 36,
+    "language_whisper_attempted_sources": 30,
+    "language_pending_whisper_sources": 2624,
+    "whisper_review_sources": 54026,
+    "whisper_review_pending_sources": 38035,
+    "upload_pending_checkpoints": 24,
+    "subtitle_followup_sources": 49358,
+    "subtitle_followup_pending_sources": 49358
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T09:07:50Z",
-      "databaseId": 41418149317,
+      "createdAt": "2026-11-02T09:17:11Z",
+      "databaseId": 41419385272,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "update-descriptions"
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T09:13:17Z",
+      "databaseId": 41418864361,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T09:10:39Z",
+      "databaseId": 41418518893,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:10:33Z",
+      "databaseId": 41418505770,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T09:08:30Z",
+      "databaseId": 41418237153,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T09:08:24Z",
+      "databaseId": 41418224252,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T09:07:50Z",
+      "databaseId": 41418149317,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T09:06:52Z",
       "databaseId": 41418025268,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +88,7 @@
       "createdAt": "2026-11-02T09:06:48Z",
       "databaseId": 41418014924,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -76,11 +124,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T09:02:12Z",
       "databaseId": 41417427960,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -100,11 +148,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T09:00:44Z",
       "databaseId": 41417234284,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T08:56:53Z",
-      "databaseId": 41416762627,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T08:56:48Z",
-      "databaseId": 41416752409,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T08:56:12Z",
-      "databaseId": 41416681025,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T08:56:07Z",
-      "databaseId": 41416670804,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T08:54:33Z",
-      "databaseId": 41416471425,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T08:53:25Z",
-      "databaseId": 41416335794,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -191607,6 +191607,21 @@
         "video_id": 30722447
       },
       {
+        "episode_id": 160653,
+        "display_name": "LEGO Masters Australia S03E08 - 8. epizoda CZ Titulky",
+        "video_id": 30722507
+      },
+      {
+        "episode_id": 187508,
+        "display_name": "Gábinin kouzelný domek S11E03 - Den Veselého Kočičína CZ Dabing",
+        "video_id": 30722624
+      },
+      {
+        "episode_id": 117357,
+        "display_name": "Matador S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30722634
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -364815,6 +364830,11 @@
         "episode_id": 144815,
         "display_name": "The End S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30722296
+      },
+      {
+        "episode_id": 187511,
+        "display_name": "Gábinin kouzelný domek S11E06 - Rodinný den CZ Dabing",
+        "video_id": 30722627
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -556139,6 +556159,21 @@
         "video_id": 30722447
       },
       {
+        "episode_id": 160653,
+        "display_name": "LEGO Masters Australia S03E08 - 8. epizoda CZ Titulky",
+        "video_id": 30722507
+      },
+      {
+        "episode_id": 187508,
+        "display_name": "Gábinin kouzelný domek S11E03 - Den Veselého Kočičína CZ Dabing",
+        "video_id": 30722624
+      },
+      {
+        "episode_id": 117357,
+        "display_name": "Matador S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30722634
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -729347,6 +729382,11 @@
         "episode_id": 144815,
         "display_name": "The End S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30722296
+      },
+      {
+        "episode_id": 187511,
+        "display_name": "Gábinin kouzelný domek S11E06 - Rodinný den CZ Dabing",
+        "video_id": 30722627
       }
     ],
     "prepared_not_upload_ready": [
@@ -730508,16 +730548,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "disabled": 6,
+    "ok": 29,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36437,
-    "whisper_confirmed_cz": 3574,
-    "whisper_non_cz_needs_subtitles": 12408,
+    "needs_whisper": 36426,
+    "whisper_confirmed_cz": 3575,
+    "whisper_non_cz_needs_subtitles": 12416,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49354
+    "needs_subtitle_setup_after_prehrajto_processing": 49358
   }
 }
