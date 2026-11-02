@@ -1,38 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 113928,
-    "manifest_upload_ready_episodes": 87,
-    "uploaded_episodes": 77812,
-    "prepared_source_episodes": 66643,
+    "manifest_upload_ready_episodes": 83,
+    "uploaded_episodes": 77817,
+    "prepared_source_episodes": 66645,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 66,
-    "language_whisper_attempted_sources": 22,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 48,
+    "language_whisper_attempted_sources": 42,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54056,
     "whisper_review_pending_sources": 38155,
-    "upload_pending_checkpoints": 4,
+    "upload_pending_checkpoints": 3,
     "subtitle_followup_sources": 49276,
     "subtitle_followup_pending_sources": 49276
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T00:15:19Z",
-      "databaseId": 41366151032,
+      "createdAt": "2026-11-02T00:22:48Z",
+      "databaseId": 41366828416,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T00:20:32Z",
+      "databaseId": 41366626502,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T00:18:52Z",
+      "databaseId": 41366471384,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T00:15:19Z",
+      "databaseId": 41366151032,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T00:15:00Z",
       "databaseId": 41366116766,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -108,11 +132,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T00:11:04Z",
       "databaseId": 41365769909,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -148,36 +172,12 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T00:06:35Z",
       "databaseId": 41365369146,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T00:02:47Z",
-      "databaseId": 41365037286,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T00:02:28Z",
-      "databaseId": 41365011569,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T00:00:21Z",
-      "databaseId": 41364829193,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -190927,6 +190927,16 @@
         "video_id": 30710870
       },
       {
+        "episode_id": 74353,
+        "display_name": "Digimon S01E15 - 15. epizoda CZ Titulky",
+        "video_id": 30710964
+      },
+      {
+        "episode_id": 203792,
+        "display_name": "Coven Academy S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30710982
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -363480,6 +363490,21 @@
         "episode_id": 165135,
         "display_name": "My Stubborn S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30710860
+      },
+      {
+        "episode_id": 74359,
+        "display_name": "Digimon S01E23 - 23. epizoda CZ Titulky",
+        "video_id": 30710940
+      },
+      {
+        "episode_id": 74358,
+        "display_name": "Digimon S01E22 - 22. epizoda CZ Titulky",
+        "video_id": 30710967
+      },
+      {
+        "episode_id": 203851,
+        "display_name": "Znovu mladá S01E07 - 7. epizoda CZ Dabing",
+        "video_id": 30711001
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -554124,6 +554149,16 @@
         "video_id": 30710870
       },
       {
+        "episode_id": 74353,
+        "display_name": "Digimon S01E15 - 15. epizoda CZ Titulky",
+        "video_id": 30710964
+      },
+      {
+        "episode_id": 203792,
+        "display_name": "Coven Academy S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30710982
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -726677,6 +726712,21 @@
         "episode_id": 165135,
         "display_name": "My Stubborn S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30710860
+      },
+      {
+        "episode_id": 74359,
+        "display_name": "Digimon S01E23 - 23. epizoda CZ Titulky",
+        "video_id": 30710940
+      },
+      {
+        "episode_id": 74358,
+        "display_name": "Digimon S01E22 - 22. epizoda CZ Titulky",
+        "video_id": 30710967
+      },
+      {
+        "episode_id": 203851,
+        "display_name": "Znovu mladá S01E07 - 7. epizoda CZ Dabing",
+        "video_id": 30711001
       }
     ],
     "prepared_not_upload_ready": [
@@ -727838,8 +727888,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 44,
-    "ok": 21,
+    "disabled": 6,
+    "ok": 41,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
