@@ -1,38 +1,46 @@
 {
   "counts": {
     "backlog_episodes": 113456,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 78162,
-    "prepared_source_episodes": 66798,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 78164,
+    "prepared_source_episodes": 66797,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 55,
+    "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 54014,
-    "whisper_review_pending_sources": 37986,
-    "upload_pending_checkpoints": 21,
-    "subtitle_followup_sources": 49400,
-    "subtitle_followup_pending_sources": 49400
+    "whisper_review_sources": 54013,
+    "whisper_review_pending_sources": 37983,
+    "upload_pending_checkpoints": 23,
+    "subtitle_followup_sources": 49402,
+    "subtitle_followup_pending_sources": 49402
   },
   "workflow_runs": [
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T12:27:21Z",
+      "databaseId": 41444832434,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T12:26:58Z",
       "databaseId": 41444781357,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T12:26:31Z",
       "databaseId": 41444722337,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -68,19 +76,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T12:24:34Z",
       "databaseId": 41444452496,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T12:24:01Z",
       "databaseId": 41444377644,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +100,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T12:23:12Z",
       "databaseId": 41444265439,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -104,7 +112,7 @@
       "createdAt": "2026-11-02T12:23:09Z",
       "databaseId": 41444257242,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T12:17:24Z",
-      "databaseId": 41443464223,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -191870,6 +191870,16 @@
         "episode_id": 176693,
         "display_name": "Een van ons S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30730992
+      },
+      {
+        "episode_id": 163796,
+        "display_name": "Město andělů, město smrti S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30731137
+      },
+      {
+        "episode_id": 144201,
+        "display_name": "Backstage S01E01 - První den CZ Dabing",
+        "video_id": 30731146
       },
       {
         "episode_id": 114182,
@@ -556819,6 +556829,16 @@
         "video_id": 30730992
       },
       {
+        "episode_id": 163796,
+        "display_name": "Město andělů, město smrti S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30731137
+      },
+      {
+        "episode_id": 144201,
+        "display_name": "Backstage S01E01 - První den CZ Dabing",
+        "video_id": 30731146
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -731338,17 +731358,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 15,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36378,
+    "needs_whisper": 36375,
     "whisper_confirmed_cz": 3578,
-    "whisper_non_cz_needs_subtitles": 12450,
+    "whisper_non_cz_needs_subtitles": 12452,
     "whisper_failed": 1608
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49400
+    "needs_subtitle_setup_after_prehrajto_processing": 49402
   }
 }
