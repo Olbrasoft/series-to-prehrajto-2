@@ -2,16 +2,16 @@
   "counts": {
     "backlog_episodes": 113613,
     "manifest_upload_ready_episodes": 21,
-    "uploaded_episodes": 78069,
+    "uploaded_episodes": 78072,
     "prepared_source_episodes": 66727,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 36,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 29,
-    "language_whisper_attempted_sources": 23,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54028,
     "whisper_review_pending_sources": 38045,
     "upload_pending_checkpoints": 23,
@@ -19,6 +19,38 @@
     "subtitle_followup_pending_sources": 49352
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:42:33Z",
+      "databaseId": 41415031567,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:42:08Z",
+      "databaseId": 41414979804,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T08:40:47Z",
+      "databaseId": 41414818914,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T08:40:44Z",
+      "databaseId": 41414811856,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T08:39:22Z",
@@ -32,7 +64,7 @@
       "createdAt": "2026-11-02T08:38:59Z",
       "databaseId": 41414605063,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,15 +80,15 @@
       "createdAt": "2026-11-02T08:37:07Z",
       "databaseId": 41414391632,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T08:37:05Z",
       "databaseId": 41414387578,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -112,7 +144,7 @@
       "createdAt": "2026-11-02T08:33:30Z",
       "databaseId": 41413945740,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -143,38 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-02T08:32:41Z",
       "databaseId": 41413847304,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T08:32:37Z",
-      "databaseId": 41413839038,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T08:31:37Z",
-      "databaseId": 41413716386,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T08:31:33Z",
-      "databaseId": 41413708594,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T08:31:31Z",
-      "databaseId": 41413704990,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -191577,6 +191577,16 @@
         "video_id": 30721913
       },
       {
+        "episode_id": 171800,
+        "display_name": "Já jsem stalker S01E01 - Vzorec chování CZ Titulky",
+        "video_id": 30722067
+      },
+      {
+        "episode_id": 187489,
+        "display_name": "Gábinin kouzelný domek S08E01 - Kouzelný Rybanov CZ Dabing",
+        "video_id": 30722072
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -364765,6 +364775,11 @@
         "episode_id": 140178,
         "display_name": "Gremlins: Tajemství Mogwaiů S02E07 - Vždycky chtěj slyšet celý příběh CZ Dabing",
         "video_id": 30722054
+      },
+      {
+        "episode_id": 153546,
+        "display_name": "A Man Who Defies the World of BL S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30722112
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -556059,6 +556074,16 @@
         "video_id": 30721913
       },
       {
+        "episode_id": 171800,
+        "display_name": "Já jsem stalker S01E01 - Vzorec chování CZ Titulky",
+        "video_id": 30722067
+      },
+      {
+        "episode_id": 187489,
+        "display_name": "Gábinin kouzelný domek S08E01 - Kouzelný Rybanov CZ Dabing",
+        "video_id": 30722072
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -729247,6 +729272,11 @@
         "episode_id": 140178,
         "display_name": "Gremlins: Tajemství Mogwaiů S02E07 - Vždycky chtěj slyšet celý příběh CZ Dabing",
         "video_id": 30722054
+      },
+      {
+        "episode_id": 153546,
+        "display_name": "A Man Who Defies the World of BL S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30722112
       }
     ],
     "prepared_not_upload_ready": [
@@ -730408,8 +730438,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 22,
-    "disabled": 6,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
