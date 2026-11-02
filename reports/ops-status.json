@@ -2,37 +2,45 @@
   "counts": {
     "backlog_episodes": 113387,
     "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 78257,
+    "uploaded_episodes": 78258,
     "prepared_source_episodes": 66889,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 62,
+    "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54004,
     "whisper_review_pending_sources": 37976,
-    "upload_pending_checkpoints": 25,
+    "upload_pending_checkpoints": 27,
     "subtitle_followup_sources": 49467,
     "subtitle_followup_pending_sources": 49467
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-02T16:46:38Z",
-      "databaseId": 41484774790,
+      "createdAt": "2026-11-02T16:49:34Z",
+      "databaseId": 41485238102,
       "headBranch": "main",
-      "status": "pending",
-      "workflowName": "ops-watchdog"
+      "status": "queued",
+      "workflowName": "external-subtitles"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T16:46:38Z",
+      "databaseId": 41484774790,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-02T16:46:09Z",
       "databaseId": 41484694042,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -44,11 +52,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T16:45:47Z",
       "databaseId": 41484634311,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -96,7 +104,7 @@
       "createdAt": "2026-11-02T16:39:45Z",
       "databaseId": 41483662564,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T16:34:46Z",
-      "databaseId": 41482845647,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -192085,6 +192085,11 @@
         "episode_id": 140185,
         "display_name": "Lucky Luke S01E03 - Amnézie CZ Dabing",
         "video_id": 30736700
+      },
+      {
+        "episode_id": 130261,
+        "display_name": "Mladí milionáři S01E01 - 1. díl CZ Dabing",
+        "video_id": 30736851
       },
       {
         "episode_id": 114182,
@@ -557509,6 +557514,11 @@
         "video_id": 30736700
       },
       {
+        "episode_id": 130261,
+        "display_name": "Mladí milionáři S01E01 - 1. díl CZ Dabing",
+        "video_id": 30736851
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -732288,7 +732298,6 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 22,
     "ok": 39,
     "resolve_failed": 1
   },
