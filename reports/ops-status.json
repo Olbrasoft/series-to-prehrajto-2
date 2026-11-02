@@ -1,30 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 113292,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 78367,
-    "prepared_source_episodes": 67033,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 78368,
+    "prepared_source_episodes": 67034,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53992,
     "whisper_review_pending_sources": 37952,
-    "upload_pending_checkpoints": 27,
+    "upload_pending_checkpoints": 28,
     "subtitle_followup_sources": 49535,
     "subtitle_followup_pending_sources": 49535
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T23:37:21Z",
+      "databaseId": 41546843865,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T23:36:18Z",
+      "databaseId": 41546712916,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T23:36:09Z",
+      "databaseId": 41546691875,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-02T23:34:17Z",
+      "databaseId": 41546450236,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T23:33:16Z",
       "databaseId": 41546317990,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "update-descriptions"
     },
     {
@@ -44,11 +76,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T23:32:20Z",
       "databaseId": 41546197154,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -68,19 +100,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T23:31:56Z",
       "databaseId": 41546144142,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T23:31:14Z",
       "databaseId": 41546053485,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -88,7 +120,7 @@
       "createdAt": "2026-11-02T23:29:29Z",
       "databaseId": 41545821981,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +136,7 @@
       "createdAt": "2026-11-02T23:29:18Z",
       "databaseId": 41545799627,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -144,40 +176,8 @@
       "createdAt": "2026-11-02T23:22:27Z",
       "databaseId": 41544926432,
       "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T23:22:25Z",
-      "databaseId": 41544920752,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T23:22:20Z",
-      "databaseId": 41544910971,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T23:22:06Z",
-      "databaseId": 41544880634,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T23:21:58Z",
-      "databaseId": 41544863411,
-      "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "sync"
+      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -366255,6 +366255,11 @@
         "episode_id": 167383,
         "display_name": "Indebted S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30744828
+      },
+      {
+        "episode_id": 169018,
+        "display_name": "Ties That Bind S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30744875
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -732227,6 +732232,11 @@
         "episode_id": 167383,
         "display_name": "Indebted S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30744828
+      },
+      {
+        "episode_id": 169018,
+        "display_name": "Ties That Bind S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30744875
       }
     ],
     "prepared_not_upload_ready": [
@@ -733388,7 +733398,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
