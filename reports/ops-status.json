@@ -1,30 +1,46 @@
 {
   "counts": {
     "backlog_episodes": 113816,
-    "manifest_upload_ready_episodes": 78,
-    "uploaded_episodes": 77835,
-    "prepared_source_episodes": 66653,
+    "manifest_upload_ready_episodes": 85,
+    "uploaded_episodes": 77836,
+    "prepared_source_episodes": 66651,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 22,
+    "language_audited_sources": 52,
+    "language_whisper_attempted_sources": 34,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 54053,
-    "whisper_review_pending_sources": 38146,
-    "upload_pending_checkpoints": 3,
-    "subtitle_followup_sources": 49278,
-    "subtitle_followup_pending_sources": 49278
+    "whisper_review_sources": 54051,
+    "whisper_review_pending_sources": 38136,
+    "upload_pending_checkpoints": 2,
+    "subtitle_followup_sources": 49284,
+    "subtitle_followup_pending_sources": 49284
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T00:56:47Z",
+      "databaseId": 41369857293,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T00:56:28Z",
+      "databaseId": 41369831423,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-02T00:54:30Z",
       "databaseId": 41369659634,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +68,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T00:53:59Z",
       "databaseId": 41369613983,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T00:52:10Z",
       "databaseId": 41369452311,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T00:44:05Z",
-      "databaseId": 41368729194,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T00:44:00Z",
-      "databaseId": 41368721558,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -190960,6 +190960,11 @@
         "episode_id": 117932,
         "display_name": "Young Dracula S01E12 - 12. epizoda CZ Titulky",
         "video_id": 30711498
+      },
+      {
+        "episode_id": 203852,
+        "display_name": "American Hostage S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30711521
       },
       {
         "episode_id": 114182,
@@ -554274,6 +554279,11 @@
         "video_id": 30711498
       },
       {
+        "episode_id": 203852,
+        "display_name": "American Hostage S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30711521
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -728069,16 +728079,16 @@
   "language_verdicts": {},
   "language_whisper_statuses": {
     "disabled": 18,
-    "ok": 21,
-    "resolve_failed": 1
+    "ok": 30,
+    "resolve_failed": 4
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36537,
-    "whisper_confirmed_cz": 3540,
-    "whisper_non_cz_needs_subtitles": 12367,
+    "needs_whisper": 36527,
+    "whisper_confirmed_cz": 3542,
+    "whisper_non_cz_needs_subtitles": 12373,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49278
+    "needs_subtitle_setup_after_prehrajto_processing": 49284
   }
 }
