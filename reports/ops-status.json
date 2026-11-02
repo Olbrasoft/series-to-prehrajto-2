@@ -1,15 +1,15 @@
 {
   "counts": {
     "backlog_episodes": 113613,
-    "manifest_upload_ready_episodes": 37,
-    "uploaded_episodes": 78027,
+    "manifest_upload_ready_episodes": 36,
+    "uploaded_episodes": 78030,
     "prepared_source_episodes": 66722,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 36,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
+    "language_audited_sources": 33,
     "language_whisper_attempted_sources": 27,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 54031,
@@ -19,6 +19,78 @@
     "subtitle_followup_pending_sources": 49341
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T07:18:24Z",
+      "databaseId": 41405442226,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T07:17:50Z",
+      "databaseId": 41405377260,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T07:17:35Z",
+      "databaseId": 41405350942,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T07:17:15Z",
+      "databaseId": 41405314759,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T07:16:08Z",
+      "databaseId": 41405191620,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-02T07:15:34Z",
+      "databaseId": 41405131474,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T07:15:29Z",
+      "databaseId": 41405123028,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T07:13:53Z",
+      "databaseId": 41404942169,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T07:13:50Z",
+      "databaseId": 41404936399,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-02T07:13:16Z",
@@ -36,11 +108,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T07:08:59Z",
       "databaseId": 41404409307,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T07:04:11Z",
-      "databaseId": 41403891223,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T07:03:59Z",
-      "databaseId": 41403870772,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T07:03:56Z",
-      "databaseId": 41403866074,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T07:02:24Z",
-      "databaseId": 41403704102,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T07:01:55Z",
-      "databaseId": 41403652330,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T07:01:12Z",
-      "databaseId": 41403575290,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:59:59Z",
-      "databaseId": 41403428534,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T06:59:55Z",
-      "databaseId": 41403421892,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T06:58:07Z",
-      "databaseId": 41403245497,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -191452,6 +191452,16 @@
         "video_id": 30720509
       },
       {
+        "episode_id": 201825,
+        "display_name": "Totems S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30720568
+      },
+      {
+        "episode_id": 127261,
+        "display_name": "Mission: Yozakura Family S01E22 - 22. epizoda CZ Titulky",
+        "video_id": 30720605
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -364555,6 +364565,11 @@
         "episode_id": 187502,
         "display_name": "Gábinin kouzelný domek S10E03 - Přání CZ Dabing",
         "video_id": 30720527
+      },
+      {
+        "episode_id": 187503,
+        "display_name": "Gábinin kouzelný domek S10E04 - Krysourovo narozeninové překvapení CZ Dabing",
+        "video_id": 30720516
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -555724,6 +555739,16 @@
         "video_id": 30720509
       },
       {
+        "episode_id": 201825,
+        "display_name": "Totems S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30720568
+      },
+      {
+        "episode_id": 127261,
+        "display_name": "Mission: Yozakura Family S01E22 - 22. epizoda CZ Titulky",
+        "video_id": 30720605
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -728827,6 +728852,11 @@
         "episode_id": 187502,
         "display_name": "Gábinin kouzelný domek S10E03 - Přání CZ Dabing",
         "video_id": 30720527
+      },
+      {
+        "episode_id": 187503,
+        "display_name": "Gábinin kouzelný domek S10E04 - Krysourovo narozeninové překvapení CZ Dabing",
+        "video_id": 30720516
       }
     ],
     "prepared_not_upload_ready": [
@@ -729988,6 +730018,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 6,
     "ok": 26,
     "resolve_failed": 1
   },
