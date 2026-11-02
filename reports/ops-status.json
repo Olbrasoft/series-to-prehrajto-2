@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 113531,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 78130,
+    "manifest_upload_ready_episodes": 9,
+    "uploaded_episodes": 78131,
     "prepared_source_episodes": 66767,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,81 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54020,
     "whisper_review_pending_sources": 38014,
-    "upload_pending_checkpoints": 22,
+    "upload_pending_checkpoints": 21,
     "subtitle_followup_sources": 49381,
     "subtitle_followup_pending_sources": 49381
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-02T11:05:25Z",
+      "databaseId": 41433962295,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:04:52Z",
+      "databaseId": 41433884605,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:04:48Z",
+      "databaseId": 41433875831,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:04:47Z",
+      "databaseId": 41433872728,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:04:10Z",
+      "databaseId": 41433790219,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:03:10Z",
+      "databaseId": 41433652649,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T11:02:48Z",
+      "databaseId": 41433605390,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T11:02:42Z",
+      "databaseId": 41433591590,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-02T11:02:04Z",
       "databaseId": 41433509657,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -36,11 +100,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T10:58:57Z",
       "databaseId": 41433082559,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T10:52:28Z",
-      "databaseId": 41432258368,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-02T10:52:04Z",
-      "databaseId": 41432206673,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T10:51:58Z",
-      "databaseId": 41432193717,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T10:50:26Z",
-      "databaseId": 41431994356,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:50:06Z",
-      "databaseId": 41431947111,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:49:47Z",
-      "databaseId": 41431906930,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:49:40Z",
-      "databaseId": 41431891204,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T10:48:05Z",
-      "databaseId": 41431689007,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -365070,6 +365070,11 @@
         "episode_id": 144822,
         "display_name": "The End S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30725536
+      },
+      {
+        "episode_id": 135982,
+        "display_name": "Red Swan S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30725643
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -729857,6 +729862,11 @@
         "episode_id": 144822,
         "display_name": "The End S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30725536
+      },
+      {
+        "episode_id": 135982,
+        "display_name": "Red Swan S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30725643
       }
     ],
     "prepared_not_upload_ready": [
