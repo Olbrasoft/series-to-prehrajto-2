@@ -2,23 +2,79 @@
   "counts": {
     "backlog_episodes": 113816,
     "manifest_upload_ready_episodes": 90,
-    "uploaded_episodes": 77864,
-    "prepared_source_episodes": 66673,
+    "uploaded_episodes": 77867,
+    "prepared_source_episodes": 66675,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 65,
+    "language_whisper_attempted_sources": 44,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 54047,
-    "whisper_review_pending_sources": 38126,
-    "upload_pending_checkpoints": 3,
-    "subtitle_followup_sources": 49290,
-    "subtitle_followup_pending_sources": 49290
+    "whisper_review_pending_sources": 38124,
+    "upload_pending_checkpoints": 6,
+    "subtitle_followup_sources": 49292,
+    "subtitle_followup_pending_sources": 49292
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T02:04:42Z",
+      "databaseId": 41375753570,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T02:04:16Z",
+      "databaseId": 41375717939,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T02:02:03Z",
+      "databaseId": 41375524283,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T02:01:59Z",
+      "databaseId": 41375519688,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T01:59:49Z",
+      "databaseId": 41375318015,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-02T01:59:45Z",
+      "databaseId": 41375313438,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-02T01:59:43Z",
+      "databaseId": 41375310068,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-02T01:59:20Z",
@@ -32,7 +88,7 @@
       "createdAt": "2026-11-02T01:59:15Z",
       "databaseId": 41375274351,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -40,7 +96,7 @@
       "createdAt": "2026-11-02T01:58:31Z",
       "databaseId": 41375216956,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -48,7 +104,7 @@
       "createdAt": "2026-11-02T01:58:16Z",
       "databaseId": 41375198971,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +124,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-02T01:56:28Z",
       "databaseId": 41375055733,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -120,64 +176,8 @@
       "createdAt": "2026-11-02T01:52:33Z",
       "databaseId": 41374729559,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T01:52:03Z",
-      "databaseId": 41374687473,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T01:52:00Z",
-      "databaseId": 41374681932,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-02T01:51:39Z",
-      "databaseId": 41374654742,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-02T01:50:36Z",
-      "databaseId": 41374567308,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T01:49:22Z",
-      "databaseId": 41374459935,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T01:48:22Z",
-      "databaseId": 41374373406,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-02T01:47:46Z",
-      "databaseId": 41374324053,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -191057,6 +191057,11 @@
         "video_id": 30713037
       },
       {
+        "episode_id": 74364,
+        "display_name": "Digimon S01E29 - 29. epizoda CZ Titulky",
+        "video_id": 30713120
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -363740,6 +363745,16 @@
         "episode_id": 179506,
         "display_name": "Love Between Lines S01E19 - 19. epizoda CZ Titulky",
         "video_id": 30712099
+      },
+      {
+        "episode_id": 74378,
+        "display_name": "Digimon S01E45 - 45. epizoda CZ Titulky",
+        "video_id": 30713081
+      },
+      {
+        "episode_id": 74386,
+        "display_name": "Digimon S01E53 - 53. epizoda CZ Titulky",
+        "video_id": 30713172
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -554514,6 +554529,11 @@
         "video_id": 30713037
       },
       {
+        "episode_id": 74364,
+        "display_name": "Digimon S01E29 - 29. epizoda CZ Titulky",
+        "video_id": 30713120
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -727197,6 +727217,16 @@
         "episode_id": 179506,
         "display_name": "Love Between Lines S01E19 - 19. epizoda CZ Titulky",
         "video_id": 30712099
+      },
+      {
+        "episode_id": 74378,
+        "display_name": "Digimon S01E45 - 45. epizoda CZ Titulky",
+        "video_id": 30713081
+      },
+      {
+        "episode_id": 74386,
+        "display_name": "Digimon S01E53 - 53. epizoda CZ Titulky",
+        "video_id": 30713172
       }
     ],
     "prepared_not_upload_ready": [
@@ -728358,16 +728388,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "disabled": 21,
+    "ok": 43,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36517,
+    "needs_whisper": 36515,
     "whisper_confirmed_cz": 3547,
-    "whisper_non_cz_needs_subtitles": 12374,
+    "whisper_non_cz_needs_subtitles": 12376,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49290
+    "needs_subtitle_setup_after_prehrajto_processing": 49292
   }
 }
