@@ -2,29 +2,37 @@
   "counts": {
     "backlog_episodes": 112961,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 78734,
+    "uploaded_episodes": 78736,
     "prepared_source_episodes": 67308,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53962,
     "whisper_review_pending_sources": 37852,
-    "upload_pending_checkpoints": 31,
+    "upload_pending_checkpoints": 30,
     "subtitle_followup_sources": 49741,
     "subtitle_followup_pending_sources": 49741
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T14:58:10Z",
+      "databaseId": 41658954549,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-03T14:56:58Z",
       "databaseId": 41658754259,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,23 +48,23 @@
       "createdAt": "2026-11-03T14:54:47Z",
       "databaseId": 41658390353,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T14:54:18Z",
       "databaseId": 41658309321,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T14:54:16Z",
       "databaseId": 41658301461,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -148,11 +156,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T14:48:12Z",
       "databaseId": 41657289065,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T14:45:18Z",
-      "databaseId": 41656803668,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -368090,6 +368090,16 @@
         "episode_id": 144350,
         "display_name": "BTS Monuments: Beyond The Star S01E06 - 6. Díl, Návrat CZ Titulky",
         "video_id": 30764056
+      },
+      {
+        "episode_id": 122874,
+        "display_name": "Kartel S01E46 - 46. epizoda CZ Dabing",
+        "video_id": 30765057
+      },
+      {
+        "episode_id": 29855,
+        "display_name": "Maou-jou de Oyasumi S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30765102
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -735897,6 +735907,16 @@
         "episode_id": 144350,
         "display_name": "BTS Monuments: Beyond The Star S01E06 - 6. Díl, Návrat CZ Titulky",
         "video_id": 30764056
+      },
+      {
+        "episode_id": 122874,
+        "display_name": "Kartel S01E46 - 46. epizoda CZ Dabing",
+        "video_id": 30765057
+      },
+      {
+        "episode_id": 29855,
+        "display_name": "Maou-jou de Oyasumi S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30765102
       }
     ],
     "prepared_not_upload_ready": [
@@ -737058,7 +737078,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 41,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
