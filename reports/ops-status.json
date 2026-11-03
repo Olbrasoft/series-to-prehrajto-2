@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112961,
     "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 78694,
+    "uploaded_episodes": 78699,
     "prepared_source_episodes": 67301,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,25 +14,121 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53965,
     "whisper_review_pending_sources": 37857,
-    "upload_pending_checkpoints": 28,
+    "upload_pending_checkpoints": 30,
     "subtitle_followup_sources": 49724,
     "subtitle_followup_pending_sources": 49724
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-03T13:28:16Z",
-      "databaseId": 41644605901,
+      "createdAt": "2026-11-03T13:38:56Z",
+      "databaseId": 41646208054,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:37:55Z",
+      "databaseId": 41646062767,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:37:50Z",
+      "databaseId": 41646049968,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T13:37:36Z",
+      "databaseId": 41646014920,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T13:37:14Z",
+      "databaseId": 41645959695,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:33:49Z",
+      "databaseId": 41645436109,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:33:13Z",
+      "databaseId": 41645344281,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:33:04Z",
+      "databaseId": 41645323013,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:32:29Z",
+      "databaseId": 41645237971,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T13:32:22Z",
+      "databaseId": 41645219915,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:31:49Z",
+      "databaseId": 41645134525,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:29:48Z",
+      "databaseId": 41644824607,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T13:28:16Z",
+      "databaseId": 41644605901,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-03T13:25:42Z",
       "databaseId": 41644237275,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -40,15 +136,15 @@
       "createdAt": "2026-11-03T13:25:37Z",
       "databaseId": 41644225845,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T13:25:35Z",
       "databaseId": 41644218784,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -72,7 +168,7 @@
       "createdAt": "2026-11-03T13:24:58Z",
       "databaseId": 41644126985,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -82,102 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T13:24:17Z",
-      "databaseId": 41644026194,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T13:23:46Z",
-      "databaseId": 41643948571,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T13:23:27Z",
-      "databaseId": 41643901306,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T13:23:23Z",
-      "databaseId": 41643893245,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T13:23:22Z",
-      "databaseId": 41643889826,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T13:23:22Z",
-      "databaseId": 41643889305,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T13:22:04Z",
-      "databaseId": 41643696638,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T13:20:56Z",
-      "databaseId": 41643535213,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T13:19:27Z",
-      "databaseId": 41643314070,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T13:19:22Z",
-      "databaseId": 41643303236,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T13:18:58Z",
-      "databaseId": 41643245703,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T13:17:12Z",
-      "databaseId": 41642986218,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -193122,6 +193122,16 @@
         "video_id": 30761392
       },
       {
+        "episode_id": 102668,
+        "display_name": "Kartel S01E30 - 30. epizoda CZ Dabing",
+        "video_id": 30762287
+      },
+      {
+        "episode_id": 122877,
+        "display_name": "Kartel S01E35 - 35. epizoda CZ Dabing",
+        "video_id": 30762190
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -367890,6 +367900,21 @@
         "episode_id": 102654,
         "display_name": "Kartel S01E31 - 31. epizoda CZ Dabing",
         "video_id": 30762137
+      },
+      {
+        "episode_id": 175799,
+        "display_name": "Tajnosti S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30762312
+      },
+      {
+        "episode_id": 122879,
+        "display_name": "Kartel S01E37 - 37. epizoda CZ Dabing",
+        "video_id": 30762412
+      },
+      {
+        "episode_id": 122878,
+        "display_name": "Kartel S01E36 - 36. epizoda CZ Dabing",
+        "video_id": 30762232
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -560729,6 +560754,16 @@
         "video_id": 30761392
       },
       {
+        "episode_id": 102668,
+        "display_name": "Kartel S01E30 - 30. epizoda CZ Dabing",
+        "video_id": 30762287
+      },
+      {
+        "episode_id": 122877,
+        "display_name": "Kartel S01E35 - 35. epizoda CZ Dabing",
+        "video_id": 30762190
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -735497,6 +735532,21 @@
         "episode_id": 102654,
         "display_name": "Kartel S01E31 - 31. epizoda CZ Dabing",
         "video_id": 30762137
+      },
+      {
+        "episode_id": 175799,
+        "display_name": "Tajnosti S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30762312
+      },
+      {
+        "episode_id": 122879,
+        "display_name": "Kartel S01E37 - 37. epizoda CZ Dabing",
+        "video_id": 30762412
+      },
+      {
+        "episode_id": 122878,
+        "display_name": "Kartel S01E36 - 36. epizoda CZ Dabing",
+        "video_id": 30762232
       }
     ],
     "prepared_not_upload_ready": [
