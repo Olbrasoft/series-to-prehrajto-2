@@ -1,17 +1,17 @@
 {
   "counts": {
     "backlog_episodes": 113224,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 78413,
-    "prepared_source_episodes": 67101,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 78414,
+    "prepared_source_episodes": 67099,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 38,
+    "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 54,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53985,
     "whisper_review_pending_sources": 37914,
     "upload_pending_checkpoints": 27,
@@ -21,10 +21,18 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T01:44:37Z",
+      "databaseId": 41561707176,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-03T01:42:36Z",
       "databaseId": 41561495000,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +56,7 @@
       "createdAt": "2026-11-03T01:42:08Z",
       "databaseId": 41561447225,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,19 +92,19 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T01:39:53Z",
       "databaseId": 41561196396,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T01:38:54Z",
       "databaseId": 41561089352,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -128,7 +136,7 @@
       "createdAt": "2026-11-03T01:34:30Z",
       "databaseId": 41560608972,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T01:33:12Z",
-      "databaseId": 41560464832,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -366485,6 +366485,11 @@
         "episode_id": 126170,
         "display_name": "Aaron Stone S01E09 - 9. epizoda CZ Dabing",
         "video_id": 30747294
+      },
+      {
+        "episode_id": 116574,
+        "display_name": "Křupavé dědictví S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30747336
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -732687,6 +732692,11 @@
         "episode_id": 126170,
         "display_name": "Aaron Stone S01E09 - 9. epizoda CZ Dabing",
         "video_id": 30747294
+      },
+      {
+        "episode_id": 116574,
+        "display_name": "Křupavé dědictví S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30747336
       }
     ],
     "prepared_not_upload_ready": [
@@ -733848,8 +733858,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 14,
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
