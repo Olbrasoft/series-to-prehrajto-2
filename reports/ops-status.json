@@ -1,30 +1,46 @@
 {
   "counts": {
     "backlog_episodes": 113224,
-    "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 78419,
-    "prepared_source_episodes": 67097,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 78420,
+    "prepared_source_episodes": 67096,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53985,
     "whisper_review_pending_sources": 37914,
-    "upload_pending_checkpoints": 28,
+    "upload_pending_checkpoints": 27,
     "subtitle_followup_sources": 49556,
     "subtitle_followup_pending_sources": 49556
   },
   "workflow_runs": [
     {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T01:55:31Z",
+      "databaseId": 41562863199,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T01:55:27Z",
+      "databaseId": 41562855966,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-03T01:54:38Z",
       "databaseId": 41562768696,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +72,7 @@
       "createdAt": "2026-11-03T01:52:22Z",
       "databaseId": 41562529059,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T01:52:12Z",
       "databaseId": 41562511580,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -108,11 +124,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T01:48:51Z",
       "databaseId": 41562161360,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -159,22 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-03T01:42:36Z",
       "databaseId": 41561495000,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T01:42:33Z",
-      "databaseId": 41561489140,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T01:42:31Z",
-      "databaseId": 41561485513,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -366515,6 +366515,11 @@
         "episode_id": 116579,
         "display_name": "Křupavé dědictví S01E06 - 6. epizoda CZ Dabing",
         "video_id": 30747521
+      },
+      {
+        "episode_id": 125023,
+        "display_name": "The Vineyard S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30747590
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -732747,6 +732752,11 @@
         "episode_id": 116579,
         "display_name": "Křupavé dědictví S01E06 - 6. epizoda CZ Dabing",
         "video_id": 30747521
+      },
+      {
+        "episode_id": 125023,
+        "display_name": "The Vineyard S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30747590
       }
     ],
     "prepared_not_upload_ready": [
@@ -733908,7 +733918,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 41,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
