@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 113109,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 78531,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 78532,
     "prepared_source_episodes": 67211,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53971,
     "whisper_review_pending_sources": 37862,
-    "upload_pending_checkpoints": 28,
+    "upload_pending_checkpoints": 27,
     "subtitle_followup_sources": 49634,
     "subtitle_followup_pending_sources": 49634
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T07:25:37Z",
+      "databaseId": 41596241624,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T07:25:34Z",
+      "databaseId": 41596235094,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T07:25:31Z",
+      "databaseId": 41596229797,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-03T07:24:50Z",
       "databaseId": 41596152562,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +92,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T07:22:30Z",
       "databaseId": 41595892263,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -144,7 +168,7 @@
       "createdAt": "2026-11-03T07:15:14Z",
       "databaseId": 41595088628,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T07:14:31Z",
-      "databaseId": 41595009672,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T07:14:06Z",
-      "databaseId": 41594960952,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T07:13:35Z",
-      "databaseId": 41594902885,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -367075,6 +367075,11 @@
         "episode_id": 102670,
         "display_name": "Kartel S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30755180
+      },
+      {
+        "episode_id": 162834,
+        "display_name": "Proti větru S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30755292
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -733867,6 +733872,11 @@
         "episode_id": 102670,
         "display_name": "Kartel S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30755180
+      },
+      {
+        "episode_id": 162834,
+        "display_name": "Proti větru S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30755292
       }
     ],
     "prepared_not_upload_ready": [
