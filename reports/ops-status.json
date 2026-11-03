@@ -2,29 +2,45 @@
   "counts": {
     "backlog_episodes": 113173,
     "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 78458,
+    "uploaded_episodes": 78461,
     "prepared_source_episodes": 67149,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 22,
+    "language_audited_sources": 48,
+    "language_whisper_attempted_sources": 28,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53976,
-    "whisper_review_pending_sources": 37885,
+    "whisper_review_sources": 53974,
+    "whisper_review_pending_sources": 37877,
     "upload_pending_checkpoints": 27,
-    "subtitle_followup_sources": 49580,
-    "subtitle_followup_pending_sources": 49580
+    "subtitle_followup_sources": 49582,
+    "subtitle_followup_pending_sources": 49582
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T03:58:22Z",
+      "databaseId": 41575324287,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T03:54:34Z",
+      "databaseId": 41574967284,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-03T03:53:17Z",
       "databaseId": 41574840036,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -156,28 +172,12 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T03:48:27Z",
       "databaseId": 41574374838,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T03:47:28Z",
-      "databaseId": 41574279980,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T03:47:24Z",
-      "databaseId": 41574273324,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -192562,6 +192562,11 @@
         "video_id": 30751160
       },
       {
+        "episode_id": 129489,
+        "display_name": "The Club S01E08 - PROLHANOST, BLBOST A BEZPEČNOSTNÍ KAMERY CZ Titulky",
+        "video_id": 30751453
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -366710,6 +366715,16 @@
         "episode_id": 116586,
         "display_name": "Křupavé dědictví S02E03 - 3. epizoda CZ Titulky",
         "video_id": 30750657
+      },
+      {
+        "episode_id": 180854,
+        "display_name": "Dark Money S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30751477
+      },
+      {
+        "episode_id": 174334,
+        "display_name": "Moje zítřejší já S01E04 - Napůl holka, napůl chobotnice CZ Dabing",
+        "video_id": 30751560
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -558989,6 +559004,11 @@
         "video_id": 30751160
       },
       {
+        "episode_id": 129489,
+        "display_name": "The Club S01E08 - PROLHANOST, BLBOST A BEZPEČNOSTNÍ KAMERY CZ Titulky",
+        "video_id": 30751453
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -733137,6 +733157,16 @@
         "episode_id": 116586,
         "display_name": "Křupavé dědictví S02E03 - 3. epizoda CZ Titulky",
         "video_id": 30750657
+      },
+      {
+        "episode_id": 180854,
+        "display_name": "Dark Money S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30751477
+      },
+      {
+        "episode_id": 174334,
+        "display_name": "Moje zítřejší já S01E04 - Napůl holka, napůl chobotnice CZ Dabing",
+        "video_id": 30751560
       }
     ],
     "prepared_not_upload_ready": [
@@ -734298,17 +734328,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "ok": 27,
     "disabled": 20,
-    "ok": 21,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36276,
+    "needs_whisper": 36268,
     "whisper_confirmed_cz": 3593,
-    "whisper_non_cz_needs_subtitles": 12498,
+    "whisper_non_cz_needs_subtitles": 12504,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49580
+    "needs_subtitle_setup_after_prehrajto_processing": 49582
   }
 }
