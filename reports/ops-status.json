@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 112787,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 78904,
-    "prepared_source_episodes": 67445,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 78905,
+    "prepared_source_episodes": 67440,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
@@ -14,11 +14,27 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53941,
     "whisper_review_pending_sources": 37783,
-    "upload_pending_checkpoints": 29,
+    "upload_pending_checkpoints": 28,
     "subtitle_followup_sources": 49840,
     "subtitle_followup_pending_sources": 49840
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T23:39:15Z",
+      "databaseId": 41740852890,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T23:39:13Z",
+      "databaseId": 41740848565,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-03T23:38:13Z",
@@ -32,7 +48,7 @@
       "createdAt": "2026-11-03T23:38:09Z",
       "databaseId": 41740706189,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -40,7 +56,7 @@
       "createdAt": "2026-11-03T23:38:00Z",
       "databaseId": 41740687906,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,19 +76,19 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:36:35Z",
       "databaseId": 41740501046,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:33:39Z",
       "databaseId": 41740113949,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -116,11 +132,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:31:24Z",
       "databaseId": 41739819279,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T23:23:08Z",
-      "databaseId": 41738730002,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T23:23:05Z",
-      "databaseId": 41738721478,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -193665,6 +193665,11 @@
         "episode_id": 166844,
         "display_name": "Byker Grove S14E07 - 7. epizoda CZ Titulky",
         "video_id": 30775082
+      },
+      {
+        "episode_id": 166448,
+        "display_name": "Late Bloomer S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30775110
       },
       {
         "episode_id": 114182,
@@ -562322,6 +562327,11 @@
         "episode_id": 166844,
         "display_name": "Byker Grove S14E07 - 7. epizoda CZ Titulky",
         "video_id": 30775082
+      },
+      {
+        "episode_id": 166448,
+        "display_name": "Late Bloomer S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30775110
       },
       {
         "episode_id": 114182,
