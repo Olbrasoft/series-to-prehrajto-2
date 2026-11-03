@@ -1,30 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 112787,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 78905,
-    "prepared_source_episodes": 67454,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 78911,
+    "prepared_source_episodes": 67455,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 47,
+    "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53940,
     "whisper_review_pending_sources": 37778,
-    "upload_pending_checkpoints": 31,
+    "upload_pending_checkpoints": 29,
     "subtitle_followup_sources": 49842,
     "subtitle_followup_pending_sources": 49842
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T23:56:26Z",
+      "databaseId": 41743034263,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T23:56:23Z",
+      "databaseId": 41743026528,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T23:52:43Z",
+      "databaseId": 41742561957,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T23:52:38Z",
+      "databaseId": 41742552427,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-03T23:51:30Z",
       "databaseId": 41742408883,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,43 +76,43 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:49:53Z",
       "databaseId": 41742200363,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:49:35Z",
       "databaseId": 41742164597,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:49:18Z",
       "databaseId": 41742130306,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:49:16Z",
       "databaseId": 41742125083,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:49:14Z",
       "databaseId": 41742120930,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T23:41:55Z",
-      "databaseId": 41741188680,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T23:41:52Z",
-      "databaseId": 41741181862,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T23:41:43Z",
-      "databaseId": 41741163565,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T23:41:37Z",
-      "databaseId": 41741150476,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -193672,6 +193672,16 @@
         "video_id": 30775110
       },
       {
+        "episode_id": 132485,
+        "display_name": "Na pomezí záhad S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30775283
+      },
+      {
+        "episode_id": 132489,
+        "display_name": "Na pomezí záhad S02E09 - 9. epizoda CZ Dabing",
+        "video_id": 30775307
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -368945,6 +368955,26 @@
         "episode_id": 153494,
         "display_name": "Návštěva S01E15 - 15. epizoda CZ Titulky",
         "video_id": 30775033
+      },
+      {
+        "episode_id": 166451,
+        "display_name": "Late Bloomer S03E03 - 3. epizoda CZ Titulky",
+        "video_id": 30775267
+      },
+      {
+        "episode_id": 132486,
+        "display_name": "Na pomezí záhad S02E05 - 5. epizoda CZ Dabing",
+        "video_id": 30775273
+      },
+      {
+        "episode_id": 132490,
+        "display_name": "Na pomezí záhad S02E10 - 10. epizoda CZ Dabing",
+        "video_id": 30775303
+      },
+      {
+        "episode_id": 166846,
+        "display_name": "Byker Grove S18E03 - 3. epizoda CZ Titulky",
+        "video_id": 30775328
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -562334,6 +562364,16 @@
         "video_id": 30775110
       },
       {
+        "episode_id": 132485,
+        "display_name": "Na pomezí záhad S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30775283
+      },
+      {
+        "episode_id": 132489,
+        "display_name": "Na pomezí záhad S02E09 - 9. epizoda CZ Dabing",
+        "video_id": 30775307
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -737607,6 +737647,26 @@
         "episode_id": 153494,
         "display_name": "Návštěva S01E15 - 15. epizoda CZ Titulky",
         "video_id": 30775033
+      },
+      {
+        "episode_id": 166451,
+        "display_name": "Late Bloomer S03E03 - 3. epizoda CZ Titulky",
+        "video_id": 30775267
+      },
+      {
+        "episode_id": 132486,
+        "display_name": "Na pomezí záhad S02E05 - 5. epizoda CZ Dabing",
+        "video_id": 30775273
+      },
+      {
+        "episode_id": 132490,
+        "display_name": "Na pomezí záhad S02E10 - 10. epizoda CZ Dabing",
+        "video_id": 30775303
+      },
+      {
+        "episode_id": 166846,
+        "display_name": "Byker Grove S18E03 - 3. epizoda CZ Titulky",
+        "video_id": 30775328
       }
     ],
     "prepared_not_upload_ready": [
@@ -738768,7 +738828,6 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
     "ok": 39,
     "resolve_failed": 1
   },
