@@ -1,24 +1,56 @@
 {
   "counts": {
     "backlog_episodes": 112880,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 78745,
-    "prepared_source_episodes": 67323,
+    "manifest_upload_ready_episodes": 9,
+    "uploaded_episodes": 78747,
+    "prepared_source_episodes": 67324,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 44,
+    "language_whisper_attempted_sources": 42,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53962,
     "whisper_review_pending_sources": 37853,
-    "upload_pending_checkpoints": 30,
-    "subtitle_followup_sources": 49747,
-    "subtitle_followup_pending_sources": 49747
+    "upload_pending_checkpoints": 28,
+    "subtitle_followup_sources": 49750,
+    "subtitle_followup_pending_sources": 49750
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T15:40:51Z",
+      "databaseId": 41666385953,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T15:40:13Z",
+      "databaseId": 41666273357,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T15:40:06Z",
+      "databaseId": 41666254378,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T15:40:01Z",
+      "databaseId": 41666238717,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-03T15:39:01Z",
@@ -32,7 +64,7 @@
       "createdAt": "2026-11-03T15:38:00Z",
       "databaseId": 41665903374,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
@@ -44,19 +76,19 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T15:36:08Z",
       "databaseId": 41665583906,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T15:33:26Z",
       "databaseId": 41665109534,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -72,7 +104,7 @@
       "createdAt": "2026-11-03T15:33:09Z",
       "databaseId": 41665061437,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-descriptions"
     },
     {
@@ -80,15 +112,15 @@
       "createdAt": "2026-11-03T15:32:38Z",
       "databaseId": 41664973227,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T15:32:34Z",
       "databaseId": 41664961838,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -96,7 +128,7 @@
       "createdAt": "2026-11-03T15:31:48Z",
       "databaseId": 41664828397,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -124,11 +156,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T15:28:13Z",
       "databaseId": 41664208894,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T15:26:54Z",
-      "databaseId": 41663983361,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T15:24:36Z",
-      "databaseId": 41663591120,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T15:24:35Z",
-      "databaseId": 41663588128,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T15:23:40Z",
-      "databaseId": 41663424937,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -193247,6 +193247,11 @@
         "video_id": 30766271
       },
       {
+        "episode_id": 154181,
+        "display_name": "Robo kadeti S01E06 - Veritas CZ Dabing",
+        "video_id": 30766319
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -368145,6 +368150,11 @@
         "episode_id": 29858,
         "display_name": "Maou-jou de Oyasumi S01E10 - 10. epizoda CZ Titulky",
         "video_id": 30766193
+      },
+      {
+        "episode_id": 122863,
+        "display_name": "Kartel S01E48 - 48. epizoda CZ Dabing",
+        "video_id": 30766291
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -561109,6 +561119,11 @@
         "video_id": 30766271
       },
       {
+        "episode_id": 154181,
+        "display_name": "Robo kadeti S01E06 - Veritas CZ Dabing",
+        "video_id": 30766319
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -736007,6 +736022,11 @@
         "episode_id": 29858,
         "display_name": "Maou-jou de Oyasumi S01E10 - 10. epizoda CZ Titulky",
         "video_id": 30766193
+      },
+      {
+        "episode_id": 122863,
+        "display_name": "Kartel S01E48 - 48. epizoda CZ Dabing",
+        "video_id": 30766291
       }
     ],
     "prepared_not_upload_ready": [
@@ -737168,7 +737188,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "disabled": 2,
+    "ok": 41,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -737178,6 +737199,6 @@
     "whisper_failed": 1615
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49747
+    "needs_subtitle_setup_after_prehrajto_processing": 49750
   }
 }
