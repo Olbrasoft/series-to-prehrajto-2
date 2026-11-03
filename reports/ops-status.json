@@ -1,24 +1,80 @@
 {
   "counts": {
     "backlog_episodes": 112961,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 78708,
-    "prepared_source_episodes": 67300,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 78711,
+    "prepared_source_episodes": 67307,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 56,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53963,
-    "whisper_review_pending_sources": 37850,
-    "upload_pending_checkpoints": 28,
+    "whisper_review_sources": 53964,
+    "whisper_review_pending_sources": 37858,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 49727,
     "subtitle_followup_pending_sources": 49727
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T14:04:00Z",
+      "databaseId": 41650038806,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T14:03:59Z",
+      "databaseId": 41650035140,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T14:03:54Z",
+      "databaseId": 41650021929,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T14:03:25Z",
+      "databaseId": 41649947495,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T14:01:56Z",
+      "databaseId": 41649715184,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T14:01:47Z",
+      "databaseId": 41649689692,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:59:00Z",
+      "databaseId": 41649243635,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-03T13:58:04Z",
@@ -32,7 +88,7 @@
       "createdAt": "2026-11-03T13:57:56Z",
       "databaseId": 41649082569,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -40,31 +96,31 @@
       "createdAt": "2026-11-03T13:57:55Z",
       "databaseId": 41649081729,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T13:57:48Z",
       "databaseId": 41649062826,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T13:57:43Z",
       "databaseId": 41649049602,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T13:57:00Z",
       "databaseId": 41648942464,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +160,7 @@
       "createdAt": "2026-11-03T13:52:35Z",
       "databaseId": 41648274233,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T13:51:34Z",
-      "databaseId": 41648118738,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T13:51:31Z",
-      "databaseId": 41648110788,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T13:51:29Z",
-      "databaseId": 41648106185,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T13:51:25Z",
-      "databaseId": 41648098064,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T13:50:44Z",
-      "databaseId": 41647992952,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T13:50:15Z",
-      "databaseId": 41647917695,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T13:49:47Z",
-      "databaseId": 41647846786,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -193152,6 +193152,16 @@
         "video_id": 30762858
       },
       {
+        "episode_id": 193276,
+        "display_name": "Hafani ve vesmíru S01E05 - Místo CZ Dabing",
+        "video_id": 30763042
+      },
+      {
+        "episode_id": 122881,
+        "display_name": "Kartel S01E39 - 39. epizoda CZ Dabing",
+        "video_id": 30763080
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -367960,6 +367970,11 @@
         "episode_id": 9551,
         "display_name": "Maou-jou de Oyasumi S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30762663
+      },
+      {
+        "episode_id": 175802,
+        "display_name": "Tajnosti S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30763021
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -560829,6 +560844,16 @@
         "video_id": 30762858
       },
       {
+        "episode_id": 193276,
+        "display_name": "Hafani ve vesmíru S01E05 - Místo CZ Dabing",
+        "video_id": 30763042
+      },
+      {
+        "episode_id": 122881,
+        "display_name": "Kartel S01E39 - 39. epizoda CZ Dabing",
+        "video_id": 30763080
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -735637,6 +735662,11 @@
         "episode_id": 9551,
         "display_name": "Maou-jou de Oyasumi S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30762663
+      },
+      {
+        "episode_id": 175802,
+        "display_name": "Tajnosti S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30763021
       }
     ],
     "prepared_not_upload_ready": [
@@ -736798,13 +736828,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 16,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36235,
+    "needs_whisper": 36243,
     "whisper_confirmed_cz": 3601,
-    "whisper_non_cz_needs_subtitles": 12512,
+    "whisper_non_cz_needs_subtitles": 12505,
     "whisper_failed": 1615
   },
   "subtitle_followup_statuses": {
