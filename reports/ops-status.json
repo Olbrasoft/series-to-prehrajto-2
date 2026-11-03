@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112787,
     "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 78860,
+    "uploaded_episodes": 78861,
     "prepared_source_episodes": 67427,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53949,
     "whisper_review_pending_sources": 37813,
-    "upload_pending_checkpoints": 29,
+    "upload_pending_checkpoints": 30,
     "subtitle_followup_sources": 49818,
     "subtitle_followup_pending_sources": 49818
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T22:10:29Z",
+      "databaseId": 41728438933,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T22:10:01Z",
+      "databaseId": 41728362596,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:09:53Z",
+      "databaseId": 41728342363,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-03T22:06:02Z",
       "databaseId": 41727749488,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +68,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T22:04:22Z",
       "databaseId": 41727489784,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -68,11 +92,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T22:03:37Z",
       "databaseId": 41727374677,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T21:55:07Z",
-      "databaseId": 41726103910,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T21:54:41Z",
-      "databaseId": 41726041631,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T21:54:38Z",
-      "databaseId": 41726032785,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -193555,6 +193555,11 @@
         "episode_id": 201264,
         "display_name": "Sarah & Duck S02E16 - 16. epizoda CZ Titulky",
         "video_id": 30773950
+      },
+      {
+        "episode_id": 201265,
+        "display_name": "Sarah & Duck S02E19 - 19. epizoda CZ Titulky",
+        "video_id": 30773979
       },
       {
         "episode_id": 114182,
@@ -561992,6 +561997,11 @@
         "episode_id": 201264,
         "display_name": "Sarah & Duck S02E16 - 16. epizoda CZ Titulky",
         "video_id": 30773950
+      },
+      {
+        "episode_id": 201265,
+        "display_name": "Sarah & Duck S02E19 - 19. epizoda CZ Titulky",
+        "video_id": 30773979
       },
       {
         "episode_id": 114182,
