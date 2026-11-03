@@ -1,30 +1,118 @@
 {
   "counts": {
     "backlog_episodes": 112787,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 78853,
-    "prepared_source_episodes": 67420,
+    "manifest_upload_ready_episodes": 13,
+    "uploaded_episodes": 78859,
+    "prepared_source_episodes": 67427,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 37,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 24,
-    "language_whisper_attempted_sources": 24,
+    "language_audited_sources": 46,
+    "language_whisper_attempted_sources": 28,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53949,
     "whisper_review_pending_sources": 37813,
-    "upload_pending_checkpoints": 28,
-    "subtitle_followup_sources": 49814,
-    "subtitle_followup_pending_sources": 49814
+    "upload_pending_checkpoints": 30,
+    "subtitle_followup_sources": 49818,
+    "subtitle_followup_pending_sources": 49818
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T22:06:02Z",
+      "databaseId": 41727749488,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:05:58Z",
+      "databaseId": 41727737315,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T22:05:17Z",
+      "databaseId": 41727628700,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:04:22Z",
+      "databaseId": 41727489784,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:04:18Z",
+      "databaseId": 41727479402,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:04:17Z",
+      "databaseId": 41727475626,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:03:37Z",
+      "databaseId": 41727374677,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T22:02:27Z",
+      "databaseId": 41727194624,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:01:49Z",
+      "databaseId": 41727100444,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T21:59:47Z",
+      "databaseId": 41726783705,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T21:59:13Z",
+      "databaseId": 41726706179,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T21:58:03Z",
       "databaseId": 41726538135,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +120,7 @@
       "createdAt": "2026-11-03T21:57:46Z",
       "databaseId": 41726496265,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,19 +140,19 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T21:56:52Z",
       "databaseId": 41726366268,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T21:56:39Z",
       "databaseId": 41726333386,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -90,94 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T21:52:49Z",
-      "databaseId": 41725757040,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T21:52:44Z",
-      "databaseId": 41725746031,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T21:52:40Z",
-      "databaseId": 41725736509,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T21:51:56Z",
-      "databaseId": 41725625271,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T21:51:21Z",
-      "databaseId": 41725536650,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T21:51:16Z",
-      "databaseId": 41725526552,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T21:50:40Z",
-      "databaseId": 41725435229,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T21:50:00Z",
-      "databaseId": 41725332288,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T21:49:59Z",
-      "databaseId": 41725328274,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T21:45:22Z",
-      "databaseId": 41724645960,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T21:43:55Z",
-      "databaseId": 41724429284,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -193542,6 +193542,16 @@
         "video_id": 30773797
       },
       {
+        "episode_id": 203564,
+        "display_name": "Akademie Minerva S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30773915
+      },
+      {
+        "episode_id": 203565,
+        "display_name": "Akademie Minerva S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30773900
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -368685,6 +368695,26 @@
         "episode_id": 143283,
         "display_name": "Děti orbitalu S01E02 - Mlha a tma CZ Titulky",
         "video_id": 30773805
+      },
+      {
+        "episode_id": 180959,
+        "display_name": "Gordita Chronicles S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30773884
+      },
+      {
+        "episode_id": 166842,
+        "display_name": "Byker Grove S14E02 - 2. epizoda CZ Titulky",
+        "video_id": 30773892
+      },
+      {
+        "episode_id": 132475,
+        "display_name": "Na pomezí záhad S01E17 - 17. epizoda CZ Dabing",
+        "video_id": 30773921
+      },
+      {
+        "episode_id": 166447,
+        "display_name": "Late Bloomer S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30773954
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -561944,6 +561974,16 @@
         "video_id": 30773797
       },
       {
+        "episode_id": 203564,
+        "display_name": "Akademie Minerva S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30773915
+      },
+      {
+        "episode_id": 203565,
+        "display_name": "Akademie Minerva S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30773900
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -737087,6 +737127,26 @@
         "episode_id": 143283,
         "display_name": "Děti orbitalu S01E02 - Mlha a tma CZ Titulky",
         "video_id": 30773805
+      },
+      {
+        "episode_id": 180959,
+        "display_name": "Gordita Chronicles S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30773884
+      },
+      {
+        "episode_id": 166842,
+        "display_name": "Byker Grove S14E02 - 2. epizoda CZ Titulky",
+        "video_id": 30773892
+      },
+      {
+        "episode_id": 132475,
+        "display_name": "Na pomezí záhad S01E17 - 17. epizoda CZ Dabing",
+        "video_id": 30773921
+      },
+      {
+        "episode_id": 166447,
+        "display_name": "Late Bloomer S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30773954
       }
     ],
     "prepared_not_upload_ready": [
@@ -738248,7 +738308,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 23,
+    "disabled": 18,
+    "ok": 27,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -738258,6 +738319,6 @@
     "whisper_failed": 1617
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49814
+    "needs_subtitle_setup_after_prehrajto_processing": 49818
   }
 }
