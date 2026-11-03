@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 112787,
-    "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 78851,
+    "manifest_upload_ready_episodes": 11,
+    "uploaded_episodes": 78853,
     "prepared_source_episodes": 67424,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53949,
     "whisper_review_pending_sources": 37814,
-    "upload_pending_checkpoints": 30,
+    "upload_pending_checkpoints": 28,
     "subtitle_followup_sources": 49814,
     "subtitle_followup_pending_sources": 49814
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T21:55:07Z",
+      "databaseId": 41726103910,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T21:54:41Z",
+      "databaseId": 41726041631,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T21:54:38Z",
+      "databaseId": 41726032785,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-03T21:52:49Z",
       "databaseId": 41725757040,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +92,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T21:50:40Z",
       "databaseId": 41725435229,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T21:38:43Z",
-      "databaseId": 41723665280,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T21:38:34Z",
-      "databaseId": 41723645556,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T21:38:06Z",
-      "databaseId": 41723573966,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -193537,6 +193537,11 @@
         "video_id": 30773751
       },
       {
+        "episode_id": 143285,
+        "display_name": "Děti orbitalu S01E04 - Šifra CZ Titulky",
+        "video_id": 30773797
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -368675,6 +368680,11 @@
         "episode_id": 148086,
         "display_name": "One the Woman S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30773763
+      },
+      {
+        "episode_id": 143283,
+        "display_name": "Děti orbitalu S01E02 - Mlha a tma CZ Titulky",
+        "video_id": 30773805
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -561929,6 +561939,11 @@
         "video_id": 30773751
       },
       {
+        "episode_id": 143285,
+        "display_name": "Děti orbitalu S01E04 - Šifra CZ Titulky",
+        "video_id": 30773797
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -737067,6 +737082,11 @@
         "episode_id": 148086,
         "display_name": "One the Woman S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30773763
+      },
+      {
+        "episode_id": 143283,
+        "display_name": "Děti orbitalu S01E02 - Mlha a tma CZ Titulky",
+        "video_id": 30773805
       }
     ],
     "prepared_not_upload_ready": [
