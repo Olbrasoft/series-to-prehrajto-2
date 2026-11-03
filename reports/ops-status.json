@@ -1,30 +1,46 @@
 {
   "counts": {
     "backlog_episodes": 113224,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 78407,
-    "prepared_source_episodes": 67091,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 78408,
+    "prepared_source_episodes": 67089,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 29,
-    "language_whisper_attempted_sources": 21,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 41,
+    "language_whisper_attempted_sources": 41,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53985,
-    "whisper_review_pending_sources": 37915,
+    "whisper_review_pending_sources": 37914,
     "upload_pending_checkpoints": 27,
-    "subtitle_followup_sources": 49555,
-    "subtitle_followup_pending_sources": 49555
+    "subtitle_followup_sources": 49556,
+    "subtitle_followup_pending_sources": 49556
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T01:26:52Z",
+      "databaseId": 41559794862,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T01:26:20Z",
+      "databaseId": 41559740246,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-03T01:24:35Z",
       "databaseId": 41559551318,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +60,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T01:23:35Z",
       "databaseId": 41559442632,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -68,11 +84,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T01:21:29Z",
       "databaseId": 41559210216,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +120,7 @@
       "createdAt": "2026-11-03T01:20:27Z",
       "databaseId": 41559098529,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T01:16:39Z",
-      "databaseId": 41558667253,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T01:15:18Z",
-      "databaseId": 41558514602,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -192425,6 +192425,11 @@
         "episode_id": 130652,
         "display_name": "Black Out S01E11 - 11. epizoda CZ Titulky",
         "video_id": 30746989
+      },
+      {
+        "episode_id": 126168,
+        "display_name": "Aaron Stone S01E07 - 7. epizoda CZ Dabing",
+        "video_id": 30747077
       },
       {
         "episode_id": 114182,
@@ -558599,6 +558604,11 @@
         "video_id": 30746989
       },
       {
+        "episode_id": 126168,
+        "display_name": "Aaron Stone S01E07 - 7. epizoda CZ Dabing",
+        "video_id": 30747077
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -733788,17 +733798,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 8,
-    "ok": 20,
+    "ok": 40,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36306,
+    "needs_whisper": 36305,
     "whisper_confirmed_cz": 3593,
-    "whisper_non_cz_needs_subtitles": 12477,
+    "whisper_non_cz_needs_subtitles": 12478,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49555
+    "needs_subtitle_setup_after_prehrajto_processing": 49556
   }
 }
