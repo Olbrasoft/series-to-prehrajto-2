@@ -1,24 +1,72 @@
 {
   "counts": {
     "backlog_episodes": 113109,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 78521,
-    "prepared_source_episodes": 67209,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 78522,
+    "prepared_source_episodes": 67206,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 44,
+    "language_whisper_attempted_sources": 44,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53972,
-    "whisper_review_pending_sources": 37869,
-    "upload_pending_checkpoints": 28,
-    "subtitle_followup_sources": 49625,
-    "subtitle_followup_pending_sources": 49625
+    "whisper_review_sources": 53971,
+    "whisper_review_pending_sources": 37864,
+    "upload_pending_checkpoints": 27,
+    "subtitle_followup_sources": 49629,
+    "subtitle_followup_pending_sources": 49629
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T07:04:01Z",
+      "databaseId": 41593842975,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T07:03:54Z",
+      "databaseId": 41593831345,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T07:01:57Z",
+      "databaseId": 41593620297,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T07:01:55Z",
+      "databaseId": 41593616423,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T06:59:59Z",
+      "databaseId": 41593392148,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T06:59:54Z",
+      "databaseId": 41593385512,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "success",
       "createdAt": "2026-11-03T06:56:04Z",
@@ -28,19 +76,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T06:56:02Z",
       "databaseId": 41593001181,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T06:56:00Z",
       "databaseId": 41592997354,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -48,7 +96,7 @@
       "createdAt": "2026-11-03T06:55:32Z",
       "databaseId": 41592949578,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T06:49:37Z",
-      "databaseId": 41592334086,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T06:49:34Z",
-      "databaseId": 41592329645,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T06:49:14Z",
-      "databaseId": 41592294551,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T06:47:51Z",
-      "databaseId": 41592153637,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T06:47:47Z",
-      "databaseId": 41592145306,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T06:44:54Z",
-      "databaseId": 41591839729,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -367025,6 +367025,11 @@
         "episode_id": 152459,
         "display_name": "Laboratoř pro chlapy Jamese Maye S01E03 - Orchestr společnosti Man Lab CZ Dabing",
         "video_id": 30754832
+      },
+      {
+        "episode_id": 122862,
+        "display_name": "Kartel S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30754863
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -733767,6 +733772,11 @@
         "episode_id": 152459,
         "display_name": "Laboratoř pro chlapy Jamese Maye S01E03 - Orchestr společnosti Man Lab CZ Dabing",
         "video_id": 30754832
+      },
+      {
+        "episode_id": 122862,
+        "display_name": "Kartel S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30754863
       }
     ],
     "prepared_not_upload_ready": [
@@ -734928,16 +734938,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 43,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36260,
+    "needs_whisper": 36255,
     "whisper_confirmed_cz": 3600,
-    "whisper_non_cz_needs_subtitles": 12503,
+    "whisper_non_cz_needs_subtitles": 12507,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49625
+    "needs_subtitle_setup_after_prehrajto_processing": 49629
   }
 }
