@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 113224,
     "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 78399,
+    "uploaded_episodes": 78401,
     "prepared_source_episodes": 67074,
     "description_series": 60,
     "description_episodes": 753,
@@ -10,15 +10,63 @@
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 26,
-    "language_whisper_attempted_sources": 20,
+    "language_whisper_attempted_sources": 22,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53986,
-    "whisper_review_pending_sources": 37921,
-    "upload_pending_checkpoints": 28,
-    "subtitle_followup_sources": 49551,
-    "subtitle_followup_pending_sources": 49551
+    "whisper_review_pending_sources": 37919,
+    "upload_pending_checkpoints": 27,
+    "subtitle_followup_sources": 49553,
+    "subtitle_followup_pending_sources": 49553
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T01:04:50Z",
+      "databaseId": 41557324043,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T01:04:49Z",
+      "databaseId": 41557322516,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T01:04:40Z",
+      "databaseId": 41557305052,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T01:04:30Z",
+      "databaseId": 41557286395,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T01:03:20Z",
+      "databaseId": 41557149311,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T01:02:23Z",
+      "databaseId": 41557047665,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-03T01:01:58Z",
@@ -32,7 +80,7 @@
       "createdAt": "2026-11-03T01:01:08Z",
       "databaseId": 41556896576,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -40,7 +88,7 @@
       "createdAt": "2026-11-03T01:00:19Z",
       "databaseId": 41556796876,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +132,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T00:53:15Z",
       "databaseId": 41556016305,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -116,11 +164,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T00:51:50Z",
       "databaseId": 41555858916,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T00:50:56Z",
-      "databaseId": 41555750544,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T00:50:52Z",
-      "databaseId": 41555740848,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T00:49:59Z",
-      "databaseId": 41555635022,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T00:49:56Z",
-      "databaseId": 41555628581,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T00:49:45Z",
-      "databaseId": 41555608919,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T00:49:27Z",
-      "databaseId": 41555571662,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -192407,6 +192407,11 @@
         "video_id": 30746146
       },
       {
+        "episode_id": 130649,
+        "display_name": "Black Out S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30746561
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -366415,6 +366420,11 @@
         "episode_id": 130650,
         "display_name": "Black Out S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30746497
+      },
+      {
+        "episode_id": 176947,
+        "display_name": "Providence Falls S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30746575
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -558539,6 +558549,11 @@
         "video_id": 30746146
       },
       {
+        "episode_id": 130649,
+        "display_name": "Black Out S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30746561
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -732547,6 +732562,11 @@
         "episode_id": 130650,
         "display_name": "Black Out S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30746497
+      },
+      {
+        "episode_id": 176947,
+        "display_name": "Providence Falls S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30746575
       }
     ],
     "prepared_not_upload_ready": [
@@ -733708,17 +733728,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 6,
-    "ok": 19,
+    "ok": 21,
+    "disabled": 4,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36312,
+    "needs_whisper": 36310,
     "whisper_confirmed_cz": 3592,
-    "whisper_non_cz_needs_subtitles": 12473,
+    "whisper_non_cz_needs_subtitles": 12475,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49551
+    "needs_subtitle_setup_after_prehrajto_processing": 49553
   }
 }
