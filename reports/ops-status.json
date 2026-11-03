@@ -2,15 +2,15 @@
   "counts": {
     "backlog_episodes": 112961,
     "manifest_upload_ready_episodes": 17,
-    "uploaded_episodes": 78685,
+    "uploaded_episodes": 78686,
     "prepared_source_episodes": 67299,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 57,
-    "language_whisper_attempted_sources": 46,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53964,
     "whisper_review_pending_sources": 37850,
@@ -21,10 +21,18 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T13:09:15Z",
+      "databaseId": 41641799242,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-03T13:08:11Z",
       "databaseId": 41641643823,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +40,7 @@
       "createdAt": "2026-11-03T13:06:58Z",
       "databaseId": 41641459532,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +68,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T13:05:44Z",
       "databaseId": 41641276263,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -120,15 +128,15 @@
       "createdAt": "2026-11-03T13:01:58Z",
       "databaseId": 41640724532,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T13:01:28Z",
       "databaseId": 41640650999,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T12:52:52Z",
-      "databaseId": 41639434517,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -193115,6 +193115,11 @@
         "episode_id": 107544,
         "display_name": "Fotbaloví rodiče S01E06 - Fotbal je válka CZ Dabing",
         "video_id": 30761224
+      },
+      {
+        "episode_id": 157096,
+        "display_name": "Matchday: Inside FC Barcelona S01E07 - 18denní bouře CZ Titulky",
+        "video_id": 30761392
       },
       {
         "episode_id": 114182,
@@ -560679,6 +560684,11 @@
         "video_id": 30761224
       },
       {
+        "episode_id": 157096,
+        "display_name": "Matchday: Inside FC Barcelona S01E07 - 18denní bouře CZ Titulky",
+        "video_id": 30761392
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -736568,9 +736578,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 44,
-    "disabled": 11,
-    "stream_undersized": 1,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
