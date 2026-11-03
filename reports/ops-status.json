@@ -1,24 +1,72 @@
 {
   "counts": {
     "backlog_episodes": 113049,
-    "manifest_upload_ready_episodes": 22,
-    "uploaded_episodes": 78616,
+    "manifest_upload_ready_episodes": 25,
+    "uploaded_episodes": 78617,
     "prepared_source_episodes": 67287,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 31,
-    "language_whisper_attempted_sources": 24,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53965,
-    "whisper_review_pending_sources": 37848,
-    "upload_pending_checkpoints": 29,
-    "subtitle_followup_sources": 49692,
-    "subtitle_followup_pending_sources": 49692
+    "language_audited_sources": 45,
+    "language_whisper_attempted_sources": 45,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53964,
+    "whisper_review_pending_sources": 37842,
+    "upload_pending_checkpoints": 28,
+    "subtitle_followup_sources": 49695,
+    "subtitle_followup_pending_sources": 49695
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T11:18:45Z",
+      "databaseId": 41626476906,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T11:18:40Z",
+      "databaseId": 41626465945,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T11:15:50Z",
+      "databaseId": 41626081920,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T11:15:06Z",
+      "databaseId": 41625981183,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T11:15:01Z",
+      "databaseId": 41625968175,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T11:14:58Z",
+      "databaseId": 41625960880,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-03T11:13:26Z",
@@ -32,7 +80,7 @@
       "createdAt": "2026-11-03T11:13:23Z",
       "databaseId": 41625737934,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -40,15 +88,15 @@
       "createdAt": "2026-11-03T11:13:05Z",
       "databaseId": 41625697444,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T11:12:51Z",
       "databaseId": 41625664217,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -60,11 +108,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T11:11:43Z",
       "databaseId": 41625507562,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,19 +124,19 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T11:11:02Z",
       "databaseId": 41625414758,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T11:10:59Z",
       "databaseId": 41625408409,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T11:06:29Z",
-      "databaseId": 41624774495,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T11:06:26Z",
-      "databaseId": 41624767494,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T11:05:07Z",
-      "databaseId": 41624578835,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T11:04:58Z",
-      "databaseId": 41624557523,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T11:04:54Z",
-      "databaseId": 41624547916,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T11:04:48Z",
-      "databaseId": 41624535038,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -192940,6 +192940,11 @@
         "episode_id": 102657,
         "display_name": "Kartel S01E15 - 15. epizoda CZ Dabing",
         "video_id": 30759504
+      },
+      {
+        "episode_id": 102673,
+        "display_name": "Kartel S01E16 - 16. epizoda CZ Dabing",
+        "video_id": 30759649
       },
       {
         "episode_id": 114182,
@@ -560159,6 +560164,11 @@
         "video_id": 30759504
       },
       {
+        "episode_id": 102673,
+        "display_name": "Kartel S01E16 - 16. epizoda CZ Dabing",
+        "video_id": 30759649
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -735878,17 +735888,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 23,
-    "disabled": 7,
+    "ok": 44,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36239,
+    "needs_whisper": 36233,
     "whisper_confirmed_cz": 3600,
-    "whisper_non_cz_needs_subtitles": 12517,
+    "whisper_non_cz_needs_subtitles": 12522,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49692
+    "needs_subtitle_setup_after_prehrajto_processing": 49695
   }
 }
