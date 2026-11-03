@@ -1,12 +1,12 @@
 {
   "counts": {
     "backlog_episodes": 112961,
-    "manifest_upload_ready_episodes": 24,
-    "uploaded_episodes": 78673,
+    "manifest_upload_ready_episodes": 18,
+    "uploaded_episodes": 78682,
     "prepared_source_episodes": 67302,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 41,
+    "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 41,
@@ -14,17 +14,81 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53964,
     "whisper_review_pending_sources": 37847,
-    "upload_pending_checkpoints": 31,
+    "upload_pending_checkpoints": 30,
     "subtitle_followup_sources": 49717,
     "subtitle_followup_pending_sources": 49717
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T13:01:58Z",
+      "databaseId": 41640724532,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:01:28Z",
+      "databaseId": 41640650999,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T13:01:23Z",
+      "databaseId": 41640640279,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T12:56:47Z",
+      "databaseId": 41639985835,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T12:53:44Z",
+      "databaseId": 41639556287,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T12:52:59Z",
+      "databaseId": 41639450528,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:52:55Z",
+      "databaseId": 41639441138,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:52:52Z",
+      "databaseId": 41639434517,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T12:52:20Z",
       "databaseId": 41639360793,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +96,7 @@
       "createdAt": "2026-11-03T12:52:10Z",
       "databaseId": 41639336624,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +156,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T12:46:56Z",
       "databaseId": 41638603349,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T12:44:19Z",
-      "databaseId": 41638235673,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T12:42:33Z",
-      "databaseId": 41637986868,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T12:42:14Z",
-      "databaseId": 41637944244,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T12:42:14Z",
-      "databaseId": 41637943350,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T12:42:09Z",
-      "databaseId": 41637932157,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:41:40Z",
-      "databaseId": 41637866637,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:41:37Z",
-      "databaseId": 41637859460,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:41:35Z",
-      "databaseId": 41637853620,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -193092,6 +193092,26 @@
         "video_id": 30760982
       },
       {
+        "episode_id": 102653,
+        "display_name": "Kartel S01E28 - 28. epizoda CZ Dabing",
+        "video_id": 30761134
+      },
+      {
+        "episode_id": 172404,
+        "display_name": "V epicentru bouře S01E04 - Hurikán přes půl státu CZ Dabing",
+        "video_id": 30761124
+      },
+      {
+        "episode_id": 102669,
+        "display_name": "Kartel S01E29 - 29. epizoda CZ Dabing",
+        "video_id": 30761182
+      },
+      {
+        "episode_id": 157097,
+        "display_name": "Matchday: Inside FC Barcelona S01E08 - Nový začátek CZ Titulky",
+        "video_id": 30761252
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -367785,6 +367805,31 @@
         "episode_id": 203570,
         "display_name": "Akademie Minerva S01E07 - 7. epizoda CZ Dabing",
         "video_id": 30761100
+      },
+      {
+        "episode_id": 169023,
+        "display_name": "Ties That Bind S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30761140
+      },
+      {
+        "episode_id": 169894,
+        "display_name": "Gordita Chronicles S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30761173
+      },
+      {
+        "episode_id": 203571,
+        "display_name": "Akademie Minerva S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30761195
+      },
+      {
+        "episode_id": 171250,
+        "display_name": "He's Coming To Me S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30761236
+      },
+      {
+        "episode_id": 171251,
+        "display_name": "He's Coming To Me S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30761312
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -560594,6 +560639,26 @@
         "video_id": 30760982
       },
       {
+        "episode_id": 102653,
+        "display_name": "Kartel S01E28 - 28. epizoda CZ Dabing",
+        "video_id": 30761134
+      },
+      {
+        "episode_id": 172404,
+        "display_name": "V epicentru bouře S01E04 - Hurikán přes půl státu CZ Dabing",
+        "video_id": 30761124
+      },
+      {
+        "episode_id": 102669,
+        "display_name": "Kartel S01E29 - 29. epizoda CZ Dabing",
+        "video_id": 30761182
+      },
+      {
+        "episode_id": 157097,
+        "display_name": "Matchday: Inside FC Barcelona S01E08 - Nový začátek CZ Titulky",
+        "video_id": 30761252
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -735287,6 +735352,31 @@
         "episode_id": 203570,
         "display_name": "Akademie Minerva S01E07 - 7. epizoda CZ Dabing",
         "video_id": 30761100
+      },
+      {
+        "episode_id": 169023,
+        "display_name": "Ties That Bind S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30761140
+      },
+      {
+        "episode_id": 169894,
+        "display_name": "Gordita Chronicles S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30761173
+      },
+      {
+        "episode_id": 203571,
+        "display_name": "Akademie Minerva S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30761195
+      },
+      {
+        "episode_id": 171250,
+        "display_name": "He's Coming To Me S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30761236
+      },
+      {
+        "episode_id": 171251,
+        "display_name": "He's Coming To Me S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30761312
       }
     ],
     "prepared_not_upload_ready": [
