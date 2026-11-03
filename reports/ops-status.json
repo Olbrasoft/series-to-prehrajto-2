@@ -1,30 +1,46 @@
 {
   "counts": {
     "backlog_episodes": 112961,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 78739,
-    "prepared_source_episodes": 67310,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 78740,
+    "prepared_source_episodes": 67314,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 47,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 52,
+    "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53962,
     "whisper_review_pending_sources": 37854,
-    "upload_pending_checkpoints": 29,
-    "subtitle_followup_sources": 49741,
-    "subtitle_followup_pending_sources": 49741
+    "upload_pending_checkpoints": 28,
+    "subtitle_followup_sources": 49742,
+    "subtitle_followup_pending_sources": 49742
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T15:06:21Z",
+      "databaseId": 41660379055,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T15:05:36Z",
+      "databaseId": 41660248294,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-03T15:04:53Z",
       "databaseId": 41660120275,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -44,11 +60,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T15:03:58Z",
       "databaseId": 41659961502,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -56,7 +72,7 @@
       "createdAt": "2026-11-03T15:03:08Z",
       "databaseId": 41659815878,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -159,22 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-03T14:54:13Z",
       "databaseId": 41658295334,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T14:54:07Z",
-      "databaseId": 41658277117,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T14:52:49Z",
-      "databaseId": 41658057845,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -368115,6 +368115,11 @@
         "episode_id": 200978,
         "display_name": "Sarah & Duck S03E13 - 13. epizoda CZ Titulky",
         "video_id": 30765217
+      },
+      {
+        "episode_id": 29854,
+        "display_name": "Maou-jou de Oyasumi S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30765303
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -735947,6 +735952,11 @@
         "episode_id": 200978,
         "display_name": "Sarah & Duck S03E13 - 13. epizoda CZ Titulky",
         "video_id": 30765217
+      },
+      {
+        "episode_id": 29854,
+        "display_name": "Maou-jou de Oyasumi S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30765303
       }
     ],
     "prepared_not_upload_ready": [
@@ -737108,8 +737118,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
-    "ok": 39,
+    "disabled": 11,
+    "ok": 40,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -737119,6 +737129,6 @@
     "whisper_failed": 1615
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49741
+    "needs_subtitle_setup_after_prehrajto_processing": 49742
   }
 }
