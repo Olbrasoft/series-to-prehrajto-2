@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112787,
     "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 78885,
+    "uploaded_episodes": 78886,
     "prepared_source_episodes": 67431,
     "description_series": 60,
     "description_episodes": 753,
@@ -20,11 +20,67 @@
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T22:52:39Z",
+      "databaseId": 41734538827,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:52:24Z",
+      "databaseId": 41734506448,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:52:09Z",
+      "databaseId": 41734470539,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:52:05Z",
+      "databaseId": 41734461384,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T22:51:49Z",
+      "databaseId": 41734424801,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:51:44Z",
+      "databaseId": 41734415097,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T22:51:36Z",
+      "databaseId": 41734396362,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-03T22:51:07Z",
       "databaseId": 41734333791,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +92,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T22:50:20Z",
       "databaseId": 41734225681,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -52,11 +108,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T22:44:33Z",
       "databaseId": 41733418872,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -68,27 +124,27 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T22:43:08Z",
       "databaseId": 41733223216,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T22:42:33Z",
       "databaseId": 41733138857,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T22:41:42Z",
       "databaseId": 41733017820,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -104,7 +160,7 @@
       "createdAt": "2026-11-03T22:38:53Z",
       "databaseId": 41732614593,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -121,62 +177,6 @@
       "databaseId": 41732589880,
       "headBranch": "main",
       "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T22:38:30Z",
-      "databaseId": 41732559746,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T22:37:52Z",
-      "databaseId": 41732467993,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T22:37:07Z",
-      "databaseId": 41732363303,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T22:37:01Z",
-      "databaseId": 41732351491,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T22:37:00Z",
-      "databaseId": 41732348543,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T22:36:39Z",
-      "databaseId": 41732299593,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T22:36:38Z",
-      "databaseId": 41732297616,
-      "headBranch": "main",
-      "status": "in_progress",
       "workflowName": "prepare-manifest"
     }
   ],
@@ -368845,6 +368845,11 @@
         "episode_id": 102507,
         "display_name": "Kapitán Kloss S01E02 - Hotel Excelsior CZ Dabing",
         "video_id": 30774639
+      },
+      {
+        "episode_id": 175870,
+        "display_name": "Temný Janov S02E03 - Ďábelský karneval CZ Dabing",
+        "video_id": 30774667
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -737407,6 +737412,11 @@
         "episode_id": 102507,
         "display_name": "Kapitán Kloss S01E02 - Hotel Excelsior CZ Dabing",
         "video_id": 30774639
+      },
+      {
+        "episode_id": 175870,
+        "display_name": "Temný Janov S02E03 - Ďábelský karneval CZ Dabing",
+        "video_id": 30774667
       }
     ],
     "prepared_not_upload_ready": [
