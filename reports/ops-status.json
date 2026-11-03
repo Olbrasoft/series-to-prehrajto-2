@@ -1,38 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 113173,
-    "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 78464,
-    "prepared_source_episodes": 67146,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 78465,
+    "prepared_source_episodes": 67148,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
+    "language_audited_sources": 45,
     "language_whisper_attempted_sources": 42,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53973,
-    "whisper_review_pending_sources": 37874,
+    "whisper_review_sources": 53974,
+    "whisper_review_pending_sources": 37875,
     "upload_pending_checkpoints": 27,
-    "subtitle_followup_sources": 49583,
-    "subtitle_followup_pending_sources": 49583
+    "subtitle_followup_sources": 49584,
+    "subtitle_followup_pending_sources": 49584
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-03T04:03:53Z",
-      "databaseId": 41575873341,
+      "createdAt": "2026-11-03T04:07:09Z",
+      "databaseId": 41576208941,
       "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "ops-status"
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T04:07:05Z",
+      "databaseId": 41576201204,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T04:06:02Z",
+      "databaseId": 41576094203,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T04:05:47Z",
+      "databaseId": 41576068686,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T04:05:47Z",
+      "databaseId": 41576067816,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T04:03:53Z",
+      "databaseId": 41575873341,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T04:03:46Z",
       "databaseId": 41575861994,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -135,46 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-03T03:53:17Z",
       "databaseId": 41574840036,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T03:53:07Z",
-      "databaseId": 41574824461,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T03:52:47Z",
-      "databaseId": 41574792428,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T03:52:34Z",
-      "databaseId": 41574771176,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T03:52:27Z",
-      "databaseId": 41574760152,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T03:52:20Z",
-      "databaseId": 41574749713,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -192575,6 +192575,11 @@
         "episode_id": 180849,
         "display_name": "Lightfields S01E03 - 3. epizoda CZ Dabing",
         "video_id": 30751689
+      },
+      {
+        "episode_id": 174053,
+        "display_name": "Práce: Co děláme celé dny S01E02 - Uprostřed CZ Dabing",
+        "video_id": 30751775
       },
       {
         "episode_id": 114182,
@@ -559034,6 +559039,11 @@
         "video_id": 30751689
       },
       {
+        "episode_id": 174053,
+        "display_name": "Práce: Co děláme celé dny S01E02 - Uprostřed CZ Dabing",
+        "video_id": 30751775
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -734358,16 +734368,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 3,
     "ok": 41,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36265,
+    "needs_whisper": 36266,
     "whisper_confirmed_cz": 3593,
     "whisper_non_cz_needs_subtitles": 12506,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49583
+    "needs_subtitle_setup_after_prehrajto_processing": 49584
   }
 }
