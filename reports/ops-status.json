@@ -1,24 +1,104 @@
 {
   "counts": {
     "backlog_episodes": 112880,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 78784,
-    "prepared_source_episodes": 67350,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 78787,
+    "prepared_source_episodes": 67347,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 47,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53963,
     "whisper_review_pending_sources": 37862,
-    "upload_pending_checkpoints": 30,
+    "upload_pending_checkpoints": 29,
     "subtitle_followup_sources": 49766,
     "subtitle_followup_pending_sources": 49766
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T17:20:58Z",
+      "databaseId": 41683370192,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T17:20:05Z",
+      "databaseId": 41683222401,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T17:20:02Z",
+      "databaseId": 41683212723,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T17:19:54Z",
+      "databaseId": 41683191466,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T17:16:11Z",
+      "databaseId": 41682576076,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T17:14:44Z",
+      "databaseId": 41682331807,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T17:14:39Z",
+      "databaseId": 41682317958,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T17:14:28Z",
+      "databaseId": 41682288436,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T17:14:14Z",
+      "databaseId": 41682246392,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T17:14:10Z",
+      "databaseId": 41682235005,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-03T17:13:24Z",
@@ -32,15 +112,15 @@
       "createdAt": "2026-11-03T17:13:19Z",
       "databaseId": 41682095606,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T17:12:24Z",
       "databaseId": 41681940335,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +128,7 @@
       "createdAt": "2026-11-03T17:12:18Z",
       "databaseId": 41681924310,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -64,7 +144,7 @@
       "createdAt": "2026-11-03T17:10:08Z",
       "databaseId": 41681558299,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -72,7 +152,7 @@
       "createdAt": "2026-11-03T17:09:05Z",
       "databaseId": 41681380783,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T17:05:27Z",
-      "databaseId": 41680773758,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T17:04:57Z",
-      "databaseId": 41680681791,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T17:04:36Z",
-      "databaseId": 41680621258,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T17:04:33Z",
-      "databaseId": 41680613373,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T17:03:56Z",
-      "databaseId": 41680507624,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T17:03:52Z",
-      "databaseId": 41680497862,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T17:02:48Z",
-      "databaseId": 41680315330,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T17:01:53Z",
-      "databaseId": 41680163149,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T16:55:54Z",
-      "databaseId": 41679170742,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T16:55:12Z",
-      "databaseId": 41679053836,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -193362,6 +193362,11 @@
         "video_id": 30768939
       },
       {
+        "episode_id": 155089,
+        "display_name": "Dálnice smrti S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30769070
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -368340,6 +368345,16 @@
         "episode_id": 201306,
         "display_name": "Kemonozume S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30768862
+      },
+      {
+        "episode_id": 144346,
+        "display_name": "BTS Monuments: Beyond The Star S01E02 - 2. Díl, Dospívání CZ Titulky",
+        "video_id": 30769056
+      },
+      {
+        "episode_id": 169258,
+        "display_name": "The Boy Next World S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30769224
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -561419,6 +561434,11 @@
         "video_id": 30768939
       },
       {
+        "episode_id": 155089,
+        "display_name": "Dálnice smrti S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30769070
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -736397,6 +736417,16 @@
         "episode_id": 201306,
         "display_name": "Kemonozume S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30768862
+      },
+      {
+        "episode_id": 144346,
+        "display_name": "BTS Monuments: Beyond The Star S01E02 - 2. Díl, Dospívání CZ Titulky",
+        "video_id": 30769056
+      },
+      {
+        "episode_id": 169258,
+        "display_name": "The Boy Next World S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30769224
       }
     ],
     "prepared_not_upload_ready": [
@@ -737558,8 +737588,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
