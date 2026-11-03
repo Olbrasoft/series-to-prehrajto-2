@@ -2,29 +2,45 @@
   "counts": {
     "backlog_episodes": 112880,
     "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 78790,
+    "uploaded_episodes": 78791,
     "prepared_source_episodes": 67354,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 24,
-    "language_whisper_attempted_sources": 22,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53963,
     "whisper_review_pending_sources": 37862,
-    "upload_pending_checkpoints": 30,
+    "upload_pending_checkpoints": 29,
     "subtitle_followup_sources": 49766,
     "subtitle_followup_pending_sources": 49766
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T17:40:25Z",
+      "databaseId": 41686506552,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T17:39:22Z",
+      "databaseId": 41686337794,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-03T17:38:34Z",
       "databaseId": 41686213769,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -32,7 +48,7 @@
       "createdAt": "2026-11-03T17:38:14Z",
       "databaseId": 41686162354,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +76,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T17:33:07Z",
       "databaseId": 41685336741,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -96,7 +112,7 @@
       "createdAt": "2026-11-03T17:32:20Z",
       "databaseId": 41685209881,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -148,33 +164,17 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T17:29:34Z",
       "databaseId": 41684749916,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "cancelled",
       "createdAt": "2026-11-03T17:29:27Z",
       "databaseId": 41684732450,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T17:28:23Z",
-      "databaseId": 41684566896,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T17:28:18Z",
-      "databaseId": 41684552758,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
@@ -193380,6 +193380,11 @@
         "episode_id": 129480,
         "display_name": "Nevěsta pro ducha S01E05 - 5. kapitola CZ Titulky",
         "video_id": 30769769
+      },
+      {
+        "episode_id": 132481,
+        "display_name": "Na pomezí záhad S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30769836
       },
       {
         "episode_id": 114182,
@@ -561469,6 +561474,11 @@
         "video_id": 30769769
       },
       {
+        "episode_id": 132481,
+        "display_name": "Na pomezí záhad S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30769836
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -737618,8 +737628,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 21,
-    "disabled": 2,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
