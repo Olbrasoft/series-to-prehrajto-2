@@ -2,29 +2,53 @@
   "counts": {
     "backlog_episodes": 112787,
     "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 78890,
-    "prepared_source_episodes": 67441,
+    "uploaded_episodes": 78891,
+    "prepared_source_episodes": 67440,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 22,
+    "language_whisper_attempted_sources": 22,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53945,
-    "whisper_review_pending_sources": 37798,
+    "whisper_review_sources": 53944,
+    "whisper_review_pending_sources": 37795,
     "upload_pending_checkpoints": 29,
     "subtitle_followup_sources": 49833,
     "subtitle_followup_pending_sources": 49833
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T23:10:43Z",
+      "databaseId": 41737043847,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T23:10:01Z",
+      "databaseId": 41736941882,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T23:09:56Z",
+      "databaseId": 41736929778,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-03T23:07:37Z",
       "databaseId": 41736617741,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +60,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:06:37Z",
       "databaseId": 41736479595,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -60,11 +84,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:05:55Z",
       "databaseId": 41736382614,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T22:56:55Z",
-      "databaseId": 41735127344,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T22:56:50Z",
-      "databaseId": 41735116358,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T22:56:49Z",
-      "databaseId": 41735113099,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -368870,6 +368870,11 @@
         "episode_id": 102494,
         "display_name": "Kapitán Kloss S01E04 - Kavárna Rose CZ Dabing",
         "video_id": 30774750
+      },
+      {
+        "episode_id": 175871,
+        "display_name": "Temný Janov S02E04 - Nido Vuoto CZ Dabing",
+        "video_id": 30774813
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -737457,6 +737462,11 @@
         "episode_id": 102494,
         "display_name": "Kapitán Kloss S01E04 - Kavárna Rose CZ Dabing",
         "video_id": 30774750
+      },
+      {
+        "episode_id": 175871,
+        "display_name": "Temný Janov S02E04 - Nido Vuoto CZ Dabing",
+        "video_id": 30774813
       }
     ],
     "prepared_not_upload_ready": [
@@ -738618,12 +738628,12 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 21,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36181,
-    "whisper_confirmed_cz": 3619,
+    "needs_whisper": 36178,
+    "whisper_confirmed_cz": 3621,
     "whisper_non_cz_needs_subtitles": 12528,
     "whisper_failed": 1617
   },
