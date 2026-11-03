@@ -1,24 +1,48 @@
 {
   "counts": {
     "backlog_episodes": 112880,
-    "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 78754,
-    "prepared_source_episodes": 67326,
+    "manifest_upload_ready_episodes": 9,
+    "uploaded_episodes": 78756,
+    "prepared_source_episodes": 67331,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 22,
-    "language_whisper_attempted_sources": 22,
+    "language_audited_sources": 28,
+    "language_whisper_attempted_sources": 23,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53962,
     "whisper_review_pending_sources": 37854,
-    "upload_pending_checkpoints": 31,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 49752,
     "subtitle_followup_pending_sources": 49752
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T15:58:11Z",
+      "databaseId": 41669311283,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T15:57:36Z",
+      "databaseId": 41669219207,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T15:57:32Z",
+      "databaseId": 41669207653,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-03T15:56:30Z",
@@ -36,11 +60,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T15:56:08Z",
       "databaseId": 41668975553,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -72,7 +96,7 @@
       "createdAt": "2026-11-03T15:51:59Z",
       "databaseId": 41668273510,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T15:45:01Z",
-      "databaseId": 41667094654,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T15:43:09Z",
-      "databaseId": 41666778902,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T15:42:49Z",
-      "databaseId": 41666722573,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -193272,6 +193272,11 @@
         "video_id": 30766719
       },
       {
+        "episode_id": 122865,
+        "display_name": "Kartel S01E53 - 53. epizoda CZ Dabing",
+        "video_id": 30766798
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -368190,6 +368195,11 @@
         "episode_id": 129479,
         "display_name": "Nevěsta pro ducha S01E04 - 4. kapitola CZ Titulky",
         "video_id": 30766598
+      },
+      {
+        "episode_id": 175803,
+        "display_name": "Tajnosti S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30766744
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -561179,6 +561189,11 @@
         "video_id": 30766719
       },
       {
+        "episode_id": 122865,
+        "display_name": "Kartel S01E53 - 53. epizoda CZ Dabing",
+        "video_id": 30766798
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -736097,6 +736112,11 @@
         "episode_id": 129479,
         "display_name": "Nevěsta pro ducha S01E04 - 4. kapitola CZ Titulky",
         "video_id": 30766598
+      },
+      {
+        "episode_id": 175803,
+        "display_name": "Tajnosti S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30766744
       }
     ],
     "prepared_not_upload_ready": [
@@ -737258,7 +737278,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 21,
+    "ok": 22,
+    "disabled": 5,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
