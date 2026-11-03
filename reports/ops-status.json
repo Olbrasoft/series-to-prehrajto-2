@@ -1,30 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 112880,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 78756,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 78760,
     "prepared_source_episodes": 67331,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 28,
-    "language_whisper_attempted_sources": 23,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 44,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53962,
-    "whisper_review_pending_sources": 37854,
-    "upload_pending_checkpoints": 32,
+    "whisper_review_pending_sources": 37857,
+    "upload_pending_checkpoints": 30,
     "subtitle_followup_sources": 49752,
     "subtitle_followup_pending_sources": 49752
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T16:03:19Z",
+      "databaseId": 41670193298,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T16:02:57Z",
+      "databaseId": 41670134640,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T16:02:53Z",
+      "databaseId": 41670122591,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T16:02:48Z",
+      "databaseId": 41670108476,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T16:02:10Z",
+      "databaseId": 41669995316,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T16:00:37Z",
+      "databaseId": 41669711258,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-03T15:58:11Z",
       "databaseId": 41669311283,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +84,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T15:57:32Z",
       "databaseId": 41669207653,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -84,11 +132,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T15:52:32Z",
       "databaseId": 41668367606,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -127,54 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-03T15:51:04Z",
       "databaseId": 41668118683,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T15:51:00Z",
-      "databaseId": 41668109877,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T15:50:47Z",
-      "databaseId": 41668072919,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T15:49:57Z",
-      "databaseId": 41667927077,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T15:49:37Z",
-      "databaseId": 41667868482,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T15:46:35Z",
-      "databaseId": 41667371196,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T15:46:32Z",
-      "databaseId": 41667360575,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
@@ -193277,6 +193277,16 @@
         "video_id": 30766798
       },
       {
+        "episode_id": 129481,
+        "display_name": "Nevěsta pro ducha S01E06 - 6. kapitola CZ Titulky",
+        "video_id": 30766892
+      },
+      {
+        "episode_id": 122864,
+        "display_name": "Kartel S01E54 - 54. epizoda CZ Dabing",
+        "video_id": 30766843
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -368200,6 +368210,16 @@
         "episode_id": 175803,
         "display_name": "Tajnosti S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30766744
+      },
+      {
+        "episode_id": 129958,
+        "display_name": "Špinavý prachy S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30766781
+      },
+      {
+        "episode_id": 201307,
+        "display_name": "Kemonozume S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30766887
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -561194,6 +561214,16 @@
         "video_id": 30766798
       },
       {
+        "episode_id": 129481,
+        "display_name": "Nevěsta pro ducha S01E06 - 6. kapitola CZ Titulky",
+        "video_id": 30766892
+      },
+      {
+        "episode_id": 122864,
+        "display_name": "Kartel S01E54 - 54. epizoda CZ Dabing",
+        "video_id": 30766843
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -736117,6 +736147,16 @@
         "episode_id": 175803,
         "display_name": "Tajnosti S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30766744
+      },
+      {
+        "episode_id": 129958,
+        "display_name": "Špinavý prachy S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30766781
+      },
+      {
+        "episode_id": 201307,
+        "display_name": "Kemonozume S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30766887
       }
     ],
     "prepared_not_upload_ready": [
@@ -737278,14 +737318,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 22,
-    "disabled": 5,
+    "disabled": 4,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36239,
+    "needs_whisper": 36242,
     "whisper_confirmed_cz": 3602,
-    "whisper_non_cz_needs_subtitles": 12506,
+    "whisper_non_cz_needs_subtitles": 12503,
     "whisper_failed": 1615
   },
   "subtitle_followup_statuses": {
