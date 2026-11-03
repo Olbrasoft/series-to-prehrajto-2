@@ -1,30 +1,126 @@
 {
   "counts": {
     "backlog_episodes": 112961,
-    "manifest_upload_ready_episodes": 20,
-    "uploaded_episodes": 78661,
-    "prepared_source_episodes": 67295,
+    "manifest_upload_ready_episodes": 17,
+    "uploaded_episodes": 78667,
+    "prepared_source_episodes": 67293,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 57,
+    "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53963,
-    "whisper_review_pending_sources": 37843,
-    "upload_pending_checkpoints": 30,
-    "subtitle_followup_sources": 49708,
-    "subtitle_followup_pending_sources": 49708
+    "whisper_review_pending_sources": 37841,
+    "upload_pending_checkpoints": 31,
+    "subtitle_followup_sources": 49710,
+    "subtitle_followup_pending_sources": 49710
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T12:34:29Z",
+      "databaseId": 41636861486,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:34:26Z",
+      "databaseId": 41636853737,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:34:25Z",
+      "databaseId": 41636851409,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:34:23Z",
+      "databaseId": 41636846400,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:33:33Z",
+      "databaseId": 41636727883,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:33:30Z",
+      "databaseId": 41636721493,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:32:47Z",
+      "databaseId": 41636619580,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T12:31:54Z",
+      "databaseId": 41636495315,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:30:50Z",
+      "databaseId": 41636344218,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T12:28:10Z",
+      "databaseId": 41635954940,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:27:51Z",
+      "databaseId": 41635911505,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T12:27:47Z",
+      "databaseId": 41635901978,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-03T12:25:44Z",
       "databaseId": 41635617886,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -32,7 +128,7 @@
       "createdAt": "2026-11-03T12:24:26Z",
       "databaseId": 41635431885,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,31 +136,31 @@
       "createdAt": "2026-11-03T12:24:20Z",
       "databaseId": 41635418921,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T12:22:21Z",
       "databaseId": 41635141831,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T12:22:21Z",
       "databaseId": 41635141041,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T12:22:10Z",
       "databaseId": 41635116062,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -82,102 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T12:20:16Z",
-      "databaseId": 41634847967,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:20:00Z",
-      "databaseId": 41634810397,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "refresh-backlog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T12:19:32Z",
-      "databaseId": 41634746451,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T12:18:27Z",
-      "databaseId": 41634594001,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T12:18:13Z",
-      "databaseId": 41634561659,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T12:18:07Z",
-      "databaseId": 41634547057,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:13:57Z",
-      "databaseId": 41633969472,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:13:53Z",
-      "databaseId": 41633960979,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:11:00Z",
-      "databaseId": 41633558492,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:10:25Z",
-      "databaseId": 41633474281,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T12:10:18Z",
-      "databaseId": 41633457247,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:10:11Z",
-      "databaseId": 41633440373,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -193062,6 +193062,21 @@
         "video_id": 30760745
       },
       {
+        "episode_id": 200969,
+        "display_name": "Sarah & Duck S03E04 - 4. epizoda CZ Titulky",
+        "video_id": 30760776
+      },
+      {
+        "episode_id": 157092,
+        "display_name": "Matchday: Inside FC Barcelona S01E03 - Prokletí CZ Titulky",
+        "video_id": 30760833
+      },
+      {
+        "episode_id": 63269,
+        "display_name": "Poslední autobus S01E10 - 10. epizoda CZ Dabing",
+        "video_id": 30760860
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -367725,6 +367740,21 @@
         "episode_id": 171127,
         "display_name": "Hry kolem světa S01E07 - Makepung CZ Titulky",
         "video_id": 30760731
+      },
+      {
+        "episode_id": 107539,
+        "display_name": "Fotbaloví rodiče S01E01 - Nováčci CZ Dabing",
+        "video_id": 30760814
+      },
+      {
+        "episode_id": 171126,
+        "display_name": "Hry kolem světa S01E06 - Voodoo wrestling CZ Titulky",
+        "video_id": 30760795
+      },
+      {
+        "episode_id": 107542,
+        "display_name": "Fotbaloví rodiče S01E04 - Podzimní turnaj CZ Dabing",
+        "video_id": 30760874
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -560504,6 +560534,21 @@
         "video_id": 30760745
       },
       {
+        "episode_id": 200969,
+        "display_name": "Sarah & Duck S03E04 - 4. epizoda CZ Titulky",
+        "video_id": 30760776
+      },
+      {
+        "episode_id": 157092,
+        "display_name": "Matchday: Inside FC Barcelona S01E03 - Prokletí CZ Titulky",
+        "video_id": 30760833
+      },
+      {
+        "episode_id": 63269,
+        "display_name": "Poslední autobus S01E10 - 10. epizoda CZ Dabing",
+        "video_id": 30760860
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -735167,6 +735212,21 @@
         "episode_id": 171127,
         "display_name": "Hry kolem světa S01E07 - Makepung CZ Titulky",
         "video_id": 30760731
+      },
+      {
+        "episode_id": 107539,
+        "display_name": "Fotbaloví rodiče S01E01 - Nováčci CZ Dabing",
+        "video_id": 30760814
+      },
+      {
+        "episode_id": 171126,
+        "display_name": "Hry kolem světa S01E06 - Voodoo wrestling CZ Titulky",
+        "video_id": 30760795
+      },
+      {
+        "episode_id": 107542,
+        "display_name": "Fotbaloví rodiče S01E04 - Podzimní turnaj CZ Dabing",
+        "video_id": 30760874
       }
     ],
     "prepared_not_upload_ready": [
@@ -736328,17 +736388,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 17,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36232,
-    "whisper_confirmed_cz": 3600,
-    "whisper_non_cz_needs_subtitles": 12520,
+    "needs_whisper": 36230,
+    "whisper_confirmed_cz": 3601,
+    "whisper_non_cz_needs_subtitles": 12521,
     "whisper_failed": 1611
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49708
+    "needs_subtitle_setup_after_prehrajto_processing": 49710
   }
 }
