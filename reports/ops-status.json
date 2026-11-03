@@ -1,15 +1,15 @@
 {
   "counts": {
     "backlog_episodes": 113224,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 78409,
-    "prepared_source_episodes": 67094,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 78410,
+    "prepared_source_episodes": 67098,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 47,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53985,
@@ -21,10 +21,26 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T01:38:54Z",
+      "databaseId": 41561089352,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T01:38:49Z",
+      "databaseId": 41561080992,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T01:36:58Z",
       "databaseId": 41560879789,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +48,7 @@
       "createdAt": "2026-11-03T01:35:56Z",
       "databaseId": 41560769988,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,19 +84,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T01:33:38Z",
       "databaseId": 41560513880,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T01:33:31Z",
       "databaseId": 41560500210,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -96,15 +112,15 @@
       "createdAt": "2026-11-03T01:33:06Z",
       "databaseId": 41560453635,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T01:32:34Z",
       "databaseId": 41560396005,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -112,7 +128,7 @@
       "createdAt": "2026-11-03T01:31:46Z",
       "databaseId": 41560313523,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T01:26:52Z",
-      "databaseId": 41559794862,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T01:26:20Z",
-      "databaseId": 41559740246,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -366465,6 +366465,11 @@
         "episode_id": 126167,
         "display_name": "Aaron Stone S01E06 - 6. epizoda CZ Dabing",
         "video_id": 30746942
+      },
+      {
+        "episode_id": 130654,
+        "display_name": "Black Out S01E14 - 14. epizoda CZ Titulky",
+        "video_id": 30747211
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -732647,6 +732652,11 @@
         "episode_id": 126167,
         "display_name": "Aaron Stone S01E06 - 6. epizoda CZ Dabing",
         "video_id": 30746942
+      },
+      {
+        "episode_id": 130654,
+        "display_name": "Black Out S01E14 - 14. epizoda CZ Titulky",
+        "video_id": 30747211
       }
     ],
     "prepared_not_upload_ready": [
@@ -733808,6 +733818,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 7,
     "ok": 39,
     "resolve_failed": 1
   },
