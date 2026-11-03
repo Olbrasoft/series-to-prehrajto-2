@@ -1,30 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 113049,
-    "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 78644,
-    "prepared_source_episodes": 67283,
+    "manifest_upload_ready_episodes": 18,
+    "uploaded_episodes": 78646,
+    "prepared_source_episodes": 67286,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 26,
-    "language_whisper_attempted_sources": 23,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 55,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53963,
     "whisper_review_pending_sources": 37839,
     "upload_pending_checkpoints": 29,
-    "subtitle_followup_sources": 49700,
-    "subtitle_followup_pending_sources": 49700
+    "subtitle_followup_sources": 49702,
+    "subtitle_followup_pending_sources": 49702
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:04:48Z",
+      "databaseId": 41632694628,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:04:06Z",
+      "databaseId": 41632602657,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:03:16Z",
+      "databaseId": 41632486921,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T12:03:11Z",
+      "databaseId": 41632474530,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:01:43Z",
+      "databaseId": 41632274096,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T12:00:26Z",
+      "databaseId": 41632085407,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T12:00:23Z",
+      "databaseId": 41632077462,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-03T11:56:46Z",
       "databaseId": 41631594103,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,19 +100,19 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T11:53:20Z",
       "databaseId": 41631136941,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T11:52:54Z",
       "databaseId": 41631080257,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +140,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T11:51:27Z",
       "databaseId": 41630888597,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T11:44:04Z",
-      "databaseId": 41629899398,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T11:42:27Z",
-      "databaseId": 41629686090,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T11:42:23Z",
-      "databaseId": 41629676089,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T11:42:01Z",
-      "databaseId": 41629626096,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T11:40:13Z",
-      "databaseId": 41629383956,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T11:38:42Z",
-      "databaseId": 41629184482,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T11:37:45Z",
-      "databaseId": 41629059731,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -193022,6 +193022,11 @@
         "video_id": 30760329
       },
       {
+        "episode_id": 63264,
+        "display_name": "Poslední autobus S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30760373
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -367640,6 +367645,11 @@
         "episode_id": 201271,
         "display_name": "Sarah & Duck S02E37 - 37. epizoda CZ Titulky",
         "video_id": 30760320
+      },
+      {
+        "episode_id": 63263,
+        "display_name": "Poslední autobus S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30760368
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -560379,6 +560389,11 @@
         "video_id": 30760329
       },
       {
+        "episode_id": 63264,
+        "display_name": "Poslední autobus S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30760373
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -734997,6 +735012,11 @@
         "episode_id": 201271,
         "display_name": "Sarah & Duck S02E37 - 37. epizoda CZ Titulky",
         "video_id": 30760320
+      },
+      {
+        "episode_id": 63263,
+        "display_name": "Poslední autobus S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30760368
       }
     ],
     "prepared_not_upload_ready": [
@@ -736158,8 +736178,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 3,
-    "ok": 22,
+    "disabled": 15,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -736169,6 +736189,6 @@
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49700
+    "needs_subtitle_setup_after_prehrajto_processing": 49702
   }
 }
