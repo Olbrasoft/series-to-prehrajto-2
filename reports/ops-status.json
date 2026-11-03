@@ -1,30 +1,134 @@
 {
   "counts": {
     "backlog_episodes": 113049,
-    "manifest_upload_ready_episodes": 30,
-    "uploaded_episodes": 78626,
-    "prepared_source_episodes": 67297,
+    "manifest_upload_ready_episodes": 22,
+    "uploaded_episodes": 78638,
+    "prepared_source_episodes": 67290,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 42,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 26,
+    "language_whisper_attempted_sources": 23,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53963,
     "whisper_review_pending_sources": 37839,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 29,
     "subtitle_followup_sources": 49700,
     "subtitle_followup_pending_sources": 49700
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T11:52:54Z",
+      "databaseId": 41631080257,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T11:52:49Z",
+      "databaseId": 41631071209,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T11:51:54Z",
+      "databaseId": 41630946554,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T11:51:33Z",
+      "databaseId": 41630901542,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T11:51:27Z",
+      "databaseId": 41630888597,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T11:51:15Z",
+      "databaseId": 41630862380,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T11:50:38Z",
+      "databaseId": 41630779250,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T11:50:14Z",
+      "databaseId": 41630723011,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T11:50:06Z",
+      "databaseId": 41630704740,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T11:44:04Z",
+      "databaseId": 41629899398,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T11:42:27Z",
+      "databaseId": 41629686090,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T11:42:23Z",
+      "databaseId": 41629676089,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T11:42:01Z",
+      "databaseId": 41629626096,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-03T11:40:13Z",
       "databaseId": 41629383956,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -40,7 +144,7 @@
       "createdAt": "2026-11-03T11:37:45Z",
       "databaseId": 41629059731,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +160,7 @@
       "createdAt": "2026-11-03T11:37:13Z",
       "databaseId": 41628989530,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -64,7 +168,7 @@
       "createdAt": "2026-11-03T11:36:56Z",
       "databaseId": 41628951951,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
@@ -74,110 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T11:33:31Z",
-      "databaseId": 41628490188,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T11:33:31Z",
-      "databaseId": 41628489451,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T11:33:20Z",
-      "databaseId": 41628463314,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T11:32:29Z",
-      "databaseId": 41628345875,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T11:31:53Z",
-      "databaseId": 41628265557,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T11:31:50Z",
-      "databaseId": 41628257191,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T11:31:31Z",
-      "databaseId": 41628214501,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T11:31:00Z",
-      "databaseId": 41628139892,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T11:30:47Z",
-      "databaseId": 41628109499,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T11:29:07Z",
-      "databaseId": 41627880775,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T11:29:03Z",
-      "databaseId": 41627872702,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T11:28:43Z",
-      "databaseId": 41627828350,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T11:27:41Z",
-      "databaseId": 41627694908,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -192967,6 +192967,46 @@
         "video_id": 30759985
       },
       {
+        "episode_id": 171252,
+        "display_name": "He's Coming To Me S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30760024
+      },
+      {
+        "episode_id": 102661,
+        "display_name": "Kartel S01E19 - 19. epizoda CZ Dabing",
+        "video_id": 30760018
+      },
+      {
+        "episode_id": 201269,
+        "display_name": "Sarah & Duck S02E31 - 31. epizoda CZ Titulky",
+        "video_id": 30760116
+      },
+      {
+        "episode_id": 162845,
+        "display_name": "Proti větru S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30760151
+      },
+      {
+        "episode_id": 162837,
+        "display_name": "Proti větru S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30760187
+      },
+      {
+        "episode_id": 102680,
+        "display_name": "Kartel S01E18 - 18. epizoda CZ Dabing",
+        "video_id": 30760134
+      },
+      {
+        "episode_id": 63265,
+        "display_name": "Poslední autobus S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30760224
+      },
+      {
+        "episode_id": 102656,
+        "display_name": "Kartel S01E21 - 21. epizoda CZ Dabing",
+        "video_id": 30760251
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -367550,6 +367590,26 @@
         "episode_id": 102674,
         "display_name": "Kartel S01E23 - 23. epizoda CZ Dabing",
         "video_id": 30760054
+      },
+      {
+        "episode_id": 201270,
+        "display_name": "Sarah & Duck S02E34 - 34. epizoda CZ Titulky",
+        "video_id": 30760081
+      },
+      {
+        "episode_id": 171575,
+        "display_name": "Russell Howard: Lubricant S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30760093
+      },
+      {
+        "episode_id": 172406,
+        "display_name": "V epicentru bouře S01E06 - Tornádo v Texasu CZ Dabing",
+        "video_id": 30760138
+      },
+      {
+        "episode_id": 102655,
+        "display_name": "Kartel S01E14 - 14. epizoda CZ Dabing",
+        "video_id": 30760183
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -560234,6 +560294,46 @@
         "video_id": 30759985
       },
       {
+        "episode_id": 171252,
+        "display_name": "He's Coming To Me S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30760024
+      },
+      {
+        "episode_id": 102661,
+        "display_name": "Kartel S01E19 - 19. epizoda CZ Dabing",
+        "video_id": 30760018
+      },
+      {
+        "episode_id": 201269,
+        "display_name": "Sarah & Duck S02E31 - 31. epizoda CZ Titulky",
+        "video_id": 30760116
+      },
+      {
+        "episode_id": 162845,
+        "display_name": "Proti větru S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30760151
+      },
+      {
+        "episode_id": 162837,
+        "display_name": "Proti větru S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30760187
+      },
+      {
+        "episode_id": 102680,
+        "display_name": "Kartel S01E18 - 18. epizoda CZ Dabing",
+        "video_id": 30760134
+      },
+      {
+        "episode_id": 63265,
+        "display_name": "Poslední autobus S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30760224
+      },
+      {
+        "episode_id": 102656,
+        "display_name": "Kartel S01E21 - 21. epizoda CZ Dabing",
+        "video_id": 30760251
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -734817,6 +734917,26 @@
         "episode_id": 102674,
         "display_name": "Kartel S01E23 - 23. epizoda CZ Dabing",
         "video_id": 30760054
+      },
+      {
+        "episode_id": 201270,
+        "display_name": "Sarah & Duck S02E34 - 34. epizoda CZ Titulky",
+        "video_id": 30760081
+      },
+      {
+        "episode_id": 171575,
+        "display_name": "Russell Howard: Lubricant S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30760093
+      },
+      {
+        "episode_id": 172406,
+        "display_name": "V epicentru bouře S01E06 - Tornádo v Texasu CZ Dabing",
+        "video_id": 30760138
+      },
+      {
+        "episode_id": 102655,
+        "display_name": "Kartel S01E14 - 14. epizoda CZ Dabing",
+        "video_id": 30760183
       }
     ],
     "prepared_not_upload_ready": [
@@ -735978,7 +736098,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 41,
+    "disabled": 3,
+    "ok": 22,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
