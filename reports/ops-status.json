@@ -1,30 +1,70 @@
 {
   "counts": {
     "backlog_episodes": 113049,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 78596,
-    "prepared_source_episodes": 67251,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 78597,
+    "prepared_source_episodes": 67256,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 48,
-    "language_whisper_attempted_sources": 48,
+    "language_audited_sources": 53,
+    "language_whisper_attempted_sources": 50,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53966,
     "whisper_review_pending_sources": 37847,
-    "upload_pending_checkpoints": 29,
+    "upload_pending_checkpoints": 28,
     "subtitle_followup_sources": 49679,
     "subtitle_followup_pending_sources": 49679
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T10:21:44Z",
+      "databaseId": 41618622117,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T10:21:27Z",
+      "databaseId": 41618582920,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T10:20:24Z",
+      "databaseId": 41618433228,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T10:20:21Z",
+      "databaseId": 41618427140,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T10:20:15Z",
+      "databaseId": 41618410296,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-03T10:17:11Z",
       "databaseId": 41617986039,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -44,11 +84,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T10:15:36Z",
       "databaseId": 41617760824,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -88,7 +128,7 @@
       "createdAt": "2026-11-03T10:13:12Z",
       "databaseId": 41617414336,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T10:05:33Z",
-      "databaseId": 41616340566,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T10:05:26Z",
-      "databaseId": 41616321534,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T10:04:52Z",
-      "databaseId": 41616237955,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T10:04:44Z",
-      "databaseId": 41616219168,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T10:04:36Z",
-      "databaseId": 41616200882,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -192885,6 +192885,11 @@
         "episode_id": 102665,
         "display_name": "Kartel S01E12 - 12. epizoda CZ Dabing",
         "video_id": 30758533
+      },
+      {
+        "episode_id": 132285,
+        "display_name": "Norskov S01E08 - Oliverova bitva CZ Dabing",
+        "video_id": 30758678
       },
       {
         "episode_id": 114182,
@@ -560004,6 +560009,11 @@
         "video_id": 30758533
       },
       {
+        "episode_id": 132285,
+        "display_name": "Norskov S01E08 - Oliverova bitva CZ Dabing",
+        "video_id": 30758678
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -735678,7 +735688,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 47,
+    "ok": 49,
+    "disabled": 3,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
