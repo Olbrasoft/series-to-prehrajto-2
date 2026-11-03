@@ -1,38 +1,102 @@
 {
   "counts": {
     "backlog_episodes": 112961,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 78726,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 78727,
     "prepared_source_episodes": 67307,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
-    "language_whisper_attempted_sources": 23,
+    "language_audited_sources": 31,
+    "language_whisper_attempted_sources": 27,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53963,
-    "whisper_review_pending_sources": 37854,
-    "upload_pending_checkpoints": 29,
-    "subtitle_followup_sources": 49734,
-    "subtitle_followup_pending_sources": 49734
+    "whisper_review_sources": 53962,
+    "whisper_review_pending_sources": 37850,
+    "upload_pending_checkpoints": 28,
+    "subtitle_followup_sources": 49736,
+    "subtitle_followup_pending_sources": 49736
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-03T14:30:53Z",
-      "databaseId": 41654425704,
+      "createdAt": "2026-11-03T14:34:07Z",
+      "databaseId": 41654966287,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T14:34:03Z",
+      "databaseId": 41654956728,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T14:33:43Z",
+      "databaseId": 41654899060,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T14:33:24Z",
+      "databaseId": 41654846517,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T14:32:31Z",
+      "databaseId": 41654696189,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T14:32:22Z",
+      "databaseId": 41654672615,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T14:32:01Z",
+      "databaseId": 41654614403,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T14:31:39Z",
+      "databaseId": 41654554468,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T14:30:53Z",
+      "databaseId": 41654425704,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-03T14:30:12Z",
       "databaseId": 41654305131,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +132,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T14:25:21Z",
       "databaseId": 41653521150,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -96,7 +160,7 @@
       "createdAt": "2026-11-03T14:23:37Z",
       "databaseId": 41653235674,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T14:22:48Z",
-      "databaseId": 41653096489,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T14:21:11Z",
-      "databaseId": 41652834752,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T14:17:40Z",
-      "databaseId": 41652260876,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T14:17:19Z",
-      "databaseId": 41652203590,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T14:17:08Z",
-      "databaseId": 41652172974,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T14:15:55Z",
-      "databaseId": 41651971472,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T14:15:47Z",
-      "databaseId": 41651950440,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T14:15:21Z",
-      "databaseId": 41651881106,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -368050,6 +368050,11 @@
         "episode_id": 167666,
         "display_name": "Peter Grill to kenja no jikan S01E08 - 8. epizoda CZ Titulky",
         "video_id": 30763894
+      },
+      {
+        "episode_id": 144350,
+        "display_name": "BTS Monuments: Beyond The Star S01E06 - 6. Díl, Návrat CZ Titulky",
+        "video_id": 30764056
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -735817,6 +735822,11 @@
         "episode_id": 167666,
         "display_name": "Peter Grill to kenja no jikan S01E08 - 8. epizoda CZ Titulky",
         "video_id": 30763894
+      },
+      {
+        "episode_id": 144350,
+        "display_name": "BTS Monuments: Beyond The Star S01E06 - 6. Díl, Návrat CZ Titulky",
+        "video_id": 30764056
       }
     ],
     "prepared_not_upload_ready": [
@@ -736978,17 +736988,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 22,
+    "ok": 26,
     "disabled": 4,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36239,
+    "needs_whisper": 36235,
     "whisper_confirmed_cz": 3601,
-    "whisper_non_cz_needs_subtitles": 12508,
+    "whisper_non_cz_needs_subtitles": 12511,
     "whisper_failed": 1615
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49734
+    "needs_subtitle_setup_after_prehrajto_processing": 49736
   }
 }
