@@ -1,38 +1,118 @@
 {
   "counts": {
     "backlog_episodes": 113049,
-    "manifest_upload_ready_episodes": 14,
-    "uploaded_episodes": 78590,
-    "prepared_source_episodes": 67259,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 78595,
+    "prepared_source_episodes": 67254,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53968,
-    "whisper_review_pending_sources": 37855,
-    "upload_pending_checkpoints": 31,
-    "subtitle_followup_sources": 49675,
-    "subtitle_followup_pending_sources": 49675
+    "language_audited_sources": 48,
+    "language_whisper_attempted_sources": 48,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53966,
+    "whisper_review_pending_sources": 37847,
+    "upload_pending_checkpoints": 28,
+    "subtitle_followup_sources": 49679,
+    "subtitle_followup_pending_sources": 49679
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-03T10:07:02Z",
-      "databaseId": 41616548036,
+      "createdAt": "2026-11-03T10:16:34Z",
+      "databaseId": 41617899312,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T10:15:36Z",
+      "databaseId": 41617760824,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T10:15:31Z",
+      "databaseId": 41617749268,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T10:15:21Z",
+      "databaseId": 41617723925,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T10:15:06Z",
+      "databaseId": 41617686661,
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T10:14:12Z",
+      "databaseId": 41617558145,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T10:13:12Z",
+      "databaseId": 41617414336,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T10:12:34Z",
+      "databaseId": 41617326314,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T10:11:16Z",
+      "databaseId": 41617145019,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T10:11:07Z",
+      "databaseId": 41617124990,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T10:07:02Z",
+      "databaseId": 41616548036,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-03T10:06:16Z",
       "databaseId": 41616440923,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -56,15 +136,15 @@
       "createdAt": "2026-11-03T10:05:26Z",
       "databaseId": 41616321534,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T10:04:52Z",
       "databaseId": 41616237955,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -84,11 +164,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T10:04:32Z",
       "databaseId": 41616192588,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T10:04:21Z",
-      "databaseId": 41616169460,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T10:04:19Z",
-      "databaseId": 41616164531,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T10:04:16Z",
-      "databaseId": 41616156713,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T10:03:55Z",
-      "databaseId": 41616108915,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T10:03:26Z",
-      "databaseId": 41616043162,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T10:03:22Z",
-      "databaseId": 41616033652,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T10:03:17Z",
-      "databaseId": 41616021028,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T10:01:44Z",
-      "databaseId": 41615806200,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T09:59:04Z",
-      "databaseId": 41615425382,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T09:58:56Z",
-      "databaseId": 41615407651,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -192877,6 +192877,11 @@
         "video_id": 30758501
       },
       {
+        "episode_id": 150916,
+        "display_name": "Delightfully Deceitful S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30758541
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -367370,6 +367375,26 @@
         "episode_id": 143715,
         "display_name": "Stingray S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30758492
+      },
+      {
+        "episode_id": 171574,
+        "display_name": "Russell Howard: Lubricant S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30758514
+      },
+      {
+        "episode_id": 150915,
+        "display_name": "Delightfully Deceitful S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30758550
+      },
+      {
+        "episode_id": 150919,
+        "display_name": "Delightfully Deceitful S01E15 - 15. epizoda CZ Titulky",
+        "video_id": 30758596
+      },
+      {
+        "episode_id": 150914,
+        "display_name": "Delightfully Deceitful S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30758586
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -559964,6 +559989,11 @@
         "video_id": 30758501
       },
       {
+        "episode_id": 150916,
+        "display_name": "Delightfully Deceitful S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30758541
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -734457,6 +734487,26 @@
         "episode_id": 143715,
         "display_name": "Stingray S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30758492
+      },
+      {
+        "episode_id": 171574,
+        "display_name": "Russell Howard: Lubricant S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30758514
+      },
+      {
+        "episode_id": 150915,
+        "display_name": "Delightfully Deceitful S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30758550
+      },
+      {
+        "episode_id": 150919,
+        "display_name": "Delightfully Deceitful S01E15 - 15. epizoda CZ Titulky",
+        "video_id": 30758596
+      },
+      {
+        "episode_id": 150914,
+        "display_name": "Delightfully Deceitful S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30758586
       }
     ],
     "prepared_not_upload_ready": [
@@ -735618,16 +735668,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 47,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36246,
+    "needs_whisper": 36238,
     "whisper_confirmed_cz": 3600,
-    "whisper_non_cz_needs_subtitles": 12513,
+    "whisper_non_cz_needs_subtitles": 12519,
     "whisper_failed": 1609
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49675
+    "needs_subtitle_setup_after_prehrajto_processing": 49679
   }
 }
