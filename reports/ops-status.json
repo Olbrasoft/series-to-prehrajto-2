@@ -1,24 +1,128 @@
 {
   "counts": {
     "backlog_episodes": 113109,
-    "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 78514,
-    "prepared_source_episodes": 67197,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 78516,
+    "prepared_source_episodes": 67196,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53973,
     "whisper_review_pending_sources": 37870,
-    "upload_pending_checkpoints": 28,
+    "upload_pending_checkpoints": 27,
     "subtitle_followup_sources": 49620,
     "subtitle_followup_pending_sources": 49620
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T06:49:14Z",
+      "databaseId": 41592294551,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T06:47:51Z",
+      "databaseId": 41592153637,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T06:47:47Z",
+      "databaseId": 41592145306,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T06:44:54Z",
+      "databaseId": 41591839729,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T06:44:51Z",
+      "databaseId": 41591834703,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T06:43:49Z",
+      "databaseId": 41591727484,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T06:43:45Z",
+      "databaseId": 41591720609,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T06:43:06Z",
+      "databaseId": 41591651675,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T06:41:53Z",
+      "databaseId": 41591523043,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T06:41:49Z",
+      "databaseId": 41591514950,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T06:41:48Z",
+      "databaseId": 41591513773,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T06:41:33Z",
+      "databaseId": 41591488139,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T06:41:28Z",
+      "databaseId": 41591478557,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-03T06:41:11Z",
@@ -36,11 +140,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T06:38:32Z",
       "databaseId": 41591164365,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -60,11 +164,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T06:37:18Z",
       "databaseId": 41591038023,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -74,110 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T06:36:16Z",
-      "databaseId": 41590928805,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T06:36:11Z",
-      "databaseId": 41590919428,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T06:36:02Z",
-      "databaseId": 41590903633,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T06:35:40Z",
-      "databaseId": 41590866512,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T06:32:09Z",
-      "databaseId": 41590492134,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T06:32:01Z",
-      "databaseId": 41590477820,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T06:31:54Z",
-      "databaseId": 41590465853,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T06:31:23Z",
-      "databaseId": 41590409478,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T06:30:15Z",
-      "databaseId": 41590284180,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T06:29:43Z",
-      "databaseId": 41590226890,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T06:29:39Z",
-      "databaseId": 41590220545,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T06:28:27Z",
-      "databaseId": 41590094799,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T06:28:23Z",
-      "databaseId": 41590089113,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -192705,6 +192705,16 @@
         "episode_id": 133212,
         "display_name": "Les Disparues de la gare S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30754612
+      },
+      {
+        "episode_id": 161920,
+        "display_name": "Mr. Midnight: Bacha na příšery S01E05 - 5. díl CZ Titulky",
+        "video_id": 30754638
+      },
+      {
+        "episode_id": 129484,
+        "display_name": "The Club S01E03 - MDMBecilové CZ Titulky",
+        "video_id": 30754666
       },
       {
         "episode_id": 114182,
@@ -559414,6 +559424,16 @@
         "video_id": 30754612
       },
       {
+        "episode_id": 161920,
+        "display_name": "Mr. Midnight: Bacha na příšery S01E05 - 5. díl CZ Titulky",
+        "video_id": 30754638
+      },
+      {
+        "episode_id": 129484,
+        "display_name": "The Club S01E03 - MDMBecilové CZ Titulky",
+        "video_id": 30754666
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -734858,7 +734878,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
