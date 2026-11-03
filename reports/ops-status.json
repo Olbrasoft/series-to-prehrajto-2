@@ -1,24 +1,64 @@
 {
   "counts": {
     "backlog_episodes": 113109,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 78549,
-    "prepared_source_episodes": 67218,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 78551,
+    "prepared_source_episodes": 67214,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 43,
+    "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53970,
     "whisper_review_pending_sources": 37860,
-    "upload_pending_checkpoints": 29,
+    "upload_pending_checkpoints": 30,
     "subtitle_followup_sources": 49644,
     "subtitle_followup_pending_sources": 49644
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T08:08:56Z",
+      "databaseId": 41601138861,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T08:07:09Z",
+      "databaseId": 41600917637,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T08:07:02Z",
+      "databaseId": 41600901897,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T08:06:58Z",
+      "databaseId": 41600893810,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T08:06:37Z",
+      "databaseId": 41600852191,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-03T08:06:36Z",
@@ -32,7 +72,7 @@
       "createdAt": "2026-11-03T08:04:30Z",
       "databaseId": 41600590795,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +80,7 @@
       "createdAt": "2026-11-03T08:04:30Z",
       "databaseId": 41600590237,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -72,7 +112,7 @@
       "createdAt": "2026-11-03T08:01:39Z",
       "databaseId": 41600256039,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -84,11 +124,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T07:55:04Z",
       "databaseId": 41599502057,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -135,46 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-03T07:54:11Z",
       "databaseId": 41599402057,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T07:52:42Z",
-      "databaseId": 41599233994,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T07:52:42Z",
-      "databaseId": 41599233978,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T07:52:38Z",
-      "databaseId": 41599227076,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T07:52:36Z",
-      "databaseId": 41599223489,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T07:52:13Z",
-      "databaseId": 41599180662,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
@@ -192782,6 +192782,11 @@
         "video_id": 30755891
       },
       {
+        "episode_id": 129496,
+        "display_name": "The Club S01E16 - CHYBÍTE MI, MILIONY CZ Titulky",
+        "video_id": 30755918
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -367165,6 +367170,11 @@
         "episode_id": 143718,
         "display_name": "Stingray S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30755925
+      },
+      {
+        "episode_id": 150907,
+        "display_name": "Delightfully Deceitful S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30755933
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -559664,6 +559674,11 @@
         "video_id": 30755891
       },
       {
+        "episode_id": 129496,
+        "display_name": "The Club S01E16 - CHYBÍTE MI, MILIONY CZ Titulky",
+        "video_id": 30755918
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -734047,6 +734062,11 @@
         "episode_id": 143718,
         "display_name": "Stingray S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30755925
+      },
+      {
+        "episode_id": 150907,
+        "display_name": "Delightfully Deceitful S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30755933
       }
     ],
     "prepared_not_upload_ready": [
@@ -735209,7 +735229,7 @@
   "language_verdicts": {},
   "language_whisper_statuses": {
     "disabled": 2,
-    "ok": 39,
+    "ok": 40,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
