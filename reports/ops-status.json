@@ -1,38 +1,134 @@
 {
   "counts": {
     "backlog_episodes": 112961,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 78672,
-    "prepared_source_episodes": 67286,
+    "manifest_upload_ready_episodes": 24,
+    "uploaded_episodes": 78673,
+    "prepared_source_episodes": 67302,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53963,
-    "whisper_review_pending_sources": 37841,
-    "upload_pending_checkpoints": 28,
-    "subtitle_followup_sources": 49710,
-    "subtitle_followup_pending_sources": 49710
+    "language_audited_sources": 41,
+    "language_whisper_attempted_sources": 41,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53964,
+    "whisper_review_pending_sources": 37847,
+    "upload_pending_checkpoints": 31,
+    "subtitle_followup_sources": 49717,
+    "subtitle_followup_pending_sources": 49717
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-03T12:44:19Z",
-      "databaseId": 41638235673,
+      "createdAt": "2026-11-03T12:52:20Z",
+      "databaseId": 41639360793,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:52:10Z",
+      "databaseId": 41639336624,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T12:52:05Z",
+      "databaseId": 41639325870,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:52:00Z",
+      "databaseId": 41639312051,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T12:50:55Z",
+      "databaseId": 41639164154,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-03T12:50:29Z",
+      "databaseId": 41639101609,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T12:49:57Z",
+      "databaseId": 41639025185,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:49:32Z",
+      "databaseId": 41638969246,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T12:48:27Z",
+      "databaseId": 41638816884,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T12:46:56Z",
+      "databaseId": 41638603349,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T12:46:47Z",
+      "databaseId": 41638581896,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T12:46:43Z",
+      "databaseId": 41638574164,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T12:44:19Z",
+      "databaseId": 41638235673,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T12:42:33Z",
       "databaseId": 41637986868,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -52,11 +148,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-03T12:42:09Z",
       "databaseId": 41637932157,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -76,108 +172,12 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-03T12:41:35Z",
       "databaseId": 41637853620,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T12:41:34Z",
-      "databaseId": 41637852295,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T12:41:30Z",
-      "databaseId": 41637844512,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T12:39:34Z",
-      "databaseId": 41637574819,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T12:38:31Z",
-      "databaseId": 41637430523,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T12:38:31Z",
-      "databaseId": 41637430148,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T12:38:27Z",
-      "databaseId": 41637422367,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:38:11Z",
-      "databaseId": 41637385336,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-03T12:37:38Z",
-      "databaseId": 41637307058,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:34:29Z",
-      "databaseId": 41636861486,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T12:34:26Z",
-      "databaseId": 41636853737,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T12:34:25Z",
-      "databaseId": 41636851409,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T12:34:23Z",
-      "databaseId": 41636846400,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -367780,6 +367780,11 @@
         "episode_id": 107543,
         "display_name": "Fotbaloví rodiče S01E05 - Ptačí párty CZ Dabing",
         "video_id": 30760876
+      },
+      {
+        "episode_id": 203570,
+        "display_name": "Akademie Minerva S01E07 - 7. epizoda CZ Dabing",
+        "video_id": 30761100
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -735277,6 +735282,11 @@
         "episode_id": 107543,
         "display_name": "Fotbaloví rodiče S01E05 - Ptačí párty CZ Dabing",
         "video_id": 30760876
+      },
+      {
+        "episode_id": 203570,
+        "display_name": "Akademie Minerva S01E07 - 7. epizoda CZ Dabing",
+        "video_id": 30761100
       }
     ],
     "prepared_not_upload_ready": [
@@ -736438,16 +736448,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "stream_undersized": 1,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36230,
+    "needs_whisper": 36235,
     "whisper_confirmed_cz": 3601,
-    "whisper_non_cz_needs_subtitles": 12521,
-    "whisper_failed": 1611
+    "whisper_non_cz_needs_subtitles": 12516,
+    "whisper_failed": 1612
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49710
+    "needs_subtitle_setup_after_prehrajto_processing": 49717
   }
 }
