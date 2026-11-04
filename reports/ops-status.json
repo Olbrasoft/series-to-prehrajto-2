@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112250,
     "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 79428,
+    "uploaded_episodes": 79429,
     "prepared_source_episodes": 67842,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,19 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37549,
-    "upload_pending_checkpoints": 33,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 50174,
     "subtitle_followup_pending_sources": 50174
   },
   "workflow_runs": [
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T23:16:54Z",
+      "databaseId": 41932450775,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T23:15:07Z",
@@ -40,7 +48,7 @@
       "createdAt": "2026-11-04T23:14:14Z",
       "databaseId": 41932091432,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -56,7 +64,7 @@
       "createdAt": "2026-11-04T23:12:36Z",
       "databaseId": 41931864162,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,11 +124,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T23:11:03Z",
       "databaseId": 41931646540,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T23:06:19Z",
-      "databaseId": 41930984458,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -371560,6 +371560,11 @@
         "episode_id": 99443,
         "display_name": "Savannah S02E13 - 13. epizoda CZ Dabing",
         "video_id": 30796685
+      },
+      {
+        "episode_id": 168382,
+        "display_name": "Doktor právníkem S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30796674
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -742837,6 +742842,11 @@
         "episode_id": 99443,
         "display_name": "Savannah S02E13 - 13. epizoda CZ Dabing",
         "video_id": 30796685
+      },
+      {
+        "episode_id": 168382,
+        "display_name": "Doktor právníkem S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30796674
       }
     ],
     "prepared_not_upload_ready": [
