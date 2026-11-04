@@ -1,24 +1,72 @@
 {
   "counts": {
     "backlog_episodes": 112250,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 79423,
-    "prepared_source_episodes": 67832,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 79425,
+    "prepared_source_episodes": 67831,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37547,
-    "upload_pending_checkpoints": 33,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50172,
     "subtitle_followup_pending_sources": 50172
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T23:11:14Z",
+      "databaseId": 41931672707,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T23:11:03Z",
+      "databaseId": 41931646540,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T23:11:03Z",
+      "databaseId": 41931645987,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T23:10:58Z",
+      "databaseId": 41931634827,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T23:10:56Z",
+      "databaseId": 41931629206,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T23:07:35Z",
+      "databaseId": 41931159912,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-04T23:06:41Z",
@@ -32,15 +80,15 @@
       "createdAt": "2026-11-04T23:06:35Z",
       "databaseId": 41931020186,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T23:06:19Z",
       "databaseId": 41930984458,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -52,11 +100,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T23:04:32Z",
       "databaseId": 41930728884,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -72,7 +120,7 @@
       "createdAt": "2026-11-04T23:04:28Z",
       "databaseId": 41930719587,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -84,11 +132,11 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T23:02:42Z",
       "databaseId": 41930463841,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -100,11 +148,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T23:01:33Z",
       "databaseId": 41930304608,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T22:55:33Z",
-      "databaseId": 41929457905,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T22:55:11Z",
-      "databaseId": 41929405837,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T22:54:37Z",
-      "databaseId": 41929325204,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T22:54:34Z",
-      "databaseId": 41929318753,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T22:53:38Z",
-      "databaseId": 41929183987,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T22:52:40Z",
-      "databaseId": 41929048952,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -194950,6 +194950,16 @@
         "episode_id": 120824,
         "display_name": "Memento Mori S01E06 - 6. epizoda CZ Dabing",
         "video_id": 30796529
+      },
+      {
+        "episode_id": 123232,
+        "display_name": "Starhunter S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30796572
+      },
+      {
+        "episode_id": 120821,
+        "display_name": "Memento Mori S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30796562
       },
       {
         "episode_id": 114182,
@@ -566204,6 +566214,16 @@
         "video_id": 30796529
       },
       {
+        "episode_id": 123232,
+        "display_name": "Starhunter S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30796572
+      },
+      {
+        "episode_id": 120821,
+        "display_name": "Memento Mori S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30796562
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -743948,7 +743968,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
