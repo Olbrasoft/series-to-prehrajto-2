@@ -1,24 +1,64 @@
 {
   "counts": {
     "backlog_episodes": 112542,
-    "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 79135,
-    "prepared_source_episodes": 67606,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 79136,
+    "prepared_source_episodes": 67604,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 45,
+    "language_whisper_attempted_sources": 45,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53910,
-    "whisper_review_pending_sources": 37651,
+    "whisper_review_sources": 53909,
+    "whisper_review_pending_sources": 37645,
     "upload_pending_checkpoints": 30,
-    "subtitle_followup_sources": 49986,
-    "subtitle_followup_pending_sources": 49986
+    "subtitle_followup_sources": 49991,
+    "subtitle_followup_pending_sources": 49991
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T08:54:32Z",
+      "databaseId": 41803120238,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T08:52:54Z",
+      "databaseId": 41802906393,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T08:52:00Z",
+      "databaseId": 41802792458,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T08:51:55Z",
+      "databaseId": 41802781310,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T08:51:49Z",
+      "databaseId": 41802768581,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T08:51:15Z",
@@ -28,11 +68,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T08:50:07Z",
       "databaseId": 41802547613,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -48,7 +88,7 @@
       "createdAt": "2026-11-04T08:48:24Z",
       "databaseId": 41802330475,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +108,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T08:46:01Z",
       "databaseId": 41802027264,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -92,11 +132,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T08:45:14Z",
       "databaseId": 41801925040,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T08:42:48Z",
-      "databaseId": 41801611047,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T08:42:29Z",
-      "databaseId": 41801572810,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T08:41:44Z",
-      "databaseId": 41801480166,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T08:41:04Z",
-      "databaseId": 41801396187,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T08:41:00Z",
-      "databaseId": 41801387319,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -194250,6 +194250,11 @@
         "episode_id": 163780,
         "display_name": "Christmas Flow S01E03 - 3. epizoda CZ Dabing",
         "video_id": 30782545
+      },
+      {
+        "episode_id": 160028,
+        "display_name": "Goddess Bless You from Death S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30782624
       },
       {
         "episode_id": 114182,
@@ -564064,6 +564069,11 @@
         "video_id": 30782545
       },
       {
+        "episode_id": 160028,
+        "display_name": "Goddess Bless You from Death S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30782624
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -741068,16 +741078,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 44,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36036,
+    "needs_whisper": 36030,
     "whisper_confirmed_cz": 3653,
-    "whisper_non_cz_needs_subtitles": 12606,
+    "whisper_non_cz_needs_subtitles": 12611,
     "whisper_failed": 1615
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49986
+    "needs_subtitle_setup_after_prehrajto_processing": 49991
   }
 }
