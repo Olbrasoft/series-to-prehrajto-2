@@ -2,29 +2,45 @@
   "counts": {
     "backlog_episodes": 112406,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 79233,
+    "uploaded_episodes": 79235,
     "prepared_source_episodes": 67649,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 52,
-    "language_whisper_attempted_sources": 46,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53901,
     "whisper_review_pending_sources": 37578,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50065,
     "subtitle_followup_pending_sources": 50065
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T13:25:49Z",
+      "databaseId": 41838012337,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T13:25:23Z",
+      "databaseId": 41837946440,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-04T13:23:31Z",
       "databaseId": 41837661251,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -132,11 +148,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T13:20:56Z",
       "databaseId": 41837271186,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T13:16:45Z",
-      "databaseId": 41836639462,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T13:16:22Z",
-      "databaseId": 41836585644,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -194487,6 +194487,11 @@
         "video_id": 30786110
       },
       {
+        "episode_id": 166672,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30786601
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -370585,6 +370590,11 @@
         "episode_id": 101995,
         "display_name": "Elisa z Rivombrosy S01E08 - 8. epizoda CZ Dabing",
         "video_id": 30786234
+      },
+      {
+        "episode_id": 166671,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30786565
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -564789,6 +564799,11 @@
         "video_id": 30786110
       },
       {
+        "episode_id": 166672,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30786601
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -740887,6 +740902,11 @@
         "episode_id": 101995,
         "display_name": "Elisa z Rivombrosy S01E08 - 8. epizoda CZ Dabing",
         "video_id": 30786234
+      },
+      {
+        "episode_id": 166671,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30786565
       }
     ],
     "prepared_not_upload_ready": [
@@ -742048,8 +742068,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 6,
-    "ok": 45,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
