@@ -2,8 +2,8 @@
   "counts": {
     "backlog_episodes": 112250,
     "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 79429,
-    "prepared_source_episodes": 67839,
+    "uploaded_episodes": 79431,
+    "prepared_source_episodes": 67837,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
@@ -14,25 +14,81 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37548,
-    "upload_pending_checkpoints": 33,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 50174,
     "subtitle_followup_pending_sources": 50174
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-04T23:20:04Z",
-      "databaseId": 41932876411,
+      "createdAt": "2026-11-04T23:22:55Z",
+      "databaseId": 41933263064,
       "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "external-subtitles"
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T23:22:49Z",
+      "databaseId": 41933249580,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T23:22:40Z",
+      "databaseId": 41933228406,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T23:22:16Z",
+      "databaseId": 41933175446,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T23:20:55Z",
+      "databaseId": 41932994151,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T23:20:53Z",
+      "databaseId": 41932988180,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T23:20:48Z",
+      "databaseId": 41932978162,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T23:20:04Z",
+      "databaseId": 41932876411,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-04T23:19:30Z",
       "databaseId": 41932799709,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,19 +108,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T23:15:07Z",
       "databaseId": 41932208958,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T23:14:25Z",
       "databaseId": 41932116214,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -96,7 +152,7 @@
       "createdAt": "2026-11-04T23:12:36Z",
       "databaseId": 41931863026,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T23:12:09Z",
-      "databaseId": 41931800802,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T23:11:56Z",
-      "databaseId": 41931767715,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T23:11:14Z",
-      "databaseId": 41931672707,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T23:11:03Z",
-      "databaseId": 41931646540,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T23:11:03Z",
-      "databaseId": 41931645987,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T23:10:58Z",
-      "databaseId": 41931634827,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T23:10:56Z",
-      "databaseId": 41931629206,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -194972,6 +194972,11 @@
         "video_id": 30796669
       },
       {
+        "episode_id": 120828,
+        "display_name": "Memento Mori S02E01 - 1. epizoda CZ Dabing",
+        "video_id": 30796715
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -371565,6 +371570,11 @@
         "episode_id": 168382,
         "display_name": "Doktor právníkem S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30796674
+      },
+      {
+        "episode_id": 175578,
+        "display_name": "Nesnáším řízení S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30796801
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -566254,6 +566264,11 @@
         "video_id": 30796669
       },
       {
+        "episode_id": 120828,
+        "display_name": "Memento Mori S02E01 - 1. epizoda CZ Dabing",
+        "video_id": 30796715
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -742847,6 +742862,11 @@
         "episode_id": 168382,
         "display_name": "Doktor právníkem S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30796674
+      },
+      {
+        "episode_id": 175578,
+        "display_name": "Nesnáším řízení S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30796801
       }
     ],
     "prepared_not_upload_ready": [
