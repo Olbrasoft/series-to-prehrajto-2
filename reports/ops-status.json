@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112542,
     "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 79094,
+    "uploaded_episodes": 79098,
     "prepared_source_episodes": 67557,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,75 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53914,
     "whisper_review_pending_sources": 37671,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 49960,
     "subtitle_followup_pending_sources": 49960
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T06:51:59Z",
+      "databaseId": 41788357741,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T06:51:33Z",
+      "databaseId": 41788312750,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T06:50:39Z",
+      "databaseId": 41788217085,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T06:49:24Z",
+      "databaseId": 41788079904,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T06:49:05Z",
+      "databaseId": 41788043853,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T06:48:45Z",
+      "databaseId": 41788007530,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T06:48:42Z",
+      "databaseId": 41788001411,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T06:48:40Z",
+      "databaseId": 41787996267,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T06:45:20Z",
@@ -32,7 +96,7 @@
       "createdAt": "2026-11-04T06:44:08Z",
       "databaseId": 41787506689,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,11 +108,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T06:42:30Z",
       "databaseId": 41787324927,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T06:39:11Z",
-      "databaseId": 41786947932,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T06:39:00Z",
-      "databaseId": 41786926027,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T06:38:17Z",
-      "databaseId": 41786850073,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T06:37:47Z",
-      "databaseId": 41786794315,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T06:37:22Z",
-      "databaseId": 41786747629,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T06:36:36Z",
-      "databaseId": 41786663146,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T06:36:31Z",
-      "databaseId": 41786655012,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T06:36:09Z",
-      "databaseId": 41786615325,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -194152,6 +194152,16 @@
         "video_id": 30780965
       },
       {
+        "episode_id": 166669,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30780995
+      },
+      {
+        "episode_id": 159548,
+        "display_name": "6ixtynin9: Seriál S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30780992
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -369890,6 +369900,16 @@
         "episode_id": 166838,
         "display_name": "Byker Grove S08E18 - 18. epizoda CZ Titulky",
         "video_id": 30780952
+      },
+      {
+        "episode_id": 166670,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30780981
+      },
+      {
+        "episode_id": 166674,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30781015
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -563759,6 +563779,16 @@
         "video_id": 30780965
       },
       {
+        "episode_id": 166669,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30780995
+      },
+      {
+        "episode_id": 159548,
+        "display_name": "6ixtynin9: Seriál S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30780992
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -739497,6 +739527,16 @@
         "episode_id": 166838,
         "display_name": "Byker Grove S08E18 - 18. epizoda CZ Titulky",
         "video_id": 30780952
+      },
+      {
+        "episode_id": 166670,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30780981
+      },
+      {
+        "episode_id": 166674,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30781015
       }
     ],
     "prepared_not_upload_ready": [
