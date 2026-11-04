@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112478,
     "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 79208,
+    "uploaded_episodes": 79209,
     "prepared_source_episodes": 67636,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,33 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53899,
     "whisper_review_pending_sources": 37592,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50049,
     "subtitle_followup_pending_sources": 50049
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T11:53:41Z",
+      "databaseId": 41824624982,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:53:38Z",
+      "databaseId": 41824618290,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-04T11:52:57Z",
       "databaseId": 41824527494,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +52,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T11:52:23Z",
       "databaseId": 41824450091,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -60,11 +76,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T11:51:55Z",
       "databaseId": 41824388033,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T11:38:33Z",
-      "databaseId": 41822572809,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T11:37:25Z",
-      "databaseId": 41822419047,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -370460,6 +370460,11 @@
         "episode_id": 156306,
         "display_name": "Miraculous Brothers S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30784891
+      },
+      {
+        "episode_id": 156318,
+        "display_name": "Miraculous Brothers S01E13 - 13. epizoda CZ Titulky",
+        "video_id": 30784927
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -740637,6 +740642,11 @@
         "episode_id": 156306,
         "display_name": "Miraculous Brothers S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30784891
+      },
+      {
+        "episode_id": 156318,
+        "display_name": "Miraculous Brothers S01E13 - 13. epizoda CZ Titulky",
+        "video_id": 30784927
       }
     ],
     "prepared_not_upload_ready": [
