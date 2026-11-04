@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 112350,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 79334,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 79335,
     "prepared_source_episodes": 67728,
     "description_series": 60,
     "description_episodes": 753,
@@ -10,21 +10,29 @@
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 24,
-    "language_whisper_attempted_sources": 20,
+    "language_whisper_attempted_sources": 22,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53905,
-    "whisper_review_pending_sources": 37561,
-    "upload_pending_checkpoints": 33,
-    "subtitle_followup_sources": 50127,
-    "subtitle_followup_pending_sources": 50127
+    "whisper_review_sources": 53904,
+    "whisper_review_pending_sources": 37558,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50128,
+    "subtitle_followup_pending_sources": 50128
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T18:04:45Z",
+      "databaseId": 41883450022,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T18:04:01Z",
       "databaseId": 41883320461,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -60,11 +68,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T18:00:14Z",
       "databaseId": 41882630010,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +84,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T17:59:52Z",
       "databaseId": 41882559170,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T17:52:39Z",
-      "databaseId": 41881321758,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -371090,6 +371090,11 @@
         "episode_id": 139275,
         "display_name": "Smršť S01E01 - 1. díl CZ Titulky",
         "video_id": 30790820
+      },
+      {
+        "episode_id": 144066,
+        "display_name": "Jellystone! S03E28 - 28. epizoda CZ Titulky",
+        "video_id": 30790975
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -741897,6 +741902,11 @@
         "episode_id": 139275,
         "display_name": "Smršť S01E01 - 1. díl CZ Titulky",
         "video_id": 30790820
+      },
+      {
+        "episode_id": 144066,
+        "display_name": "Jellystone! S03E28 - 28. epizoda CZ Titulky",
+        "video_id": 30790975
       }
     ],
     "prepared_not_upload_ready": [
@@ -743058,17 +743068,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 4,
-    "ok": 19,
+    "ok": 21,
+    "disabled": 2,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36019,
+    "needs_whisper": 36017,
     "whisper_confirmed_cz": 3657,
-    "whisper_non_cz_needs_subtitles": 12687,
-    "whisper_failed": 1542
+    "whisper_non_cz_needs_subtitles": 12689,
+    "whisper_failed": 1541
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50127
+    "needs_subtitle_setup_after_prehrajto_processing": 50128
   }
 }
