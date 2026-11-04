@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112286,
     "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 79357,
+    "uploaded_episodes": 79360,
     "prepared_source_episodes": 67766,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,35 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37559,
-    "upload_pending_checkpoints": 33,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50145,
     "subtitle_followup_pending_sources": 50145
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T20:09:16Z",
+      "databaseId": 41903852226,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T20:05:53Z",
+      "databaseId": 41903297434,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T20:05:20Z",
+      "databaseId": 41903206587,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T20:04:51Z",
@@ -36,11 +60,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T20:04:08Z",
       "databaseId": 41903008662,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -132,11 +156,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T19:53:10Z",
       "databaseId": 41901252718,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T19:52:18Z",
-      "databaseId": 41901114817,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T19:52:13Z",
-      "databaseId": 41901103243,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T19:52:08Z",
-      "databaseId": 41901087855,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -371205,6 +371205,21 @@
         "episode_id": 166131,
         "display_name": "Firebite S01E07 - 7. epizoda CZ Titulky",
         "video_id": 30792664
+      },
+      {
+        "episode_id": 168066,
+        "display_name": "Onder Vuur S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30792769
+      },
+      {
+        "episode_id": 168383,
+        "display_name": "Doktor právníkem S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30792715
+      },
+      {
+        "episode_id": 160054,
+        "display_name": "One Day in October S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30792878
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -742127,6 +742142,21 @@
         "episode_id": 166131,
         "display_name": "Firebite S01E07 - 7. epizoda CZ Titulky",
         "video_id": 30792664
+      },
+      {
+        "episode_id": 168066,
+        "display_name": "Onder Vuur S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30792769
+      },
+      {
+        "episode_id": 168383,
+        "display_name": "Doktor právníkem S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30792715
+      },
+      {
+        "episode_id": 160054,
+        "display_name": "One Day in October S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30792878
       }
     ],
     "prepared_not_upload_ready": [
