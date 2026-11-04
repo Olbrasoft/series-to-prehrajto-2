@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112250,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 79432,
+    "uploaded_episodes": 79434,
     "prepared_source_episodes": 67845,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,49 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37549,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 34,
     "subtitle_followup_sources": 50174,
     "subtitle_followup_pending_sources": 50174
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T23:36:34Z",
+      "databaseId": 41935069462,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-04T23:34:58Z",
+      "databaseId": 41934855145,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T23:34:29Z",
+      "databaseId": 41934790742,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T23:34:24Z",
+      "databaseId": 41934778630,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T23:33:32Z",
       "databaseId": 41934659604,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +64,7 @@
       "createdAt": "2026-11-04T23:33:27Z",
       "databaseId": 41934647799,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,11 +76,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T23:32:43Z",
       "databaseId": 41934549520,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -60,11 +92,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T23:32:25Z",
       "databaseId": 41934511220,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -72,7 +104,7 @@
       "createdAt": "2026-11-04T23:32:06Z",
       "databaseId": 41934468871,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T23:25:42Z",
-      "databaseId": 41933626355,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T23:24:10Z",
-      "databaseId": 41933422310,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T23:24:07Z",
-      "databaseId": 41933415608,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T23:22:55Z",
-      "databaseId": 41933263064,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -194977,6 +194977,11 @@
         "video_id": 30796715
       },
       {
+        "episode_id": 160053,
+        "display_name": "One Day in October S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30797034
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -371580,6 +371585,11 @@
         "episode_id": 99434,
         "display_name": "Savannah S02E08 - 8. epizoda CZ Dabing",
         "video_id": 30797008
+      },
+      {
+        "episode_id": 99454,
+        "display_name": "Savannah S02E12 - 12. epizoda CZ Dabing",
+        "video_id": 30797073
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -566274,6 +566284,11 @@
         "video_id": 30796715
       },
       {
+        "episode_id": 160053,
+        "display_name": "One Day in October S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30797034
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -742877,6 +742892,11 @@
         "episode_id": 99434,
         "display_name": "Savannah S02E08 - 8. epizoda CZ Dabing",
         "video_id": 30797008
+      },
+      {
+        "episode_id": 99454,
+        "display_name": "Savannah S02E12 - 12. epizoda CZ Dabing",
+        "video_id": 30797073
       }
     ],
     "prepared_not_upload_ready": [
