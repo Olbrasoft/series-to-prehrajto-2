@@ -2,23 +2,31 @@
   "counts": {
     "backlog_episodes": 112250,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 79435,
-    "prepared_source_episodes": 67845,
+    "uploaded_episodes": 79438,
+    "prepared_source_episodes": 67841,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 42,
+    "language_whisper_attempted_sources": 42,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53906,
-    "whisper_review_pending_sources": 37549,
-    "upload_pending_checkpoints": 34,
-    "subtitle_followup_sources": 50174,
-    "subtitle_followup_pending_sources": 50174
+    "whisper_review_sources": 53905,
+    "whisper_review_pending_sources": 37547,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50175,
+    "subtitle_followup_pending_sources": 50175
   },
   "workflow_runs": [
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T23:39:29Z",
+      "databaseId": 41935440904,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T23:38:49Z",
@@ -32,7 +40,7 @@
       "createdAt": "2026-11-04T23:37:52Z",
       "databaseId": 41935233286,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +76,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T23:34:58Z",
       "databaseId": 41934855145,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +112,7 @@
       "createdAt": "2026-11-04T23:33:27Z",
       "databaseId": 41934647799,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -169,14 +177,6 @@
       "databaseId": 41934377822,
       "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T23:29:20Z",
-      "databaseId": 41934093322,
-      "headBranch": "main",
-      "status": "completed",
       "workflowName": "audit-language"
     }
   ],
@@ -194982,6 +194982,16 @@
         "video_id": 30797034
       },
       {
+        "episode_id": 160052,
+        "display_name": "One Day in October S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30797045
+      },
+      {
+        "episode_id": 99456,
+        "display_name": "Savannah S02E15 - 15. epizoda CZ Dabing",
+        "video_id": 30797217
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -371595,6 +371605,11 @@
         "episode_id": 99439,
         "display_name": "Savannah S02E16 - 16. epizoda CZ Dabing",
         "video_id": 30797129
+      },
+      {
+        "episode_id": 160086,
+        "display_name": "Hammer and Bolter S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30797190
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -566294,6 +566309,16 @@
         "video_id": 30797034
       },
       {
+        "episode_id": 160052,
+        "display_name": "One Day in October S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30797045
+      },
+      {
+        "episode_id": 99456,
+        "display_name": "Savannah S02E15 - 15. epizoda CZ Dabing",
+        "video_id": 30797217
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -742907,6 +742932,11 @@
         "episode_id": 99439,
         "display_name": "Savannah S02E16 - 16. epizoda CZ Dabing",
         "video_id": 30797129
+      },
+      {
+        "episode_id": 160086,
+        "display_name": "Hammer and Bolter S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30797190
       }
     ],
     "prepared_not_upload_ready": [
@@ -744068,16 +744098,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 41,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36043,
-    "whisper_confirmed_cz": 3677,
+    "needs_whisper": 36041,
+    "whisper_confirmed_cz": 3678,
     "whisper_non_cz_needs_subtitles": 12680,
     "whisper_failed": 1506
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50174
+    "needs_subtitle_setup_after_prehrajto_processing": 50175
   }
 }
