@@ -1,38 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 112406,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 79244,
-    "prepared_source_episodes": 67654,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 79245,
+    "prepared_source_episodes": 67658,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 48,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53900,
     "whisper_review_pending_sources": 37567,
     "upload_pending_checkpoints": 32,
-    "subtitle_followup_sources": 50072,
-    "subtitle_followup_pending_sources": 50072
+    "subtitle_followup_sources": 50073,
+    "subtitle_followup_pending_sources": 50073
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-04T14:04:22Z",
-      "databaseId": 41843929611,
+      "createdAt": "2026-11-04T14:06:34Z",
+      "databaseId": 41844288596,
       "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "ops-status"
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T14:06:29Z",
+      "databaseId": 41844272959,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T14:06:08Z",
+      "databaseId": 41844217832,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T14:05:42Z",
+      "databaseId": 41844145428,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T14:05:26Z",
+      "databaseId": 41844103794,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T14:04:22Z",
+      "databaseId": 41843929611,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T14:03:54Z",
       "databaseId": 41843854456,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T13:53:05Z",
-      "databaseId": 41842178307,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T13:52:34Z",
-      "databaseId": 41842100218,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T13:52:30Z",
-      "databaseId": 41842090757,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T13:52:30Z",
-      "databaseId": 41842090181,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T13:52:00Z",
-      "databaseId": 41842013965,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -194515,6 +194515,11 @@
         "episode_id": 179076,
         "display_name": "Stíny minulosti S01E01 - Návrat CZ Titulky",
         "video_id": 30787207
+      },
+      {
+        "episode_id": 102000,
+        "display_name": "Elisa z Rivombrosy S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30787260
       },
       {
         "episode_id": 114182,
@@ -564874,6 +564879,11 @@
         "video_id": 30787207
       },
       {
+        "episode_id": 102000,
+        "display_name": "Elisa z Rivombrosy S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30787260
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -742158,16 +742168,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 8,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35987,
+    "needs_whisper": 35989,
     "whisper_confirmed_cz": 3661,
     "whisper_non_cz_needs_subtitles": 12672,
-    "whisper_failed": 1580
+    "whisper_failed": 1578
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50072
+    "needs_subtitle_setup_after_prehrajto_processing": 50073
   }
 }
