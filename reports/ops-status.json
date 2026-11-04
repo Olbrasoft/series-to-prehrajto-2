@@ -1,7 +1,7 @@
 {
   "counts": {
     "backlog_episodes": 112406,
-    "manifest_upload_ready_episodes": 6,
+    "manifest_upload_ready_episodes": 5,
     "uploaded_episodes": 79226,
     "prepared_source_episodes": 67640,
     "description_series": 60,
@@ -9,16 +9,56 @@
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
-    "language_whisper_attempted_sources": 23,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53899,
     "whisper_review_pending_sources": 37578,
-    "upload_pending_checkpoints": 31,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 50062,
     "subtitle_followup_pending_sources": 50062
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T12:52:48Z",
+      "databaseId": 41833082339,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T12:52:24Z",
+      "databaseId": 41833024396,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T12:52:20Z",
+      "databaseId": 41833013381,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T12:51:58Z",
+      "databaseId": 41832962302,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T12:51:55Z",
+      "databaseId": 41832956448,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T12:51:13Z",
@@ -60,11 +100,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T12:46:29Z",
       "databaseId": 41832174890,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +124,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T12:44:27Z",
       "databaseId": 41831873347,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T12:41:27Z",
-      "databaseId": 41831446290,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T12:41:03Z",
-      "databaseId": 41831390242,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T12:40:04Z",
-      "databaseId": 41831244056,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T12:39:47Z",
-      "databaseId": 41831204167,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T12:39:27Z",
-      "databaseId": 41831155930,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -741978,8 +741978,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 22,
-    "disabled": 4,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
