@@ -1,38 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 112478,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 79210,
-    "prepared_source_episodes": 67636,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 79213,
+    "prepared_source_episodes": 67641,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 54,
+    "language_whisper_attempted_sources": 44,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53899,
-    "whisper_review_pending_sources": 37592,
-    "upload_pending_checkpoints": 31,
-    "subtitle_followup_sources": 50049,
-    "subtitle_followup_pending_sources": 50049
+    "whisper_review_pending_sources": 37589,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50051,
+    "subtitle_followup_pending_sources": 50051
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-04T11:59:16Z",
-      "databaseId": 41825380422,
+      "createdAt": "2026-11-04T12:04:53Z",
+      "databaseId": 41826179933,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "update-descriptions"
+      "status": "queued",
+      "workflowName": "ops-status"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T12:04:43Z",
+      "databaseId": 41826156642,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T12:04:28Z",
+      "databaseId": 41826121769,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T12:01:56Z",
+      "databaseId": 41825764368,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T12:01:51Z",
+      "databaseId": 41825752349,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T12:00:40Z",
+      "databaseId": 41825580782,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T11:59:16Z",
+      "databaseId": 41825380422,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-04T11:58:09Z",
       "databaseId": 41825235394,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +92,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T11:58:03Z",
       "databaseId": 41825219807,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,11 +116,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T11:53:41Z",
       "databaseId": 41824624982,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -96,7 +144,7 @@
       "createdAt": "2026-11-04T11:52:54Z",
       "databaseId": 41824520148,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -112,7 +160,7 @@
       "createdAt": "2026-11-04T11:52:05Z",
       "databaseId": 41824408996,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -127,54 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-04T11:51:55Z",
       "databaseId": 41824388033,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T11:50:44Z",
-      "databaseId": 41824228425,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T11:50:35Z",
-      "databaseId": 41824208124,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T11:50:30Z",
-      "databaseId": 41824195232,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T11:49:17Z",
-      "databaseId": 41824030629,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T11:48:19Z",
-      "databaseId": 41823897886,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T11:45:38Z",
-      "databaseId": 41823537567,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -194422,6 +194422,11 @@
         "video_id": 30784877
       },
       {
+        "episode_id": 156309,
+        "display_name": "Miraculous Brothers S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30785096
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -370470,6 +370475,16 @@
         "episode_id": 166130,
         "display_name": "Firebite S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30784958
+      },
+      {
+        "episode_id": 160019,
+        "display_name": "Goddess Bless You from Death S01E13 - 13. epizoda CZ Titulky",
+        "video_id": 30785081
+      },
+      {
+        "episode_id": 163630,
+        "display_name": "Jarní rána S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30785089
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -564609,6 +564624,11 @@
         "video_id": 30784877
       },
       {
+        "episode_id": 156309,
+        "display_name": "Miraculous Brothers S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30785096
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -740657,6 +740677,16 @@
         "episode_id": 166130,
         "display_name": "Firebite S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30784958
+      },
+      {
+        "episode_id": 160019,
+        "display_name": "Goddess Bless You from Death S01E13 - 13. epizoda CZ Titulky",
+        "video_id": 30785081
+      },
+      {
+        "episode_id": 163630,
+        "display_name": "Jarní rána S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30785089
       }
     ],
     "prepared_not_upload_ready": [
@@ -741818,16 +741848,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "disabled": 10,
+    "ok": 43,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35993,
-    "whisper_confirmed_cz": 3655,
-    "whisper_non_cz_needs_subtitles": 12652,
-    "whisper_failed": 1599
+    "needs_whisper": 35992,
+    "whisper_confirmed_cz": 3654,
+    "whisper_non_cz_needs_subtitles": 12656,
+    "whisper_failed": 1597
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50049
+    "needs_subtitle_setup_after_prehrajto_processing": 50051
   }
 }
