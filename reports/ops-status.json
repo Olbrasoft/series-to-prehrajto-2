@@ -2,18 +2,18 @@
   "counts": {
     "backlog_episodes": 112350,
     "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 79278,
+    "uploaded_episodes": 79281,
     "prepared_source_episodes": 67688,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 41,
-    "language_whisper_attempted_sources": 23,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53904,
-    "whisper_review_pending_sources": 37564,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53903,
+    "whisper_review_pending_sources": 37562,
     "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50097,
     "subtitle_followup_pending_sources": 50097
@@ -21,10 +21,82 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T15:33:57Z",
+      "databaseId": 41859063881,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:33:48Z",
+      "databaseId": 41859037745,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:33:40Z",
+      "databaseId": 41859013971,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:32:32Z",
+      "databaseId": 41858814304,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:32:26Z",
+      "databaseId": 41858799271,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T15:31:57Z",
+      "databaseId": 41858716412,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:31:51Z",
+      "databaseId": 41858698452,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:31:50Z",
+      "databaseId": 41858693711,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:31:41Z",
+      "databaseId": 41858666646,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T15:30:21Z",
       "databaseId": 41858427770,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +104,7 @@
       "createdAt": "2026-11-04T15:29:41Z",
       "databaseId": 41858310391,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,19 +132,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T15:28:13Z",
       "databaseId": 41858063087,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T15:28:06Z",
       "databaseId": 41858041844,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -96,7 +168,7 @@
       "createdAt": "2026-11-04T15:24:54Z",
       "databaseId": 41857487141,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T15:24:17Z",
-      "databaseId": 41857374634,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T15:23:23Z",
-      "databaseId": 41857215749,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T15:23:07Z",
-      "databaseId": 41857167708,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T15:23:05Z",
-      "databaseId": 41857162269,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T15:20:59Z",
-      "databaseId": 41856792112,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T15:19:35Z",
-      "databaseId": 41856541158,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T15:19:31Z",
-      "databaseId": 41856527170,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T15:18:17Z",
-      "databaseId": 41856319160,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T15:17:54Z",
-      "databaseId": 41856253981,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -194612,6 +194612,11 @@
         "video_id": 30788835
       },
       {
+        "episode_id": 136652,
+        "display_name": "Medalist S01E12 - Široneho lekce CZ Titulky",
+        "video_id": 30789007
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -370810,6 +370815,16 @@
         "episode_id": 101987,
         "display_name": "Elisa z Rivombrosy S02E06 - 6. epizoda CZ Dabing",
         "video_id": 30788719
+      },
+      {
+        "episode_id": 136655,
+        "display_name": "Medalist S01E13 - Ráno nadešlo CZ Titulky",
+        "video_id": 30788986
+      },
+      {
+        "episode_id": 179958,
+        "display_name": "Elitní povídky: Phillipe Caye Felipe S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30789004
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -565139,6 +565154,11 @@
         "video_id": 30788835
       },
       {
+        "episode_id": 136652,
+        "display_name": "Medalist S01E12 - Široneho lekce CZ Titulky",
+        "video_id": 30789007
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -741337,6 +741357,16 @@
         "episode_id": 101987,
         "display_name": "Elisa z Rivombrosy S02E06 - 6. epizoda CZ Dabing",
         "video_id": 30788719
+      },
+      {
+        "episode_id": 136655,
+        "display_name": "Medalist S01E13 - Ráno nadešlo CZ Titulky",
+        "video_id": 30788986
+      },
+      {
+        "episode_id": 179958,
+        "display_name": "Elitní povídky: Phillipe Caye Felipe S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30789004
       }
     ],
     "prepared_not_upload_ready": [
@@ -742498,15 +742528,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 18,
-    "ok": 22,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36003,
+    "needs_whisper": 36002,
     "whisper_confirmed_cz": 3658,
-    "whisper_non_cz_needs_subtitles": 12682,
-    "whisper_failed": 1561
+    "whisper_non_cz_needs_subtitles": 12683,
+    "whisper_failed": 1560
   },
   "subtitle_followup_statuses": {
     "needs_subtitle_setup_after_prehrajto_processing": 50097
