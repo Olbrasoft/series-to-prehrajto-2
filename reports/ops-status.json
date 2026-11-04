@@ -2,14 +2,14 @@
   "counts": {
     "backlog_episodes": 112478,
     "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 79195,
+    "uploaded_episodes": 79196,
     "prepared_source_episodes": 67638,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 55,
+    "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53900,
@@ -21,10 +21,74 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T11:33:25Z",
+      "databaseId": 41821850791,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:33:17Z",
+      "databaseId": 41821830574,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T11:33:05Z",
+      "databaseId": 41821802012,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:33:02Z",
+      "databaseId": 41821794895,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:32:48Z",
+      "databaseId": 41821761410,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:32:33Z",
+      "databaseId": 41821727085,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:32:20Z",
+      "databaseId": 41821698715,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:31:15Z",
+      "databaseId": 41821544410,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-04T11:29:53Z",
       "databaseId": 41821341086,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +96,7 @@
       "createdAt": "2026-11-04T11:28:46Z",
       "databaseId": 41821190739,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,27 +116,27 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T11:24:25Z",
       "databaseId": 41820579357,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T11:24:24Z",
       "databaseId": 41820576729,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T11:24:18Z",
       "databaseId": 41820561462,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -111,70 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-04T11:21:49Z",
       "databaseId": 41820252957,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T11:21:30Z",
-      "databaseId": 41820215368,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T11:21:26Z",
-      "databaseId": 41820207151,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T11:21:23Z",
-      "databaseId": 41820201311,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T11:21:16Z",
-      "databaseId": 41820187593,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T11:20:20Z",
-      "databaseId": 41820084815,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-04T11:17:01Z",
-      "databaseId": 41819827568,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T11:16:30Z",
-      "databaseId": 41819786950,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T11:16:19Z",
-      "databaseId": 41819767613,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
@@ -370395,6 +370395,11 @@
         "episode_id": 160018,
         "display_name": "Goddess Bless You from Death S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30784588
+      },
+      {
+        "episode_id": 160030,
+        "display_name": "Goddess Bless You from Death S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30784636
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -740507,6 +740512,11 @@
         "episode_id": 160018,
         "display_name": "Goddess Bless You from Death S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30784588
+      },
+      {
+        "episode_id": 160030,
+        "display_name": "Goddess Bless You from Death S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30784636
       }
     ],
     "prepared_not_upload_ready": [
@@ -741668,7 +741678,6 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 15,
     "ok": 39,
     "resolve_failed": 1
   },
