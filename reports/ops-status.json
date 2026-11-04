@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112350,
     "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 79333,
+    "uploaded_episodes": 79334,
     "prepared_source_episodes": 67728,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,89 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37561,
-    "upload_pending_checkpoints": 31,
+    "upload_pending_checkpoints": 33,
     "subtitle_followup_sources": 50127,
     "subtitle_followup_pending_sources": 50127
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T18:04:01Z",
+      "databaseId": 41883320461,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T18:03:37Z",
+      "databaseId": 41883249353,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T18:03:31Z",
+      "databaseId": 41883232355,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T18:03:23Z",
+      "databaseId": 41883209140,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T18:02:06Z",
+      "databaseId": 41882981211,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T18:00:14Z",
+      "databaseId": 41882630010,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T17:59:56Z",
+      "databaseId": 41882571055,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T17:59:52Z",
+      "databaseId": 41882559170,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T17:59:48Z",
+      "databaseId": 41882548638,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T17:59:22Z",
       "databaseId": 41882475085,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,11 +116,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T17:56:56Z",
       "databaseId": 41882045346,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -96,85 +168,13 @@
       "createdAt": "2026-11-04T17:52:45Z",
       "databaseId": 41881337109,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
       "conclusion": "cancelled",
       "createdAt": "2026-11-04T17:52:39Z",
       "databaseId": 41881321758,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T17:51:54Z",
-      "databaseId": 41881195528,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T17:51:31Z",
-      "databaseId": 41881133162,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T17:50:18Z",
-      "databaseId": 41880930055,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T17:50:03Z",
-      "databaseId": 41880888591,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T17:49:59Z",
-      "databaseId": 41880876448,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T17:49:19Z",
-      "databaseId": 41880767814,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T17:47:52Z",
-      "databaseId": 41880568531,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T17:47:28Z",
-      "databaseId": 41880515307,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T17:47:13Z",
-      "databaseId": 41880480338,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -194735,6 +194735,11 @@
         "episode_id": 139284,
         "display_name": "Smršť S01E10 - 10. díl CZ Titulky",
         "video_id": 30790819
+      },
+      {
+        "episode_id": 170285,
+        "display_name": "Život vzhůru nohama S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30790944
       },
       {
         "episode_id": 114182,
@@ -565537,6 +565542,11 @@
         "episode_id": 139284,
         "display_name": "Smršť S01E10 - 10. díl CZ Titulky",
         "video_id": 30790819
+      },
+      {
+        "episode_id": 170285,
+        "display_name": "Život vzhůru nohama S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30790944
       },
       {
         "episode_id": 114182,
