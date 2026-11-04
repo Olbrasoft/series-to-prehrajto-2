@@ -2,29 +2,45 @@
   "counts": {
     "backlog_episodes": 112478,
     "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 79150,
-    "prepared_source_episodes": 67618,
+    "uploaded_episodes": 79151,
+    "prepared_source_episodes": 67620,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 66,
-    "language_whisper_attempted_sources": 48,
+    "language_audited_sources": 42,
+    "language_whisper_attempted_sources": 42,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53908,
     "whisper_review_pending_sources": 37635,
-    "upload_pending_checkpoints": 31,
-    "subtitle_followup_sources": 50003,
-    "subtitle_followup_pending_sources": 50003
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50005,
+    "subtitle_followup_pending_sources": 50005
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T09:35:12Z",
+      "databaseId": 41808743006,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T09:34:49Z",
+      "databaseId": 41808688047,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T09:33:27Z",
       "databaseId": 41808494801,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +48,7 @@
       "createdAt": "2026-11-04T09:33:24Z",
       "databaseId": 41808486993,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "update-descriptions"
     },
     {
@@ -44,19 +60,19 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T09:32:25Z",
       "databaseId": 41808345945,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T09:32:02Z",
       "databaseId": 41808291278,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -64,7 +80,7 @@
       "createdAt": "2026-11-04T09:31:59Z",
       "databaseId": 41808283722,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -80,7 +96,7 @@
       "createdAt": "2026-11-04T09:31:27Z",
       "databaseId": 41808206893,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -104,7 +120,7 @@
       "createdAt": "2026-11-04T09:28:54Z",
       "databaseId": 41807844665,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -140,11 +156,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T09:26:24Z",
       "databaseId": 41807507751,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T09:25:56Z",
-      "databaseId": 41807443478,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T09:25:52Z",
-      "databaseId": 41807433715,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -370170,6 +370170,11 @@
         "episode_id": 153886,
         "display_name": "Wireless S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30783147
+      },
+      {
+        "episode_id": 159855,
+        "display_name": "Matky Tučňáků S01E02 - Online CZ Dabing",
+        "video_id": 30783183
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -740057,6 +740062,11 @@
         "episode_id": 153886,
         "display_name": "Wireless S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30783147
+      },
+      {
+        "episode_id": 159855,
+        "display_name": "Matky Tučňáků S01E02 - Online CZ Dabing",
+        "video_id": 30783183
       }
     ],
     "prepared_not_upload_ready": [
@@ -741218,8 +741228,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 18,
-    "ok": 47,
+    "ok": 41,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -741229,6 +741238,6 @@
     "whisper_failed": 1608
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50003
+    "needs_subtitle_setup_after_prehrajto_processing": 50005
   }
 }
