@@ -1,38 +1,142 @@
 {
   "counts": {
-    "backlog_episodes": 112693,
+    "backlog_episodes": 112616,
     "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 78999,
-    "prepared_source_episodes": 67503,
+    "uploaded_episodes": 79004,
+    "prepared_source_episodes": 67506,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 21,
-    "language_whisper_attempted_sources": 21,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 58,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53920,
     "whisper_review_pending_sources": 37698,
-    "upload_pending_checkpoints": 32,
-    "subtitle_followup_sources": 49894,
-    "subtitle_followup_pending_sources": 49894
+    "upload_pending_checkpoints": 31,
+    "subtitle_followup_sources": 49898,
+    "subtitle_followup_pending_sources": 49898
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-04T03:10:23Z",
-      "databaseId": 41765433704,
+      "createdAt": "2026-11-04T03:17:35Z",
+      "databaseId": 41766195466,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "update-descriptions"
+      "status": "pending",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T03:17:29Z",
+      "databaseId": 41766187725,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T03:17:27Z",
+      "databaseId": 41766183432,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T03:17:20Z",
+      "databaseId": 41766172818,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T03:17:13Z",
+      "databaseId": 41766159127,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T03:17:08Z",
+      "databaseId": 41766149408,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T03:16:18Z",
+      "databaseId": 41766059687,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T03:15:14Z",
+      "databaseId": 41765951768,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "refresh-backlog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T03:14:59Z",
+      "databaseId": 41765924292,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T03:14:46Z",
+      "databaseId": 41765905020,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T03:14:31Z",
+      "databaseId": 41765877679,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T03:14:09Z",
+      "databaseId": 41765835888,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T03:11:38Z",
+      "databaseId": 41765563619,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T03:10:23Z",
+      "databaseId": 41765433704,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-04T03:09:22Z",
       "databaseId": 41765321324,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +156,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T03:08:41Z",
       "databaseId": 41765250403,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -74,110 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T03:08:19Z",
-      "databaseId": 41765211178,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:06:25Z",
-      "databaseId": 41765000776,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:06:03Z",
-      "databaseId": 41764961302,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:05:57Z",
-      "databaseId": 41764949450,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T03:05:54Z",
-      "databaseId": 41764944387,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T03:05:51Z",
-      "databaseId": 41764939779,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T03:04:08Z",
-      "databaseId": 41764748488,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:04:05Z",
-      "databaseId": 41764742139,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:02:17Z",
-      "databaseId": 41764546299,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T03:02:14Z",
-      "databaseId": 41764541119,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:02:14Z",
-      "databaseId": 41764540891,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T03:02:09Z",
-      "databaseId": 41764530873,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:02:08Z",
-      "databaseId": 41764528828,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -193902,6 +193902,16 @@
         "video_id": 30778178
       },
       {
+        "episode_id": 181069,
+        "display_name": "Temný Janov S01E01 - Nebezpečné rituály CZ Dabing",
+        "video_id": 30778233
+      },
+      {
+        "episode_id": 138333,
+        "display_name": "Žár v srdci S01E17 - 17. epizoda CZ Titulky",
+        "video_id": 30778250
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -369415,6 +369425,21 @@
         "episode_id": 138334,
         "display_name": "Žár v srdci S01E18 - 18. epizoda CZ Titulky",
         "video_id": 30778143
+      },
+      {
+        "episode_id": 166443,
+        "display_name": "Late Bloomer S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30778221
+      },
+      {
+        "episode_id": 162023,
+        "display_name": "Ride S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30778246
+      },
+      {
+        "episode_id": 162022,
+        "display_name": "Ride S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30778235
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -563034,6 +563059,16 @@
         "video_id": 30778178
       },
       {
+        "episode_id": 181069,
+        "display_name": "Temný Janov S01E01 - Nebezpečné rituály CZ Dabing",
+        "video_id": 30778233
+      },
+      {
+        "episode_id": 138333,
+        "display_name": "Žár v srdci S01E17 - 17. epizoda CZ Titulky",
+        "video_id": 30778250
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -738547,6 +738582,21 @@
         "episode_id": 138334,
         "display_name": "Žár v srdci S01E18 - 18. epizoda CZ Titulky",
         "video_id": 30778143
+      },
+      {
+        "episode_id": 166443,
+        "display_name": "Late Bloomer S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30778221
+      },
+      {
+        "episode_id": 162023,
+        "display_name": "Ride S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30778246
+      },
+      {
+        "episode_id": 162022,
+        "display_name": "Ride S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30778235
       }
     ],
     "prepared_not_upload_ready": [
@@ -739708,7 +739758,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 20,
+    "disabled": 18,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -739718,6 +739769,6 @@
     "whisper_failed": 1617
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49894
+    "needs_subtitle_setup_after_prehrajto_processing": 49898
   }
 }
