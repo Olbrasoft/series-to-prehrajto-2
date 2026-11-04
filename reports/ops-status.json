@@ -2,23 +2,87 @@
   "counts": {
     "backlog_episodes": 112406,
     "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 79239,
+    "uploaded_episodes": 79240,
     "prepared_source_episodes": 67657,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 31,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53901,
     "whisper_review_pending_sources": 37575,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50068,
     "subtitle_followup_pending_sources": 50068
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T13:52:34Z",
+      "databaseId": 41842100218,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T13:52:30Z",
+      "databaseId": 41842090757,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T13:52:30Z",
+      "databaseId": 41842090181,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T13:52:00Z",
+      "databaseId": 41842013965,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T13:50:58Z",
+      "databaseId": 41841855065,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T13:50:42Z",
+      "databaseId": 41841815454,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T13:50:11Z",
+      "databaseId": 41841736119,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T13:48:41Z",
+      "databaseId": 41841505825,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T13:45:04Z",
@@ -28,19 +92,19 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T13:45:02Z",
       "databaseId": 41840941633,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T13:44:52Z",
       "databaseId": 41840915935,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,15 +112,15 @@
       "createdAt": "2026-11-04T13:43:35Z",
       "databaseId": 41840723768,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T13:42:58Z",
       "databaseId": 41840629061,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T13:38:48Z",
-      "databaseId": 41840000384,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T13:38:44Z",
-      "databaseId": 41839991142,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T13:38:21Z",
-      "databaseId": 41839932211,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T13:38:03Z",
-      "databaseId": 41839886564,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T13:37:58Z",
-      "databaseId": 41839874354,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T13:37:35Z",
-      "databaseId": 41839817311,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-04T13:34:29Z",
-      "databaseId": 41839336264,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T13:33:36Z",
-      "databaseId": 41839196602,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -370615,6 +370615,11 @@
         "episode_id": 196607,
         "display_name": "Velká šou žraločátka S02E13 - 13. epizoda CZ Dabing",
         "video_id": 30786985
+      },
+      {
+        "episode_id": 136651,
+        "display_name": "Medalist S01E10 - Vytí na měsíc CZ Titulky",
+        "video_id": 30787050
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -740947,6 +740952,11 @@
         "episode_id": 196607,
         "display_name": "Velká šou žraločátka S02E13 - 13. epizoda CZ Dabing",
         "video_id": 30786985
+      },
+      {
+        "episode_id": 136651,
+        "display_name": "Medalist S01E10 - Vytí na měsíc CZ Titulky",
+        "video_id": 30787050
       }
     ],
     "prepared_not_upload_ready": [
@@ -742108,8 +742118,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 11,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
