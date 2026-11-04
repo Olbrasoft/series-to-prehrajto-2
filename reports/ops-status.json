@@ -1,30 +1,54 @@
 {
   "counts": {
-    "backlog_episodes": 112406,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 79276,
-    "prepared_source_episodes": 67682,
+    "backlog_episodes": 112350,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 79277,
+    "prepared_source_episodes": 67681,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
-    "language_whisper_attempted_sources": 22,
+    "language_audited_sources": 30,
+    "language_whisper_attempted_sources": 25,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53903,
-    "whisper_review_pending_sources": 37561,
+    "whisper_review_sources": 53902,
+    "whisper_review_pending_sources": 37558,
     "upload_pending_checkpoints": 32,
-    "subtitle_followup_sources": 50093,
-    "subtitle_followup_pending_sources": 50093
+    "subtitle_followup_sources": 50095,
+    "subtitle_followup_pending_sources": 50095
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:20:59Z",
+      "databaseId": 41856792112,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:19:35Z",
+      "databaseId": 41856541158,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:19:31Z",
+      "databaseId": 41856527170,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T15:18:17Z",
       "databaseId": 41856319160,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-04T15:17:54Z",
       "databaseId": 41856253981,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "process-whisper-review"
     },
     {
@@ -44,11 +68,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T15:16:37Z",
       "databaseId": 41856032071,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,15 +88,15 @@
       "createdAt": "2026-11-04T15:15:16Z",
       "databaseId": 41855794733,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T15:14:59Z",
       "databaseId": 41855747153,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "refresh-backlog"
     },
     {
@@ -80,7 +104,7 @@
       "createdAt": "2026-11-04T15:13:59Z",
       "databaseId": 41855577043,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -100,11 +124,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T15:13:08Z",
       "databaseId": 41855428972,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T15:05:45Z",
-      "databaseId": 41854166526,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T15:05:12Z",
-      "databaseId": 41854071592,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T15:05:08Z",
-      "databaseId": 41854060310,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -194600,6 +194600,11 @@
         "episode_id": 168636,
         "display_name": "A Bloody Lucky Day S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30788605
+      },
+      {
+        "episode_id": 145836,
+        "display_name": "Sny o Manhattanu S01E06 - Labutí píseň CZ Dabing",
+        "video_id": 30788747
       },
       {
         "episode_id": 114182,
@@ -565119,6 +565124,11 @@
         "video_id": 30788605
       },
       {
+        "episode_id": 145836,
+        "display_name": "Sny o Manhattanu S01E06 - Labutí píseň CZ Dabing",
+        "video_id": 30788747
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -742479,16 +742489,16 @@
   "language_verdicts": {},
   "language_whisper_statuses": {
     "disabled": 5,
-    "ok": 21,
+    "ok": 24,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35997,
-    "whisper_confirmed_cz": 3660,
-    "whisper_non_cz_needs_subtitles": 12682,
+    "needs_whisper": 35994,
+    "whisper_confirmed_cz": 3659,
+    "whisper_non_cz_needs_subtitles": 12685,
     "whisper_failed": 1564
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50093
+    "needs_subtitle_setup_after_prehrajto_processing": 50095
   }
 }
