@@ -1,38 +1,102 @@
 {
   "counts": {
     "backlog_episodes": 112616,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 79075,
-    "prepared_source_episodes": 67550,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 79081,
+    "prepared_source_episodes": 67543,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 45,
-    "language_whisper_attempted_sources": 43,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 23,
+    "language_whisper_attempted_sources": 23,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53916,
     "whisper_review_pending_sources": 37680,
-    "upload_pending_checkpoints": 31,
-    "subtitle_followup_sources": 49950,
-    "subtitle_followup_pending_sources": 49950
+    "upload_pending_checkpoints": 30,
+    "subtitle_followup_sources": 49952,
+    "subtitle_followup_pending_sources": 49952
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-04T06:06:05Z",
-      "databaseId": 41783305605,
+      "createdAt": "2026-11-04T06:19:05Z",
+      "databaseId": 41784711697,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-status"
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T06:18:49Z",
+      "databaseId": 41784683525,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T06:18:47Z",
+      "databaseId": 41784679312,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T06:18:43Z",
+      "databaseId": 41784672092,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T06:08:47Z",
+      "databaseId": 41783592449,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T06:08:15Z",
+      "databaseId": 41783535091,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T06:07:53Z",
+      "databaseId": 41783496633,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T06:07:16Z",
+      "databaseId": 41783432222,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T06:06:05Z",
+      "databaseId": 41783305605,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T06:04:40Z",
       "databaseId": 41783150333,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,19 +108,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T06:04:32Z",
       "databaseId": 41783135411,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T06:01:46Z",
       "databaseId": 41782843281,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T05:57:36Z",
-      "databaseId": 41782409186,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T05:57:32Z",
-      "databaseId": 41782403867,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T05:57:30Z",
-      "databaseId": 41782399401,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T05:57:27Z",
-      "databaseId": 41782395232,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T05:57:25Z",
-      "databaseId": 41782391091,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T05:54:27Z",
-      "databaseId": 41782096955,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T05:53:22Z",
-      "databaseId": 41781988002,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T05:53:20Z",
-      "databaseId": 41781985163,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -369795,6 +369795,36 @@
         "episode_id": 155975,
         "display_name": "Psí zásahovka S01E04 - Heaven CZ Dabing",
         "video_id": 30780501
+      },
+      {
+        "episode_id": 177318,
+        "display_name": "America's Book of Secrets S02E11 - 11. epizoda CZ Titulky",
+        "video_id": 30780520
+      },
+      {
+        "episode_id": 128719,
+        "display_name": "Amík S01E19 - Orlové a hadi CZ Titulky",
+        "video_id": 30780541
+      },
+      {
+        "episode_id": 133475,
+        "display_name": "Koodinimi: Annika S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30780575
+      },
+      {
+        "episode_id": 159850,
+        "display_name": "Matky Tučňáků S01E01 - Něco s ním je? CZ Dabing",
+        "video_id": 30780582
+      },
+      {
+        "episode_id": 128718,
+        "display_name": "Amík S01E18 - Každý den je válka CZ Titulky",
+        "video_id": 30780607
+      },
+      {
+        "episode_id": 128722,
+        "display_name": "Amík S01E22 - Pax Romana CZ Titulky",
+        "video_id": 30780639
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -739307,6 +739337,36 @@
         "episode_id": 155975,
         "display_name": "Psí zásahovka S01E04 - Heaven CZ Dabing",
         "video_id": 30780501
+      },
+      {
+        "episode_id": 177318,
+        "display_name": "America's Book of Secrets S02E11 - 11. epizoda CZ Titulky",
+        "video_id": 30780520
+      },
+      {
+        "episode_id": 128719,
+        "display_name": "Amík S01E19 - Orlové a hadi CZ Titulky",
+        "video_id": 30780541
+      },
+      {
+        "episode_id": 133475,
+        "display_name": "Koodinimi: Annika S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30780575
+      },
+      {
+        "episode_id": 159850,
+        "display_name": "Matky Tučňáků S01E01 - Něco s ním je? CZ Dabing",
+        "video_id": 30780582
+      },
+      {
+        "episode_id": 128718,
+        "display_name": "Amík S01E18 - Každý den je válka CZ Titulky",
+        "video_id": 30780607
+      },
+      {
+        "episode_id": 128722,
+        "display_name": "Amík S01E22 - Pax Romana CZ Titulky",
+        "video_id": 30780639
       }
     ],
     "prepared_not_upload_ready": [
@@ -740468,8 +740528,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 42,
-    "disabled": 2,
+    "ok": 22,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -740479,6 +740538,6 @@
     "whisper_failed": 1617
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49950
+    "needs_subtitle_setup_after_prehrajto_processing": 49952
   }
 }
