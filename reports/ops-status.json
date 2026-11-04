@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 112542,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 79130,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 79132,
     "prepared_source_episodes": 67593,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,65 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53910,
     "whisper_review_pending_sources": 37651,
-    "upload_pending_checkpoints": 31,
+    "upload_pending_checkpoints": 30,
     "subtitle_followup_sources": 49983,
     "subtitle_followup_pending_sources": 49983
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T08:39:49Z",
+      "databaseId": 41801233395,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T08:39:44Z",
+      "databaseId": 41801223181,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T08:38:57Z",
+      "databaseId": 41801126877,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T08:38:08Z",
+      "databaseId": 41801026571,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T08:37:51Z",
+      "databaseId": 41800989089,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T08:37:28Z",
+      "databaseId": 41800942526,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T08:36:30Z",
       "databaseId": 41800813503,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -36,19 +84,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T08:35:48Z",
       "databaseId": 41800725103,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T08:35:07Z",
       "databaseId": 41800630818,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -96,7 +144,7 @@
       "createdAt": "2026-11-04T08:33:10Z",
       "databaseId": 41800375633,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-descriptions"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T08:27:59Z",
-      "databaseId": 41799710843,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T08:27:32Z",
-      "databaseId": 41799654027,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T08:27:32Z",
-      "databaseId": 41799654012,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T08:27:28Z",
-      "databaseId": 41799645812,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T08:27:23Z",
-      "databaseId": 41799633943,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T08:27:19Z",
-      "databaseId": 41799626099,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -370070,6 +370070,16 @@
         "episode_id": 129090,
         "display_name": "Mammals S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30782249
+      },
+      {
+        "episode_id": 156310,
+        "display_name": "Miraculous Brothers S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30782375
+      },
+      {
+        "episode_id": 159851,
+        "display_name": "Matky Tučňáků S01E03 - Výzvy CZ Dabing",
+        "video_id": 30782393
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -739857,6 +739867,16 @@
         "episode_id": 129090,
         "display_name": "Mammals S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30782249
+      },
+      {
+        "episode_id": 156310,
+        "display_name": "Miraculous Brothers S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30782375
+      },
+      {
+        "episode_id": 159851,
+        "display_name": "Matky Tučňáků S01E03 - Výzvy CZ Dabing",
+        "video_id": 30782393
       }
     ],
     "prepared_not_upload_ready": [
