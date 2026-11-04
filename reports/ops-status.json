@@ -1,24 +1,64 @@
 {
   "counts": {
     "backlog_episodes": 112693,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 78990,
-    "prepared_source_episodes": 67498,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 78996,
+    "prepared_source_episodes": 67506,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 51,
+    "language_audited_sources": 76,
     "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53920,
-    "whisper_review_pending_sources": 37701,
+    "whisper_review_sources": 53921,
+    "whisper_review_pending_sources": 37702,
     "upload_pending_checkpoints": 31,
-    "subtitle_followup_sources": 49889,
-    "subtitle_followup_pending_sources": 49889
+    "subtitle_followup_sources": 49891,
+    "subtitle_followup_pending_sources": 49891
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:57:21Z",
+      "databaseId": 41764027986,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:56:21Z",
+      "databaseId": 41763928583,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T02:56:20Z",
+      "databaseId": 41763927713,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T02:56:17Z",
+      "databaseId": 41763922518,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:53:22Z",
+      "databaseId": 41763620167,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T02:52:28Z",
@@ -32,7 +72,7 @@
       "createdAt": "2026-11-04T02:52:12Z",
       "databaseId": 41763501683,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +84,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T02:51:39Z",
       "databaseId": 41763444912,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,11 +124,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T02:49:44Z",
       "databaseId": 41763243554,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -100,11 +140,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T02:49:42Z",
       "databaseId": 41763239349,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -124,11 +164,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T02:44:53Z",
       "databaseId": 41762736026,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -136,48 +176,8 @@
       "createdAt": "2026-11-04T02:44:51Z",
       "databaseId": 41762731681,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T02:44:36Z",
-      "databaseId": 41762707663,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T02:43:19Z",
-      "databaseId": 41762571935,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T02:43:15Z",
-      "databaseId": 41762565637,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T02:43:12Z",
-      "databaseId": 41762560586,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T02:42:23Z",
-      "databaseId": 41762478642,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -193877,6 +193877,21 @@
         "video_id": 30777926
       },
       {
+        "episode_id": 134293,
+        "display_name": "Na pomezí záhad S02E17 - 17. epizoda CZ Dabing",
+        "video_id": 30778006
+      },
+      {
+        "episode_id": 114777,
+        "display_name": "Run the Burbs S03E10 - 10. epizoda CZ Titulky",
+        "video_id": 30778050
+      },
+      {
+        "episode_id": 176852,
+        "display_name": "SRAM S03E01 - 1. epizoda CZ Dabing",
+        "video_id": 30778124
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -369370,6 +369385,21 @@
         "episode_id": 102510,
         "display_name": "Kapitán Kloss S01E16 - Akce \"Dubový list\" CZ Dabing",
         "video_id": 30777922
+      },
+      {
+        "episode_id": 180003,
+        "display_name": "800 metrů S01E01 - Kamarádi CZ Titulky",
+        "video_id": 30778064
+      },
+      {
+        "episode_id": 181070,
+        "display_name": "Temný Janov S01E03 - Poslové temnoty CZ Dabing",
+        "video_id": 30778112
+      },
+      {
+        "episode_id": 114779,
+        "display_name": "Run the Burbs S03E12 - 12. epizoda CZ Titulky",
+        "video_id": 30778119
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -562964,6 +562994,21 @@
         "video_id": 30777926
       },
       {
+        "episode_id": 134293,
+        "display_name": "Na pomezí záhad S02E17 - 17. epizoda CZ Dabing",
+        "video_id": 30778006
+      },
+      {
+        "episode_id": 114777,
+        "display_name": "Run the Burbs S03E10 - 10. epizoda CZ Titulky",
+        "video_id": 30778050
+      },
+      {
+        "episode_id": 176852,
+        "display_name": "SRAM S03E01 - 1. epizoda CZ Dabing",
+        "video_id": 30778124
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -738457,6 +738502,21 @@
         "episode_id": 102510,
         "display_name": "Kapitán Kloss S01E16 - Akce \"Dubový list\" CZ Dabing",
         "video_id": 30777922
+      },
+      {
+        "episode_id": 180003,
+        "display_name": "800 metrů S01E01 - Kamarádi CZ Titulky",
+        "video_id": 30778064
+      },
+      {
+        "episode_id": 181070,
+        "display_name": "Temný Janov S01E03 - Poslové temnoty CZ Dabing",
+        "video_id": 30778112
+      },
+      {
+        "episode_id": 114779,
+        "display_name": "Run the Burbs S03E12 - 12. epizoda CZ Titulky",
+        "video_id": 30778119
       }
     ],
     "prepared_not_upload_ready": [
@@ -739618,17 +739678,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 10,
+    "disabled": 35,
     "ok": 40,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36084,
+    "needs_whisper": 36085,
     "whisper_confirmed_cz": 3651,
     "whisper_non_cz_needs_subtitles": 12568,
     "whisper_failed": 1617
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49889
+    "needs_subtitle_setup_after_prehrajto_processing": 49891
   }
 }
