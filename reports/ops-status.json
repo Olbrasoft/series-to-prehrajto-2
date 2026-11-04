@@ -1,30 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 112542,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 79118,
-    "prepared_source_episodes": 67578,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 79119,
+    "prepared_source_episodes": 67576,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 32,
-    "language_whisper_attempted_sources": 22,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 43,
+    "language_whisper_attempted_sources": 43,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53912,
-    "whisper_review_pending_sources": 37663,
-    "upload_pending_checkpoints": 31,
-    "subtitle_followup_sources": 49976,
-    "subtitle_followup_pending_sources": 49976
+    "whisper_review_pending_sources": 37660,
+    "upload_pending_checkpoints": 30,
+    "subtitle_followup_sources": 49979,
+    "subtitle_followup_pending_sources": 49979
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T07:55:49Z",
+      "databaseId": 41795671556,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T07:55:48Z",
+      "databaseId": 41795669876,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T07:55:43Z",
+      "databaseId": 41795660024,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T07:55:39Z",
+      "databaseId": 41795652986,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T07:52:46Z",
+      "databaseId": 41795318035,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T07:52:17Z",
+      "databaseId": 41795262938,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T07:51:45Z",
       "databaseId": 41795202420,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -36,19 +84,19 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T07:50:30Z",
       "databaseId": 41795058286,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T07:50:26Z",
       "databaseId": 41795051297,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -60,11 +108,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T07:49:33Z",
       "databaseId": 41794949200,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -72,7 +120,7 @@
       "createdAt": "2026-11-04T07:49:15Z",
       "databaseId": 41794913844,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -124,60 +172,12 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T07:44:15Z",
       "databaseId": 41794338086,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T07:43:13Z",
-      "databaseId": 41794220838,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T07:43:09Z",
-      "databaseId": 41794214073,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T07:43:05Z",
-      "databaseId": 41794207569,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T07:42:29Z",
-      "databaseId": 41794138915,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T07:42:15Z",
-      "databaseId": 41794110324,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T07:42:11Z",
-      "databaseId": 41794103937,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -194220,6 +194220,11 @@
         "episode_id": 166668,
         "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30781789
+      },
+      {
+        "episode_id": 168644,
+        "display_name": "A Bloody Lucky Day S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30781810
       },
       {
         "episode_id": 114182,
@@ -563949,6 +563954,11 @@
         "video_id": 30781789
       },
       {
+        "episode_id": 168644,
+        "display_name": "A Bloody Lucky Day S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30781810
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -740898,17 +740908,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 21,
-    "disabled": 10,
+    "ok": 42,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36046,
+    "needs_whisper": 36043,
     "whisper_confirmed_cz": 3653,
-    "whisper_non_cz_needs_subtitles": 12596,
+    "whisper_non_cz_needs_subtitles": 12599,
     "whisper_failed": 1617
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49976
+    "needs_subtitle_setup_after_prehrajto_processing": 49979
   }
 }
