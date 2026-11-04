@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 112350,
-    "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 79277,
-    "prepared_source_episodes": 67681,
+    "manifest_upload_ready_episodes": 9,
+    "uploaded_episodes": 79278,
+    "prepared_source_episodes": 67679,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,25 +14,81 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53902,
     "whisper_review_pending_sources": 37558,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50095,
     "subtitle_followup_pending_sources": 50095
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-04T15:20:59Z",
-      "databaseId": 41856792112,
+      "createdAt": "2026-11-04T15:24:58Z",
+      "databaseId": 41857500218,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "external-subtitles"
+      "status": "pending",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T15:24:54Z",
+      "databaseId": 41857487141,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T15:24:22Z",
+      "databaseId": 41857391476,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:24:17Z",
+      "databaseId": 41857374634,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:23:23Z",
+      "databaseId": 41857215749,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T15:23:07Z",
+      "databaseId": 41857167708,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T15:23:05Z",
+      "databaseId": 41857162269,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T15:20:59Z",
+      "databaseId": 41856792112,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-04T15:19:35Z",
       "databaseId": 41856541158,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -40,31 +96,31 @@
       "createdAt": "2026-11-04T15:19:31Z",
       "databaseId": 41856527170,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T15:18:17Z",
       "databaseId": 41856319160,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T15:17:54Z",
       "databaseId": 41856253981,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T15:16:47Z",
       "databaseId": 41856059007,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -76,11 +132,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T15:16:25Z",
       "databaseId": 41855998445,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T15:13:08Z",
-      "databaseId": 41855428972,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T15:08:21Z",
-      "databaseId": 41854609540,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T15:08:15Z",
-      "databaseId": 41854591079,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T15:08:11Z",
-      "databaseId": 41854581288,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T15:06:11Z",
-      "databaseId": 41854241388,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T15:06:06Z",
-      "databaseId": 41854224351,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T15:06:05Z",
-      "databaseId": 41854221652,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -194605,6 +194605,11 @@
         "episode_id": 145836,
         "display_name": "Sny o Manhattanu S01E06 - Labutí píseň CZ Dabing",
         "video_id": 30788747
+      },
+      {
+        "episode_id": 139280,
+        "display_name": "Smršť S01E06 - 6. díl CZ Titulky",
+        "video_id": 30788835
       },
       {
         "episode_id": 114182,
@@ -565127,6 +565132,11 @@
         "episode_id": 145836,
         "display_name": "Sny o Manhattanu S01E06 - Labutí píseň CZ Dabing",
         "video_id": 30788747
+      },
+      {
+        "episode_id": 139280,
+        "display_name": "Smršť S01E06 - 6. díl CZ Titulky",
+        "video_id": 30788835
       },
       {
         "episode_id": 114182,
