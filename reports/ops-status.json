@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112406,
     "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 79265,
+    "uploaded_episodes": 79266,
     "prepared_source_episodes": 67673,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53902,
     "whisper_review_pending_sources": 37563,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50084,
     "subtitle_followup_pending_sources": 50084
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T14:52:10Z",
+      "databaseId": 41851871228,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T14:51:48Z",
+      "databaseId": 41851809578,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T14:51:08Z",
+      "databaseId": 41851700271,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-04T14:50:38Z",
       "databaseId": 41851616688,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,19 +68,19 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T14:48:59Z",
       "databaseId": 41851338517,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T14:47:50Z",
       "databaseId": 41851142845,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +88,7 @@
       "createdAt": "2026-11-04T14:46:55Z",
       "databaseId": 41850994828,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T14:38:05Z",
-      "databaseId": 41849519218,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T14:37:12Z",
-      "databaseId": 41849375649,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T14:34:33Z",
-      "databaseId": 41848930524,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -194565,6 +194565,11 @@
         "episode_id": 102004,
         "display_name": "Elisa z Rivombrosy S02E03 - 3. epizoda CZ Titulky",
         "video_id": 30788072
+      },
+      {
+        "episode_id": 101992,
+        "display_name": "Elisa z Rivombrosy S02E04 - 4. epizoda CZ Dabing",
+        "video_id": 30788118
       },
       {
         "episode_id": 114182,
@@ -565027,6 +565032,11 @@
         "episode_id": 102004,
         "display_name": "Elisa z Rivombrosy S02E03 - 3. epizoda CZ Titulky",
         "video_id": 30788072
+      },
+      {
+        "episode_id": 101992,
+        "display_name": "Elisa z Rivombrosy S02E04 - 4. epizoda CZ Dabing",
+        "video_id": 30788118
       },
       {
         "episode_id": 114182,
