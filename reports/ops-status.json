@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112478,
     "manifest_upload_ready_episodes": 14,
-    "uploaded_episodes": 79202,
+    "uploaded_episodes": 79206,
     "prepared_source_episodes": 67641,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,43 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53898,
     "whisper_review_pending_sources": 37591,
-    "upload_pending_checkpoints": 33,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 50047,
     "subtitle_followup_pending_sources": 50047
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:45:38Z",
+      "databaseId": 41823537567,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:45:11Z",
+      "databaseId": 41823472660,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:45:07Z",
+      "databaseId": 41823463269,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:45:04Z",
+      "databaseId": 41823456050,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T11:42:51Z",
@@ -40,7 +72,7 @@
       "createdAt": "2026-11-04T11:39:05Z",
       "databaseId": 41822644376,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,15 +112,15 @@
       "createdAt": "2026-11-04T11:34:47Z",
       "databaseId": 41822050099,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T11:34:05Z",
       "databaseId": 41821949124,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T11:32:48Z",
-      "databaseId": 41821761410,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T11:32:33Z",
-      "databaseId": 41821727085,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T11:32:20Z",
-      "databaseId": 41821698715,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T11:31:15Z",
-      "databaseId": 41821544410,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -194407,6 +194407,16 @@
         "video_id": 30784808
       },
       {
+        "episode_id": 160029,
+        "display_name": "Goddess Bless You from Death S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30784812
+      },
+      {
+        "episode_id": 163628,
+        "display_name": "Jarní rána S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30784859
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -370430,6 +370440,16 @@
         "episode_id": 196598,
         "display_name": "Velká šou žraločátka S01E12 - 12. epizoda CZ Dabing",
         "video_id": 30784800
+      },
+      {
+        "episode_id": 160023,
+        "display_name": "Goddess Bless You from Death S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30784838
+      },
+      {
+        "episode_id": 158090,
+        "display_name": "The Matchmakers S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30784843
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -564554,6 +564574,16 @@
         "video_id": 30784808
       },
       {
+        "episode_id": 160029,
+        "display_name": "Goddess Bless You from Death S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30784812
+      },
+      {
+        "episode_id": 163628,
+        "display_name": "Jarní rána S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30784859
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -740577,6 +740607,16 @@
         "episode_id": 196598,
         "display_name": "Velká šou žraločátka S01E12 - 12. epizoda CZ Dabing",
         "video_id": 30784800
+      },
+      {
+        "episode_id": 160023,
+        "display_name": "Goddess Bless You from Death S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30784838
+      },
+      {
+        "episode_id": 158090,
+        "display_name": "The Matchmakers S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30784843
       }
     ],
     "prepared_not_upload_ready": [
