@@ -1,30 +1,102 @@
 {
   "counts": {
     "backlog_episodes": 112616,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 79026,
-    "prepared_source_episodes": 67518,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 79030,
+    "prepared_source_episodes": 67515,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 43,
-    "language_whisper_attempted_sources": 43,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 32,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53919,
     "whisper_review_pending_sources": 37694,
-    "upload_pending_checkpoints": 32,
-    "subtitle_followup_sources": 49913,
-    "subtitle_followup_pending_sources": 49913
+    "upload_pending_checkpoints": 30,
+    "subtitle_followup_sources": 49914,
+    "subtitle_followup_pending_sources": 49914
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T04:16:16Z",
+      "databaseId": 41772177377,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T04:16:09Z",
+      "databaseId": 41772165275,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T04:16:08Z",
+      "databaseId": 41772164640,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T04:15:42Z",
+      "databaseId": 41772117680,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T04:15:37Z",
+      "databaseId": 41772108915,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T04:15:11Z",
+      "databaseId": 41772060702,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T04:14:39Z",
+      "databaseId": 41772007673,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T04:12:23Z",
+      "databaseId": 41771776049,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T04:11:31Z",
+      "databaseId": 41771684845,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-04T04:06:07Z",
       "databaseId": 41771127660,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -32,7 +104,7 @@
       "createdAt": "2026-11-04T04:05:46Z",
       "databaseId": 41771088937,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -40,15 +112,15 @@
       "createdAt": "2026-11-04T04:05:41Z",
       "databaseId": 41771081191,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T04:04:05Z",
       "databaseId": 41770914820,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -60,19 +132,19 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T04:03:53Z",
       "databaseId": 41770894445,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T04:03:34Z",
       "databaseId": 41770860776,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +164,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T04:01:31Z",
       "databaseId": 41770649982,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T04:00:29Z",
-      "databaseId": 41770535578,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T03:58:34Z",
-      "databaseId": 41770347348,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T03:57:53Z",
-      "databaseId": 41770283583,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:57:50Z",
-      "databaseId": 41770279693,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:57:47Z",
-      "databaseId": 41770274603,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T03:57:46Z",
-      "databaseId": 41770273613,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:57:01Z",
-      "databaseId": 41770203400,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T03:56:57Z",
-      "databaseId": 41770195968,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:55:39Z",
-      "databaseId": 41770071682,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -193977,6 +193977,21 @@
         "video_id": 30778804
       },
       {
+        "episode_id": 128704,
+        "display_name": "Amík S01E07 - Penélope v Puerto Peñasco CZ Titulky",
+        "video_id": 30778829
+      },
+      {
+        "episode_id": 128701,
+        "display_name": "Amík S01E08 - Polední kovboj CZ Titulky",
+        "video_id": 30778840
+      },
+      {
+        "episode_id": 128709,
+        "display_name": "Amík S01E09 - Operace Had CZ Titulky",
+        "video_id": 30778889
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -369550,6 +369565,11 @@
         "episode_id": 138342,
         "display_name": "Žár v srdci S01E29 - 29. epizoda CZ Titulky",
         "video_id": 30778820
+      },
+      {
+        "episode_id": 137302,
+        "display_name": "Dobré ráno, upírko S01E06 - Horor CZ Dabing",
+        "video_id": 30778849
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -563244,6 +563264,21 @@
         "video_id": 30778804
       },
       {
+        "episode_id": 128704,
+        "display_name": "Amík S01E07 - Penélope v Puerto Peñasco CZ Titulky",
+        "video_id": 30778829
+      },
+      {
+        "episode_id": 128701,
+        "display_name": "Amík S01E08 - Polední kovboj CZ Titulky",
+        "video_id": 30778840
+      },
+      {
+        "episode_id": 128709,
+        "display_name": "Amík S01E09 - Operace Had CZ Titulky",
+        "video_id": 30778889
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -738817,6 +738852,11 @@
         "episode_id": 138342,
         "display_name": "Žár v srdci S01E29 - 29. epizoda CZ Titulky",
         "video_id": 30778820
+      },
+      {
+        "episode_id": 137302,
+        "display_name": "Dobré ráno, upírko S01E06 - Horor CZ Dabing",
+        "video_id": 30778849
       }
     ],
     "prepared_not_upload_ready": [
@@ -739978,7 +740018,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 42,
+    "disabled": 12,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -739988,6 +740029,6 @@
     "whisper_failed": 1617
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49913
+    "needs_subtitle_setup_after_prehrajto_processing": 49914
   }
 }
