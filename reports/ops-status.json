@@ -1,24 +1,56 @@
 {
   "counts": {
     "backlog_episodes": 112350,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 79291,
-    "prepared_source_episodes": 67693,
+    "manifest_upload_ready_episodes": 13,
+    "uploaded_episodes": 79293,
+    "prepared_source_episodes": 67696,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 39,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53904,
     "whisper_review_pending_sources": 37565,
-    "upload_pending_checkpoints": 32,
-    "subtitle_followup_sources": 50102,
-    "subtitle_followup_pending_sources": 50102
+    "upload_pending_checkpoints": 31,
+    "subtitle_followup_sources": 50105,
+    "subtitle_followup_pending_sources": 50105
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:04:21Z",
+      "databaseId": 41863867687,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:03:56Z",
+      "databaseId": 41863807852,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:03:26Z",
+      "databaseId": 41863737931,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:01:52Z",
+      "databaseId": 41863521330,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T15:58:45Z",
@@ -143,38 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-04T15:45:27Z",
       "databaseId": 41861043482,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T15:43:24Z",
-      "databaseId": 41860686374,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T15:42:27Z",
-      "databaseId": 41860525586,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T15:42:24Z",
-      "databaseId": 41860514830,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T15:41:34Z",
-      "databaseId": 41860373417,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
@@ -370875,6 +370875,16 @@
         "episode_id": 168071,
         "display_name": "Onder Vuur S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30789271
+      },
+      {
+        "episode_id": 168070,
+        "display_name": "Onder Vuur S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30789319
+      },
+      {
+        "episode_id": 139282,
+        "display_name": "Smršť S01E08 - 8. díl CZ Titulky",
+        "video_id": 30789365
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -741467,6 +741477,16 @@
         "episode_id": 168071,
         "display_name": "Onder Vuur S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30789271
+      },
+      {
+        "episode_id": 168070,
+        "display_name": "Onder Vuur S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30789319
+      },
+      {
+        "episode_id": 139282,
+        "display_name": "Smršť S01E08 - 8. díl CZ Titulky",
+        "video_id": 30789365
       }
     ],
     "prepared_not_upload_ready": [
@@ -742628,8 +742648,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 19,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -742639,6 +742658,6 @@
     "whisper_failed": 1557
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50102
+    "needs_subtitle_setup_after_prehrajto_processing": 50105
   }
 }
