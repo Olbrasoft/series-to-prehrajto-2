@@ -2,29 +2,37 @@
   "counts": {
     "backlog_episodes": 112250,
     "manifest_upload_ready_episodes": 26,
-    "uploaded_episodes": 79377,
+    "uploaded_episodes": 79378,
     "prepared_source_episodes": 67811,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 38,
-    "language_whisper_attempted_sources": 22,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37556,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 33,
     "subtitle_followup_sources": 50158,
     "subtitle_followup_pending_sources": 50158
   },
   "workflow_runs": [
     {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T21:25:53Z",
+      "databaseId": 41916020050,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-04T21:24:57Z",
       "databaseId": 41915875735,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +44,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T21:23:09Z",
       "databaseId": 41915596462,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -148,11 +156,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T21:15:31Z",
       "databaseId": 41914385256,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T21:13:09Z",
-      "databaseId": 41914009821,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -194815,6 +194815,11 @@
         "episode_id": 146933,
         "display_name": "Vraždy ve Fall River S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30794282
+      },
+      {
+        "episode_id": 153457,
+        "display_name": "Asia S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30794325
       },
       {
         "episode_id": 114182,
@@ -565839,6 +565844,11 @@
         "video_id": 30794282
       },
       {
+        "episode_id": 153457,
+        "display_name": "Asia S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30794325
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -743488,8 +743498,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 21,
-    "disabled": 16,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
