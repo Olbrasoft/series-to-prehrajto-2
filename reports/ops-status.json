@@ -1,38 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 112787,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 78911,
-    "prepared_source_episodes": 67455,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 78912,
+    "prepared_source_episodes": 67453,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 50,
+    "language_whisper_attempted_sources": 50,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53940,
-    "whisper_review_pending_sources": 37778,
-    "upload_pending_checkpoints": 29,
-    "subtitle_followup_sources": 49842,
-    "subtitle_followup_pending_sources": 49842
+    "whisper_review_sources": 53937,
+    "whisper_review_pending_sources": 37765,
+    "upload_pending_checkpoints": 30,
+    "subtitle_followup_sources": 49843,
+    "subtitle_followup_pending_sources": 49843
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-03T23:56:26Z",
-      "databaseId": 41743034263,
+      "createdAt": "2026-11-04T00:02:26Z",
+      "databaseId": 41743788748,
       "headBranch": "main",
       "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T23:59:23Z",
+      "databaseId": 41743394617,
+      "headBranch": "main",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-03T23:59:23Z",
+      "databaseId": 41743393354,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-03T23:59:20Z",
+      "databaseId": 41743387498,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T23:59:18Z",
+      "databaseId": 41743383723,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-03T23:59:17Z",
+      "databaseId": 41743382318,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-03T23:56:26Z",
+      "databaseId": 41743034263,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-03T23:56:23Z",
       "databaseId": 41743026528,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +88,7 @@
       "createdAt": "2026-11-03T23:52:43Z",
       "databaseId": 41742561957,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -127,54 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-03T23:46:56Z",
       "databaseId": 41741829841,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-03T23:44:00Z",
-      "databaseId": 41741453630,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T23:42:34Z",
-      "databaseId": 41741272857,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T23:42:34Z",
-      "databaseId": 41741272741,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T23:42:34Z",
-      "databaseId": 41741272234,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-03T23:42:30Z",
-      "databaseId": 41741265128,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-03T23:42:29Z",
-      "databaseId": 41741262659,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
@@ -193680,6 +193680,11 @@
         "episode_id": 132489,
         "display_name": "Na pomezí záhad S02E09 - 9. epizoda CZ Dabing",
         "video_id": 30775307
+      },
+      {
+        "episode_id": 132488,
+        "display_name": "Na pomezí záhad S02E08 - 8. epizoda CZ Dabing",
+        "video_id": 30775456
       },
       {
         "episode_id": 114182,
@@ -562374,6 +562379,11 @@
         "video_id": 30775307
       },
       {
+        "episode_id": 132488,
+        "display_name": "Na pomezí záhad S02E08 - 8. epizoda CZ Dabing",
+        "video_id": 30775456
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -738828,16 +738838,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 49,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36161,
-    "whisper_confirmed_cz": 3627,
-    "whisper_non_cz_needs_subtitles": 12535,
+    "needs_whisper": 36148,
+    "whisper_confirmed_cz": 3634,
+    "whisper_non_cz_needs_subtitles": 12538,
     "whisper_failed": 1617
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49842
+    "needs_subtitle_setup_after_prehrajto_processing": 49843
   }
 }
