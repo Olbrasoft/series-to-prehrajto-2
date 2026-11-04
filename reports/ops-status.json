@@ -2,8 +2,8 @@
   "counts": {
     "backlog_episodes": 112350,
     "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 79316,
-    "prepared_source_episodes": 67704,
+    "uploaded_episodes": 79317,
+    "prepared_source_episodes": 67703,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,17 +14,25 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53904,
     "whisper_review_pending_sources": 37564,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50115,
     "subtitle_followup_pending_sources": 50115
   },
   "workflow_runs": [
     {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T16:58:27Z",
+      "databaseId": 41872875981,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-04T16:57:49Z",
       "databaseId": 41872771138,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,19 +52,19 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T16:56:58Z",
       "databaseId": 41872630563,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T16:54:59Z",
       "databaseId": 41872294956,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +112,7 @@
       "createdAt": "2026-11-04T16:51:58Z",
       "databaseId": 41871784076,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T16:42:23Z",
-      "databaseId": 41870079436,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -371000,6 +371000,11 @@
         "episode_id": 153890,
         "display_name": "Wireless S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30789990
+      },
+      {
+        "episode_id": 136650,
+        "display_name": "Medalist S01E08 - Západní mocnosti (první část) CZ Titulky",
+        "video_id": 30790020
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -741717,6 +741722,11 @@
         "episode_id": 153890,
         "display_name": "Wireless S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30789990
+      },
+      {
+        "episode_id": 136650,
+        "display_name": "Medalist S01E08 - Západní mocnosti (první část) CZ Titulky",
+        "video_id": 30790020
       }
     ],
     "prepared_not_upload_ready": [
