@@ -1,38 +1,70 @@
 {
   "counts": {
     "backlog_episodes": 112406,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 79240,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 79241,
     "prepared_source_episodes": 67657,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 48,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 54,
+    "language_whisper_attempted_sources": 48,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53901,
-    "whisper_review_pending_sources": 37575,
-    "upload_pending_checkpoints": 32,
-    "subtitle_followup_sources": 50069,
-    "subtitle_followup_pending_sources": 50069
+    "whisper_review_sources": 53900,
+    "whisper_review_pending_sources": 37568,
+    "upload_pending_checkpoints": 31,
+    "subtitle_followup_sources": 50071,
+    "subtitle_followup_pending_sources": 50071
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-04T13:53:11Z",
-      "databaseId": 41842194524,
+      "createdAt": "2026-11-04T13:57:01Z",
+      "databaseId": 41842782003,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T13:56:16Z",
+      "databaseId": 41842670472,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T13:56:16Z",
+      "databaseId": 41842669942,
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T13:56:11Z",
+      "databaseId": 41842656496,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T13:53:11Z",
+      "databaseId": 41842194524,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-04T13:53:10Z",
       "databaseId": 41842191119,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -40,7 +72,7 @@
       "createdAt": "2026-11-04T13:53:05Z",
       "databaseId": 41842178307,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -56,7 +88,7 @@
       "createdAt": "2026-11-04T13:52:30Z",
       "databaseId": 41842090757,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -64,15 +96,15 @@
       "createdAt": "2026-11-04T13:52:30Z",
       "databaseId": 41842090181,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T13:52:00Z",
       "databaseId": 41842013965,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -108,11 +140,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T13:45:04Z",
       "databaseId": 41840948869,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T13:42:27Z",
-      "databaseId": 41840551995,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T13:42:22Z",
-      "databaseId": 41840538965,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T13:41:42Z",
-      "databaseId": 41840438334,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T13:40:31Z",
-      "databaseId": 41840257998,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -370620,6 +370620,11 @@
         "episode_id": 136651,
         "display_name": "Medalist S01E10 - Vytí na měsíc CZ Titulky",
         "video_id": 30787050
+      },
+      {
+        "episode_id": 61971,
+        "display_name": "Bang Bang Baby S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30787114
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -740957,6 +740962,11 @@
         "episode_id": 136651,
         "display_name": "Medalist S01E10 - Vytí na měsíc CZ Titulky",
         "video_id": 30787050
+      },
+      {
+        "episode_id": 61971,
+        "display_name": "Bang Bang Baby S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30787114
       }
     ],
     "prepared_not_upload_ready": [
@@ -742119,16 +742129,16 @@
   "language_verdicts": {},
   "language_whisper_statuses": {
     "disabled": 6,
-    "ok": 41,
+    "ok": 47,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35994,
-    "whisper_confirmed_cz": 3659,
-    "whisper_non_cz_needs_subtitles": 12667,
-    "whisper_failed": 1581
+    "needs_whisper": 35988,
+    "whisper_confirmed_cz": 3661,
+    "whisper_non_cz_needs_subtitles": 12671,
+    "whisper_failed": 1580
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50069
+    "needs_subtitle_setup_after_prehrajto_processing": 50071
   }
 }
