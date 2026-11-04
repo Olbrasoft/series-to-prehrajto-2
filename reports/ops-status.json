@@ -2,37 +2,93 @@
   "counts": {
     "backlog_episodes": 112478,
     "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 79159,
+    "uploaded_episodes": 79165,
     "prepared_source_episodes": 67623,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53904,
     "whisper_review_pending_sources": 37620,
-    "upload_pending_checkpoints": 34,
+    "upload_pending_checkpoints": 30,
     "subtitle_followup_sources": 50012,
     "subtitle_followup_pending_sources": 50012
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-04T10:02:12Z",
-      "databaseId": 41811472823,
+      "createdAt": "2026-11-04T10:07:23Z",
+      "databaseId": 41812058370,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "audit-language"
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T10:06:02Z",
+      "databaseId": 41811905026,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T10:05:42Z",
+      "databaseId": 41811866688,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T10:05:35Z",
+      "databaseId": 41811854114,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T10:04:54Z",
+      "databaseId": 41811773753,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T10:03:37Z",
+      "databaseId": 41811624949,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T10:03:35Z",
+      "databaseId": 41811620587,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T10:02:12Z",
+      "databaseId": 41811472823,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "failure",
       "createdAt": "2026-11-04T10:00:23Z",
       "databaseId": 41811282014,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T09:54:22Z",
-      "databaseId": 41810646212,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T09:52:37Z",
-      "databaseId": 41810456697,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T09:52:34Z",
-      "databaseId": 41810450439,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T09:52:14Z",
-      "databaseId": 41810416487,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T09:52:10Z",
-      "databaseId": 41810409273,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T09:51:43Z",
-      "databaseId": 41810357462,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T09:51:37Z",
-      "databaseId": 41810346888,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -194307,6 +194307,21 @@
         "video_id": 30783443
       },
       {
+        "episode_id": 156320,
+        "display_name": "Miraculous Brothers S01E15 - 15. epizoda CZ Titulky",
+        "video_id": 30783485
+      },
+      {
+        "episode_id": 129093,
+        "display_name": "Mammals S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30783498
+      },
+      {
+        "episode_id": 153888,
+        "display_name": "Wireless S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30783553
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -370215,6 +370230,21 @@
         "episode_id": 153887,
         "display_name": "Wireless S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30783370
+      },
+      {
+        "episode_id": 129094,
+        "display_name": "Mammals S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30783457
+      },
+      {
+        "episode_id": 156198,
+        "display_name": "Velká sázka S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 30783542
+      },
+      {
+        "episode_id": 156319,
+        "display_name": "Miraculous Brothers S01E14 - 14. epizoda CZ Titulky",
+        "video_id": 30783426
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -564239,6 +564269,21 @@
         "video_id": 30783443
       },
       {
+        "episode_id": 156320,
+        "display_name": "Miraculous Brothers S01E15 - 15. epizoda CZ Titulky",
+        "video_id": 30783485
+      },
+      {
+        "episode_id": 129093,
+        "display_name": "Mammals S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30783498
+      },
+      {
+        "episode_id": 153888,
+        "display_name": "Wireless S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30783553
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -740147,6 +740192,21 @@
         "episode_id": 153887,
         "display_name": "Wireless S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30783370
+      },
+      {
+        "episode_id": 129094,
+        "display_name": "Mammals S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30783457
+      },
+      {
+        "episode_id": 156198,
+        "display_name": "Velká sázka S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 30783542
+      },
+      {
+        "episode_id": 156319,
+        "display_name": "Miraculous Brothers S01E14 - 14. epizoda CZ Titulky",
+        "video_id": 30783426
       }
     ],
     "prepared_not_upload_ready": [
@@ -741308,7 +741368,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
