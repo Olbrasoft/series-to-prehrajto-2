@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 112616,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 79017,
-    "prepared_source_episodes": 67510,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 79018,
+    "prepared_source_episodes": 67507,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -14,11 +14,83 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53920,
     "whisper_review_pending_sources": 37698,
-    "upload_pending_checkpoints": 31,
+    "upload_pending_checkpoints": 30,
     "subtitle_followup_sources": 49904,
     "subtitle_followup_pending_sources": 49904
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T03:50:02Z",
+      "databaseId": 41769519085,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T03:49:53Z",
+      "databaseId": 41769503889,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T03:49:52Z",
+      "databaseId": 41769502639,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T03:48:47Z",
+      "databaseId": 41769397700,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-04T03:48:47Z",
+      "databaseId": 41769396400,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T03:48:43Z",
+      "databaseId": 41769389915,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T03:45:35Z",
+      "databaseId": 41769076592,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T03:45:32Z",
+      "databaseId": 41769070394,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T03:45:29Z",
+      "databaseId": 41769065660,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-04T03:45:05Z",
@@ -32,7 +104,7 @@
       "createdAt": "2026-11-04T03:43:42Z",
       "databaseId": 41768887704,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,15 +120,15 @@
       "createdAt": "2026-11-04T03:42:55Z",
       "databaseId": 41768811940,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T03:42:12Z",
       "databaseId": 41768742608,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,11 +156,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T03:37:58Z",
       "databaseId": 41768326288,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T03:37:20Z",
-      "databaseId": 41768260859,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T03:35:37Z",
-      "databaseId": 41768081440,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:35:13Z",
-      "databaseId": 41768038082,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T03:35:04Z",
-      "databaseId": 41768021726,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T03:33:51Z",
-      "databaseId": 41767894580,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T03:33:46Z",
-      "databaseId": 41767885992,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T03:33:45Z",
-      "databaseId": 41767883762,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:33:34Z",
-      "databaseId": 41767865066,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T03:33:20Z",
-      "databaseId": 41767840821,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -369505,6 +369505,11 @@
         "episode_id": 137299,
         "display_name": "Dobré ráno, upírko S01E03 - Zrcadlo, zrcadlo CZ Dabing",
         "video_id": 30778536
+      },
+      {
+        "episode_id": 138338,
+        "display_name": "Žár v srdci S01E24 - 24. epizoda CZ Titulky",
+        "video_id": 30778549
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -738727,6 +738732,11 @@
         "episode_id": 137299,
         "display_name": "Dobré ráno, upírko S01E03 - Zrcadlo, zrcadlo CZ Dabing",
         "video_id": 30778536
+      },
+      {
+        "episode_id": 138338,
+        "display_name": "Žár v srdci S01E24 - 24. epizoda CZ Titulky",
+        "video_id": 30778549
       }
     ],
     "prepared_not_upload_ready": [
