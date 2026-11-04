@@ -1,30 +1,70 @@
 {
   "counts": {
     "backlog_episodes": 112542,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 79116,
-    "prepared_source_episodes": 67564,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 79117,
+    "prepared_source_episodes": 67568,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 41,
+    "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 23,
+    "language_whisper_attempted_sources": 22,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53912,
     "whisper_review_pending_sources": 37663,
     "upload_pending_checkpoints": 30,
-    "subtitle_followup_sources": 49973,
-    "subtitle_followup_pending_sources": 49973
+    "subtitle_followup_sources": 49975,
+    "subtitle_followup_pending_sources": 49975
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T07:47:09Z",
+      "databaseId": 41794671418,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T07:47:01Z",
+      "databaseId": 41794656797,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T07:44:20Z",
+      "databaseId": 41794348572,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T07:44:17Z",
+      "databaseId": 41794342961,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T07:44:15Z",
+      "databaseId": 41794338086,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T07:43:13Z",
       "databaseId": 41794220838,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +76,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T07:43:05Z",
       "databaseId": 41794207569,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,11 +108,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T07:41:47Z",
       "databaseId": 41794056626,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -96,7 +136,7 @@
       "createdAt": "2026-11-04T07:37:56Z",
       "databaseId": 41793620673,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T07:35:51Z",
-      "databaseId": 41793378588,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T07:35:15Z",
-      "databaseId": 41793304433,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T07:33:44Z",
-      "databaseId": 41793124595,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T07:33:32Z",
-      "databaseId": 41793100929,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T07:33:31Z",
-      "databaseId": 41793098184,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -370000,6 +370000,11 @@
         "episode_id": 133478,
         "display_name": "Koodinimi: Annika S01E05 - 5. epizoda CZ Dabing",
         "video_id": 30781653
+      },
+      {
+        "episode_id": 166667,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30781731
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -739717,6 +739722,11 @@
         "episode_id": 133478,
         "display_name": "Koodinimi: Annika S01E05 - 5. epizoda CZ Dabing",
         "video_id": 30781653
+      },
+      {
+        "episode_id": 166667,
+        "display_name": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30781731
       }
     ],
     "prepared_not_upload_ready": [
@@ -740878,7 +740888,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 21,
+    "disabled": 1,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -740888,6 +740899,6 @@
     "whisper_failed": 1617
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 49973
+    "needs_subtitle_setup_after_prehrajto_processing": 49975
   }
 }
