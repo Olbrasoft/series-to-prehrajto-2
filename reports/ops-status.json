@@ -1,24 +1,72 @@
 {
   "counts": {
     "backlog_episodes": 112478,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 79184,
-    "prepared_source_episodes": 67631,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 79186,
+    "prepared_source_episodes": 67634,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 50,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53902,
-    "whisper_review_pending_sources": 37612,
-    "upload_pending_checkpoints": 33,
-    "subtitle_followup_sources": 50030,
-    "subtitle_followup_pending_sources": 50030
+    "whisper_review_sources": 53901,
+    "whisper_review_pending_sources": 37611,
+    "upload_pending_checkpoints": 31,
+    "subtitle_followup_sources": 50032,
+    "subtitle_followup_pending_sources": 50032
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:05:27Z",
+      "databaseId": 41818521503,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:05:11Z",
+      "databaseId": 41818491830,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:05:06Z",
+      "databaseId": 41818482049,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:05:05Z",
+      "databaseId": 41818480228,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T11:04:35Z",
+      "databaseId": 41818421846,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T11:03:47Z",
+      "databaseId": 41818330290,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T11:03:10Z",
@@ -32,15 +80,15 @@
       "createdAt": "2026-11-04T11:02:18Z",
       "databaseId": 41818172133,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T11:00:23Z",
       "databaseId": 41817971879,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,11 +148,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T10:53:11Z",
       "databaseId": 41817158667,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T10:51:42Z",
-      "databaseId": 41816988871,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T10:50:33Z",
-      "databaseId": 41816860013,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T10:50:32Z",
-      "databaseId": 41816858411,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T10:50:28Z",
-      "databaseId": 41816852000,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T10:50:17Z",
-      "databaseId": 41816832304,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T10:50:16Z",
-      "databaseId": 41816830180,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -194377,6 +194377,11 @@
         "video_id": 30784141
       },
       {
+        "episode_id": 156321,
+        "display_name": "Miraculous Brothers S01E16 - 16. epizoda CZ Titulky",
+        "video_id": 30784204
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -370340,6 +370345,11 @@
         "episode_id": 196591,
         "display_name": "Velká šou žraločátka S01E05 - 5. epizoda CZ Dabing",
         "video_id": 30784152
+      },
+      {
+        "episode_id": 158091,
+        "display_name": "The Matchmakers S01E13 - 13. epizoda CZ Titulky",
+        "video_id": 30784215
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -564434,6 +564444,11 @@
         "video_id": 30784141
       },
       {
+        "episode_id": 156321,
+        "display_name": "Miraculous Brothers S01E16 - 16. epizoda CZ Titulky",
+        "video_id": 30784204
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -740397,6 +740412,11 @@
         "episode_id": 196591,
         "display_name": "Velká šou žraločátka S01E05 - 5. epizoda CZ Dabing",
         "video_id": 30784152
+      },
+      {
+        "episode_id": 158091,
+        "display_name": "The Matchmakers S01E13 - 13. epizoda CZ Titulky",
+        "video_id": 30784215
       }
     ],
     "prepared_not_upload_ready": [
@@ -741558,16 +741578,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 10,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36004,
+    "needs_whisper": 36003,
     "whisper_confirmed_cz": 3656,
     "whisper_non_cz_needs_subtitles": 12634,
     "whisper_failed": 1608
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50030
+    "needs_subtitle_setup_after_prehrajto_processing": 50032
   }
 }
