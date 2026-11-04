@@ -1,30 +1,38 @@
 {
   "counts": {
     "backlog_episodes": 112350,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 79287,
-    "prepared_source_episodes": 67690,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 79288,
+    "prepared_source_episodes": 67684,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 48,
-    "language_whisper_attempted_sources": 41,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53903,
     "whisper_review_pending_sources": 37562,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50100,
     "subtitle_followup_pending_sources": 50100
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T15:47:08Z",
+      "databaseId": 41861336515,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-04T15:45:32Z",
       "databaseId": 41861059210,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +52,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T15:42:27Z",
       "databaseId": 41860525586,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -108,11 +116,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T15:36:37Z",
       "databaseId": 41859532182,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -120,7 +128,7 @@
       "createdAt": "2026-11-04T15:33:57Z",
       "databaseId": 41859063881,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-descriptions"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T15:31:50Z",
-      "databaseId": 41858693711,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -370855,6 +370855,11 @@
         "episode_id": 101986,
         "display_name": "Elisa z Rivombrosy S02E09 - 9. epizoda CZ Dabing",
         "video_id": 30789116
+      },
+      {
+        "episode_id": 139278,
+        "display_name": "Smršť S01E04 - 4. díl CZ Titulky",
+        "video_id": 30789164
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -741427,6 +741432,11 @@
         "episode_id": 101986,
         "display_name": "Elisa z Rivombrosy S02E09 - 9. epizoda CZ Dabing",
         "video_id": 30789116
+      },
+      {
+        "episode_id": 139278,
+        "display_name": "Smršť S01E04 - 4. díl CZ Titulky",
+        "video_id": 30789164
       }
     ],
     "prepared_not_upload_ready": [
@@ -742588,8 +742598,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 40,
-    "disabled": 7,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
