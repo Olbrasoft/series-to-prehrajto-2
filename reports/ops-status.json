@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 112350,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 79309,
-    "prepared_source_episodes": 67708,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 79314,
+    "prepared_source_episodes": 67702,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53904,
     "whisper_review_pending_sources": 37564,
-    "upload_pending_checkpoints": 34,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50114,
     "subtitle_followup_pending_sources": 50114
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T16:50:26Z",
+      "databaseId": 41871523631,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:49:47Z",
+      "databaseId": 41871410772,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:48:40Z",
+      "databaseId": 41871218712,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-04T16:43:30Z",
       "databaseId": 41870283770,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,19 +68,19 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T16:42:23Z",
       "databaseId": 41870079436,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T16:42:06Z",
       "databaseId": 41870027531,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -72,7 +96,7 @@
       "createdAt": "2026-11-04T16:38:52Z",
       "databaseId": 41869437337,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -140,11 +164,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T16:33:25Z",
       "databaseId": 41868439476,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T16:33:11Z",
-      "databaseId": 41868397829,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T16:32:23Z",
-      "databaseId": 41868253817,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T16:32:11Z",
-      "databaseId": 41868217994,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -194677,6 +194677,26 @@
         "video_id": 30789842
       },
       {
+        "episode_id": 136648,
+        "display_name": "Medalist S01E06 - Noc první soutěže CZ Titulky",
+        "video_id": 30789875
+      },
+      {
+        "episode_id": 156201,
+        "display_name": "Velká sázka S02E05 - 5. epizoda CZ Titulky",
+        "video_id": 30789849
+      },
+      {
+        "episode_id": 145840,
+        "display_name": "Sny o Manhattanu S02E04 - Protančená noc CZ Dabing",
+        "video_id": 30789902
+      },
+      {
+        "episode_id": 145833,
+        "display_name": "Sny o Manhattanu S01E03 - Perfektní pár CZ Dabing",
+        "video_id": 30789925
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -370965,6 +370985,11 @@
         "episode_id": 101999,
         "display_name": "Elisa z Rivombrosy S02E13 - 13. epizoda CZ Dabing",
         "video_id": 30789820
+      },
+      {
+        "episode_id": 196618,
+        "display_name": "Velká šou žraločátka S02E26 - 26. epizoda CZ Dabing",
+        "video_id": 30789866
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -565359,6 +565384,26 @@
         "video_id": 30789842
       },
       {
+        "episode_id": 136648,
+        "display_name": "Medalist S01E06 - Noc první soutěže CZ Titulky",
+        "video_id": 30789875
+      },
+      {
+        "episode_id": 156201,
+        "display_name": "Velká sázka S02E05 - 5. epizoda CZ Titulky",
+        "video_id": 30789849
+      },
+      {
+        "episode_id": 145840,
+        "display_name": "Sny o Manhattanu S02E04 - Protančená noc CZ Dabing",
+        "video_id": 30789902
+      },
+      {
+        "episode_id": 145833,
+        "display_name": "Sny o Manhattanu S01E03 - Perfektní pár CZ Dabing",
+        "video_id": 30789925
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -741647,6 +741692,11 @@
         "episode_id": 101999,
         "display_name": "Elisa z Rivombrosy S02E13 - 13. epizoda CZ Dabing",
         "video_id": 30789820
+      },
+      {
+        "episode_id": 196618,
+        "display_name": "Velká šou žraločátka S02E26 - 26. epizoda CZ Dabing",
+        "video_id": 30789866
       }
     ],
     "prepared_not_upload_ready": [
