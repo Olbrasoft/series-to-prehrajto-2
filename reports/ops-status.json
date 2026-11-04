@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112350,
     "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 79301,
+    "uploaded_episodes": 79304,
     "prepared_source_episodes": 67702,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,67 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37568,
-    "upload_pending_checkpoints": 33,
+    "upload_pending_checkpoints": 31,
     "subtitle_followup_sources": 50109,
     "subtitle_followup_pending_sources": 50109
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:20:39Z",
+      "databaseId": 41866270200,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:19:42Z",
+      "databaseId": 41866104129,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:18:46Z",
+      "databaseId": 41865948750,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:18:35Z",
+      "databaseId": 41865919567,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:18:24Z",
+      "databaseId": 41865886232,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:17:17Z",
+      "databaseId": 41865701921,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T16:17:03Z",
+      "databaseId": 41865664389,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-04T16:16:08Z",
@@ -84,11 +140,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "skipped",
       "createdAt": "2026-11-04T16:12:57Z",
       "databaseId": 41865038950,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "prepare-subtitles"
     },
     {
@@ -96,7 +152,7 @@
       "createdAt": "2026-11-04T16:05:51Z",
       "databaseId": 41864076330,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -112,7 +168,7 @@
       "createdAt": "2026-11-04T16:04:49Z",
       "databaseId": 41863930612,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T16:04:21Z",
-      "databaseId": 41863867687,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T16:03:56Z",
-      "databaseId": 41863807852,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T16:03:26Z",
-      "databaseId": 41863737931,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T16:01:52Z",
-      "databaseId": 41863521330,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T15:58:45Z",
-      "databaseId": 41863075704,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T15:58:05Z",
-      "databaseId": 41862983898,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T15:56:12Z",
-      "databaseId": 41862733379,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -194645,6 +194645,21 @@
         "episode_id": 101997,
         "display_name": "Elisa z Rivombrosy S02E08 - 8. epizoda CZ Dabing",
         "video_id": 30789502
+      },
+      {
+        "episode_id": 102005,
+        "display_name": "Elisa z Rivombrosy S02E11 - 11. epizoda CZ Dabing",
+        "video_id": 30789537
+      },
+      {
+        "episode_id": 171408,
+        "display_name": "Na vysoké noze: Jak afroamerická kuchyně proměnila Ameriku S02E03 - Vzdor CZ Titulky",
+        "video_id": 30789509
+      },
+      {
+        "episode_id": 139277,
+        "display_name": "Smršť S01E03 - 3. díl CZ Titulky",
+        "video_id": 30789557
       },
       {
         "episode_id": 114182,
@@ -565287,6 +565302,21 @@
         "episode_id": 101997,
         "display_name": "Elisa z Rivombrosy S02E08 - 8. epizoda CZ Dabing",
         "video_id": 30789502
+      },
+      {
+        "episode_id": 102005,
+        "display_name": "Elisa z Rivombrosy S02E11 - 11. epizoda CZ Dabing",
+        "video_id": 30789537
+      },
+      {
+        "episode_id": 171408,
+        "display_name": "Na vysoké noze: Jak afroamerická kuchyně proměnila Ameriku S02E03 - Vzdor CZ Titulky",
+        "video_id": 30789509
+      },
+      {
+        "episode_id": 139277,
+        "display_name": "Smršť S01E03 - 3. díl CZ Titulky",
+        "video_id": 30789557
       },
       {
         "episode_id": 114182,
