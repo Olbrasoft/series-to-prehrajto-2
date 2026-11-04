@@ -1,17 +1,17 @@
 {
   "counts": {
     "backlog_episodes": 112250,
-    "manifest_upload_ready_episodes": 19,
-    "uploaded_episodes": 79396,
-    "prepared_source_episodes": 67822,
+    "manifest_upload_ready_episodes": 15,
+    "uploaded_episodes": 79397,
+    "prepared_source_episodes": 67823,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 52,
-    "language_whisper_attempted_sources": 42,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37556,
     "upload_pending_checkpoints": 34,
@@ -21,26 +21,50 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T22:08:58Z",
+      "databaseId": 41922649797,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T22:08:54Z",
+      "databaseId": 41922638093,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T22:07:54Z",
+      "databaseId": 41922485405,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-04T22:04:46Z",
       "databaseId": 41921994866,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T22:04:46Z",
       "databaseId": 41921993542,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T22:04:37Z",
       "databaseId": 41921969647,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +100,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T22:02:52Z",
       "databaseId": 41921700510,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -88,7 +112,7 @@
       "createdAt": "2026-11-04T22:01:50Z",
       "databaseId": 41921538077,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -124,11 +148,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-04T21:55:39Z",
       "databaseId": 41920600496,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T21:53:24Z",
-      "databaseId": 41920252600,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T21:52:51Z",
-      "databaseId": 41920168659,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T21:52:30Z",
-      "databaseId": 41920115608,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -194870,6 +194870,11 @@
         "episode_id": 171404,
         "display_name": "Na vysoké noze: Jak afroamerická kuchyně proměnila Ameriku S01E03 - Naši šéfkuchaři zakladatelé CZ Titulky",
         "video_id": 30794976
+      },
+      {
+        "episode_id": 99445,
+        "display_name": "Savannah S01E09 - 9. epizoda CZ Dabing",
+        "video_id": 30795024
       },
       {
         "episode_id": 114182,
@@ -565989,6 +565994,11 @@
         "video_id": 30794976
       },
       {
+        "episode_id": 99445,
+        "display_name": "Savannah S01E09 - 9. epizoda CZ Dabing",
+        "video_id": 30795024
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -743678,15 +743688,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 10,
-    "ok": 41,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36042,
+    "needs_whisper": 36043,
     "whisper_confirmed_cz": 3670,
     "whisper_non_cz_needs_subtitles": 12680,
-    "whisper_failed": 1514
+    "whisper_failed": 1513
   },
   "subtitle_followup_statuses": {
     "needs_subtitle_setup_after_prehrajto_processing": 50163
