@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 112693,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 78962,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 78969,
     "prepared_source_episodes": 67491,
     "description_series": 60,
     "description_episodes": 753,
@@ -20,27 +20,107 @@
   },
   "workflow_runs": [
     {
-      "conclusion": "",
-      "createdAt": "2026-11-04T02:00:16Z",
-      "databaseId": 41757831447,
+      "conclusion": "skipped",
+      "createdAt": "2026-11-04T02:07:13Z",
+      "databaseId": 41758621995,
       "headBranch": "main",
-      "status": "pending",
-      "workflowName": "ops-watchdog"
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-04T01:58:37Z",
-      "databaseId": 41757656846,
+      "createdAt": "2026-11-04T02:07:07Z",
+      "databaseId": 41758610789,
       "headBranch": "main",
       "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:06:37Z",
+      "databaseId": 41758556783,
+      "headBranch": "main",
+      "status": "pending",
       "workflowName": "update-descriptions"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-04T02:06:17Z",
+      "databaseId": 41758522155,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:06:15Z",
+      "databaseId": 41758518671,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:04:14Z",
+      "databaseId": 41758289675,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:04:00Z",
+      "databaseId": 41758264593,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:01:37Z",
+      "databaseId": 41757998302,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:00:55Z",
+      "databaseId": 41757914123,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:00:53Z",
+      "databaseId": 41757909029,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-04T02:00:16Z",
+      "databaseId": 41757831447,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-04T01:58:37Z",
+      "databaseId": 41757656846,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-04T01:56:26Z",
       "databaseId": 41757424405,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +132,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-04T01:56:20Z",
       "databaseId": 41757412432,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -72,7 +152,7 @@
       "createdAt": "2026-11-04T01:54:45Z",
       "databaseId": 41757240440,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T01:52:49Z",
-      "databaseId": 41757028481,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-04T01:52:39Z",
-      "databaseId": 41757010681,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T01:52:35Z",
-      "databaseId": 41757004392,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-04T01:51:43Z",
-      "databaseId": 41756910389,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-04T01:50:21Z",
-      "databaseId": 41756761780,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T01:50:05Z",
-      "databaseId": 41756729111,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T01:48:53Z",
-      "databaseId": 41756598229,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T01:48:38Z",
-      "databaseId": 41756571456,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T01:45:26Z",
-      "databaseId": 41756214345,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-04T01:45:23Z",
-      "databaseId": 41756207189,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -193822,6 +193822,21 @@
         "video_id": 30777168
       },
       {
+        "episode_id": 132500,
+        "display_name": "Na pomezí záhad S02E22 - 22. epizoda CZ Dabing",
+        "video_id": 30777241
+      },
+      {
+        "episode_id": 114772,
+        "display_name": "Run the Burbs S03E05 - 5. epizoda CZ Titulky",
+        "video_id": 30777256
+      },
+      {
+        "episode_id": 114776,
+        "display_name": "Run the Burbs S03E09 - 9. epizoda CZ Titulky",
+        "video_id": 30777290
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -369230,6 +369245,26 @@
         "episode_id": 102503,
         "display_name": "Kapitán Kloss S01E12 - Zrada CZ Dabing",
         "video_id": 30777112
+      },
+      {
+        "episode_id": 153490,
+        "display_name": "Návštěva S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30777233
+      },
+      {
+        "episode_id": 132499,
+        "display_name": "Na pomezí záhad S02E21 - 21. epizoda CZ Dabing",
+        "video_id": 30777252
+      },
+      {
+        "episode_id": 153491,
+        "display_name": "Návštěva S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30777278
+      },
+      {
+        "episode_id": 143286,
+        "display_name": "Děti orbitalu S01E05 - Konec příběhu CZ Titulky",
+        "video_id": 30777282
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -562769,6 +562804,21 @@
         "video_id": 30777168
       },
       {
+        "episode_id": 132500,
+        "display_name": "Na pomezí záhad S02E22 - 22. epizoda CZ Dabing",
+        "video_id": 30777241
+      },
+      {
+        "episode_id": 114772,
+        "display_name": "Run the Burbs S03E05 - 5. epizoda CZ Titulky",
+        "video_id": 30777256
+      },
+      {
+        "episode_id": 114776,
+        "display_name": "Run the Burbs S03E09 - 9. epizoda CZ Titulky",
+        "video_id": 30777290
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -738177,6 +738227,26 @@
         "episode_id": 102503,
         "display_name": "Kapitán Kloss S01E12 - Zrada CZ Dabing",
         "video_id": 30777112
+      },
+      {
+        "episode_id": 153490,
+        "display_name": "Návštěva S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30777233
+      },
+      {
+        "episode_id": 132499,
+        "display_name": "Na pomezí záhad S02E21 - 21. epizoda CZ Dabing",
+        "video_id": 30777252
+      },
+      {
+        "episode_id": 153491,
+        "display_name": "Návštěva S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30777278
+      },
+      {
+        "episode_id": 143286,
+        "display_name": "Děti orbitalu S01E05 - Konec příběhu CZ Titulky",
+        "video_id": 30777282
       }
     ],
     "prepared_not_upload_ready": [
