@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112127,
     "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 79527,
+    "uploaded_episodes": 79529,
     "prepared_source_episodes": 67982,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,19 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37541,
-    "upload_pending_checkpoints": 34,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 50236,
     "subtitle_followup_pending_sources": 50236
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T04:41:21Z",
+      "databaseId": 41969347041,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-05T04:40:10Z",
@@ -40,7 +48,7 @@
       "createdAt": "2026-11-05T04:38:40Z",
       "databaseId": 41969077985,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -56,7 +64,7 @@
       "createdAt": "2026-11-05T04:38:31Z",
       "databaseId": 41969064051,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -64,7 +72,7 @@
       "createdAt": "2026-11-05T04:38:28Z",
       "databaseId": 41969059165,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -132,11 +140,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T04:33:28Z",
       "databaseId": 41968535717,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -156,11 +164,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T04:32:30Z",
       "databaseId": 41968437409,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T04:31:17Z",
-      "databaseId": 41968308114,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -195197,6 +195197,11 @@
         "video_id": 30803998
       },
       {
+        "episode_id": 154505,
+        "display_name": "Mapp and Lucia S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30804083
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372055,6 +372060,11 @@
         "episode_id": 148919,
         "display_name": "Tune In to the Midnight Heart S01E03 - 3. epizoda CZ Dabing",
         "video_id": 30804051
+      },
+      {
+        "episode_id": 154506,
+        "display_name": "Mapp and Lucia S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30804092
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -566969,6 +566979,11 @@
         "video_id": 30803998
       },
       {
+        "episode_id": 154505,
+        "display_name": "Mapp and Lucia S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30804083
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -743827,6 +743842,11 @@
         "episode_id": 148919,
         "display_name": "Tune In to the Midnight Heart S01E03 - 3. epizoda CZ Dabing",
         "video_id": 30804051
+      },
+      {
+        "episode_id": 154506,
+        "display_name": "Mapp and Lucia S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30804092
       }
     ],
     "prepared_not_upload_ready": [
