@@ -1,30 +1,110 @@
 {
   "counts": {
     "backlog_episodes": 112061,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 79603,
-    "prepared_source_episodes": 68041,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 79607,
+    "prepared_source_episodes": 68045,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
-    "language_whisper_attempted_sources": 25,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 49,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53904,
-    "whisper_review_pending_sources": 37533,
-    "upload_pending_checkpoints": 34,
-    "subtitle_followup_sources": 50291,
-    "subtitle_followup_pending_sources": 50291
+    "whisper_review_pending_sources": 37536,
+    "upload_pending_checkpoints": 33,
+    "subtitle_followup_sources": 50293,
+    "subtitle_followup_pending_sources": 50293
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T08:22:14Z",
+      "databaseId": 41993926491,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T08:21:35Z",
+      "databaseId": 41993843474,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T08:20:57Z",
+      "databaseId": 41993763413,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T08:20:46Z",
+      "databaseId": 41993739835,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T08:19:57Z",
+      "databaseId": 41993628621,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T08:19:18Z",
+      "databaseId": 41993546077,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T08:18:50Z",
+      "databaseId": 41993489022,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T08:18:23Z",
+      "databaseId": 41993434229,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T08:18:20Z",
+      "databaseId": 41993428012,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T08:16:33Z",
+      "databaseId": 41993203171,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T08:13:24Z",
       "databaseId": 41992805138,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -40,15 +120,15 @@
       "createdAt": "2026-11-05T08:11:14Z",
       "databaseId": 41992539133,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T08:11:05Z",
       "databaseId": 41992520367,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +148,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T08:10:43Z",
       "databaseId": 41992475405,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,97 +164,17 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T08:10:31Z",
       "databaseId": 41992449916,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
       "conclusion": "success",
       "createdAt": "2026-11-05T08:07:16Z",
       "databaseId": 41992055625,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T08:06:56Z",
-      "databaseId": 41992015048,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T08:06:51Z",
-      "databaseId": 41992005192,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T08:06:51Z",
-      "databaseId": 41992003259,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T08:05:36Z",
-      "databaseId": 41991851166,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T08:05:33Z",
-      "databaseId": 41991843559,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T08:04:46Z",
-      "databaseId": 41991747852,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T08:04:25Z",
-      "databaseId": 41991705785,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T08:04:23Z",
-      "databaseId": 41991701815,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T08:02:07Z",
-      "databaseId": 41991427672,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T08:00:54Z",
-      "databaseId": 41991274404,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
@@ -195387,6 +195387,16 @@
         "video_id": 30810049
       },
       {
+        "episode_id": 157457,
+        "display_name": "G.E.O.: Más allá del límite S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30810136
+      },
+      {
+        "episode_id": 155565,
+        "display_name": "Případ Air Cocaine: Pašeráci v oblacích S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30810272
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372435,6 +372445,16 @@
         "episode_id": 163366,
         "display_name": "The Road to Calvary S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30809358
+      },
+      {
+        "episode_id": 170206,
+        "display_name": "Nic k vidění S01E02 - Jsi pro ostatní inspirací CZ Titulky",
+        "video_id": 30810062
+      },
+      {
+        "episode_id": 30466,
+        "display_name": "Kuma Kuma Kuma Bear S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30810190
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -567539,6 +567559,16 @@
         "video_id": 30810049
       },
       {
+        "episode_id": 157457,
+        "display_name": "G.E.O.: Más allá del límite S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30810136
+      },
+      {
+        "episode_id": 155565,
+        "display_name": "Případ Air Cocaine: Pašeráci v oblacích S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30810272
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -744587,6 +744617,16 @@
         "episode_id": 163366,
         "display_name": "The Road to Calvary S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30809358
+      },
+      {
+        "episode_id": 170206,
+        "display_name": "Nic k vidění S01E02 - Jsi pro ostatní inspirací CZ Titulky",
+        "video_id": 30810062
+      },
+      {
+        "episode_id": 30466,
+        "display_name": "Kuma Kuma Kuma Bear S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30810190
       }
     ],
     "prepared_not_upload_ready": [
@@ -745748,17 +745788,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 2,
-    "ok": 24,
+    "disabled": 9,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36085,
+    "needs_whisper": 36092,
     "whisper_confirmed_cz": 3684,
-    "whisper_non_cz_needs_subtitles": 12687,
-    "whisper_failed": 1448
+    "whisper_non_cz_needs_subtitles": 12684,
+    "whisper_failed": 1444
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50291
+    "needs_subtitle_setup_after_prehrajto_processing": 50293
   }
 }
