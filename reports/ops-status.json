@@ -2,29 +2,85 @@
   "counts": {
     "backlog_episodes": 112170,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 79495,
-    "prepared_source_episodes": 67930,
+    "uploaded_episodes": 79496,
+    "prepared_source_episodes": 67935,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 44,
-    "language_whisper_attempted_sources": 43,
+    "language_audited_sources": 42,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37543,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 34,
     "subtitle_followup_sources": 50216,
     "subtitle_followup_pending_sources": 50216
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T03:04:34Z",
+      "databaseId": 41959273454,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T03:04:12Z",
+      "databaseId": 41959234437,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T03:03:56Z",
+      "databaseId": 41959204955,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T03:02:27Z",
+      "databaseId": 41959042525,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T03:01:48Z",
+      "databaseId": 41958972187,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T03:01:20Z",
+      "databaseId": 41958922413,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T03:01:18Z",
+      "databaseId": 41958917401,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T03:00:34Z",
       "databaseId": 41958830983,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +88,7 @@
       "createdAt": "2026-11-05T03:00:27Z",
       "databaseId": 41958818011,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +124,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T02:59:36Z",
       "databaseId": 41958724720,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,11 +156,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T02:52:54Z",
       "databaseId": 41958033775,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -112,7 +168,7 @@
       "createdAt": "2026-11-05T02:52:34Z",
       "databaseId": 41957999834,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -120,64 +176,8 @@
       "createdAt": "2026-11-05T02:51:49Z",
       "databaseId": 41957919102,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T02:51:29Z",
-      "databaseId": 41957886347,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-05T02:50:24Z",
-      "databaseId": 41957773548,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T02:50:03Z",
-      "databaseId": 41957734555,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T02:47:54Z",
-      "databaseId": 41957513990,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T02:47:04Z",
-      "databaseId": 41957425941,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T02:46:15Z",
-      "databaseId": 41957342272,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T02:46:10Z",
-      "databaseId": 41957334150,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -371895,6 +371895,11 @@
         "episode_id": 158575,
         "display_name": "Chlapáci S01E02 - Libido kaktusu CZ Dabing",
         "video_id": 30801575
+      },
+      {
+        "episode_id": 160078,
+        "display_name": "Hammer and Bolter S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30801723
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -743507,6 +743512,11 @@
         "episode_id": 158575,
         "display_name": "Chlapáci S01E02 - Libido kaktusu CZ Dabing",
         "video_id": 30801575
+      },
+      {
+        "episode_id": 160078,
+        "display_name": "Hammer and Bolter S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30801723
       }
     ],
     "prepared_not_upload_ready": [
@@ -744668,15 +744678,15 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 42,
-    "disabled": 1,
+    "disabled": 2,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36052,
+    "needs_whisper": 36054,
     "whisper_confirmed_cz": 3682,
     "whisper_non_cz_needs_subtitles": 12681,
-    "whisper_failed": 1491
+    "whisper_failed": 1489
   },
   "subtitle_followup_statuses": {
     "needs_subtitle_setup_after_prehrajto_processing": 50216
