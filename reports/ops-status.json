@@ -1,16 +1,16 @@
 {
   "counts": {
     "backlog_episodes": 112001,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 79662,
-    "prepared_source_episodes": 68085,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 79664,
+    "prepared_source_episodes": 68083,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 42,
+    "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 45,
-    "language_whisper_attempted_sources": 45,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37542,
@@ -19,6 +19,46 @@
     "subtitle_followup_pending_sources": 50319
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:00:43Z",
+      "databaseId": 42015406370,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T10:59:33Z",
+      "databaseId": 42015237435,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T10:59:27Z",
+      "databaseId": 42015224335,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T10:57:48Z",
+      "databaseId": 42015009381,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T10:57:45Z",
+      "databaseId": 42015002293,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-05T10:55:54Z",
@@ -40,7 +80,7 @@
       "createdAt": "2026-11-05T10:54:52Z",
       "databaseId": 42014619896,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,19 +100,19 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T10:54:22Z",
       "databaseId": 42014551970,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T10:52:58Z",
       "databaseId": 42014363506,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +124,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T10:52:07Z",
       "databaseId": 42014250920,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T10:45:51Z",
-      "databaseId": 42013402186,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T10:43:15Z",
-      "databaseId": 42013041983,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T10:43:08Z",
-      "databaseId": 42013026396,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T10:42:36Z",
-      "databaseId": 42012955208,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T10:42:15Z",
-      "databaseId": 42012906684,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -372730,6 +372730,16 @@
         "episode_id": 126490,
         "display_name": "Tajemství oceánů S01E09 - 9. epizoda CZ Dabing",
         "video_id": 30815059
+      },
+      {
+        "episode_id": 156190,
+        "display_name": "Urban Legend S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30815182
+      },
+      {
+        "episode_id": 125410,
+        "display_name": "Řím: Vzestup a pád impéria S01E02 - Spartakus CZ Dabing",
+        "video_id": 30815220
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -745177,6 +745187,16 @@
         "episode_id": 126490,
         "display_name": "Tajemství oceánů S01E09 - 9. epizoda CZ Dabing",
         "video_id": 30815059
+      },
+      {
+        "episode_id": 156190,
+        "display_name": "Urban Legend S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30815182
+      },
+      {
+        "episode_id": 125410,
+        "display_name": "Řím: Vzestup a pád impéria S01E02 - Spartakus CZ Dabing",
+        "video_id": 30815220
       }
     ],
     "prepared_not_upload_ready": [
@@ -746338,7 +746358,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 44,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
