@@ -2,23 +2,47 @@
   "counts": {
     "backlog_episodes": 111861,
     "manifest_upload_ready_episodes": 14,
-    "uploaded_episodes": 79779,
-    "prepared_source_episodes": 68148,
+    "uploaded_episodes": 79780,
+    "prepared_source_episodes": 68152,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 46,
+    "language_audited_sources": 52,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53906,
-    "whisper_review_pending_sources": 37535,
-    "upload_pending_checkpoints": 32,
-    "subtitle_followup_sources": 50384,
-    "subtitle_followup_pending_sources": 50384
+    "whisper_review_sources": 53907,
+    "whisper_review_pending_sources": 37538,
+    "upload_pending_checkpoints": 34,
+    "subtitle_followup_sources": 50385,
+    "subtitle_followup_pending_sources": 50385
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T15:56:00Z",
+      "databaseId": 42059971722,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T15:52:34Z",
+      "databaseId": 42059399631,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T15:52:21Z",
+      "databaseId": 42059364244,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-05T15:52:07Z",
@@ -32,23 +56,23 @@
       "createdAt": "2026-11-05T15:52:03Z",
       "databaseId": 42059314066,
       "headBranch": "main",
-      "status": "pending",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T15:52:01Z",
-      "databaseId": 42059306601,
-      "headBranch": "main",
       "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T15:52:01Z",
+      "databaseId": 42059306601,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T15:51:56Z",
       "databaseId": 42059293374,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -76,11 +100,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T15:50:22Z",
       "databaseId": 42059029586,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "queued",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T15:42:02Z",
-      "databaseId": 42057619439,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T15:41:56Z",
-      "databaseId": 42057604853,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T15:39:46Z",
-      "databaseId": 42057238662,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -195870,6 +195870,11 @@
         "episode_id": 132513,
         "display_name": "Lifeline S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30822361
+      },
+      {
+        "episode_id": 157001,
+        "display_name": "Diablo Guardián S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30822481
       },
       {
         "episode_id": 114182,
@@ -568904,6 +568909,11 @@
         "video_id": 30822361
       },
       {
+        "episode_id": 157001,
+        "display_name": "Diablo Guardián S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30822481
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -747508,17 +747518,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 6,
+    "disabled": 12,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36162,
+    "needs_whisper": 36166,
     "whisper_confirmed_cz": 3700,
-    "whisper_non_cz_needs_subtitles": 12671,
-    "whisper_failed": 1373
+    "whisper_non_cz_needs_subtitles": 12669,
+    "whisper_failed": 1372
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50384
+    "needs_subtitle_setup_after_prehrajto_processing": 50385
   }
 }
