@@ -2,18 +2,18 @@
   "counts": {
     "backlog_episodes": 111930,
     "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 79744,
-    "prepared_source_episodes": 68135,
+    "uploaded_episodes": 79745,
+    "prepared_source_episodes": 68134,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 44,
-    "language_whisper_attempted_sources": 28,
+    "language_whisper_attempted_sources": 29,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53906,
-    "whisper_review_pending_sources": 37536,
+    "whisper_review_pending_sources": 37535,
     "upload_pending_checkpoints": 33,
     "subtitle_followup_sources": 50361,
     "subtitle_followup_pending_sources": 50361
@@ -21,18 +21,42 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T14:30:20Z",
+      "databaseId": 42045643278,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T14:29:37Z",
+      "databaseId": 42045525151,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T14:28:34Z",
+      "databaseId": 42045361194,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T14:27:01Z",
       "databaseId": 42045115719,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T14:26:07Z",
       "databaseId": 42044974998,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T14:17:37Z",
-      "databaseId": 42043594773,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T14:17:33Z",
-      "databaseId": 42043582723,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T14:17:32Z",
-      "databaseId": 42043581452,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -195760,6 +195760,11 @@
         "episode_id": 126517,
         "display_name": "Tajemství oceánů S03E09 - Poslední vraky z druhé světové války CZ Dabing",
         "video_id": 30819967
+      },
+      {
+        "episode_id": 178997,
+        "display_name": "Bláznivý svátek S01E01 - Holka z budoucnosti CZ Titulky",
+        "video_id": 30820063
       },
       {
         "episode_id": 114182,
@@ -568619,6 +568624,11 @@
         "video_id": 30819967
       },
       {
+        "episode_id": 178997,
+        "display_name": "Bláznivý svátek S01E01 - Holka z budoucnosti CZ Titulky",
+        "video_id": 30820063
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -747158,13 +747168,13 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 16,
-    "ok": 27,
+    "disabled": 15,
+    "ok": 28,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36148,
-    "whisper_confirmed_cz": 3699,
+    "needs_whisper": 36147,
+    "whisper_confirmed_cz": 3700,
     "whisper_non_cz_needs_subtitles": 12671,
     "whisper_failed": 1388
   },
