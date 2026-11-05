@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 112001,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 79634,
-    "prepared_source_episodes": 68071,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 79637,
+    "prepared_source_episodes": 68065,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53904,
     "whisper_review_pending_sources": 37535,
-    "upload_pending_checkpoints": 35,
+    "upload_pending_checkpoints": 33,
     "subtitle_followup_sources": 50305,
     "subtitle_followup_pending_sources": 50305
   },
   "workflow_runs": [
     {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T09:54:00Z",
+      "databaseId": 42006186026,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T09:53:57Z",
+      "databaseId": 42006178626,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T09:53:54Z",
+      "databaseId": 42006172313,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-05T09:52:47Z",
       "databaseId": 42006018077,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +76,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T09:50:24Z",
       "databaseId": 42005692112,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T09:38:58Z",
-      "databaseId": 42004106195,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T09:38:40Z",
-      "databaseId": 42004066203,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T09:37:49Z",
-      "databaseId": 42003954420,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -195467,6 +195467,16 @@
         "video_id": 30813201
       },
       {
+        "episode_id": 125612,
+        "display_name": "Prohnilý odkaz S01E08 - Dilema CZ Dabing",
+        "video_id": 30813454
+      },
+      {
+        "episode_id": 176869,
+        "display_name": "The Artist S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30813485
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372590,6 +372600,11 @@
         "episode_id": 125611,
         "display_name": "Prohnilý odkaz S01E07 - Boj CZ Dabing",
         "video_id": 30813278
+      },
+      {
+        "episode_id": 131499,
+        "display_name": "Králové Jo’burgu S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30813500
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -567774,6 +567789,16 @@
         "video_id": 30813201
       },
       {
+        "episode_id": 125612,
+        "display_name": "Prohnilý odkaz S01E08 - Dilema CZ Dabing",
+        "video_id": 30813454
+      },
+      {
+        "episode_id": 176869,
+        "display_name": "The Artist S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30813485
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -744897,6 +744922,11 @@
         "episode_id": 125611,
         "display_name": "Prohnilý odkaz S01E07 - Boj CZ Dabing",
         "video_id": 30813278
+      },
+      {
+        "episode_id": 131499,
+        "display_name": "Králové Jo’burgu S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30813500
       }
     ],
     "prepared_not_upload_ready": [
