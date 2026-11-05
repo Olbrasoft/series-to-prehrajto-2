@@ -1,24 +1,72 @@
 {
   "counts": {
     "backlog_episodes": 111861,
-    "manifest_upload_ready_episodes": 16,
-    "uploaded_episodes": 79792,
+    "manifest_upload_ready_episodes": 23,
+    "uploaded_episodes": 79793,
     "prepared_source_episodes": 68163,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 58,
-    "language_whisper_attempted_sources": 44,
+    "language_audited_sources": 64,
+    "language_whisper_attempted_sources": 53,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53908,
-    "whisper_review_pending_sources": 37541,
-    "upload_pending_checkpoints": 33,
-    "subtitle_followup_sources": 50394,
-    "subtitle_followup_pending_sources": 50394
+    "whisper_review_sources": 53905,
+    "whisper_review_pending_sources": 37532,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50400,
+    "subtitle_followup_pending_sources": 50400
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T16:33:45Z",
+      "databaseId": 42065714316,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T16:33:28Z",
+      "databaseId": 42065663117,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T16:33:23Z",
+      "databaseId": 42065648919,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T16:33:21Z",
+      "databaseId": 42065644014,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T16:32:19Z",
+      "databaseId": 42065463748,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T16:32:03Z",
+      "databaseId": 42065421129,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-05T16:31:29Z",
@@ -36,11 +84,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T16:28:42Z",
       "databaseId": 42064841137,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -124,60 +172,12 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T16:20:33Z",
       "databaseId": 42063415888,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T16:20:04Z",
-      "databaseId": 42063325280,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T16:20:00Z",
-      "databaseId": 42063312123,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T16:19:12Z",
-      "databaseId": 42063170400,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T16:18:57Z",
-      "databaseId": 42063126540,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T16:18:33Z",
-      "databaseId": 42063053586,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T16:18:11Z",
-      "databaseId": 42062989401,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -373380,6 +373380,11 @@
         "episode_id": 176811,
         "display_name": "Tamon's B-Side S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30823117
+      },
+      {
+        "episode_id": 159611,
+        "display_name": "Soukromé životy S01E14 - 14. epizoda CZ Titulky",
+        "video_id": 30823437
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -746477,6 +746482,11 @@
         "episode_id": 176811,
         "display_name": "Tamon's B-Side S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30823117
+      },
+      {
+        "episode_id": 159611,
+        "display_name": "Soukromé životy S01E14 - 14. epizoda CZ Titulky",
+        "video_id": 30823437
       }
     ],
     "prepared_not_upload_ready": [
@@ -747638,17 +747648,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 14,
-    "ok": 43,
+    "ok": 52,
+    "disabled": 11,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36171,
-    "whisper_confirmed_cz": 3700,
-    "whisper_non_cz_needs_subtitles": 12667,
+    "needs_whisper": 36162,
+    "whisper_confirmed_cz": 3703,
+    "whisper_non_cz_needs_subtitles": 12670,
     "whisper_failed": 1370
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50394
+    "needs_subtitle_setup_after_prehrajto_processing": 50400
   }
 }
