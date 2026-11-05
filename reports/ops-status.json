@@ -1,30 +1,70 @@
 {
   "counts": {
     "backlog_episodes": 111799,
-    "manifest_upload_ready_episodes": 49,
-    "uploaded_episodes": 79859,
-    "prepared_source_episodes": 68228,
+    "manifest_upload_ready_episodes": 52,
+    "uploaded_episodes": 79863,
+    "prepared_source_episodes": 68234,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 26,
+    "language_audited_sources": 56,
     "language_whisper_attempted_sources": 26,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53904,
-    "whisper_review_pending_sources": 37528,
-    "upload_pending_checkpoints": 34,
-    "subtitle_followup_sources": 50473,
-    "subtitle_followup_pending_sources": 50473
+    "whisper_review_sources": 53906,
+    "whisper_review_pending_sources": 37540,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50478,
+    "subtitle_followup_pending_sources": 50478
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T20:59:45Z",
+      "databaseId": 42108495642,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T20:58:16Z",
+      "databaseId": 42108275896,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T20:57:47Z",
+      "databaseId": 42108202579,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T20:57:42Z",
+      "databaseId": 42108190069,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T20:53:54Z",
+      "databaseId": 42107618566,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-05T20:52:33Z",
       "databaseId": 42107417216,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +92,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T20:52:06Z",
       "databaseId": 42107349173,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -92,11 +132,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T20:46:11Z",
       "databaseId": 42106447542,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T20:41:50Z",
-      "databaseId": 42105769614,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T20:41:15Z",
-      "databaseId": 42105683349,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T20:39:41Z",
-      "databaseId": 42105438703,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T20:39:12Z",
-      "databaseId": 42105367341,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T20:37:39Z",
-      "databaseId": 42105136486,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -196067,6 +196067,11 @@
         "video_id": 30831276
       },
       {
+        "episode_id": 175028,
+        "display_name": "Domy za vodou S01E03 - Zlé dvojče CZ Titulky",
+        "video_id": 30831564
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -373715,6 +373720,21 @@
         "episode_id": 164786,
         "display_name": "I Have a Crush at Work S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30831337
+      },
+      {
+        "episode_id": 158239,
+        "display_name": "Promluvme si o Čchu S01E07 - 7. díl CZ Titulky",
+        "video_id": 30831537
+      },
+      {
+        "episode_id": 160946,
+        "display_name": "Tajuplný svět zvuků s Davidem Attenboroughem S01E01 - Lovci a lovná zvěř CZ Dabing",
+        "video_id": 30831591
+      },
+      {
+        "episode_id": 168250,
+        "display_name": "Šéf kabinetu S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30831755
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -569499,6 +569519,11 @@
         "video_id": 30831276
       },
       {
+        "episode_id": 175028,
+        "display_name": "Domy za vodou S01E03 - Zlé dvojče CZ Titulky",
+        "video_id": 30831564
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -747147,6 +747172,21 @@
         "episode_id": 164786,
         "display_name": "I Have a Crush at Work S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30831337
+      },
+      {
+        "episode_id": 158239,
+        "display_name": "Promluvme si o Čchu S01E07 - 7. díl CZ Titulky",
+        "video_id": 30831537
+      },
+      {
+        "episode_id": 160946,
+        "display_name": "Tajuplný svět zvuků s Davidem Attenboroughem S01E01 - Lovci a lovná zvěř CZ Dabing",
+        "video_id": 30831591
+      },
+      {
+        "episode_id": 168250,
+        "display_name": "Šéf kabinetu S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30831755
       }
     ],
     "prepared_not_upload_ready": [
@@ -748309,15 +748349,16 @@
   "language_verdicts": {},
   "language_whisper_statuses": {
     "ok": 25,
+    "disabled": 30,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36185,
+    "needs_whisper": 36197,
     "whisper_confirmed_cz": 3706,
-    "whisper_non_cz_needs_subtitles": 12670,
+    "whisper_non_cz_needs_subtitles": 12660,
     "whisper_failed": 1343
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50473
+    "needs_subtitle_setup_after_prehrajto_processing": 50478
   }
 }
