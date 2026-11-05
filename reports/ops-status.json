@@ -1,46 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 112001,
-    "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 79651,
-    "prepared_source_episodes": 68082,
+    "manifest_upload_ready_episodes": 11,
+    "uploaded_episodes": 79652,
+    "prepared_source_episodes": 68080,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 57,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37544,
-    "upload_pending_checkpoints": 33,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 50313,
     "subtitle_followup_pending_sources": 50313
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T10:31:29Z",
+      "databaseId": 42011412579,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T10:28:32Z",
+      "databaseId": 42010997037,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T10:26:46Z",
       "databaseId": 42010759942,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T10:26:41Z",
       "databaseId": 42010749817,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T10:24:45Z",
       "databaseId": 42010483265,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,11 +116,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T10:22:34Z",
       "databaseId": 42010181875,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -112,7 +128,7 @@
       "createdAt": "2026-11-05T10:21:27Z",
       "databaseId": 42010028647,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T10:16:31Z",
-      "databaseId": 42009344322,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T10:15:23Z",
-      "databaseId": 42009182903,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -195525,6 +195525,11 @@
         "episode_id": 156189,
         "display_name": "Urban Legend S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30814357
+      },
+      {
+        "episode_id": 79080,
+        "display_name": "Slušný člověk S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30814407
       },
       {
         "episode_id": 114182,
@@ -567919,6 +567924,11 @@
         "video_id": 30814357
       },
       {
+        "episode_id": 79080,
+        "display_name": "Slušný člověk S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30814407
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -746228,8 +746238,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 15,
-    "ok": 41,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
