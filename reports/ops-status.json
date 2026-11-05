@@ -1,30 +1,110 @@
 {
   "counts": {
     "backlog_episodes": 111757,
-    "manifest_upload_ready_episodes": 57,
-    "uploaded_episodes": 79872,
-    "prepared_source_episodes": 68248,
+    "manifest_upload_ready_episodes": 54,
+    "uploaded_episodes": 79875,
+    "prepared_source_episodes": 68250,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 51,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 54,
+    "language_whisper_attempted_sources": 43,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53907,
     "whisper_review_pending_sources": 37544,
-    "upload_pending_checkpoints": 34,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50490,
     "subtitle_followup_pending_sources": 50490
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T22:04:54Z",
+      "databaseId": 42118362077,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T22:04:52Z",
+      "databaseId": 42118358600,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T22:04:47Z",
+      "databaseId": 42118346523,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T22:04:44Z",
+      "databaseId": 42118339185,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T22:04:21Z",
+      "databaseId": 42118281796,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T22:02:16Z",
+      "databaseId": 42117981862,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T22:01:39Z",
+      "databaseId": 42117889645,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T22:00:32Z",
+      "databaseId": 42117713787,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T21:58:15Z",
+      "databaseId": 42117381557,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T21:54:34Z",
+      "databaseId": 42116852365,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T21:53:28Z",
       "databaseId": 42116687089,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,15 +112,15 @@
       "createdAt": "2026-11-05T21:52:44Z",
       "databaseId": 42116580968,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T21:52:34Z",
       "databaseId": 42116556378,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -48,7 +128,7 @@
       "createdAt": "2026-11-05T21:52:26Z",
       "databaseId": 42116538968,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T21:49:49Z",
-      "databaseId": 42116149296,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T21:49:44Z",
-      "databaseId": 42116137832,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T21:49:41Z",
-      "databaseId": 42116130409,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T21:48:44Z",
-      "databaseId": 42115991317,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T21:46:30Z",
-      "databaseId": 42115666198,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T21:44:53Z",
-      "databaseId": 42115418761,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T21:44:49Z",
-      "databaseId": 42115408477,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T21:43:39Z",
-      "databaseId": 42115234689,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T21:43:00Z",
-      "databaseId": 42115138522,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T21:42:56Z",
-      "databaseId": 42115130179,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -196087,6 +196087,16 @@
         "video_id": 30833023
       },
       {
+        "episode_id": 178072,
+        "display_name": "Jsem hvězda S01E03 - Loly Álvarez, Arlekin a Lost Highway CZ Dabing",
+        "video_id": 30833501
+      },
+      {
+        "episode_id": 178073,
+        "display_name": "Jsem hvězda S01E02 - Podivný případ doktora Leonarda a pana Dantése CZ Dabing",
+        "video_id": 30833569
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -373780,6 +373790,11 @@
         "episode_id": 154247,
         "display_name": "Květiny v písku S01E08 - Nezapomeň – zapomeň CZ Titulky",
         "video_id": 30832815
+      },
+      {
+        "episode_id": 178999,
+        "display_name": "Bláznivý svátek S01E04 - Ona se zbláznila! CZ Titulky",
+        "video_id": 30833626
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -569584,6 +569599,16 @@
         "video_id": 30833023
       },
       {
+        "episode_id": 178072,
+        "display_name": "Jsem hvězda S01E03 - Loly Álvarez, Arlekin a Lost Highway CZ Dabing",
+        "video_id": 30833501
+      },
+      {
+        "episode_id": 178073,
+        "display_name": "Jsem hvězda S01E02 - Podivný případ doktora Leonarda a pana Dantése CZ Dabing",
+        "video_id": 30833569
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -747277,6 +747302,11 @@
         "episode_id": 154247,
         "display_name": "Květiny v písku S01E08 - Nezapomeň – zapomeň CZ Titulky",
         "video_id": 30832815
+      },
+      {
+        "episode_id": 178999,
+        "display_name": "Bláznivý svátek S01E04 - Ona se zbláznila! CZ Titulky",
+        "video_id": 30833626
       }
     ],
     "prepared_not_upload_ready": [
@@ -748438,8 +748468,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 9,
-    "ok": 41,
+    "disabled": 11,
+    "ok": 42,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
