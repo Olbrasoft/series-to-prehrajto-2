@@ -1,30 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 111799,
-    "manifest_upload_ready_episodes": 39,
-    "uploaded_episodes": 79836,
-    "prepared_source_episodes": 68205,
+    "manifest_upload_ready_episodes": 40,
+    "uploaded_episodes": 79838,
+    "prepared_source_episodes": 68207,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 24,
+    "language_audited_sources": 29,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53904,
-    "whisper_review_pending_sources": 37528,
+    "whisper_review_sources": 53905,
+    "whisper_review_pending_sources": 37529,
     "upload_pending_checkpoints": 33,
-    "subtitle_followup_sources": 50444,
-    "subtitle_followup_pending_sources": 50444
+    "subtitle_followup_sources": 50446,
+    "subtitle_followup_pending_sources": 50446
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T19:07:23Z",
+      "databaseId": 42090837717,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T19:07:17Z",
+      "databaseId": 42090823198,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T19:04:16Z",
+      "databaseId": 42090326165,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T19:04:05Z",
+      "databaseId": 42090296135,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T19:04:01Z",
+      "databaseId": 42090285012,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T19:04:01Z",
+      "databaseId": 42090284059,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T19:03:27Z",
+      "databaseId": 42090194079,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T19:02:23Z",
       "databaseId": 42090023519,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -36,11 +92,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T19:01:14Z",
       "databaseId": 42089838114,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -56,7 +112,7 @@
       "createdAt": "2026-11-05T19:01:09Z",
       "databaseId": 42089823725,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -76,11 +132,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T18:59:30Z",
       "databaseId": 42089544574,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,68 +172,12 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T18:53:25Z",
       "databaseId": 42088585652,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T18:52:22Z",
-      "databaseId": 42088417407,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T18:52:16Z",
-      "databaseId": 42088402871,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T18:52:08Z",
-      "databaseId": 42088380373,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-05T18:49:57Z",
-      "databaseId": 42088028052,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T18:49:34Z",
-      "databaseId": 42087967554,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T18:48:26Z",
-      "databaseId": 42087782613,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T18:47:48Z",
-      "databaseId": 42087682068,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -196015,6 +196015,16 @@
         "episode_id": 142800,
         "display_name": "Zákon ve Vegas S01E06 - Rocco Prosecco a jeho virtuální kurz ohleduplnosti na pracovišti CZ Dabing",
         "video_id": 30827767
+      },
+      {
+        "episode_id": 154240,
+        "display_name": "Květiny v písku S01E01 - Zázračné dítě ssirea, Baek-du Kim CZ Titulky",
+        "video_id": 30827879
+      },
+      {
+        "episode_id": 132516,
+        "display_name": "Lifeline S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30828111
       },
       {
         "episode_id": 114182,
@@ -569334,6 +569344,16 @@
         "video_id": 30827767
       },
       {
+        "episode_id": 154240,
+        "display_name": "Květiny v písku S01E01 - Zázračné dítě ssirea, Baek-du Kim CZ Titulky",
+        "video_id": 30827879
+      },
+      {
+        "episode_id": 132516,
+        "display_name": "Lifeline S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30828111
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -748078,17 +748098,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 4,
+    "disabled": 9,
     "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36177,
+    "needs_whisper": 36180,
     "whisper_confirmed_cz": 3703,
     "whisper_non_cz_needs_subtitles": 12673,
-    "whisper_failed": 1351
+    "whisper_failed": 1349
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50444
+    "needs_subtitle_setup_after_prehrajto_processing": 50446
   }
 }
