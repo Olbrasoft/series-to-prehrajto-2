@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112001,
     "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 79628,
+    "uploaded_episodes": 79630,
     "prepared_source_episodes": 68071,
     "description_series": 60,
     "description_episodes": 753,
@@ -20,11 +20,27 @@
   },
   "workflow_runs": [
     {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T09:45:08Z",
+      "databaseId": 42004956486,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T09:45:03Z",
+      "databaseId": 42004944311,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-05T09:43:49Z",
       "databaseId": 42004770448,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +76,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T09:39:24Z",
       "databaseId": 42004163856,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T09:33:41Z",
-      "databaseId": 42003378304,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T09:33:36Z",
-      "databaseId": 42003366936,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -195452,6 +195452,11 @@
         "video_id": 30812937
       },
       {
+        "episode_id": 176868,
+        "display_name": "The Artist S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30813149
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372560,6 +372565,11 @@
         "episode_id": 125610,
         "display_name": "Prohnilý odkaz S01E06 - Rozhodnutí CZ Dabing",
         "video_id": 30812259
+      },
+      {
+        "episode_id": 131494,
+        "display_name": "Králové Jo’burgu S01E05 - Jsme bratři CZ Dabing",
+        "video_id": 30813135
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -567729,6 +567739,11 @@
         "video_id": 30812937
       },
       {
+        "episode_id": 176868,
+        "display_name": "The Artist S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30813149
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -744837,6 +744852,11 @@
         "episode_id": 125610,
         "display_name": "Prohnilý odkaz S01E06 - Rozhodnutí CZ Dabing",
         "video_id": 30812259
+      },
+      {
+        "episode_id": 131494,
+        "display_name": "Králové Jo’burgu S01E05 - Jsme bratři CZ Dabing",
+        "video_id": 30813135
       }
     ],
     "prepared_not_upload_ready": [
