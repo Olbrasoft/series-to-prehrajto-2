@@ -1,24 +1,48 @@
 {
   "counts": {
     "backlog_episodes": 112061,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 79570,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 79571,
     "prepared_source_episodes": 68016,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 41,
-    "language_whisper_attempted_sources": 41,
-    "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53906,
-    "whisper_review_pending_sources": 37545,
-    "upload_pending_checkpoints": 33,
-    "subtitle_followup_sources": 50267,
-    "subtitle_followup_pending_sources": 50267
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
+    "whisper_review_sources": 53905,
+    "whisper_review_pending_sources": 37540,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50269,
+    "subtitle_followup_pending_sources": 50269
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T06:44:42Z",
+      "databaseId": 41982475681,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T06:44:11Z",
+      "databaseId": 41982416718,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T06:43:08Z",
+      "databaseId": 41982294993,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-05T06:42:35Z",
@@ -44,11 +68,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T06:40:26Z",
       "databaseId": 41981987336,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -88,7 +112,7 @@
       "createdAt": "2026-11-05T06:37:23Z",
       "databaseId": 41981645654,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -108,19 +132,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T06:36:42Z",
       "databaseId": 41981571955,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T06:36:25Z",
       "databaseId": 41981540825,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T06:29:39Z",
-      "databaseId": 41980770146,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T06:28:56Z",
-      "databaseId": 41980693258,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T06:27:31Z",
-      "databaseId": 41980541943,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -372270,6 +372270,11 @@
         "episode_id": 174330,
         "display_name": "Srdce se neloučí S01E08 - Sbohem CZ Titulky",
         "video_id": 30807098
+      },
+      {
+        "episode_id": 176866,
+        "display_name": "The Artist S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30807194
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -744257,6 +744262,11 @@
         "episode_id": 174330,
         "display_name": "Srdce se neloučí S01E08 - Sbohem CZ Titulky",
         "video_id": 30807098
+      },
+      {
+        "episode_id": 176866,
+        "display_name": "The Artist S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30807194
       }
     ],
     "prepared_not_upload_ready": [
@@ -745418,16 +745428,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 40,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36087,
+    "needs_whisper": 36083,
     "whisper_confirmed_cz": 3684,
-    "whisper_non_cz_needs_subtitles": 12677,
-    "whisper_failed": 1458
+    "whisper_non_cz_needs_subtitles": 12681,
+    "whisper_failed": 1457
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50267
+    "needs_subtitle_setup_after_prehrajto_processing": 50269
   }
 }
