@@ -2,37 +2,53 @@
   "counts": {
     "backlog_episodes": 112001,
     "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 79637,
-    "prepared_source_episodes": 68062,
+    "uploaded_episodes": 79638,
+    "prepared_source_episodes": 68068,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 42,
+    "language_whisper_attempted_sources": 42,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53904,
     "whisper_review_pending_sources": 37535,
-    "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50305,
-    "subtitle_followup_pending_sources": 50305
+    "upload_pending_checkpoints": 34,
+    "subtitle_followup_sources": 50306,
+    "subtitle_followup_pending_sources": 50306
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-05T09:56:33Z",
-      "databaseId": 42006535428,
+      "createdAt": "2026-11-05T09:57:51Z",
+      "databaseId": 42006710173,
       "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "update-descriptions"
+      "workflowName": "process-whisper-review"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T09:57:37Z",
+      "databaseId": 42006678080,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T09:56:33Z",
+      "databaseId": 42006535428,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T09:56:08Z",
       "databaseId": 42006480900,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,7 +96,7 @@
       "createdAt": "2026-11-05T09:52:11Z",
       "databaseId": 42005936864,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T09:41:26Z",
-      "databaseId": 42004444079,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T09:39:38Z",
-      "databaseId": 42004195079,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -195475,6 +195475,11 @@
         "episode_id": 176869,
         "display_name": "The Artist S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30813485
+      },
+      {
+        "episode_id": 131497,
+        "display_name": "Králové Jo’burgu S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 30813580
       },
       {
         "episode_id": 114182,
@@ -567799,6 +567804,11 @@
         "video_id": 30813485
       },
       {
+        "episode_id": 131497,
+        "display_name": "Králové Jo’burgu S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 30813580
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -746088,7 +746098,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 41,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -746098,6 +746108,6 @@
     "whisper_failed": 1435
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50305
+    "needs_subtitle_setup_after_prehrajto_processing": 50306
   }
 }
