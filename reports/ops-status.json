@@ -1,30 +1,46 @@
 {
   "counts": {
     "backlog_episodes": 111799,
-    "manifest_upload_ready_episodes": 48,
-    "uploaded_episodes": 79843,
-    "prepared_source_episodes": 68218,
+    "manifest_upload_ready_episodes": 50,
+    "uploaded_episodes": 79844,
+    "prepared_source_episodes": 68217,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 25,
+    "language_whisper_attempted_sources": 25,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53904,
-    "whisper_review_pending_sources": 37528,
-    "upload_pending_checkpoints": 33,
-    "subtitle_followup_sources": 50456,
-    "subtitle_followup_pending_sources": 50456
+    "whisper_review_sources": 53903,
+    "whisper_review_pending_sources": 37522,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50459,
+    "subtitle_followup_pending_sources": 50459
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T19:36:28Z",
+      "databaseId": 42095503633,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T19:36:26Z",
+      "databaseId": 42095498229,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-05T19:33:11Z",
       "databaseId": 42094970034,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +72,7 @@
       "createdAt": "2026-11-05T19:32:41Z",
       "databaseId": 42094889979,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -64,7 +80,7 @@
       "createdAt": "2026-11-05T19:32:33Z",
       "databaseId": 42094867691,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -80,7 +96,7 @@
       "createdAt": "2026-11-05T19:31:27Z",
       "databaseId": 42094693533,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "audit-language"
     },
     {
@@ -108,11 +124,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T19:29:22Z",
       "databaseId": 42094354459,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -140,11 +156,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T19:24:52Z",
       "databaseId": 42093642800,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -159,22 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-05T19:23:16Z",
       "databaseId": 42093391382,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T19:23:11Z",
-      "databaseId": 42093378423,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T19:23:01Z",
-      "databaseId": 42093350735,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -373635,6 +373635,11 @@
         "episode_id": 142802,
         "display_name": "Zákon ve Vegas S01E08 - Musíme si promluvit o nebi CZ Dabing",
         "video_id": 30828858
+      },
+      {
+        "episode_id": 132514,
+        "display_name": "Lifeline S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30829022
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -746987,6 +746992,11 @@
         "episode_id": 142802,
         "display_name": "Zákon ve Vegas S01E08 - Musíme si promluvit o nebi CZ Dabing",
         "video_id": 30828858
+      },
+      {
+        "episode_id": 132514,
+        "display_name": "Lifeline S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30829022
       }
     ],
     "prepared_not_upload_ready": [
@@ -748148,16 +748158,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 24,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36182,
+    "needs_whisper": 36176,
     "whisper_confirmed_cz": 3703,
-    "whisper_non_cz_needs_subtitles": 12673,
+    "whisper_non_cz_needs_subtitles": 12678,
     "whisper_failed": 1346
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50456
+    "needs_subtitle_setup_after_prehrajto_processing": 50459
   }
 }
