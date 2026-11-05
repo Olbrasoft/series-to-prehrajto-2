@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112127,
     "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 79543,
+    "uploaded_episodes": 79545,
     "prepared_source_episodes": 68000,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,65 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53904,
     "whisper_review_pending_sources": 37533,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 34,
     "subtitle_followup_sources": 50253,
     "subtitle_followup_pending_sources": 50253
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T05:33:54Z",
+      "databaseId": 41974799310,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T05:33:51Z",
+      "databaseId": 41974794753,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T05:33:48Z",
+      "databaseId": 41974788734,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T05:33:19Z",
+      "databaseId": 41974736695,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T05:33:18Z",
+      "databaseId": 41974735429,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T05:33:14Z",
+      "databaseId": 41974728547,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-05T05:32:37Z",
       "databaseId": 41974661812,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -60,11 +108,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T05:29:04Z",
       "databaseId": 41974281232,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +140,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T05:24:35Z",
       "databaseId": 41973832348,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T05:21:51Z",
-      "databaseId": 41973543182,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T05:21:48Z",
-      "databaseId": 41973536649,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T05:21:10Z",
-      "databaseId": 41973471339,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T05:20:41Z",
-      "databaseId": 41973420574,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T05:20:17Z",
-      "databaseId": 41973375004,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T05:20:00Z",
-      "databaseId": 41973341780,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -195237,6 +195237,11 @@
         "video_id": 30805367
       },
       {
+        "episode_id": 166696,
+        "display_name": "The Daily Life of a Middle-Aged Online Shopper in Another World S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30805480
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372135,6 +372140,11 @@
         "episode_id": 163367,
         "display_name": "The Road to Calvary S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30805071
+      },
+      {
+        "episode_id": 178235,
+        "display_name": "Milovat a ztratit S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30805230
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -567089,6 +567099,11 @@
         "video_id": 30805367
       },
       {
+        "episode_id": 166696,
+        "display_name": "The Daily Life of a Middle-Aged Online Shopper in Another World S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30805480
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -743987,6 +744002,11 @@
         "episode_id": 163367,
         "display_name": "The Road to Calvary S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30805071
+      },
+      {
+        "episode_id": 178235,
+        "display_name": "Milovat a ztratit S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30805230
       }
     ],
     "prepared_not_upload_ready": [
