@@ -1,46 +1,110 @@
 {
   "counts": {
     "backlog_episodes": 111930,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 79760,
-    "prepared_source_episodes": 68138,
+    "manifest_upload_ready_episodes": 13,
+    "uploaded_episodes": 79761,
+    "prepared_source_episodes": 68140,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 48,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53906,
-    "whisper_review_pending_sources": 37536,
+    "whisper_review_sources": 53907,
+    "whisper_review_pending_sources": 37537,
     "upload_pending_checkpoints": 34,
-    "subtitle_followup_sources": 50369,
-    "subtitle_followup_pending_sources": 50369
+    "subtitle_followup_sources": 50370,
+    "subtitle_followup_pending_sources": 50370
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-05T15:04:05Z",
-      "databaseId": 42051169110,
+      "createdAt": "2026-11-05T15:05:33Z",
+      "databaseId": 42051421926,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-status"
+      "status": "pending",
+      "workflowName": "update-descriptions"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-05T15:03:39Z",
-      "databaseId": 42051095525,
+      "createdAt": "2026-11-05T15:05:15Z",
+      "databaseId": 42051368003,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T15:05:12Z",
+      "databaseId": 42051357751,
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T15:05:11Z",
+      "databaseId": 42051355864,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T15:05:08Z",
+      "databaseId": 42051346122,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T15:05:07Z",
+      "databaseId": 42051343565,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T15:05:02Z",
+      "databaseId": 42051327168,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T15:04:56Z",
+      "databaseId": 42051311039,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T15:04:05Z",
+      "databaseId": 42051169110,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T15:03:39Z",
+      "databaseId": 42051095525,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T15:03:36Z",
       "databaseId": 42051085570,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -48,7 +112,7 @@
       "createdAt": "2026-11-05T15:01:50Z",
       "databaseId": 42050794181,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T14:52:36Z",
-      "databaseId": 42049261181,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T14:52:31Z",
-      "databaseId": 42049249132,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T14:52:28Z",
-      "databaseId": 42049240126,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T14:52:04Z",
-      "databaseId": 42049174099,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T14:51:31Z",
-      "databaseId": 42049086566,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T14:50:46Z",
-      "databaseId": 42048964590,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-05T14:50:19Z",
-      "databaseId": 42048888721,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T14:50:18Z",
-      "databaseId": 42048887270,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
     }
   ],
   "gaps": {
@@ -195805,6 +195805,11 @@
         "episode_id": 156188,
         "display_name": "Urban Legend S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30820869
+      },
+      {
+        "episode_id": 159604,
+        "display_name": "Soukromé životy S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30820990
       },
       {
         "episode_id": 114182,
@@ -568744,6 +568749,11 @@
         "video_id": 30820869
       },
       {
+        "episode_id": 159604,
+        "display_name": "Soukromé životy S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30820990
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -747318,16 +747328,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 8,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36153,
+    "needs_whisper": 36157,
     "whisper_confirmed_cz": 3700,
     "whisper_non_cz_needs_subtitles": 12670,
-    "whisper_failed": 1383
+    "whisper_failed": 1380
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50369
+    "needs_subtitle_setup_after_prehrajto_processing": 50370
   }
 }
