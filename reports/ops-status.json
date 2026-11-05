@@ -1,16 +1,16 @@
 {
   "counts": {
     "backlog_episodes": 112127,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 79545,
-    "prepared_source_episodes": 68000,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 79547,
+    "prepared_source_episodes": 67997,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 47,
-    "language_whisper_attempted_sources": 46,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53904,
     "whisper_review_pending_sources": 37533,
@@ -52,27 +52,27 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T05:33:18Z",
       "databaseId": 41974735429,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T05:33:14Z",
       "databaseId": 41974728547,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T05:32:37Z",
       "databaseId": 41974661812,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -80,7 +80,7 @@
       "createdAt": "2026-11-05T05:32:13Z",
       "databaseId": 41974620940,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -132,11 +132,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T05:28:17Z",
       "databaseId": 41974206302,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -195242,6 +195242,11 @@
         "video_id": 30805480
       },
       {
+        "episode_id": 141005,
+        "display_name": "Fair Trade S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30805292
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372145,6 +372150,11 @@
         "episode_id": 178235,
         "display_name": "Milovat a ztratit S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30805230
+      },
+      {
+        "episode_id": 181018,
+        "display_name": "Jak obehrát Wall Street S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30805258
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -567104,6 +567114,11 @@
         "video_id": 30805480
       },
       {
+        "episode_id": 141005,
+        "display_name": "Fair Trade S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30805292
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -744007,6 +744022,11 @@
         "episode_id": 178235,
         "display_name": "Milovat a ztratit S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30805230
+      },
+      {
+        "episode_id": 181018,
+        "display_name": "Jak obehrát Wall Street S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30805258
       }
     ],
     "prepared_not_upload_ready": [
@@ -745168,8 +745188,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 45,
-    "disabled": 1,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
