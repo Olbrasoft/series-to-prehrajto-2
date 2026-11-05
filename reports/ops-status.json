@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111861,
     "manifest_upload_ready_episodes": 26,
-    "uploaded_episodes": 79807,
+    "uploaded_episodes": 79810,
     "prepared_source_episodes": 68180,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,73 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37535,
-    "upload_pending_checkpoints": 34,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 50413,
     "subtitle_followup_pending_sources": 50413
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T17:23:03Z",
+      "databaseId": 42074082332,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T17:23:01Z",
+      "databaseId": 42074076528,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T17:22:57Z",
+      "databaseId": 42074064096,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T17:21:00Z",
+      "databaseId": 42073738271,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T17:20:44Z",
+      "databaseId": 42073694999,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T17:20:33Z",
+      "databaseId": 42073662954,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T17:20:29Z",
+      "databaseId": 42073653411,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T17:15:45Z",
       "databaseId": 42072876212,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +96,7 @@
       "createdAt": "2026-11-05T17:15:35Z",
       "databaseId": 42072850761,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -68,11 +124,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T17:13:35Z",
       "databaseId": 42072507419,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +140,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T17:13:16Z",
       "databaseId": 42072452921,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-sources"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T17:10:03Z",
-      "databaseId": 42071910914,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T17:06:36Z",
-      "databaseId": 42071339616,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T17:04:52Z",
-      "databaseId": 42071041234,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T17:04:51Z",
-      "databaseId": 42071039751,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T17:04:46Z",
-      "databaseId": 42071025548,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T17:04:41Z",
-      "databaseId": 42071012665,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T17:03:59Z",
-      "databaseId": 42070892590,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -195942,6 +195942,16 @@
         "video_id": 30824909
       },
       {
+        "episode_id": 169197,
+        "display_name": "The Fantastic Journey S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30824979
+      },
+      {
+        "episode_id": 170316,
+        "display_name": "Tajemství oceánů S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30825026
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -373455,6 +373465,11 @@
         "episode_id": 167062,
         "display_name": "Major Lazer S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30824817
+      },
+      {
+        "episode_id": 174058,
+        "display_name": "Po výstřelu: Amerika v šoku S01E03 - Charleston, Jižní Karolína CZ Dabing",
+        "video_id": 30824938
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -569114,6 +569129,16 @@
         "video_id": 30824909
       },
       {
+        "episode_id": 169197,
+        "display_name": "The Fantastic Journey S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30824979
+      },
+      {
+        "episode_id": 170316,
+        "display_name": "Tajemství oceánů S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30825026
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -746627,6 +746652,11 @@
         "episode_id": 167062,
         "display_name": "Major Lazer S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30824817
+      },
+      {
+        "episode_id": 174058,
+        "display_name": "Po výstřelu: Amerika v šoku S01E03 - Charleston, Jižní Karolína CZ Dabing",
+        "video_id": 30824938
       }
     ],
     "prepared_not_upload_ready": [
