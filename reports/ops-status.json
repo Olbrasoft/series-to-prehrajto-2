@@ -2,29 +2,53 @@
   "counts": {
     "backlog_episodes": 112127,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 79506,
+    "uploaded_episodes": 79507,
     "prepared_source_episodes": 67955,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 21,
-    "language_whisper_attempted_sources": 21,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37540,
-    "upload_pending_checkpoints": 34,
+    "upload_pending_checkpoints": 33,
     "subtitle_followup_sources": 50226,
     "subtitle_followup_pending_sources": 50226
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T03:55:59Z",
+      "databaseId": 41964633228,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T03:54:41Z",
+      "databaseId": 41964500290,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T03:54:38Z",
+      "databaseId": 41964495290,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-05T03:52:40Z",
       "databaseId": 41964297155,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,19 +124,19 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T03:45:54Z",
       "databaseId": 41963614379,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T03:44:35Z",
       "databaseId": 41963473240,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -151,30 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-05T03:42:11Z",
       "databaseId": 41963231019,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T03:42:06Z",
-      "databaseId": 41963221956,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T03:41:58Z",
-      "databaseId": 41963207839,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T03:40:58Z",
-      "databaseId": 41963109494,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -371950,6 +371950,11 @@
         "episode_id": 171403,
         "display_name": "Na vysoké noze: Jak afroamerická kuchyně proměnila Ameriku S01E02 - Království rýže CZ Titulky",
         "video_id": 30802603
+      },
+      {
+        "episode_id": 158579,
+        "display_name": "Chlapáci S01E06 - Hemingway CZ Dabing",
+        "video_id": 30802909
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -743617,6 +743622,11 @@
         "episode_id": 171403,
         "display_name": "Na vysoké noze: Jak afroamerická kuchyně proměnila Ameriku S01E02 - Království rýže CZ Titulky",
         "video_id": 30802603
+      },
+      {
+        "episode_id": 158579,
+        "display_name": "Chlapáci S01E06 - Hemingway CZ Dabing",
+        "video_id": 30802909
       }
     ],
     "prepared_not_upload_ready": [
@@ -744778,7 +744788,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 20,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
