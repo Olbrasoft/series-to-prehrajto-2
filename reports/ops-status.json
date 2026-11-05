@@ -2,45 +2,101 @@
   "counts": {
     "backlog_episodes": 112170,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 79494,
-    "prepared_source_episodes": 67928,
+    "uploaded_episodes": 79495,
+    "prepared_source_episodes": 67930,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 44,
+    "language_whisper_attempted_sources": 43,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53906,
-    "whisper_review_pending_sources": 37546,
-    "upload_pending_checkpoints": 33,
-    "subtitle_followup_sources": 50213,
-    "subtitle_followup_pending_sources": 50213
+    "whisper_review_pending_sources": 37543,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50216,
+    "subtitle_followup_pending_sources": 50216
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-05T02:53:45Z",
-      "databaseId": 41958124369,
+      "createdAt": "2026-11-05T03:00:34Z",
+      "databaseId": 41958830983,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T03:00:27Z",
+      "databaseId": 41958818011,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T03:00:26Z",
+      "databaseId": 41958815721,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T03:00:22Z",
+      "databaseId": 41958807698,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T03:00:05Z",
+      "databaseId": 41958774725,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T03:00:00Z",
+      "databaseId": 41958763153,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T02:59:36Z",
+      "databaseId": 41958724720,
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
+      "createdAt": "2026-11-05T02:53:45Z",
+      "databaseId": 41958124369,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T02:52:59Z",
       "databaseId": 41958042967,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T02:52:56Z",
       "databaseId": 41958037974,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -56,7 +112,7 @@
       "createdAt": "2026-11-05T02:52:34Z",
       "databaseId": 41957999834,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -68,11 +124,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T02:51:29Z",
       "databaseId": 41957886347,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -121,62 +177,6 @@
       "databaseId": 41957334150,
       "headBranch": "main",
       "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T02:45:17Z",
-      "databaseId": 41957239040,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T02:44:09Z",
-      "databaseId": 41957117010,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T02:43:23Z",
-      "databaseId": 41957037689,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T02:43:19Z",
-      "databaseId": 41957030965,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T02:42:37Z",
-      "databaseId": 41956957356,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T02:42:33Z",
-      "databaseId": 41956950418,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T02:42:29Z",
-      "databaseId": 41956943330,
-      "headBranch": "main",
-      "status": "in_progress",
       "workflowName": "prepare-manifest"
     }
   ],
@@ -371890,6 +371890,11 @@
         "episode_id": 158574,
         "display_name": "Chlapáci S01E01 - Nic nenamítám CZ Dabing",
         "video_id": 30801547
+      },
+      {
+        "episode_id": 158575,
+        "display_name": "Chlapáci S01E02 - Libido kaktusu CZ Dabing",
+        "video_id": 30801575
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -743497,6 +743502,11 @@
         "episode_id": 158574,
         "display_name": "Chlapáci S01E01 - Nic nenamítám CZ Dabing",
         "video_id": 30801547
+      },
+      {
+        "episode_id": 158575,
+        "display_name": "Chlapáci S01E02 - Libido kaktusu CZ Dabing",
+        "video_id": 30801575
       }
     ],
     "prepared_not_upload_ready": [
@@ -744658,16 +744668,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 42,
+    "disabled": 1,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36054,
+    "needs_whisper": 36052,
     "whisper_confirmed_cz": 3682,
-    "whisper_non_cz_needs_subtitles": 12678,
-    "whisper_failed": 1492
+    "whisper_non_cz_needs_subtitles": 12681,
+    "whisper_failed": 1491
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50213
+    "needs_subtitle_setup_after_prehrajto_processing": 50216
   }
 }
