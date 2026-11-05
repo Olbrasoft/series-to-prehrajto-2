@@ -1,30 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 111930,
-    "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 79742,
-    "prepared_source_episodes": 68129,
+    "manifest_upload_ready_episodes": 14,
+    "uploaded_episodes": 79743,
+    "prepared_source_episodes": 68132,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 28,
+    "language_audited_sources": 35,
     "language_whisper_attempted_sources": 28,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53905,
-    "whisper_review_pending_sources": 37532,
-    "upload_pending_checkpoints": 33,
-    "subtitle_followup_sources": 50359,
-    "subtitle_followup_pending_sources": 50359
+    "whisper_review_sources": 53906,
+    "whisper_review_pending_sources": 37534,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50360,
+    "subtitle_followup_pending_sources": 50360
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T14:22:35Z",
+      "databaseId": 42044403476,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:22:31Z",
+      "databaseId": 42044392681,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:22:29Z",
+      "databaseId": 42044385889,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:22:24Z",
+      "databaseId": 42044372835,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T14:21:34Z",
       "databaseId": 42044238146,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -36,11 +68,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T14:17:37Z",
       "databaseId": 42043594773,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +100,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T14:16:21Z",
       "databaseId": 42043387709,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-05T14:04:54Z",
-      "databaseId": 42041551770,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T14:04:46Z",
-      "databaseId": 42041533138,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T14:04:26Z",
-      "databaseId": 42041482103,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T14:04:22Z",
-      "databaseId": 42041471823,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -195750,6 +195750,11 @@
         "episode_id": 169201,
         "display_name": "The Fantastic Journey S01E10 - 10. epizoda CZ Titulky",
         "video_id": 30819842
+      },
+      {
+        "episode_id": 176673,
+        "display_name": "Leonard and Hungry Paul S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30819870
       },
       {
         "episode_id": 114182,
@@ -568599,6 +568604,11 @@
         "video_id": 30819842
       },
       {
+        "episode_id": 176673,
+        "display_name": "Leonard and Hungry Paul S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30819870
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -747139,15 +747149,16 @@
   "language_verdicts": {},
   "language_whisper_statuses": {
     "ok": 27,
+    "disabled": 7,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36143,
+    "needs_whisper": 36145,
     "whisper_confirmed_cz": 3699,
-    "whisper_non_cz_needs_subtitles": 12674,
+    "whisper_non_cz_needs_subtitles": 12673,
     "whisper_failed": 1389
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50359
+    "needs_subtitle_setup_after_prehrajto_processing": 50360
   }
 }
