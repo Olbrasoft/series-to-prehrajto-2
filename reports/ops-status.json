@@ -1,38 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 111930,
-    "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 79727,
-    "prepared_source_episodes": 68126,
+    "manifest_upload_ready_episodes": 14,
+    "uploaded_episodes": 79729,
+    "prepared_source_episodes": 68130,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 66,
+    "language_audited_sources": 77,
     "language_whisper_attempted_sources": 44,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53907,
-    "whisper_review_pending_sources": 37542,
-    "upload_pending_checkpoints": 33,
-    "subtitle_followup_sources": 50349,
-    "subtitle_followup_pending_sources": 50349
+    "whisper_review_sources": 53908,
+    "whisper_review_pending_sources": 37544,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50350,
+    "subtitle_followup_pending_sources": 50350
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-05T13:42:46Z",
-      "databaseId": 42038188911,
+      "createdAt": "2026-11-05T13:44:45Z",
+      "databaseId": 42038483968,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T13:44:11Z",
+      "databaseId": 42038399073,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T13:43:51Z",
+      "databaseId": 42038348312,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T13:42:46Z",
+      "databaseId": 42038188911,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T13:42:41Z",
       "databaseId": 42038174508,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,11 +108,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T13:38:14Z",
       "databaseId": 42037522258,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +128,7 @@
       "createdAt": "2026-11-05T13:37:59Z",
       "databaseId": 42037487484,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -116,11 +140,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T13:37:49Z",
       "databaseId": 42037460680,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:33:25Z",
-      "databaseId": 42036800080,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:33:21Z",
-      "databaseId": 42036790425,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T13:33:18Z",
-      "databaseId": 42036781909,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -195722,6 +195722,11 @@
         "video_id": 30819196
       },
       {
+        "episode_id": 150476,
+        "display_name": "Song Exploder S02E04 - Natalia Lafourcade – Hasta la Raíz CZ Dabing",
+        "video_id": 30819260
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -373055,6 +373060,11 @@
         "episode_id": 174967,
         "display_name": "Miminka S01E05 - Spánek CZ Titulky",
         "video_id": 30819157
+      },
+      {
+        "episode_id": 174966,
+        "display_name": "Miminka S01E06 - První krůčky CZ Titulky",
+        "video_id": 30819237
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -568494,6 +568504,11 @@
         "video_id": 30819196
       },
       {
+        "episode_id": 150476,
+        "display_name": "Song Exploder S02E04 - Natalia Lafourcade – Hasta la Raíz CZ Dabing",
+        "video_id": 30819260
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -745827,6 +745842,11 @@
         "episode_id": 174967,
         "display_name": "Miminka S01E05 - Spánek CZ Titulky",
         "video_id": 30819157
+      },
+      {
+        "episode_id": 174966,
+        "display_name": "Miminka S01E06 - První krůčky CZ Titulky",
+        "video_id": 30819237
       }
     ],
     "prepared_not_upload_ready": [
@@ -746988,17 +747008,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 22,
+    "disabled": 33,
     "ok": 43,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36144,
+    "needs_whisper": 36149,
     "whisper_confirmed_cz": 3696,
-    "whisper_non_cz_needs_subtitles": 12669,
-    "whisper_failed": 1398
+    "whisper_non_cz_needs_subtitles": 12668,
+    "whisper_failed": 1395
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50349
+    "needs_subtitle_setup_after_prehrajto_processing": 50350
   }
 }
