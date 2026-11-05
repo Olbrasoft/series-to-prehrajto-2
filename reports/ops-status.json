@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 112001,
     "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 79680,
+    "uploaded_episodes": 79681,
     "prepared_source_episodes": 68093,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,73 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37544,
-    "upload_pending_checkpoints": 33,
+    "upload_pending_checkpoints": 34,
     "subtitle_followup_sources": 50324,
     "subtitle_followup_pending_sources": 50324
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T11:34:40Z",
+      "databaseId": 42020089149,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:34:34Z",
+      "databaseId": 42020074099,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:33:30Z",
+      "databaseId": 42019927153,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:33:19Z",
+      "databaseId": 42019903150,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:33:19Z",
+      "databaseId": 42019903123,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:33:10Z",
+      "databaseId": 42019882735,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:33:05Z",
+      "databaseId": 42019871621,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-05T11:32:49Z",
       "databaseId": 42019832511,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -36,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T11:31:31Z",
       "databaseId": 42019654318,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +112,7 @@
       "createdAt": "2026-11-05T11:26:36Z",
       "databaseId": 42018992274,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,11 +124,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T11:24:53Z",
       "databaseId": 42018765588,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +148,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T11:23:34Z",
       "databaseId": 42018588406,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T11:21:27Z",
-      "databaseId": 42018307865,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T11:21:25Z",
-      "databaseId": 42018304365,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T11:21:19Z",
-      "databaseId": 42018290629,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-05T11:21:06Z",
-      "databaseId": 42018261963,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T11:20:48Z",
-      "databaseId": 42018222518,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T11:20:43Z",
-      "databaseId": 42018212796,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T11:20:41Z",
-      "databaseId": 42018207816,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
     }
   ],
   "gaps": {
@@ -195595,6 +195595,11 @@
         "episode_id": 131505,
         "display_name": "Králové Jo’burgu S03E02 - 2. epizoda CZ Titulky",
         "video_id": 30816056
+      },
+      {
+        "episode_id": 125404,
+        "display_name": "Řím: Vzestup a pád impéria S01E06 - Válka s Dáky CZ Dabing",
+        "video_id": 30816087
       },
       {
         "episode_id": 114182,
@@ -568132,6 +568137,11 @@
         "episode_id": 131505,
         "display_name": "Králové Jo’burgu S03E02 - 2. epizoda CZ Titulky",
         "video_id": 30816056
+      },
+      {
+        "episode_id": 125404,
+        "display_name": "Řím: Vzestup a pád impéria S01E06 - Válka s Dáky CZ Dabing",
+        "video_id": 30816087
       },
       {
         "episode_id": 114182,
