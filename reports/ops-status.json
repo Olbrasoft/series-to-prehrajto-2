@@ -1,38 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 111930,
-    "manifest_upload_ready_episodes": 22,
-    "uploaded_episodes": 79749,
-    "prepared_source_episodes": 68147,
+    "manifest_upload_ready_episodes": 19,
+    "uploaded_episodes": 79753,
+    "prepared_source_episodes": 68144,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 78,
-    "language_whisper_attempted_sources": 31,
+    "language_whisper_attempted_sources": 34,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53907,
-    "whisper_review_pending_sources": 37539,
-    "upload_pending_checkpoints": 36,
-    "subtitle_followup_sources": 50365,
-    "subtitle_followup_pending_sources": 50365
+    "whisper_review_sources": 53906,
+    "whisper_review_pending_sources": 37536,
+    "upload_pending_checkpoints": 33,
+    "subtitle_followup_sources": 50368,
+    "subtitle_followup_pending_sources": 50368
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T14:50:19Z",
+      "databaseId": 42048888721,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:50:18Z",
+      "databaseId": 42048887270,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:46:32Z",
+      "databaseId": 42048269833,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-05T14:45:20Z",
       "databaseId": 42048072120,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T14:44:29Z",
       "databaseId": 42047928123,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -44,11 +68,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T14:42:54Z",
       "databaseId": 42047669732,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +80,7 @@
       "createdAt": "2026-11-05T14:42:47Z",
       "databaseId": 42047651963,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -80,7 +104,7 @@
       "createdAt": "2026-11-05T14:39:49Z",
       "databaseId": 42047177257,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T14:35:33Z",
-      "databaseId": 42046488901,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T14:34:45Z",
-      "databaseId": 42046355815,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T14:34:39Z",
-      "databaseId": 42046340165,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -195782,6 +195782,16 @@
         "video_id": 30820498
       },
       {
+        "episode_id": 167060,
+        "display_name": "Major Lazer S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30820541
+      },
+      {
+        "episode_id": 166069,
+        "display_name": "Fever Pitch: The Rise of the Premier League S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30820589
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -373165,6 +373175,16 @@
         "episode_id": 175494,
         "display_name": "Lidé a hry S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30820468
+      },
+      {
+        "episode_id": 163943,
+        "display_name": "Všichni lžou S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30820577
+      },
+      {
+        "episode_id": 163370,
+        "display_name": "The Road to Calvary S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30820558
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -568664,6 +568684,16 @@
         "video_id": 30820498
       },
       {
+        "episode_id": 167060,
+        "display_name": "Major Lazer S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30820541
+      },
+      {
+        "episode_id": 166069,
+        "display_name": "Fever Pitch: The Rise of the Premier League S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30820589
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -746047,6 +746077,16 @@
         "episode_id": 175494,
         "display_name": "Lidé a hry S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30820468
+      },
+      {
+        "episode_id": 163943,
+        "display_name": "Všichni lžou S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30820577
+      },
+      {
+        "episode_id": 163370,
+        "display_name": "The Road to Calvary S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30820558
       }
     ],
     "prepared_not_upload_ready": [
@@ -747208,17 +747248,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 47,
-    "ok": 30,
+    "disabled": 44,
+    "ok": 33,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36156,
+    "needs_whisper": 36153,
     "whisper_confirmed_cz": 3700,
-    "whisper_non_cz_needs_subtitles": 12668,
+    "whisper_non_cz_needs_subtitles": 12670,
     "whisper_failed": 1383
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50365
+    "needs_subtitle_setup_after_prehrajto_processing": 50368
   }
 }
