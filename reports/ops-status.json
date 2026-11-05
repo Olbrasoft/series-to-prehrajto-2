@@ -2,37 +2,93 @@
   "counts": {
     "backlog_episodes": 112127,
     "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 79511,
-    "prepared_source_episodes": 67972,
+    "uploaded_episodes": 79513,
+    "prepared_source_episodes": 67975,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 22,
-    "language_whisper_attempted_sources": 21,
+    "language_audited_sources": 27,
+    "language_whisper_attempted_sources": 22,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37541,
     "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50231,
-    "subtitle_followup_pending_sources": 50231
+    "subtitle_followup_sources": 50232,
+    "subtitle_followup_pending_sources": 50232
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T04:16:02Z",
+      "databaseId": 41966733800,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T04:15:33Z",
+      "databaseId": 41966683837,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T04:15:00Z",
+      "databaseId": 41966622538,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T04:13:52Z",
+      "databaseId": 41966499951,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T04:13:47Z",
+      "databaseId": 41966491906,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T04:12:56Z",
+      "databaseId": 41966404290,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T04:12:51Z",
+      "databaseId": 41966396142,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-05T04:11:40Z",
       "databaseId": 41966271582,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T04:06:56Z",
       "databaseId": 41965759116,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -44,11 +100,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T04:06:07Z",
       "databaseId": 41965673859,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +124,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T04:06:02Z",
       "databaseId": 41965663299,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T04:02:34Z",
-      "databaseId": 41965293373,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T04:01:58Z",
-      "databaseId": 41965232164,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T04:00:50Z",
-      "databaseId": 41965110282,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T04:00:47Z",
-      "databaseId": 41965103868,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T04:00:22Z",
-      "databaseId": 41965059186,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T03:59:14Z",
-      "databaseId": 41964945288,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T03:59:10Z",
-      "databaseId": 41964938598,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -195157,6 +195157,11 @@
         "video_id": 30803444
       },
       {
+        "episode_id": 158581,
+        "display_name": "Chlapáci S01E08 - Dokonce Pokémon to chápe CZ Dabing",
+        "video_id": 30803465
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -371975,6 +371980,11 @@
         "episode_id": 172847,
         "display_name": "Austin S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30803433
+      },
+      {
+        "episode_id": 173134,
+        "display_name": "In the Clear Moonlit Dusk S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30803479
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -566849,6 +566859,11 @@
         "video_id": 30803444
       },
       {
+        "episode_id": 158581,
+        "display_name": "Chlapáci S01E08 - Dokonce Pokémon to chápe CZ Dabing",
+        "video_id": 30803465
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -743667,6 +743682,11 @@
         "episode_id": 172847,
         "display_name": "Austin S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30803433
+      },
+      {
+        "episode_id": 173134,
+        "display_name": "In the Clear Moonlit Dusk S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30803479
       }
     ],
     "prepared_not_upload_ready": [
@@ -744828,17 +744848,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 1,
-    "ok": 20,
+    "ok": 21,
+    "disabled": 5,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36054,
-    "whisper_confirmed_cz": 3682,
-    "whisper_non_cz_needs_subtitles": 12683,
-    "whisper_failed": 1487
+    "needs_whisper": 36056,
+    "whisper_confirmed_cz": 3683,
+    "whisper_non_cz_needs_subtitles": 12682,
+    "whisper_failed": 1485
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50231
+    "needs_subtitle_setup_after_prehrajto_processing": 50232
   }
 }
