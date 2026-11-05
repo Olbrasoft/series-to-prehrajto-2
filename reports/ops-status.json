@@ -1,62 +1,102 @@
 {
   "counts": {
     "backlog_episodes": 112061,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 79565,
-    "prepared_source_episodes": 68012,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 79568,
+    "prepared_source_episodes": 68015,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 48,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53905,
-    "whisper_review_pending_sources": 37540,
-    "upload_pending_checkpoints": 32,
-    "subtitle_followup_sources": 50265,
-    "subtitle_followup_pending_sources": 50265
+    "whisper_review_sources": 53906,
+    "whisper_review_pending_sources": 37545,
+    "upload_pending_checkpoints": 34,
+    "subtitle_followup_sources": 50266,
+    "subtitle_followup_pending_sources": 50266
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-05T06:27:31Z",
-      "databaseId": 41980541943,
+      "createdAt": "2026-11-05T06:36:02Z",
+      "databaseId": 41981496117,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-05T06:27:30Z",
-      "databaseId": 41980539210,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T06:27:25Z",
-      "databaseId": 41980530739,
+      "createdAt": "2026-11-05T06:35:30Z",
+      "databaseId": 41981435334,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
-      "createdAt": "2026-11-05T06:26:28Z",
-      "databaseId": 41980423844,
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T06:34:17Z",
+      "databaseId": 41981299263,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "update-descriptions"
+      "status": "completed",
+      "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T06:29:39Z",
+      "databaseId": 41980770146,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T06:28:56Z",
+      "databaseId": 41980693258,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T06:27:31Z",
+      "databaseId": 41980541943,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T06:27:30Z",
+      "databaseId": 41980539210,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T06:27:25Z",
+      "databaseId": 41980530739,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T06:26:28Z",
+      "databaseId": 41980423844,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T06:25:39Z",
       "databaseId": 41980335311,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -64,7 +104,7 @@
       "createdAt": "2026-11-05T06:25:36Z",
       "databaseId": 41980330440,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -96,7 +136,7 @@
       "createdAt": "2026-11-05T06:23:17Z",
       "databaseId": 41980065283,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T06:19:59Z",
-      "databaseId": 41979692187,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T06:18:56Z",
-      "databaseId": 41979580292,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T06:17:52Z",
-      "databaseId": 41979464988,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-05T06:14:49Z",
-      "databaseId": 41979128076,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T06:14:44Z",
-      "databaseId": 41979119014,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -195282,6 +195282,11 @@
         "video_id": 30806613
       },
       {
+        "episode_id": 158576,
+        "display_name": "Chlapáci S01E03 - Jako osvědčení o neškodnosti nebo co? CZ Dabing",
+        "video_id": 30807073
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372245,6 +372250,16 @@
         "episode_id": 157451,
         "display_name": "G.E.O.: Más allá del límite S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30806823
+      },
+      {
+        "episode_id": 176867,
+        "display_name": "The Artist S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30807086
+      },
+      {
+        "episode_id": 171691,
+        "display_name": "Victoria's Secret: Angels and Demons S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30807135
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -567244,6 +567259,11 @@
         "video_id": 30806613
       },
       {
+        "episode_id": 158576,
+        "display_name": "Chlapáci S01E03 - Jako osvědčení o neškodnosti nebo co? CZ Dabing",
+        "video_id": 30807073
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -744207,6 +744227,16 @@
         "episode_id": 157451,
         "display_name": "G.E.O.: Más allá del límite S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30806823
+      },
+      {
+        "episode_id": 176867,
+        "display_name": "The Artist S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30807086
+      },
+      {
+        "episode_id": 171691,
+        "display_name": "Victoria's Secret: Angels and Demons S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30807135
       }
     ],
     "prepared_not_upload_ready": [
@@ -745368,16 +745398,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 8,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36080,
+    "needs_whisper": 36087,
     "whisper_confirmed_cz": 3684,
-    "whisper_non_cz_needs_subtitles": 12681,
-    "whisper_failed": 1460
+    "whisper_non_cz_needs_subtitles": 12677,
+    "whisper_failed": 1458
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50265
+    "needs_subtitle_setup_after_prehrajto_processing": 50266
   }
 }
