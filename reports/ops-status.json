@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 111757,
-    "manifest_upload_ready_episodes": 55,
-    "uploaded_episodes": 79869,
+    "manifest_upload_ready_episodes": 56,
+    "uploaded_episodes": 79870,
     "prepared_source_episodes": 68239,
     "description_series": 60,
     "description_episodes": 753,
@@ -10,45 +10,77 @@
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 35,
-    "language_whisper_attempted_sources": 25,
+    "language_whisper_attempted_sources": 26,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53906,
-    "whisper_review_pending_sources": 37541,
+    "whisper_review_pending_sources": 37540,
     "upload_pending_checkpoints": 33,
-    "subtitle_followup_sources": 50486,
-    "subtitle_followup_pending_sources": 50486
+    "subtitle_followup_sources": 50487,
+    "subtitle_followup_pending_sources": 50487
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T21:32:48Z",
+      "databaseId": 42113616674,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T21:32:23Z",
+      "databaseId": 42113556521,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T21:32:20Z",
+      "databaseId": 42113547984,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T21:31:17Z",
+      "databaseId": 42113386067,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-05T21:27:46Z",
       "databaseId": 42112852524,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T21:27:05Z",
       "databaseId": 42112752419,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T21:26:59Z",
       "databaseId": 42112737370,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T21:26:55Z",
       "databaseId": 42112728201,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -88,7 +120,7 @@
       "createdAt": "2026-11-05T21:22:35Z",
       "databaseId": 42112069846,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -96,7 +128,7 @@
       "createdAt": "2026-11-05T21:22:32Z",
       "databaseId": 42112063958,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -143,38 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-05T21:20:53Z",
       "databaseId": 42111808149,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T21:20:48Z",
-      "databaseId": 42111796048,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T21:20:38Z",
-      "databaseId": 42111768442,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T21:15:09Z",
-      "databaseId": 42110920803,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T21:14:59Z",
-      "databaseId": 42110892147,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -373765,6 +373765,11 @@
         "episode_id": 154243,
         "display_name": "Květiny v písku S01E04 - Vím, co jsi tehdy dělal CZ Titulky",
         "video_id": 30832566
+      },
+      {
+        "episode_id": 154247,
+        "display_name": "Květiny v písku S01E08 - Nezapomeň – zapomeň CZ Titulky",
+        "video_id": 30832815
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -747247,6 +747252,11 @@
         "episode_id": 154243,
         "display_name": "Květiny v písku S01E04 - Vím, co jsi tehdy dělal CZ Titulky",
         "video_id": 30832566
+      },
+      {
+        "episode_id": 154247,
+        "display_name": "Květiny v písku S01E08 - Nezapomeň – zapomeň CZ Titulky",
+        "video_id": 30832815
       }
     ],
     "prepared_not_upload_ready": [
@@ -748408,17 +748418,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 24,
-    "disabled": 10,
+    "ok": 25,
+    "disabled": 9,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36198,
+    "needs_whisper": 36197,
     "whisper_confirmed_cz": 3706,
-    "whisper_non_cz_needs_subtitles": 12659,
+    "whisper_non_cz_needs_subtitles": 12660,
     "whisper_failed": 1343
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50486
+    "needs_subtitle_setup_after_prehrajto_processing": 50487
   }
 }
