@@ -1,30 +1,110 @@
 {
   "counts": {
     "backlog_episodes": 111930,
-    "manifest_upload_ready_episodes": 18,
-    "uploaded_episodes": 79737,
-    "prepared_source_episodes": 68139,
+    "manifest_upload_ready_episodes": 14,
+    "uploaded_episodes": 79741,
+    "prepared_source_episodes": 68130,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 28,
+    "language_whisper_attempted_sources": 28,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53907,
-    "whisper_review_pending_sources": 37540,
-    "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50356,
-    "subtitle_followup_pending_sources": 50356
+    "whisper_review_sources": 53905,
+    "whisper_review_pending_sources": 37532,
+    "upload_pending_checkpoints": 33,
+    "subtitle_followup_sources": 50359,
+    "subtitle_followup_pending_sources": 50359
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T14:17:37Z",
+      "databaseId": 42043594773,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:17:33Z",
+      "databaseId": 42043582723,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:17:32Z",
+      "databaseId": 42043581452,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:17:29Z",
+      "databaseId": 42043574377,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:16:21Z",
+      "databaseId": 42043387709,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:15:32Z",
+      "databaseId": 42043258051,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:14:15Z",
+      "databaseId": 42043039227,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T14:13:44Z",
+      "databaseId": 42042957194,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T14:11:28Z",
+      "databaseId": 42042595676,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T14:11:23Z",
+      "databaseId": 42042581964,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T14:06:33Z",
       "databaseId": 42041816324,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +116,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T14:05:24Z",
       "databaseId": 42041635559,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -60,11 +140,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T14:04:46Z",
       "databaseId": 42041533138,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -76,11 +156,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T14:04:22Z",
       "databaseId": 42041471823,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -95,86 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-05T14:04:00Z",
       "databaseId": 42041412682,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T14:03:54Z",
-      "databaseId": 42041397105,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T14:03:40Z",
-      "databaseId": 42041359172,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T14:01:55Z",
-      "databaseId": 42041082833,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T14:00:44Z",
-      "databaseId": 42040895058,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:59:24Z",
-      "databaseId": 42040681777,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:58:10Z",
-      "databaseId": 42040499495,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:58:08Z",
-      "databaseId": 42040495799,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:58:02Z",
-      "databaseId": 42040480430,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:57:41Z",
-      "databaseId": 42040428690,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:56:47Z",
-      "databaseId": 42040294564,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -195737,6 +195737,16 @@
         "video_id": 30819629
       },
       {
+        "episode_id": 167065,
+        "display_name": "Major Lazer S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30819704
+      },
+      {
+        "episode_id": 174057,
+        "display_name": "Po výstřelu: Amerika v šoku S01E02 - San Bernardino, Kalifornie CZ Dabing",
+        "video_id": 30819748
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -373105,6 +373115,16 @@
         "episode_id": 150470,
         "display_name": "Song Exploder S01E02 - Lin-Manuel Miranda: Wait for It CZ Titulky",
         "video_id": 30819657
+      },
+      {
+        "episode_id": 74986,
+        "display_name": "Operace Buffalo S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30819715
+      },
+      {
+        "episode_id": 159599,
+        "display_name": "Soukromé životy S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30819675
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -568559,6 +568579,16 @@
         "video_id": 30819629
       },
       {
+        "episode_id": 167065,
+        "display_name": "Major Lazer S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30819704
+      },
+      {
+        "episode_id": 174057,
+        "display_name": "Po výstřelu: Amerika v šoku S01E02 - San Bernardino, Kalifornie CZ Dabing",
+        "video_id": 30819748
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -745927,6 +745957,16 @@
         "episode_id": 150470,
         "display_name": "Song Exploder S01E02 - Lin-Manuel Miranda: Wait for It CZ Titulky",
         "video_id": 30819657
+      },
+      {
+        "episode_id": 74986,
+        "display_name": "Operace Buffalo S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30819715
+      },
+      {
+        "episode_id": 159599,
+        "display_name": "Soukromé životy S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30819675
       }
     ],
     "prepared_not_upload_ready": [
@@ -747088,16 +747128,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 27,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36151,
-    "whisper_confirmed_cz": 3696,
-    "whisper_non_cz_needs_subtitles": 12671,
+    "needs_whisper": 36143,
+    "whisper_confirmed_cz": 3699,
+    "whisper_non_cz_needs_subtitles": 12674,
     "whisper_failed": 1389
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50356
+    "needs_subtitle_setup_after_prehrajto_processing": 50359
   }
 }
