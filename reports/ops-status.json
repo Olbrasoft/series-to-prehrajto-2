@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 112061,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 79588,
-    "prepared_source_episodes": 68037,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 79590,
+    "prepared_source_episodes": 68035,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -14,17 +14,65 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37538,
-    "upload_pending_checkpoints": 34,
+    "upload_pending_checkpoints": 33,
     "subtitle_followup_sources": 50282,
     "subtitle_followup_pending_sources": 50282
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T07:43:58Z",
+      "databaseId": 41989288814,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T07:42:29Z",
+      "databaseId": 41989120118,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T07:42:26Z",
+      "databaseId": 41989114053,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T07:41:23Z",
+      "databaseId": 41988992591,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T07:41:23Z",
+      "databaseId": 41988992278,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T07:41:07Z",
+      "databaseId": 41988962302,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "failure",
       "createdAt": "2026-11-05T07:39:04Z",
       "databaseId": 41988723670,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -32,7 +80,7 @@
       "createdAt": "2026-11-05T07:38:46Z",
       "databaseId": 41988689821,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,11 +116,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T07:37:39Z",
       "databaseId": 41988564025,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,11 +164,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T07:33:19Z",
       "databaseId": 41988048600,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T07:32:35Z",
-      "databaseId": 41987961043,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T07:32:18Z",
-      "databaseId": 41987927728,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T07:31:41Z",
-      "databaseId": 41987850333,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T07:31:00Z",
-      "databaseId": 41987767288,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T07:29:34Z",
-      "databaseId": 41987591833,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T07:25:54Z",
-      "databaseId": 41987185227,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -195337,6 +195337,11 @@
         "video_id": 30808727
       },
       {
+        "episode_id": 174325,
+        "display_name": "Srdce se neloučí S01E01 - Žádost o ruku CZ Titulky",
+        "video_id": 30808841
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372360,6 +372365,11 @@
         "episode_id": 203899,
         "display_name": "Pekelná práce S01E06 - Zdi nemluví CZ Dabing",
         "video_id": 30808799
+      },
+      {
+        "episode_id": 157455,
+        "display_name": "G.E.O.: Más allá del límite S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30808932
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -567414,6 +567424,11 @@
         "video_id": 30808727
       },
       {
+        "episode_id": 174325,
+        "display_name": "Srdce se neloučí S01E01 - Žádost o ruku CZ Titulky",
+        "video_id": 30808841
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -744437,6 +744452,11 @@
         "episode_id": 203899,
         "display_name": "Pekelná práce S01E06 - Zdi nemluví CZ Dabing",
         "video_id": 30808799
+      },
+      {
+        "episode_id": 157455,
+        "display_name": "G.E.O.: Más allá del límite S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30808932
       }
     ],
     "prepared_not_upload_ready": [
