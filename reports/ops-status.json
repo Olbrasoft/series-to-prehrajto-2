@@ -1,24 +1,72 @@
 {
   "counts": {
     "backlog_episodes": 111930,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 79699,
-    "prepared_source_episodes": 68108,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 79704,
+    "prepared_source_episodes": 68113,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 38,
+    "language_whisper_attempted_sources": 21,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53905,
-    "whisper_review_pending_sources": 37537,
-    "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50332,
-    "subtitle_followup_pending_sources": 50332
+    "whisper_review_pending_sources": 37538,
+    "upload_pending_checkpoints": 34,
+    "subtitle_followup_sources": 50333,
+    "subtitle_followup_pending_sources": 50333
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T12:51:39Z",
+      "databaseId": 42030706024,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T12:51:20Z",
+      "databaseId": 42030664215,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T12:50:16Z",
+      "databaseId": 42030514020,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T12:50:10Z",
+      "databaseId": 42030500980,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T12:49:43Z",
+      "databaseId": 42030434953,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T12:47:15Z",
+      "databaseId": 42030094581,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-05T12:46:05Z",
@@ -32,7 +80,7 @@
       "createdAt": "2026-11-05T12:45:53Z",
       "databaseId": 42029900490,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +92,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T12:45:07Z",
       "databaseId": 42029788015,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,11 +116,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T12:41:51Z",
       "databaseId": 42029337443,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -96,15 +144,15 @@
       "createdAt": "2026-11-05T12:39:57Z",
       "databaseId": 42029071426,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T12:39:49Z",
       "databaseId": 42029051146,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -112,7 +160,7 @@
       "createdAt": "2026-11-05T12:39:47Z",
       "databaseId": 42029047792,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T12:37:31Z",
-      "databaseId": 42028727719,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T12:37:26Z",
-      "databaseId": 42028715804,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T12:35:37Z",
-      "databaseId": 42028458572,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T12:35:18Z",
-      "databaseId": 42028412390,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T12:35:07Z",
-      "databaseId": 42028386247,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T12:34:54Z",
-      "databaseId": 42028351885,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -195642,6 +195642,21 @@
         "video_id": 30817868
       },
       {
+        "episode_id": 156193,
+        "display_name": "Urban Legend S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30817979
+      },
+      {
+        "episode_id": 125413,
+        "display_name": "Řím: Vzestup a pád impéria S01E13 - Poslední císař CZ Dabing",
+        "video_id": 30818042
+      },
+      {
+        "episode_id": 126500,
+        "display_name": "Tajemství oceánů S02E15 - 15. epizoda CZ Dabing",
+        "video_id": 30818014
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372915,6 +372930,16 @@
         "episode_id": 126506,
         "display_name": "Tajemství oceánů S03E01 - Poslední americká otrokářská loď CZ Dabing",
         "video_id": 30817922
+      },
+      {
+        "episode_id": 126499,
+        "display_name": "Tajemství oceánů S02E14 - 14. epizoda CZ Dabing",
+        "video_id": 30817891
+      },
+      {
+        "episode_id": 156191,
+        "display_name": "Urban Legend S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30818054
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -568274,6 +568299,21 @@
         "video_id": 30817868
       },
       {
+        "episode_id": 156193,
+        "display_name": "Urban Legend S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30817979
+      },
+      {
+        "episode_id": 125413,
+        "display_name": "Řím: Vzestup a pád impéria S01E13 - Poslední císař CZ Dabing",
+        "video_id": 30818042
+      },
+      {
+        "episode_id": 126500,
+        "display_name": "Tajemství oceánů S02E15 - 15. epizoda CZ Dabing",
+        "video_id": 30818014
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -745547,6 +745587,16 @@
         "episode_id": 126506,
         "display_name": "Tajemství oceánů S03E01 - Poslední americká otrokářská loď CZ Dabing",
         "video_id": 30817922
+      },
+      {
+        "episode_id": 126499,
+        "display_name": "Tajemství oceánů S02E14 - 14. epizoda CZ Dabing",
+        "video_id": 30817891
+      },
+      {
+        "episode_id": 156191,
+        "display_name": "Urban Legend S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30818054
       }
     ],
     "prepared_not_upload_ready": [
@@ -746708,16 +746758,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "disabled": 17,
+    "ok": 20,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36124,
+    "needs_whisper": 36126,
     "whisper_confirmed_cz": 3696,
-    "whisper_non_cz_needs_subtitles": 12672,
-    "whisper_failed": 1413
+    "whisper_non_cz_needs_subtitles": 12671,
+    "whisper_failed": 1412
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50332
+    "needs_subtitle_setup_after_prehrajto_processing": 50333
   }
 }
