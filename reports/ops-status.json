@@ -1,30 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 112001,
-    "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 79674,
-    "prepared_source_episodes": 68089,
+    "manifest_upload_ready_episodes": 11,
+    "uploaded_episodes": 79680,
+    "prepared_source_episodes": 68093,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 50,
-    "language_whisper_attempted_sources": 45,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53905,
-    "whisper_review_pending_sources": 37543,
-    "upload_pending_checkpoints": 32,
+    "whisper_review_sources": 53906,
+    "whisper_review_pending_sources": 37544,
+    "upload_pending_checkpoints": 33,
     "subtitle_followup_sources": 50324,
     "subtitle_followup_pending_sources": 50324
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T11:32:49Z",
+      "databaseId": 42019832511,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:32:18Z",
+      "databaseId": 42019761573,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:31:31Z",
+      "databaseId": 42019654318,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:31:25Z",
+      "databaseId": 42019641893,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T11:26:36Z",
+      "databaseId": 42018992274,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T11:25:56Z",
+      "databaseId": 42018904416,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-05T11:24:53Z",
       "databaseId": 42018765588,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +84,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T11:24:38Z",
       "databaseId": 42018732916,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,11 +132,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T11:21:25Z",
       "databaseId": 42018304365,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,11 +164,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T11:20:43Z",
       "databaseId": 42018212796,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T11:19:05Z",
-      "databaseId": 42017991073,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T11:18:03Z",
-      "databaseId": 42017850756,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T11:16:05Z",
-      "databaseId": 42017584423,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T11:14:57Z",
-      "databaseId": 42017420609,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T11:14:53Z",
-      "databaseId": 42017411185,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T11:14:47Z",
-      "databaseId": 42017396513,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -195582,6 +195582,21 @@
         "video_id": 30815776
       },
       {
+        "episode_id": 174964,
+        "display_name": "Miminka S01E04 - První slůvka CZ Titulky",
+        "video_id": 30815986
+      },
+      {
+        "episode_id": 163373,
+        "display_name": "The Road to Calvary S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30816005
+      },
+      {
+        "episode_id": 131505,
+        "display_name": "Králové Jo’burgu S03E02 - 2. epizoda CZ Titulky",
+        "video_id": 30816056
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372790,6 +372805,21 @@
         "episode_id": 125410,
         "display_name": "Řím: Vzestup a pád impéria S01E02 - Spartakus CZ Dabing",
         "video_id": 30815220
+      },
+      {
+        "episode_id": 131495,
+        "display_name": "Králové Jo’burgu S01E06 - Oběť CZ Dabing",
+        "video_id": 30816048
+      },
+      {
+        "episode_id": 131506,
+        "display_name": "Králové Jo’burgu S03E03 - 3. epizoda CZ Titulky",
+        "video_id": 30816070
+      },
+      {
+        "episode_id": 131507,
+        "display_name": "Králové Jo’burgu S03E04 - 4. epizoda CZ Titulky",
+        "video_id": 30816128
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -568089,6 +568119,21 @@
         "video_id": 30815776
       },
       {
+        "episode_id": 174964,
+        "display_name": "Miminka S01E04 - První slůvka CZ Titulky",
+        "video_id": 30815986
+      },
+      {
+        "episode_id": 163373,
+        "display_name": "The Road to Calvary S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30816005
+      },
+      {
+        "episode_id": 131505,
+        "display_name": "Králové Jo’burgu S03E02 - 2. epizoda CZ Titulky",
+        "video_id": 30816056
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -745297,6 +745342,21 @@
         "episode_id": 125410,
         "display_name": "Řím: Vzestup a pád impéria S01E02 - Spartakus CZ Dabing",
         "video_id": 30815220
+      },
+      {
+        "episode_id": 131495,
+        "display_name": "Králové Jo’burgu S01E06 - Oběť CZ Dabing",
+        "video_id": 30816048
+      },
+      {
+        "episode_id": 131506,
+        "display_name": "Králové Jo’burgu S03E03 - 3. epizoda CZ Titulky",
+        "video_id": 30816070
+      },
+      {
+        "episode_id": 131507,
+        "display_name": "Králové Jo’burgu S03E04 - 4. epizoda CZ Titulky",
+        "video_id": 30816128
       }
     ],
     "prepared_not_upload_ready": [
@@ -746458,15 +746518,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 44,
-    "disabled": 5,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36121,
+    "needs_whisper": 36124,
     "whisper_confirmed_cz": 3689,
     "whisper_non_cz_needs_subtitles": 12673,
-    "whisper_failed": 1422
+    "whisper_failed": 1420
   },
   "subtitle_followup_statuses": {
     "needs_subtitle_setup_after_prehrajto_processing": 50324
