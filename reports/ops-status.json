@@ -1,38 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 112001,
-    "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 79638,
-    "prepared_source_episodes": 68068,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 79641,
+    "prepared_source_episodes": 68070,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 50,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53904,
-    "whisper_review_pending_sources": 37535,
-    "upload_pending_checkpoints": 34,
-    "subtitle_followup_sources": 50306,
-    "subtitle_followup_pending_sources": 50306
+    "whisper_review_pending_sources": 37538,
+    "upload_pending_checkpoints": 33,
+    "subtitle_followup_sources": 50307,
+    "subtitle_followup_pending_sources": 50307
   },
   "workflow_runs": [
     {
-      "conclusion": "",
-      "createdAt": "2026-11-05T09:57:51Z",
-      "databaseId": 42006710173,
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T10:02:38Z",
+      "databaseId": 42007377903,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T10:02:32Z",
+      "databaseId": 42007365583,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T10:02:23Z",
+      "databaseId": 42007343685,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T10:02:17Z",
+      "databaseId": 42007331868,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T10:01:42Z",
+      "databaseId": 42007248322,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T09:59:15Z",
+      "databaseId": 42006898276,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T09:57:51Z",
+      "databaseId": 42006710173,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T09:57:37Z",
       "databaseId": 42006678080,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +116,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T09:53:54Z",
       "databaseId": 42006172313,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -100,11 +148,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T09:51:58Z",
       "databaseId": 42005906804,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T09:48:23Z",
-      "databaseId": 42005411065,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T09:45:08Z",
-      "databaseId": 42004956486,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T09:45:03Z",
-      "databaseId": 42004944311,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T09:43:49Z",
-      "databaseId": 42004770448,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T09:43:09Z",
-      "databaseId": 42004677225,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T09:42:44Z",
-      "databaseId": 42004622401,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -195482,6 +195482,11 @@
         "video_id": 30813580
       },
       {
+        "episode_id": 131496,
+        "display_name": "Králové Jo’burgu S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30813560
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372610,6 +372615,16 @@
         "episode_id": 131499,
         "display_name": "Králové Jo’burgu S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30813500
+      },
+      {
+        "episode_id": 126487,
+        "display_name": "Tajemství oceánů S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30813595
+      },
+      {
+        "episode_id": 79079,
+        "display_name": "Slušný člověk S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30813696
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -567809,6 +567824,11 @@
         "video_id": 30813580
       },
       {
+        "episode_id": 131496,
+        "display_name": "Králové Jo’burgu S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30813560
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -744937,6 +744957,16 @@
         "episode_id": 131499,
         "display_name": "Králové Jo’burgu S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30813500
+      },
+      {
+        "episode_id": 126487,
+        "display_name": "Tajemství oceánů S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30813595
+      },
+      {
+        "episode_id": 79079,
+        "display_name": "Slušný člověk S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30813696
       }
     ],
     "prepared_not_upload_ready": [
@@ -746098,16 +746128,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 41,
+    "disabled": 10,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36100,
+    "needs_whisper": 36103,
     "whisper_confirmed_cz": 3684,
-    "whisper_non_cz_needs_subtitles": 12685,
+    "whisper_non_cz_needs_subtitles": 12682,
     "whisper_failed": 1435
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50306
+    "needs_subtitle_setup_after_prehrajto_processing": 50307
   }
 }
