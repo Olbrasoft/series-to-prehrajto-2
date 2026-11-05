@@ -2,53 +2,85 @@
   "counts": {
     "backlog_episodes": 112001,
     "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 79642,
-    "prepared_source_episodes": 68073,
+    "uploaded_episodes": 79644,
+    "prepared_source_episodes": 68078,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 38,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37541,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50309,
     "subtitle_followup_pending_sources": 50309
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-05T10:06:01Z",
-      "databaseId": 42007854729,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T10:05:42Z",
-      "databaseId": 42007810302,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T10:05:28Z",
-      "databaseId": 42007776587,
+      "createdAt": "2026-11-05T10:11:20Z",
+      "databaseId": 42008605885,
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T10:07:57Z",
+      "databaseId": 42008127520,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T10:07:31Z",
+      "databaseId": 42008067388,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T10:07:29Z",
+      "databaseId": 42008061741,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T10:06:01Z",
+      "databaseId": 42007854729,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T10:05:42Z",
+      "databaseId": 42007810302,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T10:05:28Z",
+      "databaseId": 42007776587,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T10:05:23Z",
       "databaseId": 42007765274,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -64,7 +96,7 @@
       "createdAt": "2026-11-05T10:04:57Z",
       "databaseId": 42007703380,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-descriptions"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T10:02:23Z",
-      "databaseId": 42007343685,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T10:02:17Z",
-      "databaseId": 42007331868,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T10:01:42Z",
-      "databaseId": 42007248322,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T09:59:15Z",
-      "databaseId": 42006898276,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -195492,6 +195492,11 @@
         "video_id": 30813684
       },
       {
+        "episode_id": 173132,
+        "display_name": "In the Clear Moonlit Dusk S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30813930
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372630,6 +372635,11 @@
         "episode_id": 79079,
         "display_name": "Slušný člověk S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30813696
+      },
+      {
+        "episode_id": 131498,
+        "display_name": "Králové Jo’burgu S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30813887
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -567839,6 +567849,11 @@
         "video_id": 30813684
       },
       {
+        "episode_id": 173132,
+        "display_name": "In the Clear Moonlit Dusk S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30813930
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -744977,6 +744992,11 @@
         "episode_id": 79079,
         "display_name": "Slušný člověk S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30813696
+      },
+      {
+        "episode_id": 131498,
+        "display_name": "Králové Jo’burgu S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 30813887
       }
     ],
     "prepared_not_upload_ready": [
@@ -746138,6 +746158,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 18,
     "ok": 19,
     "resolve_failed": 1
   },
