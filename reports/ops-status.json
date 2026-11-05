@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 111930,
-    "manifest_upload_ready_episodes": 14,
-    "uploaded_episodes": 79729,
-    "prepared_source_episodes": 68130,
+    "manifest_upload_ready_episodes": 13,
+    "uploaded_episodes": 79730,
+    "prepared_source_episodes": 68127,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -20,11 +20,59 @@
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T13:51:29Z",
+      "databaseId": 42039499669,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-05T13:51:25Z",
+      "databaseId": 42039489221,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T13:50:49Z",
+      "databaseId": 42039399392,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T13:50:22Z",
+      "databaseId": 42039333052,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T13:49:37Z",
+      "databaseId": 42039216669,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T13:47:37Z",
+      "databaseId": 42038916212,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "failure",
       "createdAt": "2026-11-05T13:46:12Z",
       "databaseId": 42038704798,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -32,15 +80,15 @@
       "createdAt": "2026-11-05T13:44:45Z",
       "databaseId": 42038483968,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T13:44:11Z",
       "databaseId": 42038399073,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +152,7 @@
       "createdAt": "2026-11-05T13:39:33Z",
       "databaseId": 42037712917,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -127,54 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-05T13:38:04Z",
       "databaseId": 42037497246,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T13:37:59Z",
-      "databaseId": 42037487484,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:37:52Z",
-      "databaseId": 42037468364,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:37:49Z",
-      "databaseId": 42037460680,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-05T13:37:10Z",
-      "databaseId": 42037368542,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:34:04Z",
-      "databaseId": 42036898377,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:34:02Z",
-      "databaseId": 42036890681,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -373065,6 +373065,11 @@
         "episode_id": 174966,
         "display_name": "Miminka S01E06 - První krůčky CZ Titulky",
         "video_id": 30819237
+      },
+      {
+        "episode_id": 163374,
+        "display_name": "The Road to Calvary S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30819283
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -745847,6 +745852,11 @@
         "episode_id": 174966,
         "display_name": "Miminka S01E06 - První krůčky CZ Titulky",
         "video_id": 30819237
+      },
+      {
+        "episode_id": 163374,
+        "display_name": "The Road to Calvary S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30819283
       }
     ],
     "prepared_not_upload_ready": [
