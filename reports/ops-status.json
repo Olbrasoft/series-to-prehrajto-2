@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 111930,
-    "manifest_upload_ready_episodes": 15,
-    "uploaded_episodes": 79713,
-    "prepared_source_episodes": 68125,
+    "manifest_upload_ready_episodes": 9,
+    "uploaded_episodes": 79722,
+    "prepared_source_episodes": 68120,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -12,27 +12,107 @@
     "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53907,
-    "whisper_review_pending_sources": 37542,
-    "upload_pending_checkpoints": 36,
-    "subtitle_followup_sources": 50340,
-    "subtitle_followup_pending_sources": 50340
+    "whisper_review_sources": 53906,
+    "whisper_review_pending_sources": 37539,
+    "upload_pending_checkpoints": 33,
+    "subtitle_followup_sources": 50344,
+    "subtitle_followup_pending_sources": 50344
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-05T13:19:24Z",
-      "databaseId": 42034744176,
+      "createdAt": "2026-11-05T13:24:57Z",
+      "databaseId": 42035554107,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T13:24:09Z",
+      "databaseId": 42035434123,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-05T13:24:05Z",
+      "databaseId": 42035424666,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T13:23:41Z",
+      "databaseId": 42035367607,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T13:23:21Z",
+      "databaseId": 42035318759,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T13:23:13Z",
+      "databaseId": 42035298873,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T13:20:55Z",
+      "databaseId": 42034967108,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T13:20:49Z",
+      "databaseId": 42034953909,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T13:20:08Z",
+      "databaseId": 42034848555,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T13:20:02Z",
+      "databaseId": 42034835162,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T13:19:24Z",
+      "databaseId": 42034744176,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T13:16:59Z",
       "databaseId": 42034393955,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -48,7 +128,7 @@
       "createdAt": "2026-11-05T13:16:09Z",
       "databaseId": 42034268791,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -60,11 +140,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T13:15:39Z",
       "databaseId": 42034196026,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -76,11 +156,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T13:15:22Z",
       "databaseId": 42034151790,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -88,7 +168,7 @@
       "createdAt": "2026-11-05T13:14:35Z",
       "databaseId": 42034027933,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T13:13:28Z",
-      "databaseId": 42033858253,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-05T13:12:54Z",
-      "databaseId": 42033774947,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T13:12:43Z",
-      "databaseId": 42033747008,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:12:35Z",
-      "databaseId": 42033727569,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:12:35Z",
-      "databaseId": 42033726836,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:12:28Z",
-      "databaseId": 42033709695,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:09:33Z",
-      "databaseId": 42033281387,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:09:30Z",
-      "databaseId": 42033273286,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:09:27Z",
-      "databaseId": 42033267179,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T13:07:22Z",
-      "databaseId": 42032961202,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -195677,6 +195677,36 @@
         "video_id": 30818633
       },
       {
+        "episode_id": 181529,
+        "display_name": "Země zlata S01E05 - Tajemství CZ Dabing",
+        "video_id": 30818689
+      },
+      {
+        "episode_id": 175492,
+        "display_name": "Lidé a hry S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30818708
+      },
+      {
+        "episode_id": 150469,
+        "display_name": "Song Exploder S01E01 - Alicia Keys: 3 Hour Drive CZ Titulky",
+        "video_id": 30818760
+      },
+      {
+        "episode_id": 126512,
+        "display_name": "Tajemství oceánů S03E05 - Bitva o Británii CZ Dabing",
+        "video_id": 30818795
+      },
+      {
+        "episode_id": 159601,
+        "display_name": "Soukromé životy S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30818865
+      },
+      {
+        "episode_id": 156192,
+        "display_name": "Urban Legend S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30818901
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -372985,6 +373015,21 @@
         "episode_id": 150474,
         "display_name": "Song Exploder S02E02 - The Killers – When You Were Young CZ Dabing",
         "video_id": 30818530
+      },
+      {
+        "episode_id": 173486,
+        "display_name": "Bitva o Gallipoli S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30818655
+      },
+      {
+        "episode_id": 164715,
+        "display_name": "900 dní bez Anabel S01E01 - Kde je Anabel? CZ Dabing",
+        "video_id": 30818662
+      },
+      {
+        "episode_id": 150475,
+        "display_name": "Song Exploder S02E03 - Nine Inch Nails – Hurt CZ Dabing",
+        "video_id": 30818839
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -568379,6 +568424,36 @@
         "video_id": 30818633
       },
       {
+        "episode_id": 181529,
+        "display_name": "Země zlata S01E05 - Tajemství CZ Dabing",
+        "video_id": 30818689
+      },
+      {
+        "episode_id": 175492,
+        "display_name": "Lidé a hry S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30818708
+      },
+      {
+        "episode_id": 150469,
+        "display_name": "Song Exploder S01E01 - Alicia Keys: 3 Hour Drive CZ Titulky",
+        "video_id": 30818760
+      },
+      {
+        "episode_id": 126512,
+        "display_name": "Tajemství oceánů S03E05 - Bitva o Británii CZ Dabing",
+        "video_id": 30818795
+      },
+      {
+        "episode_id": 159601,
+        "display_name": "Soukromé životy S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30818865
+      },
+      {
+        "episode_id": 156192,
+        "display_name": "Urban Legend S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30818901
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -745687,6 +745762,21 @@
         "episode_id": 150474,
         "display_name": "Song Exploder S02E02 - The Killers – When You Were Young CZ Dabing",
         "video_id": 30818530
+      },
+      {
+        "episode_id": 173486,
+        "display_name": "Bitva o Gallipoli S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30818655
+      },
+      {
+        "episode_id": 164715,
+        "display_name": "900 dní bez Anabel S01E01 - Kde je Anabel? CZ Dabing",
+        "video_id": 30818662
+      },
+      {
+        "episode_id": 150475,
+        "display_name": "Song Exploder S02E03 - Nine Inch Nails – Hurt CZ Dabing",
+        "video_id": 30818839
       }
     ],
     "prepared_not_upload_ready": [
@@ -746852,12 +746942,12 @@
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36138,
+    "needs_whisper": 36136,
     "whisper_confirmed_cz": 3696,
-    "whisper_non_cz_needs_subtitles": 12669,
-    "whisper_failed": 1404
+    "whisper_non_cz_needs_subtitles": 12671,
+    "whisper_failed": 1403
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50340
+    "needs_subtitle_setup_after_prehrajto_processing": 50344
   }
 }
