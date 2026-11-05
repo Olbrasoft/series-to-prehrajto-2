@@ -2,14 +2,14 @@
   "counts": {
     "backlog_episodes": 111757,
     "manifest_upload_ready_episodes": 48,
-    "uploaded_episodes": 79893,
+    "uploaded_episodes": 79895,
     "prepared_source_episodes": 68257,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 24,
+    "language_audited_sources": 20,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53907,
@@ -20,11 +20,19 @@
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T23:11:01Z",
+      "databaseId": 42127623095,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-05T23:08:49Z",
       "databaseId": 42127327861,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +60,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T23:04:29Z",
       "databaseId": 42126738701,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +76,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T23:04:25Z",
       "databaseId": 42126730131,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -116,11 +124,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T23:01:45Z",
       "databaseId": 42126362573,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T22:52:35Z",
-      "databaseId": 42125134806,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -196152,6 +196152,11 @@
         "video_id": 30835328
       },
       {
+        "episode_id": 142804,
+        "display_name": "Zákon ve Vegas S01E09 - Synáček (aneb „Trauma z matky“) CZ Dabing",
+        "video_id": 30835625
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -373885,6 +373890,11 @@
         "episode_id": 175026,
         "display_name": "Domy za vodou S01E01 - Hlavní sezóna CZ Titulky",
         "video_id": 30835447
+      },
+      {
+        "episode_id": 133135,
+        "display_name": "Baby Bandito S01E01 - Příležitost dělá zloděje CZ Titulky",
+        "video_id": 30835566
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -569754,6 +569764,11 @@
         "video_id": 30835328
       },
       {
+        "episode_id": 142804,
+        "display_name": "Zákon ve Vegas S01E09 - Synáček (aneb „Trauma z matky“) CZ Dabing",
+        "video_id": 30835625
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -747487,6 +747502,11 @@
         "episode_id": 175026,
         "display_name": "Domy za vodou S01E01 - Hlavní sezóna CZ Titulky",
         "video_id": 30835447
+      },
+      {
+        "episode_id": 133135,
+        "display_name": "Baby Bandito S01E01 - Příležitost dělá zloděje CZ Titulky",
+        "video_id": 30835566
       }
     ],
     "prepared_not_upload_ready": [
@@ -748648,7 +748668,6 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 4,
     "ok": 19,
     "resolve_failed": 1
   },
