@@ -14,17 +14,33 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53904,
     "whisper_review_pending_sources": 37534,
-    "upload_pending_checkpoints": 32,
+    "upload_pending_checkpoints": 33,
     "subtitle_followup_sources": 50288,
     "subtitle_followup_pending_sources": 50288
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T08:05:36Z",
+      "databaseId": 41991851166,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T08:05:33Z",
+      "databaseId": 41991843559,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-05T08:04:46Z",
       "databaseId": 41991747852,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -36,11 +52,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T08:04:23Z",
       "databaseId": 41991701815,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -159,22 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-05T07:49:46Z",
       "databaseId": 41989969684,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-05T07:49:42Z",
-      "databaseId": 41989962459,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T07:48:28Z",
-      "databaseId": 41989819690,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
