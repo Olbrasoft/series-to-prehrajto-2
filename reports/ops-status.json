@@ -1,30 +1,54 @@
 {
   "counts": {
     "backlog_episodes": 111861,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 79790,
-    "prepared_source_episodes": 68153,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 79792,
+    "prepared_source_episodes": 68158,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 45,
+    "language_audited_sources": 52,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53907,
-    "whisper_review_pending_sources": 37540,
-    "upload_pending_checkpoints": 34,
-    "subtitle_followup_sources": 50388,
-    "subtitle_followup_pending_sources": 50388
+    "whisper_review_sources": 53908,
+    "whisper_review_pending_sources": 37541,
+    "upload_pending_checkpoints": 32,
+    "subtitle_followup_sources": 50390,
+    "subtitle_followup_pending_sources": 50390
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T16:21:32Z",
+      "databaseId": 42063590577,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T16:21:12Z",
+      "databaseId": 42063532780,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T16:21:07Z",
+      "databaseId": 42063517749,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T16:20:47Z",
       "databaseId": 42063459875,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,15 +56,15 @@
       "createdAt": "2026-11-05T16:20:33Z",
       "databaseId": 42063415888,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T16:20:04Z",
       "databaseId": 42063325280,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +76,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-05T16:19:12Z",
       "databaseId": 42063170400,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T16:05:42Z",
-      "databaseId": 42061241486,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T16:05:38Z",
-      "databaseId": 42061232242,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T16:05:11Z",
-      "databaseId": 42061184905,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -195902,6 +195902,11 @@
         "video_id": 30822959
       },
       {
+        "episode_id": 159612,
+        "display_name": "Soukromé životy S01E15 - 15. epizoda CZ Titulky",
+        "video_id": 30823085
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -373370,6 +373375,11 @@
         "episode_id": 176599,
         "display_name": "Beauty and the Bester S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30822978
+      },
+      {
+        "episode_id": 176811,
+        "display_name": "Tamon's B-Side S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30823117
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -568989,6 +568999,11 @@
         "video_id": 30822959
       },
       {
+        "episode_id": 159612,
+        "display_name": "Soukromé životy S01E15 - 15. epizoda CZ Titulky",
+        "video_id": 30823085
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -746457,6 +746472,11 @@
         "episode_id": 176599,
         "display_name": "Beauty and the Bester S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30822978
+      },
+      {
+        "episode_id": 176811,
+        "display_name": "Tamon's B-Side S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30823117
       }
     ],
     "prepared_not_upload_ready": [
@@ -747618,17 +747638,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 5,
+    "disabled": 12,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36168,
+    "needs_whisper": 36171,
     "whisper_confirmed_cz": 3700,
     "whisper_non_cz_needs_subtitles": 12667,
-    "whisper_failed": 1372
+    "whisper_failed": 1370
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50388
+    "needs_subtitle_setup_after_prehrajto_processing": 50390
   }
 }
