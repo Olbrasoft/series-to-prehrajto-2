@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 112001,
-    "manifest_upload_ready_episodes": 14,
-    "uploaded_episodes": 79660,
-    "prepared_source_episodes": 68086,
+    "manifest_upload_ready_episodes": 12,
+    "uploaded_episodes": 79662,
+    "prepared_source_episodes": 68085,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -14,17 +14,65 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37542,
-    "upload_pending_checkpoints": 34,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 50319,
     "subtitle_followup_pending_sources": 50319
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T10:55:54Z",
+      "databaseId": 42014759638,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T10:55:48Z",
+      "databaseId": 42014746536,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T10:54:52Z",
+      "databaseId": 42014619896,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T10:54:29Z",
+      "databaseId": 42014567346,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T10:54:25Z",
+      "databaseId": 42014558737,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T10:54:22Z",
+      "databaseId": 42014551970,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-05T10:52:58Z",
       "databaseId": 42014363506,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +116,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-05T10:49:17Z",
       "databaseId": 42013868291,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T10:42:08Z",
-      "databaseId": 42012892105,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T10:42:05Z",
-      "databaseId": 42012884276,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T10:41:55Z",
-      "databaseId": 42012862100,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T10:41:32Z",
-      "databaseId": 42012810949,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-05T10:41:01Z",
-      "databaseId": 42012739550,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T10:38:37Z",
-      "databaseId": 42012409122,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -372720,6 +372720,16 @@
         "episode_id": 126491,
         "display_name": "Tajemství oceánů S01E10 - 10. epizoda CZ Dabing",
         "video_id": 30814869
+      },
+      {
+        "episode_id": 156187,
+        "display_name": "Urban Legend S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30815080
+      },
+      {
+        "episode_id": 126490,
+        "display_name": "Tajemství oceánů S01E09 - 9. epizoda CZ Dabing",
+        "video_id": 30815059
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -745157,6 +745167,16 @@
         "episode_id": 126491,
         "display_name": "Tajemství oceánů S01E10 - 10. epizoda CZ Dabing",
         "video_id": 30814869
+      },
+      {
+        "episode_id": 156187,
+        "display_name": "Urban Legend S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30815080
+      },
+      {
+        "episode_id": 126490,
+        "display_name": "Tajemství oceánů S01E09 - 9. epizoda CZ Dabing",
+        "video_id": 30815059
       }
     ],
     "prepared_not_upload_ready": [
