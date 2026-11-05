@@ -2,37 +2,77 @@
   "counts": {
     "backlog_episodes": 112170,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 79476,
+    "uploaded_episodes": 79477,
     "prepared_source_episodes": 67898,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 28,
-    "language_whisper_attempted_sources": 21,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37548,
-    "upload_pending_checkpoints": 33,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 50200,
     "subtitle_followup_pending_sources": 50200
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-05T01:47:40Z",
-      "databaseId": 41950905574,
+      "createdAt": "2026-11-05T01:50:13Z",
+      "databaseId": 41951186158,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T01:50:00Z",
+      "databaseId": 41951162414,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-05T01:49:53Z",
+      "databaseId": 41951150057,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-05T01:49:49Z",
+      "databaseId": 41951142693,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T01:48:53Z",
+      "databaseId": 41951039433,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T01:47:40Z",
+      "databaseId": 41950905574,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-05T01:47:19Z",
       "databaseId": 41950869727,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -72,7 +112,7 @@
       "createdAt": "2026-11-05T01:42:35Z",
       "databaseId": 41950342085,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -120,7 +160,7 @@
       "createdAt": "2026-11-05T01:40:33Z",
       "databaseId": 41950113512,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T01:39:28Z",
-      "databaseId": 41949986519,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T01:39:25Z",
-      "databaseId": 41949982000,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T01:38:17Z",
-      "databaseId": 41949856235,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T01:38:12Z",
-      "databaseId": 41949847352,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-05T01:34:19Z",
-      "databaseId": 41949415670,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -371800,6 +371800,11 @@
         "episode_id": 123238,
         "display_name": "Starhunter S01E10 - 10. epizoda CZ Titulky",
         "video_id": 30799608
+      },
+      {
+        "episode_id": 137830,
+        "display_name": "Kevin S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30799679
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -743317,6 +743322,11 @@
         "episode_id": 123238,
         "display_name": "Starhunter S01E10 - 10. epizoda CZ Titulky",
         "video_id": 30799608
+      },
+      {
+        "episode_id": 137830,
+        "display_name": "Kevin S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30799679
       }
     ],
     "prepared_not_upload_ready": [
@@ -744478,8 +744488,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
-    "ok": 20,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
