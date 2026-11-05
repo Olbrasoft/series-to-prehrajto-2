@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111930,
     "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 79723,
+    "uploaded_episodes": 79725,
     "prepared_source_episodes": 68116,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,51 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37539,
-    "upload_pending_checkpoints": 33,
+    "upload_pending_checkpoints": 32,
     "subtitle_followup_sources": 50344,
     "subtitle_followup_pending_sources": 50344
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T13:38:14Z",
+      "databaseId": 42037522258,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-05T13:38:04Z",
+      "databaseId": 42037497246,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T13:37:59Z",
+      "databaseId": 42037487484,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-05T13:37:52Z",
+      "databaseId": 42037468364,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-05T13:37:49Z",
+      "databaseId": 42037460680,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-05T13:37:10Z",
@@ -32,7 +72,7 @@
       "createdAt": "2026-11-05T13:34:04Z",
       "databaseId": 42036898377,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-05T13:30:39Z",
-      "databaseId": 42036385643,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:24:57Z",
-      "databaseId": 42035554107,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:24:09Z",
-      "databaseId": 42035434123,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:24:05Z",
-      "databaseId": 42035424666,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-05T13:23:41Z",
-      "databaseId": 42035367607,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -195707,6 +195707,11 @@
         "video_id": 30818901
       },
       {
+        "episode_id": 166693,
+        "display_name": "The Daily Life of a Middle-Aged Online Shopper in Another World S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30819165
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -373035,6 +373040,11 @@
         "episode_id": 159603,
         "display_name": "Soukromé životy S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30818956
+      },
+      {
+        "episode_id": 174967,
+        "display_name": "Miminka S01E05 - Spánek CZ Titulky",
+        "video_id": 30819157
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -568459,6 +568469,11 @@
         "video_id": 30818901
       },
       {
+        "episode_id": 166693,
+        "display_name": "The Daily Life of a Middle-Aged Online Shopper in Another World S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30819165
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -745787,6 +745802,11 @@
         "episode_id": 159603,
         "display_name": "Soukromé životy S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30818956
+      },
+      {
+        "episode_id": 174967,
+        "display_name": "Miminka S01E05 - Spánek CZ Titulky",
+        "video_id": 30819157
       }
     ],
     "prepared_not_upload_ready": [
