@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111438,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 80234,
+    "uploaded_episodes": 80235,
     "prepared_source_episodes": 68502,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,91 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53918,
     "whisper_review_pending_sources": 37478,
-    "upload_pending_checkpoints": 35,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50641,
     "subtitle_followup_pending_sources": 50641
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:06:01Z",
+      "databaseId": 42249177961,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:05:14Z",
+      "databaseId": 42249052676,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:04:58Z",
+      "databaseId": 42249010154,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:04:58Z",
+      "databaseId": 42249010136,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:03:46Z",
+      "databaseId": 42248825845,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:03:44Z",
+      "databaseId": 42248819774,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T16:03:17Z",
+      "databaseId": 42248748247,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T16:03:17Z",
+      "databaseId": 42248746612,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:03:14Z",
+      "databaseId": 42248740522,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:03:10Z",
+      "databaseId": 42248731818,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-06T16:01:49Z",
@@ -28,19 +108,19 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T16:00:26Z",
       "databaseId": 42248297410,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T16:00:19Z",
       "databaseId": 42248277886,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T15:52:13Z",
-      "databaseId": 42247045642,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T15:52:09Z",
-      "databaseId": 42247033221,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T15:52:08Z",
-      "databaseId": 42247033020,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T15:51:20Z",
-      "databaseId": 42246912098,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T15:50:32Z",
-      "databaseId": 42246788016,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T15:50:28Z",
-      "databaseId": 42246776363,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T15:50:27Z",
-      "databaseId": 42246775261,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T15:50:04Z",
-      "databaseId": 42246714040,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T15:49:58Z",
-      "databaseId": 42246697856,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T15:47:22Z",
-      "databaseId": 42246298914,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -375590,6 +375590,11 @@
         "episode_id": 5342,
         "display_name": "My Little Pony: Ukaž se S04E06 - Malý koník CZ Titulky",
         "video_id": 30862415
+      },
+      {
+        "episode_id": 174231,
+        "display_name": "Pan a paní Smithovi S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30863103
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -750897,6 +750902,11 @@
         "episode_id": 5342,
         "display_name": "My Little Pony: Ukaž se S04E06 - Malý koník CZ Titulky",
         "video_id": 30862415
+      },
+      {
+        "episode_id": 174231,
+        "display_name": "Pan a paní Smithovi S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30863103
       }
     ],
     "prepared_not_upload_ready": [
