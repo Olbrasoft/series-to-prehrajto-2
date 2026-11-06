@@ -2,29 +2,53 @@
   "counts": {
     "backlog_episodes": 111384,
     "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 80317,
+    "uploaded_episodes": 80318,
     "prepared_source_episodes": 68656,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53905,
     "whisper_review_pending_sources": 37421,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50685,
     "subtitle_followup_pending_sources": 50685
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T23:57:06Z",
+      "databaseId": 42315174733,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T23:57:01Z",
+      "databaseId": 42315166175,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T23:56:55Z",
+      "databaseId": 42315155981,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-06T23:55:16Z",
       "databaseId": 42314986983,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +68,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T23:52:09Z",
       "databaseId": 42314663399,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,11 +140,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T23:45:03Z",
       "databaseId": 42313949265,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T23:39:14Z",
-      "databaseId": 42313327072,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T23:37:21Z",
-      "databaseId": 42313131721,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T23:36:38Z",
-      "databaseId": 42313055041,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -376005,6 +376005,11 @@
         "episode_id": 112335,
         "display_name": "O Rei do Gado S01E19 - 19. epizoda CZ Titulky",
         "video_id": 30873505
+      },
+      {
+        "episode_id": 70003,
+        "display_name": "Übel Blatt S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30873548
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -751727,6 +751732,11 @@
         "episode_id": 112335,
         "display_name": "O Rei do Gado S01E19 - 19. epizoda CZ Titulky",
         "video_id": 30873505
+      },
+      {
+        "episode_id": 70003,
+        "display_name": "Übel Blatt S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30873548
       }
     ],
     "prepared_not_upload_ready": [
@@ -752888,7 +752898,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
