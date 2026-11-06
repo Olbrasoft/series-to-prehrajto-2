@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 111384,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 80287,
-    "prepared_source_episodes": 68613,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 80289,
+    "prepared_source_episodes": 68616,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53908,
     "whisper_review_pending_sources": 37432,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50673,
     "subtitle_followup_pending_sources": 50673
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T21:47:43Z",
+      "databaseId": 42299628982,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T21:47:29Z",
+      "databaseId": 42299597740,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T21:46:45Z",
+      "databaseId": 42299501067,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-06T21:44:03Z",
       "databaseId": 42299132817,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +84,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T21:41:41Z",
       "databaseId": 42298821864,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,7 +104,7 @@
       "createdAt": "2026-11-06T21:38:48Z",
       "databaseId": 42298431868,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -88,7 +112,7 @@
       "createdAt": "2026-11-06T21:37:05Z",
       "databaseId": 42298205767,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -112,7 +136,7 @@
       "createdAt": "2026-11-06T21:33:12Z",
       "databaseId": 42297668192,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T21:31:58Z",
-      "databaseId": 42297491103,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T21:31:54Z",
-      "databaseId": 42297482278,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T21:31:48Z",
-      "databaseId": 42297468994,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -375855,6 +375855,16 @@
         "episode_id": 99638,
         "display_name": "Čtyři lvice S01E04 - 30 milionů přátel CZ Dabing",
         "video_id": 30870373
+      },
+      {
+        "episode_id": 70002,
+        "display_name": "Übel Blatt S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30870479
+      },
+      {
+        "episode_id": 112323,
+        "display_name": "O Rei do Gado S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30870496
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -751427,6 +751437,16 @@
         "episode_id": 99638,
         "display_name": "Čtyři lvice S01E04 - 30 milionů přátel CZ Dabing",
         "video_id": 30870373
+      },
+      {
+        "episode_id": 70002,
+        "display_name": "Übel Blatt S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30870479
+      },
+      {
+        "episode_id": 112323,
+        "display_name": "O Rei do Gado S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30870496
       }
     ],
     "prepared_not_upload_ready": [
