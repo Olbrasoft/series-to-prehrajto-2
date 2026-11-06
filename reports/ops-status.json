@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 111622,
-    "manifest_upload_ready_episodes": 45,
-    "uploaded_episodes": 80067,
-    "prepared_source_episodes": 68400,
+    "manifest_upload_ready_episodes": 38,
+    "uploaded_episodes": 80071,
+    "prepared_source_episodes": 68394,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -20,6 +20,62 @@
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T08:08:29Z",
+      "databaseId": 42185555651,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:06:54Z",
+      "databaseId": 42185366877,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:06:27Z",
+      "databaseId": 42185313462,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:06:24Z",
+      "databaseId": 42185307043,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:06:20Z",
+      "databaseId": 42185300576,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:04:39Z",
+      "databaseId": 42185098020,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:03:58Z",
+      "databaseId": 42185022263,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-06T08:01:58Z",
       "databaseId": 42184794457,
@@ -28,27 +84,27 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T08:00:11Z",
       "databaseId": 42184575900,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T08:00:07Z",
       "databaseId": 42184567584,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T07:59:26Z",
       "databaseId": 42184490512,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +140,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T07:51:58Z",
       "databaseId": 42183677447,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T07:49:54Z",
-      "databaseId": 42183450068,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T07:49:53Z",
-      "databaseId": 42183447587,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:48:16Z",
-      "databaseId": 42183275589,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:42:21Z",
-      "databaseId": 42182623339,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:42:15Z",
-      "databaseId": 42182612793,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:42:10Z",
-      "databaseId": 42182604226,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:42:07Z",
-      "databaseId": 42182597124,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -374755,6 +374755,26 @@
         "episode_id": 126051,
         "display_name": "Bandi S01E07 - 7. epizoda CZ Dabing",
         "video_id": 30853016
+      },
+      {
+        "episode_id": 17231,
+        "display_name": "Agents of the Four Seasons Dance of Spring S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30853400
+      },
+      {
+        "episode_id": 126050,
+        "display_name": "Bandi S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30853384
+      },
+      {
+        "episode_id": 17235,
+        "display_name": "Agents of the Four Seasons Dance of Spring S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30853542
+      },
+      {
+        "episode_id": 17230,
+        "display_name": "Agents of the Four Seasons Dance of Spring S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30853625
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -749227,6 +749247,26 @@
         "episode_id": 126051,
         "display_name": "Bandi S01E07 - 7. epizoda CZ Dabing",
         "video_id": 30853016
+      },
+      {
+        "episode_id": 17231,
+        "display_name": "Agents of the Four Seasons Dance of Spring S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30853400
+      },
+      {
+        "episode_id": 126050,
+        "display_name": "Bandi S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30853384
+      },
+      {
+        "episode_id": 17235,
+        "display_name": "Agents of the Four Seasons Dance of Spring S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30853542
+      },
+      {
+        "episode_id": 17230,
+        "display_name": "Agents of the Four Seasons Dance of Spring S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30853625
       }
     ],
     "prepared_not_upload_ready": [
