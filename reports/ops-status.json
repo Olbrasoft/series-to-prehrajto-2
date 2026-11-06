@@ -1,30 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 111384,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 80306,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 80309,
     "prepared_source_episodes": 68649,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 41,
+    "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53908,
-    "whisper_review_pending_sources": 37432,
-    "upload_pending_checkpoints": 37,
-    "subtitle_followup_sources": 50675,
-    "subtitle_followup_pending_sources": 50675
+    "whisper_review_pending_sources": 37431,
+    "upload_pending_checkpoints": 35,
+    "subtitle_followup_sources": 50676,
+    "subtitle_followup_pending_sources": 50676
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T23:23:23Z",
+      "databaseId": 42311569852,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T23:22:11Z",
+      "databaseId": 42311433803,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T23:22:06Z",
+      "databaseId": 42311423767,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T23:21:51Z",
+      "databaseId": 42311392964,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T23:20:46Z",
+      "databaseId": 42311270456,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T23:20:39Z",
+      "databaseId": 42311255128,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-06T23:20:10Z",
       "databaseId": 42311192626,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -32,7 +80,7 @@
       "createdAt": "2026-11-06T23:18:01Z",
       "databaseId": 42310940808,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +96,7 @@
       "createdAt": "2026-11-06T23:15:06Z",
       "databaseId": 42310600397,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -60,11 +108,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T23:13:55Z",
       "databaseId": 42310462133,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -72,7 +120,7 @@
       "createdAt": "2026-11-06T23:13:50Z",
       "databaseId": 42310451777,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -128,56 +176,8 @@
       "createdAt": "2026-11-06T23:10:50Z",
       "databaseId": 42310089916,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T23:10:25Z",
-      "databaseId": 42310035592,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T23:10:22Z",
-      "databaseId": 42310028928,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T23:10:03Z",
-      "databaseId": 42309978289,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T23:09:11Z",
-      "databaseId": 42309913283,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T23:07:28Z",
-      "databaseId": 42309708685,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T23:07:23Z",
-      "databaseId": 42309699307,
-      "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "backfill-subtitles"
+      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -375950,6 +375950,21 @@
         "episode_id": 108367,
         "display_name": "Jsi můj život  S01E51 - 51. epizoda CZ Dabing",
         "video_id": 30872651
+      },
+      {
+        "episode_id": 108370,
+        "display_name": "Jsi můj život  S01E53 - 53. epizoda CZ Dabing",
+        "video_id": 30872817
+      },
+      {
+        "episode_id": 17751,
+        "display_name": "Zločin S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30872857
+      },
+      {
+        "episode_id": 99642,
+        "display_name": "Čtyři lvice S01E08 - Tanec se lvicemi CZ Dabing",
+        "video_id": 30872961
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -751617,6 +751632,21 @@
         "episode_id": 108367,
         "display_name": "Jsi můj život  S01E51 - 51. epizoda CZ Dabing",
         "video_id": 30872651
+      },
+      {
+        "episode_id": 108370,
+        "display_name": "Jsi můj život  S01E53 - 53. epizoda CZ Dabing",
+        "video_id": 30872817
+      },
+      {
+        "episode_id": 17751,
+        "display_name": "Zločin S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30872857
+      },
+      {
+        "episode_id": 99642,
+        "display_name": "Čtyři lvice S01E08 - Tanec se lvicemi CZ Dabing",
+        "video_id": 30872961
       }
     ],
     "prepared_not_upload_ready": [
@@ -752778,16 +752808,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 40,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36212,
+    "needs_whisper": 36211,
     "whisper_confirmed_cz": 3713,
-    "whisper_non_cz_needs_subtitles": 12763,
+    "whisper_non_cz_needs_subtitles": 12764,
     "whisper_failed": 1220
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50675
+    "needs_subtitle_setup_after_prehrajto_processing": 50676
   }
 }
