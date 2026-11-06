@@ -2,37 +2,77 @@
   "counts": {
     "backlog_episodes": 111570,
     "manifest_upload_ready_episodes": 29,
-    "uploaded_episodes": 80137,
-    "prepared_source_episodes": 68443,
+    "uploaded_episodes": 80138,
+    "prepared_source_episodes": 68446,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 47,
+    "language_audited_sources": 52,
     "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53918,
     "whisper_review_pending_sources": 37510,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50612,
     "subtitle_followup_pending_sources": 50612
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T11:30:37Z",
+      "databaseId": 42210775010,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
-      "createdAt": "2026-11-06T11:26:16Z",
-      "databaseId": 42210241684,
+      "createdAt": "2026-11-06T11:30:34Z",
+      "databaseId": 42210768272,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T11:30:31Z",
+      "databaseId": 42210760119,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:29:58Z",
+      "databaseId": 42210684328,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:27:15Z",
+      "databaseId": 42210361070,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:26:16Z",
+      "databaseId": 42210241684,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T11:26:11Z",
       "databaseId": 42210232812,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -100,11 +140,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T11:20:09Z",
       "databaseId": 42209475191,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -116,11 +156,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T11:18:27Z",
       "databaseId": 42209261561,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:16:32Z",
-      "databaseId": 42209028361,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:15:57Z",
-      "databaseId": 42208954023,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:14:47Z",
-      "databaseId": 42208802339,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T11:14:43Z",
-      "databaseId": 42208795756,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T11:14:25Z",
-      "databaseId": 42208757949,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -196785,6 +196785,11 @@
         "episode_id": 174225,
         "display_name": "Pan a paní Smithovi S01E02 - 2. epizoda CZ Dabing",
         "video_id": 30857492
+      },
+      {
+        "episode_id": 127284,
+        "display_name": "Sovětské džíny S01E08 - Epizoda 8 CZ Dabing",
+        "video_id": 30857473
       },
       {
         "episode_id": 114182,
@@ -571609,6 +571614,11 @@
         "video_id": 30857492
       },
       {
+        "episode_id": 127284,
+        "display_name": "Sovětské džíny S01E08 - Epizoda 8 CZ Dabing",
+        "video_id": 30857473
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -751088,15 +751098,15 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 6,
+    "disabled": 11,
     "ok": 40,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36259,
+    "needs_whisper": 36261,
     "whisper_confirmed_cz": 3701,
     "whisper_non_cz_needs_subtitles": 12707,
-    "whisper_failed": 1251
+    "whisper_failed": 1249
   },
   "subtitle_followup_statuses": {
     "needs_subtitle_setup_after_prehrajto_processing": 50612
