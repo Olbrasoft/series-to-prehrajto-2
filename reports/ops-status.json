@@ -1,30 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 111570,
-    "manifest_upload_ready_episodes": 30,
-    "uploaded_episodes": 80107,
-    "prepared_source_episodes": 68415,
+    "manifest_upload_ready_episodes": 33,
+    "uploaded_episodes": 80108,
+    "prepared_source_episodes": 68419,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 29,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53916,
     "whisper_review_pending_sources": 37516,
     "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50603,
-    "subtitle_followup_pending_sources": 50603
+    "subtitle_followup_sources": 50604,
+    "subtitle_followup_pending_sources": 50604
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T09:56:06Z",
+      "databaseId": 42198762433,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T09:55:51Z",
+      "databaseId": 42198731998,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T09:55:08Z",
+      "databaseId": 42198641391,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T09:55:05Z",
+      "databaseId": 42198634736,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-06T09:54:37Z",
       "databaseId": 42198576338,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,19 +68,19 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T09:52:50Z",
       "databaseId": 42198352610,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T09:52:46Z",
       "databaseId": 42198343798,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -132,11 +164,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T09:49:02Z",
       "databaseId": 42197877973,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T09:44:02Z",
-      "databaseId": 42197245634,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T09:42:57Z",
-      "databaseId": 42197105662,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T09:42:51Z",
-      "databaseId": 42197094609,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T09:42:48Z",
-      "databaseId": 42197087425,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -196700,6 +196700,11 @@
         "episode_id": 157969,
         "display_name": "Yakitori: Soldiers of Misfortune S01E03 - Nedejte jim vydechnout CZ Titulky",
         "video_id": 30855751
+      },
+      {
+        "episode_id": 32181,
+        "display_name": "Agents of the Four Seasons Dance of Spring S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30855855
       },
       {
         "episode_id": 114182,
@@ -571374,6 +571379,11 @@
         "video_id": 30855751
       },
       {
+        "episode_id": 32181,
+        "display_name": "Agents of the Four Seasons Dance of Spring S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30855855
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -750788,17 +750798,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 9,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36246,
+    "needs_whisper": 36248,
     "whisper_confirmed_cz": 3700,
     "whisper_non_cz_needs_subtitles": 12700,
-    "whisper_failed": 1270
+    "whisper_failed": 1268
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50603
+    "needs_subtitle_setup_after_prehrajto_processing": 50604
   }
 }
