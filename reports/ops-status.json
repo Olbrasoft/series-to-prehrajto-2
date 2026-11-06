@@ -1,62 +1,150 @@
 {
   "counts": {
     "backlog_episodes": 111622,
-    "manifest_upload_ready_episodes": 41,
-    "uploaded_episodes": 80054,
-    "prepared_source_episodes": 68386,
+    "manifest_upload_ready_episodes": 46,
+    "uploaded_episodes": 80055,
+    "prepared_source_episodes": 68395,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 21,
+    "language_whisper_attempted_sources": 21,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53915,
-    "whisper_review_pending_sources": 37527,
+    "whisper_review_pending_sources": 37526,
     "upload_pending_checkpoints": 38,
-    "subtitle_followup_sources": 50590,
-    "subtitle_followup_pending_sources": 50590
+    "subtitle_followup_sources": 50592,
+    "subtitle_followup_pending_sources": 50592
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-06T07:12:37Z",
-      "databaseId": 42179360581,
+      "createdAt": "2026-11-06T07:18:24Z",
+      "databaseId": 42179999036,
       "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
+      "status": "queued",
+      "workflowName": "process-whisper-review"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-06T07:09:27Z",
-      "databaseId": 42179010924,
+      "createdAt": "2026-11-06T07:16:34Z",
+      "databaseId": 42179803854,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T07:16:31Z",
+      "databaseId": 42179799026,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T07:16:20Z",
+      "databaseId": 42179781377,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T07:15:50Z",
+      "databaseId": 42179722998,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T07:15:02Z",
+      "databaseId": 42179627818,
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-06T07:09:22Z",
-      "databaseId": 42179003507,
+      "createdAt": "2026-11-06T07:14:36Z",
+      "databaseId": 42179582068,
       "headBranch": "main",
       "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T07:14:14Z",
+      "databaseId": 42179543039,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T07:14:05Z",
+      "databaseId": 42179523793,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T07:13:42Z",
+      "databaseId": 42179478923,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T07:13:30Z",
+      "databaseId": 42179456105,
+      "headBranch": "main",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T07:12:37Z",
+      "databaseId": 42179360581,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T07:09:27Z",
+      "databaseId": 42179010924,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T07:09:22Z",
+      "databaseId": 42179003507,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-06T07:06:00Z",
       "databaseId": 42178635818,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T07:05:23Z",
       "databaseId": 42178567937,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -90,94 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T07:02:15Z",
-      "databaseId": 42178225236,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T07:02:12Z",
-      "databaseId": 42178220068,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T07:01:55Z",
-      "databaseId": 42178188397,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T07:00:58Z",
-      "databaseId": 42178081343,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:00:56Z",
-      "databaseId": 42178077930,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:00:51Z",
-      "databaseId": 42178067344,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T06:59:40Z",
-      "databaseId": 42177931529,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T06:57:56Z",
-      "databaseId": 42177759655,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T06:56:51Z",
-      "databaseId": 42177652158,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T06:56:46Z",
-      "databaseId": 42177643157,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T06:56:26Z",
-      "databaseId": 42177609570,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -374690,6 +374690,11 @@
         "episode_id": 157967,
         "display_name": "Yakitori: Soldiers of Misfortune S01E01 - Diplomatická mise CZ Titulky",
         "video_id": 30851604
+      },
+      {
+        "episode_id": 203974,
+        "display_name": "Černá holubice S02E03 - J jako jed CZ Dabing",
+        "video_id": 30852018
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -749097,6 +749102,11 @@
         "episode_id": 157967,
         "display_name": "Yakitori: Soldiers of Misfortune S01E01 - Diplomatická mise CZ Titulky",
         "video_id": 30851604
+      },
+      {
+        "episode_id": 203974,
+        "display_name": "Černá holubice S02E03 - J jako jed CZ Dabing",
+        "video_id": 30852018
       }
     ],
     "prepared_not_upload_ready": [
@@ -750258,16 +750268,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 20,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36237,
+    "needs_whisper": 36239,
     "whisper_confirmed_cz": 3699,
-    "whisper_non_cz_needs_subtitles": 12689,
-    "whisper_failed": 1290
+    "whisper_non_cz_needs_subtitles": 12690,
+    "whisper_failed": 1287
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50590
+    "needs_subtitle_setup_after_prehrajto_processing": 50592
   }
 }
