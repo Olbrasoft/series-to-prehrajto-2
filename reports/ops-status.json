@@ -2,16 +2,16 @@
   "counts": {
     "backlog_episodes": 111438,
     "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 80232,
-    "prepared_source_episodes": 68501,
+    "uploaded_episodes": 80233,
+    "prepared_source_episodes": 68504,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 51,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53919,
     "whisper_review_pending_sources": 37484,
     "upload_pending_checkpoints": 36,
@@ -21,26 +21,82 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-06T15:51:20Z",
-      "databaseId": 42246912098,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T15:50:32Z",
-      "databaseId": 42246788016,
+      "createdAt": "2026-11-06T15:52:54Z",
+      "databaseId": 42247146666,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T15:52:25Z",
+      "databaseId": 42247074631,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:52:22Z",
+      "databaseId": 42247069232,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:52:19Z",
+      "databaseId": 42247060089,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T15:52:13Z",
+      "databaseId": 42247045642,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:52:09Z",
+      "databaseId": 42247033221,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:52:08Z",
+      "databaseId": 42247033020,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T15:51:20Z",
+      "databaseId": 42246912098,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T15:50:32Z",
+      "databaseId": 42246788016,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-06T15:50:28Z",
       "databaseId": 42246776363,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +148,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T15:42:38Z",
       "databaseId": 42245562058,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T15:38:15Z",
-      "databaseId": 42244896392,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T15:38:09Z",
-      "databaseId": 42244880896,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T15:37:48Z",
-      "databaseId": 42244827282,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T15:37:45Z",
-      "databaseId": 42244818726,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T15:37:09Z",
-      "databaseId": 42244727422,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T15:37:06Z",
-      "databaseId": 42244719311,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T15:33:52Z",
-      "databaseId": 42244208311,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -197055,6 +197055,11 @@
         "episode_id": 73688,
         "display_name": "Czas honoru S02E07 - 7. epizoda CZ Titulky",
         "video_id": 30862252
+      },
+      {
+        "episode_id": 130104,
+        "display_name": "Banditi: Na cestě za zlatem S01E05 - Nevěsta, vražedkyně a blázen CZ Dabing",
+        "video_id": 30862697
       },
       {
         "episode_id": 114182,
@@ -572354,6 +572359,11 @@
         "video_id": 30862252
       },
       {
+        "episode_id": 130104,
+        "display_name": "Banditi: Na cestě za zlatem S01E05 - Nevěsta, vražedkyně a blázen CZ Dabing",
+        "video_id": 30862697
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752038,8 +752048,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 11,
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
