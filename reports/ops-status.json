@@ -1,30 +1,126 @@
 {
   "counts": {
     "backlog_episodes": 111717,
-    "manifest_upload_ready_episodes": 46,
-    "uploaded_episodes": 79952,
-    "prepared_source_episodes": 68306,
+    "manifest_upload_ready_episodes": 42,
+    "uploaded_episodes": 79956,
+    "prepared_source_episodes": 68305,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 50,
-    "language_whisper_attempted_sources": 50,
+    "language_audited_sources": 44,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53914,
     "whisper_review_pending_sources": 37542,
-    "upload_pending_checkpoints": 37,
-    "subtitle_followup_sources": 50545,
-    "subtitle_followup_pending_sources": 50545
+    "upload_pending_checkpoints": 39,
+    "subtitle_followup_sources": 50547,
+    "subtitle_followup_pending_sources": 50547
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T02:43:20Z",
+      "databaseId": 42152111216,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T02:42:40Z",
+      "databaseId": 42152042345,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T02:42:35Z",
+      "databaseId": 42152035856,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T02:42:12Z",
+      "databaseId": 42151996965,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T02:41:41Z",
+      "databaseId": 42151941577,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T02:41:36Z",
+      "databaseId": 42151934678,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T02:39:10Z",
+      "databaseId": 42151680168,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T02:38:04Z",
+      "databaseId": 42151566792,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T02:38:00Z",
+      "databaseId": 42151559214,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T02:37:24Z",
+      "databaseId": 42151497241,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T02:37:07Z",
+      "databaseId": 42151467145,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T02:35:58Z",
+      "databaseId": 42151345661,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-06T02:33:42Z",
       "databaseId": 42151101634,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -32,7 +128,7 @@
       "createdAt": "2026-11-06T02:33:22Z",
       "databaseId": 42151065456,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +140,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T02:33:19Z",
       "databaseId": 42151059442,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -60,11 +156,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T02:32:11Z",
       "databaseId": 42150937899,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -80,104 +176,8 @@
       "createdAt": "2026-11-06T02:31:34Z",
       "databaseId": 42150874773,
       "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T02:29:09Z",
-      "databaseId": 42150613014,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T02:29:08Z",
-      "databaseId": 42150611430,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T02:29:05Z",
-      "databaseId": 42150606014,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T02:27:40Z",
-      "databaseId": 42150458846,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T02:24:10Z",
-      "databaseId": 42150085946,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T02:21:14Z",
-      "databaseId": 42149774355,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T02:21:10Z",
-      "databaseId": 42149768119,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T02:21:08Z",
-      "databaseId": 42149763316,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T02:21:07Z",
-      "databaseId": 42149762781,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T02:20:32Z",
-      "databaseId": 42149699248,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T02:19:06Z",
-      "databaseId": 42149542647,
-      "headBranch": "main",
       "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T02:18:53Z",
-      "databaseId": 42149520515,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
+      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -196292,6 +196292,16 @@
         "video_id": 30842653
       },
       {
+        "episode_id": 163984,
+        "display_name": "Rozbitá S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30842872
+      },
+      {
+        "episode_id": 36045,
+        "display_name": "Notre Dame S01E06 - 6. díl CZ Dabing",
+        "video_id": 30842893
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -374180,6 +374190,16 @@
         "episode_id": 175010,
         "display_name": "Laboratoř záhad S01E03 - Jak cestovat časem CZ Titulky",
         "video_id": 30842670
+      },
+      {
+        "episode_id": 166483,
+        "display_name": "The Midnight Romance in Hagwon S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30842821
+      },
+      {
+        "episode_id": 166286,
+        "display_name": "Guntherovy miliony S01E02 - Luxusní bouda CZ Dabing",
+        "video_id": 30842884
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -570189,6 +570209,16 @@
         "video_id": 30842653
       },
       {
+        "episode_id": 163984,
+        "display_name": "Rozbitá S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30842872
+      },
+      {
+        "episode_id": 36045,
+        "display_name": "Notre Dame S01E06 - 6. díl CZ Dabing",
+        "video_id": 30842893
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -748077,6 +748107,16 @@
         "episode_id": 175010,
         "display_name": "Laboratoř záhad S01E03 - Jak cestovat časem CZ Titulky",
         "video_id": 30842670
+      },
+      {
+        "episode_id": 166483,
+        "display_name": "The Midnight Romance in Hagwon S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30842821
+      },
+      {
+        "episode_id": 166286,
+        "display_name": "Guntherovy miliony S01E02 - Luxusní bouda CZ Dabing",
+        "video_id": 30842884
       }
     ],
     "prepared_not_upload_ready": [
@@ -749238,7 +749278,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 49,
+    "disabled": 4,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -749248,6 +749289,6 @@
     "whisper_failed": 1326
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50545
+    "needs_subtitle_setup_after_prehrajto_processing": 50547
   }
 }
