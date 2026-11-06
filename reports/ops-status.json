@@ -1,9 +1,9 @@
 {
   "counts": {
-    "backlog_episodes": 111658,
+    "backlog_episodes": 111622,
     "manifest_upload_ready_episodes": 37,
-    "uploaded_episodes": 80042,
-    "prepared_source_episodes": 68365,
+    "uploaded_episodes": 80045,
+    "prepared_source_episodes": 68370,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -14,11 +14,35 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53915,
     "whisper_review_pending_sources": 37529,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50587,
     "subtitle_followup_pending_sources": 50587
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T06:29:20Z",
+      "databaseId": 42174733375,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T06:29:19Z",
+      "databaseId": 42174731920,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T06:29:14Z",
+      "databaseId": 42174723921,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-06T06:28:16Z",
@@ -28,11 +52,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T06:28:04Z",
       "databaseId": 42174605804,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +88,7 @@
       "createdAt": "2026-11-06T06:26:21Z",
       "databaseId": 42174430404,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -84,19 +108,19 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T06:24:06Z",
       "databaseId": 42174186830,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "refresh-backlog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T06:23:48Z",
       "databaseId": 42174154173,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -136,7 +160,7 @@
       "createdAt": "2026-11-06T06:22:51Z",
       "databaseId": 42174056382,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T06:09:33Z",
-      "databaseId": 42172668835,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T06:09:06Z",
-      "databaseId": 42172620699,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T06:09:02Z",
-      "databaseId": 42172612913,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -196542,6 +196542,11 @@
         "video_id": 30850533
       },
       {
+        "episode_id": 156592,
+        "display_name": "Ambitions S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30850652
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -374630,6 +374635,16 @@
         "episode_id": 177215,
         "display_name": "Mysteries of the Abandoned S07E03 - 3. epizoda CZ Titulky",
         "video_id": 30850523
+      },
+      {
+        "episode_id": 151079,
+        "display_name": "Bardotová S01E05 - Dítě CZ Dabing",
+        "video_id": 30850688
+      },
+      {
+        "episode_id": 126046,
+        "display_name": "Bandi S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30850526
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -570889,6 +570904,11 @@
         "video_id": 30850533
       },
       {
+        "episode_id": 156592,
+        "display_name": "Ambitions S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30850652
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -748977,6 +748997,16 @@
         "episode_id": 177215,
         "display_name": "Mysteries of the Abandoned S07E03 - 3. epizoda CZ Titulky",
         "video_id": 30850523
+      },
+      {
+        "episode_id": 151079,
+        "display_name": "Bardotová S01E05 - Dítě CZ Dabing",
+        "video_id": 30850688
+      },
+      {
+        "episode_id": 126046,
+        "display_name": "Bandi S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30850526
       }
     ],
     "prepared_not_upload_ready": [
