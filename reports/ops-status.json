@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111570,
     "manifest_upload_ready_episodes": 29,
-    "uploaded_episodes": 80138,
+    "uploaded_episodes": 80140,
     "prepared_source_episodes": 68446,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,75 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53918,
     "whisper_review_pending_sources": 37510,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50612,
     "subtitle_followup_pending_sources": 50612
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:33:14Z",
+      "databaseId": 42211107157,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:33:08Z",
+      "databaseId": 42211095205,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:33:06Z",
+      "databaseId": 42211090330,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:33:04Z",
+      "databaseId": 42211084413,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:32:09Z",
+      "databaseId": 42210970950,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:31:53Z",
+      "databaseId": 42210935928,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T11:31:46Z",
+      "databaseId": 42210923088,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:31:40Z",
+      "databaseId": 42210909582,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-06T11:30:37Z",
@@ -32,7 +96,7 @@
       "createdAt": "2026-11-06T11:30:34Z",
       "databaseId": 42210768272,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,15 +104,15 @@
       "createdAt": "2026-11-06T11:30:31Z",
       "databaseId": 42210760119,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T11:29:58Z",
       "databaseId": 42210684328,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -60,11 +124,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T11:26:16Z",
       "databaseId": 42210241684,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -108,76 +172,12 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T11:22:12Z",
       "databaseId": 42209737429,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T11:22:10Z",
-      "databaseId": 42209732992,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T11:20:54Z",
-      "databaseId": 42209573487,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:20:16Z",
-      "databaseId": 42209490204,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:20:09Z",
-      "databaseId": 42209475191,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T11:20:05Z",
-      "databaseId": 42209465459,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:18:27Z",
-      "databaseId": 42209261561,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:17:43Z",
-      "databaseId": 42209173633,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T11:17:05Z",
-      "databaseId": 42209095141,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -196792,6 +196792,11 @@
         "video_id": 30857473
       },
       {
+        "episode_id": 133780,
+        "display_name": "Nevlastní bratr S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30857690
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -375110,6 +375115,11 @@
         "episode_id": 174227,
         "display_name": "Pan a paní Smithovi S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30857610
+      },
+      {
+        "episode_id": 171419,
+        "display_name": "The Greatest Event in Television History S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30857683
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -571619,6 +571629,11 @@
         "video_id": 30857473
       },
       {
+        "episode_id": 133780,
+        "display_name": "Nevlastní bratr S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30857690
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -749937,6 +749952,11 @@
         "episode_id": 174227,
         "display_name": "Pan a paní Smithovi S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30857610
+      },
+      {
+        "episode_id": 171419,
+        "display_name": "The Greatest Event in Television History S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30857683
       }
     ],
     "prepared_not_upload_ready": [
