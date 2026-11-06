@@ -1,30 +1,110 @@
 {
   "counts": {
     "backlog_episodes": 111498,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 80219,
-    "prepared_source_episodes": 68491,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 80222,
+    "prepared_source_episodes": 68490,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 44,
+    "language_whisper_attempted_sources": 44,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53920,
-    "whisper_review_pending_sources": 37489,
-    "upload_pending_checkpoints": 36,
-    "subtitle_followup_sources": 50634,
-    "subtitle_followup_pending_sources": 50634
+    "whisper_review_sources": 53919,
+    "whisper_review_pending_sources": 37485,
+    "upload_pending_checkpoints": 35,
+    "subtitle_followup_sources": 50636,
+    "subtitle_followup_pending_sources": 50636
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T15:04:41Z",
+      "databaseId": 42239653370,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:04:40Z",
+      "databaseId": 42239651796,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:04:36Z",
+      "databaseId": 42239640834,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T15:03:51Z",
+      "databaseId": 42239525350,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:03:43Z",
+      "databaseId": 42239504705,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:03:39Z",
+      "databaseId": 42239494426,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:03:07Z",
+      "databaseId": 42239414111,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:02:28Z",
+      "databaseId": 42239317669,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T15:02:07Z",
+      "databaseId": 42239265593,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:01:53Z",
+      "databaseId": 42239228584,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T14:59:41Z",
       "databaseId": 42238880225,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,15 +112,15 @@
       "createdAt": "2026-11-06T14:59:20Z",
       "databaseId": 42238831365,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T14:58:43Z",
       "databaseId": 42238741242,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +140,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T14:58:30Z",
       "databaseId": 42238708340,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T14:53:29Z",
-      "databaseId": 42237963181,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T14:52:41Z",
-      "databaseId": 42237843141,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T14:52:37Z",
-      "databaseId": 42237833760,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T14:52:12Z",
-      "databaseId": 42237773299,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T14:52:04Z",
-      "databaseId": 42237751462,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T14:51:59Z",
-      "databaseId": 42237739770,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T14:50:05Z",
-      "databaseId": 42237451991,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T14:50:03Z",
-      "databaseId": 42237447762,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T14:48:16Z",
-      "databaseId": 42237186909,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T14:47:18Z",
-      "databaseId": 42237042267,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -197032,6 +197032,16 @@
         "video_id": 30861687
       },
       {
+        "episode_id": 73685,
+        "display_name": "Czas honoru S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30861840
+      },
+      {
+        "episode_id": 108344,
+        "display_name": "Jsi můj život  S01E22 - 22. epizoda CZ Dabing",
+        "video_id": 30861825
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -375515,6 +375525,11 @@
         "episode_id": 5339,
         "display_name": "My Little Pony: Ukaž se S04E03 - Čarohry CZ Dabing",
         "video_id": 30861631
+      },
+      {
+        "episode_id": 108351,
+        "display_name": "Jsi můj život  S01E21 - 21. epizoda CZ Dabing",
+        "video_id": 30861849
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -572264,6 +572279,16 @@
         "video_id": 30861687
       },
       {
+        "episode_id": 73685,
+        "display_name": "Czas honoru S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30861840
+      },
+      {
+        "episode_id": 108344,
+        "display_name": "Jsi můj život  S01E22 - 22. epizoda CZ Dabing",
+        "video_id": 30861825
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -750747,6 +750772,11 @@
         "episode_id": 5339,
         "display_name": "My Little Pony: Ukaž se S04E03 - Čarohry CZ Dabing",
         "video_id": 30861631
+      },
+      {
+        "episode_id": 108351,
+        "display_name": "Jsi můj život  S01E21 - 21. epizoda CZ Dabing",
+        "video_id": 30861849
       }
     ],
     "prepared_not_upload_ready": [
@@ -751908,16 +751938,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 43,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36268,
+    "needs_whisper": 36264,
     "whisper_confirmed_cz": 3708,
-    "whisper_non_cz_needs_subtitles": 12723,
+    "whisper_non_cz_needs_subtitles": 12726,
     "whisper_failed": 1221
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50634
+    "needs_subtitle_setup_after_prehrajto_processing": 50636
   }
 }
