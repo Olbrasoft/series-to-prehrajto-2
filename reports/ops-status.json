@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111622,
     "manifest_upload_ready_episodes": 45,
-    "uploaded_episodes": 80066,
+    "uploaded_episodes": 80067,
     "prepared_source_episodes": 68400,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53916,
     "whisper_review_pending_sources": 37525,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 50594,
     "subtitle_followup_pending_sources": 50594
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T08:01:58Z",
+      "databaseId": 42184794457,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:00:11Z",
+      "databaseId": 42184575900,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:00:07Z",
+      "databaseId": 42184567584,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-06T07:59:26Z",
       "databaseId": 42184490512,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T07:41:30Z",
-      "databaseId": 42182527710,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T07:40:30Z",
-      "databaseId": 42182419491,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T07:38:29Z",
-      "databaseId": 42182207159,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -196600,6 +196600,11 @@
         "episode_id": 151076,
         "display_name": "Bardotová S01E02 - B.B. CZ Titulky",
         "video_id": 30852738
+      },
+      {
+        "episode_id": 151080,
+        "display_name": "Bardotová S01E06 - Pravda CZ Dabing",
+        "video_id": 30853349
       },
       {
         "episode_id": 114182,
@@ -571067,6 +571072,11 @@
         "episode_id": 151076,
         "display_name": "Bardotová S01E02 - B.B. CZ Titulky",
         "video_id": 30852738
+      },
+      {
+        "episode_id": 151080,
+        "display_name": "Bardotová S01E06 - Pravda CZ Dabing",
+        "video_id": 30853349
       },
       {
         "episode_id": 114182,
