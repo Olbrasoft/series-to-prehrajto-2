@@ -1,8 +1,8 @@
 {
   "counts": {
-    "backlog_episodes": 111570,
+    "backlog_episodes": 111498,
     "manifest_upload_ready_episodes": 18,
-    "uploaded_episodes": 80164,
+    "uploaded_episodes": 80167,
     "prepared_source_episodes": 68449,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,73 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53919,
     "whisper_review_pending_sources": 37508,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50614,
     "subtitle_followup_pending_sources": 50614
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T12:22:18Z",
+      "databaseId": 42217145795,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:22:02Z",
+      "databaseId": 42217112311,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:21:56Z",
+      "databaseId": 42217099728,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:21:30Z",
+      "databaseId": 42217046747,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:19:56Z",
+      "databaseId": 42216841571,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T12:19:53Z",
+      "databaseId": 42216835542,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "refresh-backlog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:19:53Z",
+      "databaseId": 42216834338,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-06T12:19:30Z",
       "databaseId": 42216788715,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +100,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T12:16:21Z",
       "databaseId": 42216390166,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -119,62 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-06T12:06:54Z",
       "databaseId": 42215195305,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T12:06:49Z",
-      "databaseId": 42215186022,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T12:06:28Z",
-      "databaseId": 42215143345,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T12:04:39Z",
-      "databaseId": 42214907105,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T12:04:23Z",
-      "databaseId": 42214874678,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T12:03:57Z",
-      "databaseId": 42214819194,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T12:03:54Z",
-      "databaseId": 42214812832,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T12:03:45Z",
-      "databaseId": 42214794911,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -196862,6 +196862,16 @@
         "video_id": 30858785
       },
       {
+        "episode_id": 5329,
+        "display_name": "My Little Pony: Ukaž se S02E01 - Izzy válí CZ Dabing",
+        "video_id": 30858803
+      },
+      {
+        "episode_id": 125452,
+        "display_name": "Dealer S01E01 - Spielberg CZ Titulky",
+        "video_id": 30858836
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -375240,6 +375250,11 @@
         "episode_id": 171275,
         "display_name": "Vzestup peněz S01E06 - 6. epizoda CZ Dabing",
         "video_id": 30858762
+      },
+      {
+        "episode_id": 108331,
+        "display_name": "Jsi můj život  S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30858812
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -571819,6 +571834,16 @@
         "video_id": 30858785
       },
       {
+        "episode_id": 5329,
+        "display_name": "My Little Pony: Ukaž se S02E01 - Izzy válí CZ Dabing",
+        "video_id": 30858803
+      },
+      {
+        "episode_id": 125452,
+        "display_name": "Dealer S01E01 - Spielberg CZ Titulky",
+        "video_id": 30858836
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -750197,6 +750222,11 @@
         "episode_id": 171275,
         "display_name": "Vzestup peněz S01E06 - 6. epizoda CZ Dabing",
         "video_id": 30858762
+      },
+      {
+        "episode_id": 108331,
+        "display_name": "Jsi můj život  S01E05 - 5. epizoda CZ Dabing",
+        "video_id": 30858812
       }
     ],
     "prepared_not_upload_ready": [
