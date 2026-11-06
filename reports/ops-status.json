@@ -2,8 +2,8 @@
   "counts": {
     "backlog_episodes": 111570,
     "manifest_upload_ready_episodes": 30,
-    "uploaded_episodes": 80106,
-    "prepared_source_episodes": 68411,
+    "uploaded_episodes": 80107,
+    "prepared_source_episodes": 68415,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,17 +14,33 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53916,
     "whisper_review_pending_sources": 37516,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50603,
     "subtitle_followup_pending_sources": 50603
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T09:54:37Z",
+      "databaseId": 42198576338,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T09:53:32Z",
+      "databaseId": 42198437743,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-06T09:52:50Z",
       "databaseId": 42198352610,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +56,7 @@
       "createdAt": "2026-11-06T09:52:36Z",
       "databaseId": 42198322881,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T09:50:30Z",
       "databaseId": 42198060729,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,19 +116,19 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T09:49:08Z",
       "databaseId": 42197890623,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T09:49:05Z",
       "databaseId": 42197883604,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T09:42:29Z",
-      "databaseId": 42197047528,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T09:42:26Z",
-      "databaseId": 42197039708,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -196695,6 +196695,11 @@
         "episode_id": 107825,
         "display_name": "Komisařka Marleau S03E06 - Strom otroků CZ Dabing",
         "video_id": 30855473
+      },
+      {
+        "episode_id": 157969,
+        "display_name": "Yakitori: Soldiers of Misfortune S01E03 - Nedejte jim vydechnout CZ Titulky",
+        "video_id": 30855751
       },
       {
         "episode_id": 114182,
@@ -571362,6 +571367,11 @@
         "episode_id": 107825,
         "display_name": "Komisařka Marleau S03E06 - Strom otroků CZ Dabing",
         "video_id": 30855473
+      },
+      {
+        "episode_id": 157969,
+        "display_name": "Yakitori: Soldiers of Misfortune S01E03 - Nedejte jim vydechnout CZ Titulky",
+        "video_id": 30855751
       },
       {
         "episode_id": 114182,
