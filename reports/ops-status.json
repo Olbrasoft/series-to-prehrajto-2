@@ -1,15 +1,15 @@
 {
   "counts": {
     "backlog_episodes": 111570,
-    "manifest_upload_ready_episodes": 34,
-    "uploaded_episodes": 80126,
-    "prepared_source_episodes": 68439,
+    "manifest_upload_ready_episodes": 35,
+    "uploaded_episodes": 80127,
+    "prepared_source_episodes": 68444,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
+    "language_audited_sources": 37,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53917,
@@ -21,18 +21,42 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-06T11:09:39Z",
-      "databaseId": 42208140055,
+      "createdAt": "2026-11-06T11:11:14Z",
+      "databaseId": 42208348292,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T11:10:51Z",
+      "databaseId": 42208300918,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:10:32Z",
+      "databaseId": 42208258256,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:09:39Z",
+      "databaseId": 42208140055,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T11:09:34Z",
       "databaseId": 42208131022,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -60,11 +84,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T11:04:39Z",
       "databaseId": 42207490736,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T10:53:28Z",
-      "databaseId": 42206090233,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T10:52:55Z",
-      "databaseId": 42206021468,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T10:52:52Z",
-      "databaseId": 42206014574,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -375050,6 +375050,11 @@
         "episode_id": 157654,
         "display_name": "Král Varšavy S01E04 - Zrada CZ Dabing",
         "video_id": 30857260
+      },
+      {
+        "episode_id": 133775,
+        "display_name": "Nevlastní bratr S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30857300
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -749817,6 +749822,11 @@
         "episode_id": 157654,
         "display_name": "Král Varšavy S01E04 - Zrada CZ Dabing",
         "video_id": 30857260
+      },
+      {
+        "episode_id": 133775,
+        "display_name": "Nevlastní bratr S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30857300
       }
     ],
     "prepared_not_upload_ready": [
@@ -750978,15 +750988,15 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
+    "disabled": 17,
     "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36253,
+    "needs_whisper": 36256,
     "whisper_confirmed_cz": 3701,
     "whisper_non_cz_needs_subtitles": 12707,
-    "whisper_failed": 1256
+    "whisper_failed": 1253
   },
   "subtitle_followup_statuses": {
     "needs_subtitle_setup_after_prehrajto_processing": 50610
