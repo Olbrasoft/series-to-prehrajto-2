@@ -1,30 +1,46 @@
 {
   "counts": {
     "backlog_episodes": 111498,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 80181,
-    "prepared_source_episodes": 68445,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 80182,
+    "prepared_source_episodes": 68444,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 37,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53920,
-    "whisper_review_pending_sources": 37509,
+    "language_audited_sources": 46,
+    "language_whisper_attempted_sources": 46,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53918,
+    "whisper_review_pending_sources": 37501,
     "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50614,
-    "subtitle_followup_pending_sources": 50614
+    "subtitle_followup_sources": 50619,
+    "subtitle_followup_pending_sources": 50619
   },
   "workflow_runs": [
     {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T12:56:27Z",
+      "databaseId": 42221502895,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-06T12:56:25Z",
+      "databaseId": 42221497987,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T12:55:25Z",
       "databaseId": 42221370809,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +68,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T12:52:58Z",
       "databaseId": 42221059104,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T12:39:27Z",
-      "databaseId": 42219342118,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T12:38:54Z",
-      "databaseId": 42219271830,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -196905,6 +196905,11 @@
         "episode_id": 73672,
         "display_name": "Czas honoru S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30859527
+      },
+      {
+        "episode_id": 5328,
+        "display_name": "My Little Pony: Ukaž se S01E01 - Ukaž se CZ Dabing",
+        "video_id": 30859589
       },
       {
         "episode_id": 114182,
@@ -571949,6 +571954,11 @@
         "video_id": 30859527
       },
       {
+        "episode_id": 5328,
+        "display_name": "My Little Pony: Ukaž se S01E01 - Ukaž se CZ Dabing",
+        "video_id": 30859589
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -751528,17 +751538,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 17,
-    "ok": 19,
+    "ok": 45,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36270,
-    "whisper_confirmed_cz": 3705,
-    "whisper_non_cz_needs_subtitles": 12706,
-    "whisper_failed": 1239
+    "needs_whisper": 36263,
+    "whisper_confirmed_cz": 3706,
+    "whisper_non_cz_needs_subtitles": 12711,
+    "whisper_failed": 1238
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50614
+    "needs_subtitle_setup_after_prehrajto_processing": 50619
   }
 }
