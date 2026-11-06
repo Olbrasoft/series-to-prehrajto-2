@@ -1,30 +1,134 @@
 {
   "counts": {
     "backlog_episodes": 111658,
-    "manifest_upload_ready_episodes": 35,
-    "uploaded_episodes": 80001,
-    "prepared_source_episodes": 68339,
+    "manifest_upload_ready_episodes": 31,
+    "uploaded_episodes": 80008,
+    "prepared_source_episodes": 68331,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 39,
+    "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53913,
     "whisper_review_pending_sources": 37526,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 50576,
     "subtitle_followup_pending_sources": 50576
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T04:57:11Z",
+      "databaseId": 42165494163,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T04:52:27Z",
+      "databaseId": 42165045688,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T04:52:23Z",
+      "databaseId": 42165039344,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T04:51:57Z",
+      "databaseId": 42164997653,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T04:51:57Z",
+      "databaseId": 42164996876,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T04:51:08Z",
+      "databaseId": 42164920710,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T04:50:09Z",
+      "databaseId": 42164825311,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T04:49:51Z",
+      "databaseId": 42164795073,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T04:46:46Z",
+      "databaseId": 42164503927,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T04:46:42Z",
+      "databaseId": 42164498034,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T04:46:39Z",
+      "databaseId": 42164493391,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T04:46:29Z",
+      "databaseId": 42164477717,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T04:46:25Z",
+      "databaseId": 42164471169,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T04:44:35Z",
       "databaseId": 42164287547,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +140,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T04:44:28Z",
       "databaseId": 42164276450,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -68,116 +172,12 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T04:41:26Z",
       "databaseId": 42163986210,
       "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T04:39:12Z",
-      "databaseId": 42163770630,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T04:38:45Z",
-      "databaseId": 42163728426,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T04:37:42Z",
-      "databaseId": 42163629417,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T04:37:01Z",
-      "databaseId": 42163562335,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T04:36:44Z",
-      "databaseId": 42163534870,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T04:36:41Z",
-      "databaseId": 42163529079,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T04:33:16Z",
-      "databaseId": 42163188233,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T04:33:08Z",
-      "databaseId": 42163175433,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T04:33:06Z",
-      "databaseId": 42163172539,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T04:32:37Z",
-      "databaseId": 42163124817,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T04:32:32Z",
-      "databaseId": 42163116238,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T04:31:24Z",
-      "databaseId": 42163002823,
-      "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T04:31:16Z",
-      "databaseId": 42162989856,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -196427,6 +196427,21 @@
         "video_id": 30847512
       },
       {
+        "episode_id": 166488,
+        "display_name": "The Midnight Romance in Hagwon S01E14 - 14. epizoda CZ Titulky",
+        "video_id": 30847496
+      },
+      {
+        "episode_id": 173217,
+        "display_name": "Sunny Nights S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30847693
+      },
+      {
+        "episode_id": 156844,
+        "display_name": "Absolute Value of Romance S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30847653
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -374425,6 +374440,26 @@
         "episode_id": 166490,
         "display_name": "The Midnight Romance in Hagwon S01E16 - 16. epizoda CZ Titulky",
         "video_id": 30847307
+      },
+      {
+        "episode_id": 173215,
+        "display_name": "Sunny Nights S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30847518
+      },
+      {
+        "episode_id": 169691,
+        "display_name": "United We Fall S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30847627
+      },
+      {
+        "episode_id": 171830,
+        "display_name": "Munich Games S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30847674
+      },
+      {
+        "episode_id": 173218,
+        "display_name": "Sunny Nights S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30847863
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -570569,6 +570604,21 @@
         "video_id": 30847512
       },
       {
+        "episode_id": 166488,
+        "display_name": "The Midnight Romance in Hagwon S01E14 - 14. epizoda CZ Titulky",
+        "video_id": 30847496
+      },
+      {
+        "episode_id": 173217,
+        "display_name": "Sunny Nights S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30847693
+      },
+      {
+        "episode_id": 156844,
+        "display_name": "Absolute Value of Romance S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30847653
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -748567,6 +748617,26 @@
         "episode_id": 166490,
         "display_name": "The Midnight Romance in Hagwon S01E16 - 16. epizoda CZ Titulky",
         "video_id": 30847307
+      },
+      {
+        "episode_id": 173215,
+        "display_name": "Sunny Nights S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30847518
+      },
+      {
+        "episode_id": 169691,
+        "display_name": "United We Fall S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30847627
+      },
+      {
+        "episode_id": 171830,
+        "display_name": "Munich Games S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30847674
+      },
+      {
+        "episode_id": 173218,
+        "display_name": "Sunny Nights S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30847863
       }
     ],
     "prepared_not_upload_ready": [
@@ -749728,7 +749798,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
