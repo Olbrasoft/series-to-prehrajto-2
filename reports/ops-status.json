@@ -2,11 +2,11 @@
   "counts": {
     "backlog_episodes": 111717,
     "manifest_upload_ready_episodes": 52,
-    "uploaded_episodes": 79937,
+    "uploaded_episodes": 79939,
     "prepared_source_episodes": 68308,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 41,
+    "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 20,
@@ -14,17 +14,25 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53912,
     "whisper_review_pending_sources": 37549,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50535,
     "subtitle_followup_pending_sources": 50535
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T02:08:35Z",
+      "databaseId": 42148408376,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T02:07:58Z",
       "databaseId": 42148339887,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +44,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T02:07:11Z",
       "databaseId": 42148252470,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -56,15 +64,15 @@
       "createdAt": "2026-11-06T02:06:33Z",
       "databaseId": 42148186778,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T02:04:37Z",
       "databaseId": 42147967698,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -76,11 +84,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T02:02:24Z",
       "databaseId": 42147728790,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -88,7 +96,7 @@
       "createdAt": "2026-11-06T02:02:04Z",
       "databaseId": 42147694015,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T01:52:41Z",
-      "databaseId": 42146700380,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -374105,6 +374105,16 @@
         "episode_id": 174455,
         "display_name": "Kritické minuty: Otázka života a smrti S01E01 - 1. díl CZ Dabing",
         "video_id": 30841687
+      },
+      {
+        "episode_id": 164791,
+        "display_name": "I Have a Crush at Work S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30841954
+      },
+      {
+        "episode_id": 174454,
+        "display_name": "Kritické minuty: Otázka života a smrti S01E06 - 6. díl CZ Dabing",
+        "video_id": 30841946
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -747927,6 +747937,16 @@
         "episode_id": 174455,
         "display_name": "Kritické minuty: Otázka života a smrti S01E01 - 1. díl CZ Dabing",
         "video_id": 30841687
+      },
+      {
+        "episode_id": 164791,
+        "display_name": "I Have a Crush at Work S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30841954
+      },
+      {
+        "episode_id": 174454,
+        "display_name": "Kritické minuty: Otázka života a smrti S01E06 - 6. díl CZ Dabing",
+        "video_id": 30841946
       }
     ],
     "prepared_not_upload_ready": [
