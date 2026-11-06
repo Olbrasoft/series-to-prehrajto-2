@@ -1,38 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 111438,
-    "manifest_upload_ready_episodes": 0,
+    "manifest_upload_ready_episodes": 2,
     "uploaded_episodes": 80257,
-    "prepared_source_episodes": 68528,
+    "prepared_source_episodes": 68536,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 22,
+    "language_audited_sources": 27,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53915,
     "whisper_review_pending_sources": 37464,
     "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50652,
-    "subtitle_followup_pending_sources": 50652
+    "subtitle_followup_sources": 50653,
+    "subtitle_followup_pending_sources": 50653
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-06T17:43:40Z",
-      "databaseId": 42264264307,
+      "createdAt": "2026-11-06T17:46:20Z",
+      "databaseId": 42264671936,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T17:46:16Z",
+      "databaseId": 42264661575,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-06T17:46:10Z",
+      "databaseId": 42264647163,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T17:45:41Z",
+      "databaseId": 42264572717,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T17:45:10Z",
+      "databaseId": 42264493128,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T17:45:07Z",
+      "databaseId": 42264483562,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T17:43:40Z",
+      "databaseId": 42264264307,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T17:43:34Z",
       "databaseId": 42264251582,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -56,7 +104,7 @@
       "createdAt": "2026-11-06T17:42:09Z",
       "databaseId": 42264036695,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -112,7 +160,7 @@
       "createdAt": "2026-11-06T17:37:01Z",
       "databaseId": 42263268166,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T17:33:05Z",
-      "databaseId": 42262664654,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T17:32:56Z",
-      "databaseId": 42262640558,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T17:32:53Z",
-      "databaseId": 42262634065,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T17:32:48Z",
-      "databaseId": 42262621554,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T17:32:05Z",
-      "databaseId": 42262508526,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T17:32:01Z",
-      "databaseId": 42262496968,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -752288,7 +752288,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 2,
+    "disabled": 7,
     "ok": 19,
     "resolve_failed": 1
   },
@@ -752299,6 +752299,6 @@
     "whisper_failed": 1217
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50652
+    "needs_subtitle_setup_after_prehrajto_processing": 50653
   }
 }
