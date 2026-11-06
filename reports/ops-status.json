@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 111570,
-    "manifest_upload_ready_episodes": 20,
-    "uploaded_episodes": 80162,
-    "prepared_source_episodes": 68448,
+    "manifest_upload_ready_episodes": 18,
+    "uploaded_episodes": 80164,
+    "prepared_source_episodes": 68449,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -14,11 +14,51 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53919,
     "whisper_review_pending_sources": 37508,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50614,
     "subtitle_followup_pending_sources": 50614
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:19:30Z",
+      "databaseId": 42216788715,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:19:27Z",
+      "databaseId": 42216782949,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T12:18:40Z",
+      "databaseId": 42216682640,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:16:21Z",
+      "databaseId": 42216390166,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T12:16:19Z",
+      "databaseId": 42216385295,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-06T12:14:43Z",
@@ -32,7 +72,7 @@
       "createdAt": "2026-11-06T12:14:36Z",
       "databaseId": 42216160940,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -52,11 +92,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T12:13:02Z",
       "databaseId": 42215964128,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -135,46 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-06T12:03:45Z",
       "databaseId": 42214794911,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T12:03:40Z",
-      "databaseId": 42214783454,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T12:01:57Z",
-      "databaseId": 42214574133,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T12:01:44Z",
-      "databaseId": 42214546572,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T12:01:43Z",
-      "databaseId": 42214542882,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:55:01Z",
-      "databaseId": 42213734926,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -196857,6 +196857,11 @@
         "video_id": 30858749
       },
       {
+        "episode_id": 130100,
+        "display_name": "Banditi: Na cestě za zlatem S01E01 - Mapa CZ Dabing",
+        "video_id": 30858785
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -375230,6 +375235,11 @@
         "episode_id": 125455,
         "display_name": "Dealer S01E04 - Bacha! CZ Titulky",
         "video_id": 30858656
+      },
+      {
+        "episode_id": 171275,
+        "display_name": "Vzestup peněz S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30858762
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -571804,6 +571814,11 @@
         "video_id": 30858749
       },
       {
+        "episode_id": 130100,
+        "display_name": "Banditi: Na cestě za zlatem S01E01 - Mapa CZ Dabing",
+        "video_id": 30858785
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -750177,6 +750192,11 @@
         "episode_id": 125455,
         "display_name": "Dealer S01E04 - Bacha! CZ Titulky",
         "video_id": 30858656
+      },
+      {
+        "episode_id": 171275,
+        "display_name": "Vzestup peněz S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30858762
       }
     ],
     "prepared_not_upload_ready": [
