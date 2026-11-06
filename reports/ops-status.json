@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111438,
     "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 80237,
+    "uploaded_episodes": 80238,
     "prepared_source_episodes": 68511,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,35 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53918,
     "whisper_review_pending_sources": 37478,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50642,
     "subtitle_followup_pending_sources": 50642
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:14:33Z",
+      "databaseId": 42250518434,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:14:02Z",
+      "databaseId": 42250430602,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T16:13:51Z",
+      "databaseId": 42250402154,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-06T16:13:26Z",
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-06T16:11:45Z",
       "databaseId": 42250073652,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,11 +68,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T16:09:43Z",
       "databaseId": 42249748011,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T16:03:10Z",
-      "databaseId": 42248731818,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T16:01:49Z",
-      "databaseId": 42248523156,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T16:00:26Z",
-      "databaseId": 42248297410,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -197070,6 +197070,11 @@
         "episode_id": 176716,
         "display_name": "Shark: The Storm S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30863169
+      },
+      {
+        "episode_id": 99636,
+        "display_name": "Čtyři lvice S01E01 - Pěkná sumička CZ Dabing",
+        "video_id": 30863274
       },
       {
         "episode_id": 114182,
@@ -572392,6 +572397,11 @@
         "episode_id": 176716,
         "display_name": "Shark: The Storm S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30863169
+      },
+      {
+        "episode_id": 99636,
+        "display_name": "Čtyři lvice S01E01 - Pěkná sumička CZ Dabing",
+        "video_id": 30863274
       },
       {
         "episode_id": 114182,
