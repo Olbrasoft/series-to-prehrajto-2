@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 111498,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 80206,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 80208,
     "prepared_source_episodes": 68477,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,73 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53920,
     "whisper_review_pending_sources": 37496,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50625,
     "subtitle_followup_pending_sources": 50625
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T14:23:03Z",
+      "databaseId": 42233424652,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T14:21:27Z",
+      "databaseId": 42233191190,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T14:21:20Z",
+      "databaseId": 42233174951,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T14:17:29Z",
+      "databaseId": 42232603861,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T14:17:28Z",
+      "databaseId": 42232602704,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T14:17:13Z",
+      "databaseId": 42232566112,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T14:15:52Z",
+      "databaseId": 42232365648,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-06T14:15:24Z",
       "databaseId": 42232294105,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +96,7 @@
       "createdAt": "2026-11-06T14:14:47Z",
       "databaseId": 42232196721,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -60,11 +116,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T14:10:28Z",
       "databaseId": 42231556684,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -72,7 +128,7 @@
       "createdAt": "2026-11-06T14:10:21Z",
       "databaseId": 42231537998,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T14:04:48Z",
-      "databaseId": 42230732139,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T14:04:25Z",
-      "databaseId": 42230677387,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T14:03:42Z",
-      "databaseId": 42230573566,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T14:02:06Z",
-      "databaseId": 42230345515,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T14:01:15Z",
-      "databaseId": 42230224690,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T14:01:09Z",
-      "databaseId": 42230210520,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T14:00:10Z",
-      "databaseId": 42230060579,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -196992,6 +196992,11 @@
         "video_id": 30860863
       },
       {
+        "episode_id": 177888,
+        "display_name": "Dostoevskij S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30861071
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -375450,6 +375455,11 @@
         "episode_id": 5338,
         "display_name": "My Little Pony: Ukaž se S04E02 - Perfektní proměna CZ Dabing",
         "video_id": 30860791
+      },
+      {
+        "episode_id": 177887,
+        "display_name": "Dostoevskij S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30861012
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -572159,6 +572169,11 @@
         "video_id": 30860863
       },
       {
+        "episode_id": 177888,
+        "display_name": "Dostoevskij S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30861071
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -750617,6 +750632,11 @@
         "episode_id": 5338,
         "display_name": "My Little Pony: Ukaž se S04E02 - Perfektní proměna CZ Dabing",
         "video_id": 30860791
+      },
+      {
+        "episode_id": 177887,
+        "display_name": "Dostoevskij S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30861012
       }
     ],
     "prepared_not_upload_ready": [
