@@ -1,19 +1,19 @@
 {
   "counts": {
     "backlog_episodes": 111658,
-    "manifest_upload_ready_episodes": 27,
-    "uploaded_episodes": 80028,
-    "prepared_source_episodes": 68350,
+    "manifest_upload_ready_episodes": 31,
+    "uploaded_episodes": 80029,
+    "prepared_source_episodes": 68356,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53916,
-    "whisper_review_pending_sources": 37535,
+    "whisper_review_pending_sources": 37537,
     "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 50581,
     "subtitle_followup_pending_sources": 50581
@@ -21,10 +21,66 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T05:52:59Z",
+      "databaseId": 42171025757,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T05:52:54Z",
+      "databaseId": 42171018504,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T05:52:19Z",
+      "databaseId": 42170961669,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T05:52:16Z",
+      "databaseId": 42170956143,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T05:51:51Z",
+      "databaseId": 42170915021,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T05:51:42Z",
+      "databaseId": 42170898367,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T05:51:38Z",
+      "databaseId": 42170892898,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-06T05:49:51Z",
       "databaseId": 42170714936,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,27 +116,27 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T05:42:43Z",
       "databaseId": 42170020476,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T05:42:07Z",
       "databaseId": 42169963544,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T05:41:52Z",
       "databaseId": 42169939186,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -116,68 +172,12 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T05:37:20Z",
       "databaseId": 42169508915,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T05:36:20Z",
-      "databaseId": 42169410313,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T05:35:08Z",
-      "databaseId": 42169286715,
-      "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T05:35:04Z",
-      "databaseId": 42169278529,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T05:35:03Z",
-      "databaseId": 42169276204,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T05:35:02Z",
-      "databaseId": 42169273915,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T05:35:00Z",
-      "databaseId": 42169269988,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T05:33:45Z",
-      "databaseId": 42169144042,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -196505,6 +196505,11 @@
         "episode_id": 179672,
         "display_name": "Spector S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30849377
+      },
+      {
+        "episode_id": 151077,
+        "display_name": "Bardotová S01E03 - La Madrague CZ Dabing",
+        "video_id": 30849688
       },
       {
         "episode_id": 114182,
@@ -570784,6 +570789,11 @@
         "video_id": 30849377
       },
       {
+        "episode_id": 151077,
+        "display_name": "Bardotová S01E03 - La Madrague CZ Dabing",
+        "video_id": 30849688
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -749998,14 +750008,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36236,
-    "whisper_confirmed_cz": 3700,
-    "whisper_non_cz_needs_subtitles": 12681,
-    "whisper_failed": 1299
+    "needs_whisper": 36240,
+    "whisper_confirmed_cz": 3699,
+    "whisper_non_cz_needs_subtitles": 12680,
+    "whisper_failed": 1297
   },
   "subtitle_followup_statuses": {
     "needs_subtitle_setup_after_prehrajto_processing": 50581
