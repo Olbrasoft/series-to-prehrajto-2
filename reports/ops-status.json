@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111658,
     "manifest_upload_ready_episodes": 35,
-    "uploaded_episodes": 80030,
+    "uploaded_episodes": 80032,
     "prepared_source_episodes": 68360,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,43 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53915,
     "whisper_review_pending_sources": 37531,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50583,
     "subtitle_followup_pending_sources": 50583
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T06:02:13Z",
+      "databaseId": 42171924816,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T06:02:12Z",
+      "databaseId": 42171922695,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T06:01:25Z",
+      "databaseId": 42171841276,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T06:01:21Z",
+      "databaseId": 42171835593,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-06T05:58:24Z",
@@ -32,7 +64,7 @@
       "createdAt": "2026-11-06T05:55:56Z",
       "databaseId": 42171310355,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +76,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T05:52:59Z",
       "databaseId": 42171025757,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T05:42:07Z",
-      "databaseId": 42169963544,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T05:41:52Z",
-      "databaseId": 42169939186,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T05:38:51Z",
-      "databaseId": 42169650565,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T05:38:32Z",
-      "databaseId": 42169621064,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -196512,6 +196512,11 @@
         "video_id": 30849688
       },
       {
+        "episode_id": 147380,
+        "display_name": "Sicilský expres S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30849810
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -374570,6 +374575,11 @@
         "episode_id": 179671,
         "display_name": "Spector S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30849611
+      },
+      {
+        "episode_id": 174298,
+        "display_name": "Cinderella at 2AM S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30849788
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -570799,6 +570809,11 @@
         "video_id": 30849688
       },
       {
+        "episode_id": 147380,
+        "display_name": "Sicilský expres S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30849810
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -748857,6 +748872,11 @@
         "episode_id": 179671,
         "display_name": "Spector S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30849611
+      },
+      {
+        "episode_id": 174298,
+        "display_name": "Cinderella at 2AM S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30849788
       }
     ],
     "prepared_not_upload_ready": [
