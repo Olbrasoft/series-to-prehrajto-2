@@ -1,24 +1,136 @@
 {
   "counts": {
     "backlog_episodes": 111622,
-    "manifest_upload_ready_episodes": 38,
-    "uploaded_episodes": 80080,
-    "prepared_source_episodes": 68397,
+    "manifest_upload_ready_episodes": 37,
+    "uploaded_episodes": 80084,
+    "prepared_source_episodes": 68406,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 24,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53916,
     "whisper_review_pending_sources": 37521,
-    "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50598,
-    "subtitle_followup_pending_sources": 50598
+    "upload_pending_checkpoints": 38,
+    "subtitle_followup_sources": 50600,
+    "subtitle_followup_pending_sources": 50600
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T09:02:00Z",
+      "databaseId": 42191953230,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:59:28Z",
+      "databaseId": 42191633045,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:58:12Z",
+      "databaseId": 42191484943,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T08:56:19Z",
+      "databaseId": 42191265039,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T08:55:02Z",
+      "databaseId": 42191112176,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T08:54:58Z",
+      "databaseId": 42191103763,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T08:52:48Z",
+      "databaseId": 42190843141,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:52:44Z",
+      "databaseId": 42190836351,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T08:52:01Z",
+      "databaseId": 42190751429,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T08:51:59Z",
+      "databaseId": 42190746396,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T08:50:39Z",
+      "databaseId": 42190587947,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T08:49:55Z",
+      "databaseId": 42190497025,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T08:49:48Z",
+      "databaseId": 42190484488,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T08:46:33Z",
+      "databaseId": 42190098271,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-06T08:45:36Z",
@@ -32,7 +144,7 @@
       "createdAt": "2026-11-06T08:45:10Z",
       "databaseId": 42189927951,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +156,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T08:45:03Z",
       "databaseId": 42189914013,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -60,124 +172,12 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T08:44:46Z",
       "databaseId": 42189879799,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T08:44:15Z",
-      "databaseId": 42189818827,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T08:43:22Z",
-      "databaseId": 42189711001,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T08:43:18Z",
-      "databaseId": 42189703197,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T08:42:06Z",
-      "databaseId": 42189561086,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T08:42:02Z",
-      "databaseId": 42189552509,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T08:42:02Z",
-      "databaseId": 42189551630,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T08:41:58Z",
-      "databaseId": 42189543286,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T08:38:34Z",
-      "databaseId": 42189145571,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T08:38:34Z",
-      "databaseId": 42189144990,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T08:37:51Z",
-      "databaseId": 42189060915,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T08:37:47Z",
-      "databaseId": 42189054132,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T08:36:56Z",
-      "databaseId": 42188954640,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T08:36:46Z",
-      "databaseId": 42188935116,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T08:33:12Z",
-      "databaseId": 42188495405,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -196637,6 +196637,16 @@
         "video_id": 30854184
       },
       {
+        "episode_id": 107816,
+        "display_name": "Komisařka Marleau S02E03 - Už nikdy nezemřít CZ Dabing",
+        "video_id": 30854737
+      },
+      {
+        "episode_id": 203977,
+        "display_name": "Černá holubice S02E06 - Mírový summit CZ Dabing",
+        "video_id": 30854903
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -374820,6 +374830,16 @@
         "episode_id": 127279,
         "display_name": "Sovětské džíny S01E01 - Epizoda 1 CZ Dabing",
         "video_id": 30853739
+      },
+      {
+        "episode_id": 107822,
+        "display_name": "Komisařka Marleau S03E03 - Mír a zdraví CZ Dabing",
+        "video_id": 30854758
+      },
+      {
+        "episode_id": 203975,
+        "display_name": "Černá holubice S02E05 - Vražedný mix CZ Dabing",
+        "video_id": 30854864
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -571174,6 +571194,16 @@
         "video_id": 30854184
       },
       {
+        "episode_id": 107816,
+        "display_name": "Komisařka Marleau S02E03 - Už nikdy nezemřít CZ Dabing",
+        "video_id": 30854737
+      },
+      {
+        "episode_id": 203977,
+        "display_name": "Černá holubice S02E06 - Mírový summit CZ Dabing",
+        "video_id": 30854903
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -749357,6 +749387,16 @@
         "episode_id": 127279,
         "display_name": "Sovětské džíny S01E01 - Epizoda 1 CZ Dabing",
         "video_id": 30853739
+      },
+      {
+        "episode_id": 107822,
+        "display_name": "Komisařka Marleau S03E03 - Mír a zdraví CZ Dabing",
+        "video_id": 30854758
+      },
+      {
+        "episode_id": 203975,
+        "display_name": "Černá holubice S02E05 - Vražedný mix CZ Dabing",
+        "video_id": 30854864
       }
     ],
     "prepared_not_upload_ready": [
@@ -750518,6 +750558,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 4,
     "ok": 19,
     "resolve_failed": 1
   },
@@ -750528,6 +750569,6 @@
     "whisper_failed": 1278
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50598
+    "needs_subtitle_setup_after_prehrajto_processing": 50600
   }
 }
