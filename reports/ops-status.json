@@ -1,15 +1,15 @@
 {
   "counts": {
     "backlog_episodes": 111438,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 80226,
-    "prepared_source_episodes": 68485,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 80227,
+    "prepared_source_episodes": 68489,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 21,
+    "language_audited_sources": 28,
     "language_whisper_attempted_sources": 21,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53919,
@@ -21,18 +21,82 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-06T15:18:49Z",
-      "databaseId": 42241867825,
+      "createdAt": "2026-11-06T15:23:30Z",
+      "databaseId": 42242601878,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "update-descriptions"
+      "status": "pending",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T15:23:26Z",
+      "databaseId": 42242590829,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:23:23Z",
+      "databaseId": 42242583902,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:22:54Z",
+      "databaseId": 42242508530,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:22:51Z",
+      "databaseId": 42242498888,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T15:22:23Z",
+      "databaseId": 42242427474,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T15:21:01Z",
+      "databaseId": 42242213276,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T15:20:24Z",
+      "databaseId": 42242116154,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T15:18:49Z",
+      "databaseId": 42241867825,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-06T15:18:19Z",
       "databaseId": 42241789658,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +116,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T15:17:45Z",
       "databaseId": 42241702499,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "refresh-backlog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T15:13:27Z",
-      "databaseId": 42241022294,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T15:13:22Z",
-      "databaseId": 42241008958,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T15:13:05Z",
-      "databaseId": 42240962342,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T15:13:01Z",
-      "databaseId": 42240952222,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T15:12:58Z",
-      "databaseId": 42240943989,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T15:12:14Z",
-      "databaseId": 42240830299,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T15:11:58Z",
-      "databaseId": 42240786981,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T15:08:28Z",
-      "databaseId": 42240244118,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -375550,6 +375550,11 @@
         "episode_id": 112318,
         "display_name": "O Rei do Gado S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30862002
+      },
+      {
+        "episode_id": 73687,
+        "display_name": "Czas honoru S02E06 - 6. epizoda CZ Titulky",
+        "video_id": 30862129
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -750817,6 +750822,11 @@
         "episode_id": 112318,
         "display_name": "O Rei do Gado S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30862002
+      },
+      {
+        "episode_id": 73687,
+        "display_name": "Czas honoru S02E06 - 6. epizoda CZ Titulky",
+        "video_id": 30862129
       }
     ],
     "prepared_not_upload_ready": [
@@ -751978,6 +751988,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 7,
     "ok": 20,
     "resolve_failed": 1
   },
