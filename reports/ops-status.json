@@ -2,29 +2,69 @@
   "counts": {
     "backlog_episodes": 111384,
     "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 80289,
-    "prepared_source_episodes": 68619,
+    "uploaded_episodes": 80291,
+    "prepared_source_episodes": 68621,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 49,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 28,
+    "language_whisper_attempted_sources": 22,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53908,
-    "whisper_review_pending_sources": 37434,
-    "upload_pending_checkpoints": 36,
+    "whisper_review_pending_sources": 37433,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50674,
     "subtitle_followup_pending_sources": 50674
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T21:58:42Z",
+      "databaseId": 42301061599,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T21:58:10Z",
+      "databaseId": 42300993696,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T21:58:07Z",
+      "databaseId": 42300987916,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T21:58:03Z",
+      "databaseId": 42300978881,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T21:55:17Z",
+      "databaseId": 42300627978,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-06T21:54:11Z",
       "databaseId": 42300480438,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +76,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T21:53:08Z",
       "databaseId": 42300343754,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -56,7 +96,7 @@
       "createdAt": "2026-11-06T21:51:54Z",
       "databaseId": 42300180232,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -68,11 +108,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T21:51:30Z",
       "databaseId": 42300126633,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T21:44:03Z",
-      "databaseId": 42299132817,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T21:43:57Z",
-      "databaseId": 42299120271,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T21:42:44Z",
-      "databaseId": 42298960224,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T21:42:40Z",
-      "databaseId": 42298953144,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T21:42:30Z",
-      "databaseId": 42298929926,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -197195,6 +197195,16 @@
         "episode_id": 73712,
         "display_name": "Czas honoru S04E06 - 6. epizoda CZ Titulky",
         "video_id": 30870029
+      },
+      {
+        "episode_id": 112328,
+        "display_name": "O Rei do Gado S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30870648
+      },
+      {
+        "episode_id": 70000,
+        "display_name": "Übel Blatt S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30870700
       },
       {
         "episode_id": 114182,
@@ -572779,6 +572789,16 @@
         "video_id": 30870029
       },
       {
+        "episode_id": 112328,
+        "display_name": "O Rei do Gado S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30870648
+      },
+      {
+        "episode_id": 70000,
+        "display_name": "Übel Blatt S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30870700
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752608,13 +752628,13 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 9,
-    "ok": 39,
+    "disabled": 6,
+    "ok": 21,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36214,
-    "whisper_confirmed_cz": 3712,
+    "needs_whisper": 36213,
+    "whisper_confirmed_cz": 3713,
     "whisper_non_cz_needs_subtitles": 12762,
     "whisper_failed": 1220
   },
