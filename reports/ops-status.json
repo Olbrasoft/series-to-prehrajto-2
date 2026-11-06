@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 111717,
-    "manifest_upload_ready_episodes": 42,
-    "uploaded_episodes": 79960,
+    "manifest_upload_ready_episodes": 39,
+    "uploaded_episodes": 79964,
     "prepared_source_episodes": 68317,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,51 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53914,
     "whisper_review_pending_sources": 37542,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50547,
     "subtitle_followup_pending_sources": 50547
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T02:55:20Z",
+      "databaseId": 42153341760,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T02:52:40Z",
+      "databaseId": 42153076522,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T02:52:35Z",
+      "databaseId": 42153068306,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T02:52:33Z",
+      "databaseId": 42153064369,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T02:52:29Z",
+      "databaseId": 42153056939,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-06T02:52:09Z",
@@ -36,11 +76,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T02:50:05Z",
       "databaseId": 42152809433,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -52,11 +92,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T02:49:40Z",
       "databaseId": 42152769607,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +104,7 @@
       "createdAt": "2026-11-06T02:46:50Z",
       "databaseId": 42152477514,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -76,11 +116,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T02:44:46Z",
       "databaseId": 42152256731,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,11 +156,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T02:42:35Z",
       "databaseId": 42152035856,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -135,46 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-06T02:41:41Z",
       "databaseId": 42151941577,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T02:41:36Z",
-      "databaseId": 42151934678,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T02:39:10Z",
-      "databaseId": 42151680168,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T02:38:04Z",
-      "databaseId": 42151566792,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T02:38:00Z",
-      "databaseId": 42151559214,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T02:37:24Z",
-      "databaseId": 42151497241,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -196307,6 +196307,21 @@
         "video_id": 30842936
       },
       {
+        "episode_id": 36172,
+        "display_name": "Notre Dame S01E04 - 4. díl CZ Dabing",
+        "video_id": 30843273
+      },
+      {
+        "episode_id": 166285,
+        "display_name": "Guntherovy miliony S01E01 - Pes klikař CZ Dabing",
+        "video_id": 30843096
+      },
+      {
+        "episode_id": 17869,
+        "display_name": "Penance S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30843585
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -374220,6 +374235,11 @@
         "episode_id": 158759,
         "display_name": "Absolute Value of Romance S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30843055
+      },
+      {
+        "episode_id": 156843,
+        "display_name": "Absolute Value of Romance S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30843420
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -570244,6 +570264,21 @@
         "video_id": 30842936
       },
       {
+        "episode_id": 36172,
+        "display_name": "Notre Dame S01E04 - 4. díl CZ Dabing",
+        "video_id": 30843273
+      },
+      {
+        "episode_id": 166285,
+        "display_name": "Guntherovy miliony S01E01 - Pes klikař CZ Dabing",
+        "video_id": 30843096
+      },
+      {
+        "episode_id": 17869,
+        "display_name": "Penance S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30843585
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -748157,6 +748192,11 @@
         "episode_id": 158759,
         "display_name": "Absolute Value of Romance S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30843055
+      },
+      {
+        "episode_id": 156843,
+        "display_name": "Absolute Value of Romance S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30843420
       }
     ],
     "prepared_not_upload_ready": [
