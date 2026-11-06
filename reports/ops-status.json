@@ -1,17 +1,17 @@
 {
   "counts": {
     "backlog_episodes": 111384,
-    "manifest_upload_ready_episodes": 16,
-    "uploaded_episodes": 80281,
-    "prepared_source_episodes": 68616,
+    "manifest_upload_ready_episodes": 12,
+    "uploaded_episodes": 80284,
+    "prepared_source_episodes": 68613,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 28,
-    "language_whisper_attempted_sources": 21,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53908,
     "whisper_review_pending_sources": 37432,
     "upload_pending_checkpoints": 36,
@@ -21,10 +21,34 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T21:29:06Z",
+      "databaseId": 42297091619,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T21:24:33Z",
+      "databaseId": 42296476651,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T21:24:30Z",
+      "databaseId": 42296468957,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-06T21:23:32Z",
       "databaseId": 42296337021,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +80,7 @@
       "createdAt": "2026-11-06T21:22:08Z",
       "databaseId": 42296145350,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -140,11 +164,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T21:13:11Z",
       "databaseId": 42294899798,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T21:12:11Z",
-      "databaseId": 42294764001,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T21:11:49Z",
-      "databaseId": 42294710863,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T21:11:34Z",
-      "databaseId": 42294675798,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "refresh-backlog"
     }
   ],
   "gaps": {
@@ -197175,6 +197175,21 @@
         "episode_id": 112321,
         "display_name": "O Rei do Gado S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30868828
+      },
+      {
+        "episode_id": 108361,
+        "display_name": "Jsi můj život  S01E45 - 45. epizoda CZ Dabing",
+        "video_id": 30869965
+      },
+      {
+        "episode_id": 108360,
+        "display_name": "Jsi můj život  S01E44 - 44. epizoda CZ Dabing",
+        "video_id": 30870005
+      },
+      {
+        "episode_id": 112329,
+        "display_name": "O Rei do Gado S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30869998
       },
       {
         "episode_id": 114182,
@@ -572719,6 +572734,21 @@
         "video_id": 30868828
       },
       {
+        "episode_id": 108361,
+        "display_name": "Jsi můj život  S01E45 - 45. epizoda CZ Dabing",
+        "video_id": 30869965
+      },
+      {
+        "episode_id": 108360,
+        "display_name": "Jsi můj život  S01E44 - 44. epizoda CZ Dabing",
+        "video_id": 30870005
+      },
+      {
+        "episode_id": 112329,
+        "display_name": "O Rei do Gado S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30869998
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752528,8 +752558,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
-    "ok": 20,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
