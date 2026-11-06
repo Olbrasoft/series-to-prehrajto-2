@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 111384,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 80286,
-    "prepared_source_episodes": 68616,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 80287,
+    "prepared_source_episodes": 68613,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,17 +14,33 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53908,
     "whisper_review_pending_sources": 37432,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50673,
     "subtitle_followup_pending_sources": 50673
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T21:44:03Z",
+      "databaseId": 42299132817,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T21:43:57Z",
+      "databaseId": 42299120271,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T21:42:44Z",
       "databaseId": 42298960224,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,15 +64,15 @@
       "createdAt": "2026-11-06T21:41:41Z",
       "databaseId": 42298821864,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T21:41:37Z",
       "databaseId": 42298813016,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -96,7 +112,7 @@
       "createdAt": "2026-11-06T21:33:12Z",
       "databaseId": 42297668192,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "update-descriptions"
     },
     {
@@ -120,7 +136,7 @@
       "createdAt": "2026-11-06T21:33:05Z",
       "databaseId": 42297650061,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-descriptions"
     },
     {
@@ -140,44 +156,28 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T21:31:58Z",
       "databaseId": 42297491103,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T21:31:54Z",
       "databaseId": 42297482278,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T21:31:48Z",
       "databaseId": 42297468994,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T21:31:37Z",
-      "databaseId": 42297443206,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T21:29:06Z",
-      "databaseId": 42297091619,
-      "headBranch": "main",
       "status": "completed",
-      "workflowName": "ops-watchdog"
+      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -375850,6 +375850,11 @@
         "episode_id": 108359,
         "display_name": "Jsi můj život  S01E43 - 43. epizoda CZ Dabing",
         "video_id": 30870225
+      },
+      {
+        "episode_id": 99638,
+        "display_name": "Čtyři lvice S01E04 - 30 milionů přátel CZ Dabing",
+        "video_id": 30870373
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -751417,6 +751422,11 @@
         "episode_id": 108359,
         "display_name": "Jsi můj život  S01E43 - 43. epizoda CZ Dabing",
         "video_id": 30870225
+      },
+      {
+        "episode_id": 99638,
+        "display_name": "Čtyři lvice S01E04 - 30 milionů přátel CZ Dabing",
+        "video_id": 30870373
       }
     ],
     "prepared_not_upload_ready": [
