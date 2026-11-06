@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111717,
     "manifest_upload_ready_episodes": 47,
-    "uploaded_episodes": 79930,
+    "uploaded_episodes": 79931,
     "prepared_source_episodes": 68297,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,57 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53912,
     "whisper_review_pending_sources": 37552,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50526,
     "subtitle_followup_pending_sources": 50526
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T01:41:11Z",
+      "databaseId": 42145474207,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T01:40:51Z",
+      "databaseId": 42145437829,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T01:40:48Z",
+      "databaseId": 42145431293,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T01:40:24Z",
+      "databaseId": 42145387534,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T01:40:07Z",
+      "databaseId": 42145352807,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-06T01:38:53Z",
       "databaseId": 42145220858,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +80,7 @@
       "createdAt": "2026-11-06T01:35:45Z",
       "databaseId": 42144882029,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -52,11 +92,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T01:34:30Z",
       "databaseId": 42144740154,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T01:28:24Z",
-      "databaseId": 42144063063,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T01:26:39Z",
-      "databaseId": 42143876752,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T01:24:50Z",
-      "databaseId": 42143672745,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T01:24:47Z",
-      "databaseId": 42143665673,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T01:22:58Z",
-      "databaseId": 42143460940,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -196230,6 +196230,11 @@
         "episode_id": 133144,
         "display_name": "Baby Bandito S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30840942
+      },
+      {
+        "episode_id": 163985,
+        "display_name": "Rozbitá S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30840876
       },
       {
         "episode_id": 114182,
@@ -570017,6 +570022,11 @@
         "episode_id": 133144,
         "display_name": "Baby Bandito S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30840942
+      },
+      {
+        "episode_id": 163985,
+        "display_name": "Rozbitá S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30840876
       },
       {
         "episode_id": 114182,
