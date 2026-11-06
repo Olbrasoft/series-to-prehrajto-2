@@ -1,46 +1,142 @@
 {
   "counts": {
     "backlog_episodes": 111570,
-    "manifest_upload_ready_episodes": 24,
-    "uploaded_episodes": 80151,
-    "prepared_source_episodes": 68447,
+    "manifest_upload_ready_episodes": 19,
+    "uploaded_episodes": 80160,
+    "prepared_source_episodes": 68443,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53917,
-    "whisper_review_pending_sources": 37502,
-    "upload_pending_checkpoints": 38,
+    "language_audited_sources": 24,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
+    "whisper_review_sources": 53918,
+    "whisper_review_pending_sources": 37504,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50614,
     "subtitle_followup_pending_sources": 50614
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-06T12:01:57Z",
-      "databaseId": 42214574133,
+      "createdAt": "2026-11-06T12:13:02Z",
+      "databaseId": 42215964128,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-06T12:01:44Z",
-      "databaseId": 42214546572,
+      "createdAt": "2026-11-06T12:12:58Z",
+      "databaseId": 42215954221,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "audit-language"
+      "status": "pending",
+      "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T12:07:26Z",
+      "databaseId": 42215262568,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T12:06:54Z",
+      "databaseId": 42215195305,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:06:49Z",
+      "databaseId": 42215186022,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:06:28Z",
+      "databaseId": 42215143345,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:04:39Z",
+      "databaseId": 42214907105,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T12:04:23Z",
+      "databaseId": 42214874678,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T12:03:57Z",
+      "databaseId": 42214819194,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:03:54Z",
+      "databaseId": 42214812832,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T12:03:45Z",
+      "databaseId": 42214794911,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T12:03:40Z",
+      "databaseId": 42214783454,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T12:01:57Z",
+      "databaseId": 42214574133,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T12:01:44Z",
+      "databaseId": 42214546572,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-06T12:01:43Z",
       "databaseId": 42214542882,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +156,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T11:52:52Z",
       "databaseId": 42213478237,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -82,102 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T11:51:42Z",
-      "databaseId": 42213337789,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T11:51:24Z",
-      "databaseId": 42213301850,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T11:50:07Z",
-      "databaseId": 42213150302,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:50:07Z",
-      "databaseId": 42213149897,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T11:49:56Z",
-      "databaseId": 42213126979,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T11:49:16Z",
-      "databaseId": 42213048514,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:48:56Z",
-      "databaseId": 42213008306,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:48:52Z",
-      "databaseId": 42213001042,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:47:43Z",
-      "databaseId": 42212865162,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T11:47:38Z",
-      "databaseId": 42212855583,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T11:42:51Z",
-      "databaseId": 42212273636,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T11:42:37Z",
-      "databaseId": 42212246224,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -196822,6 +196822,31 @@
         "video_id": 30858341
       },
       {
+        "episode_id": 125461,
+        "display_name": "Dealer S01E10 - Šéf CZ Titulky",
+        "video_id": 30858469
+      },
+      {
+        "episode_id": 157656,
+        "display_name": "Král Varšavy S01E06 - Stíny minulosti CZ Dabing",
+        "video_id": 30858426
+      },
+      {
+        "episode_id": 134969,
+        "display_name": "Zvláštní efekty S01E02 - Iluze 2 CZ Dabing",
+        "video_id": 30858566
+      },
+      {
+        "episode_id": 174860,
+        "display_name": "A History of Horror S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30858574
+      },
+      {
+        "episode_id": 108345,
+        "display_name": "Jsi můj život  S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30858644
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -375175,6 +375200,26 @@
         "episode_id": 73670,
         "display_name": "Czas honoru S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30858456
+      },
+      {
+        "episode_id": 124838,
+        "display_name": "Nebezpečné umění S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30858516
+      },
+      {
+        "episode_id": 130103,
+        "display_name": "Banditi: Na cestě za zlatem S01E03 - Vůl CZ Dabing",
+        "video_id": 30858446
+      },
+      {
+        "episode_id": 124846,
+        "display_name": "Nebezpečné umění S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30858620
+      },
+      {
+        "episode_id": 125455,
+        "display_name": "Dealer S01E04 - Bacha! CZ Titulky",
+        "video_id": 30858656
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -571714,6 +571759,31 @@
         "video_id": 30858341
       },
       {
+        "episode_id": 125461,
+        "display_name": "Dealer S01E10 - Šéf CZ Titulky",
+        "video_id": 30858469
+      },
+      {
+        "episode_id": 157656,
+        "display_name": "Král Varšavy S01E06 - Stíny minulosti CZ Dabing",
+        "video_id": 30858426
+      },
+      {
+        "episode_id": 134969,
+        "display_name": "Zvláštní efekty S01E02 - Iluze 2 CZ Dabing",
+        "video_id": 30858566
+      },
+      {
+        "episode_id": 174860,
+        "display_name": "A History of Horror S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30858574
+      },
+      {
+        "episode_id": 108345,
+        "display_name": "Jsi můj život  S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30858644
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -750067,6 +750137,26 @@
         "episode_id": 73670,
         "display_name": "Czas honoru S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30858456
+      },
+      {
+        "episode_id": 124838,
+        "display_name": "Nebezpečné umění S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30858516
+      },
+      {
+        "episode_id": 130103,
+        "display_name": "Banditi: Na cestě za zlatem S01E03 - Vůl CZ Dabing",
+        "video_id": 30858446
+      },
+      {
+        "episode_id": 124846,
+        "display_name": "Nebezpečné umění S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30858620
+      },
+      {
+        "episode_id": 125455,
+        "display_name": "Dealer S01E04 - Bacha! CZ Titulky",
+        "video_id": 30858656
       }
     ],
     "prepared_not_upload_ready": [
@@ -751228,14 +751318,15 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "disabled": 4,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36258,
+    "needs_whisper": 36261,
     "whisper_confirmed_cz": 3705,
-    "whisper_non_cz_needs_subtitles": 12710,
-    "whisper_failed": 1244
+    "whisper_non_cz_needs_subtitles": 12709,
+    "whisper_failed": 1243
   },
   "subtitle_followup_statuses": {
     "needs_subtitle_setup_after_prehrajto_processing": 50614
