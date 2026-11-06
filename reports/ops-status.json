@@ -1,30 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 111570,
-    "manifest_upload_ready_episodes": 29,
-    "uploaded_episodes": 80140,
-    "prepared_source_episodes": 68446,
+    "manifest_upload_ready_episodes": 34,
+    "uploaded_episodes": 80142,
+    "prepared_source_episodes": 68450,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 52,
-    "language_whisper_attempted_sources": 41,
+    "language_audited_sources": 58,
+    "language_whisper_attempted_sources": 46,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53918,
-    "whisper_review_pending_sources": 37510,
+    "whisper_review_pending_sources": 37505,
     "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50612,
-    "subtitle_followup_pending_sources": 50612
+    "subtitle_followup_sources": 50613,
+    "subtitle_followup_pending_sources": 50613
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:47:43Z",
+      "databaseId": 42212865162,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:47:38Z",
+      "databaseId": 42212855583,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:42:51Z",
+      "databaseId": 42212273636,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T11:42:37Z",
+      "databaseId": 42212246224,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T11:42:13Z",
+      "databaseId": 42212195612,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T11:39:02Z",
+      "databaseId": 42211813163,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-06T11:37:01Z",
       "databaseId": 42211577935,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +92,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T11:36:36Z",
       "databaseId": 42211530496,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,11 +116,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T11:35:50Z",
       "databaseId": 42211436234,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -84,11 +132,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T11:33:08Z",
       "databaseId": 42211095205,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -120,7 +168,7 @@
       "createdAt": "2026-11-06T11:31:53Z",
       "databaseId": 42210935928,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T11:31:40Z",
-      "databaseId": 42210909582,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T11:30:37Z",
-      "databaseId": 42210775010,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T11:30:34Z",
-      "databaseId": 42210768272,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T11:30:31Z",
-      "databaseId": 42210760119,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T11:29:58Z",
-      "databaseId": 42210684328,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T11:27:15Z",
-      "databaseId": 42210361070,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -196797,6 +196797,11 @@
         "video_id": 30857690
       },
       {
+        "episode_id": 174229,
+        "display_name": "Pan a paní Smithovi S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30858085
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -375120,6 +375125,11 @@
         "episode_id": 171419,
         "display_name": "The Greatest Event in Television History S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30857683
+      },
+      {
+        "episode_id": 107842,
+        "display_name": "Komisařka Marleau S04E09 - Hrdinou proti své vůli CZ Dabing",
+        "video_id": 30857954
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -571634,6 +571644,11 @@
         "video_id": 30857690
       },
       {
+        "episode_id": 174229,
+        "display_name": "Pan a paní Smithovi S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30858085
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -749957,6 +749972,11 @@
         "episode_id": 171419,
         "display_name": "The Greatest Event in Television History S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30857683
+      },
+      {
+        "episode_id": 107842,
+        "display_name": "Komisařka Marleau S04E09 - Hrdinou proti své vůli CZ Dabing",
+        "video_id": 30857954
       }
     ],
     "prepared_not_upload_ready": [
@@ -751118,17 +751138,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 11,
-    "ok": 40,
+    "disabled": 12,
+    "ok": 45,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36261,
-    "whisper_confirmed_cz": 3701,
-    "whisper_non_cz_needs_subtitles": 12707,
-    "whisper_failed": 1249
+    "needs_whisper": 36260,
+    "whisper_confirmed_cz": 3704,
+    "whisper_non_cz_needs_subtitles": 12709,
+    "whisper_failed": 1245
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50612
+    "needs_subtitle_setup_after_prehrajto_processing": 50613
   }
 }
