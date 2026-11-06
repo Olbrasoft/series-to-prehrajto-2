@@ -1,183 +1,183 @@
 {
   "counts": {
-    "backlog_episodes": 111717,
-    "manifest_upload_ready_episodes": 42,
-    "uploaded_episodes": 79965,
-    "prepared_source_episodes": 68326,
+    "backlog_episodes": 111658,
+    "manifest_upload_ready_episodes": 38,
+    "uploaded_episodes": 79982,
+    "prepared_source_episodes": 68321,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53916,
-    "whisper_review_pending_sources": 37551,
-    "upload_pending_checkpoints": 39,
-    "subtitle_followup_sources": 50550,
-    "subtitle_followup_pending_sources": 50550
+    "language_audited_sources": 54,
+    "language_whisper_attempted_sources": 54,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53912,
+    "whisper_review_pending_sources": 37536,
+    "upload_pending_checkpoints": 37,
+    "subtitle_followup_sources": 50564,
+    "subtitle_followup_pending_sources": 50564
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T03:50:00Z",
+      "databaseId": 42158886836,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
-      "createdAt": "2026-11-06T03:09:26Z",
-      "databaseId": 42154786867,
+      "createdAt": "2026-11-06T03:49:55Z",
+      "databaseId": 42158878909,
       "headBranch": "main",
       "status": "pending",
-      "workflowName": "prepare-manifest"
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T03:49:51Z",
+      "databaseId": 42158871568,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
     },
     {
       "conclusion": "cancelled",
-      "createdAt": "2026-11-06T03:08:21Z",
-      "databaseId": 42154674730,
+      "createdAt": "2026-11-06T03:44:09Z",
+      "databaseId": 42158320453,
       "headBranch": "main",
       "status": "completed",
-      "workflowName": "prepare-manifest"
+      "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T03:06:17Z",
-      "databaseId": 42154461212,
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T03:43:41Z",
+      "databaseId": 42158275531,
       "headBranch": "main",
       "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T03:06:08Z",
-      "databaseId": 42154444516,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-06T03:05:57Z",
-      "databaseId": 42154426031,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T03:05:41Z",
-      "databaseId": 42154397150,
+      "createdAt": "2026-11-06T03:43:37Z",
+      "databaseId": 42158269244,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "sync"
     },
     {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T03:42:03Z",
+      "databaseId": 42158116340,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
       "conclusion": "",
-      "createdAt": "2026-11-06T03:05:09Z",
-      "databaseId": 42154335027,
+      "createdAt": "2026-11-06T03:42:00Z",
+      "databaseId": 42158110087,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T03:05:09Z",
-      "databaseId": 42154334855,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T03:05:01Z",
-      "databaseId": 42154320055,
-      "headBranch": "main",
-      "status": "completed",
+      "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T03:04:12Z",
-      "databaseId": 42154237690,
+      "conclusion": "",
+      "createdAt": "2026-11-06T03:38:43Z",
+      "databaseId": 42157797264,
       "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
     },
     {
       "conclusion": "cancelled",
-      "createdAt": "2026-11-06T03:03:46Z",
-      "databaseId": 42154192524,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T03:02:12Z",
-      "databaseId": 42154030612,
+      "createdAt": "2026-11-06T03:37:58Z",
+      "databaseId": 42157725383,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T03:01:45Z",
-      "databaseId": 42153985298,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
       "conclusion": "cancelled",
-      "createdAt": "2026-11-06T03:01:33Z",
-      "databaseId": 42153963627,
+      "createdAt": "2026-11-06T03:37:56Z",
+      "databaseId": 42157721990,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T03:37:54Z",
+      "databaseId": 42157719576,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
     },
     {
       "conclusion": "skipped",
-      "createdAt": "2026-11-06T03:01:32Z",
-      "databaseId": 42153961849,
+      "createdAt": "2026-11-06T03:37:03Z",
+      "databaseId": 42157634762,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
     },
     {
       "conclusion": "cancelled",
-      "createdAt": "2026-11-06T03:01:15Z",
-      "databaseId": 42153933108,
+      "createdAt": "2026-11-06T03:35:56Z",
+      "databaseId": 42157525203,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "cancelled",
-      "createdAt": "2026-11-06T03:01:11Z",
-      "databaseId": 42153925089,
+      "createdAt": "2026-11-06T03:35:52Z",
+      "databaseId": 42157518504,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T03:34:04Z",
+      "databaseId": 42157330980,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T03:00:52Z",
-      "databaseId": 42153890328,
+      "conclusion": "",
+      "createdAt": "2026-11-06T03:33:27Z",
+      "databaseId": 42157269609,
       "headBranch": "main",
-      "status": "completed",
+      "status": "queued",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T02:55:20Z",
-      "databaseId": 42153341760,
+      "conclusion": "",
+      "createdAt": "2026-11-06T03:33:20Z",
+      "databaseId": 42157256809,
       "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T02:52:40Z",
-      "databaseId": 42153076522,
+      "conclusion": "",
+      "createdAt": "2026-11-06T03:32:21Z",
+      "databaseId": 42157154437,
       "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T03:31:33Z",
+      "databaseId": 42157075354,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -196327,6 +196327,51 @@
         "video_id": 30843636
       },
       {
+        "episode_id": 177700,
+        "display_name": "Sicilští lvi S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30844126
+      },
+      {
+        "episode_id": 174457,
+        "display_name": "Kritické minuty: Otázka života a smrti S01E03 - 3. díl CZ Dabing",
+        "video_id": 30844164
+      },
+      {
+        "episode_id": 175012,
+        "display_name": "Laboratoř záhad S01E05 - Zombie apokalypsa: co kdyby to byla pravda? CZ Titulky",
+        "video_id": 30844314
+      },
+      {
+        "episode_id": 179673,
+        "display_name": "Spector S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30844472
+      },
+      {
+        "episode_id": 178628,
+        "display_name": "Tančírna na hlavní třídě '63 S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30844673
+      },
+      {
+        "episode_id": 175013,
+        "display_name": "Laboratoř záhad S01E06 - Velké vymírání CZ Titulky",
+        "video_id": 30844964
+      },
+      {
+        "episode_id": 166288,
+        "display_name": "Guntherovy miliony S01E04 - Dědictví pod psa CZ Dabing",
+        "video_id": 30844979
+      },
+      {
+        "episode_id": 17868,
+        "display_name": "Penance S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30845104
+      },
+      {
+        "episode_id": 142593,
+        "display_name": "Bistro u Ďábla S01E06 - KARMA: Hlemýždi CZ Titulky",
+        "video_id": 30845048
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -374245,6 +374290,46 @@
         "episode_id": 156843,
         "display_name": "Absolute Value of Romance S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30843420
+      },
+      {
+        "episode_id": 174458,
+        "display_name": "Kritické minuty: Otázka života a smrti S01E04 - 4. díl CZ Dabing",
+        "video_id": 30844057
+      },
+      {
+        "episode_id": 175011,
+        "display_name": "Laboratoř záhad S01E04 - Od vlků ke psům CZ Titulky",
+        "video_id": 30844145
+      },
+      {
+        "episode_id": 179674,
+        "display_name": "Spector S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30844344
+      },
+      {
+        "episode_id": 158763,
+        "display_name": "Absolute Value of Romance S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30844493
+      },
+      {
+        "episode_id": 166482,
+        "display_name": "The Midnight Romance in Hagwon S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30844770
+      },
+      {
+        "episode_id": 171827,
+        "display_name": "Munich Games S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30844958
+      },
+      {
+        "episode_id": 147379,
+        "display_name": "Sicilský expres S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30845016
+      },
+      {
+        "episode_id": 166486,
+        "display_name": "The Midnight Romance in Hagwon S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30844971
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -570289,6 +570374,51 @@
         "video_id": 30843636
       },
       {
+        "episode_id": 177700,
+        "display_name": "Sicilští lvi S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30844126
+      },
+      {
+        "episode_id": 174457,
+        "display_name": "Kritické minuty: Otázka života a smrti S01E03 - 3. díl CZ Dabing",
+        "video_id": 30844164
+      },
+      {
+        "episode_id": 175012,
+        "display_name": "Laboratoř záhad S01E05 - Zombie apokalypsa: co kdyby to byla pravda? CZ Titulky",
+        "video_id": 30844314
+      },
+      {
+        "episode_id": 179673,
+        "display_name": "Spector S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30844472
+      },
+      {
+        "episode_id": 178628,
+        "display_name": "Tančírna na hlavní třídě '63 S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30844673
+      },
+      {
+        "episode_id": 175013,
+        "display_name": "Laboratoř záhad S01E06 - Velké vymírání CZ Titulky",
+        "video_id": 30844964
+      },
+      {
+        "episode_id": 166288,
+        "display_name": "Guntherovy miliony S01E04 - Dědictví pod psa CZ Dabing",
+        "video_id": 30844979
+      },
+      {
+        "episode_id": 17868,
+        "display_name": "Penance S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30845104
+      },
+      {
+        "episode_id": 142593,
+        "display_name": "Bistro u Ďábla S01E06 - KARMA: Hlemýždi CZ Titulky",
+        "video_id": 30845048
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -748207,6 +748337,46 @@
         "episode_id": 156843,
         "display_name": "Absolute Value of Romance S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30843420
+      },
+      {
+        "episode_id": 174458,
+        "display_name": "Kritické minuty: Otázka života a smrti S01E04 - 4. díl CZ Dabing",
+        "video_id": 30844057
+      },
+      {
+        "episode_id": 175011,
+        "display_name": "Laboratoř záhad S01E04 - Od vlků ke psům CZ Titulky",
+        "video_id": 30844145
+      },
+      {
+        "episode_id": 179674,
+        "display_name": "Spector S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30844344
+      },
+      {
+        "episode_id": 158763,
+        "display_name": "Absolute Value of Romance S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30844493
+      },
+      {
+        "episode_id": 166482,
+        "display_name": "The Midnight Romance in Hagwon S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30844770
+      },
+      {
+        "episode_id": 171827,
+        "display_name": "Munich Games S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30844958
+      },
+      {
+        "episode_id": 147379,
+        "display_name": "Sicilský expres S01E02 - 2. epizoda CZ Dabing",
+        "video_id": 30845016
+      },
+      {
+        "episode_id": 166486,
+        "display_name": "The Midnight Romance in Hagwon S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30844971
       }
     ],
     "prepared_not_upload_ready": [
@@ -749368,16 +749538,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 53,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36225,
+    "needs_whisper": 36211,
     "whisper_confirmed_cz": 3706,
-    "whisper_non_cz_needs_subtitles": 12659,
-    "whisper_failed": 1326
+    "whisper_non_cz_needs_subtitles": 12670,
+    "whisper_failed": 1325
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50550
+    "needs_subtitle_setup_after_prehrajto_processing": 50564
   }
 }
