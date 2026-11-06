@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 111438,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 80257,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 80258,
     "prepared_source_episodes": 68536,
     "description_series": 60,
     "description_episodes": 753,
@@ -10,21 +10,85 @@
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 27,
-    "language_whisper_attempted_sources": 20,
+    "language_whisper_attempted_sources": 21,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53915,
-    "whisper_review_pending_sources": 37464,
+    "whisper_review_pending_sources": 37463,
     "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50653,
-    "subtitle_followup_pending_sources": 50653
+    "subtitle_followup_sources": 50654,
+    "subtitle_followup_pending_sources": 50654
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T17:56:06Z",
+      "databaseId": 42266132555,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T17:51:52Z",
+      "databaseId": 42265498041,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T17:51:52Z",
+      "databaseId": 42265497523,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T17:51:28Z",
+      "databaseId": 42265437019,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T17:50:10Z",
+      "databaseId": 42265243354,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T17:50:02Z",
+      "databaseId": 42265223853,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T17:49:53Z",
+      "databaseId": 42265201436,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T17:48:14Z",
+      "databaseId": 42264953148,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-06T17:46:20Z",
       "databaseId": 42264671936,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +104,7 @@
       "createdAt": "2026-11-06T17:46:10Z",
       "databaseId": 42264647163,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -52,27 +116,27 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T17:45:10Z",
       "databaseId": 42264493128,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T17:45:07Z",
       "databaseId": 42264483562,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T17:43:40Z",
       "databaseId": 42264264307,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +168,7 @@
       "createdAt": "2026-11-06T17:42:09Z",
       "databaseId": 42264036695,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T17:39:13Z",
-      "databaseId": 42263590047,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T17:38:59Z",
-      "databaseId": 42263554804,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T17:37:37Z",
-      "databaseId": 42263356668,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T17:37:22Z",
-      "databaseId": 42263321850,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T17:37:19Z",
-      "databaseId": 42263313837,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T17:37:01Z",
-      "databaseId": 42263268166,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-06T17:36:17Z",
-      "databaseId": 42263160246,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T17:33:20Z",
-      "databaseId": 42262704231,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -375705,6 +375705,11 @@
         "episode_id": 108334,
         "display_name": "Jsi můj život  S01E32 - 32. epizoda CZ Dabing",
         "video_id": 30865307
+      },
+      {
+        "episode_id": 5350,
+        "display_name": "My Little Pony: Ukaž se S06E01 - Dračí ostrov CZ Titulky",
+        "video_id": 30865518
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -751127,6 +751132,11 @@
         "episode_id": 108334,
         "display_name": "Jsi můj život  S01E32 - 32. epizoda CZ Dabing",
         "video_id": 30865307
+      },
+      {
+        "episode_id": 5350,
+        "display_name": "My Little Pony: Ukaž se S06E01 - Dračí ostrov CZ Titulky",
+        "video_id": 30865518
       }
     ],
     "prepared_not_upload_ready": [
@@ -752288,17 +752298,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
-    "ok": 19,
+    "disabled": 6,
+    "ok": 20,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36247,
+    "needs_whisper": 36246,
     "whisper_confirmed_cz": 3710,
-    "whisper_non_cz_needs_subtitles": 12741,
+    "whisper_non_cz_needs_subtitles": 12742,
     "whisper_failed": 1217
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50653
+    "needs_subtitle_setup_after_prehrajto_processing": 50654
   }
 }
