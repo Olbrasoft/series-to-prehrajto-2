@@ -2,29 +2,109 @@
   "counts": {
     "backlog_episodes": 111622,
     "manifest_upload_ready_episodes": 46,
-    "uploaded_episodes": 80055,
+    "uploaded_episodes": 80057,
     "prepared_source_episodes": 68395,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 21,
-    "language_whisper_attempted_sources": 21,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53915,
     "whisper_review_pending_sources": 37526,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 50592,
     "subtitle_followup_pending_sources": 50592
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-06T07:24:45Z",
+      "databaseId": 42180701383,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T07:24:40Z",
+      "databaseId": 42180694039,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T07:24:36Z",
+      "databaseId": 42180686862,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T07:24:34Z",
+      "databaseId": 42180681350,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-06T07:24:17Z",
+      "databaseId": 42180649801,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T07:24:08Z",
+      "databaseId": 42180630743,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-06T07:22:54Z",
+      "databaseId": 42180494198,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T07:20:40Z",
+      "databaseId": 42180250048,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-06T07:19:03Z",
+      "databaseId": 42180066392,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-06T07:18:58Z",
+      "databaseId": 42180059242,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-06T07:18:24Z",
       "databaseId": 42179999036,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -32,23 +112,23 @@
       "createdAt": "2026-11-06T07:16:34Z",
       "databaseId": 42179803854,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T07:16:31Z",
       "databaseId": 42179799026,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-06T07:16:20Z",
       "databaseId": 42179781377,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -60,11 +140,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T07:15:02Z",
       "databaseId": 42179627818,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:13:30Z",
-      "databaseId": 42179456105,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T07:12:37Z",
-      "databaseId": 42179360581,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T07:09:27Z",
-      "databaseId": 42179010924,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:09:22Z",
-      "databaseId": 42179003507,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T07:06:00Z",
-      "databaseId": 42178635818,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:05:23Z",
-      "databaseId": 42178567937,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T07:05:21Z",
-      "databaseId": 42178565061,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-06T07:04:05Z",
-      "databaseId": 42178425674,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:03:33Z",
-      "databaseId": 42178365447,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-06T07:03:31Z",
-      "databaseId": 42178362058,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -196577,6 +196577,11 @@
         "video_id": 30851986
       },
       {
+        "episode_id": 181332,
+        "display_name": "Titanic Sinks Tonight S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30852031
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -374695,6 +374700,11 @@
         "episode_id": 203974,
         "display_name": "Černá holubice S02E03 - J jako jed CZ Dabing",
         "video_id": 30852018
+      },
+      {
+        "episode_id": 203922,
+        "display_name": "American Hostage S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30852249
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -570989,6 +570999,11 @@
         "video_id": 30851986
       },
       {
+        "episode_id": 181332,
+        "display_name": "Titanic Sinks Tonight S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30852031
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -749107,6 +749122,11 @@
         "episode_id": 203974,
         "display_name": "Černá holubice S02E03 - J jako jed CZ Dabing",
         "video_id": 30852018
+      },
+      {
+        "episode_id": 203922,
+        "display_name": "American Hostage S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30852249
       }
     ],
     "prepared_not_upload_ready": [
@@ -750268,7 +750288,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 20,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
