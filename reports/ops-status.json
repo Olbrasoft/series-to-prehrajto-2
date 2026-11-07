@@ -1,24 +1,80 @@
 {
   "counts": {
     "backlog_episodes": 111336,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 80339,
-    "prepared_source_episodes": 68679,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 80343,
+    "prepared_source_episodes": 68686,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 54,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53901,
     "whisper_review_pending_sources": 37402,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 50693,
     "subtitle_followup_pending_sources": 50693
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T01:25:08Z",
+      "databaseId": 42323961400,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T01:25:05Z",
+      "databaseId": 42323955198,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T01:23:54Z",
+      "databaseId": 42323852915,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T01:23:12Z",
+      "databaseId": 42323789228,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T01:22:40Z",
+      "databaseId": 42323740791,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T01:22:37Z",
+      "databaseId": 42323736497,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T01:22:33Z",
+      "databaseId": 42323730021,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-07T01:20:40Z",
@@ -28,11 +84,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T01:20:15Z",
       "databaseId": 42323512662,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -40,7 +96,7 @@
       "createdAt": "2026-11-07T01:19:49Z",
       "databaseId": 42323468328,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +116,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T01:16:58Z",
       "databaseId": 42323207275,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +148,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T01:15:55Z",
       "databaseId": 42323110675,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -108,11 +164,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T01:15:02Z",
       "databaseId": 42323020545,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -120,64 +176,8 @@
       "createdAt": "2026-11-07T01:14:00Z",
       "databaseId": 42322926964,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T01:13:44Z",
-      "databaseId": 42322901588,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T01:12:17Z",
-      "databaseId": 42322762688,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T01:12:09Z",
-      "databaseId": 42322750931,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T01:11:38Z",
-      "databaseId": 42322699818,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T01:11:33Z",
-      "databaseId": 42322693256,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T01:09:55Z",
-      "databaseId": 42322529863,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T01:08:49Z",
-      "databaseId": 42322422634,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -197307,6 +197307,16 @@
         "video_id": 30874872
       },
       {
+        "episode_id": 112344,
+        "display_name": "O Rei do Gado S01E28 - 28. epizoda CZ Dabing",
+        "video_id": 30875558
+      },
+      {
+        "episode_id": 108377,
+        "display_name": "Jsi můj život  S01E61 - 61. epizoda CZ Dabing",
+        "video_id": 30875592
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -376115,6 +376125,16 @@
         "episode_id": 112342,
         "display_name": "O Rei do Gado S01E26 - 26. epizoda CZ Titulky",
         "video_id": 30874829
+      },
+      {
+        "episode_id": 112343,
+        "display_name": "O Rei do Gado S01E30 - 30. epizoda CZ Dabing",
+        "video_id": 30875568
+      },
+      {
+        "episode_id": 108378,
+        "display_name": "Jsi můj život  S01E62 - 62. epizoda CZ Dabing",
+        "video_id": 30875602
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -573139,6 +573159,16 @@
         "video_id": 30874872
       },
       {
+        "episode_id": 112344,
+        "display_name": "O Rei do Gado S01E28 - 28. epizoda CZ Dabing",
+        "video_id": 30875558
+      },
+      {
+        "episode_id": 108377,
+        "display_name": "Jsi můj život  S01E61 - 61. epizoda CZ Dabing",
+        "video_id": 30875592
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -751947,6 +751977,16 @@
         "episode_id": 112342,
         "display_name": "O Rei do Gado S01E26 - 26. epizoda CZ Titulky",
         "video_id": 30874829
+      },
+      {
+        "episode_id": 112343,
+        "display_name": "O Rei do Gado S01E30 - 30. epizoda CZ Dabing",
+        "video_id": 30875568
+      },
+      {
+        "episode_id": 108378,
+        "display_name": "Jsi můj život  S01E62 - 62. epizoda CZ Dabing",
+        "video_id": 30875602
       }
     ],
     "prepared_not_upload_ready": [
@@ -753108,6 +753148,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 14,
     "ok": 39,
     "resolve_failed": 1
   },
