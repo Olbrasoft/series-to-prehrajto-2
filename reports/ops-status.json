@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 111157,
-    "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 80573,
-    "prepared_source_episodes": 68843,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 80575,
+    "prepared_source_episodes": 68844,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 45,
@@ -14,17 +14,33 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53868,
     "whisper_review_pending_sources": 37240,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50801,
     "subtitle_followup_pending_sources": 50801
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T11:56:37Z",
+      "databaseId": 42370293663,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T11:56:29Z",
+      "databaseId": 42370285624,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T11:53:56Z",
       "databaseId": 42370107412,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,15 +48,15 @@
       "createdAt": "2026-11-07T11:53:20Z",
       "databaseId": 42370066945,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T11:52:55Z",
       "databaseId": 42370037379,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +72,7 @@
       "createdAt": "2026-11-07T11:52:13Z",
       "databaseId": 42369989534,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -72,7 +88,7 @@
       "createdAt": "2026-11-07T11:51:45Z",
       "databaseId": 42369955737,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -100,11 +116,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T11:49:41Z",
       "databaseId": 42369811404,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T11:44:07Z",
-      "databaseId": 42369418330,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T11:42:38Z",
-      "databaseId": 42369316281,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -197897,6 +197897,11 @@
         "video_id": 30889657
       },
       {
+        "episode_id": 112404,
+        "display_name": "O Rei do Gado S01E97 - 97. epizoda CZ Titulky",
+        "video_id": 30889702
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -377285,6 +377290,11 @@
         "episode_id": 177886,
         "display_name": "Dostoevskij S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30889451
+      },
+      {
+        "episode_id": 112406,
+        "display_name": "O Rei do Gado S01E99 - 99. epizoda CZ Dabing",
+        "video_id": 30889662
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -574899,6 +574909,11 @@
         "video_id": 30889657
       },
       {
+        "episode_id": 112404,
+        "display_name": "O Rei do Gado S01E97 - 97. epizoda CZ Titulky",
+        "video_id": 30889702
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -754287,6 +754302,11 @@
         "episode_id": 177886,
         "display_name": "Dostoevskij S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30889451
+      },
+      {
+        "episode_id": 112406,
+        "display_name": "O Rei do Gado S01E99 - 99. epizoda CZ Dabing",
+        "video_id": 30889662
       }
     ],
     "prepared_not_upload_ready": [
