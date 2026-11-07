@@ -1,30 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 110944,
-    "manifest_upload_ready_episodes": 38,
-    "uploaded_episodes": 80728,
-    "prepared_source_episodes": 69134,
+    "manifest_upload_ready_episodes": 40,
+    "uploaded_episodes": 80729,
+    "prepared_source_episodes": 69137,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 36,
+    "language_audited_sources": 26,
     "language_whisper_attempted_sources": 23,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53847,
     "whisper_review_pending_sources": 37104,
     "upload_pending_checkpoints": 37,
-    "subtitle_followup_sources": 50930,
-    "subtitle_followup_pending_sources": 50930
+    "subtitle_followup_sources": 50932,
+    "subtitle_followup_pending_sources": 50932
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T22:02:09Z",
+      "databaseId": 42418671478,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T22:01:29Z",
+      "databaseId": 42418617147,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T22:01:23Z",
+      "databaseId": 42418608450,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:58:49Z",
+      "databaseId": 42418397124,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T21:54:28Z",
       "databaseId": 42418069214,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -36,11 +68,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T21:53:24Z",
       "databaseId": 42417987972,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +88,7 @@
       "createdAt": "2026-11-07T21:52:23Z",
       "databaseId": 42417911308,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T21:42:47Z",
-      "databaseId": 42417156701,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T21:41:52Z",
-      "databaseId": 42417081530,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T21:41:39Z",
-      "databaseId": 42417065331,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T21:41:36Z",
-      "databaseId": 42417061456,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -198255,6 +198255,11 @@
         "episode_id": 137208,
         "display_name": "Divoká krása S02E01 - 1. epizoda CZ Titulky",
         "video_id": 30899275
+      },
+      {
+        "episode_id": 102477,
+        "display_name": "Son of a Donkey S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30899631
       },
       {
         "episode_id": 114182,
@@ -576034,6 +576039,11 @@
         "video_id": 30899275
       },
       {
+        "episode_id": 102477,
+        "display_name": "Son of a Donkey S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30899631
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -756998,7 +757008,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 13,
+    "disabled": 3,
     "ok": 22,
     "resolve_failed": 1
   },
@@ -757009,6 +757019,6 @@
     "whisper_failed": 1186
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50930
+    "needs_subtitle_setup_after_prehrajto_processing": 50932
   }
 }
