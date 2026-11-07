@@ -1,30 +1,102 @@
 {
   "counts": {
     "backlog_episodes": 111157,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 80541,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 80542,
     "prepared_source_episodes": 68828,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 45,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 23,
+    "language_whisper_attempted_sources": 23,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53872,
     "whisper_review_pending_sources": 37262,
     "upload_pending_checkpoints": 36,
-    "subtitle_followup_sources": 50782,
-    "subtitle_followup_pending_sources": 50782
+    "subtitle_followup_sources": 50785,
+    "subtitle_followup_pending_sources": 50785
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T10:22:40Z",
+      "databaseId": 42363699532,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:22:31Z",
+      "databaseId": 42363689582,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:22:28Z",
+      "databaseId": 42363685966,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:22:04Z",
+      "databaseId": 42363657759,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:21:23Z",
+      "databaseId": 42363606069,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T10:20:51Z",
+      "databaseId": 42363566283,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T10:20:07Z",
+      "databaseId": 42363508441,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T10:19:37Z",
+      "databaseId": 42363472228,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:19:32Z",
+      "databaseId": 42363466837,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T10:18:17Z",
       "databaseId": 42363377673,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +156,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T10:13:34Z",
       "databaseId": 42363048918,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T10:11:55Z",
-      "databaseId": 42362925491,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T10:11:50Z",
-      "databaseId": 42362919505,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T10:11:47Z",
-      "databaseId": 42362915178,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T10:11:20Z",
-      "databaseId": 42362881870,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T10:09:03Z",
-      "databaseId": 42362712471,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T10:07:32Z",
-      "databaseId": 42362605366,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T10:07:27Z",
-      "databaseId": 42362598085,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T10:07:16Z",
-      "databaseId": 42362583903,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T10:04:28Z",
-      "databaseId": 42362379123,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -197805,6 +197805,11 @@
         "episode_id": 152553,
         "display_name": "Nebezpečné umění S02E04 - 4. epizoda CZ Dabing",
         "video_id": 30887677
+      },
+      {
+        "episode_id": 112393,
+        "display_name": "O Rei do Gado S01E81 - 81. epizoda CZ Titulky",
+        "video_id": 30887792
       },
       {
         "episode_id": 114182,
@@ -574649,6 +574654,11 @@
         "video_id": 30887677
       },
       {
+        "episode_id": 112393,
+        "display_name": "O Rei do Gado S01E81 - 81. epizoda CZ Titulky",
+        "video_id": 30887792
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -755128,7 +755138,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 22,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -755138,6 +755148,6 @@
     "whisper_failed": 1209
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50782
+    "needs_subtitle_setup_after_prehrajto_processing": 50785
   }
 }
