@@ -1,30 +1,126 @@
 {
   "counts": {
     "backlog_episodes": 111336,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 80333,
-    "prepared_source_episodes": 68671,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 80339,
+    "prepared_source_episodes": 68669,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 52,
-    "language_whisper_attempted_sources": 42,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53903,
     "whisper_review_pending_sources": 37410,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50693,
     "subtitle_followup_pending_sources": 50693
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T00:56:26Z",
+      "databaseId": 42321228899,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T00:56:23Z",
+      "databaseId": 42321223849,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T00:54:48Z",
+      "databaseId": 42321072754,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T00:54:32Z",
+      "databaseId": 42321047250,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T00:54:28Z",
+      "databaseId": 42321041123,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T00:53:52Z",
+      "databaseId": 42320984894,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T00:53:48Z",
+      "databaseId": 42320979139,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T00:52:23Z",
+      "databaseId": 42320844620,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T00:51:21Z",
+      "databaseId": 42320748402,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T00:50:23Z",
+      "databaseId": 42320656441,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T00:49:35Z",
+      "databaseId": 42320575113,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T00:48:56Z",
+      "databaseId": 42320511863,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T00:47:41Z",
       "databaseId": 42320384025,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +128,7 @@
       "createdAt": "2026-11-07T00:46:37Z",
       "databaseId": 42320271828,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -44,27 +140,27 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T00:46:24Z",
       "databaseId": 42320251083,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T00:46:22Z",
       "databaseId": 42320246778,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T00:46:15Z",
       "databaseId": 42320235016,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -82,102 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T00:43:13Z",
-      "databaseId": 42319925840,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T00:43:03Z",
-      "databaseId": 42319909120,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T00:42:46Z",
-      "databaseId": 42319879904,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T00:42:24Z",
-      "databaseId": 42319842384,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T00:42:12Z",
-      "databaseId": 42319822591,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T00:41:15Z",
-      "databaseId": 42319727032,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T00:40:27Z",
-      "databaseId": 42319645058,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T00:40:14Z",
-      "databaseId": 42319621165,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T00:40:08Z",
-      "databaseId": 42319610399,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T00:40:05Z",
-      "databaseId": 42319605093,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T00:40:00Z",
-      "databaseId": 42319596152,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T00:39:55Z",
-      "databaseId": 42319587076,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -197287,6 +197287,26 @@
         "video_id": 30874690
       },
       {
+        "episode_id": 108368,
+        "display_name": "Jsi můj život  S01E52 - 52. epizoda CZ Dabing",
+        "video_id": 30874746
+      },
+      {
+        "episode_id": 17749,
+        "display_name": "Zločin S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30874734
+      },
+      {
+        "episode_id": 112340,
+        "display_name": "O Rei do Gado S01E24 - 24. epizoda CZ Titulky",
+        "video_id": 30874820
+      },
+      {
+        "episode_id": 17753,
+        "display_name": "Zločin S02E01 - 1. epizoda CZ Dabing",
+        "video_id": 30874872
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -376085,6 +376105,16 @@
         "episode_id": 73731,
         "display_name": "Czas honoru S06E01 - 1. epizoda CZ Titulky",
         "video_id": 30874679
+      },
+      {
+        "episode_id": 112334,
+        "display_name": "O Rei do Gado S01E17 - 17. epizoda CZ Titulky",
+        "video_id": 30874757
+      },
+      {
+        "episode_id": 112342,
+        "display_name": "O Rei do Gado S01E26 - 26. epizoda CZ Titulky",
+        "video_id": 30874829
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -573089,6 +573119,26 @@
         "video_id": 30874690
       },
       {
+        "episode_id": 108368,
+        "display_name": "Jsi můj život  S01E52 - 52. epizoda CZ Dabing",
+        "video_id": 30874746
+      },
+      {
+        "episode_id": 17749,
+        "display_name": "Zločin S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30874734
+      },
+      {
+        "episode_id": 112340,
+        "display_name": "O Rei do Gado S01E24 - 24. epizoda CZ Titulky",
+        "video_id": 30874820
+      },
+      {
+        "episode_id": 17753,
+        "display_name": "Zločin S02E01 - 1. epizoda CZ Dabing",
+        "video_id": 30874872
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -751887,6 +751937,16 @@
         "episode_id": 73731,
         "display_name": "Czas honoru S06E01 - 1. epizoda CZ Titulky",
         "video_id": 30874679
+      },
+      {
+        "episode_id": 112334,
+        "display_name": "O Rei do Gado S01E17 - 17. epizoda CZ Titulky",
+        "video_id": 30874757
+      },
+      {
+        "episode_id": 112342,
+        "display_name": "O Rei do Gado S01E26 - 26. epizoda CZ Titulky",
+        "video_id": 30874829
       }
     ],
     "prepared_not_upload_ready": [
@@ -753048,8 +753108,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 10,
-    "ok": 41,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
