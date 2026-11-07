@@ -2,29 +2,77 @@
   "counts": {
     "backlog_episodes": 111083,
     "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 80611,
-    "prepared_source_episodes": 68869,
+    "uploaded_episodes": 80614,
+    "prepared_source_episodes": 68870,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
-    "language_whisper_attempted_sources": 26,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 42,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53861,
     "whisper_review_pending_sources": 37199,
-    "upload_pending_checkpoints": 36,
-    "subtitle_followup_sources": 50838,
-    "subtitle_followup_pending_sources": 50838
+    "upload_pending_checkpoints": 35,
+    "subtitle_followup_sources": 50840,
+    "subtitle_followup_pending_sources": 50840
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T13:40:04Z",
+      "databaseId": 42378001312,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T13:39:04Z",
+      "databaseId": 42377928628,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T13:37:11Z",
+      "databaseId": 42377792946,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T13:35:57Z",
+      "databaseId": 42377702757,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T13:35:42Z",
+      "databaseId": 42377683715,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T13:35:33Z",
+      "databaseId": 42377671744,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T13:33:15Z",
       "databaseId": 42377490178,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -56,7 +104,7 @@
       "createdAt": "2026-11-07T13:31:28Z",
       "databaseId": 42377349487,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -76,11 +124,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T13:29:56Z",
       "databaseId": 42377220202,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -127,54 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-07T13:24:06Z",
       "databaseId": 42376793531,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T13:24:03Z",
-      "databaseId": 42376789731,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T13:23:59Z",
-      "databaseId": 42376784686,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T13:22:48Z",
-      "databaseId": 42376692841,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T13:22:43Z",
-      "databaseId": 42376686163,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T13:22:39Z",
-      "databaseId": 42376682141,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T13:22:36Z",
-      "databaseId": 42376677562,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -197985,6 +197985,21 @@
         "episode_id": 141741,
         "display_name": "Safe Harbor S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30891301
+      },
+      {
+        "episode_id": 177889,
+        "display_name": "Dostoevskij S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30891520
+      },
+      {
+        "episode_id": 156756,
+        "display_name": "Band of Gold S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30891594
+      },
+      {
+        "episode_id": 153593,
+        "display_name": "The Ice Cream Girls S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30891608
       },
       {
         "episode_id": 114182,
@@ -575179,6 +575194,21 @@
         "video_id": 30891301
       },
       {
+        "episode_id": 177889,
+        "display_name": "Dostoevskij S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30891520
+      },
+      {
+        "episode_id": 156756,
+        "display_name": "Band of Gold S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30891594
+      },
+      {
+        "episode_id": 153593,
+        "display_name": "The Ice Cream Girls S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30891608
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -755828,8 +755858,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 1,
-    "ok": 25,
+    "disabled": 2,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -755839,6 +755869,6 @@
     "whisper_failed": 1204
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50838
+    "needs_subtitle_setup_after_prehrajto_processing": 50840
   }
 }
