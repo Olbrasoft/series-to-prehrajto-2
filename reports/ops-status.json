@@ -1,24 +1,120 @@
 {
   "counts": {
     "backlog_episodes": 110983,
-    "manifest_upload_ready_episodes": 41,
-    "uploaded_episodes": 80718,
-    "prepared_source_episodes": 69120,
+    "manifest_upload_ready_episodes": 34,
+    "uploaded_episodes": 80719,
+    "prepared_source_episodes": 69116,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 34,
-    "language_whisper_attempted_sources": 27,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53846,
-    "whisper_review_pending_sources": 37109,
-    "upload_pending_checkpoints": 38,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53845,
+    "whisper_review_pending_sources": 37107,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50922,
     "subtitle_followup_pending_sources": 50922
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:13:16Z",
+      "databaseId": 42414812491,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:13:12Z",
+      "databaseId": 42414807821,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T21:12:30Z",
+      "databaseId": 42414751917,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T21:12:08Z",
+      "databaseId": 42414722609,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:12:05Z",
+      "databaseId": 42414718794,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:11:33Z",
+      "databaseId": 42414674510,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:11:33Z",
+      "databaseId": 42414673866,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "refresh-backlog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T21:10:32Z",
+      "databaseId": 42414585108,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:10:28Z",
+      "databaseId": 42414579903,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T21:10:00Z",
+      "databaseId": 42414538729,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T21:09:47Z",
+      "databaseId": 42414521295,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T21:08:43Z",
+      "databaseId": 42414436426,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-07T21:04:01Z",
@@ -32,15 +128,15 @@
       "createdAt": "2026-11-07T21:04:00Z",
       "databaseId": 42414049722,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T21:03:57Z",
       "databaseId": 42414045839,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -68,11 +164,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T21:02:13Z",
       "databaseId": 42413902174,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -80,104 +176,8 @@
       "createdAt": "2026-11-07T21:01:28Z",
       "databaseId": 42413839972,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T20:59:58Z",
-      "databaseId": 42413703057,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T20:54:21Z",
-      "databaseId": 42413276578,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T20:54:12Z",
-      "databaseId": 42413265384,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T20:52:08Z",
-      "databaseId": 42413103662,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T20:52:07Z",
-      "databaseId": 42413103342,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T20:52:05Z",
-      "databaseId": 42413099604,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T20:52:04Z",
-      "databaseId": 42413099393,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T20:51:40Z",
-      "databaseId": 42413067511,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T20:51:37Z",
-      "databaseId": 42413063417,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T20:51:37Z",
-      "databaseId": 42413063203,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T20:50:33Z",
-      "databaseId": 42412980507,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T20:50:01Z",
-      "databaseId": 42412934896,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -378010,6 +378010,11 @@
         "episode_id": 167895,
         "display_name": "Fires S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30898625
+      },
+      {
+        "episode_id": 135346,
+        "display_name": "Vyšetřuje Imma Tataranni S01E02 - Jako rostliny mezi kamením CZ Dabing",
+        "video_id": 30898690
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -755737,6 +755742,11 @@
         "episode_id": 167895,
         "display_name": "Fires S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30898625
+      },
+      {
+        "episode_id": 135346,
+        "display_name": "Vyšetřuje Imma Tataranni S01E02 - Jako rostliny mezi kamením CZ Dabing",
+        "video_id": 30898690
       }
     ],
     "prepared_not_upload_ready": [
@@ -756898,14 +756908,13 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
-    "ok": 26,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35912,
+    "needs_whisper": 35910,
     "whisper_confirmed_cz": 3803,
-    "whisper_non_cz_needs_subtitles": 12934,
+    "whisper_non_cz_needs_subtitles": 12935,
     "whisper_failed": 1197
   },
   "subtitle_followup_statuses": {
