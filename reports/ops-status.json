@@ -9,9 +9,9 @@
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 23,
-    "language_whisper_attempted_sources": 23,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53878,
     "whisper_review_pending_sources": 37296,
     "upload_pending_checkpoints": 35,
@@ -21,10 +21,34 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T07:26:08Z",
+      "databaseId": 42351268697,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T07:25:12Z",
+      "databaseId": 42351204872,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T07:25:04Z",
+      "databaseId": 42351195797,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T07:24:40Z",
       "databaseId": 42351168612,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +68,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T07:23:35Z",
       "databaseId": 42351094532,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -64,7 +88,7 @@
       "createdAt": "2026-11-07T07:23:02Z",
       "databaseId": 42351056609,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -92,11 +116,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T07:20:47Z",
       "databaseId": 42350896199,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -124,11 +148,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T07:20:25Z",
       "databaseId": 42350868892,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -140,11 +164,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T07:18:29Z",
       "databaseId": 42350728612,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T07:14:50Z",
-      "databaseId": 42350467324,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T07:14:47Z",
-      "databaseId": 42350463679,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T07:13:56Z",
-      "databaseId": 42350404744,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -754408,7 +754408,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 22,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
