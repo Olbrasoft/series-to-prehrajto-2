@@ -2,29 +2,37 @@
   "counts": {
     "backlog_episodes": 111284,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 80443,
-    "prepared_source_episodes": 68770,
+    "uploaded_episodes": 80445,
+    "prepared_source_episodes": 68775,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
+    "language_audited_sources": 46,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53883,
     "whisper_review_pending_sources": 37319,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50728,
     "subtitle_followup_pending_sources": 50728
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T06:12:31Z",
+      "databaseId": 42345970295,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T06:09:24Z",
       "databaseId": 42345734312,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +48,7 @@
       "createdAt": "2026-11-07T06:08:49Z",
       "databaseId": 42345692786,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -48,15 +56,15 @@
       "createdAt": "2026-11-07T06:07:59Z",
       "databaseId": 42345635144,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T06:07:54Z",
       "databaseId": 42345629486,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -76,11 +84,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T06:05:04Z",
       "databaseId": 42345419838,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +100,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T06:04:59Z",
       "databaseId": 42345412223,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -124,11 +132,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T06:01:47Z",
       "databaseId": 42345180314,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T05:58:19Z",
-      "databaseId": 42344929642,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -197557,6 +197557,11 @@
         "video_id": 30882464
       },
       {
+        "episode_id": 131801,
+        "display_name": "Watari-kun's ****** Is About to Collapse S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30882778
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -376635,6 +376640,11 @@
         "episode_id": 112987,
         "display_name": "Doktor z hor: Nové příběhy S03E13 - Loučení CZ Dabing",
         "video_id": 30882598
+      },
+      {
+        "episode_id": 108407,
+        "display_name": "Jsi můj život  S01E92 - 92. epizoda CZ Titulky",
+        "video_id": 30882749
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -573909,6 +573919,11 @@
         "video_id": 30882464
       },
       {
+        "episode_id": 131801,
+        "display_name": "Watari-kun's ****** Is About to Collapse S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30882778
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752987,6 +753002,11 @@
         "episode_id": 112987,
         "display_name": "Doktor z hor: Nové příběhy S03E13 - Loučení CZ Dabing",
         "video_id": 30882598
+      },
+      {
+        "episode_id": 108407,
+        "display_name": "Jsi můj život  S01E92 - 92. epizoda CZ Titulky",
+        "video_id": 30882749
       }
     ],
     "prepared_not_upload_ready": [
@@ -754148,7 +754168,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 2,
+    "disabled": 6,
     "ok": 39,
     "resolve_failed": 1
   },
