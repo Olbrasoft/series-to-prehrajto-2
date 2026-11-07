@@ -2,29 +2,53 @@
   "counts": {
     "backlog_episodes": 111083,
     "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 80614,
+    "uploaded_episodes": 80617,
     "prepared_source_episodes": 68881,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 51,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53862,
     "whisper_review_pending_sources": 37200,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50840,
     "subtitle_followup_pending_sources": 50840
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T13:47:08Z",
+      "databaseId": 42378538126,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T13:45:19Z",
+      "databaseId": 42378400469,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T13:44:36Z",
+      "databaseId": 42378344916,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T13:42:30Z",
       "databaseId": 42378189896,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +72,7 @@
       "createdAt": "2026-11-07T13:42:16Z",
       "databaseId": 42378171774,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -108,11 +132,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T13:40:04Z",
       "databaseId": 42378001312,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -120,7 +144,7 @@
       "createdAt": "2026-11-07T13:39:04Z",
       "databaseId": 42377928628,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T13:33:15Z",
-      "databaseId": 42377490178,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T13:33:04Z",
-      "databaseId": 42377474802,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T13:32:49Z",
-      "databaseId": 42377455479,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -198002,6 +198002,11 @@
         "video_id": 30891608
       },
       {
+        "episode_id": 141744,
+        "display_name": "Safe Harbor S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30891696
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -377490,6 +377495,16 @@
         "episode_id": 141787,
         "display_name": "The Walsh Sisters S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30891328
+      },
+      {
+        "episode_id": 175154,
+        "display_name": "Huone 301 S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30891674
+      },
+      {
+        "episode_id": 175155,
+        "display_name": "Huone 301 S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30891681
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -575209,6 +575224,11 @@
         "video_id": 30891608
       },
       {
+        "episode_id": 141744,
+        "display_name": "Safe Harbor S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30891696
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -754697,6 +754717,16 @@
         "episode_id": 141787,
         "display_name": "The Walsh Sisters S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30891328
+      },
+      {
+        "episode_id": 175154,
+        "display_name": "Huone 301 S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30891674
+      },
+      {
+        "episode_id": 175155,
+        "display_name": "Huone 301 S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30891681
       }
     ],
     "prepared_not_upload_ready": [
@@ -755858,8 +755888,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 11,
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
