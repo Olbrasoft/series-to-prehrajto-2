@@ -1,15 +1,15 @@
 {
   "counts": {
     "backlog_episodes": 111336,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 80369,
-    "prepared_source_episodes": 68704,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 80372,
+    "prepared_source_episodes": 68707,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 24,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53897,
@@ -21,6 +21,78 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T02:50:36Z",
+      "databaseId": 42331198098,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T02:50:31Z",
+      "databaseId": 42331191230,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T02:50:02Z",
+      "databaseId": 42331150101,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T02:49:49Z",
+      "databaseId": 42331135129,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T02:49:30Z",
+      "databaseId": 42331109885,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T02:46:23Z",
+      "databaseId": 42330866684,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T02:46:21Z",
+      "databaseId": 42330864170,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T02:46:20Z",
+      "databaseId": 42330862336,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T02:46:17Z",
+      "databaseId": 42330858934,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T02:43:30Z",
       "databaseId": 42330639578,
       "headBranch": "main",
@@ -28,19 +100,19 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T02:41:55Z",
       "databaseId": 42330515544,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T02:39:57Z",
       "databaseId": 42330354413,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +164,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T02:36:46Z",
       "databaseId": 42330107658,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T02:36:40Z",
-      "databaseId": 42330100464,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T02:36:28Z",
-      "databaseId": 42330085047,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T02:36:24Z",
-      "databaseId": 42330079490,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T02:34:44Z",
-      "databaseId": 42329940466,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T02:34:15Z",
-      "databaseId": 42329903720,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T02:34:15Z",
-      "databaseId": 42329903325,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T02:33:31Z",
-      "databaseId": 42329843123,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T02:33:05Z",
-      "databaseId": 42329805057,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T02:32:19Z",
-      "databaseId": 42329742013,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -197382,6 +197382,11 @@
         "video_id": 30877203
       },
       {
+        "episode_id": 112353,
+        "display_name": "O Rei do Gado S01E39 - 39. epizoda CZ Titulky",
+        "video_id": 30877217
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -376265,6 +376270,16 @@
         "episode_id": 179018,
         "display_name": "Strašidlo cantervillské S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30877223
+      },
+      {
+        "episode_id": 180191,
+        "display_name": "Strašidlo cantervillské S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30877252
+      },
+      {
+        "episode_id": 175978,
+        "display_name": "Pohlednice z Bombaje S01E03 - Jediná jistota v životě CZ Titulky",
+        "video_id": 30877403
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -573364,6 +573379,11 @@
         "video_id": 30877203
       },
       {
+        "episode_id": 112353,
+        "display_name": "O Rei do Gado S01E39 - 39. epizoda CZ Titulky",
+        "video_id": 30877217
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752247,6 +752267,16 @@
         "episode_id": 179018,
         "display_name": "Strašidlo cantervillské S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30877223
+      },
+      {
+        "episode_id": 180191,
+        "display_name": "Strašidlo cantervillské S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30877252
+      },
+      {
+        "episode_id": 175978,
+        "display_name": "Pohlednice z Bombaje S01E03 - Jediná jistota v životě CZ Titulky",
+        "video_id": 30877403
       }
     ],
     "prepared_not_upload_ready": [
@@ -753408,6 +753438,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 4,
     "ok": 19,
     "resolve_failed": 1
   },
