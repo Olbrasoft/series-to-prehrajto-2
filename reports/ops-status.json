@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111218,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 80482,
+    "uploaded_episodes": 80483,
     "prepared_source_episodes": 68806,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,25 +14,97 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53877,
     "whisper_review_pending_sources": 37290,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50747,
     "subtitle_followup_pending_sources": 50747
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-07T08:03:56Z",
-      "databaseId": 42353865177,
+      "createdAt": "2026-11-07T08:05:52Z",
+      "databaseId": 42354006359,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-status"
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T08:05:52Z",
+      "databaseId": 42354006064,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T08:05:52Z",
+      "databaseId": 42354005914,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:05:52Z",
+      "databaseId": 42354005690,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T08:05:51Z",
+      "databaseId": 42354004380,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:05:45Z",
+      "databaseId": 42353998189,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:05:42Z",
+      "databaseId": 42353994220,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:05:39Z",
+      "databaseId": 42353989451,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T08:05:37Z",
+      "databaseId": 42353987231,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T08:03:56Z",
+      "databaseId": 42353865177,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T08:03:47Z",
       "databaseId": 42353854955,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T07:56:29Z",
-      "databaseId": 42353341605,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T07:56:25Z",
-      "databaseId": 42353338131,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T07:56:22Z",
-      "databaseId": 42353334099,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T07:56:17Z",
-      "databaseId": 42353328190,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T07:56:09Z",
-      "databaseId": 42353319034,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T07:55:12Z",
-      "databaseId": 42353255330,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T07:55:08Z",
-      "databaseId": 42353250047,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T07:51:57Z",
-      "databaseId": 42353037785,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T07:51:55Z",
-      "databaseId": 42353035591,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -376830,6 +376830,11 @@
         "episode_id": 131814,
         "display_name": "Watari-kun's ****** Is About to Collapse S01E14 - 14. epizoda CZ Dabing",
         "video_id": 30885392
+      },
+      {
+        "episode_id": 112975,
+        "display_name": "Doktor z hor: Nové příběhy S04E12 - Smíšené pocity (2) CZ Dabing",
+        "video_id": 30885419
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -753377,6 +753382,11 @@
         "episode_id": 131814,
         "display_name": "Watari-kun's ****** Is About to Collapse S01E14 - 14. epizoda CZ Dabing",
         "video_id": 30885392
+      },
+      {
+        "episode_id": 112975,
+        "display_name": "Doktor z hor: Nové příběhy S04E12 - Smíšené pocity (2) CZ Dabing",
+        "video_id": 30885419
       }
     ],
     "prepared_not_upload_ready": [
