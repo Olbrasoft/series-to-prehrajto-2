@@ -1,30 +1,46 @@
 {
   "counts": {
     "backlog_episodes": 111025,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 80655,
-    "prepared_source_episodes": 68931,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 80656,
+    "prepared_source_episodes": 68935,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 21,
+    "language_whisper_attempted_sources": 21,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53854,
     "whisper_review_pending_sources": 37160,
     "upload_pending_checkpoints": 36,
-    "subtitle_followup_sources": 50863,
-    "subtitle_followup_pending_sources": 50863
+    "subtitle_followup_sources": 50864,
+    "subtitle_followup_pending_sources": 50864
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T15:54:09Z",
+      "databaseId": 42388607798,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T15:54:01Z",
+      "databaseId": 42388598124,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T15:52:32Z",
       "databaseId": 42388482437,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +48,7 @@
       "createdAt": "2026-11-07T15:52:29Z",
       "databaseId": 42388478069,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -68,11 +84,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T15:50:49Z",
       "databaseId": 42388346827,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +100,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T15:50:37Z",
       "databaseId": 42388331340,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T15:39:01Z",
-      "databaseId": 42387399380,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T15:38:32Z",
-      "databaseId": 42387364235,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -198075,6 +198075,11 @@
         "episode_id": 149068,
         "display_name": "Ti druzí S01E05 - 5. epizoda CZ Dabing",
         "video_id": 30893596
+      },
+      {
+        "episode_id": 149069,
+        "display_name": "Ti druzí S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30893896
       },
       {
         "episode_id": 114182,
@@ -575489,6 +575494,11 @@
         "video_id": 30893596
       },
       {
+        "episode_id": 149069,
+        "display_name": "Ti druzí S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30893896
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -756268,7 +756278,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 20,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -756278,6 +756288,6 @@
     "whisper_failed": 1204
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50863
+    "needs_subtitle_setup_after_prehrajto_processing": 50864
   }
 }
