@@ -1,24 +1,104 @@
 {
   "counts": {
     "backlog_episodes": 111083,
-    "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 80623,
-    "prepared_source_episodes": 68886,
+    "manifest_upload_ready_episodes": 9,
+    "uploaded_episodes": 80629,
+    "prepared_source_episodes": 68887,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 33,
-    "language_whisper_attempted_sources": 31,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53859,
-    "whisper_review_pending_sources": 37186,
-    "upload_pending_checkpoints": 37,
-    "subtitle_followup_sources": 50849,
-    "subtitle_followup_pending_sources": 50849
+    "language_audited_sources": 42,
+    "language_whisper_attempted_sources": 42,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53858,
+    "whisper_review_pending_sources": 37183,
+    "upload_pending_checkpoints": 35,
+    "subtitle_followup_sources": 50851,
+    "subtitle_followup_pending_sources": 50851
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T14:20:45Z",
+      "databaseId": 42381159722,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:20:19Z",
+      "databaseId": 42381123376,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:15:38Z",
+      "databaseId": 42380757404,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:15:16Z",
+      "databaseId": 42380727155,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:13:37Z",
+      "databaseId": 42380601195,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:13:26Z",
+      "databaseId": 42380587495,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:11:48Z",
+      "databaseId": 42380451858,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:11:43Z",
+      "databaseId": 42380445641,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:11:26Z",
+      "databaseId": 42380422925,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T14:11:00Z",
+      "databaseId": 42380386688,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-07T14:10:31Z",
@@ -32,23 +112,23 @@
       "createdAt": "2026-11-07T14:09:52Z",
       "databaseId": 42380291548,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T14:09:39Z",
       "databaseId": 42380276363,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T14:09:36Z",
       "databaseId": 42380272076,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -56,7 +136,7 @@
       "createdAt": "2026-11-07T14:07:36Z",
       "databaseId": 42380114403,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T14:03:59Z",
-      "databaseId": 42379823300,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T14:03:57Z",
-      "databaseId": 42379820930,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T14:03:43Z",
-      "databaseId": 42379804481,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T14:03:39Z",
-      "databaseId": 42379800122,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T14:03:32Z",
-      "databaseId": 42379790408,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T14:02:41Z",
-      "databaseId": 42379720298,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T14:02:38Z",
-      "databaseId": 42379716117,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T14:02:04Z",
-      "databaseId": 42379671098,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T14:02:01Z",
-      "databaseId": 42379667229,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T14:01:34Z",
-      "databaseId": 42379631555,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -198007,6 +198007,26 @@
         "video_id": 30891696
       },
       {
+        "episode_id": 153516,
+        "display_name": "Fourever You S01E16 - 16. epizoda CZ Titulky",
+        "video_id": 30892259
+      },
+      {
+        "episode_id": 153517,
+        "display_name": "Fourever You S01E17 - 17. epizoda CZ Titulky",
+        "video_id": 30892269
+      },
+      {
+        "episode_id": 156761,
+        "display_name": "Band of Gold S02E06 - 6. epizoda CZ Titulky",
+        "video_id": 30892352
+      },
+      {
+        "episode_id": 141745,
+        "display_name": "Safe Harbor S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30892411
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -377535,6 +377555,16 @@
         "episode_id": 141743,
         "display_name": "Safe Harbor S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30892150
+      },
+      {
+        "episode_id": 180962,
+        "display_name": "Keeper of the Ashes: The Oklahoma Girl Scout Murders S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30892277
+      },
+      {
+        "episode_id": 156762,
+        "display_name": "Band of Gold S03E01 - 1. epizoda CZ Titulky",
+        "video_id": 30892405
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -575259,6 +575289,26 @@
         "video_id": 30891696
       },
       {
+        "episode_id": 153516,
+        "display_name": "Fourever You S01E16 - 16. epizoda CZ Titulky",
+        "video_id": 30892259
+      },
+      {
+        "episode_id": 153517,
+        "display_name": "Fourever You S01E17 - 17. epizoda CZ Titulky",
+        "video_id": 30892269
+      },
+      {
+        "episode_id": 156761,
+        "display_name": "Band of Gold S02E06 - 6. epizoda CZ Titulky",
+        "video_id": 30892352
+      },
+      {
+        "episode_id": 141745,
+        "display_name": "Safe Harbor S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30892411
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -754787,6 +754837,16 @@
         "episode_id": 141743,
         "display_name": "Safe Harbor S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30892150
+      },
+      {
+        "episode_id": 180962,
+        "display_name": "Keeper of the Ashes: The Oklahoma Girl Scout Murders S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30892277
+      },
+      {
+        "episode_id": 156762,
+        "display_name": "Band of Gold S03E01 - 1. epizoda CZ Titulky",
+        "video_id": 30892405
       }
     ],
     "prepared_not_upload_ready": [
@@ -755948,17 +756008,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 30,
-    "disabled": 2,
+    "ok": 41,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35982,
+    "needs_whisper": 35979,
     "whisper_confirmed_cz": 3782,
-    "whisper_non_cz_needs_subtitles": 12891,
+    "whisper_non_cz_needs_subtitles": 12893,
     "whisper_failed": 1204
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50849
+    "needs_subtitle_setup_after_prehrajto_processing": 50851
   }
 }
