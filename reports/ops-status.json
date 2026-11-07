@@ -1,24 +1,48 @@
 {
   "counts": {
     "backlog_episodes": 111284,
-    "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 80432,
-    "prepared_source_episodes": 68768,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 80435,
+    "prepared_source_episodes": 68766,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 43,
+    "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53886,
-    "whisper_review_pending_sources": 37332,
-    "upload_pending_checkpoints": 38,
-    "subtitle_followup_sources": 50721,
-    "subtitle_followup_pending_sources": 50721
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
+    "whisper_review_sources": 53885,
+    "whisper_review_pending_sources": 37326,
+    "upload_pending_checkpoints": 36,
+    "subtitle_followup_sources": 50724,
+    "subtitle_followup_pending_sources": 50724
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T05:39:10Z",
+      "databaseId": 42343633786,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T05:38:47Z",
+      "databaseId": 42343608139,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T05:38:34Z",
+      "databaseId": 42343594080,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-07T05:37:43Z",
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-07T05:37:39Z",
       "databaseId": 42343531456,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -48,7 +72,7 @@
       "createdAt": "2026-11-07T05:37:09Z",
       "databaseId": 42343498030,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,7 +104,7 @@
       "createdAt": "2026-11-07T05:32:44Z",
       "databaseId": 42343179103,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-descriptions"
     },
     {
@@ -104,23 +128,23 @@
       "createdAt": "2026-11-07T05:32:10Z",
       "databaseId": 42343139253,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T05:31:03Z",
       "databaseId": 42343055102,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T05:30:24Z",
       "databaseId": 42343005674,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -140,11 +164,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T05:28:25Z",
       "databaseId": 42342868029,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T05:27:07Z",
-      "databaseId": 42342782960,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T05:26:22Z",
-      "databaseId": 42342731388,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T05:26:20Z",
-      "databaseId": 42342729689,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -197532,6 +197532,16 @@
         "video_id": 30881937
       },
       {
+        "episode_id": 112368,
+        "display_name": "O Rei do Gado S01E55 - 55. epizoda CZ Titulky",
+        "video_id": 30882011
+      },
+      {
+        "episode_id": 131809,
+        "display_name": "Watari-kun's ****** Is About to Collapse S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30882057
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -376580,6 +376590,11 @@
         "episode_id": 112986,
         "display_name": "Doktor z hor: Nové příběhy S03E10 - Pád do hlubin CZ Dabing",
         "video_id": 30881992
+      },
+      {
+        "episode_id": 112962,
+        "display_name": "Doktor z hor: Nové příběhy S03E11 - Srdeční záležitost CZ Dabing",
+        "video_id": 30882072
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -573829,6 +573844,16 @@
         "video_id": 30881937
       },
       {
+        "episode_id": 112368,
+        "display_name": "O Rei do Gado S01E55 - 55. epizoda CZ Titulky",
+        "video_id": 30882011
+      },
+      {
+        "episode_id": 131809,
+        "display_name": "Watari-kun's ****** Is About to Collapse S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30882057
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752877,6 +752902,11 @@
         "episode_id": 112986,
         "display_name": "Doktor z hor: Nové příběhy S03E10 - Pád do hlubin CZ Dabing",
         "video_id": 30881992
+      },
+      {
+        "episode_id": 112962,
+        "display_name": "Doktor z hor: Nové příběhy S03E11 - Srdeční záležitost CZ Dabing",
+        "video_id": 30882072
       }
     ],
     "prepared_not_upload_ready": [
@@ -754038,16 +754068,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36112,
-    "whisper_confirmed_cz": 3757,
-    "whisper_non_cz_needs_subtitles": 12797,
+    "needs_whisper": 36106,
+    "whisper_confirmed_cz": 3759,
+    "whisper_non_cz_needs_subtitles": 12800,
     "whisper_failed": 1220
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50721
+    "needs_subtitle_setup_after_prehrajto_processing": 50724
   }
 }
