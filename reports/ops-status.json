@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 111083,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 80636,
-    "prepared_source_episodes": 68912,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 80639,
+    "prepared_source_episodes": 68908,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -14,17 +14,57 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53856,
     "whisper_review_pending_sources": 37173,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50858,
     "subtitle_followup_pending_sources": 50858
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T14:51:27Z",
+      "databaseId": 42383552105,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T14:50:26Z",
+      "databaseId": 42383471779,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:50:02Z",
+      "databaseId": 42383437766,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:48:02Z",
+      "databaseId": 42383282477,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T14:47:59Z",
+      "databaseId": 42383278889,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T14:46:57Z",
       "databaseId": 42383199145,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +72,7 @@
       "createdAt": "2026-11-07T14:46:18Z",
       "databaseId": 42383151328,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +144,7 @@
       "createdAt": "2026-11-07T14:37:43Z",
       "databaseId": 42382487646,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -116,11 +156,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T14:36:24Z",
       "databaseId": 42382390883,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T14:36:04Z",
-      "databaseId": 42382365519,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T14:34:17Z",
-      "databaseId": 42382220623,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T14:32:59Z",
-      "databaseId": 42382116141,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T14:32:58Z",
-      "databaseId": 42382114731,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T14:32:56Z",
-      "databaseId": 42382111862,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -198042,6 +198042,11 @@
         "video_id": 30892880
       },
       {
+        "episode_id": 136001,
+        "display_name": "GNOSIA S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30892909
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -377600,6 +377605,16 @@
         "episode_id": 153514,
         "display_name": "Fourever You S01E13 - 13. epizoda CZ Titulky",
         "video_id": 30892791
+      },
+      {
+        "episode_id": 153591,
+        "display_name": "The Ice Cream Girls S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30892930
+      },
+      {
+        "episode_id": 141747,
+        "display_name": "Safe Harbor S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30892977
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -575359,6 +575374,11 @@
         "video_id": 30892880
       },
       {
+        "episode_id": 136001,
+        "display_name": "GNOSIA S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30892909
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -754917,6 +754937,16 @@
         "episode_id": 153514,
         "display_name": "Fourever You S01E13 - 13. epizoda CZ Titulky",
         "video_id": 30892791
+      },
+      {
+        "episode_id": 153591,
+        "display_name": "The Ice Cream Girls S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30892930
+      },
+      {
+        "episode_id": 141747,
+        "display_name": "Safe Harbor S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30892977
       }
     ],
     "prepared_not_upload_ready": [
