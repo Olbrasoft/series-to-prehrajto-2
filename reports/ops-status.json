@@ -1,38 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 111284,
-    "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 80413,
-    "prepared_source_episodes": 68746,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 80416,
+    "prepared_source_episodes": 68750,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 46,
-    "language_whisper_attempted_sources": 46,
-    "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53889,
-    "whisper_review_pending_sources": 37347,
-    "upload_pending_checkpoints": 39,
+    "language_audited_sources": 23,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
+    "whisper_review_sources": 53890,
+    "whisper_review_pending_sources": 37348,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50714,
     "subtitle_followup_pending_sources": 50714
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-07T04:45:15Z",
-      "databaseId": 42339802054,
+      "createdAt": "2026-11-07T04:50:15Z",
+      "databaseId": 42340157998,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T04:49:29Z",
+      "databaseId": 42340103188,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T04:48:28Z",
+      "databaseId": 42340030684,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T04:47:57Z",
+      "databaseId": 42339993984,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T04:47:12Z",
+      "databaseId": 42339943416,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-07T04:46:21Z",
+      "databaseId": 42339883693,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T04:45:15Z",
+      "databaseId": 42339802054,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T04:45:10Z",
       "databaseId": 42339795644,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -64,23 +112,23 @@
       "createdAt": "2026-11-07T04:38:57Z",
       "databaseId": 42339360945,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T04:38:26Z",
       "databaseId": 42339329039,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T04:37:08Z",
       "databaseId": 42339241228,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -96,7 +144,7 @@
       "createdAt": "2026-11-07T04:37:06Z",
       "databaseId": 42339238809,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T04:33:23Z",
-      "databaseId": 42338970863,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T04:33:20Z",
-      "databaseId": 42338966668,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T04:33:18Z",
-      "databaseId": 42338963919,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T04:32:10Z",
-      "databaseId": 42338880047,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T04:32:09Z",
-      "databaseId": 42338877837,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T04:31:34Z",
-      "databaseId": 42338835850,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -197497,6 +197497,11 @@
         "video_id": 30880444
       },
       {
+        "episode_id": 112364,
+        "display_name": "O Rei do Gado S01E51 - 51. epizoda CZ Titulky",
+        "video_id": 30880527
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -376485,6 +376490,16 @@
         "episode_id": 134991,
         "display_name": "Zvláštní efekty S02E03 - V obklíčení CZ Dabing",
         "video_id": 30880404
+      },
+      {
+        "episode_id": 108398,
+        "display_name": "Jsi můj život  S01E82 - 82. epizoda CZ Dabing",
+        "video_id": 30880453
+      },
+      {
+        "episode_id": 108399,
+        "display_name": "Jsi můj život  S01E83 - 83. epizoda CZ Dabing",
+        "video_id": 30880491
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -573699,6 +573714,11 @@
         "video_id": 30880444
       },
       {
+        "episode_id": 112364,
+        "display_name": "O Rei do Gado S01E51 - 51. epizoda CZ Titulky",
+        "video_id": 30880527
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752687,6 +752707,16 @@
         "episode_id": 134991,
         "display_name": "Zvláštní efekty S02E03 - V obklíčení CZ Dabing",
         "video_id": 30880404
+      },
+      {
+        "episode_id": 108398,
+        "display_name": "Jsi můj život  S01E82 - 82. epizoda CZ Dabing",
+        "video_id": 30880453
+      },
+      {
+        "episode_id": 108399,
+        "display_name": "Jsi můj život  S01E83 - 83. epizoda CZ Dabing",
+        "video_id": 30880491
       }
     ],
     "prepared_not_upload_ready": [
@@ -753848,11 +753878,12 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 45,
+    "disabled": 3,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36127,
+    "needs_whisper": 36128,
     "whisper_confirmed_cz": 3753,
     "whisper_non_cz_needs_subtitles": 12789,
     "whisper_failed": 1220
