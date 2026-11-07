@@ -9,22 +9,30 @@
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
-    "language_whisper_attempted_sources": 23,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53880,
     "whisper_review_pending_sources": 37305,
-    "upload_pending_checkpoints": 35,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50735,
     "subtitle_followup_pending_sources": 50735
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T06:56:14Z",
+      "databaseId": 42349134448,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T06:55:33Z",
       "databaseId": 42349087145,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +44,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T06:53:47Z",
       "databaseId": 42348968098,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T06:41:51Z",
-      "databaseId": 42348142901,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -754328,8 +754328,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 4,
-    "ok": 22,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
