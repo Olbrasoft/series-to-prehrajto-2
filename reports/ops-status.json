@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 111083,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 80590,
-    "prepared_source_episodes": 68860,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 80593,
+    "prepared_source_episodes": 68853,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -14,17 +14,57 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53864,
     "whisper_review_pending_sources": 37216,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50820,
     "subtitle_followup_pending_sources": 50820
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T12:49:47Z",
+      "databaseId": 42374194920,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T12:49:45Z",
+      "databaseId": 42374192484,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T12:44:42Z",
+      "databaseId": 42373828689,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T12:43:07Z",
+      "databaseId": 42373716167,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T12:43:04Z",
+      "databaseId": 42373712532,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T12:42:41Z",
       "databaseId": 42373685205,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +108,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T12:36:16Z",
       "databaseId": 42373228865,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -104,23 +144,23 @@
       "createdAt": "2026-11-07T12:36:06Z",
       "databaseId": 42373215896,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T12:33:17Z",
       "databaseId": 42373004904,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T12:33:02Z",
       "databaseId": 42372985257,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T12:32:18Z",
-      "databaseId": 42372929087,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T12:31:54Z",
-      "databaseId": 42372896250,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T12:31:37Z",
-      "databaseId": 42372875953,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T12:31:06Z",
-      "databaseId": 42372838038,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T12:29:56Z",
-      "databaseId": 42372740654,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -197942,6 +197942,11 @@
         "video_id": 30890532
       },
       {
+        "episode_id": 153505,
+        "display_name": "Fourever You S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30890525
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -377370,6 +377375,16 @@
         "episode_id": 148723,
         "display_name": "The Art of Negotiation S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30890441
+      },
+      {
+        "episode_id": 156751,
+        "display_name": "Band of Gold S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30890546
+      },
+      {
+        "episode_id": 141791,
+        "display_name": "The Walsh Sisters S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30890591
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -575029,6 +575044,11 @@
         "video_id": 30890532
       },
       {
+        "episode_id": 153505,
+        "display_name": "Fourever You S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30890525
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -754457,6 +754477,16 @@
         "episode_id": 148723,
         "display_name": "The Art of Negotiation S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30890441
+      },
+      {
+        "episode_id": 156751,
+        "display_name": "Band of Gold S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30890546
+      },
+      {
+        "episode_id": 141791,
+        "display_name": "The Walsh Sisters S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30890591
       }
     ],
     "prepared_not_upload_ready": [
