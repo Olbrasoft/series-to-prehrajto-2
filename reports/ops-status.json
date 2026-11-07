@@ -2,29 +2,53 @@
   "counts": {
     "backlog_episodes": 111336,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 80357,
-    "prepared_source_episodes": 68687,
+    "uploaded_episodes": 80359,
+    "prepared_source_episodes": 68696,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 46,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53899,
     "whisper_review_pending_sources": 37392,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50696,
     "subtitle_followup_pending_sources": 50696
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T02:08:25Z",
+      "databaseId": 42327706745,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T02:08:23Z",
+      "databaseId": 42327704227,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T02:06:50Z",
+      "databaseId": 42327571907,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T02:06:35Z",
       "databaseId": 42327549897,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -32,15 +56,15 @@
       "createdAt": "2026-11-07T02:06:07Z",
       "databaseId": 42327510883,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T02:06:03Z",
       "databaseId": 42327505878,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -48,15 +72,15 @@
       "createdAt": "2026-11-07T02:05:55Z",
       "databaseId": 42327494416,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T02:05:46Z",
       "databaseId": 42327482480,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -64,7 +88,7 @@
       "createdAt": "2026-11-07T02:05:44Z",
       "databaseId": 42327478404,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -76,11 +100,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T02:04:15Z",
       "databaseId": 42327344444,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T01:55:27Z",
-      "databaseId": 42326592035,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T01:53:37Z",
-      "databaseId": 42326443262,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T01:52:42Z",
-      "databaseId": 42326370783,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -197347,6 +197347,11 @@
         "video_id": 30876146
       },
       {
+        "episode_id": 112348,
+        "display_name": "O Rei do Gado S01E34 - 34. epizoda CZ Titulky",
+        "video_id": 30876371
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -376205,6 +376210,11 @@
         "episode_id": 116239,
         "display_name": "Vymítač Boner S01E11 - Andělská křídla CZ Titulky",
         "video_id": 30876151
+      },
+      {
+        "episode_id": 112347,
+        "display_name": "O Rei do Gado S01E33 - 33. epizoda CZ Dabing",
+        "video_id": 30876386
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -573269,6 +573279,11 @@
         "video_id": 30876146
       },
       {
+        "episode_id": 112348,
+        "display_name": "O Rei do Gado S01E34 - 34. epizoda CZ Titulky",
+        "video_id": 30876371
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752127,6 +752142,11 @@
         "episode_id": 116239,
         "display_name": "Vymítač Boner S01E11 - Andělská křídla CZ Titulky",
         "video_id": 30876151
+      },
+      {
+        "episode_id": 112347,
+        "display_name": "O Rei do Gado S01E33 - 33. epizoda CZ Dabing",
+        "video_id": 30876386
       }
     ],
     "prepared_not_upload_ready": [
@@ -753288,6 +753308,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 6,
     "ok": 39,
     "resolve_failed": 1
   },
