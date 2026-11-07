@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111218,
     "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 80451,
+    "uploaded_episodes": 80452,
     "prepared_source_episodes": 68787,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,25 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53881,
     "whisper_review_pending_sources": 37309,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50732,
     "subtitle_followup_pending_sources": 50732
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T06:35:48Z",
+      "databaseId": 42347719025,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T06:34:20Z",
       "databaseId": 42347606872,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -56,7 +64,7 @@
       "createdAt": "2026-11-07T06:33:40Z",
       "databaseId": 42347557942,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -104,15 +112,15 @@
       "createdAt": "2026-11-07T06:30:28Z",
       "databaseId": 42347312329,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T06:30:16Z",
       "databaseId": 42347295355,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T06:22:02Z",
-      "databaseId": 42346688490,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -376675,6 +376675,11 @@
         "episode_id": 108410,
         "display_name": "Jsi můj život  S01E94 - 94. epizoda CZ Dabing",
         "video_id": 30883092
+      },
+      {
+        "episode_id": 175979,
+        "display_name": "Pohlednice z Bombaje S01E04 - Samota CZ Titulky",
+        "video_id": 30883139
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -753067,6 +753072,11 @@
         "episode_id": 108410,
         "display_name": "Jsi můj život  S01E94 - 94. epizoda CZ Dabing",
         "video_id": 30883092
+      },
+      {
+        "episode_id": 175979,
+        "display_name": "Pohlednice z Bombaje S01E04 - Samota CZ Titulky",
+        "video_id": 30883139
       }
     ],
     "prepared_not_upload_ready": [
