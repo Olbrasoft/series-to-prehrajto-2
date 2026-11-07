@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111157,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 80540,
+    "uploaded_episodes": 80541,
     "prepared_source_episodes": 68828,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53872,
     "whisper_review_pending_sources": 37262,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50782,
     "subtitle_followup_pending_sources": 50782
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T10:15:49Z",
+      "databaseId": 42363205802,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:15:08Z",
+      "databaseId": 42363152965,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:15:05Z",
+      "databaseId": 42363148974,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T10:14:31Z",
       "databaseId": 42363111845,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +108,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T10:11:50Z",
       "databaseId": 42362919505,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T10:03:57Z",
-      "databaseId": 42362342922,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T10:03:28Z",
-      "databaseId": 42362309225,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T10:02:30Z",
-      "databaseId": 42362236885,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -197800,6 +197800,11 @@
         "episode_id": 202165,
         "display_name": "Praví Hlasiťákovi S01E01 - Dospělák má plán CZ Dabing",
         "video_id": 30887616
+      },
+      {
+        "episode_id": 152553,
+        "display_name": "Nebezpečné umění S02E04 - 4. epizoda CZ Dabing",
+        "video_id": 30887677
       },
       {
         "episode_id": 114182,
@@ -574637,6 +574642,11 @@
         "episode_id": 202165,
         "display_name": "Praví Hlasiťákovi S01E01 - Dospělák má plán CZ Dabing",
         "video_id": 30887616
+      },
+      {
+        "episode_id": 152553,
+        "display_name": "Nebezpečné umění S02E04 - 4. epizoda CZ Dabing",
+        "video_id": 30887677
       },
       {
         "episode_id": 114182,
