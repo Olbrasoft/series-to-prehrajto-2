@@ -2,29 +2,45 @@
   "counts": {
     "backlog_episodes": 111384,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 80320,
+    "uploaded_episodes": 80321,
     "prepared_source_episodes": 68662,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 46,
+    "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53906,
     "whisper_review_pending_sources": 37422,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50686,
     "subtitle_followup_pending_sources": 50686
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T00:06:22Z",
+      "databaseId": 42316152327,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T00:05:30Z",
+      "databaseId": 42316060822,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T00:04:55Z",
       "databaseId": 42315994515,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +80,7 @@
       "createdAt": "2026-11-07T00:01:09Z",
       "databaseId": 42315592486,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T23:59:05Z",
       "databaseId": 42315367814,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,11 +116,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-06T23:58:10Z",
       "databaseId": 42315280871,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T23:52:06Z",
-      "databaseId": 42314657129,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-06T23:51:57Z",
-      "databaseId": 42314641699,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -197255,6 +197255,11 @@
         "episode_id": 112336,
         "display_name": "O Rei do Gado S01E20 - 20. epizoda CZ Titulky",
         "video_id": 30873667
+      },
+      {
+        "episode_id": 112337,
+        "display_name": "O Rei do Gado S01E21 - 21. epizoda CZ Titulky",
+        "video_id": 30873679
       },
       {
         "episode_id": 114182,
@@ -572994,6 +572999,11 @@
         "video_id": 30873667
       },
       {
+        "episode_id": 112337,
+        "display_name": "O Rei do Gado S01E21 - 21. epizoda CZ Titulky",
+        "video_id": 30873679
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752918,7 +752928,6 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 6,
     "ok": 39,
     "resolve_failed": 1
   },
