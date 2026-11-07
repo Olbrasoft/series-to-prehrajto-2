@@ -1,24 +1,88 @@
 {
   "counts": {
     "backlog_episodes": 110983,
-    "manifest_upload_ready_episodes": 22,
-    "uploaded_episodes": 80707,
-    "prepared_source_episodes": 69076,
+    "manifest_upload_ready_episodes": 24,
+    "uploaded_episodes": 80709,
+    "prepared_source_episodes": 69080,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 43,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53848,
-    "whisper_review_pending_sources": 37124,
-    "upload_pending_checkpoints": 37,
-    "subtitle_followup_sources": 50902,
-    "subtitle_followup_pending_sources": 50902
+    "whisper_review_pending_sources": 37123,
+    "upload_pending_checkpoints": 38,
+    "subtitle_followup_sources": 50904,
+    "subtitle_followup_pending_sources": 50904
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:52:54Z",
+      "databaseId": 42408334711,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T19:52:42Z",
+      "databaseId": 42408319901,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:52:39Z",
+      "databaseId": 42408316056,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:51:54Z",
+      "databaseId": 42408254469,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:51:52Z",
+      "databaseId": 42408252632,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T19:50:26Z",
+      "databaseId": 42408142583,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:49:25Z",
+      "databaseId": 42408060625,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T19:49:05Z",
+      "databaseId": 42408033467,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-07T19:46:45Z",
@@ -28,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T19:46:24Z",
       "databaseId": 42407821692,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +108,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T19:45:32Z",
       "databaseId": 42407754149,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -56,15 +120,15 @@
       "createdAt": "2026-11-07T19:42:36Z",
       "databaseId": 42407526405,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T19:42:33Z",
       "databaseId": 42407522556,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -96,7 +160,7 @@
       "createdAt": "2026-11-07T19:36:54Z",
       "databaseId": 42407074913,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T19:35:34Z",
-      "databaseId": 42406969114,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T19:34:16Z",
-      "databaseId": 42406858956,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T19:33:27Z",
-      "databaseId": 42406790715,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T19:32:53Z",
-      "databaseId": 42406744990,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T19:32:39Z",
-      "databaseId": 42406725252,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T19:32:37Z",
-      "databaseId": 42406723065,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T19:32:36Z",
-      "databaseId": 42406721911,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T19:32:36Z",
-      "databaseId": 42406721474,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -198177,6 +198177,11 @@
         "video_id": 30897311
       },
       {
+        "episode_id": 136013,
+        "display_name": "GNOSIA S01E15 - 15. epizoda CZ Dabing",
+        "video_id": 30897604
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -377955,6 +377960,11 @@
         "episode_id": 147035,
         "display_name": "Carlos, rey emperador S01E17 - 17. epizoda CZ Dabing",
         "video_id": 30897401
+      },
+      {
+        "episode_id": 137202,
+        "display_name": "Divoká krása S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30897428
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -575849,6 +575859,11 @@
         "video_id": 30897311
       },
       {
+        "episode_id": 136013,
+        "display_name": "GNOSIA S01E15 - 15. epizoda CZ Dabing",
+        "video_id": 30897604
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -755627,6 +755642,11 @@
         "episode_id": 147035,
         "display_name": "Carlos, rey emperador S01E17 - 17. epizoda CZ Dabing",
         "video_id": 30897401
+      },
+      {
+        "episode_id": 137202,
+        "display_name": "Divoká krása S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30897428
       }
     ],
     "prepared_not_upload_ready": [
@@ -755871,6 +755891,18 @@
         "episode": 2
       },
       {
+        "episode_id": 178453,
+        "series_title": "100 Questions",
+        "season": 1,
+        "episode": 4
+      },
+      {
+        "episode_id": 178456,
+        "series_title": "100 Questions",
+        "season": 1,
+        "episode": 6
+      },
+      {
         "episode_id": 147087,
         "series_title": "100 věcí, které byste měli udělat před střední",
         "season": 1,
@@ -755917,18 +755949,6 @@
         "series_title": "101 dalmatinů",
         "season": 1,
         "episode": 16
-      },
-      {
-        "episode_id": 189296,
-        "series_title": "101 dalmatinů",
-        "season": 1,
-        "episode": 17
-      },
-      {
-        "episode_id": 189298,
-        "series_title": "101 dalmatinů",
-        "season": 1,
-        "episode": 19
       }
     ],
     "whisper_review_pending": [
@@ -756788,17 +756808,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 3,
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35921,
+    "needs_whisper": 35920,
     "whisper_confirmed_cz": 3799,
-    "whisper_non_cz_needs_subtitles": 12925,
+    "whisper_non_cz_needs_subtitles": 12926,
     "whisper_failed": 1203
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50902
+    "needs_subtitle_setup_after_prehrajto_processing": 50904
   }
 }
