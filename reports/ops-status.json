@@ -2,23 +2,39 @@
   "counts": {
     "backlog_episodes": 111157,
     "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 80531,
+    "uploaded_episodes": 80532,
     "prepared_source_episodes": 68822,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 45,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 43,
-    "language_whisper_attempted_sources": 41,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53871,
     "whisper_review_pending_sources": 37264,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50777,
     "subtitle_followup_pending_sources": 50777
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T09:55:01Z",
+      "databaseId": 42361717305,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T09:54:46Z",
+      "databaseId": 42361701862,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-07T09:52:47Z",
@@ -28,11 +44,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T09:52:20Z",
       "databaseId": 42361538972,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T09:38:59Z",
-      "databaseId": 42360622013,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T09:37:14Z",
-      "databaseId": 42360506476,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -197775,6 +197775,11 @@
         "episode_id": 148720,
         "display_name": "The Art of Negotiation S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30886991
+      },
+      {
+        "episode_id": 131812,
+        "display_name": "Watari-kun's ****** Is About to Collapse S01E12 - 12. epizoda CZ Dabing",
+        "video_id": 30887112
       },
       {
         "episode_id": 114182,
@@ -574569,6 +574574,11 @@
         "video_id": 30886991
       },
       {
+        "episode_id": 131812,
+        "display_name": "Watari-kun's ****** Is About to Collapse S01E12 - 12. epizoda CZ Dabing",
+        "video_id": 30887112
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -755028,8 +755038,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 2,
-    "ok": 40,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
