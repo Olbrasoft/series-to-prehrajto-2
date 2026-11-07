@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111157,
     "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 80532,
+    "uploaded_episodes": 80533,
     "prepared_source_episodes": 68824,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,25 +14,49 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53872,
     "whisper_review_pending_sources": 37265,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50777,
     "subtitle_followup_pending_sources": 50777
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-07T09:59:05Z",
-      "databaseId": 42361980962,
+      "createdAt": "2026-11-07T09:59:39Z",
+      "databaseId": 42362017355,
       "headBranch": "main",
       "status": "pending",
-      "workflowName": "ops-watchdog"
+      "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T09:59:33Z",
+      "databaseId": 42362010881,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T09:59:30Z",
+      "databaseId": 42362008508,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T09:59:05Z",
+      "databaseId": 42361980962,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T09:58:28Z",
       "databaseId": 42361941397,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +64,7 @@
       "createdAt": "2026-11-07T09:58:24Z",
       "databaseId": 42361937072,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T09:46:56Z",
-      "databaseId": 42361169825,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T09:45:35Z",
-      "databaseId": 42361076596,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T09:43:06Z",
-      "databaseId": 42360905161,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -197780,6 +197780,11 @@
         "episode_id": 131812,
         "display_name": "Watari-kun's ****** Is About to Collapse S01E12 - 12. epizoda CZ Dabing",
         "video_id": 30887112
+      },
+      {
+        "episode_id": 153508,
+        "display_name": "Fourever You S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30887210
       },
       {
         "episode_id": 114182,
@@ -574577,6 +574582,11 @@
         "episode_id": 131812,
         "display_name": "Watari-kun's ****** Is About to Collapse S01E12 - 12. epizoda CZ Dabing",
         "video_id": 30887112
+      },
+      {
+        "episode_id": 153508,
+        "display_name": "Fourever You S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30887210
       },
       {
         "episode_id": 114182,
