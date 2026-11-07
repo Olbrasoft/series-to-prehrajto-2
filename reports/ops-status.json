@@ -2,29 +2,93 @@
   "counts": {
     "backlog_episodes": 111157,
     "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 80560,
+    "uploaded_episodes": 80566,
     "prepared_source_episodes": 68835,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 45,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 28,
-    "language_whisper_attempted_sources": 26,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53869,
     "whisper_review_pending_sources": 37244,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50797,
     "subtitle_followup_pending_sources": 50797
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T11:16:28Z",
+      "databaseId": 42367477980,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T11:15:21Z",
+      "databaseId": 42367399543,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T11:12:52Z",
+      "databaseId": 42367229388,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T11:12:49Z",
+      "databaseId": 42367225746,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T11:12:06Z",
+      "databaseId": 42367175318,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T11:11:32Z",
+      "databaseId": 42367134206,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T11:11:29Z",
+      "databaseId": 42367129778,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T11:11:24Z",
+      "databaseId": 42367123959,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T11:10:27Z",
       "databaseId": 42367052628,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -32,7 +96,7 @@
       "createdAt": "2026-11-07T11:10:11Z",
       "databaseId": 42367032187,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +108,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T11:09:43Z",
       "databaseId": 42366996120,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +120,7 @@
       "createdAt": "2026-11-07T11:04:40Z",
       "databaseId": 42366628587,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,11 +148,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T11:03:59Z",
       "databaseId": 42366580325,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T11:03:05Z",
-      "databaseId": 42366513171,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T11:03:01Z",
-      "databaseId": 42366508004,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T11:03:00Z",
-      "databaseId": 42366506670,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T11:02:56Z",
-      "databaseId": 42366502324,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T11:02:24Z",
-      "databaseId": 42366462888,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T11:01:32Z",
-      "databaseId": 42366399669,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T11:01:26Z",
-      "databaseId": 42366391876,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T11:00:20Z",
-      "databaseId": 42366301099,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -197867,6 +197867,16 @@
         "video_id": 30888699
       },
       {
+        "episode_id": 112400,
+        "display_name": "O Rei do Gado S01E91 - 91. epizoda CZ Titulky",
+        "video_id": 30888800
+      },
+      {
+        "episode_id": 148729,
+        "display_name": "The Art of Negotiation S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30888814
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -377220,6 +377230,26 @@
         "episode_id": 112403,
         "display_name": "O Rei do Gado S01E96 - 96. epizoda CZ Titulky",
         "video_id": 30888708
+      },
+      {
+        "episode_id": 152554,
+        "display_name": "Nebezpečné umění S02E05 - 5. epizoda CZ Dabing",
+        "video_id": 30888781
+      },
+      {
+        "episode_id": 121187,
+        "display_name": "Doktor z hor: Nové příběhy S16E01 - 1. epizoda CZ Dabing",
+        "video_id": 30888790
+      },
+      {
+        "episode_id": 112402,
+        "display_name": "O Rei do Gado S01E94 - 94. epizoda CZ Dabing",
+        "video_id": 30888849
+      },
+      {
+        "episode_id": 131823,
+        "display_name": "Watari-kun's ****** Is About to Collapse S01E24 - 24. epizoda CZ Titulky",
+        "video_id": 30888872
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -574804,6 +574834,16 @@
         "video_id": 30888699
       },
       {
+        "episode_id": 112400,
+        "display_name": "O Rei do Gado S01E91 - 91. epizoda CZ Titulky",
+        "video_id": 30888800
+      },
+      {
+        "episode_id": 148729,
+        "display_name": "The Art of Negotiation S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30888814
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -754157,6 +754197,26 @@
         "episode_id": 112403,
         "display_name": "O Rei do Gado S01E96 - 96. epizoda CZ Titulky",
         "video_id": 30888708
+      },
+      {
+        "episode_id": 152554,
+        "display_name": "Nebezpečné umění S02E05 - 5. epizoda CZ Dabing",
+        "video_id": 30888781
+      },
+      {
+        "episode_id": 121187,
+        "display_name": "Doktor z hor: Nové příběhy S16E01 - 1. epizoda CZ Dabing",
+        "video_id": 30888790
+      },
+      {
+        "episode_id": 112402,
+        "display_name": "O Rei do Gado S01E94 - 94. epizoda CZ Dabing",
+        "video_id": 30888849
+      },
+      {
+        "episode_id": 131823,
+        "display_name": "Watari-kun's ****** Is About to Collapse S01E24 - 24. epizoda CZ Titulky",
+        "video_id": 30888872
       }
     ],
     "prepared_not_upload_ready": [
@@ -755318,9 +755378,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 2,
-    "ok": 24,
-    "stream_undersized": 1,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
