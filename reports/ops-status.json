@@ -1,16 +1,16 @@
 {
   "counts": {
     "backlog_episodes": 110983,
-    "manifest_upload_ready_episodes": 29,
-    "uploaded_episodes": 80699,
-    "prepared_source_episodes": 69069,
+    "manifest_upload_ready_episodes": 27,
+    "uploaded_episodes": 80702,
+    "prepared_source_episodes": 69070,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 29,
+    "language_whisper_attempted_sources": 21,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53848,
     "whisper_review_pending_sources": 37124,
@@ -21,10 +21,74 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T19:32:08Z",
+      "databaseId": 42406682319,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:32:05Z",
+      "databaseId": 42406677278,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:32:02Z",
+      "databaseId": 42406672658,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T19:31:34Z",
+      "databaseId": 42406633214,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:30:46Z",
+      "databaseId": 42406565583,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T19:27:36Z",
+      "databaseId": 42406310760,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:23:03Z",
+      "databaseId": 42405943757,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:23:00Z",
+      "databaseId": 42405939915,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T19:22:08Z",
       "databaseId": 42405870295,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -32,7 +96,7 @@
       "createdAt": "2026-11-07T19:22:06Z",
       "databaseId": 42405867204,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +104,7 @@
       "createdAt": "2026-11-07T19:22:04Z",
       "databaseId": 42405864670,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
@@ -68,11 +132,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T19:20:11Z",
       "databaseId": 42405702389,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -84,19 +148,19 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T19:16:44Z",
       "databaseId": 42405417738,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T19:15:15Z",
       "databaseId": 42405294152,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T19:14:38Z",
-      "databaseId": 42405245247,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T19:12:41Z",
-      "databaseId": 42405095073,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T19:12:38Z",
-      "databaseId": 42405090747,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T19:12:09Z",
-      "databaseId": 42405053184,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T19:10:24Z",
-      "databaseId": 42404908368,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T19:09:42Z",
-      "databaseId": 42404845828,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T19:09:37Z",
-      "databaseId": 42404839275,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T19:09:16Z",
-      "databaseId": 42404811460,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -198152,6 +198152,16 @@
         "video_id": 30896923
       },
       {
+        "episode_id": 147028,
+        "display_name": "Carlos, rey emperador S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30897042
+      },
+      {
+        "episode_id": 147044,
+        "display_name": "Carlos, rey emperador S01E16 - 16. epizoda CZ Dabing",
+        "video_id": 30897134
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -377915,6 +377925,11 @@
         "episode_id": 136018,
         "display_name": "GNOSIA S01E20 - 20. epizoda CZ Titulky",
         "video_id": 30896882
+      },
+      {
+        "episode_id": 147043,
+        "display_name": "Carlos, rey emperador S01E15 - 15. epizoda CZ Dabing",
+        "video_id": 30897144
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -575784,6 +575799,16 @@
         "video_id": 30896923
       },
       {
+        "episode_id": 147028,
+        "display_name": "Carlos, rey emperador S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30897042
+      },
+      {
+        "episode_id": 147044,
+        "display_name": "Carlos, rey emperador S01E16 - 16. epizoda CZ Dabing",
+        "video_id": 30897134
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -755547,6 +755572,11 @@
         "episode_id": 136018,
         "display_name": "GNOSIA S01E20 - 20. epizoda CZ Titulky",
         "video_id": 30896882
+      },
+      {
+        "episode_id": 147043,
+        "display_name": "Carlos, rey emperador S01E15 - 15. epizoda CZ Dabing",
+        "video_id": 30897144
       }
     ],
     "prepared_not_upload_ready": [
@@ -755779,6 +755809,18 @@
         "episode": 12
       },
       {
+        "episode_id": 178454,
+        "series_title": "100 Questions",
+        "season": 1,
+        "episode": 1
+      },
+      {
+        "episode_id": 178455,
+        "series_title": "100 Questions",
+        "season": 1,
+        "episode": 2
+      },
+      {
         "episode_id": 147087,
         "series_title": "100 věcí, které byste měli udělat před střední",
         "season": 1,
@@ -755837,18 +755879,6 @@
         "series_title": "101 dalmatinů",
         "season": 1,
         "episode": 19
-      },
-      {
-        "episode_id": 189300,
-        "series_title": "101 dalmatinů",
-        "season": 1,
-        "episode": 21
-      },
-      {
-        "episode_id": 189304,
-        "series_title": "101 dalmatinů",
-        "season": 2,
-        "episode": 2
       }
     ],
     "whisper_review_pending": [
@@ -756708,7 +756738,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "disabled": 8,
+    "ok": 20,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
