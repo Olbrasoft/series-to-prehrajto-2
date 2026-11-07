@@ -1,24 +1,56 @@
 {
   "counts": {
     "backlog_episodes": 111336,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 80351,
-    "prepared_source_episodes": 68690,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 80354,
+    "prepared_source_episodes": 68692,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
-    "language_whisper_attempted_sources": 22,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53900,
     "whisper_review_pending_sources": 37395,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50695,
     "subtitle_followup_pending_sources": 50695
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T01:53:37Z",
+      "databaseId": 42326443262,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T01:52:42Z",
+      "databaseId": 42326370783,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T01:52:34Z",
+      "databaseId": 42326358901,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T01:52:30Z",
+      "databaseId": 42326354672,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-07T01:52:03Z",
@@ -36,19 +68,19 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T01:50:29Z",
       "databaseId": 42326185155,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T01:49:58Z",
       "databaseId": 42326138230,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -60,19 +92,19 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T01:49:46Z",
       "databaseId": 42326120988,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T01:49:07Z",
       "databaseId": 42326066573,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,7 +112,7 @@
       "createdAt": "2026-11-07T01:49:01Z",
       "databaseId": 42326058345,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T01:41:23Z",
-      "databaseId": 42325410222,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T01:41:15Z",
-      "databaseId": 42325397801,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T01:41:11Z",
-      "databaseId": 42325393327,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T01:41:09Z",
-      "databaseId": 42325389704,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -197332,6 +197332,11 @@
         "video_id": 30875751
       },
       {
+        "episode_id": 108381,
+        "display_name": "Jsi můj život  S01E65 - 65. epizoda CZ Dabing",
+        "video_id": 30876087
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -376175,6 +376180,16 @@
         "episode_id": 17754,
         "display_name": "Zločin S02E03 - 3. epizoda CZ Dabing",
         "video_id": 30875971
+      },
+      {
+        "episode_id": 108382,
+        "display_name": "Jsi můj život  S01E66 - 66. epizoda CZ Dabing",
+        "video_id": 30876101
+      },
+      {
+        "episode_id": 112983,
+        "display_name": "Doktor z hor: Nové příběhy S02E03 - Otcové CZ Dabing",
+        "video_id": 30876093
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -573224,6 +573239,11 @@
         "video_id": 30875751
       },
       {
+        "episode_id": 108381,
+        "display_name": "Jsi můj život  S01E65 - 65. epizoda CZ Dabing",
+        "video_id": 30876087
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752067,6 +752087,16 @@
         "episode_id": 17754,
         "display_name": "Zločin S02E03 - 3. epizoda CZ Dabing",
         "video_id": 30875971
+      },
+      {
+        "episode_id": 108382,
+        "display_name": "Jsi můj život  S01E66 - 66. epizoda CZ Dabing",
+        "video_id": 30876101
+      },
+      {
+        "episode_id": 112983,
+        "display_name": "Doktor z hor: Nové příběhy S02E03 - Otcové CZ Dabing",
+        "video_id": 30876093
       }
     ],
     "prepared_not_upload_ready": [
@@ -753228,8 +753258,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 5,
-    "ok": 21,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
