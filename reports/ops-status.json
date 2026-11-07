@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111284,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 80419,
+    "uploaded_episodes": 80422,
     "prepared_source_episodes": 68753,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,19 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53888,
     "whisper_review_pending_sources": 37340,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50718,
     "subtitle_followup_pending_sources": 50718
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T05:05:05Z",
+      "databaseId": 42341194940,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-07T05:04:17Z",
@@ -40,15 +48,15 @@
       "createdAt": "2026-11-07T05:03:59Z",
       "databaseId": 42341116814,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T05:03:51Z",
       "databaseId": 42341107380,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -64,7 +72,7 @@
       "createdAt": "2026-11-07T05:03:36Z",
       "databaseId": 42341089635,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -76,11 +84,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T05:02:40Z",
       "databaseId": 42341017970,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T04:51:50Z",
-      "databaseId": 42340270993,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -197507,6 +197507,16 @@
         "video_id": 30880552
       },
       {
+        "episode_id": 108400,
+        "display_name": "Jsi můj život  S01E84 - 84. epizoda CZ Dabing",
+        "video_id": 30880904
+      },
+      {
+        "episode_id": 134993,
+        "display_name": "Zvláštní efekty S02E05 - V utajení CZ Titulky",
+        "video_id": 30880919
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -376515,6 +376525,11 @@
         "episode_id": 112959,
         "display_name": "Doktor z hor: Nové příběhy S03E07 - Nový pořádek CZ Dabing",
         "video_id": 30880700
+      },
+      {
+        "episode_id": 134994,
+        "display_name": "Zvláštní efekty S02E06 - Strašidelný dům CZ Titulky",
+        "video_id": 30880960
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -573739,6 +573754,16 @@
         "video_id": 30880552
       },
       {
+        "episode_id": 108400,
+        "display_name": "Jsi můj život  S01E84 - 84. epizoda CZ Dabing",
+        "video_id": 30880904
+      },
+      {
+        "episode_id": 134993,
+        "display_name": "Zvláštní efekty S02E05 - V utajení CZ Titulky",
+        "video_id": 30880919
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -752747,6 +752772,11 @@
         "episode_id": 112959,
         "display_name": "Doktor z hor: Nové příběhy S03E07 - Nový pořádek CZ Dabing",
         "video_id": 30880700
+      },
+      {
+        "episode_id": 134994,
+        "display_name": "Zvláštní efekty S02E06 - Strašidelný dům CZ Titulky",
+        "video_id": 30880960
       }
     ],
     "prepared_not_upload_ready": [
