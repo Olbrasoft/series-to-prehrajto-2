@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111336,
     "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 80332,
+    "uploaded_episodes": 80333,
     "prepared_source_episodes": 68671,
     "description_series": 60,
     "description_episodes": 753,
@@ -19,6 +19,14 @@
     "subtitle_followup_pending_sources": 50693
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T00:47:41Z",
+      "databaseId": 42320384025,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-07T00:46:37Z",
@@ -56,7 +64,7 @@
       "createdAt": "2026-11-07T00:46:15Z",
       "databaseId": 42320235016,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -88,15 +96,15 @@
       "createdAt": "2026-11-07T00:43:03Z",
       "databaseId": 42319909120,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T00:42:46Z",
       "databaseId": 42319879904,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -104,7 +112,7 @@
       "createdAt": "2026-11-07T00:42:24Z",
       "databaseId": 42319842384,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T00:37:41Z",
-      "databaseId": 42319369566,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
     }
   ],
   "gaps": {
@@ -376080,6 +376080,11 @@
         "episode_id": 112942,
         "display_name": "Doktor z hor: Nové příběhy S01E05 - Uprchlík CZ Dabing",
         "video_id": 30874392
+      },
+      {
+        "episode_id": 73731,
+        "display_name": "Czas honoru S06E01 - 1. epizoda CZ Titulky",
+        "video_id": 30874679
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -751877,6 +751882,11 @@
         "episode_id": 112942,
         "display_name": "Doktor z hor: Nové příběhy S01E05 - Uprchlík CZ Dabing",
         "video_id": 30874392
+      },
+      {
+        "episode_id": 73731,
+        "display_name": "Czas honoru S06E01 - 1. epizoda CZ Titulky",
+        "video_id": 30874679
       }
     ],
     "prepared_not_upload_ready": [
