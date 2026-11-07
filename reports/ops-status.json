@@ -1,30 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 111025,
-    "manifest_upload_ready_episodes": 28,
-    "uploaded_episodes": 80669,
-    "prepared_source_episodes": 68993,
+    "manifest_upload_ready_episodes": 26,
+    "uploaded_episodes": 80671,
+    "prepared_source_episodes": 68992,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53849,
     "whisper_review_pending_sources": 37133,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50880,
     "subtitle_followup_pending_sources": 50880
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T17:15:22Z",
+      "databaseId": 42395391300,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T17:13:53Z",
+      "databaseId": 42395270119,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T17:13:51Z",
+      "databaseId": 42395268125,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T17:13:49Z",
+      "databaseId": 42395265106,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T17:12:43Z",
       "databaseId": 42395179458,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T17:03:16Z",
-      "databaseId": 42394367829,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T17:03:13Z",
-      "databaseId": 42394364500,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T17:03:11Z",
-      "databaseId": 42394361619,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T17:02:15Z",
-      "databaseId": 42394280330,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -198095,6 +198095,16 @@
         "episode_id": 176713,
         "display_name": "Shark: The Storm S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30894176
+      },
+      {
+        "episode_id": 188712,
+        "display_name": "Mickey a závodníci S01E12 - Pomocnice, tanečnice CZ Dabing",
+        "video_id": 30895022
+      },
+      {
+        "episode_id": 156704,
+        "display_name": "There's No Freaking Way I'll Be Your Lover! Unless... S01E16 - 16. epizoda CZ Titulky",
+        "video_id": 30895064
       },
       {
         "episode_id": 114182,
@@ -575579,6 +575589,16 @@
         "video_id": 30894176
       },
       {
+        "episode_id": 188712,
+        "display_name": "Mickey a závodníci S01E12 - Pomocnice, tanečnice CZ Dabing",
+        "video_id": 30895022
+      },
+      {
+        "episode_id": 156704,
+        "display_name": "There's No Freaking Way I'll Be Your Lover! Unless... S01E16 - 16. epizoda CZ Titulky",
+        "video_id": 30895064
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -756408,7 +756428,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
