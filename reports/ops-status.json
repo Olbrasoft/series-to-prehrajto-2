@@ -2,18 +2,18 @@
   "counts": {
     "backlog_episodes": 111157,
     "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 80581,
-    "prepared_source_episodes": 68842,
+    "uploaded_episodes": 80582,
+    "prepared_source_episodes": 68847,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 45,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 44,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53866,
-    "whisper_review_pending_sources": 37232,
+    "whisper_review_sources": 53867,
+    "whisper_review_pending_sources": 37233,
     "upload_pending_checkpoints": 36,
     "subtitle_followup_sources": 50806,
     "subtitle_followup_pending_sources": 50806
@@ -21,10 +21,42 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T12:12:27Z",
+      "databaseId": 42371445402,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T12:12:23Z",
+      "databaseId": 42371440414,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T12:11:43Z",
+      "databaseId": 42371387327,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T12:11:40Z",
+      "databaseId": 42371384032,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T12:10:35Z",
       "databaseId": 42371307341,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -92,11 +124,11 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T12:03:54Z",
       "databaseId": 42370816491,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T11:57:05Z",
-      "databaseId": 42370325094,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T11:56:37Z",
-      "databaseId": 42370293663,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T11:56:29Z",
-      "databaseId": 42370285624,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T11:53:56Z",
-      "databaseId": 42370107412,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -197915,6 +197915,11 @@
         "episode_id": 156757,
         "display_name": "Band of Gold S02E02 - 2. epizoda CZ Titulky",
         "video_id": 30889886
+      },
+      {
+        "episode_id": 153512,
+        "display_name": "Fourever You S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30889963
       },
       {
         "episode_id": 114182,
@@ -574959,6 +574964,11 @@
         "video_id": 30889886
       },
       {
+        "episode_id": 153512,
+        "display_name": "Fourever You S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30889963
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -755528,11 +755538,12 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 4,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36028,
+    "needs_whisper": 36029,
     "whisper_confirmed_cz": 3782,
     "whisper_non_cz_needs_subtitles": 12852,
     "whisper_failed": 1204
