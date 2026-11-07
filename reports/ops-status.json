@@ -1,54 +1,134 @@
 {
   "counts": {
     "backlog_episodes": 111157,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 80533,
-    "prepared_source_episodes": 68824,
+    "manifest_upload_ready_episodes": 11,
+    "uploaded_episodes": 80535,
+    "prepared_source_episodes": 68826,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 45,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 24,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 26,
+    "language_whisper_attempted_sources": 26,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53872,
-    "whisper_review_pending_sources": 37265,
-    "upload_pending_checkpoints": 35,
-    "subtitle_followup_sources": 50777,
-    "subtitle_followup_pending_sources": 50777
+    "whisper_review_sources": 53871,
+    "whisper_review_pending_sources": 37261,
+    "upload_pending_checkpoints": 36,
+    "subtitle_followup_sources": 50782,
+    "subtitle_followup_pending_sources": 50782
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-07T09:59:39Z",
-      "databaseId": 42362017355,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T09:59:33Z",
-      "databaseId": 42362010881,
+      "createdAt": "2026-11-07T10:04:28Z",
+      "databaseId": 42362379123,
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-07T09:59:30Z",
-      "databaseId": 42362008508,
+      "createdAt": "2026-11-07T10:04:08Z",
+      "databaseId": 42362356431,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
+      "status": "pending",
+      "workflowName": "sync"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T10:03:57Z",
+      "databaseId": 42362342922,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:03:28Z",
+      "databaseId": 42362309225,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:02:30Z",
+      "databaseId": 42362236885,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:01:48Z",
+      "databaseId": 42362186171,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:01:34Z",
+      "databaseId": 42362168397,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T10:01:18Z",
+      "databaseId": 42362148532,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:00:50Z",
+      "databaseId": 42362109729,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T10:00:46Z",
+      "databaseId": 42362103614,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T09:59:39Z",
+      "databaseId": 42362017355,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T09:59:33Z",
+      "databaseId": 42362010881,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T09:59:30Z",
+      "databaseId": 42362008508,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T09:59:05Z",
       "databaseId": 42361980962,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +144,7 @@
       "createdAt": "2026-11-07T09:58:24Z",
       "databaseId": 42361937072,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T09:52:20Z",
-      "databaseId": 42361538972,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T09:52:16Z",
-      "databaseId": 42361534204,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T09:51:44Z",
-      "databaseId": 42361498761,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T09:51:40Z",
-      "databaseId": 42361493921,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T09:51:07Z",
-      "databaseId": 42361457154,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T09:50:11Z",
-      "databaseId": 42361390808,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T09:49:35Z",
-      "databaseId": 42361349765,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T09:49:19Z",
-      "databaseId": 42361331524,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T09:49:16Z",
-      "databaseId": 42361328665,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T09:49:15Z",
-      "databaseId": 42361327098,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -197787,6 +197787,11 @@
         "video_id": 30887210
       },
       {
+        "episode_id": 193508,
+        "display_name": "Dobrodružství medvídka Paddingtona S03E21 - 21. epizoda CZ Titulky",
+        "video_id": 30887446
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -377085,6 +377090,11 @@
         "episode_id": 131802,
         "display_name": "Watari-kun's ****** Is About to Collapse S01E03 - 3. epizoda CZ Dabing",
         "video_id": 30886918
+      },
+      {
+        "episode_id": 153502,
+        "display_name": "Fourever You S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30887411
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -574589,6 +574599,11 @@
         "video_id": 30887210
       },
       {
+        "episode_id": 193508,
+        "display_name": "Dobrodružství medvídka Paddingtona S03E21 - 21. epizoda CZ Titulky",
+        "video_id": 30887446
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -753887,6 +753902,11 @@
         "episode_id": 131802,
         "display_name": "Watari-kun's ****** Is About to Collapse S01E03 - 3. epizoda CZ Dabing",
         "video_id": 30886918
+      },
+      {
+        "episode_id": 153502,
+        "display_name": "Fourever You S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30887411
       }
     ],
     "prepared_not_upload_ready": [
@@ -755048,17 +755068,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 4,
-    "ok": 19,
+    "stream_undersized": 1,
+    "ok": 24,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36050,
+    "needs_whisper": 36046,
     "whisper_confirmed_cz": 3775,
-    "whisper_non_cz_needs_subtitles": 12832,
+    "whisper_non_cz_needs_subtitles": 12835,
     "whisper_failed": 1215
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50777
+    "needs_subtitle_setup_after_prehrajto_processing": 50782
   }
 }
