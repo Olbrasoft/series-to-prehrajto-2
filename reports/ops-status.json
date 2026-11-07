@@ -2,16 +2,16 @@
   "counts": {
     "backlog_episodes": 111157,
     "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 80535,
+    "uploaded_episodes": 80536,
     "prepared_source_episodes": 68826,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 45,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 26,
-    "language_whisper_attempted_sources": 26,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53871,
     "whisper_review_pending_sources": 37261,
     "upload_pending_checkpoints": 36,
@@ -20,11 +20,35 @@
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T10:07:32Z",
+      "databaseId": 42362605366,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-07T10:07:27Z",
+      "databaseId": 42362598085,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T10:07:16Z",
+      "databaseId": 42362583903,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T10:04:28Z",
       "databaseId": 42362379123,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -64,7 +88,7 @@
       "createdAt": "2026-11-07T10:01:48Z",
       "databaseId": 42362186171,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +108,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T10:00:50Z",
       "databaseId": 42362109729,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -148,36 +172,12 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T09:56:12Z",
       "databaseId": 42361798645,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T09:55:01Z",
-      "databaseId": 42361717305,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T09:54:46Z",
-      "databaseId": 42361701862,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T09:52:47Z",
-      "databaseId": 42361569404,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -377095,6 +377095,11 @@
         "episode_id": 153502,
         "display_name": "Fourever You S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30887411
+      },
+      {
+        "episode_id": 193507,
+        "display_name": "Dobrodružství medvídka Paddingtona S03E19 - 19. epizoda CZ Titulky",
+        "video_id": 30887478
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -753907,6 +753912,11 @@
         "episode_id": 153502,
         "display_name": "Fourever You S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30887411
+      },
+      {
+        "episode_id": 193507,
+        "display_name": "Dobrodružství medvídka Paddingtona S03E19 - 19. epizoda CZ Titulky",
+        "video_id": 30887478
       }
     ],
     "prepared_not_upload_ready": [
@@ -755068,8 +755078,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "stream_undersized": 1,
-    "ok": 24,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
