@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110944,
     "manifest_upload_ready_episodes": 38,
-    "uploaded_episodes": 80723,
+    "uploaded_episodes": 80724,
     "prepared_source_episodes": 69126,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,67 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53846,
     "whisper_review_pending_sources": 37105,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50927,
     "subtitle_followup_pending_sources": 50927
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:33:15Z",
+      "databaseId": 42416408548,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:33:00Z",
+      "databaseId": 42416386760,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:32:56Z",
+      "databaseId": 42416381616,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:32:56Z",
+      "databaseId": 42416381463,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:32:15Z",
+      "databaseId": 42416326794,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:32:07Z",
+      "databaseId": 42416315022,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T21:32:04Z",
+      "databaseId": 42416311434,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-07T21:31:19Z",
@@ -32,7 +88,7 @@
       "createdAt": "2026-11-07T21:29:26Z",
       "databaseId": 42416090471,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +116,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T21:23:11Z",
       "databaseId": 42415612082,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,68 +172,12 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T21:22:05Z",
       "databaseId": 42415525428,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T21:20:54Z",
-      "databaseId": 42415429976,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T21:20:26Z",
-      "databaseId": 42415390020,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T21:15:52Z",
-      "databaseId": 42415020495,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T21:15:04Z",
-      "databaseId": 42414952950,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T21:14:37Z",
-      "databaseId": 42414917771,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T21:13:42Z",
-      "databaseId": 42414846216,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T21:13:16Z",
-      "databaseId": 42414812491,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -198230,6 +198230,11 @@
         "episode_id": 168593,
         "display_name": "Evilive S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30898880
+      },
+      {
+        "episode_id": 177936,
+        "display_name": "Faking Hitler S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30899071
       },
       {
         "episode_id": 114182,
@@ -575982,6 +575987,11 @@
         "episode_id": 168593,
         "display_name": "Evilive S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30898880
+      },
+      {
+        "episode_id": 177936,
+        "display_name": "Faking Hitler S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30899071
       },
       {
         "episode_id": 114182,
