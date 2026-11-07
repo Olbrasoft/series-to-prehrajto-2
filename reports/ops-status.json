@@ -1,38 +1,134 @@
 {
   "counts": {
     "backlog_episodes": 111218,
-    "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 80491,
-    "prepared_source_episodes": 68810,
+    "manifest_upload_ready_episodes": 11,
+    "uploaded_episodes": 80493,
+    "prepared_source_episodes": 68821,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 45,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 44,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53876,
-    "whisper_review_pending_sources": 37286,
-    "upload_pending_checkpoints": 36,
+    "whisper_review_sources": 53877,
+    "whisper_review_pending_sources": 37290,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50753,
     "subtitle_followup_pending_sources": 50753
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-07T08:32:16Z",
-      "databaseId": 42355905198,
+      "createdAt": "2026-11-07T08:39:09Z",
+      "databaseId": 42356385245,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:38:27Z",
+      "databaseId": 42356340113,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T08:37:04Z",
+      "databaseId": 42356249510,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-07T08:36:44Z",
+      "databaseId": 42356226076,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-07T08:36:42Z",
+      "databaseId": 42356223963,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:36:30Z",
+      "databaseId": 42356210004,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T08:34:45Z",
+      "databaseId": 42356080664,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T08:34:41Z",
+      "databaseId": 42356076368,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:33:57Z",
+      "databaseId": 42356023566,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:33:20Z",
+      "databaseId": 42355981359,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:33:09Z",
+      "databaseId": 42355968631,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:33:08Z",
+      "databaseId": 42355966706,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T08:32:16Z",
+      "databaseId": 42355905198,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T08:32:05Z",
       "databaseId": 42355890299,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -40,7 +136,7 @@
       "createdAt": "2026-11-07T08:32:03Z",
       "databaseId": 42355887424,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -48,7 +144,7 @@
       "createdAt": "2026-11-07T08:31:18Z",
       "databaseId": 42355833711,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "audit-language"
     },
     {
@@ -68,11 +164,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T08:28:13Z",
       "databaseId": 42355614875,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -82,102 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T08:27:32Z",
-      "databaseId": 42355568827,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T08:27:29Z",
-      "databaseId": 42355565844,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T08:25:56Z",
-      "databaseId": 42355463811,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T08:25:53Z",
-      "databaseId": 42355460391,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T08:24:46Z",
-      "databaseId": 42355376817,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T08:24:19Z",
-      "databaseId": 42355343302,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T08:23:55Z",
-      "databaseId": 42355314428,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T08:23:45Z",
-      "databaseId": 42355301489,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T08:21:23Z",
-      "databaseId": 42355130857,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T08:21:11Z",
-      "databaseId": 42355115244,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T08:18:44Z",
-      "databaseId": 42354934077,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T08:18:40Z",
-      "databaseId": 42354929387,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -197687,6 +197687,11 @@
         "video_id": 30885768
       },
       {
+        "episode_id": 203980,
+        "display_name": "Marshals: Příběh z Yellowstonu S02E05 - 5. epizoda CZ Dabing",
+        "video_id": 30885957
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -376875,6 +376880,11 @@
         "episode_id": 193498,
         "display_name": "Dobrodružství medvídka Paddingtona S03E01 - 1. epizoda CZ Titulky",
         "video_id": 30885507
+      },
+      {
+        "episode_id": 193499,
+        "display_name": "Dobrodružství medvídka Paddingtona S03E03 - 3. epizoda CZ Titulky",
+        "video_id": 30885910
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -574279,6 +574289,11 @@
         "video_id": 30885768
       },
       {
+        "episode_id": 203980,
+        "display_name": "Marshals: Příběh z Yellowstonu S02E05 - 5. epizoda CZ Dabing",
+        "video_id": 30885957
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -753467,6 +753482,11 @@
         "episode_id": 193498,
         "display_name": "Dobrodružství medvídka Paddingtona S03E01 - 1. epizoda CZ Titulky",
         "video_id": 30885507
+      },
+      {
+        "episode_id": 193499,
+        "display_name": "Dobrodružství medvídka Paddingtona S03E03 - 3. epizoda CZ Titulky",
+        "video_id": 30885910
       }
     ],
     "prepared_not_upload_ready": [
@@ -754628,14 +754648,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 3,
-    "ok": 41,
+    "disabled": 4,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 36066,
+    "needs_whisper": 36070,
     "whisper_confirmed_cz": 3770,
-    "whisper_non_cz_needs_subtitles": 12820,
+    "whisper_non_cz_needs_subtitles": 12817,
     "whisper_failed": 1220
   },
   "subtitle_followup_statuses": {
