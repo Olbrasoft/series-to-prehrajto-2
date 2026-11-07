@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 111083,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 80619,
-    "prepared_source_episodes": 68876,
+    "manifest_upload_ready_episodes": 10,
+    "uploaded_episodes": 80620,
+    "prepared_source_episodes": 68880,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -21,10 +21,26 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T13:56:06Z",
+      "databaseId": 42379211343,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T13:54:48Z",
+      "databaseId": 42379114306,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-07T13:52:55Z",
       "databaseId": 42378976604,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +48,7 @@
       "createdAt": "2026-11-07T13:52:29Z",
       "databaseId": 42378943563,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
@@ -68,11 +84,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T13:50:08Z",
       "databaseId": 42378761829,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -80,7 +96,7 @@
       "createdAt": "2026-11-07T13:49:52Z",
       "databaseId": 42378741120,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -88,15 +104,15 @@
       "createdAt": "2026-11-07T13:49:49Z",
       "databaseId": 42378736978,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T13:47:08Z",
       "databaseId": 42378538126,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -159,22 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-07T13:41:34Z",
       "databaseId": 42378119847,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T13:41:23Z",
-      "databaseId": 42378105934,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T13:41:12Z",
-      "databaseId": 42378091475,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -377515,6 +377515,11 @@
         "episode_id": 148722,
         "display_name": "The Art of Negotiation S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30891767
+      },
+      {
+        "episode_id": 153506,
+        "display_name": "Fourever You S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30891872
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -754747,6 +754752,11 @@
         "episode_id": 148722,
         "display_name": "The Art of Negotiation S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30891767
+      },
+      {
+        "episode_id": 153506,
+        "display_name": "Fourever You S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30891872
       }
     ],
     "prepared_not_upload_ready": [
