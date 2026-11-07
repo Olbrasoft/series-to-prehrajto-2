@@ -1,24 +1,64 @@
 {
   "counts": {
     "backlog_episodes": 110983,
-    "manifest_upload_ready_episodes": 34,
-    "uploaded_episodes": 80687,
-    "prepared_source_episodes": 69061,
+    "manifest_upload_ready_episodes": 33,
+    "uploaded_episodes": 80690,
+    "prepared_source_episodes": 69064,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 21,
-    "language_whisper_attempted_sources": 21,
+    "language_audited_sources": 23,
+    "language_whisper_attempted_sources": 23,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53849,
-    "whisper_review_pending_sources": 37128,
-    "upload_pending_checkpoints": 37,
-    "subtitle_followup_sources": 50896,
-    "subtitle_followup_pending_sources": 50896
+    "whisper_review_sources": 53848,
+    "whisper_review_pending_sources": 37126,
+    "upload_pending_checkpoints": 36,
+    "subtitle_followup_sources": 50898,
+    "subtitle_followup_pending_sources": 50898
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:02:18Z",
+      "databaseId": 42404229673,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T19:01:33Z",
+      "databaseId": 42404165372,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T18:59:41Z",
+      "databaseId": 42403996781,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-07T18:56:55Z",
+      "databaseId": 42403788168,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T18:54:09Z",
+      "databaseId": 42403569055,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-07T18:52:45Z",
@@ -28,19 +68,19 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T18:52:40Z",
       "databaseId": 42403448824,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-07T18:52:36Z",
       "databaseId": 42403443145,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -48,23 +88,23 @@
       "createdAt": "2026-11-07T18:52:25Z",
       "databaseId": 42403429240,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T18:51:57Z",
       "databaseId": 42403389508,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T18:51:54Z",
       "databaseId": 42403384816,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -120,7 +160,7 @@
       "createdAt": "2026-11-07T18:46:56Z",
       "databaseId": 42402979540,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T18:45:43Z",
-      "databaseId": 42402880240,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T18:45:40Z",
-      "databaseId": 42402875213,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T18:42:45Z",
-      "databaseId": 42402633127,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T18:42:42Z",
-      "databaseId": 42402628759,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T18:42:08Z",
-      "databaseId": 42402582196,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -198127,6 +198127,11 @@
         "video_id": 30896025
       },
       {
+        "episode_id": 156765,
+        "display_name": "Band of Gold S03E05 - 5. epizoda CZ Titulky",
+        "video_id": 30896586
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -377855,6 +377860,16 @@
         "episode_id": 102482,
         "display_name": "Son of a Donkey S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30896307
+      },
+      {
+        "episode_id": 203579,
+        "display_name": "Mí nešťastní mrtví S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30896472
+      },
+      {
+        "episode_id": 177551,
+        "display_name": "Holka jménem Lay Lay S02E05 - Lay Lay v salónu krásy CZ Titulky",
+        "video_id": 30896535
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -575699,6 +575714,11 @@
         "video_id": 30896025
       },
       {
+        "episode_id": 156765,
+        "display_name": "Band of Gold S03E05 - 5. epizoda CZ Titulky",
+        "video_id": 30896586
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -755427,6 +755447,16 @@
         "episode_id": 102482,
         "display_name": "Son of a Donkey S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30896307
+      },
+      {
+        "episode_id": 203579,
+        "display_name": "Mí nešťastní mrtví S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30896472
+      },
+      {
+        "episode_id": 177551,
+        "display_name": "Holka jménem Lay Lay S02E05 - Lay Lay v salónu krásy CZ Titulky",
+        "video_id": 30896535
       }
     ],
     "prepared_not_upload_ready": [
@@ -756588,16 +756618,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 20,
+    "ok": 22,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35924,
+    "needs_whisper": 35922,
     "whisper_confirmed_cz": 3799,
-    "whisper_non_cz_needs_subtitles": 12922,
+    "whisper_non_cz_needs_subtitles": 12923,
     "whisper_failed": 1204
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50896
+    "needs_subtitle_setup_after_prehrajto_processing": 50898
   }
 }
