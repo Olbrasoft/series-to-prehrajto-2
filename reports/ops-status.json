@@ -2,29 +2,45 @@
   "counts": {
     "backlog_episodes": 110944,
     "manifest_upload_ready_episodes": 59,
-    "uploaded_episodes": 80738,
-    "prepared_source_episodes": 69172,
+    "uploaded_episodes": 80741,
+    "prepared_source_episodes": 69170,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 56,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53840,
-    "whisper_review_pending_sources": 37078,
-    "upload_pending_checkpoints": 38,
-    "subtitle_followup_sources": 50950,
-    "subtitle_followup_pending_sources": 50950
+    "whisper_review_pending_sources": 37076,
+    "upload_pending_checkpoints": 39,
+    "subtitle_followup_sources": 50952,
+    "subtitle_followup_pending_sources": 50952
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-07T23:00:39Z",
+      "databaseId": 42423236951,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-07T22:55:57Z",
+      "databaseId": 42422890019,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T22:54:56Z",
       "databaseId": 42422813665,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +52,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T22:54:20Z",
       "databaseId": 42422771256,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T22:42:48Z",
-      "databaseId": 42421888528,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T22:42:48Z",
-      "databaseId": 42421888460,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -198287,6 +198287,16 @@
         "video_id": 30900696
       },
       {
+        "episode_id": 168596,
+        "display_name": "Evilive S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30900782
+      },
+      {
+        "episode_id": 188717,
+        "display_name": "Mickey a závodníci S01E23 - Beznadějný závod CZ Titulky",
+        "video_id": 30900769
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -378110,6 +378120,11 @@
         "episode_id": 171439,
         "display_name": "American Greed S15E02 - 2. epizoda CZ Titulky",
         "video_id": 30900605
+      },
+      {
+        "episode_id": 175826,
+        "display_name": "This Is Football S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30900625
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -576114,6 +576129,16 @@
         "video_id": 30900696
       },
       {
+        "episode_id": 168596,
+        "display_name": "Evilive S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30900782
+      },
+      {
+        "episode_id": 188717,
+        "display_name": "Mickey a závodníci S01E23 - Beznadějný závod CZ Titulky",
+        "video_id": 30900769
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -755937,6 +755962,11 @@
         "episode_id": 171439,
         "display_name": "American Greed S15E02 - 2. epizoda CZ Titulky",
         "video_id": 30900605
+      },
+      {
+        "episode_id": 175826,
+        "display_name": "This Is Football S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30900625
       }
     ],
     "prepared_not_upload_ready": [
@@ -757098,17 +757128,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 16,
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35892,
+    "needs_whisper": 35890,
     "whisper_confirmed_cz": 3810,
-    "whisper_non_cz_needs_subtitles": 12952,
+    "whisper_non_cz_needs_subtitles": 12954,
     "whisper_failed": 1186
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 50950
+    "needs_subtitle_setup_after_prehrajto_processing": 50952
   }
 }
