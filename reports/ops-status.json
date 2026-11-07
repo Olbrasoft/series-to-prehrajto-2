@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 111083,
     "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 80622,
+    "uploaded_episodes": 80623,
     "prepared_source_episodes": 68882,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,19 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53859,
     "whisper_review_pending_sources": 37188,
-    "upload_pending_checkpoints": 36,
+    "upload_pending_checkpoints": 35,
     "subtitle_followup_sources": 50847,
     "subtitle_followup_pending_sources": 50847
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-07T14:04:56Z",
+      "databaseId": 42379899460,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-07T14:04:24Z",
@@ -96,7 +104,7 @@
       "createdAt": "2026-11-07T14:02:04Z",
       "databaseId": 42379671098,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T13:52:55Z",
-      "databaseId": 42378976604,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -377530,6 +377530,11 @@
         "episode_id": 156755,
         "display_name": "Band of Gold S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30892106
+      },
+      {
+        "episode_id": 141743,
+        "display_name": "Safe Harbor S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30892150
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -754777,6 +754782,11 @@
         "episode_id": 156755,
         "display_name": "Band of Gold S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30892106
+      },
+      {
+        "episode_id": 141743,
+        "display_name": "Safe Harbor S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30892150
       }
     ],
     "prepared_not_upload_ready": [
