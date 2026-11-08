@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110688,
     "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 80980,
+    "uploaded_episodes": 80981,
     "prepared_source_episodes": 69305,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,49 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53825,
     "whisper_review_pending_sources": 37057,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51048,
     "subtitle_followup_pending_sources": 51048
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T09:31:12Z",
+      "databaseId": 42467521482,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:30:45Z",
+      "databaseId": 42467487239,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:30:42Z",
+      "databaseId": 42467482556,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:30:39Z",
+      "databaseId": 42467478716,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-08T09:28:26Z",
       "databaseId": 42467322362,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +64,7 @@
       "createdAt": "2026-11-08T09:27:16Z",
       "databaseId": 42467245782,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -60,11 +92,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T09:23:25Z",
       "databaseId": 42466981240,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -88,7 +120,7 @@
       "createdAt": "2026-11-08T09:22:53Z",
       "databaseId": 42466943337,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T09:17:51Z",
-      "databaseId": 42466575980,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T09:15:23Z",
-      "databaseId": 42466404457,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T09:15:15Z",
-      "databaseId": 42466392948,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T09:15:11Z",
-      "databaseId": 42466388151,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -379320,6 +379320,11 @@
         "episode_id": 189175,
         "display_name": "Šmoulové S02E04 - Host, co nechtěl odejít CZ Dabing",
         "video_id": 30913411
+      },
+      {
+        "episode_id": 189178,
+        "display_name": "Šmoulové S02E07 - Šmouli, ano, šmouli! CZ Dabing",
+        "video_id": 30913433
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -758357,6 +758362,11 @@
         "episode_id": 189175,
         "display_name": "Šmoulové S02E04 - Host, co nechtěl odejít CZ Dabing",
         "video_id": 30913411
+      },
+      {
+        "episode_id": 189178,
+        "display_name": "Šmoulové S02E07 - Šmouli, ano, šmouli! CZ Dabing",
+        "video_id": 30913433
       }
     ],
     "prepared_not_upload_ready": [
