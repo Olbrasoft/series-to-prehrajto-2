@@ -2,29 +2,37 @@
   "counts": {
     "backlog_episodes": 110734,
     "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 80950,
+    "uploaded_episodes": 80951,
     "prepared_source_episodes": 69257,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 56,
+    "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53828,
     "whisper_review_pending_sources": 37045,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 51025,
     "subtitle_followup_pending_sources": 51025
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T07:34:30Z",
+      "databaseId": 42459356794,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-08T07:33:22Z",
       "databaseId": 42459277566,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -32,7 +40,7 @@
       "createdAt": "2026-11-08T07:33:06Z",
       "databaseId": 42459259048,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +60,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T07:32:17Z",
       "databaseId": 42459203016,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -88,15 +96,15 @@
       "createdAt": "2026-11-08T07:29:44Z",
       "databaseId": 42459013101,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T07:28:50Z",
       "databaseId": 42458954305,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -140,11 +148,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T07:25:20Z",
       "databaseId": 42458729436,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T07:22:37Z",
-      "databaseId": 42458540946,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -198815,6 +198815,11 @@
         "episode_id": 150229,
         "display_name": "Ať jedí koláče S01E04 - 4. epizoda CZ Dabing",
         "video_id": 30910723
+      },
+      {
+        "episode_id": 171585,
+        "display_name": "Até Que a Vida nos Separe S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30910954
       },
       {
         "episode_id": 114182,
@@ -577704,6 +577709,11 @@
         "video_id": 30910723
       },
       {
+        "episode_id": 171585,
+        "display_name": "Até Que a Vida nos Separe S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30910954
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -759218,7 +759228,6 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 16,
     "ok": 39,
     "resolve_failed": 1
   },
