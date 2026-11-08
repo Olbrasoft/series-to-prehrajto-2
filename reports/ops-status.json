@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110808,
     "manifest_upload_ready_episodes": 11,
-    "uploaded_episodes": 80874,
+    "uploaded_episodes": 80877,
     "prepared_source_episodes": 69194,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,65 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53829,
     "whisper_review_pending_sources": 37032,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 50993,
     "subtitle_followup_pending_sources": 50993
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T03:51:45Z",
+      "databaseId": 42444450033,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T03:51:25Z",
+      "databaseId": 42444430536,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T03:49:59Z",
+      "databaseId": 42444332407,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T03:49:57Z",
+      "databaseId": 42444330174,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T03:47:37Z",
+      "databaseId": 42444176079,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T03:47:33Z",
+      "databaseId": 42444172273,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-08T03:45:54Z",
       "databaseId": 42444062090,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -108,11 +156,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T03:39:42Z",
       "databaseId": 42443648385,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T03:37:55Z",
-      "databaseId": 42443530572,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T03:37:52Z",
-      "databaseId": 42443527614,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T03:37:49Z",
-      "databaseId": 42443524079,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-08T03:36:56Z",
-      "databaseId": 42443461505,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T03:36:49Z",
-      "databaseId": 42443453190,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T03:35:05Z",
-      "databaseId": 42443330877,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -198597,6 +198597,16 @@
         "video_id": 30906450
       },
       {
+        "episode_id": 147140,
+        "display_name": "Dva holma S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30906468
+      },
+      {
+        "episode_id": 147144,
+        "display_name": "Dva holma S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30906620
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -378790,6 +378800,11 @@
         "episode_id": 144366,
         "display_name": "Garouden: Cesta vlka samotáře S01E05 - 5. díl CZ Dabing",
         "video_id": 30906460
+      },
+      {
+        "episode_id": 6502,
+        "display_name": "Návštěvníci S01E05 - Hlavně nenápadně CZ Dabing",
+        "video_id": 30906591
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -577104,6 +577119,16 @@
         "video_id": 30906450
       },
       {
+        "episode_id": 147140,
+        "display_name": "Dva holma S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30906468
+      },
+      {
+        "episode_id": 147144,
+        "display_name": "Dva holma S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30906620
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -757297,6 +757322,11 @@
         "episode_id": 144366,
         "display_name": "Garouden: Cesta vlka samotáře S01E05 - 5. díl CZ Dabing",
         "video_id": 30906460
+      },
+      {
+        "episode_id": 6502,
+        "display_name": "Návštěvníci S01E05 - Hlavně nenápadně CZ Dabing",
+        "video_id": 30906591
       }
     ],
     "prepared_not_upload_ready": [
