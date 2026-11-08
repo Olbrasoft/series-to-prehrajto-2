@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110944,
     "manifest_upload_ready_episodes": 26,
-    "uploaded_episodes": 80786,
+    "uploaded_episodes": 80790,
     "prepared_source_episodes": 69156,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53838,
     "whisper_review_pending_sources": 37067,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 50956,
     "subtitle_followup_pending_sources": 50956
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T00:13:32Z",
+      "databaseId": 42428777307,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T00:13:32Z",
+      "databaseId": 42428777171,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:13:30Z",
+      "databaseId": 42428774902,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-08T00:13:10Z",
       "databaseId": 42428749176,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +100,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T00:09:45Z",
       "databaseId": 42428485496,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T23:57:22Z",
-      "databaseId": 42427546024,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T23:57:19Z",
-      "databaseId": 42427542657,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T23:55:56Z",
-      "databaseId": 42427443764,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -198377,6 +198377,21 @@
         "video_id": 30902192
       },
       {
+        "episode_id": 137213,
+        "display_name": "Divoká krása S02E06 - 6. epizoda CZ Titulky",
+        "video_id": 30902321
+      },
+      {
+        "episode_id": 130048,
+        "display_name": "Rodinné hry S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30902318
+      },
+      {
+        "episode_id": 127889,
+        "display_name": "Baba Candır S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30902382
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -378350,6 +378365,11 @@
         "episode_id": 130242,
         "display_name": "Vyšetřuje Imma Tataranni S02E01 - Všude dobře, doma nejlíp CZ Dabing",
         "video_id": 30902252
+      },
+      {
+        "episode_id": 130246,
+        "display_name": "Vyšetřuje Imma Tataranni S02E05 - Tíha duše CZ Dabing",
+        "video_id": 30902357
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -576444,6 +576464,21 @@
         "video_id": 30902192
       },
       {
+        "episode_id": 137213,
+        "display_name": "Divoká krása S02E06 - 6. epizoda CZ Titulky",
+        "video_id": 30902321
+      },
+      {
+        "episode_id": 130048,
+        "display_name": "Rodinné hry S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30902318
+      },
+      {
+        "episode_id": 127889,
+        "display_name": "Baba Candır S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30902382
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -756417,6 +756452,11 @@
         "episode_id": 130242,
         "display_name": "Vyšetřuje Imma Tataranni S02E01 - Všude dobře, doma nejlíp CZ Dabing",
         "video_id": 30902252
+      },
+      {
+        "episode_id": 130246,
+        "display_name": "Vyšetřuje Imma Tataranni S02E05 - Tíha duše CZ Dabing",
+        "video_id": 30902357
       }
     ],
     "prepared_not_upload_ready": [
