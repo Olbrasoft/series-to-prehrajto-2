@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110640,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81029,
+    "uploaded_episodes": 81031,
     "prepared_source_episodes": 69360,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53823,
     "whisper_review_pending_sources": 37073,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 51078,
     "subtitle_followup_pending_sources": 51078
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T12:39:58Z",
+      "databaseId": 42481310356,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:39:28Z",
+      "databaseId": 42481275491,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:39:25Z",
+      "databaseId": 42481272414,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-08T12:39:03Z",
       "databaseId": 42481245051,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-08T12:38:34Z",
       "databaseId": 42481209144,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +76,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T12:36:41Z",
       "databaseId": 42481071229,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T12:32:51Z",
-      "databaseId": 42480768784,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T12:32:05Z",
-      "databaseId": 42480706474,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T12:31:23Z",
-      "databaseId": 42480650300,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -198990,6 +198990,16 @@
         "episode_id": 149824,
         "display_name": "Barra Brava S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30917285
+      },
+      {
+        "episode_id": 203144,
+        "display_name": "Přírodní kuriozity Davida Attenborougha S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30917391
+      },
+      {
+        "episode_id": 170825,
+        "display_name": "Alguien tiene que saber S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30917406
       },
       {
         "episode_id": 114182,
@@ -578272,6 +578282,16 @@
         "episode_id": 149824,
         "display_name": "Barra Brava S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30917285
+      },
+      {
+        "episode_id": 203144,
+        "display_name": "Přírodní kuriozity Davida Attenborougha S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30917391
+      },
+      {
+        "episode_id": 170825,
+        "display_name": "Alguien tiene que saber S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30917406
       },
       {
         "episode_id": 114182,
