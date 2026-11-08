@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110734,
     "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 80964,
+    "uploaded_episodes": 80966,
     "prepared_source_episodes": 69282,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,19 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53827,
     "whisper_review_pending_sources": 37049,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 51033,
     "subtitle_followup_pending_sources": 51033
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T08:29:35Z",
+      "databaseId": 42463155803,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-08T08:26:11Z",
@@ -32,7 +40,7 @@
       "createdAt": "2026-11-08T08:25:32Z",
       "databaseId": 42462885262,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,19 +52,19 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T08:25:19Z",
       "databaseId": 42462868702,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T08:25:17Z",
       "databaseId": 42462866974,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +72,7 @@
       "createdAt": "2026-11-08T08:25:16Z",
       "databaseId": 42462864420,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -152,7 +160,7 @@
       "createdAt": "2026-11-08T08:18:17Z",
       "databaseId": 42462355079,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "queued",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T08:15:59Z",
-      "databaseId": 42462188737,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -198857,6 +198857,11 @@
         "video_id": 30912070
       },
       {
+        "episode_id": 164964,
+        "display_name": "Leviatan S01E05 - Daleko na východ CZ Titulky",
+        "video_id": 30912218
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -379240,6 +379245,11 @@
         "episode_id": 164962,
         "display_name": "Leviatan S01E03 - Rachoťáci a Darwinisti CZ Titulky",
         "video_id": 30911763
+      },
+      {
+        "episode_id": 156410,
+        "display_name": "Critical Incident S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30912214
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -577814,6 +577824,11 @@
         "video_id": 30912070
       },
       {
+        "episode_id": 164964,
+        "display_name": "Leviatan S01E05 - Daleko na východ CZ Titulky",
+        "video_id": 30912218
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -758197,6 +758212,11 @@
         "episode_id": 164962,
         "display_name": "Leviatan S01E03 - Rachoťáci a Darwinisti CZ Titulky",
         "video_id": 30911763
+      },
+      {
+        "episode_id": 156410,
+        "display_name": "Critical Incident S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30912214
       }
     ],
     "prepared_not_upload_ready": [
