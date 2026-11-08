@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110734,
     "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 80973,
+    "uploaded_episodes": 80974,
     "prepared_source_episodes": 69287,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,65 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53826,
     "whisper_review_pending_sources": 37045,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 51041,
     "subtitle_followup_pending_sources": 51041
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T09:02:54Z",
+      "databaseId": 42465487221,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:01:43Z",
+      "databaseId": 42465402023,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:01:38Z",
+      "databaseId": 42465395796,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:01:35Z",
+      "databaseId": 42465391906,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:00:48Z",
+      "databaseId": 42465330380,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:00:45Z",
+      "databaseId": 42465326176,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-08T08:57:57Z",
       "databaseId": 42465132776,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -52,11 +100,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T08:55:35Z",
       "databaseId": 42464976138,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +124,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T08:52:36Z",
       "databaseId": 42464770486,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -88,7 +136,7 @@
       "createdAt": "2026-11-08T08:52:12Z",
       "databaseId": 42464743953,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-08T08:49:44Z",
-      "databaseId": 42464569251,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T08:49:26Z",
-      "databaseId": 42464548873,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T08:49:07Z",
-      "databaseId": 42464527294,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T08:48:39Z",
-      "databaseId": 42464495876,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T08:48:11Z",
-      "databaseId": 42464462741,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T08:48:05Z",
-      "databaseId": 42464456869,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -198880,6 +198880,11 @@
         "episode_id": 156412,
         "display_name": "Critical Incident S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30912543
+      },
+      {
+        "episode_id": 171584,
+        "display_name": "Até Que a Vida nos Separe S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30912750
       },
       {
         "episode_id": 114182,
@@ -577882,6 +577887,11 @@
         "episode_id": 156412,
         "display_name": "Critical Incident S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30912543
+      },
+      {
+        "episode_id": 171584,
+        "display_name": "Até Que a Vida nos Separe S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30912750
       },
       {
         "episode_id": 114182,
