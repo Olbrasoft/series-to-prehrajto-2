@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110808,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 80925,
-    "prepared_source_episodes": 69221,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 80927,
+    "prepared_source_episodes": 69224,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,33 +14,81 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53828,
     "whisper_review_pending_sources": 37034,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51014,
     "subtitle_followup_pending_sources": 51014
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-08T06:01:38Z",
-      "databaseId": 42453040573,
+      "createdAt": "2026-11-08T06:07:17Z",
+      "databaseId": 42453435351,
       "headBranch": "main",
       "status": "queued",
-      "workflowName": "audit-language"
+      "workflowName": "sync"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-08T05:58:57Z",
-      "databaseId": 42452851500,
+      "createdAt": "2026-11-08T06:06:56Z",
+      "databaseId": 42453411399,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T06:05:20Z",
+      "databaseId": 42453299435,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T06:04:03Z",
+      "databaseId": 42453208672,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T06:02:46Z",
+      "databaseId": 42453116588,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T06:02:07Z",
+      "databaseId": 42453074768,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T06:01:38Z",
+      "databaseId": 42453040573,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T05:58:57Z",
+      "databaseId": 42452851500,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-08T05:58:09Z",
       "databaseId": 42452804855,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -52,11 +100,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T05:57:42Z",
       "databaseId": 42452776785,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T05:52:39Z",
-      "databaseId": 42452467196,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T05:52:08Z",
-      "databaseId": 42452432788,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T05:51:30Z",
-      "databaseId": 42452394361,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T05:51:28Z",
-      "databaseId": 42452391179,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T05:51:24Z",
-      "databaseId": 42452386929,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-08T05:50:14Z",
-      "databaseId": 42452311059,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -198737,6 +198737,11 @@
         "video_id": 30909216
       },
       {
+        "episode_id": 172940,
+        "display_name": "The Defects S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30909320
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -379045,6 +379050,11 @@
         "episode_id": 6511,
         "display_name": "Návštěvníci S01E14 - Po nás potopa CZ Dabing",
         "video_id": 30908952
+      },
+      {
+        "episode_id": 170822,
+        "display_name": "Alguien tiene que saber S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30909297
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -577499,6 +577509,11 @@
         "video_id": 30909216
       },
       {
+        "episode_id": 172940,
+        "display_name": "The Defects S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30909320
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -757807,6 +757822,11 @@
         "episode_id": 6511,
         "display_name": "Návštěvníci S01E14 - Po nás potopa CZ Dabing",
         "video_id": 30908952
+      },
+      {
+        "episode_id": 170822,
+        "display_name": "Alguien tiene que saber S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30909297
       }
     ],
     "prepared_not_upload_ready": [
