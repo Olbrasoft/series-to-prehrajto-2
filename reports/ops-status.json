@@ -2,37 +2,109 @@
   "counts": {
     "backlog_episodes": 110688,
     "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 81023,
-    "prepared_source_episodes": 69349,
+    "uploaded_episodes": 81026,
+    "prepared_source_episodes": 69350,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 21,
+    "language_audited_sources": 23,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53822,
-    "whisper_review_pending_sources": 37071,
-    "upload_pending_checkpoints": 38,
-    "subtitle_followup_sources": 51073,
-    "subtitle_followup_pending_sources": 51073
+    "whisper_review_pending_sources": 37072,
+    "upload_pending_checkpoints": 37,
+    "subtitle_followup_sources": 51074,
+    "subtitle_followup_pending_sources": 51074
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:18:37Z",
+      "databaseId": 42479630007,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T12:17:57Z",
+      "databaseId": 42479577645,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:17:56Z",
+      "databaseId": 42479577076,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "refresh-backlog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:17:43Z",
+      "databaseId": 42479558560,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:16:26Z",
+      "databaseId": 42479457071,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:16:20Z",
+      "databaseId": 42479449819,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:16:17Z",
+      "databaseId": 42479446379,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:16:15Z",
+      "databaseId": 42479443360,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T12:16:12Z",
+      "databaseId": 42479439600,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-08T12:15:33Z",
       "databaseId": 42479384892,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T12:15:29Z",
       "databaseId": 42479379274,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T12:03:57Z",
-      "databaseId": 42478490453,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T12:01:37Z",
-      "databaseId": 42478310141,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T12:01:32Z",
-      "databaseId": 42478304265,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T11:58:10Z",
-      "databaseId": 42478043751,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T11:53:57Z",
-      "databaseId": 42477745861,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T11:53:52Z",
-      "databaseId": 42477739890,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T11:53:27Z",
-      "databaseId": 42477709925,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T11:52:38Z",
-      "databaseId": 42477652372,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T11:52:33Z",
-      "databaseId": 42477647134,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -198977,6 +198977,16 @@
         "video_id": 30917039
       },
       {
+        "episode_id": 145729,
+        "display_name": "Sbírka krátkých filmů S02E04 - Dinosauří barbar CZ Titulky",
+        "video_id": 30917056
+      },
+      {
+        "episode_id": 116373,
+        "display_name": "Geniální průšvihy S01E01 - Dar CZ Dabing",
+        "video_id": 30917125
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -379535,6 +379545,11 @@
         "episode_id": 124043,
         "display_name": "Hustší než voda S01E02 - Dluh CZ Dabing",
         "video_id": 30916757
+      },
+      {
+        "episode_id": 164970,
+        "display_name": "Leviatan S01E11 - Goliáš CZ Titulky",
+        "video_id": 30917103
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -578229,6 +578244,16 @@
         "video_id": 30917039
       },
       {
+        "episode_id": 145729,
+        "display_name": "Sbírka krátkých filmů S02E04 - Dinosauří barbar CZ Titulky",
+        "video_id": 30917056
+      },
+      {
+        "episode_id": 116373,
+        "display_name": "Geniální průšvihy S01E01 - Dar CZ Dabing",
+        "video_id": 30917125
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -758787,6 +758812,11 @@
         "episode_id": 124043,
         "display_name": "Hustší než voda S01E02 - Dluh CZ Dabing",
         "video_id": 30916757
+      },
+      {
+        "episode_id": 164970,
+        "display_name": "Leviatan S01E11 - Goliáš CZ Titulky",
+        "video_id": 30917103
       }
     ],
     "prepared_not_upload_ready": [
@@ -759948,17 +759978,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 1,
+    "disabled": 3,
     "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35884,
+    "needs_whisper": 35885,
     "whisper_confirmed_cz": 3832,
-    "whisper_non_cz_needs_subtitles": 12919,
+    "whisper_non_cz_needs_subtitles": 12918,
     "whisper_failed": 1187
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51073
+    "needs_subtitle_setup_after_prehrajto_processing": 51074
   }
 }
