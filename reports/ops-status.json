@@ -1,30 +1,118 @@
 {
   "counts": {
     "backlog_episodes": 110640,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 81055,
-    "prepared_source_episodes": 69385,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 81057,
+    "prepared_source_episodes": 69384,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 44,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 22,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53816,
     "whisper_review_pending_sources": 37047,
-    "upload_pending_checkpoints": 38,
-    "subtitle_followup_sources": 51095,
-    "subtitle_followup_pending_sources": 51095
+    "upload_pending_checkpoints": 37,
+    "subtitle_followup_sources": 51096,
+    "subtitle_followup_pending_sources": 51096
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T14:32:48Z",
+      "databaseId": 42490336853,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T14:32:47Z",
+      "databaseId": 42490335796,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T14:32:44Z",
+      "databaseId": 42490331567,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T14:32:44Z",
+      "databaseId": 42490330852,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T14:32:37Z",
+      "databaseId": 42490321454,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T14:32:28Z",
+      "databaseId": 42490309067,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T14:32:24Z",
+      "databaseId": 42490303655,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T14:32:05Z",
+      "databaseId": 42490275374,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T14:32:02Z",
+      "databaseId": 42490270018,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T14:30:59Z",
+      "databaseId": 42490180355,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T14:29:35Z",
+      "databaseId": 42490058427,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-08T14:26:16Z",
       "databaseId": 42489801792,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -36,19 +124,19 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T14:23:26Z",
       "databaseId": 42489573569,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T14:22:31Z",
       "databaseId": 42489498247,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -60,11 +148,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T14:22:17Z",
       "databaseId": 42489479503,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -89,94 +177,6 @@
       "databaseId": 42489412265,
       "headBranch": "main",
       "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-08T14:20:39Z",
-      "databaseId": 42489342140,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T14:20:23Z",
-      "databaseId": 42489318818,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T14:19:47Z",
-      "databaseId": 42489262197,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T14:19:44Z",
-      "databaseId": 42489258791,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T14:17:58Z",
-      "databaseId": 42489112205,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T14:17:54Z",
-      "databaseId": 42489107425,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T14:17:30Z",
-      "databaseId": 42489076351,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T14:15:51Z",
-      "databaseId": 42488939808,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T14:15:02Z",
-      "databaseId": 42488871280,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T14:13:52Z",
-      "databaseId": 42488778751,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T14:13:47Z",
-      "databaseId": 42488772984,
-      "headBranch": "main",
-      "status": "in_progress",
       "workflowName": "prepare-manifest"
     }
   ],
@@ -379695,6 +379695,16 @@
         "episode_id": 171451,
         "display_name": "Čerstvé, smažené a křupavé S01E08 - Cleveland CZ Titulky",
         "video_id": 30919461
+      },
+      {
+        "episode_id": 149830,
+        "display_name": "Barra Brava S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30919487
+      },
+      {
+        "episode_id": 164102,
+        "display_name": "Hlava Joaquína Murriety S01E06 - Vysoká zvěř CZ Titulky",
+        "video_id": 30919526
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -759107,6 +759117,16 @@
         "episode_id": 171451,
         "display_name": "Čerstvé, smažené a křupavé S01E08 - Cleveland CZ Titulky",
         "video_id": 30919461
+      },
+      {
+        "episode_id": 149830,
+        "display_name": "Barra Brava S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30919487
+      },
+      {
+        "episode_id": 164102,
+        "display_name": "Hlava Joaquína Murriety S01E06 - Vysoká zvěř CZ Titulky",
+        "video_id": 30919526
       }
     ],
     "prepared_not_upload_ready": [
@@ -760268,6 +760288,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 2,
     "ok": 19,
     "resolve_failed": 1
   },
@@ -760278,6 +760299,6 @@
     "whisper_failed": 1184
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51095
+    "needs_subtitle_setup_after_prehrajto_processing": 51096
   }
 }
