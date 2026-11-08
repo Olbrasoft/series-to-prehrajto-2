@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110604,
     "manifest_upload_ready_episodes": 26,
-    "uploaded_episodes": 81101,
+    "uploaded_episodes": 81102,
     "prepared_source_episodes": 69459,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,19 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53819,
     "whisper_review_pending_sources": 37001,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 51132,
     "subtitle_followup_pending_sources": 51132
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T18:05:48Z",
+      "databaseId": 42508239666,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-08T18:05:13Z",
@@ -44,11 +52,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T18:03:47Z",
       "databaseId": 42508061739,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -104,7 +112,7 @@
       "createdAt": "2026-11-08T18:00:21Z",
       "databaseId": 42507753756,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T17:51:32Z",
-      "databaseId": 42507044283,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -379925,6 +379925,11 @@
         "episode_id": 189190,
         "display_name": "Šmoulové S02E22 - Ukradený portrét CZ Dabing",
         "video_id": 30923473
+      },
+      {
+        "episode_id": 163759,
+        "display_name": "Adventure Beast S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30923500
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -759567,6 +759572,11 @@
         "episode_id": 189190,
         "display_name": "Šmoulové S02E22 - Ukradený portrét CZ Dabing",
         "video_id": 30923473
+      },
+      {
+        "episode_id": 163759,
+        "display_name": "Adventure Beast S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30923500
       }
     ],
     "prepared_not_upload_ready": [
