@@ -1,30 +1,94 @@
 {
   "counts": {
     "backlog_episodes": 110604,
-    "manifest_upload_ready_episodes": 21,
-    "uploaded_episodes": 81074,
-    "prepared_source_episodes": 69446,
+    "manifest_upload_ready_episodes": 26,
+    "uploaded_episodes": 81078,
+    "prepared_source_episodes": 69445,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 44,
+    "description_errors": 45,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53821,
-    "whisper_review_pending_sources": 37033,
-    "upload_pending_checkpoints": 38,
-    "subtitle_followup_sources": 51116,
-    "subtitle_followup_pending_sources": 51116
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
+    "whisper_review_sources": 53819,
+    "whisper_review_pending_sources": 37022,
+    "upload_pending_checkpoints": 37,
+    "subtitle_followup_sources": 51119,
+    "subtitle_followup_pending_sources": 51119
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T16:47:52Z",
+      "databaseId": 42501705062,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T16:45:39Z",
+      "databaseId": 42501521481,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T16:45:34Z",
+      "databaseId": 42501514547,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T16:42:45Z",
+      "databaseId": 42501278138,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T16:42:41Z",
+      "databaseId": 42501273880,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T16:42:16Z",
+      "databaseId": 42501238513,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T16:41:25Z",
+      "databaseId": 42501167330,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T16:38:37Z",
+      "databaseId": 42500930065,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-08T16:37:26Z",
       "databaseId": 42500834981,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +104,7 @@
       "createdAt": "2026-11-08T16:36:38Z",
       "databaseId": 42500769382,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -48,7 +112,7 @@
       "createdAt": "2026-11-08T16:36:16Z",
       "databaseId": 42500738133,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,19 +148,19 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T16:32:49Z",
       "databaseId": 42500438871,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T16:32:46Z",
       "databaseId": 42500434554,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -104,7 +168,7 @@
       "createdAt": "2026-11-08T16:32:42Z",
       "databaseId": 42500428910,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-descriptions"
     },
     {
@@ -112,72 +176,8 @@
       "createdAt": "2026-11-08T16:32:21Z",
       "databaseId": 42500398010,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T16:32:13Z",
-      "databaseId": 42500386731,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T16:31:18Z",
-      "databaseId": 42500303470,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T16:28:42Z",
-      "databaseId": 42500078110,
-      "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-08T16:28:02Z",
-      "databaseId": 42500023319,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T16:27:58Z",
-      "databaseId": 42500017221,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T16:27:24Z",
-      "databaseId": 42499971390,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T16:27:22Z",
-      "databaseId": 42499969040,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T16:27:18Z",
-      "databaseId": 42499963973,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
+      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -199102,6 +199102,11 @@
         "video_id": 30921964
       },
       {
+        "episode_id": 171589,
+        "display_name": "Até Que a Vida nos Separe S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30922125
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -379790,6 +379795,21 @@
         "episode_id": 147487,
         "display_name": "Five Daughters S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30921245
+      },
+      {
+        "episode_id": 171590,
+        "display_name": "Até Que a Vida nos Separe S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30922007
+      },
+      {
+        "episode_id": 163758,
+        "display_name": "Adventure Beast S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30922115
+      },
+      {
+        "episode_id": 189187,
+        "display_name": "Šmoulové S02E18 - Starosti se soufflé CZ Dabing",
+        "video_id": 30922269
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -578609,6 +578629,11 @@
         "video_id": 30921964
       },
       {
+        "episode_id": 171589,
+        "display_name": "Até Que a Vida nos Separe S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30922125
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -759297,6 +759322,21 @@
         "episode_id": 147487,
         "display_name": "Five Daughters S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30921245
+      },
+      {
+        "episode_id": 171590,
+        "display_name": "Até Que a Vida nos Separe S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30922007
+      },
+      {
+        "episode_id": 163758,
+        "display_name": "Adventure Beast S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30922115
+      },
+      {
+        "episode_id": 189187,
+        "display_name": "Šmoulové S02E18 - Starosti se soufflé CZ Dabing",
+        "video_id": 30922269
       }
     ],
     "prepared_not_upload_ready": [
@@ -760458,16 +760498,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35886,
-    "whisper_confirmed_cz": 3844,
-    "whisper_non_cz_needs_subtitles": 12944,
-    "whisper_failed": 1147
+    "needs_whisper": 35877,
+    "whisper_confirmed_cz": 3849,
+    "whisper_non_cz_needs_subtitles": 12948,
+    "whisper_failed": 1145
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51116
+    "needs_subtitle_setup_after_prehrajto_processing": 51119
   }
 }
