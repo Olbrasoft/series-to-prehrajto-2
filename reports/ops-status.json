@@ -1,38 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 110944,
-    "manifest_upload_ready_episodes": 28,
-    "uploaded_episodes": 80785,
-    "prepared_source_episodes": 69158,
+    "manifest_upload_ready_episodes": 26,
+    "uploaded_episodes": 80786,
+    "prepared_source_episodes": 69156,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 43,
-    "language_whisper_attempted_sources": 43,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53838,
     "whisper_review_pending_sources": 37067,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 50956,
     "subtitle_followup_pending_sources": 50956
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-08T00:10:55Z",
-      "databaseId": 42428578219,
+      "createdAt": "2026-11-08T00:13:10Z",
+      "databaseId": 42428749176,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "update-descriptions"
+      "status": "pending",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T00:13:07Z",
+      "databaseId": 42428745245,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:13:05Z",
+      "databaseId": 42428743075,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T00:11:47Z",
+      "databaseId": 42428641422,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:11:43Z",
+      "databaseId": 42428636126,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T00:10:55Z",
+      "databaseId": 42428578219,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-08T00:10:52Z",
       "databaseId": 42428574580,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -40,7 +80,7 @@
       "createdAt": "2026-11-08T00:09:45Z",
       "databaseId": 42428485496,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T00:09:12Z",
       "databaseId": 42428447037,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -92,11 +132,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T00:02:25Z",
       "databaseId": 42427924588,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T23:55:52Z",
-      "databaseId": 42427439793,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T23:53:22Z",
-      "databaseId": 42427262382,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T23:52:55Z",
-      "databaseId": 42427229517,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T23:52:16Z",
-      "databaseId": 42427182835,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T23:52:16Z",
-      "databaseId": 42427182424,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -378345,6 +378345,11 @@
         "episode_id": 127895,
         "display_name": "Baba Candır S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30902261
+      },
+      {
+        "episode_id": 130242,
+        "display_name": "Vyšetřuje Imma Tataranni S02E01 - Všude dobře, doma nejlíp CZ Dabing",
+        "video_id": 30902252
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -756407,6 +756412,11 @@
         "episode_id": 127895,
         "display_name": "Baba Candır S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30902261
+      },
+      {
+        "episode_id": 130242,
+        "display_name": "Vyšetřuje Imma Tataranni S02E01 - Všude dobře, doma nejlíp CZ Dabing",
+        "video_id": 30902252
       }
     ],
     "prepared_not_upload_ready": [
@@ -757568,7 +757578,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 42,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
