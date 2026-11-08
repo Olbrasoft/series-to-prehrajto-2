@@ -2,23 +2,87 @@
   "counts": {
     "backlog_episodes": 110688,
     "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 81014,
-    "prepared_source_episodes": 69341,
+    "uploaded_episodes": 81018,
+    "prepared_source_episodes": 69343,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 48,
-    "language_whisper_attempted_sources": 48,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53822,
     "whisper_review_pending_sources": 37071,
-    "upload_pending_checkpoints": 38,
-    "subtitle_followup_sources": 51067,
-    "subtitle_followup_pending_sources": 51067
+    "upload_pending_checkpoints": 37,
+    "subtitle_followup_sources": 51068,
+    "subtitle_followup_pending_sources": 51068
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T11:42:47Z",
+      "databaseId": 42476946004,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T11:42:44Z",
+      "databaseId": 42476942388,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T11:41:46Z",
+      "databaseId": 42476871633,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T11:41:42Z",
+      "databaseId": 42476867927,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T11:40:54Z",
+      "databaseId": 42476808981,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T11:40:39Z",
+      "databaseId": 42476792609,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T11:40:36Z",
+      "databaseId": 42476789550,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T11:40:33Z",
+      "databaseId": 42476785548,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-08T11:38:31Z",
@@ -40,7 +104,7 @@
       "createdAt": "2026-11-08T11:37:58Z",
       "databaseId": 42476600289,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -48,7 +112,7 @@
       "createdAt": "2026-11-08T11:37:15Z",
       "databaseId": 42476552631,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
@@ -60,11 +124,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T11:34:06Z",
       "databaseId": 42476320634,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +140,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T11:32:53Z",
       "databaseId": 42476232035,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -100,84 +164,20 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T11:31:25Z",
       "databaseId": 42476118768,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T11:31:17Z",
       "databaseId": 42476108478,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T11:27:22Z",
-      "databaseId": 42475816202,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T11:27:12Z",
-      "databaseId": 42475805042,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T11:26:35Z",
-      "databaseId": 42475761790,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T11:26:23Z",
-      "databaseId": 42475746829,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T11:23:48Z",
-      "databaseId": 42475560985,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T11:23:42Z",
-      "databaseId": 42475554289,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T11:23:37Z",
-      "databaseId": 42475548297,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T11:23:36Z",
-      "databaseId": 42475546393,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -198952,6 +198952,21 @@
         "video_id": 30916220
       },
       {
+        "episode_id": 160296,
+        "display_name": "Uzdravení S01E01 - Misionáři smrti CZ Dabing",
+        "video_id": 30916254
+      },
+      {
+        "episode_id": 164961,
+        "display_name": "Leviatan S01E02 - Předehra k válce CZ Titulky",
+        "video_id": 30916322
+      },
+      {
+        "episode_id": 145728,
+        "display_name": "Sbírka krátkých filmů S02E03 - Číslo 2 do ketteringu CZ Titulky",
+        "video_id": 30916307
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -379490,6 +379505,11 @@
         "episode_id": 201634,
         "display_name": "Šmoulové S01E26 - Wafflová středa CZ Dabing",
         "video_id": 30916129
+      },
+      {
+        "episode_id": 189179,
+        "display_name": "Šmoulové S02E09 - Obří láska, 1. část CZ Dabing",
+        "video_id": 30916272
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -578159,6 +578179,21 @@
         "video_id": 30916220
       },
       {
+        "episode_id": 160296,
+        "display_name": "Uzdravení S01E01 - Misionáři smrti CZ Dabing",
+        "video_id": 30916254
+      },
+      {
+        "episode_id": 164961,
+        "display_name": "Leviatan S01E02 - Předehra k válce CZ Titulky",
+        "video_id": 30916322
+      },
+      {
+        "episode_id": 145728,
+        "display_name": "Sbírka krátkých filmů S02E03 - Číslo 2 do ketteringu CZ Titulky",
+        "video_id": 30916307
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -758697,6 +758732,11 @@
         "episode_id": 201634,
         "display_name": "Šmoulové S01E26 - Wafflová středa CZ Dabing",
         "video_id": 30916129
+      },
+      {
+        "episode_id": 189179,
+        "display_name": "Šmoulové S02E09 - Obří láska, 1. část CZ Dabing",
+        "video_id": 30916272
       }
     ],
     "prepared_not_upload_ready": [
@@ -759858,7 +759898,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 47,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -759868,6 +759908,6 @@
     "whisper_failed": 1187
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51067
+    "needs_subtitle_setup_after_prehrajto_processing": 51068
   }
 }
