@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110944,
-    "manifest_upload_ready_episodes": 30,
-    "uploaded_episodes": 80784,
-    "prepared_source_episodes": 69159,
+    "manifest_upload_ready_episodes": 28,
+    "uploaded_episodes": 80785,
+    "prepared_source_episodes": 69158,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -14,11 +14,27 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53838,
     "whisper_review_pending_sources": 37067,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 50956,
     "subtitle_followup_pending_sources": 50956
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:10:55Z",
+      "databaseId": 42428578219,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:10:52Z",
+      "databaseId": 42428574580,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-08T00:09:45Z",
@@ -44,11 +60,11 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T00:08:33Z",
       "databaseId": 42428398282,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T23:52:13Z",
-      "databaseId": 42427179165,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T23:51:35Z",
-      "databaseId": 42427130585,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -378340,6 +378340,11 @@
         "episode_id": 137211,
         "display_name": "Divoká krása S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30902148
+      },
+      {
+        "episode_id": 127895,
+        "display_name": "Baba Candır S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30902261
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -756397,6 +756402,11 @@
         "episode_id": 137211,
         "display_name": "Divoká krása S02E04 - 4. epizoda CZ Titulky",
         "video_id": 30902148
+      },
+      {
+        "episode_id": 127895,
+        "display_name": "Baba Candır S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30902261
       }
     ],
     "prepared_not_upload_ready": [
