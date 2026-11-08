@@ -2,16 +2,16 @@
   "counts": {
     "backlog_episodes": 110808,
     "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 80918,
+    "uploaded_episodes": 80919,
     "prepared_source_episodes": 69220,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 48,
-    "language_whisper_attempted_sources": 41,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53828,
     "whisper_review_pending_sources": 37033,
     "upload_pending_checkpoints": 40,
@@ -21,10 +21,34 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T05:42:10Z",
+      "databaseId": 42451798560,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T05:40:09Z",
+      "databaseId": 42451666893,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T05:40:04Z",
+      "databaseId": 42451661348,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-08T05:39:36Z",
       "databaseId": 42451631586,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-08T05:38:51Z",
       "databaseId": 42451587575,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -40,7 +64,7 @@
       "createdAt": "2026-11-08T05:37:40Z",
       "databaseId": 42451516691,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,11 +108,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T05:33:23Z",
       "databaseId": 42451233516,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -140,44 +164,20 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T05:31:31Z",
       "databaseId": 42451106864,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T05:31:31Z",
       "databaseId": 42451106469,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T05:30:47Z",
-      "databaseId": 42451056075,
-      "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T05:30:42Z",
-      "databaseId": 42451050164,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T05:27:43Z",
-      "databaseId": 42450860920,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -198705,6 +198705,11 @@
         "episode_id": 181312,
         "display_name": "Brian and Maggie S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30908908
+      },
+      {
+        "episode_id": 181349,
+        "display_name": "Vražedné nahrávky S10E06 - 6. epizoda CZ Titulky",
+        "video_id": 30908935
       },
       {
         "episode_id": 114182,
@@ -577434,6 +577439,11 @@
         "video_id": 30908908
       },
       {
+        "episode_id": 181349,
+        "display_name": "Vražedné nahrávky S10E06 - 6. epizoda CZ Titulky",
+        "video_id": 30908935
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -758898,8 +758908,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
-    "ok": 40,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
