@@ -1,19 +1,19 @@
 {
   "counts": {
     "backlog_episodes": 110734,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 80958,
-    "prepared_source_episodes": 69262,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 80961,
+    "prepared_source_episodes": 69270,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 46,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53827,
-    "whisper_review_pending_sources": 37045,
+    "whisper_review_sources": 53828,
+    "whisper_review_pending_sources": 37047,
     "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 51029,
     "subtitle_followup_pending_sources": 51029
@@ -21,26 +21,130 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-08T08:00:40Z",
-      "databaseId": 42461082235,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T07:59:29Z",
-      "databaseId": 42460994282,
+      "createdAt": "2026-11-08T08:06:20Z",
+      "databaseId": 42461491705,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T08:06:16Z",
+      "databaseId": 42461487253,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T08:06:14Z",
+      "databaseId": 42461484594,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T08:05:47Z",
+      "databaseId": 42461454652,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T08:05:32Z",
+      "databaseId": 42461435679,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T08:04:10Z",
+      "databaseId": 42461336322,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T08:03:39Z",
+      "databaseId": 42461300878,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T08:01:48Z",
+      "databaseId": 42461168822,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T08:01:44Z",
+      "databaseId": 42461164492,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T08:01:39Z",
+      "databaseId": 42461158389,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T08:01:28Z",
+      "databaseId": 42461144383,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T08:01:27Z",
+      "databaseId": 42461143441,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T08:01:22Z",
+      "databaseId": 42461137391,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T08:00:40Z",
+      "databaseId": 42461082235,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T07:59:29Z",
+      "databaseId": 42460994282,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-08T07:59:28Z",
       "databaseId": 42460993242,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -74,110 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T07:52:22Z",
-      "databaseId": 42460537551,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T07:52:21Z",
-      "databaseId": 42460535886,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T07:51:54Z",
-      "databaseId": 42460505399,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T07:51:35Z",
-      "databaseId": 42460485486,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T07:51:15Z",
-      "databaseId": 42460464956,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T07:51:11Z",
-      "databaseId": 42460460249,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T07:51:04Z",
-      "databaseId": 42460452495,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T07:50:05Z",
-      "databaseId": 42460386594,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T07:49:59Z",
-      "databaseId": 42460378604,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-08T07:49:57Z",
-      "databaseId": 42460376587,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T07:49:31Z",
-      "databaseId": 42460349465,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T07:49:28Z",
-      "databaseId": 42460346864,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T07:48:02Z",
-      "databaseId": 42460252422,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -198832,6 +198832,16 @@
         "video_id": 30911571
       },
       {
+        "episode_id": 156409,
+        "display_name": "Critical Incident S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30911749
+      },
+      {
+        "episode_id": 156408,
+        "display_name": "Critical Incident S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30911756
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -379210,6 +379220,11 @@
         "episode_id": 110530,
         "display_name": "Agent shůry S01E06 - Štěstí na celý život CZ Dabing",
         "video_id": 30911580
+      },
+      {
+        "episode_id": 164962,
+        "display_name": "Leviatan S01E03 - Rachoťáci a Darwinisti CZ Titulky",
+        "video_id": 30911763
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -577759,6 +577774,16 @@
         "video_id": 30911571
       },
       {
+        "episode_id": 156409,
+        "display_name": "Critical Incident S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30911749
+      },
+      {
+        "episode_id": 156408,
+        "display_name": "Critical Incident S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30911756
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -758137,6 +758162,11 @@
         "episode_id": 110530,
         "display_name": "Agent shůry S01E06 - Štěstí na celý život CZ Dabing",
         "video_id": 30911580
+      },
+      {
+        "episode_id": 164962,
+        "display_name": "Leviatan S01E03 - Rachoťáci a Darwinisti CZ Titulky",
+        "video_id": 30911763
       }
     ],
     "prepared_not_upload_ready": [
@@ -759298,13 +759328,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 6,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35859,
+    "needs_whisper": 35861,
     "whisper_confirmed_cz": 3831,
-    "whisper_non_cz_needs_subtitles": 12951,
+    "whisper_non_cz_needs_subtitles": 12950,
     "whisper_failed": 1186
   },
   "subtitle_followup_statuses": {
