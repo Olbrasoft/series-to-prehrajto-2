@@ -2,8 +2,8 @@
   "counts": {
     "backlog_episodes": 110640,
     "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 81037,
-    "prepared_source_episodes": 69362,
+    "uploaded_episodes": 81038,
+    "prepared_source_episodes": 69361,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -14,11 +14,67 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53821,
     "whisper_review_pending_sources": 37063,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51085,
     "subtitle_followup_pending_sources": 51085
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T13:04:24Z",
+      "databaseId": 42483188578,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T13:04:09Z",
+      "databaseId": 42483168493,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T13:04:06Z",
+      "databaseId": 42483164570,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T13:04:01Z",
+      "databaseId": 42483157917,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T13:03:08Z",
+      "databaseId": 42483084812,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T13:03:02Z",
+      "databaseId": 42483075832,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T13:02:59Z",
+      "databaseId": 42483072196,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-08T13:02:31Z",
@@ -40,7 +96,7 @@
       "createdAt": "2026-11-08T13:00:44Z",
       "databaseId": 42482887305,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,15 +112,15 @@
       "createdAt": "2026-11-08T12:54:52Z",
       "databaseId": 42482442884,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T12:54:49Z",
       "databaseId": 42482439252,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T12:51:56Z",
-      "databaseId": 42482222570,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T12:51:23Z",
-      "databaseId": 42482180667,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T12:51:08Z",
-      "databaseId": 42482161186,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T12:51:07Z",
-      "databaseId": 42482160920,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T12:51:02Z",
-      "databaseId": 42482154561,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T12:50:21Z",
-      "databaseId": 42482102385,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T12:49:51Z",
-      "databaseId": 42482062256,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -379605,6 +379605,11 @@
         "episode_id": 172943,
         "display_name": "The Defects S01E07 - 7. epizoda CZ Titulky",
         "video_id": 30917766
+      },
+      {
+        "episode_id": 165570,
+        "display_name": "Finding Joy S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30917755
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -758927,6 +758932,11 @@
         "episode_id": 172943,
         "display_name": "The Defects S01E07 - 7. epizoda CZ Titulky",
         "video_id": 30917766
+      },
+      {
+        "episode_id": 165570,
+        "display_name": "Finding Joy S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30917755
       }
     ],
     "prepared_not_upload_ready": [
