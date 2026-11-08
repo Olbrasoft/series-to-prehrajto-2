@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110944,
-    "manifest_upload_ready_episodes": 32,
-    "uploaded_episodes": 80781,
-    "prepared_source_episodes": 69157,
+    "manifest_upload_ready_episodes": 30,
+    "uploaded_episodes": 80784,
+    "prepared_source_episodes": 69159,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -14,25 +14,81 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53838,
     "whisper_review_pending_sources": 37067,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 50956,
     "subtitle_followup_pending_sources": 50956
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-08T00:02:25Z",
-      "databaseId": 42427924588,
+      "createdAt": "2026-11-08T00:09:45Z",
+      "databaseId": 42428485496,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "audit-language"
+      "status": "pending",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T00:09:41Z",
+      "databaseId": 42428480778,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:09:12Z",
+      "databaseId": 42428447037,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:08:33Z",
+      "databaseId": 42428398282,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T00:07:35Z",
+      "databaseId": 42428325205,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T00:07:09Z",
+      "databaseId": 42428293285,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T00:07:06Z",
+      "databaseId": 42428289220,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:02:25Z",
+      "databaseId": 42427924588,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-07T23:59:01Z",
       "databaseId": 42427656432,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +96,7 @@
       "createdAt": "2026-11-07T23:57:59Z",
       "databaseId": 42427586042,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -100,11 +156,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-07T23:52:16Z",
       "databaseId": 42427182424,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "prepare-sources"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T23:50:08Z",
-      "databaseId": 42427025029,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-07T23:49:52Z",
-      "databaseId": 42427004670,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T23:47:17Z",
-      "databaseId": 42426813895,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-07T23:42:29Z",
-      "databaseId": 42426461598,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T23:41:54Z",
-      "databaseId": 42426415547,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T23:41:50Z",
-      "databaseId": 42426411852,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T23:41:48Z",
-      "databaseId": 42426408541,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -198367,6 +198367,16 @@
         "video_id": 30902090
       },
       {
+        "episode_id": 137209,
+        "display_name": "Divoká krása S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 30902214
+      },
+      {
+        "episode_id": 130248,
+        "display_name": "Vyšetřuje Imma Tataranni S02E07 - Anděl, nebo ďábel CZ Dabing",
+        "video_id": 30902192
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -378325,6 +378335,11 @@
         "episode_id": 127902,
         "display_name": "Baba Candır S01E16 - 16. epizoda CZ Titulky",
         "video_id": 30902137
+      },
+      {
+        "episode_id": 137211,
+        "display_name": "Divoká krása S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30902148
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -576409,6 +576424,16 @@
         "video_id": 30902090
       },
       {
+        "episode_id": 137209,
+        "display_name": "Divoká krása S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 30902214
+      },
+      {
+        "episode_id": 130248,
+        "display_name": "Vyšetřuje Imma Tataranni S02E07 - Anděl, nebo ďábel CZ Dabing",
+        "video_id": 30902192
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -756367,6 +756392,11 @@
         "episode_id": 127902,
         "display_name": "Baba Candır S01E16 - 16. epizoda CZ Titulky",
         "video_id": 30902137
+      },
+      {
+        "episode_id": 137211,
+        "display_name": "Divoká krása S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30902148
       }
     ],
     "prepared_not_upload_ready": [
