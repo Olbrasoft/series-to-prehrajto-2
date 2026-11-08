@@ -2,29 +2,61 @@
   "counts": {
     "backlog_episodes": 110640,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81034,
-    "prepared_source_episodes": 69362,
+    "uploaded_episodes": 81036,
+    "prepared_source_episodes": 69365,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
-    "language_whisper_attempted_sources": 23,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53822,
     "whisper_review_pending_sources": 37069,
-    "upload_pending_checkpoints": 37,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 51081,
     "subtitle_followup_pending_sources": 51081
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T12:54:52Z",
+      "databaseId": 42482442884,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:54:49Z",
+      "databaseId": 42482439252,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:54:15Z",
+      "databaseId": 42482398036,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T12:54:12Z",
+      "databaseId": 42482394181,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-08T12:53:42Z",
       "databaseId": 42482356087,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +68,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T12:53:38Z",
       "databaseId": 42482350889,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -48,7 +80,7 @@
       "createdAt": "2026-11-08T12:53:33Z",
       "databaseId": 42482345108,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -76,11 +108,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T12:51:08Z",
       "databaseId": 42482161186,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T12:44:12Z",
-      "databaseId": 42481629889,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T12:44:09Z",
-      "databaseId": 42481625406,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T12:43:29Z",
-      "databaseId": 42481575367,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T12:43:25Z",
-      "databaseId": 42481571010,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -199010,6 +199010,16 @@
         "episode_id": 170824,
         "display_name": "Alguien tiene que saber S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30917559
+      },
+      {
+        "episode_id": 160301,
+        "display_name": "Uzdravení S02E03 - Můj život za tvoji smrt CZ Titulky",
+        "video_id": 30917724
+      },
+      {
+        "episode_id": 172944,
+        "display_name": "The Defects S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30917738
       },
       {
         "episode_id": 114182,
@@ -578319,6 +578329,16 @@
         "video_id": 30917559
       },
       {
+        "episode_id": 160301,
+        "display_name": "Uzdravení S02E03 - Můj život za tvoji smrt CZ Titulky",
+        "video_id": 30917724
+      },
+      {
+        "episode_id": 172944,
+        "display_name": "The Defects S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30917738
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -760058,8 +760078,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 4,
-    "ok": 22,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
