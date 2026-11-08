@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110808,
-    "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 80901,
-    "prepared_source_episodes": 69207,
+    "manifest_upload_ready_episodes": 9,
+    "uploaded_episodes": 80904,
+    "prepared_source_episodes": 69206,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
@@ -14,17 +14,73 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53826,
     "whisper_review_pending_sources": 37024,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 51002,
     "subtitle_followup_pending_sources": 51002
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T04:55:57Z",
+      "databaseId": 42448755048,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T04:52:47Z",
+      "databaseId": 42448553742,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T04:52:44Z",
+      "databaseId": 42448550909,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T04:52:21Z",
+      "databaseId": 42448528266,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T04:52:18Z",
+      "databaseId": 42448524647,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T04:52:03Z",
+      "databaseId": 42448506490,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T04:52:00Z",
+      "databaseId": 42448503386,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-08T04:51:28Z",
       "databaseId": 42448470147,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -40,15 +96,15 @@
       "createdAt": "2026-11-08T04:50:06Z",
       "databaseId": 42448382352,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T04:50:06Z",
       "databaseId": 42448382161,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -60,11 +116,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T04:48:59Z",
       "databaseId": 42448309373,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +132,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T04:47:09Z",
       "databaseId": 42448193013,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -116,68 +172,12 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T04:42:31Z",
       "databaseId": 42447891111,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T04:41:33Z",
-      "databaseId": 42447827546,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T04:38:38Z",
-      "databaseId": 42447638342,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T04:38:28Z",
-      "databaseId": 42447628014,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T04:37:42Z",
-      "databaseId": 42447581204,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T04:37:23Z",
-      "databaseId": 42447561260,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T04:37:15Z",
-      "databaseId": 42447553315,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T04:37:06Z",
-      "databaseId": 42447543832,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -378925,6 +378925,21 @@
         "episode_id": 127927,
         "display_name": "Baba Candır S01E41 - 41. epizoda CZ Titulky",
         "video_id": 30908016
+      },
+      {
+        "episode_id": 147147,
+        "display_name": "Dva holma S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30908113
+      },
+      {
+        "episode_id": 6506,
+        "display_name": "Návštěvníci S01E09 - Sólo pro návštěvníky CZ Dabing",
+        "video_id": 30908070
+      },
+      {
+        "episode_id": 130055,
+        "display_name": "Rodinné hry S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30908214
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -757567,6 +757582,21 @@
         "episode_id": 127927,
         "display_name": "Baba Candır S01E41 - 41. epizoda CZ Titulky",
         "video_id": 30908016
+      },
+      {
+        "episode_id": 147147,
+        "display_name": "Dva holma S01E12 - 12. epizoda CZ Titulky",
+        "video_id": 30908113
+      },
+      {
+        "episode_id": 6506,
+        "display_name": "Návštěvníci S01E09 - Sólo pro návštěvníky CZ Dabing",
+        "video_id": 30908070
+      },
+      {
+        "episode_id": 130055,
+        "display_name": "Rodinné hry S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30908214
       }
     ],
     "prepared_not_upload_ready": [
