@@ -1,24 +1,112 @@
 {
   "counts": {
     "backlog_episodes": 110532,
-    "manifest_upload_ready_episodes": 33,
-    "uploaded_episodes": 81137,
-    "prepared_source_episodes": 69410,
+    "manifest_upload_ready_episodes": 30,
+    "uploaded_episodes": 81140,
+    "prepared_source_episodes": 69412,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 22,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53809,
-    "whisper_review_pending_sources": 36963,
+    "whisper_review_sources": 53810,
+    "whisper_review_pending_sources": 36965,
     "upload_pending_checkpoints": 40,
     "subtitle_followup_sources": 51166,
     "subtitle_followup_pending_sources": 51166
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:33:48Z",
+      "databaseId": 42525828984,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:33:13Z",
+      "databaseId": 42525781504,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:33:05Z",
+      "databaseId": 42525771133,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:32:45Z",
+      "databaseId": 42525741638,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:32:30Z",
+      "databaseId": 42525718904,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T21:32:25Z",
+      "databaseId": 42525711699,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:32:21Z",
+      "databaseId": 42525705532,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T21:32:05Z",
+      "databaseId": 42525681659,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:31:27Z",
+      "databaseId": 42525630149,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:29:49Z",
+      "databaseId": 42525482335,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:29:29Z",
+      "databaseId": 42525454979,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-08T21:26:58Z",
@@ -36,11 +124,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T21:23:49Z",
       "databaseId": 42524994195,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +140,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-08T21:23:44Z",
       "databaseId": 42524987897,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -90,94 +178,6 @@
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T21:22:27Z",
-      "databaseId": 42524881715,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T21:22:11Z",
-      "databaseId": 42524858374,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T21:21:55Z",
-      "databaseId": 42524835884,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T21:21:51Z",
-      "databaseId": 42524830592,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-08T21:20:53Z",
-      "databaseId": 42524747367,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T21:20:05Z",
-      "databaseId": 42524673677,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T21:17:46Z",
-      "databaseId": 42524477254,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T21:16:52Z",
-      "databaseId": 42524398813,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T21:15:18Z",
-      "databaseId": 42524267768,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T21:14:13Z",
-      "databaseId": 42524178251,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T21:13:33Z",
-      "databaseId": 42524123769,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -199267,6 +199267,11 @@
         "video_id": 30926045
       },
       {
+        "episode_id": 60861,
+        "display_name": "Dark Winds S04E06 - 6. epizoda CZ Titulky",
+        "video_id": 30926234
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -380105,6 +380110,16 @@
         "episode_id": 116347,
         "display_name": "Geniální průšvihy S02E01 - Soubory CZ Dabing",
         "video_id": 30925394
+      },
+      {
+        "episode_id": 59586,
+        "display_name": "Nemocnice Chicago Med S10E03 - 3. epizoda CZ Titulky",
+        "video_id": 30926168
+      },
+      {
+        "episode_id": 59583,
+        "display_name": "Nemocnice Chicago Med S09E10 - 10. epizoda CZ Titulky",
+        "video_id": 30926156
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -579089,6 +579104,11 @@
         "video_id": 30926045
       },
       {
+        "episode_id": 60861,
+        "display_name": "Dark Winds S04E06 - 6. epizoda CZ Titulky",
+        "video_id": 30926234
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -759927,6 +759947,16 @@
         "episode_id": 116347,
         "display_name": "Geniální průšvihy S02E01 - Soubory CZ Dabing",
         "video_id": 30925394
+      },
+      {
+        "episode_id": 59586,
+        "display_name": "Nemocnice Chicago Med S10E03 - 3. epizoda CZ Titulky",
+        "video_id": 30926168
+      },
+      {
+        "episode_id": 59583,
+        "display_name": "Nemocnice Chicago Med S09E10 - 10. epizoda CZ Titulky",
+        "video_id": 30926156
       }
     ],
     "prepared_not_upload_ready": [
@@ -761088,13 +761118,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 2,
     "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35847,
+    "needs_whisper": 35849,
     "whisper_confirmed_cz": 3874,
-    "whisper_non_cz_needs_subtitles": 12972,
+    "whisper_non_cz_needs_subtitles": 12971,
     "whisper_failed": 1116
   },
   "subtitle_followup_statuses": {
