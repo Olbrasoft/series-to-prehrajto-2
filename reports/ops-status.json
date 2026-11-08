@@ -2,23 +2,31 @@
   "counts": {
     "backlog_episodes": 110688,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 80987,
+    "uploaded_episodes": 80989,
     "prepared_source_episodes": 69305,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 48,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53825,
     "whisper_review_pending_sources": 37059,
-    "upload_pending_checkpoints": 38,
+    "upload_pending_checkpoints": 37,
     "subtitle_followup_sources": 51051,
     "subtitle_followup_pending_sources": 51051
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:53:35Z",
+      "databaseId": 42469085488,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-08T09:52:32Z",
@@ -40,7 +48,7 @@
       "createdAt": "2026-11-08T09:51:32Z",
       "databaseId": 42468943693,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +68,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T09:49:58Z",
       "databaseId": 42468833255,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -88,15 +96,15 @@
       "createdAt": "2026-11-08T09:45:58Z",
       "databaseId": 42468557684,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T09:45:36Z",
       "databaseId": 42468531784,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-08T09:40:14Z",
-      "databaseId": 42468160094,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -198917,6 +198917,11 @@
         "video_id": 30913519
       },
       {
+        "episode_id": 189177,
+        "display_name": "Šmoulové S02E06 - Mámin mistrovský kus CZ Dabing",
+        "video_id": 30913945
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -379355,6 +379360,11 @@
         "episode_id": 164963,
         "display_name": "Leviatan S01E04 - Tíha minulosti CZ Titulky",
         "video_id": 30913808
+      },
+      {
+        "episode_id": 171586,
+        "display_name": "Até Que a Vida nos Separe S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30913858
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -577989,6 +577999,11 @@
         "video_id": 30913519
       },
       {
+        "episode_id": 189177,
+        "display_name": "Šmoulové S02E06 - Mámin mistrovský kus CZ Dabing",
+        "video_id": 30913945
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -758427,6 +758442,11 @@
         "episode_id": 164963,
         "display_name": "Leviatan S01E04 - Tíha minulosti CZ Titulky",
         "video_id": 30913808
+      },
+      {
+        "episode_id": 171586,
+        "display_name": "Até Que a Vida nos Separe S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30913858
       }
     ],
     "prepared_not_upload_ready": [
@@ -759588,8 +759608,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 8,
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
