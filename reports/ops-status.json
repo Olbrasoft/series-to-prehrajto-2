@@ -1,30 +1,102 @@
 {
   "counts": {
     "backlog_episodes": 110944,
-    "manifest_upload_ready_episodes": 26,
-    "uploaded_episodes": 80790,
-    "prepared_source_episodes": 69156,
+    "manifest_upload_ready_episodes": 27,
+    "uploaded_episodes": 80799,
+    "prepared_source_episodes": 69162,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53838,
-    "whisper_review_pending_sources": 37067,
-    "upload_pending_checkpoints": 37,
+    "language_audited_sources": 63,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53837,
+    "whisper_review_pending_sources": 37066,
+    "upload_pending_checkpoints": 41,
     "subtitle_followup_sources": 50956,
     "subtitle_followup_pending_sources": 50956
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T00:36:53Z",
+      "databaseId": 42430546291,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T00:35:53Z",
+      "databaseId": 42430469934,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:35:47Z",
+      "databaseId": 42430462407,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:26:27Z",
+      "databaseId": 42429754981,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:26:23Z",
+      "databaseId": 42429748709,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:24:57Z",
+      "databaseId": 42429639034,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T00:23:30Z",
+      "databaseId": 42429530536,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T00:22:27Z",
+      "databaseId": 42429455369,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T00:19:32Z",
+      "databaseId": 42429230260,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-08T00:13:32Z",
       "databaseId": 42428777307,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -36,19 +108,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T00:13:30Z",
       "databaseId": 42428774902,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T00:13:10Z",
       "databaseId": 42428749176,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +128,7 @@
       "createdAt": "2026-11-08T00:13:07Z",
       "databaseId": 42428745245,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -76,11 +148,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T00:11:43Z",
       "databaseId": 42428636126,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T00:09:41Z",
-      "databaseId": 42428480778,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T00:09:12Z",
-      "databaseId": 42428447037,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T00:08:33Z",
-      "databaseId": 42428398282,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T00:07:35Z",
-      "databaseId": 42428325205,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T00:07:09Z",
-      "databaseId": 42428293285,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T00:07:06Z",
-      "databaseId": 42428289220,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T00:02:25Z",
-      "databaseId": 42427924588,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-07T23:59:01Z",
-      "databaseId": 42427656432,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-07T23:57:59Z",
-      "databaseId": 42427586042,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -198392,6 +198392,31 @@
         "video_id": 30902382
       },
       {
+        "episode_id": 127893,
+        "display_name": "Baba Candır S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30902449
+      },
+      {
+        "episode_id": 127897,
+        "display_name": "Baba Candır S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30902476
+      },
+      {
+        "episode_id": 149076,
+        "display_name": "Ti druzí S01E13 - 13. epizoda CZ Dabing",
+        "video_id": 30902580
+      },
+      {
+        "episode_id": 127901,
+        "display_name": "Baba Candır S01E15 - 15. epizoda CZ Titulky",
+        "video_id": 30902605
+      },
+      {
+        "episode_id": 147040,
+        "display_name": "Carlos, rey emperador S01E12 - 12. epizoda CZ Dabing",
+        "video_id": 30902635
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -378370,6 +378395,26 @@
         "episode_id": 130246,
         "display_name": "Vyšetřuje Imma Tataranni S02E05 - Tíha duše CZ Dabing",
         "video_id": 30902357
+      },
+      {
+        "episode_id": 203523,
+        "display_name": "Město krve S01E06 - Odhalení CZ Dabing",
+        "video_id": 30902571
+      },
+      {
+        "episode_id": 188682,
+        "display_name": "Mickey a závodníci S01E03 - Goof-benzín CZ Dabing",
+        "video_id": 30902585
+      },
+      {
+        "episode_id": 168595,
+        "display_name": "Evilive S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30902627
+      },
+      {
+        "episode_id": 147034,
+        "display_name": "Carlos, rey emperador S01E11 - 11. epizoda CZ Dabing",
+        "video_id": 30902683
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -576479,6 +576524,31 @@
         "video_id": 30902382
       },
       {
+        "episode_id": 127893,
+        "display_name": "Baba Candır S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30902449
+      },
+      {
+        "episode_id": 127897,
+        "display_name": "Baba Candır S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30902476
+      },
+      {
+        "episode_id": 149076,
+        "display_name": "Ti druzí S01E13 - 13. epizoda CZ Dabing",
+        "video_id": 30902580
+      },
+      {
+        "episode_id": 127901,
+        "display_name": "Baba Candır S01E15 - 15. epizoda CZ Titulky",
+        "video_id": 30902605
+      },
+      {
+        "episode_id": 147040,
+        "display_name": "Carlos, rey emperador S01E12 - 12. epizoda CZ Dabing",
+        "video_id": 30902635
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -756457,6 +756527,26 @@
         "episode_id": 130246,
         "display_name": "Vyšetřuje Imma Tataranni S02E05 - Tíha duše CZ Dabing",
         "video_id": 30902357
+      },
+      {
+        "episode_id": 203523,
+        "display_name": "Město krve S01E06 - Odhalení CZ Dabing",
+        "video_id": 30902571
+      },
+      {
+        "episode_id": 188682,
+        "display_name": "Mickey a závodníci S01E03 - Goof-benzín CZ Dabing",
+        "video_id": 30902585
+      },
+      {
+        "episode_id": 168595,
+        "display_name": "Evilive S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30902627
+      },
+      {
+        "episode_id": 147034,
+        "display_name": "Carlos, rey emperador S01E11 - 11. epizoda CZ Dabing",
+        "video_id": 30902683
       }
     ],
     "prepared_not_upload_ready": [
@@ -757618,11 +757708,12 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "disabled": 23,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35881,
+    "needs_whisper": 35880,
     "whisper_confirmed_cz": 3814,
     "whisper_non_cz_needs_subtitles": 12957,
     "whisper_failed": 1186
