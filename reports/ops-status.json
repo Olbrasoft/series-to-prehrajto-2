@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110734,
-    "manifest_upload_ready_episodes": 4,
+    "manifest_upload_ready_episodes": 0,
     "uploaded_episodes": 80954,
-    "prepared_source_episodes": 69256,
+    "prepared_source_episodes": 69253,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -21,10 +21,26 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-08T07:42:44Z",
+      "databaseId": 42459900345,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T07:42:40Z",
+      "databaseId": 42459895913,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-08T07:42:21Z",
       "databaseId": 42459875088,
       "headBranch": "main",
-      "status": "queued",
+      "status": "pending",
       "workflowName": "sync"
     },
     {
@@ -40,7 +56,7 @@
       "createdAt": "2026-11-08T07:41:56Z",
       "databaseId": 42459847125,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +68,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T07:40:38Z",
       "databaseId": 42459760989,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -84,11 +100,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T07:36:17Z",
       "databaseId": 42459481322,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T07:32:52Z",
-      "databaseId": 42459242446,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T07:32:17Z",
-      "databaseId": 42459203016,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
     }
   ],
   "gaps": {
