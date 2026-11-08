@@ -1,24 +1,56 @@
 {
   "counts": {
     "backlog_episodes": 110688,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 81006,
-    "prepared_source_episodes": 69334,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 81008,
+    "prepared_source_episodes": 69335,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 48,
+    "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53826,
     "whisper_review_pending_sources": 37072,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51061,
     "subtitle_followup_pending_sources": 51061
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T11:10:10Z",
+      "databaseId": 42474546574,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T11:08:15Z",
+      "databaseId": 42474402235,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T11:07:56Z",
+      "databaseId": 42474378650,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-08T11:07:09Z",
+      "databaseId": 42474320106,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-08T11:05:49Z",
@@ -32,7 +64,7 @@
       "createdAt": "2026-11-08T11:05:44Z",
       "databaseId": 42474214628,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -60,11 +92,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T11:03:27Z",
       "databaseId": 42474041021,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -72,7 +104,7 @@
       "createdAt": "2026-11-08T11:03:23Z",
       "databaseId": 42474036102,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -104,7 +136,7 @@
       "createdAt": "2026-11-08T11:01:37Z",
       "databaseId": 42473903275,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T10:56:27Z",
-      "databaseId": 42473533217,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T10:56:24Z",
-      "databaseId": 42473529156,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T10:52:46Z",
-      "databaseId": 42473279159,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T10:52:43Z",
-      "databaseId": 42473275067,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -198942,6 +198942,11 @@
         "video_id": 30914935
       },
       {
+        "episode_id": 201633,
+        "display_name": "Šmoulové S01E25 - Dobrodružství při šmoulohlídání CZ Dabing",
+        "video_id": 30915497
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -379450,6 +379455,11 @@
         "episode_id": 168482,
         "display_name": "The Director Who Buys Me Dinner S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30915488
+      },
+      {
+        "episode_id": 178843,
+        "display_name": "Stále nezvěstná Morgan S01E01 - Zamotané až běda CZ Titulky",
+        "video_id": 30915513
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -578109,6 +578119,11 @@
         "video_id": 30914935
       },
       {
+        "episode_id": 201633,
+        "display_name": "Šmoulové S01E25 - Dobrodružství při šmoulohlídání CZ Dabing",
+        "video_id": 30915497
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -758617,6 +758632,11 @@
         "episode_id": 168482,
         "display_name": "The Director Who Buys Me Dinner S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30915488
+      },
+      {
+        "episode_id": 178843,
+        "display_name": "Stále nezvěstná Morgan S01E01 - Zamotané až běda CZ Titulky",
+        "video_id": 30915513
       }
     ],
     "prepared_not_upload_ready": [
@@ -759778,7 +759798,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "disabled": 7,
+    "ok": 40,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
