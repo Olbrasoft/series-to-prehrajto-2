@@ -1,46 +1,166 @@
 {
   "counts": {
     "backlog_episodes": 110532,
-    "manifest_upload_ready_episodes": 28,
-    "uploaded_episodes": 81143,
-    "prepared_source_episodes": 69412,
+    "manifest_upload_ready_episodes": 20,
+    "uploaded_episodes": 81152,
+    "prepared_source_episodes": 69406,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 22,
-    "language_whisper_attempted_sources": 22,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 42,
+    "language_whisper_attempted_sources": 42,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53809,
     "whisper_review_pending_sources": 36963,
     "upload_pending_checkpoints": 38,
-    "subtitle_followup_sources": 51167,
-    "subtitle_followup_pending_sources": 51167
+    "subtitle_followup_sources": 51168,
+    "subtitle_followup_pending_sources": 51168
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-08T21:38:44Z",
-      "databaseId": 42526233951,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T21:37:36Z",
-      "databaseId": 42526144556,
+      "createdAt": "2026-11-08T21:54:11Z",
+      "databaseId": 42527497322,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T21:52:46Z",
+      "databaseId": 42527384177,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-08T21:52:43Z",
+      "databaseId": 42527380349,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:51:35Z",
+      "databaseId": 42527287544,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T21:51:28Z",
+      "databaseId": 42527278749,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:51:24Z",
+      "databaseId": 42527273604,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T21:50:31Z",
+      "databaseId": 42527200425,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:49:13Z",
+      "databaseId": 42527090600,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T21:48:37Z",
+      "databaseId": 42527038673,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T21:42:16Z",
+      "databaseId": 42526524690,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T21:41:56Z",
+      "databaseId": 42526497294,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T21:41:53Z",
+      "databaseId": 42526493286,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T21:41:50Z",
+      "databaseId": 42526488231,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:39:03Z",
+      "databaseId": 42526257215,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:38:54Z",
+      "databaseId": 42526245992,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T21:38:44Z",
+      "databaseId": 42526233951,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T21:37:36Z",
+      "databaseId": 42526144556,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-08T21:37:33Z",
       "databaseId": 42526140995,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "prepare-sources"
     },
     {
@@ -56,128 +176,8 @@
       "createdAt": "2026-11-08T21:36:53Z",
       "databaseId": 42526088041,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T21:36:31Z",
-      "databaseId": 42526059576,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-08T21:36:04Z",
-      "databaseId": 42526024009,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T21:33:48Z",
-      "databaseId": 42525828984,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T21:33:13Z",
-      "databaseId": 42525781504,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T21:33:05Z",
-      "databaseId": 42525771133,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T21:32:45Z",
-      "databaseId": 42525741638,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T21:32:30Z",
-      "databaseId": 42525718904,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T21:32:25Z",
-      "databaseId": 42525711699,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T21:32:21Z",
-      "databaseId": 42525705532,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T21:32:05Z",
-      "databaseId": 42525681659,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T21:31:27Z",
-      "databaseId": 42525630149,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T21:29:49Z",
-      "databaseId": 42525482335,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T21:29:29Z",
-      "databaseId": 42525454979,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T21:26:58Z",
-      "databaseId": 42525252968,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T21:26:54Z",
-      "databaseId": 42525247257,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -199272,6 +199272,11 @@
         "video_id": 30926234
       },
       {
+        "episode_id": 59596,
+        "display_name": "Nemocnice Chicago Med S10E14 - 14. epizoda CZ Titulky",
+        "video_id": 30926406
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -380135,6 +380140,46 @@
         "episode_id": 59606,
         "display_name": "Nemocnice Chicago Med S11E05 - 5. epizoda CZ Titulky",
         "video_id": 30926294
+      },
+      {
+        "episode_id": 172939,
+        "display_name": "The Defects S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30926319
+      },
+      {
+        "episode_id": 189199,
+        "display_name": "Šmoulové S02E32 - Kdo je v kapele CZ Dabing",
+        "video_id": 30926348
+      },
+      {
+        "episode_id": 189194,
+        "display_name": "Šmoulové S02E27 - Zaříkávač šneků CZ Dabing",
+        "video_id": 30926374
+      },
+      {
+        "episode_id": 189198,
+        "display_name": "Šmoulové S02E31 - Waffle a trest CZ Titulky",
+        "video_id": 30926400
+      },
+      {
+        "episode_id": 174094,
+        "display_name": "Rodinka z márnice S01E02 - Pubertální vajíčka a křik CZ Titulky",
+        "video_id": 30926425
+      },
+      {
+        "episode_id": 163762,
+        "display_name": "Adventure Beast S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30926449
+      },
+      {
+        "episode_id": 116394,
+        "display_name": "Geniální průšvihy S01E23 - Létající traktor CZ Dabing",
+        "video_id": 30926468
+      },
+      {
+        "episode_id": 175527,
+        "display_name": "Tatami: Trable se strojem času S01E05 - Epizoda 5 CZ Titulky",
+        "video_id": 30926475
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -579124,6 +579169,11 @@
         "video_id": 30926234
       },
       {
+        "episode_id": 59596,
+        "display_name": "Nemocnice Chicago Med S10E14 - 14. epizoda CZ Titulky",
+        "video_id": 30926406
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -759987,6 +760037,46 @@
         "episode_id": 59606,
         "display_name": "Nemocnice Chicago Med S11E05 - 5. epizoda CZ Titulky",
         "video_id": 30926294
+      },
+      {
+        "episode_id": 172939,
+        "display_name": "The Defects S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30926319
+      },
+      {
+        "episode_id": 189199,
+        "display_name": "Šmoulové S02E32 - Kdo je v kapele CZ Dabing",
+        "video_id": 30926348
+      },
+      {
+        "episode_id": 189194,
+        "display_name": "Šmoulové S02E27 - Zaříkávač šneků CZ Dabing",
+        "video_id": 30926374
+      },
+      {
+        "episode_id": 189198,
+        "display_name": "Šmoulové S02E31 - Waffle a trest CZ Titulky",
+        "video_id": 30926400
+      },
+      {
+        "episode_id": 174094,
+        "display_name": "Rodinka z márnice S01E02 - Pubertální vajíčka a křik CZ Titulky",
+        "video_id": 30926425
+      },
+      {
+        "episode_id": 163762,
+        "display_name": "Adventure Beast S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30926449
+      },
+      {
+        "episode_id": 116394,
+        "display_name": "Geniální průšvihy S01E23 - Létající traktor CZ Dabing",
+        "video_id": 30926468
+      },
+      {
+        "episode_id": 175527,
+        "display_name": "Tatami: Trable se strojem času S01E05 - Epizoda 5 CZ Titulky",
+        "video_id": 30926475
       }
     ],
     "prepared_not_upload_ready": [
@@ -761148,7 +761238,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 21,
+    "ok": 41,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -761158,6 +761248,6 @@
     "whisper_failed": 1116
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51167
+    "needs_subtitle_setup_after_prehrajto_processing": 51168
   }
 }
