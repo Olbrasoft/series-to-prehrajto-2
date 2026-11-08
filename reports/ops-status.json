@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110688,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 80983,
+    "uploaded_episodes": 80985,
     "prepared_source_episodes": 69301,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53825,
     "whisper_review_pending_sources": 37056,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51049,
     "subtitle_followup_pending_sources": 51049
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T09:40:14Z",
+      "databaseId": 42468160094,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:40:06Z",
+      "databaseId": 42468148567,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T09:40:02Z",
+      "databaseId": 42468143099,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-08T09:39:06Z",
       "databaseId": 42468081237,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-08T09:38:34Z",
       "databaseId": 42468045391,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -52,11 +76,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T09:33:07Z",
       "databaseId": 42467660538,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -144,7 +168,7 @@
       "createdAt": "2026-11-08T09:27:16Z",
       "databaseId": 42467245782,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T09:26:23Z",
-      "databaseId": 42467186513,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T09:24:05Z",
-      "databaseId": 42467026599,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T09:23:25Z",
-      "databaseId": 42466981240,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -379335,6 +379335,16 @@
         "episode_id": 142239,
         "display_name": "Zahlazené stopy S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30913443
+      },
+      {
+        "episode_id": 142238,
+        "display_name": "Zahlazené stopy S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30913464
+      },
+      {
+        "episode_id": 145727,
+        "display_name": "Sbírka krátkých filmů S02E02 - Cesta domů CZ Titulky",
+        "video_id": 30913503
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -758387,6 +758397,16 @@
         "episode_id": 142239,
         "display_name": "Zahlazené stopy S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30913443
+      },
+      {
+        "episode_id": 142238,
+        "display_name": "Zahlazené stopy S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30913464
+      },
+      {
+        "episode_id": 145727,
+        "display_name": "Sbírka krátkých filmů S02E02 - Cesta domů CZ Titulky",
+        "video_id": 30913503
       }
     ],
     "prepared_not_upload_ready": [
