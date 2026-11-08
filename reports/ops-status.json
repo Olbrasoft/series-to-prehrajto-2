@@ -2,29 +2,77 @@
   "counts": {
     "backlog_episodes": 110640,
     "manifest_upload_ready_episodes": 13,
-    "uploaded_episodes": 81040,
+    "uploaded_episodes": 81045,
     "prepared_source_episodes": 69383,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 30,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53817,
-    "whisper_review_pending_sources": 37050,
-    "upload_pending_checkpoints": 38,
-    "subtitle_followup_sources": 51089,
-    "subtitle_followup_pending_sources": 51089
+    "whisper_review_pending_sources": 37049,
+    "upload_pending_checkpoints": 37,
+    "subtitle_followup_sources": 51090,
+    "subtitle_followup_pending_sources": 51090
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-08T13:50:24Z",
+      "databaseId": 42486855815,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T13:49:10Z",
+      "databaseId": 42486757888,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T13:47:49Z",
+      "databaseId": 42486648621,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T13:42:13Z",
+      "databaseId": 42486211132,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-08T13:41:59Z",
+      "databaseId": 42486191153,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-08T13:41:21Z",
+      "databaseId": 42486143694,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-08T13:40:09Z",
       "databaseId": 42486047946,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +84,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T13:39:08Z",
       "databaseId": 42485970109,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -68,11 +116,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T13:37:12Z",
       "databaseId": 42485826590,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -96,7 +144,7 @@
       "createdAt": "2026-11-08T13:36:53Z",
       "databaseId": 42485802438,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -116,11 +164,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-08T13:36:07Z",
       "databaseId": 42485744066,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T13:35:47Z",
-      "databaseId": 42485718259,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T13:33:20Z",
-      "databaseId": 42485518850,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-08T13:33:18Z",
-      "databaseId": 42485515477,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T13:33:17Z",
-      "databaseId": 42485514342,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-08T13:33:15Z",
-      "databaseId": 42485511375,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-08T13:31:49Z",
-      "databaseId": 42485392017,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -199022,6 +199022,26 @@
         "video_id": 30917738
       },
       {
+        "episode_id": 189181,
+        "display_name": "Šmoulové S02E11 - Zpátky k přírodě CZ Dabing",
+        "video_id": 30918532
+      },
+      {
+        "episode_id": 178844,
+        "display_name": "Stále nezvěstná Morgan S01E02 - Jak dlouho? CZ Titulky",
+        "video_id": 30918590
+      },
+      {
+        "episode_id": 149825,
+        "display_name": "Barra Brava S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30918594
+      },
+      {
+        "episode_id": 116376,
+        "display_name": "Geniální průšvihy S01E04 - Chytré judo CZ Titulky",
+        "video_id": 30918626
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -379620,6 +379640,11 @@
         "episode_id": 166211,
         "display_name": "Pouliční strava: USA S01E05 - Oahu, Havaj CZ Titulky",
         "video_id": 30918319
+      },
+      {
+        "episode_id": 160302,
+        "display_name": "Uzdravení S02E04 - Uzdravení, nebo kletba? CZ Titulky",
+        "video_id": 30918577
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -578359,6 +578384,26 @@
         "video_id": 30917738
       },
       {
+        "episode_id": 189181,
+        "display_name": "Šmoulové S02E11 - Zpátky k přírodě CZ Dabing",
+        "video_id": 30918532
+      },
+      {
+        "episode_id": 178844,
+        "display_name": "Stále nezvěstná Morgan S01E02 - Jak dlouho? CZ Titulky",
+        "video_id": 30918590
+      },
+      {
+        "episode_id": 149825,
+        "display_name": "Barra Brava S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30918594
+      },
+      {
+        "episode_id": 116376,
+        "display_name": "Geniální průšvihy S01E04 - Chytré judo CZ Titulky",
+        "video_id": 30918626
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -758957,6 +759002,11 @@
         "episode_id": 166211,
         "display_name": "Pouliční strava: USA S01E05 - Oahu, Havaj CZ Titulky",
         "video_id": 30918319
+      },
+      {
+        "episode_id": 160302,
+        "display_name": "Uzdravení S02E04 - Uzdravení, nebo kletba? CZ Titulky",
+        "video_id": 30918577
       }
     ],
     "prepared_not_upload_ready": [
@@ -760118,18 +760168,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 12,
-    "ok": 28,
-    "stream_undersized": 1,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35866,
+    "needs_whisper": 35865,
     "whisper_confirmed_cz": 3836,
-    "whisper_non_cz_needs_subtitles": 12931,
+    "whisper_non_cz_needs_subtitles": 12932,
     "whisper_failed": 1184
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51089
+    "needs_subtitle_setup_after_prehrajto_processing": 51090
   }
 }
