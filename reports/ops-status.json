@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110463,
     "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 81215,
+    "uploaded_episodes": 81220,
     "prepared_source_episodes": 69441,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,105 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53813,
     "whisper_review_pending_sources": 37008,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 51201,
     "subtitle_followup_pending_sources": 51201
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-09T01:38:29Z",
+      "databaseId": 42546632097,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:38:25Z",
+      "databaseId": 42546625959,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T01:34:34Z",
+      "databaseId": 42546278418,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:34:31Z",
+      "databaseId": 42546274001,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:34:16Z",
+      "databaseId": 42546253322,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:34:04Z",
+      "databaseId": 42546235432,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:33:21Z",
+      "databaseId": 42546171256,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T01:32:31Z",
+      "databaseId": 42546099307,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:31:38Z",
+      "databaseId": 42546025758,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:31:10Z",
+      "databaseId": 42545982832,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:31:06Z",
+      "databaseId": 42545976460,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-09T01:29:37Z",
       "databaseId": 42545842083,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +128,7 @@
       "createdAt": "2026-11-09T01:27:59Z",
       "databaseId": 42545710141,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -60,19 +148,19 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T01:25:13Z",
       "databaseId": 42545476025,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T01:24:49Z",
       "databaseId": 42545440079,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -90,94 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T01:23:39Z",
-      "databaseId": 42545339155,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T01:22:45Z",
-      "databaseId": 42545259941,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-09T01:22:45Z",
-      "databaseId": 42545259892,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T01:22:21Z",
-      "databaseId": 42545224309,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T01:22:21Z",
-      "databaseId": 42545223935,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T01:22:16Z",
-      "databaseId": 42545216773,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T01:22:16Z",
-      "databaseId": 42545216716,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T01:20:54Z",
-      "databaseId": 42545097040,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T01:18:50Z",
-      "databaseId": 42544910393,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T01:18:46Z",
-      "databaseId": 42544904097,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T01:18:04Z",
-      "databaseId": 42544839676,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -199442,6 +199442,21 @@
         "video_id": 30930300
       },
       {
+        "episode_id": 189204,
+        "display_name": "Šmoulové S02E39 - I šmoulové mohou létat CZ Dabing",
+        "video_id": 30930249
+      },
+      {
+        "episode_id": 127112,
+        "display_name": "Vindication S02E06 - 6. epizoda CZ Titulky",
+        "video_id": 30930383
+      },
+      {
+        "episode_id": 160601,
+        "display_name": "Work Later, Drink Now S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 30930379
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -380495,6 +380510,16 @@
         "episode_id": 160963,
         "display_name": "Škola cudnosti S01E05 - A pro gaye to neplatí? CZ Titulky",
         "video_id": 30930032
+      },
+      {
+        "episode_id": 200106,
+        "display_name": "Štěněcí akademie S02E05 - Zachraňte Kinga! CZ Titulky",
+        "video_id": 30930283
+      },
+      {
+        "episode_id": 160962,
+        "display_name": "Škola cudnosti S01E04 - Tři důvody nezamilovat se CZ Titulky",
+        "video_id": 30930391
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -579654,6 +579679,21 @@
         "video_id": 30930300
       },
       {
+        "episode_id": 189204,
+        "display_name": "Šmoulové S02E39 - I šmoulové mohou létat CZ Dabing",
+        "video_id": 30930249
+      },
+      {
+        "episode_id": 127112,
+        "display_name": "Vindication S02E06 - 6. epizoda CZ Titulky",
+        "video_id": 30930383
+      },
+      {
+        "episode_id": 160601,
+        "display_name": "Work Later, Drink Now S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 30930379
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -760707,6 +760747,16 @@
         "episode_id": 160963,
         "display_name": "Škola cudnosti S01E05 - A pro gaye to neplatí? CZ Titulky",
         "video_id": 30930032
+      },
+      {
+        "episode_id": 200106,
+        "display_name": "Štěněcí akademie S02E05 - Zachraňte Kinga! CZ Titulky",
+        "video_id": 30930283
+      },
+      {
+        "episode_id": 160962,
+        "display_name": "Škola cudnosti S01E04 - Tři důvody nezamilovat se CZ Titulky",
+        "video_id": 30930391
       }
     ],
     "prepared_not_upload_ready": [
