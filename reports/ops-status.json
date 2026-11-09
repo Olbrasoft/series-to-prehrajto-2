@@ -1,24 +1,72 @@
 {
   "counts": {
     "backlog_episodes": 110426,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 81266,
-    "prepared_source_episodes": 69449,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 81268,
+    "prepared_source_episodes": 69447,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53811,
     "whisper_review_pending_sources": 37015,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51236,
     "subtitle_followup_pending_sources": 51236
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T05:42:48Z",
+      "databaseId": 42568867277,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T05:42:45Z",
+      "databaseId": 42568863283,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T05:42:17Z",
+      "databaseId": 42568821439,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T05:41:31Z",
+      "databaseId": 42568752758,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T05:41:28Z",
+      "databaseId": 42568747764,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-09T05:40:30Z",
+      "databaseId": 42568658091,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-09T05:39:27Z",
@@ -32,7 +80,7 @@
       "createdAt": "2026-11-09T05:38:39Z",
       "databaseId": 42568486704,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -44,11 +92,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T05:37:29Z",
       "databaseId": 42568378412,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -60,19 +108,19 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T05:36:01Z",
       "databaseId": 42568238703,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T05:34:47Z",
       "databaseId": 42568116849,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -100,19 +148,19 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T05:32:20Z",
       "databaseId": 42567885800,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T05:31:02Z",
       "databaseId": 42567763064,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -127,54 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-09T05:29:23Z",
       "databaseId": 42567598116,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T05:29:19Z",
-      "databaseId": 42567591375,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T05:28:25Z",
-      "databaseId": 42567511664,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T05:28:12Z",
-      "databaseId": 42567491271,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T05:27:44Z",
-      "databaseId": 42567448341,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T05:27:08Z",
-      "databaseId": 42567391243,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T05:26:22Z",
-      "databaseId": 42567320082,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -380750,6 +380750,16 @@
         "episode_id": 127126,
         "display_name": "Vindication S04E02 - 2. epizoda CZ Titulky",
         "video_id": 30934799
+      },
+      {
+        "episode_id": 168479,
+        "display_name": "The Director Who Buys Me Dinner S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30934839
+      },
+      {
+        "episode_id": 127127,
+        "display_name": "Vindication S04E03 - 3. epizoda CZ Titulky",
+        "video_id": 30934903
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -761217,6 +761227,16 @@
         "episode_id": 127126,
         "display_name": "Vindication S04E02 - 2. epizoda CZ Titulky",
         "video_id": 30934799
+      },
+      {
+        "episode_id": 168479,
+        "display_name": "The Director Who Buys Me Dinner S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30934839
+      },
+      {
+        "episode_id": 127127,
+        "display_name": "Vindication S04E03 - 3. epizoda CZ Titulky",
+        "video_id": 30934903
       }
     ],
     "prepared_not_upload_ready": [
@@ -762378,7 +762398,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
