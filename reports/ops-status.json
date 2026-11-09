@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110344,
-    "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 81342,
-    "prepared_source_episodes": 69479,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 81343,
+    "prepared_source_episodes": 69477,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -21,26 +21,82 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-09T10:40:44Z",
-      "databaseId": 42602655497,
+      "createdAt": "2026-11-09T10:46:45Z",
+      "databaseId": 42603644757,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T10:46:30Z",
+      "databaseId": 42603601158,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
       "conclusion": "",
-      "createdAt": "2026-11-09T10:40:39Z",
-      "databaseId": 42602643058,
+      "createdAt": "2026-11-09T10:42:41Z",
+      "databaseId": 42602954295,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T10:42:04Z",
+      "databaseId": 42602858586,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
+      "conclusion": "success",
+      "createdAt": "2026-11-09T10:41:24Z",
+      "databaseId": 42602756689,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-09T10:41:20Z",
+      "databaseId": 42602746938,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-09T10:41:18Z",
+      "databaseId": 42602739665,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T10:40:44Z",
+      "databaseId": 42602655497,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T10:40:39Z",
+      "databaseId": 42602643058,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-09T10:40:11Z",
       "databaseId": 42602569153,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "queued",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T10:33:23Z",
-      "databaseId": 42601701682,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T10:33:14Z",
-      "databaseId": 42601683876,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T10:32:59Z",
-      "databaseId": 42601655143,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T10:32:53Z",
-      "databaseId": 42601643287,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T10:32:26Z",
-      "databaseId": 42601589810,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T10:32:24Z",
-      "databaseId": 42601585790,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T10:32:21Z",
-      "databaseId": 42601579455,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -381130,6 +381130,11 @@
         "episode_id": 113739,
         "display_name": "Láska (svatba a rozvod) S02E09 - 9. epizoda CZ Titulky",
         "video_id": 30943657
+      },
+      {
+        "episode_id": 174099,
+        "display_name": "Rodinka z márnice S01E07 - Dada M.I.A. CZ Titulky",
+        "video_id": 30943794
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -761977,6 +761982,11 @@
         "episode_id": 113739,
         "display_name": "Láska (svatba a rozvod) S02E09 - 9. epizoda CZ Titulky",
         "video_id": 30943657
+      },
+      {
+        "episode_id": 174099,
+        "display_name": "Rodinka z márnice S01E07 - Dada M.I.A. CZ Titulky",
+        "video_id": 30943794
       }
     ],
     "prepared_not_upload_ready": [
