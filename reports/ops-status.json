@@ -2,29 +2,29 @@
   "counts": {
     "backlog_episodes": 110532,
     "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 81193,
+    "uploaded_episodes": 81194,
     "prepared_source_episodes": 69439,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 47,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53814,
     "whisper_review_pending_sources": 36994,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51180,
     "subtitle_followup_pending_sources": 51180
   },
   "workflow_runs": [
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T00:08:41Z",
       "databaseId": 42538577258,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -92,11 +92,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T00:01:56Z",
       "databaseId": 42537996024,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -176,7 +176,7 @@
       "createdAt": "2026-11-08T23:52:17Z",
       "databaseId": 42537235390,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     }
   ],
@@ -199385,6 +199385,11 @@
         "episode_id": 168477,
         "display_name": "The Director Who Buys Me Dinner S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30928257
+      },
+      {
+        "episode_id": 165257,
+        "display_name": "The Auditors S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30928315
       },
       {
         "episode_id": 114182,
@@ -579489,6 +579494,11 @@
         "video_id": 30928257
       },
       {
+        "episode_id": 165257,
+        "display_name": "The Auditors S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30928315
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -761648,8 +761658,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
