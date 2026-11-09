@@ -2,29 +2,45 @@
   "counts": {
     "backlog_episodes": 110390,
     "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 81314,
-    "prepared_source_episodes": 69471,
+    "uploaded_episodes": 81315,
+    "prepared_source_episodes": 69467,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 54,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 45,
+    "language_whisper_attempted_sources": 42,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53810,
-    "whisper_review_pending_sources": 37022,
-    "upload_pending_checkpoints": 40,
-    "subtitle_followup_sources": 51275,
-    "subtitle_followup_pending_sources": 51275
+    "whisper_review_sources": 53811,
+    "whisper_review_pending_sources": 37024,
+    "upload_pending_checkpoints": 39,
+    "subtitle_followup_sources": 51276,
+    "subtitle_followup_pending_sources": 51276
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T08:57:54Z",
+      "databaseId": 42589753844,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T08:56:40Z",
+      "databaseId": 42589609421,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-09T08:52:34Z",
       "databaseId": 42589110774,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
@@ -40,15 +56,15 @@
       "createdAt": "2026-11-09T08:51:56Z",
       "databaseId": 42589035151,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T08:50:53Z",
       "databaseId": 42588914549,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T08:48:38Z",
       "databaseId": 42588644235,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -92,11 +108,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T08:48:33Z",
       "databaseId": 42588633341,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T08:42:12Z",
-      "databaseId": 42587869373,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T08:42:12Z",
-      "databaseId": 42587869068,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -199700,6 +199700,11 @@
         "episode_id": 125005,
         "display_name": "Nyrkki S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30941816
+      },
+      {
+        "episode_id": 113724,
+        "display_name": "Láska (svatba a rozvod) S01E16 - 16. epizoda CZ Titulky",
+        "video_id": 30941921
       },
       {
         "episode_id": 114182,
@@ -580409,6 +580414,11 @@
         "video_id": 30941816
       },
       {
+        "episode_id": 113724,
+        "display_name": "Láska (svatba a rozvod) S01E16 - 16. epizoda CZ Titulky",
+        "video_id": 30941921
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -762858,17 +762868,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 14,
-    "ok": 39,
+    "disabled": 3,
+    "ok": 41,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35883,
+    "needs_whisper": 35885,
     "whisper_confirmed_cz": 3906,
-    "whisper_non_cz_needs_subtitles": 12882,
+    "whisper_non_cz_needs_subtitles": 12881,
     "whisper_failed": 1139
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51275
+    "needs_subtitle_setup_after_prehrajto_processing": 51276
   }
 }
