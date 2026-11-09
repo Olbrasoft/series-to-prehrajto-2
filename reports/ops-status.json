@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110463,
     "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 81212,
+    "uploaded_episodes": 81213,
     "prepared_source_episodes": 69454,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53810,
     "whisper_review_pending_sources": 36991,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51200,
     "subtitle_followup_pending_sources": 51200
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-09T01:20:54Z",
+      "databaseId": 42545097040,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-09T01:18:50Z",
+      "databaseId": 42544910393,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:18:46Z",
+      "databaseId": 42544904097,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-09T01:18:04Z",
       "databaseId": 42544839676,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,15 +56,15 @@
       "createdAt": "2026-11-09T01:17:41Z",
       "databaseId": 42544806227,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T01:17:24Z",
       "databaseId": 42544781412,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -128,7 +152,7 @@
       "createdAt": "2026-11-09T01:07:31Z",
       "databaseId": 42543851902,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T01:05:56Z",
-      "databaseId": 42543709844,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T01:05:33Z",
-      "databaseId": 42543675862,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T01:05:12Z",
-      "databaseId": 42543642584,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -380480,6 +380480,11 @@
         "episode_id": 127111,
         "display_name": "Vindication S02E05 - 5. epizoda CZ Titulky",
         "video_id": 30929949
+      },
+      {
+        "episode_id": 160963,
+        "display_name": "Škola cudnosti S01E05 - A pro gaye to neplatí? CZ Titulky",
+        "video_id": 30930032
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -760677,6 +760682,11 @@
         "episode_id": 127111,
         "display_name": "Vindication S02E05 - 5. epizoda CZ Titulky",
         "video_id": 30929949
+      },
+      {
+        "episode_id": 160963,
+        "display_name": "Škola cudnosti S01E05 - A pro gaye to neplatí? CZ Titulky",
+        "video_id": 30930032
       }
     ],
     "prepared_not_upload_ready": [
