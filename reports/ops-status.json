@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110173,
     "manifest_upload_ready_episodes": 19,
-    "uploaded_episodes": 81499,
+    "uploaded_episodes": 81501,
     "prepared_source_episodes": 69365,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,43 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53800,
     "whisper_review_pending_sources": 37019,
-    "upload_pending_checkpoints": 42,
+    "upload_pending_checkpoints": 40,
     "subtitle_followup_sources": 51375,
     "subtitle_followup_pending_sources": 51375
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T21:33:33Z",
+      "databaseId": 42703628984,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T21:33:30Z",
+      "databaseId": 42703622037,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T21:33:12Z",
+      "databaseId": 42703573603,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T21:32:49Z",
+      "databaseId": 42703512487,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-09T21:32:10Z",
@@ -32,7 +64,7 @@
       "createdAt": "2026-11-09T21:31:40Z",
       "databaseId": 42703334873,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -60,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T21:27:43Z",
       "databaseId": 42702707788,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -76,11 +108,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T21:26:50Z",
       "databaseId": 42702572653,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T21:22:27Z",
-      "databaseId": 42701884237,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T21:22:25Z",
-      "databaseId": 42701878701,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T21:22:22Z",
-      "databaseId": 42701872219,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-09T21:20:48Z",
-      "databaseId": 42701624348,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -200142,6 +200142,11 @@
         "video_id": 30954333
       },
       {
+        "episode_id": 175524,
+        "display_name": "Tatami: Trable se strojem času S01E02 - Epizoda 2 CZ Titulky",
+        "video_id": 30954571
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -381915,6 +381920,11 @@
         "episode_id": 76078,
         "display_name": "Jimmy Cool S02E20 - 20. epizoda CZ Dabing",
         "video_id": 30954521
+      },
+      {
+        "episode_id": 165471,
+        "display_name": "American Classic S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30954553
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -581774,6 +581784,11 @@
         "video_id": 30954333
       },
       {
+        "episode_id": 175524,
+        "display_name": "Tatami: Trable se strojem času S01E02 - Epizoda 2 CZ Titulky",
+        "video_id": 30954571
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -763547,6 +763562,11 @@
         "episode_id": 76078,
         "display_name": "Jimmy Cool S02E20 - 20. epizoda CZ Dabing",
         "video_id": 30954521
+      },
+      {
+        "episode_id": 165471,
+        "display_name": "American Classic S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30954553
       }
     ],
     "prepared_not_upload_ready": [
