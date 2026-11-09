@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110390,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81307,
-    "prepared_source_episodes": 69467,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 81309,
+    "prepared_source_episodes": 69463,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -14,17 +14,57 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53808,
     "whisper_review_pending_sources": 37004,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51269,
     "subtitle_followup_pending_sources": 51269
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-09T08:26:23Z",
+      "databaseId": 42585947184,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T08:25:21Z",
+      "databaseId": 42585823805,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T08:25:17Z",
+      "databaseId": 42585815209,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T08:25:13Z",
+      "databaseId": 42585806632,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T08:24:02Z",
+      "databaseId": 42585663872,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-09T08:23:33Z",
       "databaseId": 42585606407,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -32,39 +72,39 @@
       "createdAt": "2026-11-09T08:23:31Z",
       "databaseId": 42585603505,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T08:22:58Z",
       "databaseId": 42585535084,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T08:22:43Z",
       "databaseId": 42585504152,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T08:22:20Z",
       "databaseId": 42585456617,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T08:22:17Z",
       "databaseId": 42585450053,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -72,7 +112,7 @@
       "createdAt": "2026-11-09T08:21:31Z",
       "databaseId": 42585357689,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T08:14:31Z",
-      "databaseId": 42584504628,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T08:12:30Z",
-      "databaseId": 42584267935,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T08:10:37Z",
-      "databaseId": 42584049317,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-09T08:09:28Z",
-      "databaseId": 42583911847,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T08:09:22Z",
-      "databaseId": 42583900153,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -199687,6 +199687,11 @@
         "video_id": 30941456
       },
       {
+        "episode_id": 160965,
+        "display_name": "Škola cudnosti S01E08 - Můj život, moje pravidla CZ Titulky",
+        "video_id": 30941489
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -380955,6 +380960,11 @@
         "episode_id": 113719,
         "display_name": "Láska (svatba a rozvod) S01E11 - 11. epizoda CZ Titulky",
         "video_id": 30941465
+      },
+      {
+        "episode_id": 160606,
+        "display_name": "Work Later, Drink Now S02E12 - 12. epizoda CZ Titulky",
+        "video_id": 30941468
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -580359,6 +580369,11 @@
         "video_id": 30941456
       },
       {
+        "episode_id": 160965,
+        "display_name": "Škola cudnosti S01E08 - Můj život, moje pravidla CZ Titulky",
+        "video_id": 30941489
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -761627,6 +761642,11 @@
         "episode_id": 113719,
         "display_name": "Láska (svatba a rozvod) S01E11 - 11. epizoda CZ Titulky",
         "video_id": 30941465
+      },
+      {
+        "episode_id": 160606,
+        "display_name": "Work Later, Drink Now S02E12 - 12. epizoda CZ Titulky",
+        "video_id": 30941468
       }
     ],
     "prepared_not_upload_ready": [
