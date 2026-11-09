@@ -2,23 +2,39 @@
   "counts": {
     "backlog_episodes": 110245,
     "manifest_upload_ready_episodes": 24,
-    "uploaded_episodes": 81477,
-    "prepared_source_episodes": 69340,
+    "uploaded_episodes": 81478,
+    "prepared_source_episodes": 69330,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 25,
+    "language_audited_sources": 27,
     "language_whisper_attempted_sources": 23,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53800,
-    "whisper_review_pending_sources": 37018,
+    "whisper_review_sources": 53801,
+    "whisper_review_pending_sources": 37020,
     "upload_pending_checkpoints": 40,
     "subtitle_followup_sources": 51369,
     "subtitle_followup_pending_sources": 51369
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T20:06:00Z",
+      "databaseId": 42689665213,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T20:05:33Z",
+      "databaseId": 42689591881,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-09T20:04:44Z",
@@ -36,11 +52,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T20:04:09Z",
       "databaseId": 42689365918,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -48,15 +64,15 @@
       "createdAt": "2026-11-09T20:03:53Z",
       "databaseId": 42689323418,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T20:03:46Z",
       "databaseId": 42689307206,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,11 +84,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T20:03:43Z",
       "databaseId": 42689296625,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T19:55:30Z",
-      "databaseId": 42687982789,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T19:55:28Z",
-      "databaseId": 42687977477,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -381805,6 +381805,11 @@
         "episode_id": 4563,
         "display_name": "MECH-X4 S01E06 - 6. epizoda CZ Dabing",
         "video_id": 30953256
+      },
+      {
+        "episode_id": 193842,
+        "display_name": "Bing S01E22 - Kostým CZ Dabing",
+        "video_id": 30953370
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -763327,6 +763332,11 @@
         "episode_id": 4563,
         "display_name": "MECH-X4 S01E06 - 6. epizoda CZ Dabing",
         "video_id": 30953256
+      },
+      {
+        "episode_id": 193842,
+        "display_name": "Bing S01E22 - Kostým CZ Dabing",
+        "video_id": 30953370
       }
     ],
     "prepared_not_upload_ready": [
@@ -764488,14 +764498,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 2,
+    "disabled": 4,
     "ok": 22,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35889,
+    "needs_whisper": 35891,
     "whisper_confirmed_cz": 3914,
-    "whisper_non_cz_needs_subtitles": 12868,
+    "whisper_non_cz_needs_subtitles": 12867,
     "whisper_failed": 1129
   },
   "subtitle_followup_statuses": {
