@@ -1,24 +1,112 @@
 {
   "counts": {
     "backlog_episodes": 110390,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 81295,
-    "prepared_source_episodes": 69455,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 81297,
+    "prepared_source_episodes": 69457,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 50,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53806,
     "whisper_review_pending_sources": 36992,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51259,
     "subtitle_followup_pending_sources": 51259
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:39:09Z",
+      "databaseId": 42580681979,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:38:56Z",
+      "databaseId": 42580660661,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T07:38:34Z",
+      "databaseId": 42580623688,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T07:37:54Z",
+      "databaseId": 42580556674,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:37:50Z",
+      "databaseId": 42580549723,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-09T07:37:15Z",
+      "databaseId": 42580491872,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-09T07:37:11Z",
+      "databaseId": 42580483490,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:37:10Z",
+      "databaseId": 42580483036,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:37:07Z",
+      "databaseId": 42580476258,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:36:18Z",
+      "databaseId": 42580388603,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:36:15Z",
+      "databaseId": 42580382903,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-09T07:34:41Z",
@@ -48,7 +136,7 @@
       "createdAt": "2026-11-09T07:32:48Z",
       "databaseId": 42580013506,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,15 +152,15 @@
       "createdAt": "2026-11-09T07:31:33Z",
       "databaseId": 42579884693,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T07:31:00Z",
       "databaseId": 42579824274,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -90,94 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T07:29:06Z",
-      "databaseId": 42579625369,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T07:28:04Z",
-      "databaseId": 42579527129,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T07:28:01Z",
-      "databaseId": 42579520708,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T07:28:00Z",
-      "databaseId": 42579519640,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T07:27:56Z",
-      "databaseId": 42579513273,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T07:27:36Z",
-      "databaseId": 42579476444,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T07:27:33Z",
-      "databaseId": 42579470818,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T07:26:44Z",
-      "databaseId": 42579386448,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T07:26:40Z",
-      "databaseId": 42579379809,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T07:25:59Z",
-      "databaseId": 42579309788,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-09T07:25:59Z",
-      "databaseId": 42579309277,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -199647,6 +199647,11 @@
         "video_id": 30937414
       },
       {
+        "episode_id": 163752,
+        "display_name": "Adventure Beast S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30937869
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -380895,6 +380900,11 @@
         "episode_id": 135018,
         "display_name": "Dark Hole S01E10 - 10. epizoda CZ Titulky",
         "video_id": 30937582
+      },
+      {
+        "episode_id": 170122,
+        "display_name": "Mario Biondo: Poslední hodiny S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30937844
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -580259,6 +580269,11 @@
         "video_id": 30937414
       },
       {
+        "episode_id": 163752,
+        "display_name": "Adventure Beast S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30937869
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -761507,6 +761522,11 @@
         "episode_id": 135018,
         "display_name": "Dark Hole S01E10 - 10. epizoda CZ Titulky",
         "video_id": 30937582
+      },
+      {
+        "episode_id": 170122,
+        "display_name": "Mario Biondo: Poslední hodiny S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30937844
       }
     ],
     "prepared_not_upload_ready": [
@@ -762668,8 +762688,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 8,
-    "ok": 41,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
