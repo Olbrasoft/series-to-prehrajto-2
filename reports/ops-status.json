@@ -1,17 +1,17 @@
 {
   "counts": {
     "backlog_episodes": 110304,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81394,
-    "prepared_source_episodes": 69387,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 81395,
+    "prepared_source_episodes": 69390,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 44,
-    "language_whisper_attempted_sources": 44,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 23,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53805,
     "whisper_review_pending_sources": 37016,
     "upload_pending_checkpoints": 41,
@@ -21,10 +21,66 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-09T13:45:29Z",
+      "databaseId": 42628269358,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T13:45:28Z",
+      "databaseId": 42628267146,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-09T13:43:48Z",
+      "databaseId": 42628020665,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T13:42:35Z",
+      "databaseId": 42627842948,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T13:41:50Z",
+      "databaseId": 42627734233,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-09T13:41:11Z",
+      "databaseId": 42627641623,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T13:41:07Z",
+      "databaseId": 42627631210,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-09T13:38:54Z",
       "databaseId": 42627311873,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +88,7 @@
       "createdAt": "2026-11-09T13:38:32Z",
       "databaseId": 42627262006,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -48,7 +104,7 @@
       "createdAt": "2026-11-09T13:37:47Z",
       "databaseId": 42627156598,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -68,11 +124,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T13:35:47Z",
       "databaseId": 42626859451,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T13:33:17Z",
-      "databaseId": 42626486485,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T13:33:12Z",
-      "databaseId": 42626474535,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T13:32:33Z",
-      "databaseId": 42626378064,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T13:32:17Z",
-      "databaseId": 42626339540,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T13:32:13Z",
-      "databaseId": 42626330041,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T13:31:50Z",
-      "databaseId": 42626274350,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T13:31:44Z",
-      "databaseId": 42626261072,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -199890,6 +199890,11 @@
         "episode_id": 76048,
         "display_name": "Jimmy Cool S01E13 - 13. epizoda CZ Dabing",
         "video_id": 30946527
+      },
+      {
+        "episode_id": 160960,
+        "display_name": "Škola cudnosti S01E02 - Lov králíků CZ Titulky",
+        "video_id": 30946640
       },
       {
         "episode_id": 114182,
@@ -580999,6 +581004,11 @@
         "video_id": 30946527
       },
       {
+        "episode_id": 160960,
+        "display_name": "Škola cudnosti S01E02 - Lov králíků CZ Titulky",
+        "video_id": 30946640
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -763658,7 +763668,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 43,
+    "disabled": 3,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
