@@ -3,20 +3,20 @@
     "backlog_episodes": 110344,
     "manifest_upload_ready_episodes": 4,
     "uploaded_episodes": 81324,
-    "prepared_source_episodes": 69480,
+    "prepared_source_episodes": 69463,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 28,
-    "language_whisper_attempted_sources": 28,
+    "language_audited_sources": 35,
+    "language_whisper_attempted_sources": 31,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53810,
     "whisper_review_pending_sources": 37026,
     "upload_pending_checkpoints": 40,
-    "subtitle_followup_sources": 51284,
-    "subtitle_followup_pending_sources": 51284
+    "subtitle_followup_sources": 51285,
+    "subtitle_followup_pending_sources": 51285
   },
   "workflow_runs": [
     {
@@ -40,7 +40,7 @@
       "createdAt": "2026-11-09T09:36:56Z",
       "databaseId": 42594783437,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -48,7 +48,7 @@
       "createdAt": "2026-11-09T09:36:08Z",
       "databaseId": 42594687541,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +84,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T09:32:23Z",
       "databaseId": 42594205741,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -762958,7 +762958,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 27,
+    "ok": 30,
+    "disabled": 4,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -762968,6 +762969,6 @@
     "whisper_failed": 1139
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51284
+    "needs_subtitle_setup_after_prehrajto_processing": 51285
   }
 }
