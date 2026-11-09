@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110463,
     "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 81207,
+    "uploaded_episodes": 81208,
     "prepared_source_episodes": 69454,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,19 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53811,
     "whisper_review_pending_sources": 36992,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 51195,
     "subtitle_followup_pending_sources": 51195
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-09T01:07:37Z",
+      "databaseId": 42543862397,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-09T01:07:31Z",
@@ -40,7 +48,7 @@
       "createdAt": "2026-11-09T01:06:45Z",
       "databaseId": 42543782765,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -72,7 +80,7 @@
       "createdAt": "2026-11-09T01:05:12Z",
       "databaseId": 42543642584,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T01:03:44Z",
       "databaseId": 42543510344,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T00:55:28Z",
-      "databaseId": 42542794280,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -380455,6 +380455,11 @@
         "episode_id": 152247,
         "display_name": "Vražedné úterky S01E02 - 2. epizoda CZ Dabing",
         "video_id": 30929434
+      },
+      {
+        "episode_id": 189202,
+        "display_name": "Šmoulové S02E37 - Zkrocení divocha CZ Titulky",
+        "video_id": 30929795
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -760627,6 +760632,11 @@
         "episode_id": 152247,
         "display_name": "Vražedné úterky S01E02 - 2. epizoda CZ Dabing",
         "video_id": 30929434
+      },
+      {
+        "episode_id": 189202,
+        "display_name": "Šmoulové S02E37 - Zkrocení divocha CZ Titulky",
+        "video_id": 30929795
       }
     ],
     "prepared_not_upload_ready": [
