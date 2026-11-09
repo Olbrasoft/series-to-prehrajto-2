@@ -1,24 +1,40 @@
 {
   "counts": {
     "backlog_episodes": 110344,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 81359,
-    "prepared_source_episodes": 69448,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 81360,
+    "prepared_source_episodes": 69445,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 31,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53805,
-    "whisper_review_pending_sources": 37007,
-    "upload_pending_checkpoints": 40,
+    "whisper_review_sources": 53807,
+    "whisper_review_pending_sources": 37017,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 51309,
     "subtitle_followup_pending_sources": 51309
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T12:16:05Z",
+      "databaseId": 42615577180,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T12:15:59Z",
+      "databaseId": 42615562883,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
     {
       "conclusion": "success",
       "createdAt": "2026-11-09T12:08:20Z",
@@ -32,7 +48,7 @@
       "createdAt": "2026-11-09T12:07:30Z",
       "databaseId": 42614385297,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -52,19 +68,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T12:06:38Z",
       "databaseId": 42614269196,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T12:05:19Z",
       "databaseId": 42614091490,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T12:05:13Z",
       "databaseId": 42614077577,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T11:56:06Z",
-      "databaseId": 42612902669,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T11:55:16Z",
-      "databaseId": 42612795590,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -381215,6 +381215,11 @@
         "episode_id": 189207,
         "display_name": "Šmoulové S02E43 - Šmoulí Vánoce CZ Dabing",
         "video_id": 30945327
+      },
+      {
+        "episode_id": 189219,
+        "display_name": "Šmoulové S02E44 - Plínkobot asistentem CZ Dabing",
+        "video_id": 30945373
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -762147,6 +762152,11 @@
         "episode_id": 189207,
         "display_name": "Šmoulové S02E43 - Šmoulí Vánoce CZ Dabing",
         "video_id": 30945327
+      },
+      {
+        "episode_id": 189219,
+        "display_name": "Šmoulové S02E44 - Plínkobot asistentem CZ Dabing",
+        "video_id": 30945373
       }
     ],
     "prepared_not_upload_ready": [
@@ -763308,12 +763318,13 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 11,
     "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35874,
-    "whisper_confirmed_cz": 3889,
+    "needs_whisper": 35884,
+    "whisper_confirmed_cz": 3881,
     "whisper_non_cz_needs_subtitles": 12909,
     "whisper_failed": 1133
   },
