@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110390,
     "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 81297,
+    "uploaded_episodes": 81299,
     "prepared_source_episodes": 69456,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,25 +14,81 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53806,
     "whisper_review_pending_sources": 36992,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51259,
     "subtitle_followup_pending_sources": 51259
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-09T07:40:41Z",
-      "databaseId": 42580838829,
+      "createdAt": "2026-11-09T07:44:41Z",
+      "databaseId": 42581240289,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-09T07:44:38Z",
+      "databaseId": 42581235263,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T07:44:31Z",
+      "databaseId": 42581222777,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:42:00Z",
+      "databaseId": 42580967303,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:41:57Z",
+      "databaseId": 42580961339,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:41:55Z",
+      "databaseId": 42580958403,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:41:54Z",
+      "databaseId": 42580956596,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:40:41Z",
+      "databaseId": 42580838829,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T07:40:38Z",
       "databaseId": 42580832417,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,11 +100,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T07:38:56Z",
       "databaseId": 42580660661,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,11 +156,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T07:37:07Z",
       "databaseId": 42580476258,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T07:34:41Z",
-      "databaseId": 42580213420,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T07:33:34Z",
-      "databaseId": 42580097750,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T07:33:22Z",
-      "databaseId": 42580075001,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T07:32:48Z",
-      "databaseId": 42580013506,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T07:32:20Z",
-      "databaseId": 42579966235,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T07:31:33Z",
-      "databaseId": 42579884693,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T07:31:00Z",
-      "databaseId": 42579824274,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -199650,6 +199650,16 @@
         "episode_id": 163752,
         "display_name": "Adventure Beast S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30937869
+      },
+      {
+        "episode_id": 170121,
+        "display_name": "Mario Biondo: Poslední hodiny S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30937932
+      },
+      {
+        "episode_id": 127129,
+        "display_name": "Vindication S04E05 - 5. epizoda CZ Titulky",
+        "video_id": 30937970
       },
       {
         "episode_id": 114182,
@@ -580272,6 +580282,16 @@
         "episode_id": 163752,
         "display_name": "Adventure Beast S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30937869
+      },
+      {
+        "episode_id": 170121,
+        "display_name": "Mario Biondo: Poslední hodiny S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30937932
+      },
+      {
+        "episode_id": 127129,
+        "display_name": "Vindication S04E05 - 5. epizoda CZ Titulky",
+        "video_id": 30937970
       },
       {
         "episode_id": 114182,
