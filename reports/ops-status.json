@@ -1,38 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 110463,
-    "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 81213,
-    "prepared_source_episodes": 69459,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 81215,
+    "prepared_source_episodes": 69441,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 63,
-    "language_whisper_attempted_sources": 51,
+    "language_audited_sources": 54,
+    "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53811,
-    "whisper_review_pending_sources": 36997,
-    "upload_pending_checkpoints": 38,
+    "whisper_review_sources": 53813,
+    "whisper_review_pending_sources": 37008,
+    "upload_pending_checkpoints": 40,
     "subtitle_followup_sources": 51201,
     "subtitle_followup_pending_sources": 51201
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-09T01:24:49Z",
-      "databaseId": 42545440079,
+      "createdAt": "2026-11-09T01:29:37Z",
+      "databaseId": 42545842083,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T01:29:16Z",
+      "databaseId": 42545814917,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-09T01:27:59Z",
+      "databaseId": 42545710141,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-09T01:25:36Z",
+      "databaseId": 42545510438,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:25:32Z",
+      "databaseId": 42545505848,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:25:13Z",
+      "databaseId": 42545476025,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T01:24:49Z",
+      "databaseId": 42545440079,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T01:24:45Z",
       "databaseId": 42545434755,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -56,7 +104,7 @@
       "createdAt": "2026-11-09T01:22:45Z",
       "databaseId": 42545259941,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -68,11 +116,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T01:22:21Z",
       "databaseId": 42545224309,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,11 +164,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T01:18:46Z",
       "databaseId": 42544904097,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T01:17:41Z",
-      "databaseId": 42544806227,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T01:17:24Z",
-      "databaseId": 42544781412,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T01:17:21Z",
-      "databaseId": 42544775630,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T01:17:12Z",
-      "databaseId": 42544763127,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T01:15:38Z",
-      "databaseId": 42544617379,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T01:15:17Z",
-      "databaseId": 42544580982,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -199430,6 +199430,16 @@
         "episode_id": 160597,
         "display_name": "Work Later, Drink Now S01E09 - 9. epizoda CZ Titulky",
         "video_id": 30929526
+      },
+      {
+        "episode_id": 189205,
+        "display_name": "Šmoulové S02E40 - Nešika jde k cirkusu CZ Dabing",
+        "video_id": 30930237
+      },
+      {
+        "episode_id": 127113,
+        "display_name": "Vindication S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 30930300
       },
       {
         "episode_id": 114182,
@@ -579634,6 +579644,16 @@
         "video_id": 30929526
       },
       {
+        "episode_id": 189205,
+        "display_name": "Šmoulové S02E40 - Nešika jde k cirkusu CZ Dabing",
+        "video_id": 30930237
+      },
+      {
+        "episode_id": 127113,
+        "display_name": "Vindication S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 30930300
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -761848,15 +761868,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 12,
-    "stream_undersized": 5,
-    "ok": 45,
+    "ok": 40,
+    "disabled": 13,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35866,
+    "needs_whisper": 35877,
     "whisper_confirmed_cz": 3885,
-    "whisper_non_cz_needs_subtitles": 12929,
+    "whisper_non_cz_needs_subtitles": 12920,
     "whisper_failed": 1131
   },
   "subtitle_followup_statuses": {
