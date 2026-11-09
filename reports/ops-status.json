@@ -2,29 +2,45 @@
   "counts": {
     "backlog_episodes": 110344,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 81337,
+    "uploaded_episodes": 81339,
     "prepared_source_episodes": 69471,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 31,
-    "language_whisper_attempted_sources": 24,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53807,
     "whisper_review_pending_sources": 37015,
-    "upload_pending_checkpoints": 41,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 51292,
     "subtitle_followup_pending_sources": 51292
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-09T10:20:29Z",
+      "databaseId": 42600165372,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T10:20:04Z",
+      "databaseId": 42600113508,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-09T10:17:22Z",
       "databaseId": 42599787817,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +60,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T10:16:41Z",
       "databaseId": 42599700200,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -56,7 +72,7 @@
       "createdAt": "2026-11-09T10:16:33Z",
       "databaseId": 42599686130,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T10:15:04Z",
       "databaseId": 42599499772,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +120,7 @@
       "createdAt": "2026-11-09T10:14:11Z",
       "databaseId": 42599393830,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -124,11 +140,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T10:13:54Z",
       "databaseId": 42599356544,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T10:10:45Z",
-      "databaseId": 42598964603,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T10:10:40Z",
-      "databaseId": 42598955036,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -199745,6 +199745,16 @@
         "episode_id": 193832,
         "display_name": "Bing S01E12 - Už jedu CZ Titulky",
         "video_id": 30943142
+      },
+      {
+        "episode_id": 49996,
+        "display_name": "Návštěva z budoucnosti S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30943390
+      },
+      {
+        "episode_id": 113737,
+        "display_name": "Láska (svatba a rozvod) S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 30943397
       },
       {
         "episode_id": 114182,
@@ -580569,6 +580579,16 @@
         "video_id": 30943142
       },
       {
+        "episode_id": 49996,
+        "display_name": "Návštěva z budoucnosti S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 30943390
+      },
+      {
+        "episode_id": 113737,
+        "display_name": "Láska (svatba a rozvod) S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 30943397
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -763088,8 +763108,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
-    "ok": 23,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
