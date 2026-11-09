@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110463,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81238,
+    "uploaded_episodes": 81240,
     "prepared_source_episodes": 69473,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,25 +14,65 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53810,
     "whisper_review_pending_sources": 37005,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 51217,
     "subtitle_followup_pending_sources": 51217
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-09T03:12:22Z",
-      "databaseId": 42555090687,
+      "createdAt": "2026-11-09T03:17:42Z",
+      "databaseId": 42555594483,
       "headBranch": "main",
       "status": "pending",
-      "workflowName": "ops-watchdog"
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-09T03:16:44Z",
+      "databaseId": 42555504055,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-09T03:13:12Z",
+      "databaseId": 42555165840,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T03:13:10Z",
+      "databaseId": 42555161391,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T03:13:07Z",
+      "databaseId": 42555157824,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T03:12:22Z",
+      "databaseId": 42555090687,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-09T03:09:31Z",
       "databaseId": 42554809835,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T02:59:04Z",
-      "databaseId": 42553847598,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T02:57:56Z",
-      "databaseId": 42553756042,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T02:57:51Z",
-      "databaseId": 42553750101,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T02:57:45Z",
-      "databaseId": 42553741571,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-09T02:52:53Z",
-      "databaseId": 42553321615,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -199500,6 +199500,16 @@
         "episode_id": 189200,
         "display_name": "Šmoulové S02E33 - Zamilovaný Gargamel CZ Dabing",
         "video_id": 30932065
+      },
+      {
+        "episode_id": 189216,
+        "display_name": "Šmoulové S02E34 - Polštářek CZ Dabing",
+        "video_id": 30932094
+      },
+      {
+        "episode_id": 8429,
+        "display_name": "Naladěná S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30932043
       },
       {
         "episode_id": 114182,
@@ -579827,6 +579837,16 @@
         "episode_id": 189200,
         "display_name": "Šmoulové S02E33 - Zamilovaný Gargamel CZ Dabing",
         "video_id": 30932065
+      },
+      {
+        "episode_id": 189216,
+        "display_name": "Šmoulové S02E34 - Polštářek CZ Dabing",
+        "video_id": 30932094
+      },
+      {
+        "episode_id": 8429,
+        "display_name": "Naladěná S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30932043
       },
       {
         "episode_id": 114182,
