@@ -1,30 +1,38 @@
 {
   "counts": {
     "backlog_episodes": 110344,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81327,
-    "prepared_source_episodes": 69470,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 81329,
+    "prepared_source_episodes": 69469,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 55,
-    "language_whisper_attempted_sources": 50,
+    "language_audited_sources": 56,
+    "language_whisper_attempted_sources": 52,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53808,
-    "whisper_review_pending_sources": 37016,
-    "upload_pending_checkpoints": 41,
+    "whisper_review_sources": 53807,
+    "whisper_review_pending_sources": 37014,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 51289,
     "subtitle_followup_pending_sources": 51289
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-09T09:56:52Z",
+      "databaseId": 42597235510,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-09T09:56:05Z",
       "databaseId": 42597140006,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,19 +44,19 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T09:54:36Z",
       "databaseId": 42596957082,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T09:53:48Z",
       "databaseId": 42596860746,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,7 +88,7 @@
       "createdAt": "2026-11-09T09:51:54Z",
       "databaseId": 42596633274,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -88,7 +96,7 @@
       "createdAt": "2026-11-09T09:51:51Z",
       "databaseId": 42596626533,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T09:41:57Z",
-      "databaseId": 42595397233,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -199732,6 +199732,11 @@
         "video_id": 30942792
       },
       {
+        "episode_id": 76085,
+        "display_name": "Jimmy Cool S01E07 - 7. epizoda CZ Dabing",
+        "video_id": 30942901
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -381055,6 +381060,11 @@
         "episode_id": 113727,
         "display_name": "Láska (svatba a rozvod) S02E05 - 5. epizoda CZ Titulky",
         "video_id": 30942836
+      },
+      {
+        "episode_id": 125011,
+        "display_name": "Nyrkki S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30942917
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -580504,6 +580514,11 @@
         "video_id": 30942792
       },
       {
+        "episode_id": 76085,
+        "display_name": "Jimmy Cool S01E07 - 7. epizoda CZ Dabing",
+        "video_id": 30942901
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -761827,6 +761842,11 @@
         "episode_id": 113727,
         "display_name": "Láska (svatba a rozvod) S02E05 - 5. epizoda CZ Titulky",
         "video_id": 30942836
+      },
+      {
+        "episode_id": 125011,
+        "display_name": "Nyrkki S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30942917
       }
     ],
     "prepared_not_upload_ready": [
@@ -762988,13 +763008,13 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 49,
-    "disabled": 5,
+    "ok": 51,
+    "disabled": 4,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35877,
-    "whisper_confirmed_cz": 3909,
+    "needs_whisper": 35875,
+    "whisper_confirmed_cz": 3910,
     "whisper_non_cz_needs_subtitles": 12883,
     "whisper_failed": 1139
   },
