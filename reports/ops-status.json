@@ -2,29 +2,45 @@
   "counts": {
     "backlog_episodes": 110426,
     "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 81264,
+    "uploaded_episodes": 81265,
     "prepared_source_episodes": 69450,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 43,
+    "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53812,
     "whisper_review_pending_sources": 37019,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51233,
     "subtitle_followup_pending_sources": 51233
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-09T05:27:44Z",
+      "databaseId": 42567448341,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T05:27:08Z",
+      "databaseId": 42567391243,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-09T05:26:22Z",
       "databaseId": 42567320082,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +48,7 @@
       "createdAt": "2026-11-09T05:26:18Z",
       "databaseId": 42567314091,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,11 +60,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T05:24:52Z",
       "databaseId": 42567169479,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -148,11 +164,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T05:20:14Z",
       "databaseId": 42566713054,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T05:17:31Z",
-      "databaseId": 42566444863,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T05:16:52Z",
-      "databaseId": 42566377893,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -199575,6 +199575,11 @@
         "episode_id": 189209,
         "display_name": "Šmoulové S02E46 - Šmoulové v jednom ohni CZ Dabing",
         "video_id": 30934491
+      },
+      {
+        "episode_id": 189208,
+        "display_name": "Šmoulové S02E45 - Mňamíkový dort CZ Titulky",
+        "video_id": 30934623
       },
       {
         "episode_id": 114182,
@@ -580034,6 +580039,11 @@
         "video_id": 30934491
       },
       {
+        "episode_id": 189208,
+        "display_name": "Šmoulové S02E45 - Mňamíkový dort CZ Titulky",
+        "video_id": 30934623
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -762358,7 +762368,6 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 3,
     "ok": 39,
     "resolve_failed": 1
   },
