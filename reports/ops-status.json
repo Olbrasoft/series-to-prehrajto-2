@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110173,
     "manifest_upload_ready_episodes": 16,
-    "uploaded_episodes": 81494,
+    "uploaded_episodes": 81495,
     "prepared_source_episodes": 69358,
     "description_series": 60,
     "description_episodes": 753,
@@ -20,11 +20,35 @@
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-09T21:17:42Z",
+      "databaseId": 42701125523,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T21:17:29Z",
+      "databaseId": 42701090834,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T21:16:48Z",
+      "databaseId": 42700982375,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-09T21:15:12Z",
       "databaseId": 42700727024,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-09T21:14:03Z",
       "databaseId": 42700545339,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +80,7 @@
       "createdAt": "2026-11-09T21:12:15Z",
       "databaseId": 42700255736,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -84,11 +108,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T21:11:14Z",
       "databaseId": 42700091839,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T21:03:01Z",
-      "databaseId": 42698753373,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T21:02:46Z",
-      "databaseId": 42698710891,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T21:02:31Z",
-      "databaseId": 42698671159,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -200125,6 +200125,11 @@
         "episode_id": 4565,
         "display_name": "MECH-X4 S01E08 - 8. epizoda CZ Dabing",
         "video_id": 30954168
+      },
+      {
+        "episode_id": 109913,
+        "display_name": "Il paradiso delle signore S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30954281
       },
       {
         "episode_id": 114182,
@@ -581732,6 +581737,11 @@
         "episode_id": 4565,
         "display_name": "MECH-X4 S01E08 - 8. epizoda CZ Dabing",
         "video_id": 30954168
+      },
+      {
+        "episode_id": 109913,
+        "display_name": "Il paradiso delle signore S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 30954281
       },
       {
         "episode_id": 114182,
