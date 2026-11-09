@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110426,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 81269,
-    "prepared_source_episodes": 69453,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 81270,
+    "prepared_source_episodes": 69452,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,11 +14,75 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53811,
     "whisper_review_pending_sources": 37014,
-    "upload_pending_checkpoints": 39,
+    "upload_pending_checkpoints": 38,
     "subtitle_followup_sources": 51238,
     "subtitle_followup_pending_sources": 51238
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T05:56:18Z",
+      "databaseId": 42570108334,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T05:54:40Z",
+      "databaseId": 42569960768,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T05:54:32Z",
+      "databaseId": 42569948010,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T05:54:29Z",
+      "databaseId": 42569944566,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T05:54:25Z",
+      "databaseId": 42569937612,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-09T05:54:17Z",
+      "databaseId": 42569925754,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T05:54:11Z",
+      "databaseId": 42569917280,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-09T05:53:38Z",
+      "databaseId": 42569867600,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-09T05:52:16Z",
@@ -32,15 +96,15 @@
       "createdAt": "2026-11-09T05:52:09Z",
       "databaseId": 42569733621,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T05:51:37Z",
       "databaseId": 42569683684,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -52,11 +116,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T05:50:49Z",
       "databaseId": 42569611814,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -84,11 +148,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T05:48:26Z",
       "databaseId": 42569389339,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +168,7 @@
       "createdAt": "2026-11-09T05:46:05Z",
       "databaseId": 42569171829,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T05:44:46Z",
-      "databaseId": 42569046122,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T05:44:45Z",
-      "databaseId": 42569043750,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T05:44:40Z",
-      "databaseId": 42569037051,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T05:44:04Z",
-      "databaseId": 42568982396,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T05:44:03Z",
-      "databaseId": 42568981143,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T05:44:00Z",
-      "databaseId": 42568975974,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T05:43:57Z",
-      "databaseId": 42568972212,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T05:42:48Z",
-      "databaseId": 42568867277,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -380765,6 +380765,11 @@
         "episode_id": 127127,
         "display_name": "Vindication S04E03 - 3. epizoda CZ Titulky",
         "video_id": 30934903
+      },
+      {
+        "episode_id": 164099,
+        "display_name": "Hlava Joaquína Murriety S01E02 - Popel CZ Titulky",
+        "video_id": 30935089
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -761247,6 +761252,11 @@
         "episode_id": 127127,
         "display_name": "Vindication S04E03 - 3. epizoda CZ Titulky",
         "video_id": 30934903
+      },
+      {
+        "episode_id": 164099,
+        "display_name": "Hlava Joaquína Murriety S01E02 - Popel CZ Titulky",
+        "video_id": 30935089
       }
     ],
     "prepared_not_upload_ready": [
