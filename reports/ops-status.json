@@ -1,38 +1,94 @@
 {
   "counts": {
     "backlog_episodes": 110390,
-    "manifest_upload_ready_episodes": 0,
-    "uploaded_episodes": 81294,
-    "prepared_source_episodes": 69451,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 81295,
+    "prepared_source_episodes": 69456,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 50,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53805,
-    "whisper_review_pending_sources": 36988,
-    "upload_pending_checkpoints": 39,
-    "subtitle_followup_sources": 51255,
-    "subtitle_followup_pending_sources": 51255
+    "whisper_review_sources": 53806,
+    "whisper_review_pending_sources": 36994,
+    "upload_pending_checkpoints": 38,
+    "subtitle_followup_sources": 51257,
+    "subtitle_followup_pending_sources": 51257
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-09T07:26:44Z",
-      "databaseId": 42579386448,
+      "createdAt": "2026-11-09T07:29:06Z",
+      "databaseId": 42579625369,
       "headBranch": "main",
       "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:28:04Z",
+      "databaseId": 42579527129,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-09T07:28:01Z",
+      "databaseId": 42579520708,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T07:28:00Z",
+      "databaseId": 42579519640,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T07:27:56Z",
+      "databaseId": 42579513273,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T07:27:36Z",
+      "databaseId": 42579476444,
+      "headBranch": "main",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-09T07:27:33Z",
+      "databaseId": 42579470818,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T07:26:44Z",
+      "databaseId": 42579386448,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T07:26:40Z",
       "databaseId": 42579379809,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -60,11 +116,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T07:22:18Z",
       "databaseId": 42578913076,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -80,7 +136,7 @@
       "createdAt": "2026-11-09T07:19:41Z",
       "databaseId": 42578624210,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -116,68 +172,12 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T07:18:11Z",
       "databaseId": 42578466903,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T07:17:49Z",
-      "databaseId": 42578426274,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-09T07:17:00Z",
-      "databaseId": 42578335931,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T07:16:36Z",
-      "databaseId": 42578294395,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T07:16:35Z",
-      "databaseId": 42578291869,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T07:16:30Z",
-      "databaseId": 42578283229,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T07:16:18Z",
-      "databaseId": 42578262439,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-09T07:15:49Z",
-      "databaseId": 42578208975,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -380890,6 +380890,11 @@
         "episode_id": 168478,
         "display_name": "The Director Who Buys Me Dinner S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30937505
+      },
+      {
+        "episode_id": 135018,
+        "display_name": "Dark Hole S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30937582
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -761497,6 +761502,11 @@
         "episode_id": 168478,
         "display_name": "The Director Who Buys Me Dinner S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30937505
+      },
+      {
+        "episode_id": 135018,
+        "display_name": "Dark Hole S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30937582
       }
     ],
     "prepared_not_upload_ready": [
@@ -762658,16 +762668,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 10,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35849,
+    "needs_whisper": 35855,
     "whisper_confirmed_cz": 3904,
-    "whisper_non_cz_needs_subtitles": 12913,
+    "whisper_non_cz_needs_subtitles": 12908,
     "whisper_failed": 1139
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51255
+    "needs_subtitle_setup_after_prehrajto_processing": 51257
   }
 }
