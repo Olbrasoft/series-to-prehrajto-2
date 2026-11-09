@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 110344,
     "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 81345,
+    "uploaded_episodes": 81346,
     "prepared_source_episodes": 69484,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,67 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53808,
     "whisper_review_pending_sources": 37021,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 51298,
     "subtitle_followup_pending_sources": 51298
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T11:23:01Z",
+      "databaseId": 42608602715,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T11:22:52Z",
+      "databaseId": 42608582837,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T11:22:47Z",
+      "databaseId": 42608573069,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T11:22:45Z",
+      "databaseId": 42608568746,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T11:22:31Z",
+      "databaseId": 42608537922,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-09T11:20:50Z",
+      "databaseId": 42608303887,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T11:20:35Z",
+      "databaseId": 42608269141,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-09T11:18:29Z",
@@ -32,15 +88,15 @@
       "createdAt": "2026-11-09T11:18:24Z",
       "databaseId": 42607969764,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T11:16:56Z",
       "databaseId": 42607764054,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +108,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T11:16:45Z",
       "databaseId": 42607737896,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -72,7 +128,7 @@
       "createdAt": "2026-11-09T11:14:59Z",
       "databaseId": 42607491754,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -120,64 +176,8 @@
       "createdAt": "2026-11-09T11:13:37Z",
       "databaseId": 42607301730,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T11:13:02Z",
-      "databaseId": 42607219609,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-09T11:12:39Z",
-      "databaseId": 42607166929,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-09T11:12:04Z",
-      "databaseId": 42607084127,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T11:11:38Z",
-      "databaseId": 42607023897,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T11:11:33Z",
-      "databaseId": 42607012730,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T11:11:00Z",
-      "databaseId": 42606937717,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T11:10:16Z",
-      "databaseId": 42606832329,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -199770,6 +199770,11 @@
         "episode_id": 113729,
         "display_name": "Láska (svatba a rozvod) S02E11 - 11. epizoda CZ Titulky",
         "video_id": 30944169
+      },
+      {
+        "episode_id": 189185,
+        "display_name": "Šmoulové S02E16 - Jasnačka! CZ Titulky",
+        "video_id": 30944415
       },
       {
         "episode_id": 114182,
@@ -580632,6 +580637,11 @@
         "episode_id": 113729,
         "display_name": "Láska (svatba a rozvod) S02E11 - 11. epizoda CZ Titulky",
         "video_id": 30944169
+      },
+      {
+        "episode_id": 189185,
+        "display_name": "Šmoulové S02E16 - Jasnačka! CZ Titulky",
+        "video_id": 30944415
       },
       {
         "episode_id": 114182,
