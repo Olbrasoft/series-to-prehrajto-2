@@ -1,24 +1,80 @@
 {
   "counts": {
     "backlog_episodes": 110245,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 81421,
-    "prepared_source_episodes": 69413,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 81426,
+    "prepared_source_episodes": 69412,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 46,
+    "language_audited_sources": 53,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53804,
     "whisper_review_pending_sources": 37020,
-    "upload_pending_checkpoints": 42,
+    "upload_pending_checkpoints": 39,
     "subtitle_followup_sources": 51343,
     "subtitle_followup_pending_sources": 51343
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T15:23:51Z",
+      "databaseId": 42644245044,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-09T15:23:51Z",
+      "databaseId": 42644242566,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T15:23:26Z",
+      "databaseId": 42644175214,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T15:23:25Z",
+      "databaseId": 42644171937,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T15:23:21Z",
+      "databaseId": 42644158528,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-09T15:22:16Z",
+      "databaseId": 42643974565,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-09T15:21:03Z",
+      "databaseId": 42643772020,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-09T15:17:14Z",
@@ -28,19 +84,19 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T15:17:08Z",
       "databaseId": 42643108800,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-09T15:17:04Z",
       "databaseId": 42643098399,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +104,7 @@
       "createdAt": "2026-11-09T15:17:04Z",
       "databaseId": 42643098263,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -60,11 +116,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T15:16:48Z",
       "databaseId": 42643051657,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -96,7 +152,7 @@
       "createdAt": "2026-11-09T15:14:53Z",
       "databaseId": 42642716087,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -116,68 +172,12 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-09T15:13:32Z",
       "databaseId": 42642483438,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T15:13:32Z",
-      "databaseId": 42642482161,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-09T15:13:26Z",
-      "databaseId": 42642465862,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T15:13:21Z",
-      "databaseId": 42642451566,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T15:13:17Z",
-      "databaseId": 42642439939,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-09T15:13:04Z",
-      "databaseId": 42642403569,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T15:11:11Z",
-      "databaseId": 42642078211,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-09T15:10:02Z",
-      "databaseId": 42641873708,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -199957,6 +199957,16 @@
         "video_id": 30947564
       },
       {
+        "episode_id": 171448,
+        "display_name": "Čerstvé, smažené a křupavé S01E05 - San Diego CZ Titulky",
+        "video_id": 30947837
+      },
+      {
+        "episode_id": 146965,
+        "display_name": "Les Grands Mythes S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30947863
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -381525,6 +381535,21 @@
         "episode_id": 109911,
         "display_name": "Il paradiso delle signore S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30947664
+      },
+      {
+        "episode_id": 76055,
+        "display_name": "Jimmy Cool S01E20 - 20. epizoda CZ Dabing",
+        "video_id": 30947849
+      },
+      {
+        "episode_id": 76054,
+        "display_name": "Jimmy Cool S01E19 - 19. epizoda CZ Dabing",
+        "video_id": 30947840
+      },
+      {
+        "episode_id": 146966,
+        "display_name": "Les Grands Mythes S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30947884
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -581199,6 +581224,16 @@
         "video_id": 30947564
       },
       {
+        "episode_id": 171448,
+        "display_name": "Čerstvé, smažené a křupavé S01E05 - San Diego CZ Titulky",
+        "video_id": 30947837
+      },
+      {
+        "episode_id": 146965,
+        "display_name": "Les Grands Mythes S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30947863
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -762767,6 +762802,21 @@
         "episode_id": 109911,
         "display_name": "Il paradiso delle signore S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30947664
+      },
+      {
+        "episode_id": 76055,
+        "display_name": "Jimmy Cool S01E20 - 20. epizoda CZ Dabing",
+        "video_id": 30947849
+      },
+      {
+        "episode_id": 76054,
+        "display_name": "Jimmy Cool S01E19 - 19. epizoda CZ Dabing",
+        "video_id": 30947840
+      },
+      {
+        "episode_id": 146966,
+        "display_name": "Les Grands Mythes S01E10 - 10. epizoda CZ Titulky",
+        "video_id": 30947884
       }
     ],
     "prepared_not_upload_ready": [
@@ -763928,7 +763978,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 6,
+    "disabled": 13,
     "ok": 39,
     "resolve_failed": 1
   },
