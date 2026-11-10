@@ -1,24 +1,112 @@
 {
   "counts": {
-    "backlog_episodes": 110173,
+    "backlog_episodes": 110089,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81574,
+    "uploaded_episodes": 81576,
     "prepared_source_episodes": 69408,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 45,
-    "language_whisper_attempted_sources": 45,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53799,
     "whisper_review_pending_sources": 37031,
-    "upload_pending_checkpoints": 42,
+    "upload_pending_checkpoints": 41,
     "subtitle_followup_sources": 51406,
     "subtitle_followup_pending_sources": 51406
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:37:58Z",
+      "databaseId": 42729775154,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:35:51Z",
+      "databaseId": 42729511322,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:35:45Z",
+      "databaseId": 42729498435,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:35:38Z",
+      "databaseId": 42729484310,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:35:07Z",
+      "databaseId": 42729417262,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T00:34:47Z",
+      "databaseId": 42729372228,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T00:34:44Z",
+      "databaseId": 42729366655,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T00:33:02Z",
+      "databaseId": 42729150598,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "refresh-backlog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:32:48Z",
+      "databaseId": 42729119932,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T00:32:42Z",
+      "databaseId": 42729108947,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:32:39Z",
+      "databaseId": 42729101065,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-10T00:32:11Z",
@@ -28,11 +116,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T00:31:24Z",
       "databaseId": 42728944249,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +140,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T00:29:55Z",
       "databaseId": 42728745495,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -68,19 +156,19 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T00:28:48Z",
       "databaseId": 42728609170,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T00:28:41Z",
       "databaseId": 42728593157,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -90,94 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T00:25:43Z",
-      "databaseId": 42728223546,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T00:24:53Z",
-      "databaseId": 42728110741,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:22:55Z",
-      "databaseId": 42727856897,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:22:51Z",
-      "databaseId": 42727848775,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:22:48Z",
-      "databaseId": 42727842632,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:21:31Z",
-      "databaseId": 42727677784,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T00:16:53Z",
-      "databaseId": 42727086236,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:15:27Z",
-      "databaseId": 42726904637,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:12:43Z",
-      "databaseId": 42726541583,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:12:23Z",
-      "databaseId": 42726496964,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T00:11:14Z",
-      "databaseId": 42726349612,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -200352,6 +200352,11 @@
         "video_id": 30957419
       },
       {
+        "episode_id": 4576,
+        "display_name": "MECH-X4 S02E04 - 4. epizoda CZ Dabing",
+        "video_id": 30957491
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -382290,6 +382295,11 @@
         "episode_id": 146983,
         "display_name": "Les Grands Mythes S02E10 - 10. epizoda CZ Titulky",
         "video_id": 30957281
+      },
+      {
+        "episode_id": 4575,
+        "display_name": "MECH-X4 S02E03 - 3. epizoda CZ Dabing",
+        "video_id": 30957481
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -582359,6 +582369,11 @@
         "video_id": 30957419
       },
       {
+        "episode_id": 4576,
+        "display_name": "MECH-X4 S02E04 - 4. epizoda CZ Dabing",
+        "video_id": 30957491
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -764297,6 +764312,11 @@
         "episode_id": 146983,
         "display_name": "Les Grands Mythes S02E10 - 10. epizoda CZ Titulky",
         "video_id": 30957281
+      },
+      {
+        "episode_id": 4575,
+        "display_name": "MECH-X4 S02E03 - 3. epizoda CZ Dabing",
+        "video_id": 30957481
       }
     ],
     "prepared_not_upload_ready": [
@@ -765458,7 +765478,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 44,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
