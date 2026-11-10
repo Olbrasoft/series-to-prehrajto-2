@@ -1,46 +1,126 @@
 {
   "counts": {
     "backlog_episodes": 110089,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81576,
-    "prepared_source_episodes": 69408,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 81579,
+    "prepared_source_episodes": 69413,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 56,
+    "language_whisper_attempted_sources": 48,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53799,
-    "whisper_review_pending_sources": 37031,
+    "whisper_review_sources": 53797,
+    "whisper_review_pending_sources": 37023,
     "upload_pending_checkpoints": 41,
-    "subtitle_followup_sources": 51406,
-    "subtitle_followup_pending_sources": 51406
+    "subtitle_followup_sources": 51408,
+    "subtitle_followup_pending_sources": 51408
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-10T00:37:58Z",
-      "databaseId": 42729775154,
+      "createdAt": "2026-11-10T00:43:57Z",
+      "databaseId": 42730527123,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:43:29Z",
+      "databaseId": 42730468265,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:43:17Z",
+      "databaseId": 42730444076,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:42:38Z",
+      "databaseId": 42730362169,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:41:18Z",
+      "databaseId": 42730193874,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:40:48Z",
+      "databaseId": 42730129703,
+      "headBranch": "main",
+      "status": "in_progress",
       "workflowName": "external-subtitles"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-10T00:35:51Z",
-      "databaseId": 42729511322,
+      "createdAt": "2026-11-10T00:40:19Z",
+      "databaseId": 42730068880,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T00:40:14Z",
+      "databaseId": 42730056938,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T00:38:32Z",
+      "databaseId": 42729846066,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T00:38:27Z",
+      "databaseId": 42729835492,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T00:37:58Z",
+      "databaseId": 42729775154,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T00:35:51Z",
+      "databaseId": 42729511322,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T00:35:45Z",
       "databaseId": 42729498435,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -52,11 +132,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T00:35:07Z",
       "databaseId": 42729417262,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -88,7 +168,7 @@
       "createdAt": "2026-11-10T00:32:48Z",
       "databaseId": 42729119932,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T00:32:39Z",
-      "databaseId": 42729101065,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T00:32:11Z",
-      "databaseId": 42729041583,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:31:24Z",
-      "databaseId": 42728944249,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T00:31:11Z",
-      "databaseId": 42728916425,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:29:59Z",
-      "databaseId": 42728754136,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:29:55Z",
-      "databaseId": 42728745495,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:28:54Z",
-      "databaseId": 42728620736,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T00:28:48Z",
-      "databaseId": 42728609170,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:28:41Z",
-      "databaseId": 42728593157,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T00:27:41Z",
-      "databaseId": 42728469048,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -200357,6 +200357,11 @@
         "video_id": 30957491
       },
       {
+        "episode_id": 193848,
+        "display_name": "Bing S01E32 - Dečka CZ Dabing",
+        "video_id": 30957596
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -382300,6 +382305,16 @@
         "episode_id": 4575,
         "display_name": "MECH-X4 S02E03 - 3. epizoda CZ Dabing",
         "video_id": 30957481
+      },
+      {
+        "episode_id": 193847,
+        "display_name": "Bing S01E31 - Brouzdaliště CZ Dabing",
+        "video_id": 30957585
+      },
+      {
+        "episode_id": 109918,
+        "display_name": "Il paradiso delle signore S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30957591
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -582374,6 +582389,11 @@
         "video_id": 30957491
       },
       {
+        "episode_id": 193848,
+        "display_name": "Bing S01E32 - Dečka CZ Dabing",
+        "video_id": 30957596
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -764317,6 +764337,16 @@
         "episode_id": 4575,
         "display_name": "MECH-X4 S02E03 - 3. epizoda CZ Dabing",
         "video_id": 30957481
+      },
+      {
+        "episode_id": 193847,
+        "display_name": "Bing S01E31 - Brouzdaliště CZ Dabing",
+        "video_id": 30957585
+      },
+      {
+        "episode_id": 109918,
+        "display_name": "Il paradiso delle signore S01E08 - 8. epizoda CZ Dabing",
+        "video_id": 30957591
       }
     ],
     "prepared_not_upload_ready": [
@@ -765478,16 +765508,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 47,
+    "disabled": 8,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35902,
+    "needs_whisper": 35894,
     "whisper_confirmed_cz": 3938,
-    "whisper_non_cz_needs_subtitles": 12830,
+    "whisper_non_cz_needs_subtitles": 12836,
     "whisper_failed": 1129
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51406
+    "needs_subtitle_setup_after_prehrajto_processing": 51408
   }
 }
