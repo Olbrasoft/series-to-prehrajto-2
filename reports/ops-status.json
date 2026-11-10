@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109962,
     "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 81753,
+    "uploaded_episodes": 81755,
     "prepared_source_episodes": 69378,
     "description_series": 60,
     "description_episodes": 753,
@@ -21,18 +21,50 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-10T12:02:37Z",
-      "databaseId": 42812394472,
+      "createdAt": "2026-11-10T12:04:27Z",
+      "databaseId": 42812650671,
       "headBranch": "main",
-      "status": "pending",
-      "workflowName": "ops-watchdog"
+      "status": "in_progress",
+      "workflowName": "ops-status"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T12:04:05Z",
+      "databaseId": 42812599509,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-10T12:03:27Z",
+      "databaseId": 42812510285,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T12:03:21Z",
+      "databaseId": 42812496514,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T12:02:37Z",
+      "databaseId": 42812394472,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-10T12:02:01Z",
       "databaseId": 42812312766,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -68,11 +100,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T12:00:41Z",
       "databaseId": 42812117416,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T11:52:17Z",
-      "databaseId": 42810982758,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T11:51:52Z",
-      "databaseId": 42810922914,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T11:51:48Z",
-      "databaseId": 42810914237,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T11:51:19Z",
-      "databaseId": 42810850596,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -383185,6 +383185,16 @@
         "episode_id": 179866,
         "display_name": "Nevenka: Výkřik do ticha S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30978559
+      },
+      {
+        "episode_id": 193866,
+        "display_name": "Bing S01E55 - No tak, Charlie CZ Dabing",
+        "video_id": 30978727
+      },
+      {
+        "episode_id": 193867,
+        "display_name": "Bing S01E56 - Skateboard CZ Dabing",
+        "video_id": 30978739
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -766087,6 +766097,16 @@
         "episode_id": 179866,
         "display_name": "Nevenka: Výkřik do ticha S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30978559
+      },
+      {
+        "episode_id": 193866,
+        "display_name": "Bing S01E55 - No tak, Charlie CZ Dabing",
+        "video_id": 30978727
+      },
+      {
+        "episode_id": 193867,
+        "display_name": "Bing S01E56 - Skateboard CZ Dabing",
+        "video_id": 30978739
       }
     ],
     "prepared_not_upload_ready": [
