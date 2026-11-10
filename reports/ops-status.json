@@ -2,29 +2,69 @@
   "counts": {
     "backlog_episodes": 110089,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81580,
+    "uploaded_episodes": 81581,
     "prepared_source_episodes": 69419,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 42,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53797,
     "whisper_review_pending_sources": 37023,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 41,
     "subtitle_followup_sources": 51408,
     "subtitle_followup_pending_sources": 51408
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T00:52:42Z",
+      "databaseId": 42731636313,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:52:11Z",
+      "databaseId": 42731574369,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:51:47Z",
+      "databaseId": 42731523897,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T00:51:24Z",
+      "databaseId": 42731476481,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T00:51:20Z",
+      "databaseId": 42731468525,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-10T00:49:48Z",
       "databaseId": 42731273519,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -132,52 +172,12 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T00:42:38Z",
       "databaseId": 42730362169,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T00:41:18Z",
-      "databaseId": 42730193874,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T00:40:48Z",
-      "databaseId": 42730129703,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T00:40:19Z",
-      "databaseId": 42730068880,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T00:40:14Z",
-      "databaseId": 42730056938,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T00:38:32Z",
-      "databaseId": 42729846066,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -382320,6 +382320,11 @@
         "episode_id": 109918,
         "display_name": "Il paradiso delle signore S01E08 - 8. epizoda CZ Dabing",
         "video_id": 30957591
+      },
+      {
+        "episode_id": 193850,
+        "display_name": "Bing S01E35 - Drak CZ Dabing",
+        "video_id": 30957754
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -764357,6 +764362,11 @@
         "episode_id": 109918,
         "display_name": "Il paradiso delle signore S01E08 - 8. epizoda CZ Dabing",
         "video_id": 30957591
+      },
+      {
+        "episode_id": 193850,
+        "display_name": "Bing S01E35 - Drak CZ Dabing",
+        "video_id": 30957754
       }
     ],
     "prepared_not_upload_ready": [
@@ -765518,7 +765528,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 41,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
