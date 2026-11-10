@@ -1,38 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 109962,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 81731,
-    "prepared_source_episodes": 69445,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 81735,
+    "prepared_source_episodes": 69444,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 50,
+    "language_whisper_attempted_sources": 44,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53794,
-    "whisper_review_pending_sources": 37058,
-    "upload_pending_checkpoints": 43,
-    "subtitle_followup_sources": 51504,
-    "subtitle_followup_pending_sources": 51504
+    "whisper_review_pending_sources": 37060,
+    "upload_pending_checkpoints": 41,
+    "subtitle_followup_sources": 51505,
+    "subtitle_followup_pending_sources": 51505
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:37:27Z",
+      "databaseId": 42800721115,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:37:08Z",
+      "databaseId": 42800679029,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:36:45Z",
+      "databaseId": 42800624440,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:36:39Z",
+      "databaseId": 42800612107,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-10T10:36:30Z",
+      "databaseId": 42800590550,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T10:34:22Z",
+      "databaseId": 42800283191,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-10T10:33:08Z",
       "databaseId": 42800105349,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T10:33:08Z",
       "databaseId": 42800104821,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +100,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T10:32:20Z",
       "databaseId": 42799991554,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -64,15 +112,15 @@
       "createdAt": "2026-11-10T10:32:12Z",
       "databaseId": 42799970449,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T10:32:07Z",
       "databaseId": 42799958152,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,11 +132,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T10:30:11Z",
       "databaseId": 42799674355,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -96,7 +144,7 @@
       "createdAt": "2026-11-10T10:30:07Z",
       "databaseId": 42799663858,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T10:23:46Z",
-      "databaseId": 42798775606,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T10:23:40Z",
-      "databaseId": 42798762402,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T10:23:13Z",
-      "databaseId": 42798697043,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T10:23:07Z",
-      "databaseId": 42798680368,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T10:21:43Z",
-      "databaseId": 42798482246,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T10:21:35Z",
-      "databaseId": 42798464273,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -200757,6 +200757,21 @@
         "video_id": 30975045
       },
       {
+        "episode_id": 155152,
+        "display_name": "Temperature of Love S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30975463
+      },
+      {
+        "episode_id": 167741,
+        "display_name": "Confronting a Serial Killer S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30975386
+      },
+      {
+        "episode_id": 147840,
+        "display_name": "Co přináší řeka S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30975542
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383075,6 +383090,11 @@
         "episode_id": 138811,
         "display_name": "Fangs of Fortune S01E29 - 29. epizoda CZ Titulky",
         "video_id": 30975284
+      },
+      {
+        "episode_id": 15906,
+        "display_name": "Návrat do Sullivan's Crossing S02E04 - Oko bouře CZ Titulky",
+        "video_id": 30975504
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -583549,6 +583569,21 @@
         "video_id": 30975045
       },
       {
+        "episode_id": 155152,
+        "display_name": "Temperature of Love S01E08 - 8. epizoda CZ Titulky",
+        "video_id": 30975463
+      },
+      {
+        "episode_id": 167741,
+        "display_name": "Confronting a Serial Killer S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30975386
+      },
+      {
+        "episode_id": 147840,
+        "display_name": "Co přináší řeka S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 30975542
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -765867,6 +765902,11 @@
         "episode_id": 138811,
         "display_name": "Fangs of Fortune S01E29 - 29. epizoda CZ Titulky",
         "video_id": 30975284
+      },
+      {
+        "episode_id": 15906,
+        "display_name": "Návrat do Sullivan's Crossing S02E04 - Oko bouře CZ Titulky",
+        "video_id": 30975504
       }
     ],
     "prepared_not_upload_ready": [
@@ -767028,16 +767068,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "disabled": 6,
+    "ok": 43,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35926,
-    "whisper_confirmed_cz": 3919,
-    "whisper_non_cz_needs_subtitles": 12817,
+    "needs_whisper": 35928,
+    "whisper_confirmed_cz": 3913,
+    "whisper_non_cz_needs_subtitles": 12821,
     "whisper_failed": 1132
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51504
+    "needs_subtitle_setup_after_prehrajto_processing": 51505
   }
 }
