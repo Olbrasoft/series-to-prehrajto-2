@@ -2,29 +2,77 @@
   "counts": {
     "backlog_episodes": 110033,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81647,
+    "uploaded_episodes": 81648,
     "prepared_source_episodes": 69424,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 63,
-    "language_whisper_attempted_sources": 52,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53798,
     "whisper_review_pending_sources": 37049,
-    "upload_pending_checkpoints": 40,
+    "upload_pending_checkpoints": 42,
     "subtitle_followup_sources": 51441,
     "subtitle_followup_pending_sources": 51441
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T04:42:55Z",
+      "databaseId": 42757596506,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T04:42:08Z",
+      "databaseId": 42757516258,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T04:41:48Z",
+      "databaseId": 42757482178,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T04:38:32Z",
+      "databaseId": 42757147538,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T04:37:25Z",
+      "databaseId": 42757034951,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T04:37:21Z",
+      "databaseId": 42757028639,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T04:37:07Z",
       "databaseId": 42757003361,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +84,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T04:35:50Z",
       "databaseId": 42756869301,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -56,7 +104,7 @@
       "createdAt": "2026-11-10T04:34:58Z",
       "databaseId": 42756771763,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,7 +128,7 @@
       "createdAt": "2026-11-10T04:34:18Z",
       "databaseId": 42756701634,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -96,15 +144,15 @@
       "createdAt": "2026-11-10T04:34:12Z",
       "databaseId": 42756689146,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T04:33:21Z",
       "databaseId": 42756598323,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -127,54 +175,6 @@
       "conclusion": "cancelled",
       "createdAt": "2026-11-10T04:32:54Z",
       "databaseId": 42756551222,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T04:32:07Z",
-      "databaseId": 42756471400,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T04:31:33Z",
-      "databaseId": 42756411526,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T04:29:45Z",
-      "databaseId": 42756214141,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T04:29:45Z",
-      "databaseId": 42756213003,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T04:26:01Z",
-      "databaseId": 42755840055,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T04:25:37Z",
-      "databaseId": 42755795683,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
@@ -382655,6 +382655,11 @@
         "episode_id": 159478,
         "display_name": "Bankovní hacker S01E08 - Peníze v kapse CZ Dabing",
         "video_id": 30962148
+      },
+      {
+        "episode_id": 146978,
+        "display_name": "Les Grands Mythes S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30963352
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -765027,6 +765032,11 @@
         "episode_id": 159478,
         "display_name": "Bankovní hacker S01E08 - Peníze v kapse CZ Dabing",
         "video_id": 30962148
+      },
+      {
+        "episode_id": 146978,
+        "display_name": "Les Grands Mythes S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 30963352
       }
     ],
     "prepared_not_upload_ready": [
@@ -766188,9 +766198,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 11,
-    "ok": 50,
-    "stream_size_unknown": 1,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
