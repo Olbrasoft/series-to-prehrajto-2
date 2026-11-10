@@ -1,24 +1,80 @@
 {
   "counts": {
     "backlog_episodes": 110033,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 81659,
-    "prepared_source_episodes": 69444,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 81660,
+    "prepared_source_episodes": 69443,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 27,
-    "language_whisper_attempted_sources": 27,
+    "language_audited_sources": 30,
+    "language_whisper_attempted_sources": 30,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53796,
-    "whisper_review_pending_sources": 37043,
-    "upload_pending_checkpoints": 41,
-    "subtitle_followup_sources": 51449,
-    "subtitle_followup_pending_sources": 51449
+    "whisper_review_sources": 53795,
+    "whisper_review_pending_sources": 37042,
+    "upload_pending_checkpoints": 40,
+    "subtitle_followup_sources": 51450,
+    "subtitle_followup_pending_sources": 51450
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T05:54:14Z",
+      "databaseId": 42765004825,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T05:54:12Z",
+      "databaseId": 42765001606,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T05:54:08Z",
+      "databaseId": 42764995226,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-10T05:53:49Z",
+      "databaseId": 42764961892,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T05:53:43Z",
+      "databaseId": 42764952016,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T05:53:23Z",
+      "databaseId": 42764918660,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T05:52:41Z",
+      "databaseId": 42764847514,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-10T05:52:12Z",
@@ -28,11 +84,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T05:52:04Z",
       "databaseId": 42764784412,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -40,15 +96,15 @@
       "createdAt": "2026-11-10T05:52:04Z",
       "databaseId": 42764784078,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T05:50:31Z",
       "databaseId": 42764627904,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +140,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T05:49:03Z",
       "databaseId": 42764474122,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T05:42:19Z",
-      "databaseId": 42763783533,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T05:42:12Z",
-      "databaseId": 42763770975,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T05:42:08Z",
-      "databaseId": 42763763161,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T05:42:02Z",
-      "databaseId": 42763752915,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T05:41:54Z",
-      "databaseId": 42763738880,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T05:41:49Z",
-      "databaseId": 42763731837,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T05:41:35Z",
-      "databaseId": 42763708953,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -200560,6 +200560,11 @@
         "episode_id": 138785,
         "display_name": "Fangs of Fortune S01E03 - 3. epizoda CZ Titulky",
         "video_id": 30964524
+      },
+      {
+        "episode_id": 138793,
+        "display_name": "Fangs of Fortune S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30965557
       },
       {
         "episode_id": 114182,
@@ -582994,6 +582999,11 @@
         "video_id": 30964524
       },
       {
+        "episode_id": 138793,
+        "display_name": "Fangs of Fortune S01E11 - 11. epizoda CZ Titulky",
+        "video_id": 30965557
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -766308,16 +766318,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 26,
+    "ok": 27,
+    "stream_size_unknown": 2,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35911,
+    "needs_whisper": 35908,
     "whisper_confirmed_cz": 3953,
     "whisper_non_cz_needs_subtitles": 12800,
-    "whisper_failed": 1132
+    "whisper_failed": 1134
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51449
+    "needs_subtitle_setup_after_prehrajto_processing": 51450
   }
 }
