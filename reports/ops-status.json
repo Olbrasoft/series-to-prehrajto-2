@@ -1,30 +1,86 @@
 {
   "counts": {
     "backlog_episodes": 109962,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81724,
-    "prepared_source_episodes": 69434,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 81727,
+    "prepared_source_episodes": 69442,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 21,
+    "language_whisper_attempted_sources": 21,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53796,
     "whisper_review_pending_sources": 37066,
-    "upload_pending_checkpoints": 40,
-    "subtitle_followup_sources": 51497,
-    "subtitle_followup_pending_sources": 51497
+    "upload_pending_checkpoints": 42,
+    "subtitle_followup_sources": 51498,
+    "subtitle_followup_pending_sources": 51498
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T10:14:14Z",
+      "databaseId": 42797417871,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:14:10Z",
+      "databaseId": 42797409760,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:14:01Z",
+      "databaseId": 42797384961,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:13:48Z",
+      "databaseId": 42797354600,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-10T10:12:22Z",
+      "databaseId": 42797152840,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:08:19Z",
+      "databaseId": 42796574615,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:08:18Z",
+      "databaseId": 42796572481,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-10T10:06:23Z",
       "databaseId": 42796297765,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T10:05:47Z",
       "databaseId": 42796208565,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T10:02:34Z",
-      "databaseId": 42795746826,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T10:02:29Z",
-      "databaseId": 42795735805,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T10:01:54Z",
-      "databaseId": 42795653610,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T10:01:49Z",
-      "databaseId": 42795641659,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T09:57:14Z",
-      "databaseId": 42795001128,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T09:55:56Z",
-      "databaseId": 42794823346,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T09:55:55Z",
-      "databaseId": 42794821310,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -200732,6 +200732,16 @@
         "video_id": 30973871
       },
       {
+        "episode_id": 155161,
+        "display_name": "Temperature of Love S01E19 - 19. epizoda CZ Titulky",
+        "video_id": 30974692
+      },
+      {
+        "episode_id": 155160,
+        "display_name": "Temperature of Love S01E18 - 18. epizoda CZ Titulky",
+        "video_id": 30974709
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383040,6 +383050,11 @@
         "episode_id": 167739,
         "display_name": "Confronting a Serial Killer S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30974251
+      },
+      {
+        "episode_id": 171335,
+        "display_name": "Made in Italy S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30974738
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -583489,6 +583504,16 @@
         "video_id": 30973871
       },
       {
+        "episode_id": 155161,
+        "display_name": "Temperature of Love S01E19 - 19. epizoda CZ Titulky",
+        "video_id": 30974692
+      },
+      {
+        "episode_id": 155160,
+        "display_name": "Temperature of Love S01E18 - 18. epizoda CZ Titulky",
+        "video_id": 30974709
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -765797,6 +765822,11 @@
         "episode_id": 167739,
         "display_name": "Confronting a Serial Killer S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30974251
+      },
+      {
+        "episode_id": 171335,
+        "display_name": "Made in Italy S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30974738
       }
     ],
     "prepared_not_upload_ready": [
@@ -766958,7 +766988,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 20,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
@@ -766968,6 +766998,6 @@
     "whisper_failed": 1132
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51497
+    "needs_subtitle_setup_after_prehrajto_processing": 51498
   }
 }
