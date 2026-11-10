@@ -1,24 +1,80 @@
 {
   "counts": {
     "backlog_episodes": 110089,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 81610,
-    "prepared_source_episodes": 69450,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 81612,
+    "prepared_source_episodes": 69453,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 45,
-    "language_whisper_attempted_sources": 34,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53799,
-    "whisper_review_pending_sources": 37037,
+    "language_audited_sources": 47,
+    "language_whisper_attempted_sources": 47,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53797,
+    "whisper_review_pending_sources": 37030,
     "upload_pending_checkpoints": 41,
-    "subtitle_followup_sources": 51419,
-    "subtitle_followup_pending_sources": 51419
+    "subtitle_followup_sources": 51421,
+    "subtitle_followup_pending_sources": 51421
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T02:21:05Z",
+      "databaseId": 42742146228,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T02:21:01Z",
+      "databaseId": 42742136282,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T02:20:26Z",
+      "databaseId": 42742070466,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T02:19:57Z",
+      "databaseId": 42742012099,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T02:19:53Z",
+      "databaseId": 42742005302,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T02:19:49Z",
+      "databaseId": 42741997875,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T02:18:52Z",
+      "databaseId": 42741887927,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-10T02:18:10Z",
@@ -32,7 +88,7 @@
       "createdAt": "2026-11-10T02:18:09Z",
       "databaseId": 42741807931,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -56,15 +112,15 @@
       "createdAt": "2026-11-10T02:14:21Z",
       "databaseId": 42741358033,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T02:13:30Z",
       "databaseId": 42741252043,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -108,76 +164,20 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T02:12:00Z",
       "databaseId": 42741075222,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T02:11:57Z",
       "databaseId": 42741069882,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T02:11:49Z",
-      "databaseId": 42741053742,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T02:10:29Z",
-      "databaseId": 42740900855,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T02:10:24Z",
-      "databaseId": 42740890689,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T02:07:11Z",
-      "databaseId": 42740510275,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T02:06:36Z",
-      "databaseId": 42740442116,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T02:06:10Z",
-      "databaseId": 42740394058,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T02:06:08Z",
-      "databaseId": 42740390409,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -382470,6 +382470,16 @@
         "episode_id": 4587,
         "display_name": "MECH-X4 S02E15 - 15. epizoda CZ Dabing",
         "video_id": 30959405
+      },
+      {
+        "episode_id": 124310,
+        "display_name": "Ängelby S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30959472
+      },
+      {
+        "episode_id": 124311,
+        "display_name": "Ängelby S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30959490
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -764657,6 +764667,16 @@
         "episode_id": 4587,
         "display_name": "MECH-X4 S02E15 - 15. epizoda CZ Dabing",
         "video_id": 30959405
+      },
+      {
+        "episode_id": 124310,
+        "display_name": "Ängelby S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30959472
+      },
+      {
+        "episode_id": 124311,
+        "display_name": "Ängelby S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30959490
       }
     ],
     "prepared_not_upload_ready": [
@@ -765818,17 +765838,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 11,
-    "ok": 33,
+    "ok": 46,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35908,
-    "whisper_confirmed_cz": 3944,
-    "whisper_non_cz_needs_subtitles": 12818,
+    "needs_whisper": 35901,
+    "whisper_confirmed_cz": 3946,
+    "whisper_non_cz_needs_subtitles": 12821,
     "whisper_failed": 1129
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51419
+    "needs_subtitle_setup_after_prehrajto_processing": 51421
   }
 }
