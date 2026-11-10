@@ -2,11 +2,11 @@
   "counts": {
     "backlog_episodes": 110089,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81612,
+    "uploaded_episodes": 81613,
     "prepared_source_episodes": 69453,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 41,
+    "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 47,
@@ -21,10 +21,26 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T02:21:30Z",
+      "databaseId": 42742192733,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T02:21:24Z",
+      "databaseId": 42742182630,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-10T02:21:05Z",
       "databaseId": 42742146228,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +76,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T02:19:49Z",
       "databaseId": 42741997875,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T02:12:00Z",
-      "databaseId": 42741075222,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T02:11:57Z",
-      "databaseId": 42741069882,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -200425,6 +200425,11 @@
         "episode_id": 4585,
         "display_name": "MECH-X4 S02E13 - 13. epizoda CZ Dabing",
         "video_id": 30959079
+      },
+      {
+        "episode_id": 138788,
+        "display_name": "Fangs of Fortune S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30959403
       },
       {
         "episode_id": 114182,
@@ -582622,6 +582627,11 @@
         "episode_id": 4585,
         "display_name": "MECH-X4 S02E13 - 13. epizoda CZ Dabing",
         "video_id": 30959079
+      },
+      {
+        "episode_id": 138788,
+        "display_name": "Fangs of Fortune S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30959403
       },
       {
         "episode_id": 114182,
