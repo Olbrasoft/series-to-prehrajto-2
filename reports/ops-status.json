@@ -1,24 +1,56 @@
 {
   "counts": {
     "backlog_episodes": 109910,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81763,
-    "prepared_source_episodes": 69427,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 81767,
+    "prepared_source_episodes": 69432,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
+    "language_audited_sources": 46,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53793,
-    "whisper_review_pending_sources": 37065,
-    "upload_pending_checkpoints": 40,
-    "subtitle_followup_sources": 51526,
-    "subtitle_followup_pending_sources": 51526
+    "whisper_review_pending_sources": 37066,
+    "upload_pending_checkpoints": 41,
+    "subtitle_followup_sources": 51527,
+    "subtitle_followup_pending_sources": 51527
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T12:43:24Z",
+      "databaseId": 42818173113,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T12:41:51Z",
+      "databaseId": 42817956848,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T12:41:31Z",
+      "databaseId": 42817910335,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T12:40:30Z",
+      "databaseId": 42817766578,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-10T12:39:14Z",
@@ -28,19 +60,19 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T12:38:36Z",
       "databaseId": 42817499540,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T12:38:23Z",
       "databaseId": 42817470117,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,7 +112,7 @@
       "createdAt": "2026-11-10T12:34:25Z",
       "databaseId": 42816905899,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "update-descriptions"
     },
     {
@@ -88,7 +120,7 @@
       "createdAt": "2026-11-10T12:34:24Z",
       "databaseId": 42816903361,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -104,7 +136,7 @@
       "createdAt": "2026-11-10T12:33:54Z",
       "databaseId": 42816829394,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -124,11 +156,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T12:33:06Z",
       "databaseId": 42816717994,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T12:29:12Z",
-      "databaseId": 42816150388,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T12:29:11Z",
-      "databaseId": 42816147735,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T12:28:56Z",
-      "databaseId": 42816113426,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T12:25:10Z",
-      "databaseId": 42815582338,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
     }
   ],
   "gaps": {
@@ -200822,6 +200822,21 @@
         "video_id": 30979369
       },
       {
+        "episode_id": 193864,
+        "display_name": "Bing S01E53 - Hipoty a Hopity CZ Dabing",
+        "video_id": 30980095
+      },
+      {
+        "episode_id": 193865,
+        "display_name": "Bing S01E54 - Dračí dech CZ Dabing",
+        "video_id": 30980157
+      },
+      {
+        "episode_id": 148464,
+        "display_name": "Akuma Kun S01E05 - Anděl CZ Titulky",
+        "video_id": 30980188
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383235,6 +383250,11 @@
         "episode_id": 179523,
         "display_name": "Easygoing Territory Defense by the Optimistic Lord S01E08 - 8. epizoda CZ Titulky",
         "video_id": 30979614
+      },
+      {
+        "episode_id": 151102,
+        "display_name": "A Body That Works S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30980221
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -583774,6 +583794,21 @@
         "video_id": 30979369
       },
       {
+        "episode_id": 193864,
+        "display_name": "Bing S01E53 - Hipoty a Hopity CZ Dabing",
+        "video_id": 30980095
+      },
+      {
+        "episode_id": 193865,
+        "display_name": "Bing S01E54 - Dračí dech CZ Dabing",
+        "video_id": 30980157
+      },
+      {
+        "episode_id": 148464,
+        "display_name": "Akuma Kun S01E05 - Anděl CZ Titulky",
+        "video_id": 30980188
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -766187,6 +766222,11 @@
         "episode_id": 179523,
         "display_name": "Easygoing Territory Defense by the Optimistic Lord S01E08 - 8. epizoda CZ Titulky",
         "video_id": 30979614
+      },
+      {
+        "episode_id": 151102,
+        "display_name": "A Body That Works S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30980221
       }
     ],
     "prepared_not_upload_ready": [
@@ -767348,17 +767388,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 2,
+    "disabled": 6,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35933,
-    "whisper_confirmed_cz": 3888,
+    "needs_whisper": 35934,
+    "whisper_confirmed_cz": 3887,
     "whisper_non_cz_needs_subtitles": 12840,
     "whisper_failed": 1132
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51526
+    "needs_subtitle_setup_after_prehrajto_processing": 51527
   }
 }
