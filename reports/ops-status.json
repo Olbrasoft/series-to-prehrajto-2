@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110006,
-    "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 81677,
-    "prepared_source_episodes": 69464,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 81680,
+    "prepared_source_episodes": 69460,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,25 +14,81 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53795,
     "whisper_review_pending_sources": 37048,
-    "upload_pending_checkpoints": 43,
+    "upload_pending_checkpoints": 40,
     "subtitle_followup_sources": 51460,
     "subtitle_followup_pending_sources": 51460
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-10T07:21:22Z",
-      "databaseId": 42774709186,
+      "createdAt": "2026-11-10T07:24:17Z",
+      "databaseId": 42775049754,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T07:24:12Z",
+      "databaseId": 42775039265,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T07:23:19Z",
+      "databaseId": 42774935716,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T07:23:03Z",
+      "databaseId": 42774905075,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-10T07:22:37Z",
+      "databaseId": 42774855336,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T07:22:34Z",
+      "databaseId": 42774849870,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T07:22:29Z",
+      "databaseId": 42774839270,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T07:21:22Z",
+      "databaseId": 42774709186,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-10T07:20:46Z",
       "databaseId": 42774637971,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -44,11 +100,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T07:17:20Z",
       "databaseId": 42774236261,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -56,23 +112,23 @@
       "createdAt": "2026-11-10T07:16:49Z",
       "databaseId": 42774173950,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T07:16:22Z",
       "databaseId": 42774122419,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T07:16:11Z",
       "databaseId": 42774101284,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -88,7 +144,7 @@
       "createdAt": "2026-11-10T07:15:58Z",
       "databaseId": 42774079228,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T07:14:11Z",
-      "databaseId": 42773867223,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T07:14:05Z",
-      "databaseId": 42773856469,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T07:13:32Z",
-      "databaseId": 42773792229,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T07:13:28Z",
-      "databaseId": 42773784801,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T07:12:54Z",
-      "databaseId": 42773718131,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T07:12:50Z",
-      "databaseId": 42773711224,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T07:12:47Z",
-      "databaseId": 42773706140,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -200617,6 +200617,11 @@
         "video_id": 30968867
       },
       {
+        "episode_id": 160188,
+        "display_name": "Catching Milat S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30968977
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -382805,6 +382810,16 @@
         "episode_id": 138798,
         "display_name": "Fangs of Fortune S01E16 - 16. epizoda CZ Titulky",
         "video_id": 30968130
+      },
+      {
+        "episode_id": 159474,
+        "display_name": "Bankovní hacker S01E04 - Tel Aviv CZ Dabing",
+        "video_id": 30968906
+      },
+      {
+        "episode_id": 159475,
+        "display_name": "Bankovní hacker S01E05 - Systém SWIFT CZ Dabing",
+        "video_id": 30968891
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -583139,6 +583154,11 @@
         "video_id": 30968867
       },
       {
+        "episode_id": 160188,
+        "display_name": "Catching Milat S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30968977
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -765327,6 +765347,16 @@
         "episode_id": 138798,
         "display_name": "Fangs of Fortune S01E16 - 16. epizoda CZ Titulky",
         "video_id": 30968130
+      },
+      {
+        "episode_id": 159474,
+        "display_name": "Bankovní hacker S01E04 - Tel Aviv CZ Dabing",
+        "video_id": 30968906
+      },
+      {
+        "episode_id": 159475,
+        "display_name": "Bankovní hacker S01E05 - Systém SWIFT CZ Dabing",
+        "video_id": 30968891
       }
     ],
     "prepared_not_upload_ready": [
