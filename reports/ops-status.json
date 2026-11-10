@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110089,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 81592,
-    "prepared_source_episodes": 69432,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 81593,
+    "prepared_source_episodes": 69429,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -21,18 +21,90 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-10T01:20:08Z",
-      "databaseId": 42735043314,
+      "createdAt": "2026-11-10T01:23:23Z",
+      "databaseId": 42735438358,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "external-subtitles"
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T01:23:17Z",
+      "databaseId": 42735426984,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T01:23:13Z",
+      "databaseId": 42735420909,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T01:22:27Z",
+      "databaseId": 42735328362,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T01:22:22Z",
+      "databaseId": 42735319325,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T01:22:22Z",
+      "databaseId": 42735318791,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T01:21:28Z",
+      "databaseId": 42735210338,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T01:21:24Z",
+      "databaseId": 42735201425,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-10T01:21:11Z",
+      "databaseId": 42735175033,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T01:20:08Z",
+      "databaseId": 42735043314,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-10T01:16:41Z",
       "databaseId": 42734631239,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,19 +140,19 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T01:15:11Z",
       "databaseId": 42734444443,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T01:15:06Z",
       "databaseId": 42734434501,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -103,78 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-10T01:14:08Z",
       "databaseId": 42734309549,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T01:14:02Z",
-      "databaseId": 42734298154,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T01:13:27Z",
-      "databaseId": 42734223109,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T01:12:53Z",
-      "databaseId": 42734147808,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T01:12:50Z",
-      "databaseId": 42734142086,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T01:12:37Z",
-      "databaseId": 42734114859,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T01:12:29Z",
-      "databaseId": 42734097053,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T01:11:48Z",
-      "databaseId": 42734006003,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T01:11:42Z",
-      "databaseId": 42733992381,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T01:10:02Z",
-      "databaseId": 42733783753,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -200395,6 +200395,11 @@
         "episode_id": 171700,
         "display_name": "Temná škola S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30958144
+      },
+      {
+        "episode_id": 124308,
+        "display_name": "Ängelby S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30958271
       },
       {
         "episode_id": 114182,
@@ -582492,6 +582497,11 @@
         "episode_id": 171700,
         "display_name": "Temná škola S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30958144
+      },
+      {
+        "episode_id": 124308,
+        "display_name": "Ängelby S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30958271
       },
       {
         "episode_id": 114182,
