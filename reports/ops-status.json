@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 110006,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 81670,
-    "prepared_source_episodes": 69447,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 81673,
+    "prepared_source_episodes": 69441,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,25 +14,105 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53795,
     "whisper_review_pending_sources": 37044,
-    "upload_pending_checkpoints": 43,
+    "upload_pending_checkpoints": 40,
     "subtitle_followup_sources": 51458,
     "subtitle_followup_pending_sources": 51458
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-10T06:47:42Z",
-      "databaseId": 42770902145,
+      "createdAt": "2026-11-10T06:53:02Z",
+      "databaseId": 42771479125,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T06:52:27Z",
+      "databaseId": 42771419352,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T06:52:25Z",
+      "databaseId": 42771415401,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T06:52:24Z",
+      "databaseId": 42771413592,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-10T06:52:19Z",
+      "databaseId": 42771405676,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T06:51:42Z",
+      "databaseId": 42771337150,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T06:51:37Z",
+      "databaseId": 42771328594,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-10T06:50:21Z",
+      "databaseId": 42771192849,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T06:50:13Z",
+      "databaseId": 42771178760,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T06:49:33Z",
+      "databaseId": 42771102937,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T06:47:42Z",
+      "databaseId": 42770902145,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-10T06:46:41Z",
       "databaseId": 42770790130,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +128,7 @@
       "createdAt": "2026-11-10T06:45:06Z",
       "databaseId": 42770607676,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -60,19 +140,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T06:44:46Z",
       "databaseId": 42770571610,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T06:43:27Z",
       "databaseId": 42770425128,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -96,88 +176,8 @@
       "createdAt": "2026-11-10T06:41:18Z",
       "databaseId": 42770182815,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T06:40:49Z",
-      "databaseId": 42770129025,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T06:40:28Z",
-      "databaseId": 42770089902,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T06:38:04Z",
-      "databaseId": 42769822021,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T06:37:59Z",
-      "databaseId": 42769811783,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T06:37:30Z",
-      "databaseId": 42769758411,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T06:37:28Z",
-      "databaseId": 42769753328,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T06:37:23Z",
-      "databaseId": 42769745390,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T06:37:22Z",
-      "databaseId": 42769743087,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T06:37:16Z",
-      "databaseId": 42769730945,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T06:36:25Z",
-      "databaseId": 42769637819,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -200597,6 +200597,11 @@
         "video_id": 30967560
       },
       {
+        "episode_id": 148461,
+        "display_name": "Akuma Kun S01E02 - Obžerství CZ Titulky",
+        "video_id": 30967730
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -382770,6 +382775,16 @@
         "episode_id": 165819,
         "display_name": "Paní Wilsonová S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30967629
+      },
+      {
+        "episode_id": 155151,
+        "display_name": "Temperature of Love S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30967759
+      },
+      {
+        "episode_id": 140946,
+        "display_name": "Champion S01E04 - Já jsem Velkej Rusty! CZ Dabing",
+        "video_id": 30967575
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -583084,6 +583099,11 @@
         "video_id": 30967560
       },
       {
+        "episode_id": 148461,
+        "display_name": "Akuma Kun S01E02 - Obžerství CZ Titulky",
+        "video_id": 30967730
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -765257,6 +765277,16 @@
         "episode_id": 165819,
         "display_name": "Paní Wilsonová S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30967629
+      },
+      {
+        "episode_id": 155151,
+        "display_name": "Temperature of Love S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30967759
+      },
+      {
+        "episode_id": 140946,
+        "display_name": "Champion S01E04 - Já jsem Velkej Rusty! CZ Dabing",
+        "video_id": 30967575
       }
     ],
     "prepared_not_upload_ready": [
