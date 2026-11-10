@@ -1,30 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 110006,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 81685,
-    "prepared_source_episodes": 69467,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 81688,
+    "prepared_source_episodes": 69473,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 50,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 43,
+    "language_whisper_attempted_sources": 43,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53796,
-    "whisper_review_pending_sources": 37054,
-    "upload_pending_checkpoints": 42,
-    "subtitle_followup_sources": 51465,
-    "subtitle_followup_pending_sources": 51465
+    "whisper_review_sources": 53795,
+    "whisper_review_pending_sources": 37051,
+    "upload_pending_checkpoints": 41,
+    "subtitle_followup_sources": 51466,
+    "subtitle_followup_pending_sources": 51466
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:04:28Z",
+      "databaseId": 42779799942,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:03:45Z",
+      "databaseId": 42779711425,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:02:38Z",
+      "databaseId": 42779568842,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T08:02:31Z",
+      "databaseId": 42779554764,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:01:47Z",
+      "databaseId": 42779466485,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T07:59:59Z",
+      "databaseId": 42779228341,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-10T07:58:45Z",
       "databaseId": 42779087502,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -52,11 +100,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T07:57:14Z",
       "databaseId": 42778912168,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,19 +124,19 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T07:55:49Z",
       "databaseId": 42778745822,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T07:55:46Z",
       "databaseId": 42778740267,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -96,7 +144,7 @@
       "createdAt": "2026-11-10T07:52:10Z",
       "databaseId": 42778308105,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -127,54 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-10T07:51:27Z",
       "databaseId": 42778222746,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T07:49:57Z",
-      "databaseId": 42778044871,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T07:49:45Z",
-      "databaseId": 42778022296,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T07:49:33Z",
-      "databaseId": 42778000333,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T07:48:32Z",
-      "databaseId": 42777881037,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T07:47:56Z",
-      "databaseId": 42777810970,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T07:45:17Z",
-      "databaseId": 42777497770,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -200627,6 +200627,11 @@
         "video_id": 30970037
       },
       {
+        "episode_id": 158532,
+        "display_name": "Blok C S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30970213
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -382845,6 +382850,16 @@
         "episode_id": 155146,
         "display_name": "Temperature of Love S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30969988
+      },
+      {
+        "episode_id": 138799,
+        "display_name": "Fangs of Fortune S01E17 - 17. epizoda CZ Titulky",
+        "video_id": 30970087
+      },
+      {
+        "episode_id": 160750,
+        "display_name": "MAKE MY DAY S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30970431
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -583189,6 +583204,11 @@
         "video_id": 30970037
       },
       {
+        "episode_id": 158532,
+        "display_name": "Blok C S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30970213
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -765407,6 +765427,16 @@
         "episode_id": 155146,
         "display_name": "Temperature of Love S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30969988
+      },
+      {
+        "episode_id": 138799,
+        "display_name": "Fangs of Fortune S01E17 - 17. epizoda CZ Titulky",
+        "video_id": 30970087
+      },
+      {
+        "episode_id": 160750,
+        "display_name": "MAKE MY DAY S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30970431
       }
     ],
     "prepared_not_upload_ready": [
@@ -766568,17 +766598,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 10,
-    "ok": 39,
+    "ok": 42,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35919,
-    "whisper_confirmed_cz": 3953,
-    "whisper_non_cz_needs_subtitles": 12789,
+    "needs_whisper": 35916,
+    "whisper_confirmed_cz": 3954,
+    "whisper_non_cz_needs_subtitles": 12790,
     "whisper_failed": 1135
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51465
+    "needs_subtitle_setup_after_prehrajto_processing": 51466
   }
 }
