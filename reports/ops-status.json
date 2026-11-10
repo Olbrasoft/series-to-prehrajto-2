@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109962,
     "manifest_upload_ready_episodes": 9,
-    "uploaded_episodes": 81742,
+    "uploaded_episodes": 81744,
     "prepared_source_episodes": 69433,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,25 +14,97 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53792,
     "whisper_review_pending_sources": 37057,
-    "upload_pending_checkpoints": 41,
+    "upload_pending_checkpoints": 42,
     "subtitle_followup_sources": 51514,
     "subtitle_followup_pending_sources": 51514
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-10T11:16:54Z",
-      "databaseId": 42806173906,
+      "createdAt": "2026-11-10T11:23:24Z",
+      "databaseId": 42807067252,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T11:23:20Z",
+      "databaseId": 42807056926,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T11:23:14Z",
+      "databaseId": 42807043135,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T11:22:43Z",
+      "databaseId": 42806973843,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T11:22:27Z",
+      "databaseId": 42806938576,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-10T11:21:17Z",
+      "databaseId": 42806779804,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T11:20:11Z",
+      "databaseId": 42806621636,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T11:18:26Z",
+      "databaseId": 42806382234,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T11:18:21Z",
+      "databaseId": 42806371956,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T11:16:54Z",
+      "databaseId": 42806173906,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-10T11:16:10Z",
       "databaseId": 42806076343,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +132,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T11:15:05Z",
       "databaseId": 42805925288,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -106,78 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T11:12:37Z",
-      "databaseId": 42805581448,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T11:12:20Z",
-      "databaseId": 42805542518,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T11:11:46Z",
-      "databaseId": 42805459567,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T11:10:14Z",
-      "databaseId": 42805248306,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T11:10:07Z",
-      "databaseId": 42805230414,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T11:10:01Z",
-      "databaseId": 42805216091,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T11:08:55Z",
-      "databaseId": 42805064262,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T11:06:25Z",
-      "databaseId": 42804709547,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T11:06:21Z",
-      "databaseId": 42804699833,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -200787,6 +200787,11 @@
         "video_id": 30976916
       },
       {
+        "episode_id": 158800,
+        "display_name": "Stan Lee's Superhumans S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 30977068
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383130,6 +383135,11 @@
         "episode_id": 148467,
         "display_name": "Akuma Kun S01E08 - Skutečné úmysly CZ Titulky",
         "video_id": 30976348
+      },
+      {
+        "episode_id": 138814,
+        "display_name": "Fangs of Fortune S01E32 - 32. epizoda CZ Titulky",
+        "video_id": 30977116
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -583634,6 +583644,11 @@
         "video_id": 30976916
       },
       {
+        "episode_id": 158800,
+        "display_name": "Stan Lee's Superhumans S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 30977068
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -765977,6 +765992,11 @@
         "episode_id": 148467,
         "display_name": "Akuma Kun S01E08 - Skutečné úmysly CZ Titulky",
         "video_id": 30976348
+      },
+      {
+        "episode_id": 138814,
+        "display_name": "Fangs of Fortune S01E32 - 32. epizoda CZ Titulky",
+        "video_id": 30977116
       }
     ],
     "prepared_not_upload_ready": [
