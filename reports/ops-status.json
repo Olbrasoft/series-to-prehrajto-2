@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109962,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81723,
+    "uploaded_episodes": 81724,
     "prepared_source_episodes": 69434,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,49 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53796,
     "whisper_review_pending_sources": 37066,
-    "upload_pending_checkpoints": 41,
+    "upload_pending_checkpoints": 40,
     "subtitle_followup_sources": 51497,
     "subtitle_followup_pending_sources": 51497
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T10:06:23Z",
+      "databaseId": 42796297765,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:06:18Z",
+      "databaseId": 42796283594,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:05:47Z",
+      "databaseId": 42796208565,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T10:05:45Z",
+      "databaseId": 42796204287,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-10T10:05:18Z",
       "databaseId": 42796138583,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +64,7 @@
       "createdAt": "2026-11-10T10:05:13Z",
       "databaseId": 42796126192,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -52,11 +84,11 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T10:03:48Z",
       "databaseId": 42795923281,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T09:55:48Z",
-      "databaseId": 42794804579,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T09:55:11Z",
-      "databaseId": 42794716631,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T09:54:44Z",
-      "databaseId": 42794653802,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T09:54:18Z",
-      "databaseId": 42794594941,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -383035,6 +383035,11 @@
         "episode_id": 140950,
         "display_name": "Champion S01E08 - Jako Fénix z popela CZ Dabing",
         "video_id": 30974082
+      },
+      {
+        "episode_id": 167739,
+        "display_name": "Confronting a Serial Killer S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30974251
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -765787,6 +765792,11 @@
         "episode_id": 140950,
         "display_name": "Champion S01E08 - Jako Fénix z popela CZ Dabing",
         "video_id": 30974082
+      },
+      {
+        "episode_id": 167739,
+        "display_name": "Confronting a Serial Killer S01E01 - 1. epizoda CZ Titulky",
+        "video_id": 30974251
       }
     ],
     "prepared_not_upload_ready": [
