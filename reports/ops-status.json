@@ -1,24 +1,80 @@
 {
   "counts": {
     "backlog_episodes": 109910,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 81768,
-    "prepared_source_episodes": 69430,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 81770,
+    "prepared_source_episodes": 69438,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 22,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53793,
-    "whisper_review_pending_sources": 37065,
-    "upload_pending_checkpoints": 41,
+    "whisper_review_pending_sources": 37066,
+    "upload_pending_checkpoints": 40,
     "subtitle_followup_sources": 51528,
     "subtitle_followup_pending_sources": 51528
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-10T13:02:35Z",
+      "databaseId": 42820915423,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T13:02:28Z",
+      "databaseId": 42820898017,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T13:02:22Z",
+      "databaseId": 42820884924,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T13:01:30Z",
+      "databaseId": 42820756177,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T13:01:23Z",
+      "databaseId": 42820738732,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T13:01:16Z",
+      "databaseId": 42820719619,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T13:00:21Z",
+      "databaseId": 42820574256,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "success",
       "createdAt": "2026-11-10T12:58:08Z",
@@ -32,7 +88,7 @@
       "createdAt": "2026-11-10T12:58:04Z",
       "databaseId": 42820246913,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -40,15 +96,15 @@
       "createdAt": "2026-11-10T12:58:01Z",
       "databaseId": 42820239631,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T12:54:58Z",
       "databaseId": 42819809912,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +116,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T12:53:10Z",
       "databaseId": 42819554258,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -88,15 +144,15 @@
       "createdAt": "2026-11-10T12:51:55Z",
       "databaseId": 42819381044,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T12:49:58Z",
       "databaseId": 42819105557,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T12:48:36Z",
-      "databaseId": 42818909866,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T12:48:01Z",
-      "databaseId": 42818825279,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T12:47:52Z",
-      "databaseId": 42818802864,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T12:47:02Z",
-      "databaseId": 42818685689,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T12:43:24Z",
-      "databaseId": 42818173113,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T12:41:51Z",
-      "databaseId": 42817956848,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T12:41:31Z",
-      "databaseId": 42817910335,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -200842,6 +200842,11 @@
         "video_id": 30980252
       },
       {
+        "episode_id": 153560,
+        "display_name": "Revamp: The Undead Story S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30980825
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383260,6 +383265,11 @@
         "episode_id": 151102,
         "display_name": "A Body That Works S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30980221
+      },
+      {
+        "episode_id": 147839,
+        "display_name": "Co přináší řeka S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30981000
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -583819,6 +583829,11 @@
         "video_id": 30980252
       },
       {
+        "episode_id": 153560,
+        "display_name": "Revamp: The Undead Story S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30980825
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -766237,6 +766252,11 @@
         "episode_id": 151102,
         "display_name": "A Body That Works S01E01 - 1. epizoda CZ Titulky",
         "video_id": 30980221
+      },
+      {
+        "episode_id": 147839,
+        "display_name": "Co přináší řeka S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30981000
       }
     ],
     "prepared_not_upload_ready": [
@@ -767398,12 +767418,13 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 2,
     "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35933,
-    "whisper_confirmed_cz": 3887,
+    "needs_whisper": 35934,
+    "whisper_confirmed_cz": 3886,
     "whisper_non_cz_needs_subtitles": 12841,
     "whisper_failed": 1132
   },
