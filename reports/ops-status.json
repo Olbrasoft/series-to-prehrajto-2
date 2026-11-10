@@ -1,38 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 110089,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81608,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 81610,
     "prepared_source_episodes": 69450,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
+    "language_audited_sources": 45,
     "language_whisper_attempted_sources": 34,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53799,
-    "whisper_review_pending_sources": 37036,
-    "upload_pending_checkpoints": 40,
+    "whisper_review_pending_sources": 37037,
+    "upload_pending_checkpoints": 41,
     "subtitle_followup_sources": 51419,
     "subtitle_followup_pending_sources": 51419
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-10T02:13:30Z",
-      "databaseId": 42741252043,
+      "createdAt": "2026-11-10T02:18:10Z",
+      "databaseId": 42741811038,
       "headBranch": "main",
       "status": "pending",
-      "workflowName": "ops-watchdog"
+      "workflowName": "backfill-subtitles"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T02:18:09Z",
+      "databaseId": 42741807931,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-10T02:16:34Z",
+      "databaseId": 42741622819,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T02:14:30Z",
+      "databaseId": 42741375150,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T02:14:21Z",
+      "databaseId": 42741358033,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T02:13:30Z",
+      "databaseId": 42741252043,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T02:13:25Z",
       "databaseId": 42741241613,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -40,7 +80,7 @@
       "createdAt": "2026-11-10T02:13:18Z",
       "databaseId": 42741227568,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -52,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T02:13:06Z",
       "databaseId": 42741206175,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T02:04:54Z",
-      "databaseId": 42740239571,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T02:04:20Z",
-      "databaseId": 42740175225,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T02:04:03Z",
-      "databaseId": 42740142677,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T02:02:59Z",
-      "databaseId": 42740015570,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T02:02:55Z",
-      "databaseId": 42740005959,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -382460,6 +382460,16 @@
         "episode_id": 4586,
         "display_name": "MECH-X4 S02E14 - 14. epizoda CZ Dabing",
         "video_id": 30959251
+      },
+      {
+        "episode_id": 86746,
+        "display_name": "Žena v jezeře S01E07 - Můj příběh. CZ Titulky",
+        "video_id": 30959386
+      },
+      {
+        "episode_id": 4587,
+        "display_name": "MECH-X4 S02E15 - 15. epizoda CZ Dabing",
+        "video_id": 30959405
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -764637,6 +764647,16 @@
         "episode_id": 4586,
         "display_name": "MECH-X4 S02E14 - 14. epizoda CZ Dabing",
         "video_id": 30959251
+      },
+      {
+        "episode_id": 86746,
+        "display_name": "Žena v jezeře S01E07 - Můj příběh. CZ Titulky",
+        "video_id": 30959386
+      },
+      {
+        "episode_id": 4587,
+        "display_name": "MECH-X4 S02E15 - 15. epizoda CZ Dabing",
+        "video_id": 30959405
       }
     ],
     "prepared_not_upload_ready": [
@@ -765798,14 +765818,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 6,
+    "disabled": 11,
     "ok": 33,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35907,
+    "needs_whisper": 35908,
     "whisper_confirmed_cz": 3944,
-    "whisper_non_cz_needs_subtitles": 12819,
+    "whisper_non_cz_needs_subtitles": 12818,
     "whisper_failed": 1129
   },
   "subtitle_followup_statuses": {
