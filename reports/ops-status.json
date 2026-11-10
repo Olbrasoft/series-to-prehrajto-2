@@ -1,24 +1,48 @@
 {
   "counts": {
     "backlog_episodes": 110006,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 81689,
-    "prepared_source_episodes": 69482,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 81690,
+    "prepared_source_episodes": 69459,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 21,
+    "language_audited_sources": 33,
     "language_whisper_attempted_sources": 21,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53795,
-    "whisper_review_pending_sources": 37050,
+    "whisper_review_sources": 53796,
+    "whisper_review_pending_sources": 37054,
     "upload_pending_checkpoints": 41,
-    "subtitle_followup_sources": 51467,
-    "subtitle_followup_pending_sources": 51467
+    "subtitle_followup_sources": 51468,
+    "subtitle_followup_pending_sources": 51468
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:14:27Z",
+      "databaseId": 42781073725,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T08:12:15Z",
+      "databaseId": 42780787928,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:12:11Z",
+      "databaseId": 42780779641,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-10T08:11:14Z",
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-10T08:10:36Z",
       "databaseId": 42780583153,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +76,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T08:08:11Z",
       "databaseId": 42780271803,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +92,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T08:08:04Z",
       "databaseId": 42780258055,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T07:59:59Z",
-      "databaseId": 42779228341,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T07:58:45Z",
-      "databaseId": 42779087502,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T07:58:10Z",
-      "databaseId": 42779021200,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -200635,6 +200635,11 @@
         "episode_id": 159476,
         "display_name": "Bankovní hacker S01E06 - Akce CZ Dabing",
         "video_id": 30970441
+      },
+      {
+        "episode_id": 155148,
+        "display_name": "Temperature of Love S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30970611
       },
       {
         "episode_id": 114182,
@@ -583219,6 +583224,11 @@
         "video_id": 30970441
       },
       {
+        "episode_id": 155148,
+        "display_name": "Temperature of Love S01E04 - 4. epizoda CZ Titulky",
+        "video_id": 30970611
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -766608,16 +766618,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 12,
     "ok": 20,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35915,
+    "needs_whisper": 35919,
     "whisper_confirmed_cz": 3954,
-    "whisper_non_cz_needs_subtitles": 12791,
+    "whisper_non_cz_needs_subtitles": 12788,
     "whisper_failed": 1135
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51467
+    "needs_subtitle_setup_after_prehrajto_processing": 51468
   }
 }
