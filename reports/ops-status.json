@@ -1,30 +1,118 @@
 {
   "counts": {
     "backlog_episodes": 110006,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 81693,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 81696,
     "prepared_source_episodes": 69430,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 44,
+    "language_audited_sources": 53,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53796,
-    "whisper_review_pending_sources": 37059,
-    "upload_pending_checkpoints": 43,
+    "whisper_review_sources": 53798,
+    "whisper_review_pending_sources": 37068,
+    "upload_pending_checkpoints": 41,
     "subtitle_followup_sources": 51469,
     "subtitle_followup_pending_sources": 51469
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-10T08:33:27Z",
+      "databaseId": 42783566687,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:33:18Z",
+      "databaseId": 42783546340,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:33:11Z",
+      "databaseId": 42783532020,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:32:38Z",
+      "databaseId": 42783459272,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:32:34Z",
+      "databaseId": 42783449631,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:32:21Z",
+      "databaseId": 42783423342,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T08:31:42Z",
+      "databaseId": 42783339513,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:31:42Z",
+      "databaseId": 42783339215,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-10T08:31:02Z",
+      "databaseId": 42783252679,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-10T08:29:16Z",
+      "databaseId": 42783018768,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-10T08:28:59Z",
+      "databaseId": 42782982660,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T08:28:26Z",
       "databaseId": 42782907720,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -36,19 +124,19 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-10T08:24:57Z",
       "databaseId": 42782450083,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T08:23:46Z",
       "databaseId": 42782297801,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -68,11 +156,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-10T08:22:58Z",
       "databaseId": 42782191081,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -90,94 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T08:21:36Z",
-      "databaseId": 42782016494,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T08:21:12Z",
-      "databaseId": 42781962374,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T08:20:34Z",
-      "databaseId": 42781880140,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T08:20:03Z",
-      "databaseId": 42781808114,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T08:19:09Z",
-      "databaseId": 42781691406,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T08:17:52Z",
-      "databaseId": 42781522695,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-10T08:17:08Z",
-      "databaseId": 42781430490,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-10T08:15:56Z",
-      "databaseId": 42781268940,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T08:15:43Z",
-      "databaseId": 42781242226,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-10T08:14:27Z",
-      "databaseId": 42781073725,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-10T08:12:15Z",
-      "databaseId": 42780787928,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -200647,6 +200647,16 @@
         "video_id": 30970670
       },
       {
+        "episode_id": 153789,
+        "display_name": "Tajemství Sahary S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30971088
+      },
+      {
+        "episode_id": 140948,
+        "display_name": "Champion S01E06 - To je vono! CZ Dabing",
+        "video_id": 30971120
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -382885,6 +382895,11 @@
         "episode_id": 148462,
         "display_name": "Akuma Kun S01E03 - Chamtivost CZ Titulky",
         "video_id": 30971134
+      },
+      {
+        "episode_id": 140947,
+        "display_name": "Champion S01E05 - Já ji fakt miluju CZ Dabing",
+        "video_id": 30971197
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -583249,6 +583264,16 @@
         "video_id": 30970670
       },
       {
+        "episode_id": 153789,
+        "display_name": "Tajemství Sahary S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30971088
+      },
+      {
+        "episode_id": 140948,
+        "display_name": "Champion S01E06 - To je vono! CZ Dabing",
+        "video_id": 30971120
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -765487,6 +765512,11 @@
         "episode_id": 148462,
         "display_name": "Akuma Kun S01E03 - Chamtivost CZ Titulky",
         "video_id": 30971134
+      },
+      {
+        "episode_id": 140947,
+        "display_name": "Champion S01E05 - Já ji fakt miluju CZ Dabing",
+        "video_id": 30971197
       }
     ],
     "prepared_not_upload_ready": [
@@ -766648,14 +766678,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 4,
+    "disabled": 13,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35924,
+    "needs_whisper": 35933,
     "whisper_confirmed_cz": 3954,
-    "whisper_non_cz_needs_subtitles": 12783,
+    "whisper_non_cz_needs_subtitles": 12776,
     "whisper_failed": 1135
   },
   "subtitle_followup_statuses": {
