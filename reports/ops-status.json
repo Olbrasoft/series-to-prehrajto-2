@@ -2,37 +2,101 @@
   "counts": {
     "backlog_episodes": 109795,
     "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 81882,
-    "prepared_source_episodes": 69037,
+    "uploaded_episodes": 81883,
+    "prepared_source_episodes": 69043,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 49,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 41,
+    "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53792,
-    "whisper_review_pending_sources": 37031,
-    "upload_pending_checkpoints": 111,
-    "subtitle_followup_sources": 51658,
-    "subtitle_followup_pending_sources": 51658
+    "whisper_review_sources": 53791,
+    "whisper_review_pending_sources": 37029,
+    "upload_pending_checkpoints": 110,
+    "subtitle_followup_sources": 51659,
+    "subtitle_followup_pending_sources": 51659
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-11T21:43:41Z",
-      "databaseId": 43105591346,
+      "createdAt": "2026-11-11T21:52:03Z",
+      "databaseId": 43106805447,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "update-descriptions"
+      "status": "pending",
+      "workflowName": "prepare-sources"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-11T21:51:14Z",
+      "databaseId": 43106689503,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-11T21:50:22Z",
+      "databaseId": 43106562268,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:50:00Z",
+      "databaseId": 43106506656,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:48:52Z",
+      "databaseId": 43106347722,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:47:36Z",
+      "databaseId": 43106165657,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-11T21:47:33Z",
+      "databaseId": 43106158407,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T21:45:27Z",
+      "databaseId": 43105852679,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T21:43:41Z",
+      "databaseId": 43105591346,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-11T21:43:08Z",
       "databaseId": 43105510140,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +128,7 @@
       "createdAt": "2026-11-11T21:42:13Z",
       "databaseId": 43105375141,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -112,72 +176,8 @@
       "createdAt": "2026-11-11T21:39:06Z",
       "databaseId": 43104919423,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:38:09Z",
-      "databaseId": 43104784518,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T21:37:24Z",
-      "databaseId": 43104675761,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:36:55Z",
-      "databaseId": 43104607552,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-11T21:36:38Z",
-      "databaseId": 43104565996,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:34:47Z",
-      "databaseId": 43104289698,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:33:28Z",
-      "databaseId": 43104091768,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-11T21:33:15Z",
-      "databaseId": 43104059424,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T21:32:47Z",
-      "databaseId": 43103989819,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -383830,6 +383830,11 @@
         "episode_id": 106398,
         "display_name": "Huangovi v Americe S05E14 - 14. epizoda CZ Titulky",
         "video_id": 30994200
+      },
+      {
+        "episode_id": 106403,
+        "display_name": "Huangovi v Americe S05E20 - 20. epizoda CZ Titulky",
+        "video_id": 30994363
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -767377,6 +767382,11 @@
         "episode_id": 106398,
         "display_name": "Huangovi v Americe S05E14 - 14. epizoda CZ Titulky",
         "video_id": 30994200
+      },
+      {
+        "episode_id": 106403,
+        "display_name": "Huangovi v Americe S05E20 - 20. epizoda CZ Titulky",
+        "video_id": 30994363
       }
     ],
     "prepared_not_upload_ready": [
@@ -768538,17 +768548,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 7,
-    "ok": 41,
+    "ok": 40,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35964,
+    "needs_whisper": 35963,
     "whisper_confirmed_cz": 3809,
-    "whisper_non_cz_needs_subtitles": 12952,
-    "whisper_failed": 1067
+    "whisper_non_cz_needs_subtitles": 12953,
+    "whisper_failed": 1066
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51658
+    "needs_subtitle_setup_after_prehrajto_processing": 51659
   }
 }
