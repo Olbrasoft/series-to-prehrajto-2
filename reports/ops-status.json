@@ -1,15 +1,15 @@
 {
   "counts": {
     "backlog_episodes": 109894,
-    "manifest_upload_ready_episodes": 16,
-    "uploaded_episodes": 81823,
+    "manifest_upload_ready_episodes": 12,
+    "uploaded_episodes": 81826,
     "prepared_source_episodes": 68816,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 22,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53794,
@@ -21,10 +21,50 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-11T11:44:15Z",
+      "databaseId": 43014400075,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T11:42:49Z",
+      "databaseId": 43014203903,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T11:42:46Z",
+      "databaseId": 43014195955,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:42:43Z",
+      "databaseId": 43014189508,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:42:26Z",
+      "databaseId": 43014152004,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-11T11:42:18Z",
       "databaseId": 43014133883,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,15 +120,15 @@
       "createdAt": "2026-11-11T11:37:38Z",
       "databaseId": 43013502567,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T11:37:27Z",
       "databaseId": 43013480144,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T11:33:10Z",
-      "databaseId": 43012877057,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T11:33:08Z",
-      "databaseId": 43012871691,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T11:33:07Z",
-      "databaseId": 43012869495,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-11T11:32:34Z",
-      "databaseId": 43012791448,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T11:32:27Z",
-      "databaseId": 43012776580,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -200962,6 +200962,16 @@
         "video_id": 30989192
       },
       {
+        "episode_id": 45752,
+        "display_name": "Všichni starostovi muži S05E03 - 3. epizoda CZ Titulky",
+        "video_id": 30989379
+      },
+      {
+        "episode_id": 74673,
+        "display_name": "Stopař S01E11 - 11. epizoda CZ Dabing",
+        "video_id": 30989387
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383535,6 +383545,11 @@
         "episode_id": 31055,
         "display_name": "Všichni starostovi muži S04E16 - 16. epizoda CZ Titulky",
         "video_id": 30989364
+      },
+      {
+        "episode_id": 31059,
+        "display_name": "Všichni starostovi muži S04E20 - 20. epizoda CZ Titulky",
+        "video_id": 30989400
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -584214,6 +584229,16 @@
         "video_id": 30989192
       },
       {
+        "episode_id": 45752,
+        "display_name": "Všichni starostovi muži S05E03 - 3. epizoda CZ Titulky",
+        "video_id": 30989379
+      },
+      {
+        "episode_id": 74673,
+        "display_name": "Stopař S01E11 - 11. epizoda CZ Dabing",
+        "video_id": 30989387
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -766787,6 +766812,11 @@
         "episode_id": 31055,
         "display_name": "Všichni starostovi muži S04E16 - 16. epizoda CZ Titulky",
         "video_id": 30989364
+      },
+      {
+        "episode_id": 31059,
+        "display_name": "Všichni starostovi muži S04E20 - 20. epizoda CZ Titulky",
+        "video_id": 30989400
       }
     ],
     "prepared_not_upload_ready": [
@@ -767948,14 +767978,15 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 2,
     "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35962,
+    "needs_whisper": 35964,
     "whisper_confirmed_cz": 3820,
     "whisper_non_cz_needs_subtitles": 12926,
-    "whisper_failed": 1086
+    "whisper_failed": 1084
   },
   "subtitle_followup_statuses": {
     "needs_subtitle_setup_after_prehrajto_processing": 51630
