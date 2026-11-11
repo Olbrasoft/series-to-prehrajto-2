@@ -1,30 +1,94 @@
 {
   "counts": {
     "backlog_episodes": 109894,
-    "manifest_upload_ready_episodes": 34,
-    "uploaded_episodes": 81804,
-    "prepared_source_episodes": 68819,
+    "manifest_upload_ready_episodes": 29,
+    "uploaded_episodes": 81808,
+    "prepared_source_episodes": 68821,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
+    "language_audited_sources": 21,
     "language_whisper_attempted_sources": 20,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53794,
     "whisper_review_pending_sources": 37049,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51628,
     "subtitle_followup_pending_sources": 51628
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-11T11:15:11Z",
+      "databaseId": 43010393399,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:14:28Z",
+      "databaseId": 43010292988,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:14:07Z",
+      "databaseId": 43010246148,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-11T11:14:06Z",
+      "databaseId": 43010242972,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:13:09Z",
+      "databaseId": 43010103408,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T11:12:54Z",
+      "databaseId": 43010070114,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:12:50Z",
+      "databaseId": 43010060313,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:12:33Z",
+      "databaseId": 43010022476,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-11T11:12:18Z",
       "databaseId": 43009989795,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -36,19 +100,19 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T11:08:56Z",
       "databaseId": 43009508888,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T11:08:51Z",
       "databaseId": 43009499569,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -68,11 +132,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-11T11:07:57Z",
       "databaseId": 43009375406,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T11:02:12Z",
-      "databaseId": 43008580065,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T11:01:55Z",
-      "databaseId": 43008540635,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-11T11:01:46Z",
-      "databaseId": 43008520304,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T11:01:40Z",
-      "databaseId": 43008503714,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T11:00:51Z",
-      "databaseId": 43008384405,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T11:00:47Z",
-      "databaseId": 43008373169,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T10:58:34Z",
-      "databaseId": 43008063554,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T10:58:29Z",
-      "databaseId": 43008054034,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -200942,6 +200942,11 @@
         "video_id": 30989038
       },
       {
+        "episode_id": 167344,
+        "display_name": "Čarodějnice navždy S01E04 - Ukradený stín, zapomenutá čarodějnice CZ Titulky",
+        "video_id": 30989099
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383440,6 +383445,21 @@
         "episode_id": 131774,
         "display_name": "Hlavní podezřelý: Střelba na Jeana Charlese de Menezese S01E02 - Díl 2 CZ Titulky",
         "video_id": 30989063
+      },
+      {
+        "episode_id": 167346,
+        "display_name": "Čarodějnice navždy S01E05 - Svátek Candela CZ Titulky",
+        "video_id": 30989095
+      },
+      {
+        "episode_id": 31007,
+        "display_name": "Všichni starostovi muži S02E18 - 18. epizoda CZ Titulky",
+        "video_id": 30989104
+      },
+      {
+        "episode_id": 165470,
+        "display_name": "American Classic S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30989125
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -584099,6 +584119,11 @@
         "video_id": 30989038
       },
       {
+        "episode_id": 167344,
+        "display_name": "Čarodějnice navždy S01E04 - Ukradený stín, zapomenutá čarodějnice CZ Titulky",
+        "video_id": 30989099
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -766597,6 +766622,21 @@
         "episode_id": 131774,
         "display_name": "Hlavní podezřelý: Střelba na Jeana Charlese de Menezese S01E02 - Díl 2 CZ Titulky",
         "video_id": 30989063
+      },
+      {
+        "episode_id": 167346,
+        "display_name": "Čarodějnice navždy S01E05 - Svátek Candela CZ Titulky",
+        "video_id": 30989095
+      },
+      {
+        "episode_id": 31007,
+        "display_name": "Všichni starostovi muži S02E18 - 18. epizoda CZ Titulky",
+        "video_id": 30989104
+      },
+      {
+        "episode_id": 165470,
+        "display_name": "American Classic S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30989125
       }
     ],
     "prepared_not_upload_ready": [
@@ -767758,14 +767798,15 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 1,
     "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35962,
+    "needs_whisper": 35963,
     "whisper_confirmed_cz": 3821,
     "whisper_non_cz_needs_subtitles": 12924,
-    "whisper_failed": 1087
+    "whisper_failed": 1086
   },
   "subtitle_followup_statuses": {
     "needs_subtitle_setup_after_prehrajto_processing": 51628
