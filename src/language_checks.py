@@ -8,6 +8,7 @@ import re
 import subprocess
 import tempfile
 from pathlib import Path
+from audio_sampling import run_with_audio_fallback
 
 CZECH_AUDIO_LANGS = {"cs", "cz", "cze", "ces", "cs-cz", "cz-cz", "czech"}
 CZECH_AUDIO_RE = re.compile(
@@ -122,7 +123,8 @@ def whisper_language(path: Path, *, seconds: int = 90) -> tuple[str | None, floa
             "16000",
             str(sample),
         ]
-        proc = subprocess.run(cmd, capture_output=True, text=True)
+        proc = run_with_audio_fallback(cmd, source=str(path), output=sample,
+                                      start=180, seconds=seconds, timeout=180, text=True)
         if proc.returncode != 0 or not sample.exists():
             return None, None, f"ffmpeg_failed: {proc.stderr.strip()[:200]}"
         _segments, info = model.transcribe(str(sample), beam_size=1, vad_filter=True)

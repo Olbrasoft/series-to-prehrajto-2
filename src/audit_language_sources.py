@@ -21,6 +21,7 @@ from resolve_stream import FAILURE_POLICY_VERSION, ResolveError, pick_best, reso
 from download import head_size  # noqa: E402
 from source_download import official_download, DownloadError  # noqa: E402
 from source_quality import measured_upload_filesize  # noqa: E402
+from audio_sampling import run_with_audio_fallback  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
@@ -237,7 +238,9 @@ def sample_audio(stream_url: str, out_path: Path, *, start_sec: int, seconds: in
         str(out_path),
     ]
     try:
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
+        proc = run_with_audio_fallback(cmd, source=stream_url, output=out_path,
+                                      start=start_sec, seconds=seconds, timeout=180,
+                                      text=True, headers={"Referer": "https://prehraj.to/"})
     except subprocess.TimeoutExpired:
         return False, 'Audio sample timed out'
     if proc.returncode != 0:
