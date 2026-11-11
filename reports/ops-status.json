@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109807,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 81877,
+    "uploaded_episodes": 81878,
     "prepared_source_episodes": 69023,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,27 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53792,
     "whisper_review_pending_sources": 37035,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51652,
     "subtitle_followup_pending_sources": 51652
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:05:54Z",
+      "databaseId": 43100142867,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:05:32Z",
+      "databaseId": 43100091415,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-11T21:03:40Z",
@@ -40,7 +56,7 @@
       "createdAt": "2026-11-11T21:03:13Z",
       "databaseId": 43099768589,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -56,23 +72,23 @@
       "createdAt": "2026-11-11T21:02:10Z",
       "databaseId": 43099619654,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T21:01:52Z",
       "databaseId": 43099574165,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T21:01:43Z",
       "databaseId": 43099547889,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -80,15 +96,15 @@
       "createdAt": "2026-11-11T21:01:36Z",
       "databaseId": 43099528513,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T21:01:19Z",
       "databaseId": 43099483308,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -124,11 +140,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T21:00:34Z",
       "databaseId": 43099373179,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "queued",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T20:37:20Z",
-      "databaseId": 43097148184,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T20:37:15Z",
-      "databaseId": 43097139078,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -383805,6 +383805,11 @@
         "episode_id": 106386,
         "display_name": "Huangovi v Americe S05E02 - 2. epizoda CZ Titulky",
         "video_id": 30993410
+      },
+      {
+        "episode_id": 106395,
+        "display_name": "Huangovi v Americe S05E11 - 11. epizoda CZ Titulky",
+        "video_id": 30993960
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -767327,6 +767332,11 @@
         "episode_id": 106386,
         "display_name": "Huangovi v Americe S05E02 - 2. epizoda CZ Titulky",
         "video_id": 30993410
+      },
+      {
+        "episode_id": 106395,
+        "display_name": "Huangovi v Americe S05E11 - 11. epizoda CZ Titulky",
+        "video_id": 30993960
       }
     ],
     "prepared_not_upload_ready": [
