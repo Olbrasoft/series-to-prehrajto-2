@@ -2,6 +2,21 @@
 
 ## Audio runtime bootstrap failures (November 11, 2026)
 
+The wheel's static FFmpeg 7.0.2 can SIGSEGV while opening an HTTPS MKV original,
+despite passing WAV extraction and HTTPS protocol-list checks. `audio_sampling.py`
+recovers native crashes with the existing PyAV dependency in a bounded child
+process. It preserves the media timeline, crops frames at the requested start,
+and rejects incomplete intervals. Signed URLs travel over worker stdin and are
+excluded from errors. Ordinary HTTP failures are not retried through this path.
+Language audits and external subtitle evidence use the same helper; subtitle
+approval requirements are unchanged.
+
+Runtime CI now exercises real HTTP decoding after a simulated native crash and
+checks sample-accurate transition timing. A 30-second sample from the affected
+1.19 GB portal original also passed live. Recovery run `43060905678` revalidated
+four Barra Brava sources and promoted two distinct episodes, one per account.
+Always verify subsequent upload timestamps and authenticated target IDs as well.
+
 Upload batches can finish green without uploading when the prepared window is
 empty. Ubuntu 26.04 package-mirror DNS failures held Whisper preparation in
 dependency installation for over an hour, starving both accounts. Audio jobs
