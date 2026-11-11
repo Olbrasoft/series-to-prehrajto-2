@@ -11,6 +11,15 @@ on:
         description: "Audio sample length for language detection"
         required: false
         default: "30"
+      series_slug:
+        description: "Optional series to inspect during targeted recovery"
+        required: false
+        default: ""
+      refresh:
+        description: "Explicitly revalidate completed checks within the selected series and batch limit"
+        type: boolean
+        required: false
+        default: false
   schedule:
     - cron: "12 * * * *"
 
@@ -64,11 +73,21 @@ jobs:
           CZ_PROXY_URL: ${{ secrets.CZ_PROXY_URL }}
           CZ_PROXY_KEY: ${{ secrets.CZ_PROXY_KEY }}
           CZ_PROXY_MIN_GAP_SECONDS: "60"
+          REVIEW_SERIES_SLUG: ${{ inputs.series_slug }}
+          REVIEW_REFRESH: ${{ inputs.refresh || 'false' }}
         run: |
-          python -u src/process_whisper_review_queue.py \
-            --limit "${{ inputs.limit || '20' }}" \
-            --sample-seconds "${{ inputs.sample_seconds || '30' }}" \
+          ARGS=(
+            --limit "${{ inputs.limit || '20' }}"
+            --sample-seconds "${{ inputs.sample_seconds || '30' }}"
             --audit-latest-out audits/language-audit-latest.jsonl.gz
+          )
+          if [ -n "$REVIEW_SERIES_SLUG" ]; then
+            ARGS+=(--series-slug "$REVIEW_SERIES_SLUG")
+          fi
+          if [ "$REVIEW_REFRESH" = "true" ]; then
+            ARGS+=(--refresh)
+          fi
+          python -u src/process_whisper_review_queue.py "${ARGS[@]}"
 
       - name: Rebuild upload manifest
         run: |

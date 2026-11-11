@@ -15,6 +15,13 @@ and size checks. Runtime CI verifies real WAV extraction, resampling, decoding,
 and HTTPS protocol availability without downloading a speech model. Production
 acceptance requires fresh prepared rows and new uploads on both accounts.
 
+For bounded operator recovery, `process-whisper-review` exposes the existing
+CLI's `series_slug` and `refresh` controls. Use a named series and a small limit
+to revalidate completed historical checks whose prepared plan is unavailable.
+Normal scheduled retry budgets remain unchanged. Refresh still excludes uploaded
+episodes, aliases, burned sources and usable plans, and promotion still requires
+a fresh language check and a measured upload-sized stream or official original.
+
 ## Upload checkpoint contention (November 2, 2026)
 
 Repeated reporting and preparation commits could exhaust the five checkpoint
