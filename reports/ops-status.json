@@ -1,24 +1,112 @@
 {
   "counts": {
     "backlog_episodes": 109894,
-    "manifest_upload_ready_episodes": 38,
-    "uploaded_episodes": 81799,
-    "prepared_source_episodes": 68825,
+    "manifest_upload_ready_episodes": 34,
+    "uploaded_episodes": 81804,
+    "prepared_source_episodes": 68819,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 41,
-    "language_whisper_attempted_sources": 41,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53794,
     "whisper_review_pending_sources": 37049,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 109,
     "subtitle_followup_sources": 51628,
     "subtitle_followup_pending_sources": 51628
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:04:23Z",
+      "databaseId": 43008880621,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:04:19Z",
+      "databaseId": 43008871275,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:04:15Z",
+      "databaseId": 43008861171,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:04:14Z",
+      "databaseId": 43008858707,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:03:38Z",
+      "databaseId": 43008776206,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:02:12Z",
+      "databaseId": 43008580065,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:01:55Z",
+      "databaseId": 43008540635,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-11T11:01:46Z",
+      "databaseId": 43008520304,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T11:01:40Z",
+      "databaseId": 43008503714,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T11:00:51Z",
+      "databaseId": 43008384405,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T11:00:47Z",
+      "databaseId": 43008373169,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "success",
       "createdAt": "2026-11-11T10:58:34Z",
@@ -28,19 +116,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T10:58:29Z",
       "databaseId": 43008054034,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T10:57:55Z",
       "databaseId": 43007979168,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +164,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-11T10:52:26Z",
       "databaseId": 43007232378,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -90,94 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T10:51:28Z",
-      "databaseId": 43007099351,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-11T10:50:06Z",
-      "databaseId": 43006909806,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T10:50:05Z",
-      "databaseId": 43006905648,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T10:47:52Z",
-      "databaseId": 43006604435,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T10:46:57Z",
-      "databaseId": 43006477423,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T10:46:06Z",
-      "databaseId": 43006363174,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T10:44:03Z",
-      "databaseId": 43006076032,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T10:43:59Z",
-      "databaseId": 43006067923,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T10:43:57Z",
-      "databaseId": 43006062010,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T10:42:57Z",
-      "databaseId": 43005925765,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T10:42:53Z",
-      "databaseId": 43005915934,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -200932,6 +200932,16 @@
         "video_id": 30989023
       },
       {
+        "episode_id": 55237,
+        "display_name": "Vražda S03E10 - 10. epizoda CZ Titulky",
+        "video_id": 30989042
+      },
+      {
+        "episode_id": 131776,
+        "display_name": "Hlavní podezřelý: Střelba na Jeana Charlese de Menezese S01E01 - Díl 1 CZ Titulky",
+        "video_id": 30989038
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383415,6 +383425,21 @@
         "episode_id": 63806,
         "display_name": "Magnum S07E21 - Stát versus Orville Wright CZ Dabing",
         "video_id": 30989016
+      },
+      {
+        "episode_id": 104298,
+        "display_name": "Kyle XY S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30989035
+      },
+      {
+        "episode_id": 68750,
+        "display_name": "Perry Mason S02E01 - 1. epizoda CZ Dabing",
+        "video_id": 30989053
+      },
+      {
+        "episode_id": 131774,
+        "display_name": "Hlavní podezřelý: Střelba na Jeana Charlese de Menezese S01E02 - Díl 2 CZ Titulky",
+        "video_id": 30989063
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -584064,6 +584089,16 @@
         "video_id": 30989023
       },
       {
+        "episode_id": 55237,
+        "display_name": "Vražda S03E10 - 10. epizoda CZ Titulky",
+        "video_id": 30989042
+      },
+      {
+        "episode_id": 131776,
+        "display_name": "Hlavní podezřelý: Střelba na Jeana Charlese de Menezese S01E01 - Díl 1 CZ Titulky",
+        "video_id": 30989038
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -766547,6 +766582,21 @@
         "episode_id": 63806,
         "display_name": "Magnum S07E21 - Stát versus Orville Wright CZ Dabing",
         "video_id": 30989016
+      },
+      {
+        "episode_id": 104298,
+        "display_name": "Kyle XY S01E09 - 9. epizoda CZ Titulky",
+        "video_id": 30989035
+      },
+      {
+        "episode_id": 68750,
+        "display_name": "Perry Mason S02E01 - 1. epizoda CZ Dabing",
+        "video_id": 30989053
+      },
+      {
+        "episode_id": 131774,
+        "display_name": "Hlavní podezřelý: Střelba na Jeana Charlese de Menezese S01E02 - Díl 2 CZ Titulky",
+        "video_id": 30989063
       }
     ],
     "prepared_not_upload_ready": [
@@ -767708,7 +767758,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 40,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
