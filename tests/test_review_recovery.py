@@ -23,7 +23,8 @@ NOW = dt.datetime(2026, 10, 29, 16, tzinfo=dt.timezone.utc)
     ({'retry_attempts': 3}, False),
     ({'whisper': {'status': 'stream_undersized'}}, False),
     ({'status': 'whisper_confirmed_cz'}, True),
-    ({'status': 'whisper_confirmed_cz', 'recovery_version': 1}, False),
+    ({'status': 'whisper_confirmed_cz', 'recovery_version': 1}, True),
+    ({'status': 'whisper_confirmed_cz', 'recovery_version': review.REVIEW_RECOVERY_VERSION}, False),
 ])
 def test_recovery_respects_real_deletions_cooldowns_and_attempt_budget(change, expected):
     row = dict(status='whisper_failed', checked_at='2026-10-01T00:00:00Z',
@@ -99,7 +100,7 @@ def test_completed_review_without_usable_plan_is_rechecked_once_by_cli(tmp_path,
     row = dict(episode_id=1, source_id=2, series_id=3, season=1, episode=1,
                series_slug='example', series_title='Example', provider='prehrajto',
                source_title='Example S01E01', filesize_bytes=500_000_000,
-               status='whisper_confirmed_cz', checked_at='2026-09-01T00:00:00Z')
+               status='whisper_confirmed_cz', recovery_version=1, checked_at='2026-09-01T00:00:00Z')
     queue = tmp_path / 'plans/whisper-review-queue.jsonl'
     review.write_jsonl(queue, [row])
     monkeypatch.setattr(review, 'REPO_ROOT', tmp_path)
@@ -120,7 +121,7 @@ def test_completed_review_without_usable_plan_is_rechecked_once_by_cli(tmp_path,
     assert calls == [2]
     prepared = review.load_jsonl(tmp_path / 'plans/prepared-episodes.jsonl')
     assert [r['episode_id'] for r in prepared] == [1]
-    assert review.load_jsonl(queue)[0]['recovery_version'] == 1
+    assert review.load_jsonl(queue)[0]['recovery_version'] == review.REVIEW_RECOVERY_VERSION
     # A missing later plan is not permission for an unbounded retry loop.
     (tmp_path / 'plans/prepared-episodes.jsonl').unlink()
     assert review.main() == 0
