@@ -1,38 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 109824,
-    "manifest_upload_ready_episodes": 12,
-    "uploaded_episodes": 81852,
-    "prepared_source_episodes": 68950,
+    "manifest_upload_ready_episodes": 14,
+    "uploaded_episodes": 81856,
+    "prepared_source_episodes": 68948,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 46,
+    "language_whisper_attempted_sources": 44,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53793,
     "whisper_review_pending_sources": 37039,
-    "upload_pending_checkpoints": 114,
+    "upload_pending_checkpoints": 112,
     "subtitle_followup_sources": 51644,
     "subtitle_followup_pending_sources": 51644
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-11T17:17:53Z",
-      "databaseId": 43066771797,
+      "createdAt": "2026-11-11T17:22:36Z",
+      "databaseId": 43067553684,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-11T17:20:57Z",
+      "databaseId": 43067283559,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-11T17:20:43Z",
+      "databaseId": 43067242342,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T17:19:10Z",
+      "databaseId": 43066983486,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T17:18:46Z",
+      "databaseId": 43066919135,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T17:17:53Z",
+      "databaseId": 43066771797,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-11T17:17:04Z",
       "databaseId": 43066641580,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +88,7 @@
       "createdAt": "2026-11-11T17:16:09Z",
       "databaseId": 43066489951,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "process-whisper-review"
     },
     {
@@ -84,11 +124,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T17:14:35Z",
       "databaseId": 43066227885,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -116,11 +156,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T17:11:57Z",
       "databaseId": 43065794437,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T17:08:02Z",
-      "databaseId": 43065142926,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-11T17:07:18Z",
-      "databaseId": 43065019942,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T17:07:12Z",
-      "databaseId": 43065003846,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T17:07:04Z",
-      "databaseId": 43064982418,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T17:04:47Z",
-      "databaseId": 43064595031,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -201047,6 +201047,16 @@
         "video_id": 30992095
       },
       {
+        "episode_id": 45749,
+        "display_name": "Všichni starostovi muži S02E15 - 15. epizoda CZ Titulky",
+        "video_id": 30992222
+      },
+      {
+        "episode_id": 31008,
+        "display_name": "Všichni starostovi muži S02E19 - 19. epizoda CZ Titulky",
+        "video_id": 30992235
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383680,6 +383690,16 @@
         "episode_id": 149826,
         "display_name": "Barra Brava S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30992053
+      },
+      {
+        "episode_id": 186523,
+        "display_name": "Hodně štěstí, Charlie S01E22 - Nové známosti CZ Dabing",
+        "video_id": 30992196
+      },
+      {
+        "episode_id": 31006,
+        "display_name": "Všichni starostovi muži S02E17 - 17. epizoda CZ Titulky",
+        "video_id": 30992248
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -584444,6 +584464,16 @@
         "video_id": 30992095
       },
       {
+        "episode_id": 45749,
+        "display_name": "Všichni starostovi muži S02E15 - 15. epizoda CZ Titulky",
+        "video_id": 30992222
+      },
+      {
+        "episode_id": 31008,
+        "display_name": "Všichni starostovi muži S02E19 - 19. epizoda CZ Titulky",
+        "video_id": 30992235
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -767077,6 +767107,16 @@
         "episode_id": 149826,
         "display_name": "Barra Brava S01E04 - 4. epizoda CZ Titulky",
         "video_id": 30992053
+      },
+      {
+        "episode_id": 186523,
+        "display_name": "Hodně štěstí, Charlie S01E22 - Nové známosti CZ Dabing",
+        "video_id": 30992196
+      },
+      {
+        "episode_id": 31006,
+        "display_name": "Všichni starostovi muži S02E17 - 17. epizoda CZ Titulky",
+        "video_id": 30992248
       }
     ],
     "prepared_not_upload_ready": [
@@ -768238,14 +768278,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "ok": 43,
     "disabled": 2,
-    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
     "needs_whisper": 35964,
-    "whisper_confirmed_cz": 3814,
-    "whisper_non_cz_needs_subtitles": 12940,
+    "whisper_confirmed_cz": 3815,
+    "whisper_non_cz_needs_subtitles": 12939,
     "whisper_failed": 1075
   },
   "subtitle_followup_statuses": {
