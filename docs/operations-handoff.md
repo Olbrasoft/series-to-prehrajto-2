@@ -17,6 +17,12 @@ checks sample-accurate transition timing. A 30-second sample from the affected
 four Barra Brava sources and promoted two distinct episodes, one per account.
 Always verify subsequent upload timestamps and authenticated target IDs as well.
 
+Recovery version 2 gives older positive checks one bounded pass with the new
+decoder. Normal batches retain their four-source recovery budget, fresh-work
+priority and uploaded/burned/prepared exclusions. The new version is persisted
+even on unsuccessful revalidation. Missing plans do not reopen current-version
+checks; permanent source failures and exhausted failure retries remain closed.
+
 Upload batches can finish green without uploading when the prepared window is
 empty. Ubuntu 26.04 package-mirror DNS failures held Whisper preparation in
 dependency installation for over an hour, starving both accounts. Audio jobs

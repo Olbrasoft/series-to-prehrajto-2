@@ -30,7 +30,9 @@ from source_quality import MIN_UPLOAD_FILESIZE_BYTES, measured_upload_filesize, 
 from prehrajto_upload import login  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-REVIEW_RECOVERY_VERSION = 1
+# The HTTPS decoder upgrade permits one bounded revalidation of older positive
+# evidence. Missing plans alone must never reopen checks at this version.
+REVIEW_RECOVERY_VERSION = 2
 
 
 def review_due(row: dict, *, now: dt.datetime, allow_original: bool = False) -> bool:
