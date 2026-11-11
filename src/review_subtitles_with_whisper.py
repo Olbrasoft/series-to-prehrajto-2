@@ -24,6 +24,7 @@ from pathlib import Path
 import requests
 
 from resolve_stream import GOOGLEBOT_HEADERS, ResolveError, parse_html, resolve
+from audio_sampling import run_with_audio_fallback
 
 FRACTIONS = (0.2, 0.5, 0.8)
 TIME_RE = re.compile(
@@ -185,7 +186,10 @@ def collect(candidate: dict, model, args, out: Path) -> dict:
                            "-rw_timeout", "20000000", "-user_agent", GOOGLEBOT_HEADERS["User-Agent"],
                            "-ss", str(start), "-i", stream.url, "-t", str(args.clip_seconds),
                            "-vn", "-ac", "1", "-ar", "16000", str(audio)]
-                process = subprocess.run(command, capture_output=True, timeout=args.extract_timeout)
+                process = run_with_audio_fallback(command, source=stream.url, output=audio,
+                                                 start=start, seconds=args.clip_seconds,
+                                                 timeout=args.extract_timeout,
+                                                 headers={"User-Agent": GOOGLEBOT_HEADERS["User-Agent"]})
                 if process.returncode or not audio.exists():
                     clip.update(status="audio_extract_failed", returncode=process.returncode)
                     continue
