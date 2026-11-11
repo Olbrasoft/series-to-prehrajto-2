@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109894,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 81837,
-    "prepared_source_episodes": 68810,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 81838,
+    "prepared_source_episodes": 68812,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -14,17 +14,73 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53794,
     "whisper_review_pending_sources": 37047,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51632,
     "subtitle_followup_pending_sources": 51632
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-11T12:02:10Z",
+      "databaseId": 43016862265,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T12:02:08Z",
+      "databaseId": 43016858795,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-11T12:02:08Z",
+      "databaseId": 43016857102,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T12:02:05Z",
+      "databaseId": 43016849521,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-11T12:02:02Z",
+      "databaseId": 43016843724,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T12:01:29Z",
+      "databaseId": 43016764519,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T12:01:23Z",
+      "databaseId": 43016750700,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-11T12:00:24Z",
       "databaseId": 43016604769,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +100,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T11:54:41Z",
       "databaseId": 43015837011,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -96,7 +152,7 @@
       "createdAt": "2026-11-11T11:51:59Z",
       "databaseId": 43015462814,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -108,11 +164,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-11T11:51:54Z",
       "databaseId": 43015452908,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T11:50:02Z",
-      "databaseId": 43015193116,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T11:48:37Z",
-      "databaseId": 43015002134,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T11:46:40Z",
-      "databaseId": 43014737701,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T11:46:36Z",
-      "databaseId": 43014729764,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T11:44:15Z",
-      "databaseId": 43014400075,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T11:42:49Z",
-      "databaseId": 43014203903,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T11:42:46Z",
-      "databaseId": 43014195955,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -383605,6 +383605,11 @@
         "episode_id": 63799,
         "display_name": "Magnum S07E14 - Vražda pod rouškou noci CZ Dabing",
         "video_id": 30989568
+      },
+      {
+        "episode_id": 104299,
+        "display_name": "Kyle XY S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30989602
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -766927,6 +766932,11 @@
         "episode_id": 63799,
         "display_name": "Magnum S07E14 - Vražda pod rouškou noci CZ Dabing",
         "video_id": 30989568
+      },
+      {
+        "episode_id": 104299,
+        "display_name": "Kyle XY S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 30989602
       }
     ],
     "prepared_not_upload_ready": [
