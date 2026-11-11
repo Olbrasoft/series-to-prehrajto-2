@@ -1,16 +1,16 @@
 {
   "counts": {
     "backlog_episodes": 109795,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 81880,
-    "prepared_source_episodes": 69029,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 81881,
+    "prepared_source_episodes": 69033,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 41,
-    "language_whisper_attempted_sources": 41,
+    "language_audited_sources": 43,
+    "language_whisper_attempted_sources": 43,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53792,
     "whisper_review_pending_sources": 37031,
@@ -21,10 +21,114 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-11T21:33:28Z",
+      "databaseId": 43104091768,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-11T21:33:15Z",
+      "databaseId": 43104059424,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:32:47Z",
+      "databaseId": 43103989819,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:32:45Z",
+      "databaseId": 43103985366,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:32:26Z",
+      "databaseId": 43103939353,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:32:26Z",
+      "databaseId": 43103939023,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:32:20Z",
+      "databaseId": 43103924307,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-11T21:31:31Z",
+      "databaseId": 43103801821,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:31:23Z",
+      "databaseId": 43103781871,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T21:30:26Z",
+      "databaseId": 43103635056,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T21:30:23Z",
+      "databaseId": 43103624939,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:30:20Z",
+      "databaseId": 43103616806,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:30:08Z",
+      "databaseId": 43103584586,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-11T21:25:12Z",
       "databaseId": 43102880804,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,11 +148,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T21:24:40Z",
       "databaseId": 43102802133,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +160,7 @@
       "createdAt": "2026-11-11T21:24:19Z",
       "databaseId": 43102749014,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -74,110 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T21:23:38Z",
-      "databaseId": 43102648470,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T21:23:35Z",
-      "databaseId": 43102641889,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-11T21:22:36Z",
-      "databaseId": 43102500512,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:22:34Z",
-      "databaseId": 43102495910,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:21:38Z",
-      "databaseId": 43102359990,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T21:21:25Z",
-      "databaseId": 43102328193,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:20:20Z",
-      "databaseId": 43102172654,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:18:24Z",
-      "databaseId": 43101894356,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:18:23Z",
-      "databaseId": 43101890864,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T21:18:15Z",
-      "databaseId": 43101872731,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T21:17:51Z",
-      "databaseId": 43101818716,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:17:35Z",
-      "databaseId": 43101781669,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T21:17:35Z",
-      "databaseId": 43101781217,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -383820,6 +383820,11 @@
         "episode_id": 106395,
         "display_name": "Huangovi v Americe S05E11 - 11. epizoda CZ Titulky",
         "video_id": 30993960
+      },
+      {
+        "episode_id": 106398,
+        "display_name": "Huangovi v Americe S05E14 - 14. epizoda CZ Titulky",
+        "video_id": 30994200
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -767357,6 +767362,11 @@
         "episode_id": 106395,
         "display_name": "Huangovi v Americe S05E11 - 11. epizoda CZ Titulky",
         "video_id": 30993960
+      },
+      {
+        "episode_id": 106398,
+        "display_name": "Huangovi v Americe S05E14 - 14. epizoda CZ Titulky",
+        "video_id": 30994200
       }
     ],
     "prepared_not_upload_ready": [
@@ -768518,7 +768528,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 40,
+    "ok": 42,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
