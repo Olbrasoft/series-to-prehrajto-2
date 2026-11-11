@@ -2,8 +2,8 @@
   "counts": {
     "backlog_episodes": 109795,
     "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 81881,
-    "prepared_source_episodes": 69033,
+    "uploaded_episodes": 81882,
+    "prepared_source_episodes": 69032,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53792,
     "whisper_review_pending_sources": 37031,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51656,
     "subtitle_followup_pending_sources": 51656
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-11T21:37:24Z",
+      "databaseId": 43104675761,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T21:36:55Z",
+      "databaseId": 43104607552,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-11T21:36:38Z",
+      "databaseId": 43104565996,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-11T21:34:47Z",
       "databaseId": 43104289698,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-11T21:33:28Z",
       "databaseId": 43104091768,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -60,11 +84,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T21:32:26Z",
       "databaseId": 43103939353,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T21:24:40Z",
-      "databaseId": 43102802133,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-11T21:24:19Z",
-      "databaseId": 43102749014,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T21:23:45Z",
-      "databaseId": 43102665986,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -201130,6 +201130,11 @@
         "episode_id": 146140,
         "display_name": "Banka v obklíčení S01E03 - Tik tak CZ Dabing",
         "video_id": 30994101
+      },
+      {
+        "episode_id": 106397,
+        "display_name": "Huangovi v Americe S05E16 - 16. epizoda CZ Titulky",
+        "video_id": 30994224
       },
       {
         "episode_id": 114182,
@@ -584672,6 +584677,11 @@
         "episode_id": 146140,
         "display_name": "Banka v obklíčení S01E03 - Tik tak CZ Dabing",
         "video_id": 30994101
+      },
+      {
+        "episode_id": 106397,
+        "display_name": "Huangovi v Americe S05E16 - 16. epizoda CZ Titulky",
+        "video_id": 30994224
       },
       {
         "episode_id": 114182,
