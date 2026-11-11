@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 109795,
-    "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 81892,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 81893,
     "prepared_source_episodes": 69102,
     "description_series": 60,
     "description_episodes": 753,
@@ -19,6 +19,22 @@
     "subtitle_followup_pending_sources": 51662
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T23:25:00Z",
+      "databaseId": 43119648307,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T23:24:04Z",
+      "databaseId": 43119527867,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-11T23:23:29Z",
@@ -44,11 +60,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T23:22:04Z",
       "databaseId": 43119267498,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -84,19 +100,19 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T23:20:43Z",
       "databaseId": 43119093414,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T23:20:42Z",
       "databaseId": 43119091087,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T23:13:39Z",
-      "databaseId": 43118174677,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T23:13:36Z",
-      "databaseId": 43118167890,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -383880,6 +383880,11 @@
         "episode_id": 172818,
         "display_name": "Delirio S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30995035
+      },
+      {
+        "episode_id": 171235,
+        "display_name": "Sešli se v Istanbulu S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30995330
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -767477,6 +767482,11 @@
         "episode_id": 172818,
         "display_name": "Delirio S01E02 - 2. epizoda CZ Titulky",
         "video_id": 30995035
+      },
+      {
+        "episode_id": 171235,
+        "display_name": "Sešli se v Istanbulu S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30995330
       }
     ],
     "prepared_not_upload_ready": [
