@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 109832,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 81842,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 81844,
     "prepared_source_episodes": 68821,
     "description_series": 60,
     "description_episodes": 753,
@@ -21,18 +21,74 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-11T12:22:33Z",
-      "databaseId": 43019782099,
+      "createdAt": "2026-11-11T12:32:41Z",
+      "databaseId": 43021250052,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "process-whisper-review"
+      "status": "pending",
+      "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-11T12:30:19Z",
+      "databaseId": 43020898322,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-11T12:29:51Z",
+      "databaseId": 43020829348,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-11T12:28:34Z",
+      "databaseId": 43020643808,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T12:25:59Z",
+      "databaseId": 43020276700,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T12:24:26Z",
+      "databaseId": 43020051979,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T12:24:21Z",
+      "databaseId": 43020040395,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-11T12:22:33Z",
+      "databaseId": 43019782099,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-11T12:22:17Z",
       "databaseId": 43019743145,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,15 +96,15 @@
       "createdAt": "2026-11-11T12:22:14Z",
       "databaseId": 43019736035,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-11T12:21:50Z",
       "databaseId": 43019679997,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -80,7 +136,7 @@
       "createdAt": "2026-11-11T12:19:57Z",
       "databaseId": 43019404782,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T12:15:43Z",
-      "databaseId": 43018804440,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T12:15:39Z",
-      "databaseId": 43018796152,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T12:15:36Z",
-      "databaseId": 43018790177,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T12:15:36Z",
-      "databaseId": 43018790092,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T12:14:24Z",
-      "databaseId": 43018609315,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-11T12:14:18Z",
-      "databaseId": 43018595500,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-11T12:12:09Z",
-      "databaseId": 43018286597,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -201012,6 +201012,11 @@
         "video_id": 30989733
       },
       {
+        "episode_id": 31076,
+        "display_name": "Všichni starostovi muži S05E11 - 11. epizoda CZ Titulky",
+        "video_id": 30989867
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383630,6 +383635,11 @@
         "episode_id": 31074,
         "display_name": "Všichni starostovi muži S05E09 - 9. epizoda CZ Titulky",
         "video_id": 30989693
+      },
+      {
+        "episode_id": 31075,
+        "display_name": "Všichni starostovi muži S05E10 - 10. epizoda CZ Titulky",
+        "video_id": 30989878
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -584359,6 +584369,11 @@
         "video_id": 30989733
       },
       {
+        "episode_id": 31076,
+        "display_name": "Všichni starostovi muži S05E11 - 11. epizoda CZ Titulky",
+        "video_id": 30989867
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -766977,6 +766992,11 @@
         "episode_id": 31074,
         "display_name": "Všichni starostovi muži S05E09 - 9. epizoda CZ Titulky",
         "video_id": 30989693
+      },
+      {
+        "episode_id": 31075,
+        "display_name": "Všichni starostovi muži S05E10 - 10. epizoda CZ Titulky",
+        "video_id": 30989878
       }
     ],
     "prepared_not_upload_ready": [
