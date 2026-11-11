@@ -3,6 +3,8 @@
 import array
 import importlib.util
 import math
+import shutil
+import subprocess
 import tempfile
 import unittest
 import wave
@@ -11,6 +13,27 @@ from pathlib import Path
 
 @unittest.skipUnless(importlib.util.find_spec("faster_whisper"), "Whisper is optional")
 class WhisperDependencyTests(unittest.TestCase):
+    def test_ffmpeg_extracts_audio_and_supports_https_sources(self):
+        executable = shutil.which('ffmpeg')
+        self.assertIsNotNone(executable)
+        protocols = subprocess.check_output([executable, '-protocols'], text=True, timeout=10)
+        self.assertIn('https', protocols.split())
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / 'source.wav'
+            target = Path(directory) / 'sample.wav'
+            with wave.open(str(source), 'wb') as output:
+                output.setnchannels(2)
+                output.setsampwidth(2)
+                output.setframerate(8000)
+                output.writeframes(b'\0\0\0\0' * 8000)
+            subprocess.run([executable, '-y', '-hide_banner', '-loglevel', 'error',
+                            '-i', str(source), '-vn', '-ac', '1', '-ar', '16000', str(target)],
+                           check=True, capture_output=True, timeout=10)
+            with wave.open(str(target)) as sample:
+                self.assertEqual(sample.getnchannels(), 1)
+                self.assertEqual(sample.getframerate(), 16000)
+                self.assertEqual(sample.getnframes(), 16000)
+
     def test_decode_and_resample_wav(self):
         from faster_whisper.audio import decode_audio
 

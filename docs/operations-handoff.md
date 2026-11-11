@@ -1,5 +1,20 @@
 # Operations handoff
 
+## Audio runtime bootstrap failures (November 11, 2026)
+
+Upload batches can finish green without uploading when the prepared window is
+empty. Ubuntu 26.04 package-mirror DNS failures held Whisper preparation in
+dependency installation for over an hour, starving both accounts. Audio jobs
+now use the FFmpeg executable bundled in the pinned `imageio-ffmpeg` wheel,
+published through `GITHUB_PATH` by `setup_whisper_runtime.py`; apt is unnecessary.
+The ten-minute dependency-step deadline bounds future bootstrap outages.
+
+Configure Git before dependency installation so always-run checkpoint steps
+can preserve work even if bootstrap fails. Keep the existing Whisper language
+and size checks. Runtime CI verifies real WAV extraction, resampling, decoding,
+and HTTPS protocol availability without downloading a speech model. Production
+acceptance requires fresh prepared rows and new uploads on both accounts.
+
 ## Upload checkpoint contention (November 2, 2026)
 
 Repeated reporting and preparation commits could exhaust the five checkpoint

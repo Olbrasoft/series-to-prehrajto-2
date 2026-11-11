@@ -4,6 +4,8 @@ on:
     paths:
       - "src/build_upload_manifest.py"
       - "src/download.py"
+      - "src/setup_whisper_runtime.py"
+      - "requirements-whisper.txt"
       - "src/sync_batch.py"
       - "src/pick_next_episode.py"
       - "src/source_download.py"
@@ -43,6 +45,10 @@ on:
       - "src/export_backlog.py"
       - "tests/test_upload_checkpoints.py"
       - "tests/test_checkpoint_contention.py"
+      - "tests/test_whisper_runtime.py"
+      - "tests/test_whisper_dependencies.py"
+      - ".github/workflows/audit-language.yml"
+      - ".github/workflows/external-subtitles.yml"
       - "tests/test_export_backlog.py"
       - "tests/test_pick_next_episode.py"
       - "tests/test_upload_state_merge.py"
@@ -52,6 +58,20 @@ on:
 permissions:
   contents: read
 jobs:
+  whisper-runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install the packaged audio runtime
+        run: pip install -r requirements-whisper.txt
+      - name: Configure FFmpeg without apt
+        run: python src/setup_whisper_runtime.py
+      - name: Verify decoding, resampling and HTTPS protocol support
+        run: python -m unittest discover -s tests -p test_whisper_dependencies.py
   tests:
     runs-on: ubuntu-latest
     steps:
@@ -60,4 +80,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt pytest
-      - run: python -m pytest tests/test_download_resume.py tests/test_stream_size_probe.py tests/test_source_download.py tests/test_upload_original_format.py tests/test_sync_complete_download.py tests/test_download_policy_upgrade.py tests/test_ops_status_stdlib.py tests/test_build_upload_manifest.py tests/test_source_discovery_recovery.py tests/test_preparation_upload_failures.py tests/test_prepare_episode_sources.py tests/test_merge_preparation_results.py tests/test_upload_recovery.py tests/test_whisper_review_sizes.py tests/test_review_recovery.py tests/test_resolver_failure_policy.py tests/test_upload_checkpoints.py tests/test_checkpoint_contention.py tests/test_export_backlog.py tests/test_pick_next_episode.py tests/test_upload_state_merge.py tests/test_ops_watchdog.py -q
+      - run: python -m pytest tests/test_download_resume.py tests/test_stream_size_probe.py tests/test_source_download.py tests/test_upload_original_format.py tests/test_sync_complete_download.py tests/test_download_policy_upgrade.py tests/test_ops_status_stdlib.py tests/test_build_upload_manifest.py tests/test_source_discovery_recovery.py tests/test_preparation_upload_failures.py tests/test_prepare_episode_sources.py tests/test_merge_preparation_results.py tests/test_upload_recovery.py tests/test_whisper_review_sizes.py tests/test_review_recovery.py tests/test_resolver_failure_policy.py tests/test_upload_checkpoints.py tests/test_checkpoint_contention.py tests/test_whisper_runtime.py tests/test_export_backlog.py tests/test_pick_next_episode.py tests/test_upload_state_merge.py tests/test_ops_watchdog.py -q

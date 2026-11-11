@@ -50,6 +50,11 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -58,17 +63,13 @@ jobs:
         run: python src/subtitle_priority.py --github-output "$GITHUB_OUTPUT"
 
       - name: Install Whisper dependencies
+        timeout-minutes: 10
         if: inputs.use_whisper != 'false' && steps.priority.outputs.hold_source_search != 'true'
         run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
           pip install -r requirements-whisper.txt
+          python src/setup_whisper_runtime.py
+          export PATH="$RUNNER_TEMP/series-whisper-bin:$PATH"
           python -m unittest discover -s tests -p test_whisper_dependencies.py
-
-      - name: Configure git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Prepare episode sources
         if: steps.priority.outputs.hold_source_search != 'true'
