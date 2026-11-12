@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109773,
     "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 81928,
+    "uploaded_episodes": 81929,
     "prepared_source_episodes": 69092,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,25 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53792,
     "whisper_review_pending_sources": 37021,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51683,
     "subtitle_followup_pending_sources": 51683
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-12T02:55:49Z",
+      "databaseId": 43144733771,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "skipped",
       "createdAt": "2026-11-12T02:55:24Z",
       "databaseId": 43144686918,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "prepare-subtitles"
     },
     {
@@ -32,7 +40,7 @@
       "createdAt": "2026-11-12T02:55:22Z",
       "databaseId": 43144683557,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +48,7 @@
       "createdAt": "2026-11-12T02:55:19Z",
       "databaseId": 43144678291,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -52,11 +60,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T02:54:24Z",
       "databaseId": 43144576897,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -64,15 +72,15 @@
       "createdAt": "2026-11-12T02:54:06Z",
       "databaseId": 43144543689,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T02:53:26Z",
       "databaseId": 43144469939,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T02:49:21Z",
-      "databaseId": 43144017058,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
     }
   ],
   "gaps": {
@@ -384060,6 +384060,11 @@
         "episode_id": 153562,
         "display_name": "Revamp: The Undead Story S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30997243
+      },
+      {
+        "episode_id": 142678,
+        "display_name": "Dívka a noc S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30997275
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -767837,6 +767842,11 @@
         "episode_id": 153562,
         "display_name": "Revamp: The Undead Story S01E06 - 6. epizoda CZ Titulky",
         "video_id": 30997243
+      },
+      {
+        "episode_id": 142678,
+        "display_name": "Dívka a noc S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 30997275
       }
     ],
     "prepared_not_upload_ready": [
