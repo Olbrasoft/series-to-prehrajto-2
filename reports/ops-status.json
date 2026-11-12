@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109692,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 81980,
-    "prepared_source_episodes": 69108,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 81982,
+    "prepared_source_episodes": 69107,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
@@ -14,17 +14,49 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53781,
     "whisper_review_pending_sources": 36982,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51720,
     "subtitle_followup_pending_sources": 51720
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-12T14:23:46Z",
+      "databaseId": 43236730932,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
       "conclusion": "",
+      "createdAt": "2026-11-12T14:23:18Z",
+      "databaseId": 43236648579,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T14:21:53Z",
+      "databaseId": 43236403866,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T14:21:47Z",
+      "databaseId": 43236386995,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-12T14:17:44Z",
       "databaseId": 43235694119,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -48,7 +80,7 @@
       "createdAt": "2026-11-12T14:16:54Z",
       "databaseId": 43235550861,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,23 +112,23 @@
       "createdAt": "2026-11-12T14:15:05Z",
       "databaseId": 43235238601,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T14:14:37Z",
       "databaseId": 43235157028,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T14:13:45Z",
       "databaseId": 43235009414,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -132,11 +164,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T14:07:06Z",
       "databaseId": 43233886765,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T14:06:07Z",
-      "databaseId": 43233722065,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T14:05:56Z",
-      "databaseId": 43233690730,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T14:05:53Z",
-      "databaseId": 43233680255,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T14:05:23Z",
-      "databaseId": 43233595480,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -201387,6 +201387,11 @@
         "video_id": 31003303
       },
       {
+        "episode_id": 70836,
+        "display_name": "Nejsem do tebe blázen  S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 31003328
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -384320,6 +384325,11 @@
         "episode_id": 70834,
         "display_name": "Nejsem do tebe blázen  S01E05 - 5. epizoda CZ Titulky",
         "video_id": 31003301
+      },
+      {
+        "episode_id": 17606,
+        "display_name": "Basket nebo nic S01E02 - Nutná defenzíva CZ Titulky",
+        "video_id": 31003326
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -585424,6 +585434,11 @@
         "video_id": 31003303
       },
       {
+        "episode_id": 70836,
+        "display_name": "Nejsem do tebe blázen  S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 31003328
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -768357,6 +768372,11 @@
         "episode_id": 70834,
         "display_name": "Nejsem do tebe blázen  S01E05 - 5. epizoda CZ Titulky",
         "video_id": 31003301
+      },
+      {
+        "episode_id": 17606,
+        "display_name": "Basket nebo nic S01E02 - Nutná defenzíva CZ Titulky",
+        "video_id": 31003326
       }
     ],
     "prepared_not_upload_ready": [
