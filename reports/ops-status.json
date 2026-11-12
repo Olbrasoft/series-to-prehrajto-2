@@ -1,24 +1,80 @@
 {
   "counts": {
     "backlog_episodes": 109669,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 82009,
-    "prepared_source_episodes": 68982,
+    "manifest_upload_ready_episodes": 6,
+    "uploaded_episodes": 82010,
+    "prepared_source_episodes": 69018,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 32,
+    "language_whisper_attempted_sources": 32,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53769,
-    "whisper_review_pending_sources": 36938,
+    "whisper_review_sources": 53765,
+    "whisper_review_pending_sources": 36927,
     "upload_pending_checkpoints": 111,
-    "subtitle_followup_sources": 51736,
-    "subtitle_followup_pending_sources": 51736
+    "subtitle_followup_sources": 51737,
+    "subtitle_followup_pending_sources": 51737
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T16:54:44Z",
+      "databaseId": 43263784531,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-12T16:53:41Z",
+      "databaseId": 43263596003,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-12T16:52:31Z",
+      "databaseId": 43263389586,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T16:52:26Z",
+      "databaseId": 43263374220,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-12T16:52:20Z",
+      "databaseId": 43263359160,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T16:52:15Z",
+      "databaseId": 43263344028,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T16:52:06Z",
+      "databaseId": 43263317248,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-12T16:51:37Z",
@@ -32,7 +88,7 @@
       "createdAt": "2026-11-12T16:50:24Z",
       "databaseId": 43263014050,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +124,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T16:44:24Z",
       "databaseId": 43261930546,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +140,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-12T16:42:50Z",
       "databaseId": 43261652913,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -96,7 +152,7 @@
       "createdAt": "2026-11-12T16:41:31Z",
       "databaseId": 43261415165,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -112,7 +168,7 @@
       "createdAt": "2026-11-12T16:38:38Z",
       "databaseId": 43260900292,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T16:37:56Z",
-      "databaseId": 43260775536,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T16:37:50Z",
-      "databaseId": 43260758027,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T16:36:48Z",
-      "databaseId": 43260575183,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T16:36:44Z",
-      "databaseId": 43260562364,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-12T16:36:38Z",
-      "databaseId": 43260544989,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T16:35:08Z",
-      "databaseId": 43260272860,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T16:35:03Z",
-      "databaseId": 43260256583,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -201450,6 +201450,11 @@
         "episode_id": 70820,
         "display_name": "Nejsem do tebe blázen  S02E09 - 9. epizoda CZ Titulky",
         "video_id": 31004227
+      },
+      {
+        "episode_id": 82836,
+        "display_name": "Správná americká rodina S01E03 - Všude jsou duchové CZ Titulky",
+        "video_id": 31004268
       },
       {
         "episode_id": 114182,
@@ -585624,6 +585629,11 @@
         "video_id": 31004227
       },
       {
+        "episode_id": 82836,
+        "display_name": "Správná americká rodina S01E03 - Všude jsou duchové CZ Titulky",
+        "video_id": 31004268
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -769788,16 +769798,18 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "sample_failed": 2,
+    "ok": 26,
+    "stream_undersized": 3,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35901,
-    "whisper_confirmed_cz": 3808,
-    "whisper_non_cz_needs_subtitles": 13023,
-    "whisper_failed": 1037
+    "needs_whisper": 35885,
+    "whisper_confirmed_cz": 3810,
+    "whisper_non_cz_needs_subtitles": 13028,
+    "whisper_failed": 1042
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51736
+    "needs_subtitle_setup_after_prehrajto_processing": 51737
   }
 }
