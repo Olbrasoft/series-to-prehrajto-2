@@ -1,5 +1,23 @@
 # Operations handoff
 
+## Source proxy outage recovery (November 12, 2026)
+
+A proxy connection outage can leave sync green but empty: live search spends
+its batch timing out, and no eligible sources reach Whisper. Discovery and
+resolution now try configured backup proxies and then the portal directly.
+A failed proxy host is skipped for five minutes within the worker, shared by
+search and resolution. Proxy connection setup is bounded to five seconds.
+
+HTTP 429 stops the operation without trying another route. Explicit missing
+source evidence still closes that source. A direct challenge page after a proxy
+outage is transient and must not burn the source. Size, audio, identity and
+durable upload reservation gates are unchanged.
+
+Dispatch `upload-manifest-tests` with `live_transport=true` to check a real
+source player and search page from a GitHub runner without uploading anything.
+Then verify fresh prepared rows, actual uploads on both accounts and continued
+queue replenishment; unit tests or green empty sync jobs alone are insufficient.
+
 ## Audio runtime bootstrap failures (November 11, 2026)
 
 The wheel's static FFmpeg 7.0.2 can SIGSEGV while opening an HTTPS MKV original,

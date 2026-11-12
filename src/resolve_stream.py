@@ -26,6 +26,7 @@ from dataclasses import dataclass
 from typing import Optional
 
 import requests
+from source_transport import available_endpoints, proxy_available, proxy_unavailable, request_timeout
 from request_backoff import retry_after_seconds
 
 FAILURE_POLICY_VERSION = 2
@@ -290,6 +291,7 @@ def _googlebot_headers() -> dict[str, str]:
     reverse DNS identity cannot be reproduced by a local script.
     """
     headers = dict(GOOGLEBOT_HEADERS)
+    headers["Accept-Encoding"] = requests.utils.DEFAULT_ACCEPT_ENCODING
     if os.environ.get("GOOGLEBOT_VARIANT", "smartphone").lower() == "desktop":
         headers["User-Agent"] = GOOGLEBOT_DESKTOP_USER_AGENT
     return headers
@@ -343,12 +345,14 @@ def resolve(
     if localhost_url:
         fetch_urls = [("localhost", localhost_url)]
     else:
-        fetch_urls = _cz_proxy_fetch_urls(upload_url) or [("direct", upload_url)]
+        fetch_urls = available_endpoints(_cz_proxy_fetch_urls(upload_url), upload_url)
 
     last_err: str = "no attempts"
-    proxy_transport_outage = all(label.startswith("cz_proxy") for label, _ in fetch_urls)
+    proxy_transport_outage = bool(_cz_proxy_fetch_urls(upload_url)) if not localhost_url else False
     for attempt in range(max_retries + 1):
         for fetch_label, fetch_url in fetch_urls:
+            if fetch_label.startswith("cz_proxy") and not proxy_available(fetch_url):
+                continue
             via_proxy = fetch_label.startswith("cz_proxy")
             # Pace consecutive proxy GETs. The first call in the batch hits
             # `wait <= 0` and goes through immediately; later calls wait out
@@ -359,11 +363,13 @@ def resolve(
                 if wait > 0:
                     time.sleep(wait)
             try:
-                resp = sess.get(fetch_url, timeout=timeout, allow_redirects=True)
-                proxy_transport_outage = False
+                resp = sess.get(fetch_url, timeout=request_timeout(fetch_label, timeout), allow_redirects=True)
                 if via_proxy:
                     _last_resolve_at = time.monotonic()
             except requests.RequestException as e:
+                if via_proxy:
+                    proxy_unavailable(fetch_url)
+                    proxy_transport_outage = True
                 last_err = f"{fetch_label} network error: {type(e).__name__}"
                 continue
             if resp.status_code == 404:
@@ -374,7 +380,13 @@ def resolve(
                 _rate_limit_until = time.monotonic() + delay
                 raise ProxyRateLimitedError(delay)
             if resp.ok:
-                return parse_html(resp.text, upload_url, fetch_via=fetch_label)
+                try:
+                    return parse_html(resp.text, upload_url, fetch_via=fetch_label)
+                except ResolveError:
+                    if not via_proxy and proxy_transport_outage:
+                        last_err = "direct fallback returned no usable player"
+                        continue
+                    raise
             if 500 <= resp.status_code < 600:
                 # Only an explicit upstream 404 proves that this file is gone.
                 # ConnectionClosed/Timeout WebExceptions are transport outages.
@@ -390,7 +402,9 @@ def resolve(
                         f"HTTP {resp.status_code} wrapping permanent upstream error: {upload_url}",
                         permanent=True,
                     )
-                proxy_transport_outage = via_proxy
+                proxy_transport_outage = proxy_transport_outage or via_proxy
+                if via_proxy:
+                    proxy_unavailable(fetch_url)
                 last_err = f"{fetch_label} HTTP {resp.status_code}"
                 continue
             last_err = f"{fetch_label} HTTP {resp.status_code}"

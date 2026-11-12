@@ -13,7 +13,9 @@ from dataclasses import dataclass
 from typing import Callable
 
 import requests
+from source_transport import available_endpoints, proxy_available, proxy_unavailable, request_timeout
 from request_backoff import retry_after_seconds
+from resolve_stream import GOOGLEBOT_HEADERS
 
 BASE_URL = "https://prehraj.to"
 SEARCH_URL = "https://prehraj.to/hledej/{query}"
@@ -230,37 +232,46 @@ def search_pages(
     sess = session or requests.Session()
     min_interval = max(min_interval, float(os.environ.get("PREHRAJTO_SEARCH_MIN_INTERVAL", "0") or 0))
     search_url = SEARCH_URL.format(query=urllib.parse.quote(query))
-    fetch_urls = _proxy_fetch_urls(search_url)
-    if fetch_urls:
+    configured_proxies = _proxy_fetch_urls(search_url)
+    if configured_proxies:
         min_interval = max(
             min_interval,
             float(os.environ.get("CZ_PROXY_MIN_GAP_SECONDS", "5")),
         )
-    else:
-        fetch_urls = [("direct", search_url)]
+    fetch_urls = available_endpoints(configured_proxies, search_url)
+    last_error = "Search failed without a response"
     pages: list[list[SearchResult]] = []
     next_url: str | None = search_url
     for page_index in range(max(max_pages, 1)):
         if not next_url:
             break
-        page_fetch_urls = fetch_urls if page_index == 0 else (_proxy_fetch_urls(next_url) or [("direct", next_url)])
+        page_fetch_urls = fetch_urls if page_index == 0 else available_endpoints(_proxy_fetch_urls(next_url), next_url)
         response: requests.Response | None = None
         for attempt in range(max(retries, 1)):
             for fetch_label, fetch_url in page_fetch_urls:
+                if fetch_label.startswith("cz_proxy") and not proxy_available(fetch_url):
+                    continue
                 wait = min_interval - (time.monotonic() - _last_search_at)
                 if wait > 0:
                     time.sleep(wait)
+                response = None
                 try:
                     response = sess.get(
                         fetch_url,
-                        timeout=timeout,
-                        headers=BROWSER_HEADERS,
+                        timeout=request_timeout(fetch_label, timeout),
+                        headers={**BROWSER_HEADERS, "User-Agent": GOOGLEBOT_HEADERS["User-Agent"],
+                                 "Accept-Encoding": requests.utils.DEFAULT_ACCEPT_ENCODING},
                     )
                 except requests.RequestException as exc:
                     # Request exception text includes the proxy URL and its key.
-                    raise type(exc)(f"{fetch_label} transport error: {type(exc).__name__}") from None
+                    last_error = f"{fetch_label} transport error: {type(exc).__name__}"
+                    if fetch_label.startswith("cz_proxy"):
+                        proxy_unavailable(fetch_url)
+                    response = None
+                    continue
                 finally:
-                    _last_search_at = time.monotonic()
+                    if response is not None:
+                        _last_search_at = time.monotonic()
                 if response.ok:
                     results = parse_search_html(response.text)
                     pages.append(results)
@@ -271,6 +282,11 @@ def search_pages(
                         else None
                     )
                     break
+                if response.status_code == 429:
+                    # A portal rate limit must not trigger another transport.
+                    raise requests.HTTPError("Search HTTP 429", response=response) from None
+                if fetch_label.startswith("cz_proxy") and response.status_code >= 500:
+                    proxy_unavailable(fetch_url)
                 if response.status_code != 429 or attempt + 1 >= retries:
                     continue
             if response is not None and response.ok:
@@ -282,5 +298,5 @@ def search_pages(
         else:
             if response is not None:
                 raise requests.HTTPError(f"Search HTTP {response.status_code}", response=response) from None
-            raise RuntimeError(f"Search failed without a response for {query!r}")
+            raise requests.ConnectionError(last_error) from None
     return pages

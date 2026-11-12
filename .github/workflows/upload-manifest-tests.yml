@@ -21,6 +21,9 @@ on:
       - "src/source_quality.py"
       - "src/resolve_stream.py"
       - "src/request_backoff.py"
+      - "src/source_transport.py"
+      - "src/check_source_transport.py"
+      - "tests/test_source_transport.py"
       - "src/prehrajto_search.py"
       - "src/merge_preparation_results.py"
       - "tests/test_stream_size_probe.py"
@@ -58,6 +61,11 @@ on:
       - "tests/test_ops_watchdog.py"
       - ".github/workflows/sync.yml"
   workflow_dispatch:
+    inputs:
+      live_transport:
+        description: "Read-only live source and search check from the runner"
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -85,4 +93,14 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt pytest
-      - run: python -m pytest tests/test_download_resume.py tests/test_stream_size_probe.py tests/test_source_download.py tests/test_upload_original_format.py tests/test_sync_complete_download.py tests/test_download_policy_upgrade.py tests/test_ops_status_stdlib.py tests/test_build_upload_manifest.py tests/test_source_discovery_recovery.py tests/test_preparation_upload_failures.py tests/test_prepare_episode_sources.py tests/test_merge_preparation_results.py tests/test_upload_recovery.py tests/test_whisper_review_sizes.py tests/test_review_recovery.py tests/test_resolver_failure_policy.py tests/test_upload_checkpoints.py tests/test_checkpoint_contention.py tests/test_whisper_runtime.py tests/test_audio_sampling.py tests/test_export_backlog.py tests/test_pick_next_episode.py tests/test_upload_state_merge.py tests/test_ops_watchdog.py -q
+      - run: python -m pytest tests/test_download_resume.py tests/test_stream_size_probe.py tests/test_source_download.py tests/test_upload_original_format.py tests/test_sync_complete_download.py tests/test_download_policy_upgrade.py tests/test_ops_status_stdlib.py tests/test_build_upload_manifest.py tests/test_source_discovery_recovery.py tests/test_preparation_upload_failures.py tests/test_prepare_episode_sources.py tests/test_merge_preparation_results.py tests/test_upload_recovery.py tests/test_whisper_review_sizes.py tests/test_review_recovery.py tests/test_resolver_failure_policy.py tests/test_upload_checkpoints.py tests/test_checkpoint_contention.py tests/test_whisper_runtime.py tests/test_audio_sampling.py tests/test_source_transport.py tests/test_prehrajto_search.py tests/test_export_backlog.py tests/test_pick_next_episode.py tests/test_upload_state_merge.py tests/test_ops_watchdog.py -q
+      - name: Verify live source transport from the runner
+        if: github.event_name == 'workflow_dispatch' && inputs.live_transport
+        timeout-minutes: 3
+        env:
+          CZ_PROXY_URL: ${{ secrets.CZ_PROXY_URL }}
+          CZ_PROXY_KEY: ${{ secrets.CZ_PROXY_KEY }}
+        run: >-
+          python src/check_source_transport.py
+          --detail-url https://prehraj.to/mr-plankton-s01e07-hd-cztitulky/67818d3661f1c
+          --query "Mr Plankton S01E06"
