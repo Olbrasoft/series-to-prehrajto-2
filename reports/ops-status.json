@@ -1,24 +1,72 @@
 {
   "counts": {
     "backlog_episodes": 109692,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 81976,
-    "prepared_source_episodes": 69100,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 81978,
+    "prepared_source_episodes": 69108,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 49,
-    "language_whisper_attempted_sources": 46,
-    "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53782,
-    "whisper_review_pending_sources": 36985,
+    "language_audited_sources": 23,
+    "language_whisper_attempted_sources": 23,
+    "language_pending_whisper_sources": 2624,
+    "whisper_review_sources": 53781,
+    "whisper_review_pending_sources": 36982,
     "upload_pending_checkpoints": 112,
-    "subtitle_followup_sources": 51718,
-    "subtitle_followup_pending_sources": 51718
+    "subtitle_followup_sources": 51720,
+    "subtitle_followup_pending_sources": 51720
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T14:14:37Z",
+      "databaseId": 43235157028,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T14:13:45Z",
+      "databaseId": 43235009414,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-12T14:13:19Z",
+      "databaseId": 43234937127,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T14:13:02Z",
+      "databaseId": 43234889355,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T14:12:55Z",
+      "databaseId": 43234869764,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T14:08:44Z",
+      "databaseId": 43234159059,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-12T14:07:06Z",
@@ -32,23 +80,23 @@
       "createdAt": "2026-11-12T14:06:15Z",
       "databaseId": 43233743915,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T14:06:07Z",
       "databaseId": 43233722065,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T14:05:56Z",
       "databaseId": 43233690730,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -72,7 +120,7 @@
       "createdAt": "2026-11-12T14:05:23Z",
       "databaseId": 43233595368,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -108,11 +156,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T14:01:48Z",
       "databaseId": 43232994489,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T13:52:43Z",
-      "databaseId": 43231512169,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T13:52:40Z",
-      "databaseId": 43231503742,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T13:52:34Z",
-      "databaseId": 43231488417,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T13:52:27Z",
-      "databaseId": 43231467774,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-12T13:52:20Z",
-      "databaseId": 43231448070,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T13:52:15Z",
-      "databaseId": 43231438205,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -201377,6 +201377,11 @@
         "video_id": 31003219
       },
       {
+        "episode_id": 17605,
+        "display_name": "Basket nebo nic S01E01 - Rezball CZ Titulky",
+        "video_id": 31003266
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -384300,6 +384305,11 @@
         "episode_id": 36159,
         "display_name": "Too Hot to Handle: Brazílie S01E02 - Když hormony řádí CZ Dabing",
         "video_id": 31003214
+      },
+      {
+        "episode_id": 36158,
+        "display_name": "Too Hot to Handle: Brazílie S01E01 - Úplně marná sestava CZ Dabing",
+        "video_id": 31003220
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -585394,6 +585404,11 @@
         "video_id": 31003219
       },
       {
+        "episode_id": 17605,
+        "display_name": "Basket nebo nic S01E01 - Rezball CZ Titulky",
+        "video_id": 31003266
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -768317,6 +768332,11 @@
         "episode_id": 36159,
         "display_name": "Too Hot to Handle: Brazílie S01E02 - Když hormony řádí CZ Dabing",
         "video_id": 31003214
+      },
+      {
+        "episode_id": 36158,
+        "display_name": "Too Hot to Handle: Brazílie S01E01 - Úplně marná sestava CZ Dabing",
+        "video_id": 31003220
       }
     ],
     "prepared_not_upload_ready": [
@@ -769478,18 +769498,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 43,
-    "disabled": 3,
-    "sample_failed": 2,
+    "ok": 21,
+    "sample_failed": 1,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35950,
+    "needs_whisper": 35946,
     "whisper_confirmed_cz": 3795,
-    "whisper_non_cz_needs_subtitles": 13002,
-    "whisper_failed": 1035
+    "whisper_non_cz_needs_subtitles": 13004,
+    "whisper_failed": 1036
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51718
+    "needs_subtitle_setup_after_prehrajto_processing": 51720
   }
 }
