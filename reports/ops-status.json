@@ -1,17 +1,17 @@
 {
   "counts": {
     "backlog_episodes": 109773,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 81926,
-    "prepared_source_episodes": 69087,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 81927,
+    "prepared_source_episodes": 69084,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53792,
     "whisper_review_pending_sources": 37021,
     "upload_pending_checkpoints": 112,
@@ -20,19 +20,43 @@
   },
   "workflow_runs": [
     {
-      "conclusion": "",
-      "createdAt": "2026-11-12T02:44:10Z",
-      "databaseId": 43143437596,
+      "conclusion": "skipped",
+      "createdAt": "2026-11-12T02:49:54Z",
+      "databaseId": 43144077728,
       "headBranch": "main",
-      "status": "queued",
-      "workflowName": "update-descriptions"
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-12T02:49:27Z",
+      "databaseId": 43144029657,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T02:49:21Z",
+      "databaseId": 43144017058,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T02:44:10Z",
+      "databaseId": 43143437596,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-12T02:44:07Z",
       "databaseId": 43143431137,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -44,11 +68,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T02:42:59Z",
       "databaseId": 43143307554,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +108,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T02:40:53Z",
       "databaseId": 43143074443,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T02:35:53Z",
-      "databaseId": 43142525755,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T02:35:50Z",
-      "databaseId": 43142520078,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T02:33:11Z",
-      "databaseId": 43142209306,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -384050,6 +384050,11 @@
         "episode_id": 150827,
         "display_name": "Daniel Spellbound: Lovec kouzel S02E04 - The Tickle Pit CZ Dabing",
         "video_id": 30997205
+      },
+      {
+        "episode_id": 153562,
+        "display_name": "Revamp: The Undead Story S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30997243
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -767817,6 +767822,11 @@
         "episode_id": 150827,
         "display_name": "Daniel Spellbound: Lovec kouzel S02E04 - The Tickle Pit CZ Dabing",
         "video_id": 30997205
+      },
+      {
+        "episode_id": 153562,
+        "display_name": "Revamp: The Undead Story S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 30997243
       }
     ],
     "prepared_not_upload_ready": [
@@ -768978,7 +768988,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
