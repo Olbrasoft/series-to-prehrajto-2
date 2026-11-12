@@ -1,30 +1,62 @@
 {
   "counts": {
     "backlog_episodes": 109630,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 82034,
-    "prepared_source_episodes": 68945,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 82035,
+    "prepared_source_episodes": 68950,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 43,
+    "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 25,
+    "language_whisper_attempted_sources": 23,
     "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53756,
-    "whisper_review_pending_sources": 36913,
-    "upload_pending_checkpoints": 112,
+    "whisper_review_sources": 53757,
+    "whisper_review_pending_sources": 36917,
+    "upload_pending_checkpoints": 111,
     "subtitle_followup_sources": 51749,
     "subtitle_followup_pending_sources": 51749
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-12T18:54:06Z",
+      "databaseId": 43284605158,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-12T18:53:15Z",
+      "databaseId": 43284461308,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T18:52:57Z",
+      "databaseId": 43284410858,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T18:52:52Z",
+      "databaseId": 43284396838,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-12T18:52:22Z",
       "databaseId": 43284313873,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +72,7 @@
       "createdAt": "2026-11-12T18:52:15Z",
       "databaseId": 43284295901,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -68,11 +100,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-12T18:51:47Z",
       "databaseId": 43284215281,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -100,19 +132,19 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T18:49:57Z",
       "databaseId": 43283905518,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T18:46:31Z",
       "databaseId": 43283324303,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -120,15 +152,15 @@
       "createdAt": "2026-11-12T18:46:27Z",
       "databaseId": 43283313999,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T18:45:35Z",
       "databaseId": 43283163647,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T18:42:42Z",
-      "databaseId": 43282669780,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T18:42:37Z",
-      "databaseId": 43282653577,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-12T18:42:04Z",
-      "databaseId": 43282560883,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T18:40:51Z",
-      "databaseId": 43282354564,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -201525,6 +201525,11 @@
         "episode_id": 34056,
         "display_name": "Šéfka hry S02E02 - Pytlák CZ Dabing",
         "video_id": 31004993
+      },
+      {
+        "episode_id": 72560,
+        "display_name": "Superman S01E07 - 7. epizoda CZ Dabing",
+        "video_id": 31005026
       },
       {
         "episode_id": 114182,
@@ -585824,6 +585829,11 @@
         "video_id": 31004993
       },
       {
+        "episode_id": 72560,
+        "display_name": "Superman S01E07 - 7. epizoda CZ Dabing",
+        "video_id": 31005026
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -770038,13 +770048,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 22,
+    "disabled": 2,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35856,
-    "whisper_confirmed_cz": 3810,
-    "whisper_non_cz_needs_subtitles": 13033,
+    "needs_whisper": 35860,
+    "whisper_confirmed_cz": 3808,
+    "whisper_non_cz_needs_subtitles": 13032,
     "whisper_failed": 1057
   },
   "subtitle_followup_statuses": {
