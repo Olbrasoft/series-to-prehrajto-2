@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109669,
     "manifest_upload_ready_episodes": 5,
-    "uploaded_episodes": 82017,
+    "uploaded_episodes": 82019,
     "prepared_source_episodes": 69017,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,27 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53761,
     "whisper_review_pending_sources": 36917,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51742,
     "subtitle_followup_pending_sources": 51742
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T17:36:38Z",
+      "databaseId": 43271260480,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-12T17:36:22Z",
+      "databaseId": 43271215270,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-12T17:33:19Z",
@@ -28,11 +44,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T17:33:03Z",
       "databaseId": 43270618435,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -40,7 +56,7 @@
       "createdAt": "2026-11-12T17:33:00Z",
       "databaseId": 43270608480,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +84,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T17:32:16Z",
       "databaseId": 43270482898,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T17:22:57Z",
-      "databaseId": 43268831923,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T17:22:38Z",
-      "databaseId": 43268776210,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -201477,6 +201477,11 @@
         "video_id": 31004445
       },
       {
+        "episode_id": 70821,
+        "display_name": "Nejsem do tebe blázen  S02E10 - 10. epizoda CZ Titulky",
+        "video_id": 31004572
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -384495,6 +384500,11 @@
         "episode_id": 78951,
         "display_name": "Zachraň mě S04E06 - 6. epizoda CZ Dabing",
         "video_id": 31004450
+      },
+      {
+        "episode_id": 82834,
+        "display_name": "Správná americká rodina S01E02 - Pryč s nervozitou CZ Titulky",
+        "video_id": 31004533
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -585689,6 +585699,11 @@
         "video_id": 31004445
       },
       {
+        "episode_id": 70821,
+        "display_name": "Nejsem do tebe blázen  S02E10 - 10. epizoda CZ Titulky",
+        "video_id": 31004572
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -768707,6 +768722,11 @@
         "episode_id": 78951,
         "display_name": "Zachraň mě S04E06 - 6. epizoda CZ Dabing",
         "video_id": 31004450
+      },
+      {
+        "episode_id": 82834,
+        "display_name": "Správná americká rodina S01E02 - Pryč s nervozitou CZ Titulky",
+        "video_id": 31004533
       }
     ],
     "prepared_not_upload_ready": [
