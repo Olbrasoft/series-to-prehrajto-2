@@ -1,5 +1,21 @@
 # Operations handoff
 
+## Preserve ready plans during empty discovery (November 12, 2026)
+
+A newer search returning no tested sources must not erase an existing selected
+source. Both local preparation and concurrent artifact merges retain the prior
+ready plan in that case. `prepared_at` stays at the original evidence time;
+`discovery_checked_at` records the unsuccessful search. Burned, cooling, claimed
+and uploaded source/episode exclusions still apply. Repeated replacement search
+waits for the existing 24-hour discovery interval, while expiry of an upload
+cooldown can make the preserved plan usable without repeating Whisper.
+
+Discovery now probes metadata-sized candidates from 300 MiB upwards; 350 MiB
+remains the size preference rather than an early exclusion. Preparation still
+checks actual media, and the uploader enforces the measured 300 MiB minimum.
+The source preparation dispatch exposes optional `season`, `episode` and
+`refresh` controls for bounded operator recovery. Scheduled selection is unchanged.
+
 ## Source proxy outage recovery (November 12, 2026)
 
 A proxy connection outage can leave sync green but empty: live search spends

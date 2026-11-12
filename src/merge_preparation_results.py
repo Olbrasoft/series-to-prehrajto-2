@@ -94,6 +94,21 @@ def newer_timestamp_wins(field: str) -> Callable[[dict, dict], dict]:
     return choose
 
 
+def newer_prepared_wins(current: dict, incoming: dict) -> dict:
+    """A search with no evidence cannot erase an existing measured selection."""
+    winner = newer_timestamp_wins("prepared_at")(current, incoming)
+    previous = incoming if winner is current else current
+    if (not winner.get("upload_ready") and not winner.get("selected_source")
+            and not winner.get("tested_source_count") and not winner.get("tested_sources")
+            and previous.get("upload_ready") and previous.get("selected_source")):
+        # Availability remains governed by upload state. Preserve the verified
+        # evidence and remember the unsuccessful search to avoid a retry loop.
+        checked = max(str(winner.get("prepared_at") or ""),
+                      str(previous.get("discovery_checked_at") or ""))
+        return {**previous, "discovery_checked_at": checked}
+    return winner
+
+
 def newer_review_wins(current: dict, incoming: dict) -> dict:
     """An old preparation snapshot must not reset completed checks or retry budgets."""
     def version(row):
@@ -231,7 +246,7 @@ def main() -> int:
             incoming / "plans" / "prepared-episodes.jsonl",
             key_fn=prepared_key,
             sort_fn=episode_sort_key,
-            winner_fn=newer_timestamp_wins("prepared_at"),
+            winner_fn=newer_prepared_wins,
         ),
         "subtitle_followup": merge_by_key(
             repo / "plans" / "subtitle-followup-queue.jsonl",
