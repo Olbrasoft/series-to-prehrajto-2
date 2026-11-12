@@ -1,30 +1,54 @@
 {
   "counts": {
     "backlog_episodes": 109714,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 81944,
-    "prepared_source_episodes": 69120,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 81945,
+    "prepared_source_episodes": 69124,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 28,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53792,
     "whisper_review_pending_sources": 37018,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51694,
     "subtitle_followup_pending_sources": 51694
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-12T09:44:39Z",
+      "databaseId": 43194157185,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-12T09:43:32Z",
+      "databaseId": 43193994295,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T09:42:52Z",
+      "databaseId": 43193899316,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-12T09:42:26Z",
       "databaseId": 43193833748,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +80,7 @@
       "createdAt": "2026-11-12T09:39:09Z",
       "databaseId": 43193345037,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -84,11 +108,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T09:38:35Z",
       "databaseId": 43193258037,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -100,11 +124,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T09:37:27Z",
       "databaseId": 43193093945,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T09:33:27Z",
-      "databaseId": 43192494509,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T09:32:08Z",
-      "databaseId": 43192315877,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T09:31:44Z",
-      "databaseId": 43192256553,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -384140,6 +384140,11 @@
         "episode_id": 118918,
         "display_name": "Příběhy ze záhrobí S05E02 - 2. epizoda CZ Titulky",
         "video_id": 31000805
+      },
+      {
+        "episode_id": 46766,
+        "display_name": "Mike a Molly S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 31000822
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -767997,6 +768002,11 @@
         "episode_id": 118918,
         "display_name": "Příběhy ze záhrobí S05E02 - 2. epizoda CZ Titulky",
         "video_id": 31000805
+      },
+      {
+        "episode_id": 46766,
+        "display_name": "Mike a Molly S01E06 - 6. epizoda CZ Dabing",
+        "video_id": 31000822
       }
     ],
     "prepared_not_upload_ready": [
@@ -769158,8 +769168,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 8,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
