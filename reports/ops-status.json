@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109773,
-    "manifest_upload_ready_episodes": 10,
-    "uploaded_episodes": 81916,
-    "prepared_source_episodes": 69079,
+    "manifest_upload_ready_episodes": 8,
+    "uploaded_episodes": 81920,
+    "prepared_source_episodes": 69076,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -14,11 +14,59 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53792,
     "whisper_review_pending_sources": 37021,
-    "upload_pending_checkpoints": 113,
+    "upload_pending_checkpoints": 111,
     "subtitle_followup_sources": 51682,
     "subtitle_followup_pending_sources": 51682
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T02:24:03Z",
+      "databaseId": 43141134443,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T02:22:23Z",
+      "databaseId": 43140940541,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T02:20:35Z",
+      "databaseId": 43140730678,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T02:20:26Z",
+      "databaseId": 43140712688,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T02:20:23Z",
+      "databaseId": 43140704928,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T02:20:18Z",
+      "databaseId": 43140695102,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-12T02:20:00Z",
@@ -28,11 +76,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T02:18:54Z",
       "databaseId": 43140528165,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +96,7 @@
       "createdAt": "2026-11-12T02:18:01Z",
       "databaseId": 43140425953,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -68,11 +116,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T02:17:33Z",
       "databaseId": 43140369734,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -104,7 +152,7 @@
       "createdAt": "2026-11-12T02:14:50Z",
       "databaseId": 43140047149,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T02:09:46Z",
-      "databaseId": 43139459450,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T02:09:44Z",
-      "databaseId": 43139454159,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T02:09:39Z",
-      "databaseId": 43139445519,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T02:08:45Z",
-      "databaseId": 43139341977,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T02:06:53Z",
-      "databaseId": 43139122056,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T02:06:29Z",
-      "databaseId": 43139074997,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -201232,6 +201232,21 @@
         "video_id": 30996591
       },
       {
+        "episode_id": 178700,
+        "display_name": "Operación Marea Negra S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30997027
+      },
+      {
+        "episode_id": 177833,
+        "display_name": "Ángel Di María: Prolomená kletba S01E02 - Doma není nikdo prorokem CZ Titulky",
+        "video_id": 30996971
+      },
+      {
+        "episode_id": 178336,
+        "display_name": "Cochinas S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30997081
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -384000,6 +384015,11 @@
         "episode_id": 150830,
         "display_name": "Daniel Spellbound: Lovec kouzel S02E08 - The Final Trial CZ Dabing",
         "video_id": 30996858
+      },
+      {
+        "episode_id": 177834,
+        "display_name": "Ángel Di María: Prolomená kletba S01E01 - 26 fotbalových míčů CZ Dabing",
+        "video_id": 30996983
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -584949,6 +584969,21 @@
         "video_id": 30996591
       },
       {
+        "episode_id": 178700,
+        "display_name": "Operación Marea Negra S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 30997027
+      },
+      {
+        "episode_id": 177833,
+        "display_name": "Ángel Di María: Prolomená kletba S01E02 - Doma není nikdo prorokem CZ Titulky",
+        "video_id": 30996971
+      },
+      {
+        "episode_id": 178336,
+        "display_name": "Cochinas S01E02 - 2. epizoda CZ Titulky",
+        "video_id": 30997081
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -767717,6 +767752,11 @@
         "episode_id": 150830,
         "display_name": "Daniel Spellbound: Lovec kouzel S02E08 - The Final Trial CZ Dabing",
         "video_id": 30996858
+      },
+      {
+        "episode_id": 177834,
+        "display_name": "Ángel Di María: Prolomená kletba S01E01 - 26 fotbalových míčů CZ Dabing",
+        "video_id": 30996983
       }
     ],
     "prepared_not_upload_ready": [
