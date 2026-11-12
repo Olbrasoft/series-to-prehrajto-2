@@ -1,30 +1,110 @@
 {
   "counts": {
     "backlog_episodes": 109669,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 81989,
-    "prepared_source_episodes": 69068,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 81993,
+    "prepared_source_episodes": 69077,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 41,
-    "language_whisper_attempted_sources": 26,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53776,
     "whisper_review_pending_sources": 36964,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 111,
     "subtitle_followup_sources": 51728,
     "subtitle_followup_pending_sources": 51728
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-12T15:33:47Z",
+      "databaseId": 43249135928,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T15:33:42Z",
+      "databaseId": 43249120910,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T15:33:38Z",
+      "databaseId": 43249107211,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T15:33:34Z",
+      "databaseId": 43249096660,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T15:32:13Z",
+      "databaseId": 43248849390,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T15:31:34Z",
+      "databaseId": 43248731902,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T15:31:21Z",
+      "databaseId": 43248688464,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-12T15:28:54Z",
+      "databaseId": 43248239369,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T15:28:40Z",
+      "databaseId": 43248199197,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T15:27:37Z",
+      "databaseId": 43248012196,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-12T15:25:32Z",
       "databaseId": 43247641658,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -32,7 +112,7 @@
       "createdAt": "2026-11-12T15:25:31Z",
       "databaseId": 43247638972,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-manifest"
     },
     {
@@ -44,19 +124,19 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-12T15:24:54Z",
       "databaseId": 43247521877,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T15:24:19Z",
       "databaseId": 43247416037,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T15:21:28Z",
-      "databaseId": 43246902969,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T15:20:23Z",
-      "databaseId": 43246701168,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T15:19:24Z",
-      "databaseId": 43246527505,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T15:19:24Z",
-      "databaseId": 43246526960,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T15:19:17Z",
-      "databaseId": 43246507254,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T15:18:22Z",
-      "databaseId": 43246342051,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T15:17:25Z",
-      "databaseId": 43246176398,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T15:16:53Z",
-      "databaseId": 43246077969,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T15:16:48Z",
-      "databaseId": 43246064112,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T15:16:06Z",
-      "databaseId": 43245937424,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -201402,6 +201402,21 @@
         "video_id": 31003618
       },
       {
+        "episode_id": 82293,
+        "display_name": "Zákon a pořádek: Zločinné úmysly S04E05 - 5. epizoda CZ Dabing",
+        "video_id": 31003722
+      },
+      {
+        "episode_id": 82840,
+        "display_name": "Správná americká rodina S01E08 - Krev na jejích rukách CZ Titulky",
+        "video_id": 31003717
+      },
+      {
+        "episode_id": 70841,
+        "display_name": "Nejsem do tebe blázen  S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 31003749
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -384365,6 +384380,11 @@
         "episode_id": 82294,
         "display_name": "Zákon a pořádek: Zločinné úmysly S04E06 - 6. epizoda CZ Dabing",
         "video_id": 31003711
+      },
+      {
+        "episode_id": 70842,
+        "display_name": "Nejsem do tebe blázen  S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 31003742
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -585484,6 +585504,21 @@
         "video_id": 31003618
       },
       {
+        "episode_id": 82293,
+        "display_name": "Zákon a pořádek: Zločinné úmysly S04E05 - 5. epizoda CZ Dabing",
+        "video_id": 31003722
+      },
+      {
+        "episode_id": 82840,
+        "display_name": "Správná americká rodina S01E08 - Krev na jejích rukách CZ Titulky",
+        "video_id": 31003717
+      },
+      {
+        "episode_id": 70841,
+        "display_name": "Nejsem do tebe blázen  S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 31003749
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -768447,6 +768482,11 @@
         "episode_id": 82294,
         "display_name": "Zákon a pořádek: Zločinné úmysly S04E06 - 6. epizoda CZ Dabing",
         "video_id": 31003711
+      },
+      {
+        "episode_id": 70842,
+        "display_name": "Nejsem do tebe blázen  S02E03 - 3. epizoda CZ Titulky",
+        "video_id": 31003742
       }
     ],
     "prepared_not_upload_ready": [
@@ -769608,8 +769648,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 15,
-    "ok": 25,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
