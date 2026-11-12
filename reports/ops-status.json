@@ -1,24 +1,48 @@
 {
   "counts": {
     "backlog_episodes": 109727,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 81938,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 81940,
     "prepared_source_episodes": 69146,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 43,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53791,
     "whisper_review_pending_sources": 37019,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51691,
     "subtitle_followup_pending_sources": 51691
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T08:28:41Z",
+      "databaseId": 43183252809,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T08:27:58Z",
+      "databaseId": 43183152063,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T08:27:40Z",
+      "databaseId": 43183113653,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-12T08:27:24Z",
@@ -32,23 +56,23 @@
       "createdAt": "2026-11-12T08:27:24Z",
       "databaseId": 43183076031,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T08:23:46Z",
       "databaseId": 43182578797,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T08:23:01Z",
       "databaseId": 43182475497,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -60,11 +84,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T08:21:49Z",
       "databaseId": 43182314192,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -80,15 +104,15 @@
       "createdAt": "2026-11-12T08:21:35Z",
       "databaseId": 43182283327,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T08:20:50Z",
       "databaseId": 43182181887,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T08:18:49Z",
-      "databaseId": 43181909431,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T08:18:31Z",
-      "databaseId": 43181869150,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T08:17:33Z",
-      "databaseId": 43181735580,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -384110,6 +384110,16 @@
         "episode_id": 31086,
         "display_name": "Všichni starostovi muži S05E21 - 21. epizoda CZ Titulky",
         "video_id": 31000218
+      },
+      {
+        "episode_id": 46763,
+        "display_name": "Mike a Molly S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 31000306
+      },
+      {
+        "episode_id": 65458,
+        "display_name": "Výjimeční S02E11 - Když paměť slouží CZ Titulky",
+        "video_id": 31000301
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -767937,6 +767947,16 @@
         "episode_id": 31086,
         "display_name": "Všichni starostovi muži S05E21 - 21. epizoda CZ Titulky",
         "video_id": 31000218
+      },
+      {
+        "episode_id": 46763,
+        "display_name": "Mike a Molly S01E01 - 1. epizoda CZ Dabing",
+        "video_id": 31000306
+      },
+      {
+        "episode_id": 65458,
+        "display_name": "Výjimeční S02E11 - Když paměť slouží CZ Titulky",
+        "video_id": 31000301
       }
     ],
     "prepared_not_upload_ready": [
@@ -769098,8 +769118,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 41,
-    "disabled": 1,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
