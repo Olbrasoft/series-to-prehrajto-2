@@ -259,7 +259,8 @@ def search_pages(
                     response = sess.get(
                         fetch_url,
                         timeout=request_timeout(fetch_label, timeout),
-                        headers={**BROWSER_HEADERS, "User-Agent": GOOGLEBOT_HEADERS["User-Agent"]},
+                        headers={**BROWSER_HEADERS, "User-Agent": GOOGLEBOT_HEADERS["User-Agent"],
+                                 "Accept-Encoding": requests.utils.DEFAULT_ACCEPT_ENCODING},
                     )
                 except requests.RequestException as exc:
                     # Request exception text includes the proxy URL and its key.

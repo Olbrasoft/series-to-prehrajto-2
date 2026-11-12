@@ -121,6 +121,7 @@ def test_challenge_page_after_proxy_outage_does_not_burn_source():
 def test_search_transport_exception_reaches_next_endpoint():
     calls = []
     def get(url, **kwargs):
+        assert kwargs["headers"]["Accept-Encoding"] == requests.utils.DEFAULT_ACCEPT_ENCODING
         calls.append(url)
         if url == PROXY:
             raise requests.ConnectTimeout("private-key")
@@ -129,3 +130,7 @@ def test_search_transport_exception_reaches_next_endpoint():
     pages = search.search_pages("Example S01E01", session=SimpleNamespace(get=get), retries=1)
     assert pages[0][0].external_id == "abcdef123456"
     assert len(calls) == 2
+
+
+def test_resolver_only_advertises_installed_decoders():
+    assert resolver._googlebot_headers()["Accept-Encoding"] == requests.utils.DEFAULT_ACCEPT_ENCODING

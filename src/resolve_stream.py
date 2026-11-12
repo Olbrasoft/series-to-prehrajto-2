@@ -291,6 +291,7 @@ def _googlebot_headers() -> dict[str, str]:
     reverse DNS identity cannot be reproduced by a local script.
     """
     headers = dict(GOOGLEBOT_HEADERS)
+    headers["Accept-Encoding"] = requests.utils.DEFAULT_ACCEPT_ENCODING
     if os.environ.get("GOOGLEBOT_VARIANT", "smartphone").lower() == "desktop":
         headers["User-Agent"] = GOOGLEBOT_DESKTOP_USER_AGENT
     return headers

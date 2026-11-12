@@ -23,10 +23,12 @@ def main():
         print(json.dumps({"search_ok": bool(results), "results": len(results)}), flush=True)
         if not results:
             page = requests.get("https://prehraj.to/hledej/" + quote(args.query),
-                                headers=GOOGLEBOT_HEADERS, timeout=15)
+                                headers={**GOOGLEBOT_HEADERS,
+                                         "Accept-Encoding": requests.utils.DEFAULT_ACCEPT_ENCODING}, timeout=15)
             title = re.search(r"<title>(.*?)</title>", page.text, re.S | re.I)
             print(json.dumps({"search_diagnostic_status": page.status_code,
                               "bytes": len(page.content), "video_markers": page.text.count("video-wrapper"),
+                              "content_encoding": page.headers.get("Content-Encoding"),
                               "page_title": title[1].strip()[:120] if title else None}), flush=True)
         return 0 if detail.videos and results else 1
     except Exception as error:
