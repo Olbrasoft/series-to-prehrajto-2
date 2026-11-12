@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109773,
     "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 81912,
+    "uploaded_episodes": 81914,
     "prepared_source_episodes": 69124,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53791,
     "whisper_review_pending_sources": 37019,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51674,
     "subtitle_followup_pending_sources": 51674
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-12T01:47:11Z",
+      "databaseId": 43136876327,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T01:46:42Z",
+      "databaseId": 43136823647,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T01:46:37Z",
+      "databaseId": 43136815251,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-12T01:45:35Z",
       "databaseId": 43136697263,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,7 +64,7 @@
       "createdAt": "2026-11-12T01:44:25Z",
       "databaseId": 43136564771,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -64,7 +88,7 @@
       "createdAt": "2026-11-12T01:41:42Z",
       "databaseId": 43136259878,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -84,11 +108,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T01:39:52Z",
       "databaseId": 43136045018,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T01:33:43Z",
-      "databaseId": 43135340798,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T01:33:39Z",
-      "databaseId": 43135334109,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T01:33:12Z",
-      "databaseId": 43135282681,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
     }
   ],
   "gaps": {
@@ -201227,6 +201227,11 @@
         "video_id": 30996484
       },
       {
+        "episode_id": 179524,
+        "display_name": "Easygoing Territory Defense by the Optimistic Lord S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30996591
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -383980,6 +383985,11 @@
         "episode_id": 161426,
         "display_name": "Fascinující proměny přírody S01E06 - Velká hostina CZ Dabing",
         "video_id": 30996480
+      },
+      {
+        "episode_id": 150831,
+        "display_name": "Daniel Spellbound: Lovec kouzel S02E09 - The Scepter and the Sacrifice CZ Dabing",
+        "video_id": 30996602
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -584924,6 +584934,11 @@
         "video_id": 30996484
       },
       {
+        "episode_id": 179524,
+        "display_name": "Easygoing Territory Defense by the Optimistic Lord S01E05 - 5. epizoda CZ Titulky",
+        "video_id": 30996591
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -767677,6 +767692,11 @@
         "episode_id": 161426,
         "display_name": "Fascinující proměny přírody S01E06 - Velká hostina CZ Dabing",
         "video_id": 30996480
+      },
+      {
+        "episode_id": 150831,
+        "display_name": "Daniel Spellbound: Lovec kouzel S02E09 - The Scepter and the Sacrifice CZ Dabing",
+        "video_id": 30996602
       }
     ],
     "prepared_not_upload_ready": [
