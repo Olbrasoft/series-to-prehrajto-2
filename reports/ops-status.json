@@ -2,8 +2,8 @@
   "counts": {
     "backlog_episodes": 109773,
     "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 81901,
-    "prepared_source_episodes": 69144,
+    "uploaded_episodes": 81902,
+    "prepared_source_episodes": 69141,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -14,33 +14,97 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53791,
     "whisper_review_pending_sources": 37022,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51668,
     "subtitle_followup_pending_sources": 51668
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-12T00:37:26Z",
-      "databaseId": 43128629174,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T00:37:14Z",
-      "databaseId": 43128604732,
+      "createdAt": "2026-11-12T00:43:21Z",
+      "databaseId": 43129352977,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-12T00:43:16Z",
+      "databaseId": 43129341072,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T00:43:13Z",
+      "databaseId": 43129335100,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-12T00:43:08Z",
+      "databaseId": 43129323865,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T00:43:03Z",
+      "databaseId": 43129311783,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T00:40:19Z",
+      "databaseId": 43128977149,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T00:39:12Z",
+      "databaseId": 43128840573,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T00:39:08Z",
+      "databaseId": 43128832046,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T00:37:26Z",
+      "databaseId": 43128629174,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-12T00:37:14Z",
+      "databaseId": 43128604732,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-12T00:36:55Z",
       "databaseId": 43128565436,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +120,7 @@
       "createdAt": "2026-11-12T00:35:19Z",
       "databaseId": 43128372081,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -76,11 +140,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T00:31:34Z",
       "databaseId": 43127913664,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T00:30:43Z",
-      "databaseId": 43127809880,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T00:30:18Z",
-      "databaseId": 43127754000,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T00:30:11Z",
-      "databaseId": 43127738098,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T00:30:04Z",
-      "databaseId": 43127720145,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T00:18:59Z",
-      "databaseId": 43126383693,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T00:18:24Z",
-      "databaseId": 43126314073,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T00:18:21Z",
-      "databaseId": 43126307098,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T00:16:07Z",
-      "databaseId": 43126034054,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -201190,6 +201190,11 @@
         "episode_id": 172821,
         "display_name": "Delirio S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30995985
+      },
+      {
+        "episode_id": 142676,
+        "display_name": "Dívka a noc S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30995993
       },
       {
         "episode_id": 114182,
@@ -584832,6 +584837,11 @@
         "episode_id": 172821,
         "display_name": "Delirio S01E05 - 5. epizoda CZ Titulky",
         "video_id": 30995985
+      },
+      {
+        "episode_id": 142676,
+        "display_name": "Dívka a noc S01E04 - 4. epizoda CZ Dabing",
+        "video_id": 30995993
       },
       {
         "episode_id": 114182,
