@@ -1,46 +1,102 @@
 {
   "counts": {
     "backlog_episodes": 109603,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 82055,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 82056,
     "prepared_source_episodes": 68951,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
+    "language_audited_sources": 23,
+    "language_whisper_attempted_sources": 23,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53749,
-    "whisper_review_pending_sources": 36911,
+    "whisper_review_pending_sources": 36908,
     "upload_pending_checkpoints": 111,
-    "subtitle_followup_sources": 51762,
-    "subtitle_followup_pending_sources": 51762
+    "subtitle_followup_sources": 51764,
+    "subtitle_followup_pending_sources": 51764
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-12T21:22:56Z",
+      "databaseId": 43309700095,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T21:22:52Z",
+      "databaseId": 43309688117,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T21:22:48Z",
+      "databaseId": 43309677555,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T21:22:19Z",
+      "databaseId": 43309596839,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T21:21:37Z",
+      "databaseId": 43309479229,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T21:21:30Z",
+      "databaseId": 43309459367,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T21:21:26Z",
+      "databaseId": 43309452111,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "skipped",
       "createdAt": "2026-11-12T21:21:02Z",
       "databaseId": 43309385483,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T21:20:39Z",
       "databaseId": 43309319823,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-12T21:18:54Z",
       "databaseId": 43309022292,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +124,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T21:15:14Z",
       "databaseId": 43308405964,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,11 +156,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-12T21:13:56Z",
       "databaseId": 43308188836,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "refresh-backlog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T21:12:28Z",
-      "databaseId": 43307935094,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T21:11:54Z",
-      "databaseId": 43307837909,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-12T21:11:18Z",
-      "databaseId": 43307736375,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T21:11:11Z",
-      "databaseId": 43307715886,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T21:11:08Z",
-      "databaseId": 43307706894,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T21:11:08Z",
-      "databaseId": 43307706248,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T21:08:42Z",
-      "databaseId": 43307293030,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -384685,6 +384685,11 @@
         "episode_id": 70822,
         "display_name": "Nejsem do tebe blázen  S02E12 - 12. epizoda CZ Titulky",
         "video_id": 31005948
+      },
+      {
+        "episode_id": 46839,
+        "display_name": "Mike a Molly S04E19 - 19. epizoda CZ Dabing",
+        "video_id": 31006156
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -769087,6 +769092,11 @@
         "episode_id": 70822,
         "display_name": "Nejsem do tebe blázen  S02E12 - 12. epizoda CZ Titulky",
         "video_id": 31005948
+      },
+      {
+        "episode_id": 46839,
+        "display_name": "Mike a Molly S04E19 - 19. epizoda CZ Dabing",
+        "video_id": 31006156
       }
     ],
     "prepared_not_upload_ready": [
@@ -770248,16 +770258,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
+    "ok": 22,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35845,
+    "needs_whisper": 35842,
     "whisper_confirmed_cz": 3793,
-    "whisper_non_cz_needs_subtitles": 13045,
+    "whisper_non_cz_needs_subtitles": 13048,
     "whisper_failed": 1066
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51762
+    "needs_subtitle_setup_after_prehrajto_processing": 51764
   }
 }
