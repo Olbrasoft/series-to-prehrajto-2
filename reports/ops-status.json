@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109603,
-    "manifest_upload_ready_episodes": 4,
+    "manifest_upload_ready_episodes": 3,
     "uploaded_episodes": 82056,
-    "prepared_source_episodes": 68951,
+    "prepared_source_episodes": 68949,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
@@ -21,10 +21,26 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-12T21:27:23Z",
+      "databaseId": 43310422005,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T21:25:04Z",
+      "databaseId": 43310048467,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-12T21:22:56Z",
       "databaseId": 43309700095,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +68,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T21:21:37Z",
       "databaseId": 43309479229,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +84,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T21:21:26Z",
       "databaseId": 43309452111,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T21:13:40Z",
-      "databaseId": 43308143004,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T21:12:28Z",
-      "databaseId": 43307935450,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "refresh-backlog"
     }
   ],
   "gaps": {
