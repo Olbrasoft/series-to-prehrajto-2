@@ -15,12 +15,12 @@ def available_endpoints(proxies, direct_url):
 
 
 def proxy_available(url):
-    return _unavailable_until.get(urlsplit(url).netloc, 0) <= time.monotonic()
+    return _unavailable_until.get(urlsplit(url).hostname or "", 0) <= time.monotonic()
 
 
 def proxy_unavailable(url):
     # Store only the host, never query parameters containing credentials.
-    _unavailable_until[urlsplit(url).netloc] = time.monotonic() + PROXY_COOLDOWN_SECONDS
+    _unavailable_until[urlsplit(url).hostname or ""] = time.monotonic() + PROXY_COOLDOWN_SECONDS
 
 
 def request_timeout(label, timeout):

@@ -15,6 +15,7 @@ from typing import Callable
 import requests
 from source_transport import available_endpoints, proxy_available, proxy_unavailable, request_timeout
 from request_backoff import retry_after_seconds
+from resolve_stream import GOOGLEBOT_HEADERS
 
 BASE_URL = "https://prehraj.to"
 SEARCH_URL = "https://prehraj.to/hledej/{query}"
@@ -258,7 +259,7 @@ def search_pages(
                     response = sess.get(
                         fetch_url,
                         timeout=request_timeout(fetch_label, timeout),
-                        headers=BROWSER_HEADERS,
+                        headers={**BROWSER_HEADERS, "User-Agent": GOOGLEBOT_HEADERS["User-Agent"]},
                     )
                 except requests.RequestException as exc:
                     # Request exception text includes the proxy URL and its key.
