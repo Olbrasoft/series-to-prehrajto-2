@@ -2,29 +2,61 @@
   "counts": {
     "backlog_episodes": 109669,
     "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 82010,
+    "uploaded_episodes": 82011,
     "prepared_source_episodes": 69018,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 32,
-    "language_whisper_attempted_sources": 32,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53765,
     "whisper_review_pending_sources": 36927,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51737,
     "subtitle_followup_pending_sources": 51737
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-12T17:01:46Z",
+      "databaseId": 43265038020,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T16:55:59Z",
+      "databaseId": 43264006780,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-12T16:55:35Z",
+      "databaseId": 43263936305,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T16:55:31Z",
+      "databaseId": 43263925285,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-12T16:54:44Z",
       "databaseId": 43263784531,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +80,7 @@
       "createdAt": "2026-11-12T16:52:26Z",
       "databaseId": 43263374220,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -84,11 +116,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T16:50:24Z",
       "databaseId": 43263014050,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -116,11 +148,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T16:46:14Z",
       "databaseId": 43262265772,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T16:41:31Z",
-      "databaseId": 43261415165,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T16:39:07Z",
-      "databaseId": 43260984902,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-12T16:38:38Z",
-      "databaseId": 43260900292,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T16:38:01Z",
-      "databaseId": 43260791358,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -384460,6 +384460,11 @@
         "episode_id": 78931,
         "display_name": "Zachraň mě S03E07 - 7. epizoda CZ Dabing",
         "video_id": 31004279
+      },
+      {
+        "episode_id": 82835,
+        "display_name": "Správná americká rodina S01E04 - Přímo zde v černobílé CZ Titulky",
+        "video_id": 31004294
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -768637,6 +768642,11 @@
         "episode_id": 78931,
         "display_name": "Zachraň mě S03E07 - 7. epizoda CZ Dabing",
         "video_id": 31004279
+      },
+      {
+        "episode_id": 82835,
+        "display_name": "Správná americká rodina S01E04 - Přímo zde v černobílé CZ Titulky",
+        "video_id": 31004294
       }
     ],
     "prepared_not_upload_ready": [
@@ -769798,9 +769808,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "sample_failed": 2,
-    "ok": 26,
-    "stream_undersized": 3,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
