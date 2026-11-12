@@ -3,7 +3,7 @@
     "backlog_episodes": 109744,
     "manifest_upload_ready_episodes": 0,
     "uploaded_episodes": 81930,
-    "prepared_source_episodes": 69110,
+    "prepared_source_episodes": 69114,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
@@ -20,6 +20,38 @@
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-12T03:36:02Z",
+      "databaseId": 43149294164,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T03:35:56Z",
+      "databaseId": 43149284315,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T03:34:46Z",
+      "databaseId": 43149149923,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-12T03:34:24Z",
+      "databaseId": 43149107533,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-12T03:33:56Z",
       "databaseId": 43149057013,
@@ -28,11 +60,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T03:33:34Z",
       "databaseId": 43149015924,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -44,11 +76,11 @@
       "workflowName": "prepare-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T03:32:15Z",
       "databaseId": 43148865451,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -68,11 +100,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-12T03:31:17Z",
       "databaseId": 43148756767,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -96,7 +128,7 @@
       "createdAt": "2026-11-12T03:27:41Z",
       "databaseId": 43148357178,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -128,7 +160,7 @@
       "createdAt": "2026-11-12T03:25:49Z",
       "databaseId": 43148150571,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -140,44 +172,12 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-12T03:24:53Z",
       "databaseId": 43148042761,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T03:23:05Z",
-      "databaseId": 43147837442,
-      "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-12T03:23:00Z",
-      "databaseId": 43147826376,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T03:22:44Z",
-      "databaseId": 43147797041,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-12T03:22:36Z",
-      "databaseId": 43147783640,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
     }
   ],
   "gaps": {
