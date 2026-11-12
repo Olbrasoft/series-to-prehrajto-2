@@ -27,12 +27,10 @@ from language_checks import metadata_language_hint, title_language_hint  # noqa:
 from pick_next_episode import cooling_down_source_ids  # noqa: E402
 from prehrajto_search import SearchResult, search_pages as search_prehrajto_pages  # noqa: E402
 from source_quality import measured_upload_filesize, source_quality_score, source_quality_tier, source_meets_size_requirement  # noqa: E402
+from merge_preparation_results import newer_prepared_wins  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MIN_UPLOAD_FILE_SIZE = 300 * 1024 * 1024
-# Metadata collected during search can be optimistic. Use a planning margin;
-# sync_batch still verifies the real stream against MIN_UPLOAD_FILE_SIZE.
-MIN_PLANNED_FILE_SIZE = 350 * 1024 * 1024
 FAILED_RETRY_AFTER = dt.timedelta(hours=24)
 MAX_RESOLVABLE_CANDIDATE_PROBES = 3
 
@@ -68,7 +66,9 @@ def source_has_cz_subtitle_hint(source: dict) -> bool:
 
 def source_has_upload_quality_hint(source: dict) -> bool:
     filesize = source.get("filesize_bytes")
-    if filesize is not None and int(filesize) >= MIN_PLANNED_FILE_SIZE:
+    # Discovery may probe files above the upload minimum. The 350 MiB margin
+    # remains a preference; only measured media can authorize an upload.
+    if filesize is not None and int(filesize) >= MIN_UPLOAD_FILE_SIZE:
         return True
     return source_quality_score(source)[1] >= 1080
 
@@ -141,14 +141,17 @@ def compact_plan_row(row: dict) -> dict:
     return {**row, "tested_sources": retained[:4]}
 
 
-def write_compacted_prepared(path: Path, new_rows: list[dict]) -> None:
+def write_compacted_prepared(path: Path, new_rows: list[dict]) -> list[dict]:
     latest: dict[int, dict] = {}
     for row in load_jsonl(path) if path.exists() else []:
         if row.get("episode_id") is not None:
             latest[int(row["episode_id"])] = compact_plan_row(row)
     for row in new_rows:
         if row.get("episode_id") is not None:
-            latest[int(row["episode_id"])] = compact_plan_row(row)
+            episode_id = int(row["episode_id"])
+            incoming = compact_plan_row(row)
+            latest[episode_id] = (newer_prepared_wins(latest[episode_id], incoming)
+                                  if episode_id in latest else incoming)
     rows = sorted(
         latest.values(),
         key=lambda item: (
@@ -159,6 +162,7 @@ def write_compacted_prepared(path: Path, new_rows: list[dict]) -> None:
         ),
     )
     write_jsonl(path, rows)
+    return [latest[int(row["episode_id"])] for row in new_rows if row.get("episode_id") is not None]
 
 
 def update_subtitle_followup_queue(path: Path, prepared_rows: list[dict]) -> None:
@@ -331,6 +335,13 @@ def retry_due(row: dict | None, *, now: dt.datetime, unavailable_sources: set[in
         return True
     selected = row.get("selected_source") or {}
     if selected_source_unavailable(row, unavailable_sources or set()):
+        if row.get("discovery_checked_at"):
+            try:
+                checked = dt.datetime.fromisoformat(str(row["discovery_checked_at"]).replace("Z", "+00:00"))
+                if now - checked < FAILED_RETRY_AFTER:
+                    return False
+            except (ValueError, TypeError):
+                pass
         return True
     if selected and not is_resolvable(selected):
         return True
@@ -1218,8 +1229,8 @@ def main() -> int:
 
     def persist(rows):
         audit_rows = [source for row in rows for source in row["tested_sources"]]
-        write_compacted_prepared(Path(args.out), rows)
-        update_subtitle_followup_queue(Path(args.subtitle_followup_out), rows)
+        effective = write_compacted_prepared(Path(args.out), rows)
+        update_subtitle_followup_queue(Path(args.subtitle_followup_out), effective)
         update_whisper_review_queue(Path(args.whisper_review_out), rows)
         append_jsonl(Path(args.audit_out), audit_rows)
         write_latest_index(Path(args.audit_out), Path(args.audit_latest_out))

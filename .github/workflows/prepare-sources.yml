@@ -15,6 +15,19 @@ on:
         description: "Optional series slug"
         required: false
         default: ""
+      season:
+        description: "Optional season for targeted recovery"
+        required: false
+        default: ""
+      episode:
+        description: "Optional episode for targeted recovery"
+        required: false
+        default: ""
+      refresh:
+        description: "Recheck the selected episodes without the discovery cooldown"
+        type: boolean
+        required: false
+        default: false
       use_whisper:
         description: "Run Whisper on supported sources"
         required: false
@@ -79,6 +92,10 @@ jobs:
           CZ_PROXY_MIN_GAP_SECONDS: "60"
           PREHRAJTO_SEARCH_MIN_INTERVAL: "60"
           WHISPER_MODEL: tiny
+          PREPARE_SERIES_SLUG: ${{ inputs.series_slug }}
+          PREPARE_SEASON: ${{ inputs.season }}
+          PREPARE_EPISODE: ${{ inputs.episode }}
+          PREPARE_REFRESH: ${{ inputs.refresh || 'false' }}
         run: |
           ARGS=(
             "--episode-limit" "${{ inputs.episode_limit || '20' }}"
@@ -90,9 +107,12 @@ jobs:
             "--live-search-query-limit" "4"
             "--require-resolvable-source"
           )
-          if [ -n "${{ inputs.series_slug }}" ]; then
-            ARGS+=("--series-slug" "${{ inputs.series_slug }}")
+          if [ -n "$PREPARE_SERIES_SLUG" ]; then
+            ARGS+=("--series-slug" "$PREPARE_SERIES_SLUG")
           fi
+          if [ -n "$PREPARE_SEASON" ]; then ARGS+=(--season "$PREPARE_SEASON"); fi
+          if [ -n "$PREPARE_EPISODE" ]; then ARGS+=(--episode "$PREPARE_EPISODE"); fi
+          if [ "$PREPARE_REFRESH" = "true" ]; then ARGS+=(--refresh); fi
           if [ "${{ inputs.use_whisper || 'true' }}" = "true" ]; then
             ARGS+=("--use-whisper")
           fi
