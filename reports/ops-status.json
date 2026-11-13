@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109467,
-    "manifest_upload_ready_episodes": 8,
-    "uploaded_episodes": 82198,
-    "prepared_source_episodes": 68908,
+    "manifest_upload_ready_episodes": 7,
+    "uploaded_episodes": 82200,
+    "prepared_source_episodes": 68907,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -14,17 +14,89 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53693,
     "whisper_review_pending_sources": 36702,
-    "upload_pending_checkpoints": 113,
+    "upload_pending_checkpoints": 112,
     "subtitle_followup_sources": 51858,
     "subtitle_followup_pending_sources": 51858
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-13T21:52:08Z",
+      "databaseId": 43514460159,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T21:52:04Z",
+      "databaseId": 43514452112,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T21:51:42Z",
+      "databaseId": 43514399691,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T21:51:22Z",
+      "databaseId": 43514352969,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-13T21:50:21Z",
+      "databaseId": 43514207361,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T21:50:05Z",
+      "databaseId": 43514167920,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T21:49:48Z",
+      "databaseId": 43514128224,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T21:49:02Z",
+      "databaseId": 43514019990,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T21:48:59Z",
+      "databaseId": 43514012765,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-13T21:47:41Z",
       "databaseId": 43513829425,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,84 +172,12 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-13T21:41:49Z",
       "databaseId": 43512978416,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T21:41:41Z",
-      "databaseId": 43512958902,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T21:41:36Z",
-      "databaseId": 43512947207,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T21:40:21Z",
-      "databaseId": 43512761350,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T21:38:33Z",
-      "databaseId": 43512499565,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T21:38:07Z",
-      "databaseId": 43512436435,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T21:37:08Z",
-      "databaseId": 43512294946,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-13T21:36:29Z",
-      "databaseId": 43512196666,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T21:36:17Z",
-      "databaseId": 43512167857,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T21:36:00Z",
-      "databaseId": 43512124574,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -385400,6 +385400,16 @@
         "episode_id": 58939,
         "display_name": "Záměna  S02E13 - 13. epizoda CZ Titulky",
         "video_id": 31019189
+      },
+      {
+        "episode_id": 58943,
+        "display_name": "Záměna  S02E17 - 17. epizoda CZ Titulky",
+        "video_id": 31019321
+      },
+      {
+        "episode_id": 1195,
+        "display_name": "Můj malý Pony: Přátelství je magické S04E01 - Princezna Twilight (1) CZ Titulky",
+        "video_id": 31019374
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -770517,6 +770527,16 @@
         "episode_id": 58939,
         "display_name": "Záměna  S02E13 - 13. epizoda CZ Titulky",
         "video_id": 31019189
+      },
+      {
+        "episode_id": 58943,
+        "display_name": "Záměna  S02E17 - 17. epizoda CZ Titulky",
+        "video_id": 31019321
+      },
+      {
+        "episode_id": 1195,
+        "display_name": "Můj malý Pony: Přátelství je magické S04E01 - Princezna Twilight (1) CZ Titulky",
+        "video_id": 31019374
       }
     ],
     "prepared_not_upload_ready": [
