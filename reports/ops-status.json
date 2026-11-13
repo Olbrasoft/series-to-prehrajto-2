@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 109467,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 82209,
+    "manifest_upload_ready_episodes": 3,
+    "uploaded_episodes": 82210,
     "prepared_source_episodes": 68944,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,49 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53691,
     "whisper_review_pending_sources": 36693,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51864,
     "subtitle_followup_pending_sources": 51864
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-13T23:22:47Z",
+      "databaseId": 43526668135,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T23:22:27Z",
+      "databaseId": 43526627824,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T23:22:13Z",
+      "databaseId": 43526595841,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-13T23:20:36Z",
+      "databaseId": 43526389706,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-13T23:20:23Z",
       "databaseId": 43526359735,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -32,15 +64,15 @@
       "createdAt": "2026-11-13T23:18:27Z",
       "databaseId": 43526118290,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T23:18:19Z",
       "databaseId": 43526100896,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -48,15 +80,15 @@
       "createdAt": "2026-11-13T23:18:15Z",
       "databaseId": 43526092852,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T23:17:16Z",
       "databaseId": 43525969019,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +100,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-13T23:17:09Z",
       "databaseId": 43525954465,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -80,7 +112,7 @@
       "createdAt": "2026-11-13T23:17:01Z",
       "databaseId": 43525938263,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -92,11 +124,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T23:15:02Z",
       "databaseId": 43525684170,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -145,38 +177,6 @@
       "databaseId": 43525328588,
       "headBranch": "main",
       "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T23:12:14Z",
-      "databaseId": 43525322527,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T23:12:05Z",
-      "databaseId": 43525303236,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-13T23:11:38Z",
-      "databaseId": 43525241759,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T23:11:13Z",
-      "databaseId": 43525187991,
-      "headBranch": "main",
-      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     }
   ],
@@ -201950,6 +201950,11 @@
         "episode_id": 196097,
         "display_name": "Goofyho tlupa S01E33 - Goof z lidu CZ Dabing",
         "video_id": 31020655
+      },
+      {
+        "episode_id": 202608,
+        "display_name": "Čistě platonicky S01E03 - Retreat pro společníky CZ Titulky",
+        "video_id": 31021250
       },
       {
         "episode_id": 114182,
@@ -587122,6 +587127,11 @@
         "episode_id": 196097,
         "display_name": "Goofyho tlupa S01E33 - Goof z lidu CZ Dabing",
         "video_id": 31020655
+      },
+      {
+        "episode_id": 202608,
+        "display_name": "Čistě platonicky S01E03 - Retreat pro společníky CZ Titulky",
+        "video_id": 31021250
       },
       {
         "episode_id": 114182,
