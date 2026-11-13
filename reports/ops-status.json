@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109483,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 82187,
+    "uploaded_episodes": 82188,
     "prepared_source_episodes": 68920,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,27 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53700,
     "whisper_review_pending_sources": 36720,
-    "upload_pending_checkpoints": 113,
+    "upload_pending_checkpoints": 112,
     "subtitle_followup_sources": 51849,
     "subtitle_followup_pending_sources": 51849
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T20:40:16Z",
+      "databaseId": 43503687049,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T20:39:32Z",
+      "databaseId": 43503573174,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-13T20:38:41Z",
@@ -28,11 +44,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T20:37:41Z",
       "databaseId": 43503299051,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -161,22 +177,6 @@
       "databaseId": 43501925534,
       "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T20:27:45Z",
-      "databaseId": 43501768956,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T20:27:41Z",
-      "databaseId": 43501758935,
-      "headBranch": "main",
-      "status": "completed",
       "workflowName": "prepare-manifest"
     }
   ],
@@ -385345,6 +385345,11 @@
         "episode_id": 98254,
         "display_name": "Hatufim S01E07 - 7. epizoda CZ Titulky",
         "video_id": 31018367
+      },
+      {
+        "episode_id": 109395,
+        "display_name": "black-ish S03E13 - 13. epizoda CZ Titulky",
+        "video_id": 31018638
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -770407,6 +770412,11 @@
         "episode_id": 98254,
         "display_name": "Hatufim S01E07 - 7. epizoda CZ Titulky",
         "video_id": 31018367
+      },
+      {
+        "episode_id": 109395,
+        "display_name": "black-ish S03E13 - 13. epizoda CZ Titulky",
+        "video_id": 31018638
       }
     ],
     "prepared_not_upload_ready": [
