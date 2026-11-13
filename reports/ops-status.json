@@ -2,23 +2,87 @@
   "counts": {
     "backlog_episodes": 109575,
     "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 82083,
-    "prepared_source_episodes": 68982,
+    "uploaded_episodes": 82084,
+    "prepared_source_episodes": 68981,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 43,
-    "language_whisper_attempted_sources": 43,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53743,
     "whisper_review_pending_sources": 36891,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51766,
     "subtitle_followup_pending_sources": 51766
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-13T00:54:00Z",
+      "databaseId": 43340722248,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T00:54:00Z",
+      "databaseId": 43340722165,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T00:53:50Z",
+      "databaseId": 43340699543,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T00:53:13Z",
+      "databaseId": 43340617558,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T00:53:08Z",
+      "databaseId": 43340606068,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-13T00:51:15Z",
+      "databaseId": 43340355463,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T00:50:55Z",
+      "databaseId": 43340311615,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T00:50:51Z",
+      "databaseId": 43340303470,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-13T00:50:13Z",
@@ -44,11 +108,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T00:47:51Z",
       "databaseId": 43339910571,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +148,11 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T00:44:44Z",
       "databaseId": 43339492675,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T00:43:02Z",
-      "databaseId": 43339265760,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T00:43:00Z",
-      "databaseId": 43339260569,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T00:42:38Z",
-      "databaseId": 43339211284,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T00:42:36Z",
-      "databaseId": 43339208388,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T00:41:53Z",
-      "databaseId": 43339109433,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T00:41:47Z",
-      "databaseId": 43339096289,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T00:40:31Z",
-      "databaseId": 43338927680,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T00:40:13Z",
-      "databaseId": 43338885845,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
     }
   ],
   "gaps": {
@@ -201650,6 +201650,11 @@
         "episode_id": 70825,
         "display_name": "Nejsem do tebe blázen  S03E07 - 7. epizoda CZ Titulky",
         "video_id": 31007622
+      },
+      {
+        "episode_id": 78961,
+        "display_name": "Zachraň mě S05E04 - 4. epizoda CZ Dabing",
+        "video_id": 31007643
       },
       {
         "episode_id": 114182,
@@ -586194,6 +586199,11 @@
         "video_id": 31007622
       },
       {
+        "episode_id": 78961,
+        "display_name": "Zachraň mě S05E04 - 4. epizoda CZ Dabing",
+        "video_id": 31007643
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -770528,9 +770538,8 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "sample_failed": 1,
-    "ok": 11,
-    "resolve_failed": 31
+    "ok": 19,
+    "resolve_failed": 1
   },
   "whisper_review_statuses": {
     "needs_whisper": 35827,
