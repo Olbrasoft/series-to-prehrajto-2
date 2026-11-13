@@ -1,30 +1,70 @@
 {
   "counts": {
     "backlog_episodes": 109467,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 82214,
-    "prepared_source_episodes": 68927,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 82215,
+    "prepared_source_episodes": 68939,
     "description_series": 60,
     "description_episodes": 753,
-    "description_errors": 41,
+    "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 25,
-    "language_whisper_attempted_sources": 25,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 41,
+    "language_whisper_attempted_sources": 41,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53690,
     "whisper_review_pending_sources": 36693,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51867,
     "subtitle_followup_pending_sources": 51867
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-13T23:47:38Z",
+      "databaseId": 43529728119,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T23:44:57Z",
+      "databaseId": 43529401607,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T23:43:56Z",
+      "databaseId": 43529280004,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T23:43:41Z",
+      "databaseId": 43529249766,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T23:43:37Z",
+      "databaseId": 43529243030,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-13T23:43:00Z",
       "databaseId": 43529163558,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,11 +76,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-13T23:42:53Z",
       "databaseId": 43529149197,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -48,7 +88,7 @@
       "createdAt": "2026-11-13T23:42:29Z",
       "databaseId": 43529100616,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -60,11 +100,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T23:41:39Z",
       "databaseId": 43528994030,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -100,11 +140,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T23:37:07Z",
       "databaseId": 43528445662,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -128,7 +168,7 @@
       "createdAt": "2026-11-13T23:36:36Z",
       "databaseId": 43528383397,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-13T23:35:54Z",
-      "databaseId": 43528298300,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T23:35:46Z",
-      "databaseId": 43528282075,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T23:33:53Z",
-      "databaseId": 43528042902,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T23:33:48Z",
-      "databaseId": 43528031750,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T23:33:13Z",
-      "databaseId": 43527959791,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -201955,6 +201955,11 @@
         "episode_id": 202608,
         "display_name": "Čistě platonicky S01E03 - Retreat pro společníky CZ Titulky",
         "video_id": 31021250
+      },
+      {
+        "episode_id": 117380,
+        "display_name": "Benched S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 31021556
       },
       {
         "episode_id": 114182,
@@ -587154,6 +587159,11 @@
         "video_id": 31021250
       },
       {
+        "episode_id": 117380,
+        "display_name": "Benched S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 31021556
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -771838,8 +771848,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 23,
-    "sample_failed": 1,
+    "ok": 40,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
