@@ -1,30 +1,46 @@
 {
   "counts": {
     "backlog_episodes": 109510,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 82170,
-    "prepared_source_episodes": 68943,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 82171,
+    "prepared_source_episodes": 68942,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 24,
-    "language_whisper_attempted_sources": 22,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53705,
     "whisper_review_pending_sources": 36742,
-    "upload_pending_checkpoints": 113,
+    "upload_pending_checkpoints": 112,
     "subtitle_followup_sources": 51837,
     "subtitle_followup_pending_sources": 51837
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-13T17:17:10Z",
+      "databaseId": 43471271853,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T17:17:09Z",
+      "databaseId": 43471268254,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-13T17:15:57Z",
       "databaseId": 43471068675,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,19 +52,19 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T17:15:18Z",
       "databaseId": 43470957267,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T17:14:54Z",
       "databaseId": 43470890645,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T17:12:41Z",
       "databaseId": 43470512022,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T17:04:26Z",
-      "databaseId": 43469095637,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T17:04:15Z",
-      "databaseId": 43469063972,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -385260,6 +385260,11 @@
         "episode_id": 125318,
         "display_name": "Zašívárna S01E04 - 4. epizoda CZ Dabing",
         "video_id": 31016423
+      },
+      {
+        "episode_id": 196094,
+        "display_name": "Goofyho tlupa S01E28 - Goofnoviny CZ Dabing",
+        "video_id": 31016510
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -770237,6 +770242,11 @@
         "episode_id": 125318,
         "display_name": "Zašívárna S01E04 - 4. epizoda CZ Dabing",
         "video_id": 31016423
+      },
+      {
+        "episode_id": 196094,
+        "display_name": "Goofyho tlupa S01E28 - Goofnoviny CZ Dabing",
+        "video_id": 31016510
       }
     ],
     "prepared_not_upload_ready": [
@@ -771398,8 +771408,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 2,
-    "ok": 21,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
