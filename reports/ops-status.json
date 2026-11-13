@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109575,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 82086,
-    "prepared_source_episodes": 69000,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 82087,
+    "prepared_source_episodes": 68999,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
@@ -14,17 +14,25 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53741,
     "whisper_review_pending_sources": 36883,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51766,
     "subtitle_followup_pending_sources": 51766
   },
   "workflow_runs": [
     {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T01:34:56Z",
+      "databaseId": 43345982608,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-13T01:34:08Z",
       "databaseId": 43345886478,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -44,11 +52,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T01:33:30Z",
       "databaseId": 43345808505,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -56,7 +64,7 @@
       "createdAt": "2026-11-13T01:33:09Z",
       "databaseId": 43345763600,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
@@ -72,7 +80,7 @@
       "createdAt": "2026-11-13T01:31:19Z",
       "databaseId": 43345541114,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -112,7 +120,7 @@
       "createdAt": "2026-11-13T01:29:45Z",
       "databaseId": 43345334524,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -170,14 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T01:24:50Z",
-      "databaseId": 43344734136,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -384840,6 +384840,11 @@
         "episode_id": 79015,
         "display_name": "Zachraň mě S05E17 - 17. epizoda CZ Dabing",
         "video_id": 31007800
+      },
+      {
+        "episode_id": 46879,
+        "display_name": "Mike a Molly S06E13 - 13. epizoda CZ Dabing",
+        "video_id": 31007933
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -769397,6 +769402,11 @@
         "episode_id": 79015,
         "display_name": "Zachraň mě S05E17 - 17. epizoda CZ Dabing",
         "video_id": 31007800
+      },
+      {
+        "episode_id": 46879,
+        "display_name": "Mike a Molly S06E13 - 13. epizoda CZ Dabing",
+        "video_id": 31007933
       }
     ],
     "prepared_not_upload_ready": [
