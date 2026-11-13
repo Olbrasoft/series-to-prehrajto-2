@@ -2,8 +2,8 @@
   "counts": {
     "backlog_episodes": 109551,
     "manifest_upload_ready_episodes": 0,
-    "uploaded_episodes": 82111,
-    "prepared_source_episodes": 68891,
+    "uploaded_episodes": 82112,
+    "prepared_source_episodes": 68890,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
@@ -14,17 +14,81 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53726,
     "whisper_review_pending_sources": 36842,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51796,
     "subtitle_followup_pending_sources": 51796
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-13T09:52:56Z",
+      "databaseId": 43404843222,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T09:52:51Z",
+      "databaseId": 43404833787,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T09:52:20Z",
+      "databaseId": 43404775955,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T09:51:38Z",
+      "databaseId": 43404700668,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-13T09:51:37Z",
+      "databaseId": 43404697505,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T09:50:56Z",
+      "databaseId": 43404627614,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T09:50:53Z",
+      "databaseId": 43404621543,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T09:50:50Z",
+      "databaseId": 43404616648,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-13T09:49:59Z",
       "databaseId": 43404517865,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "external-subtitles"
     },
     {
@@ -36,11 +100,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T09:49:39Z",
       "databaseId": 43404482657,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +132,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "failure",
       "createdAt": "2026-11-13T09:46:05Z",
       "databaseId": 43404056547,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -100,11 +164,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-13T09:44:56Z",
       "databaseId": 43403893784,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T09:44:00Z",
-      "databaseId": 43403765170,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T09:43:57Z",
-      "databaseId": 43403756652,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T09:43:54Z",
-      "databaseId": 43403750457,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T09:43:51Z",
-      "databaseId": 43403743860,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-13T09:43:04Z",
-      "databaseId": 43403635385,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T09:42:35Z",
-      "databaseId": 43403570390,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T09:42:29Z",
-      "databaseId": 43403556220,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T09:41:56Z",
-      "databaseId": 43403481768,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -201715,6 +201715,11 @@
         "episode_id": 109384,
         "display_name": "black-ish S03E01 - 1. epizoda CZ Titulky",
         "video_id": 31010810
+      },
+      {
+        "episode_id": 109381,
+        "display_name": "black-ish S02E17 - 17. epizoda CZ Titulky",
+        "video_id": 31011308
       },
       {
         "episode_id": 114182,
@@ -586397,6 +586402,11 @@
         "episode_id": 109384,
         "display_name": "black-ish S03E01 - 1. epizoda CZ Titulky",
         "video_id": 31010810
+      },
+      {
+        "episode_id": 109381,
+        "display_name": "black-ish S02E17 - 17. epizoda CZ Titulky",
+        "video_id": 31011308
       },
       {
         "episode_id": 114182,
