@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 109467,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 82196,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 82198,
     "prepared_source_episodes": 68916,
     "description_series": 60,
     "description_episodes": 753,
@@ -20,6 +20,30 @@
   },
   "workflow_runs": [
     {
+      "conclusion": "",
+      "createdAt": "2026-11-13T21:38:33Z",
+      "databaseId": 43512499565,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T21:38:07Z",
+      "databaseId": 43512436435,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T21:37:08Z",
+      "databaseId": 43512294946,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
       "conclusion": "skipped",
       "createdAt": "2026-11-13T21:36:29Z",
       "databaseId": 43512196666,
@@ -28,11 +52,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T21:36:17Z",
       "databaseId": 43512167857,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -56,7 +80,7 @@
       "createdAt": "2026-11-13T21:33:01Z",
       "databaseId": 43511675138,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "update-descriptions"
     },
     {
@@ -68,11 +92,11 @@
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T21:32:26Z",
       "databaseId": 43511588166,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -88,7 +112,7 @@
       "createdAt": "2026-11-13T21:32:14Z",
       "databaseId": 43511558301,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -151,30 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-13T21:25:37Z",
       "databaseId": 43510578118,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T21:24:41Z",
-      "databaseId": 43510439252,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T21:24:14Z",
-      "databaseId": 43510375044,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T21:23:57Z",
-      "databaseId": 43510333615,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
@@ -201932,6 +201932,11 @@
         "video_id": 31019037
       },
       {
+        "episode_id": 1192,
+        "display_name": "Můj malý Pony: Přátelství je magické S03E11 - Výpomoc CZ Dabing",
+        "video_id": 31019177
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -385390,6 +385395,11 @@
         "episode_id": 117374,
         "display_name": "Benched S01E02 - 2. epizoda CZ Titulky",
         "video_id": 31018912
+      },
+      {
+        "episode_id": 58939,
+        "display_name": "Záměna  S02E13 - 13. epizoda CZ Titulky",
+        "video_id": 31019189
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -587039,6 +587049,11 @@
         "video_id": 31019037
       },
       {
+        "episode_id": 1192,
+        "display_name": "Můj malý Pony: Přátelství je magické S03E11 - Výpomoc CZ Dabing",
+        "video_id": 31019177
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -770497,6 +770512,11 @@
         "episode_id": 117374,
         "display_name": "Benched S01E02 - 2. epizoda CZ Titulky",
         "video_id": 31018912
+      },
+      {
+        "episode_id": 58939,
+        "display_name": "Záměna  S02E13 - 13. epizoda CZ Titulky",
+        "video_id": 31019189
       }
     ],
     "prepared_not_upload_ready": [
