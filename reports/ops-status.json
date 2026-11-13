@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109510,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 82157,
-    "prepared_source_episodes": 68916,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 82158,
+    "prepared_source_episodes": 68919,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
@@ -14,11 +14,51 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53707,
     "whisper_review_pending_sources": 36749,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51831,
     "subtitle_followup_pending_sources": 51831
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T15:55:17Z",
+      "databaseId": 43457434444,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-13T15:54:05Z",
+      "databaseId": 43457234121,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T15:53:16Z",
+      "databaseId": 43457097628,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T15:53:12Z",
+      "databaseId": 43457083591,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T15:53:08Z",
+      "databaseId": 43457075270,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-13T15:51:58Z",
@@ -40,7 +80,7 @@
       "createdAt": "2026-11-13T15:51:37Z",
       "databaseId": 43456819652,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -48,7 +88,7 @@
       "createdAt": "2026-11-13T15:51:04Z",
       "databaseId": 43456729009,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +104,7 @@
       "createdAt": "2026-11-13T15:50:50Z",
       "databaseId": 43456689611,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -100,11 +140,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T15:49:21Z",
       "databaseId": 43456443334,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -137,46 +177,6 @@
       "databaseId": 43455869233,
       "headBranch": "main",
       "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T15:44:52Z",
-      "databaseId": 43455691894,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T15:43:04Z",
-      "databaseId": 43455396712,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T15:42:35Z",
-      "databaseId": 43455315392,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-13T15:42:31Z",
-      "databaseId": 43455304878,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T15:41:18Z",
-      "databaseId": 43455102788,
-      "headBranch": "main",
-      "status": "in_progress",
       "workflowName": "prepare-manifest"
     }
   ],
@@ -201830,6 +201830,11 @@
         "episode_id": 88689,
         "display_name": "Námořní hlídka S02E05 - 5. epizoda CZ Dabing",
         "video_id": 31014460
+      },
+      {
+        "episode_id": 58924,
+        "display_name": "Záměna  S01E29 - 29. epizoda CZ Titulky",
+        "video_id": 31014727
       },
       {
         "episode_id": 114182,
@@ -586742,6 +586747,11 @@
         "episode_id": 88689,
         "display_name": "Námořní hlídka S02E05 - 5. epizoda CZ Dabing",
         "video_id": 31014460
+      },
+      {
+        "episode_id": 58924,
+        "display_name": "Záměna  S01E29 - 29. epizoda CZ Titulky",
+        "video_id": 31014727
       },
       {
         "episode_id": 114182,
