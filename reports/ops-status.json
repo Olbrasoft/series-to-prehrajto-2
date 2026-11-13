@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109568,
-    "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 82096,
-    "prepared_source_episodes": 68968,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 82097,
+    "prepared_source_episodes": 68967,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 38,
@@ -14,17 +14,33 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53735,
     "whisper_review_pending_sources": 36866,
-    "upload_pending_checkpoints": 111,
+    "upload_pending_checkpoints": 110,
     "subtitle_followup_sources": 51776,
     "subtitle_followup_pending_sources": 51776
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-13T05:49:41Z",
+      "databaseId": 43374547798,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T05:47:36Z",
+      "databaseId": 43374325478,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-13T05:45:54Z",
       "databaseId": 43374142598,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,19 +52,19 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T05:43:26Z",
       "databaseId": 43373870226,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T05:43:22Z",
       "databaseId": 43373863815,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -76,11 +92,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T05:41:32Z",
       "databaseId": 43373665468,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-13T05:37:14Z",
-      "databaseId": 43373211357,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T05:35:38Z",
-      "databaseId": 43373035681,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -384890,6 +384890,11 @@
         "episode_id": 79003,
         "display_name": "Zachraň mě S06E03 - 3. epizoda CZ Dabing",
         "video_id": 31009150
+      },
+      {
+        "episode_id": 116222,
+        "display_name": "Mladý Rock S03E06 - 6. epizoda CZ Titulky",
+        "video_id": 31009468
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -769497,6 +769502,11 @@
         "episode_id": 79003,
         "display_name": "Zachraň mě S06E03 - 3. epizoda CZ Dabing",
         "video_id": 31009150
+      },
+      {
+        "episode_id": 116222,
+        "display_name": "Mladý Rock S03E06 - 6. epizoda CZ Titulky",
+        "video_id": 31009468
       }
     ],
     "prepared_not_upload_ready": [
