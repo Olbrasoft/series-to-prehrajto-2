@@ -2,29 +2,93 @@
   "counts": {
     "backlog_episodes": 109510,
     "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 82168,
-    "prepared_source_episodes": 68939,
+    "uploaded_episodes": 82169,
+    "prepared_source_episodes": 68938,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
     "language_audited_sources": 24,
-    "language_whisper_attempted_sources": 21,
+    "language_whisper_attempted_sources": 22,
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53705,
-    "whisper_review_pending_sources": 36743,
-    "upload_pending_checkpoints": 113,
-    "subtitle_followup_sources": 51836,
-    "subtitle_followup_pending_sources": 51836
+    "whisper_review_pending_sources": 36742,
+    "upload_pending_checkpoints": 112,
+    "subtitle_followup_sources": 51837,
+    "subtitle_followup_pending_sources": 51837
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-13T17:04:44Z",
+      "databaseId": 43469146493,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T17:04:42Z",
+      "databaseId": 43469139751,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T17:04:37Z",
+      "databaseId": 43469126482,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T17:04:26Z",
+      "databaseId": 43469095637,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T17:04:15Z",
+      "databaseId": 43469063972,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T17:04:15Z",
+      "databaseId": 43469063802,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T17:03:30Z",
+      "databaseId": 43468935485,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T17:03:22Z",
+      "databaseId": 43468912744,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-13T17:02:13Z",
       "databaseId": 43468717129,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -36,11 +100,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T17:01:20Z",
       "databaseId": 43468565781,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +116,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T17:01:05Z",
       "databaseId": 43468522159,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -72,7 +136,7 @@
       "createdAt": "2026-11-13T17:00:17Z",
       "databaseId": 43468380121,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T16:55:01Z",
-      "databaseId": 43467505427,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T16:54:57Z",
-      "databaseId": 43467496754,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T16:54:52Z",
-      "databaseId": 43467481078,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T16:54:15Z",
-      "databaseId": 43467375816,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T16:52:22Z",
-      "databaseId": 43467051707,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T16:52:15Z",
-      "databaseId": 43467042605,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T16:52:11Z",
-      "databaseId": 43467037883,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T16:52:08Z",
-      "databaseId": 43467031309,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -201865,6 +201865,11 @@
         "episode_id": 196089,
         "display_name": "Goofyho tlupa S01E13 - Kde je kouř, tam je i Goofy CZ Dabing",
         "video_id": 31015728
+      },
+      {
+        "episode_id": 196093,
+        "display_name": "Goofyho tlupa S01E27 - Rodinné album CZ Titulky",
+        "video_id": 31016174
       },
       {
         "episode_id": 114182,
@@ -586834,6 +586839,11 @@
         "video_id": 31015728
       },
       {
+        "episode_id": 196093,
+        "display_name": "Goofyho tlupa S01E27 - Rodinné album CZ Titulky",
+        "video_id": 31016174
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -771378,17 +771388,17 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 3,
-    "ok": 20,
+    "disabled": 2,
+    "ok": 21,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35655,
+    "needs_whisper": 35654,
     "whisper_confirmed_cz": 3829,
-    "whisper_non_cz_needs_subtitles": 13133,
+    "whisper_non_cz_needs_subtitles": 13134,
     "whisper_failed": 1088
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51836
+    "needs_subtitle_setup_after_prehrajto_processing": 51837
   }
 }
