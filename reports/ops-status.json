@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109467,
     "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 82204,
+    "uploaded_episodes": 82205,
     "prepared_source_episodes": 68907,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53693,
     "whisper_review_pending_sources": 36702,
-    "upload_pending_checkpoints": 113,
+    "upload_pending_checkpoints": 112,
     "subtitle_followup_sources": 51858,
     "subtitle_followup_pending_sources": 51858
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-13T22:04:10Z",
+      "databaseId": 43516158907,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T22:04:07Z",
+      "databaseId": 43516149940,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T22:03:43Z",
+      "databaseId": 43516094115,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-13T22:02:59Z",
       "databaseId": 43515985441,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,15 +56,15 @@
       "createdAt": "2026-11-13T22:02:51Z",
       "databaseId": 43515966470,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T22:02:25Z",
       "databaseId": 43515906852,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -60,11 +84,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T22:01:10Z",
       "databaseId": 43515721533,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T21:52:04Z",
-      "databaseId": 43514452112,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T21:51:42Z",
-      "databaseId": 43514399691,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T21:51:22Z",
-      "databaseId": 43514352969,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -385430,6 +385430,11 @@
         "episode_id": 1186,
         "display_name": "Můj malý Pony: Přátelství je magické S03E05 - Souboj kouzel CZ Titulky",
         "video_id": 31019505
+      },
+      {
+        "episode_id": 1210,
+        "display_name": "Můj malý Pony: Přátelství je magické S04E16 - Vánci ve vánku CZ Dabing",
+        "video_id": 31019622
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -770577,6 +770582,11 @@
         "episode_id": 1186,
         "display_name": "Můj malý Pony: Přátelství je magické S03E05 - Souboj kouzel CZ Titulky",
         "video_id": 31019505
+      },
+      {
+        "episode_id": 1210,
+        "display_name": "Můj malý Pony: Přátelství je magické S04E16 - Vánci ve vánku CZ Dabing",
+        "video_id": 31019622
       }
     ],
     "prepared_not_upload_ready": [
