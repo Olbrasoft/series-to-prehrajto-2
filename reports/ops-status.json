@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 109562,
-    "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 82101,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 82102,
     "prepared_source_episodes": 68928,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,75 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53732,
     "whisper_review_pending_sources": 36859,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 111,
     "subtitle_followup_sources": 51783,
     "subtitle_followup_pending_sources": 51783
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T07:05:32Z",
+      "databaseId": 43383239011,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T07:05:31Z",
+      "databaseId": 43383236581,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T07:05:20Z",
+      "databaseId": 43383214205,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T07:03:34Z",
+      "databaseId": 43382999224,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T07:03:34Z",
+      "databaseId": 43382998573,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T07:03:26Z",
+      "databaseId": 43382982208,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T07:01:41Z",
+      "databaseId": 43382770853,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T07:01:38Z",
+      "databaseId": 43382763663,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-13T07:00:31Z",
@@ -32,15 +96,15 @@
       "createdAt": "2026-11-13T07:00:25Z",
       "databaseId": 43382611652,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T06:59:38Z",
       "databaseId": 43382517493,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -52,11 +116,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T06:57:49Z",
       "databaseId": 43382319990,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -84,11 +148,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-13T06:55:56Z",
       "databaseId": 43382115282,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -111,70 +175,6 @@
       "conclusion": "success",
       "createdAt": "2026-11-13T06:53:26Z",
       "databaseId": 43381829156,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T06:51:56Z",
-      "databaseId": 43381659765,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T06:51:51Z",
-      "databaseId": 43381649408,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T06:51:25Z",
-      "databaseId": 43381599836,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T06:50:46Z",
-      "databaseId": 43381526800,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-13T06:50:38Z",
-      "databaseId": 43381512649,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T06:49:17Z",
-      "databaseId": 43381352464,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T06:49:06Z",
-      "databaseId": 43381332820,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T06:48:40Z",
-      "databaseId": 43381282306,
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
@@ -201700,6 +201700,11 @@
         "episode_id": 116224,
         "display_name": "Mladý Rock S03E08 - 8. epizoda CZ Titulky",
         "video_id": 31009874
+      },
+      {
+        "episode_id": 109372,
+        "display_name": "black-ish S02E08 - 8. epizoda CZ Titulky",
+        "video_id": 31009984
       },
       {
         "episode_id": 114182,
@@ -586332,6 +586337,11 @@
         "episode_id": 116224,
         "display_name": "Mladý Rock S03E08 - 8. epizoda CZ Titulky",
         "video_id": 31009874
+      },
+      {
+        "episode_id": 109372,
+        "display_name": "black-ish S02E08 - 8. epizoda CZ Titulky",
+        "video_id": 31009984
       },
       {
         "episode_id": 114182,
