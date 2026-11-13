@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 109510,
-    "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 82160,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 82161,
     "prepared_source_episodes": 68922,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,33 +14,97 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53707,
     "whisper_review_pending_sources": 36749,
-    "upload_pending_checkpoints": 113,
+    "upload_pending_checkpoints": 112,
     "subtitle_followup_sources": 51831,
     "subtitle_followup_pending_sources": 51831
   },
   "workflow_runs": [
     {
-      "conclusion": "",
-      "createdAt": "2026-11-13T16:02:26Z",
-      "databaseId": 43458635015,
+      "conclusion": "skipped",
+      "createdAt": "2026-11-13T16:04:38Z",
+      "databaseId": 43459012982,
       "headBranch": "main",
-      "status": "pending",
-      "workflowName": "ops-watchdog"
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-13T16:02:19Z",
-      "databaseId": 43458614872,
+      "createdAt": "2026-11-13T16:04:30Z",
+      "databaseId": 43458990108,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T16:04:15Z",
+      "databaseId": 43458945933,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-13T16:04:06Z",
+      "databaseId": 43458920707,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T16:04:01Z",
+      "databaseId": 43458904609,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T16:03:45Z",
+      "databaseId": 43458860915,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-13T16:03:23Z",
+      "databaseId": 43458794800,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T16:03:18Z",
+      "databaseId": 43458780363,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T16:02:26Z",
+      "databaseId": 43458635015,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-13T16:02:19Z",
+      "databaseId": 43458614872,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-13T16:02:11Z",
       "databaseId": 43458592459,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +116,11 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "failure",
       "createdAt": "2026-11-13T16:01:47Z",
       "databaseId": 43458519090,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T15:53:12Z",
-      "databaseId": 43457083591,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T15:53:08Z",
-      "databaseId": 43457075270,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T15:51:58Z",
-      "databaseId": 43456877646,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T15:51:51Z",
-      "databaseId": 43456859289,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T15:51:37Z",
-      "databaseId": 43456819652,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T15:51:04Z",
-      "databaseId": 43456729009,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-13T15:50:57Z",
-      "databaseId": 43456708755,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T15:50:50Z",
-      "databaseId": 43456689611,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -201845,6 +201845,11 @@
         "episode_id": 146336,
         "display_name": "The Red Green Show S03E08 - 8. epizoda CZ Titulky",
         "video_id": 31014813
+      },
+      {
+        "episode_id": 96048,
+        "display_name": "Telenovela S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 31014909
       },
       {
         "episode_id": 114182,
@@ -586772,6 +586777,11 @@
         "episode_id": 146336,
         "display_name": "The Red Green Show S03E08 - 8. epizoda CZ Titulky",
         "video_id": 31014813
+      },
+      {
+        "episode_id": 96048,
+        "display_name": "Telenovela S01E06 - 6. epizoda CZ Titulky",
+        "video_id": 31014909
       },
       {
         "episode_id": 114182,
