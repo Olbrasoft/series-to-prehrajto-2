@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109467,
-    "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 82210,
-    "prepared_source_episodes": 68944,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 82211,
+    "prepared_source_episodes": 68942,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -19,6 +19,30 @@
     "subtitle_followup_pending_sources": 51864
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T23:24:44Z",
+      "databaseId": 43526913244,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-13T23:24:13Z",
+      "databaseId": 43526847906,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-13T23:24:09Z",
+      "databaseId": 43526840672,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-13T23:22:47Z",
@@ -60,11 +84,11 @@
       "workflowName": "external-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-13T23:18:27Z",
       "databaseId": 43526118290,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-13T23:13:21Z",
-      "databaseId": 43525466682,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T23:13:06Z",
-      "databaseId": 43525432612,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-13T23:12:17Z",
-      "databaseId": 43525328588,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -385460,6 +385460,11 @@
         "episode_id": 109362,
         "display_name": "black-ish S03E22 - 22. epizoda CZ Titulky",
         "video_id": 31020837
+      },
+      {
+        "episode_id": 109358,
+        "display_name": "black-ish S03E19 - 19. epizoda CZ Titulky",
+        "video_id": 31021319
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -770637,6 +770642,11 @@
         "episode_id": 109362,
         "display_name": "black-ish S03E22 - 22. epizoda CZ Titulky",
         "video_id": 31020837
+      },
+      {
+        "episode_id": 109358,
+        "display_name": "black-ish S03E19 - 19. epizoda CZ Titulky",
+        "video_id": 31021319
       }
     ],
     "prepared_not_upload_ready": [
