@@ -1,38 +1,70 @@
 {
   "counts": {
     "backlog_episodes": 109381,
-    "manifest_upload_ready_episodes": 0,
-    "uploaded_episodes": 82299,
-    "prepared_source_episodes": 68937,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 82300,
+    "prepared_source_episodes": 68955,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 43,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
+    "language_audited_sources": 46,
+    "language_whisper_attempted_sources": 46,
     "language_pending_whisper_sources": 2604,
-    "whisper_review_sources": 53678,
-    "whisper_review_pending_sources": 36639,
-    "upload_pending_checkpoints": 112,
+    "whisper_review_sources": 53676,
+    "whisper_review_pending_sources": 36631,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51905,
     "subtitle_followup_pending_sources": 51905
   },
   "workflow_runs": [
     {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-14T11:46:08Z",
+      "databaseId": 43591585296,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T11:46:02Z",
+      "databaseId": 43591577236,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T11:45:23Z",
+      "databaseId": 43591525969,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T11:43:01Z",
+      "databaseId": 43591339850,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-14T11:42:39Z",
       "databaseId": 43591311935,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T11:41:34Z",
       "databaseId": 43591228209,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -68,11 +100,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T11:38:40Z",
       "databaseId": 43591001769,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -80,7 +112,7 @@
       "createdAt": "2026-11-14T11:36:36Z",
       "databaseId": 43590845561,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -108,11 +140,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T11:35:23Z",
       "databaseId": 43590750516,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T11:32:54Z",
-      "databaseId": 43590544532,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T11:32:51Z",
-      "databaseId": 43590540039,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T11:32:43Z",
-      "databaseId": 43590529038,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T11:32:42Z",
-      "databaseId": 43590527473,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -385905,6 +385905,11 @@
         "episode_id": 110202,
         "display_name": "Mladí Titáni do toho! S03E44 - Ostrov šílených přání CZ Dabing",
         "video_id": 31028351
+      },
+      {
+        "episode_id": 118550,
+        "display_name": "Ochránce S03E06 - 6. epizoda CZ Dabing",
+        "video_id": 31028505
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -771527,6 +771532,11 @@
         "episode_id": 110202,
         "display_name": "Mladí Titáni do toho! S03E44 - Ostrov šílených přání CZ Dabing",
         "video_id": 31028351
+      },
+      {
+        "episode_id": 118550,
+        "display_name": "Ochránce S03E06 - 6. epizoda CZ Dabing",
+        "video_id": 31028505
       }
     ],
     "prepared_not_upload_ready": [
@@ -772688,13 +772698,13 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 45,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35544,
-    "whisper_confirmed_cz": 3853,
-    "whisper_non_cz_needs_subtitles": 13186,
+    "needs_whisper": 35536,
+    "whisper_confirmed_cz": 3854,
+    "whisper_non_cz_needs_subtitles": 13191,
     "whisper_failed": 1095
   },
   "subtitle_followup_statuses": {
