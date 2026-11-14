@@ -2,8 +2,8 @@
   "counts": {
     "backlog_episodes": 109421,
     "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 82240,
-    "prepared_source_episodes": 68894,
+    "uploaded_episodes": 82241,
+    "prepared_source_episodes": 68898,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -14,17 +14,49 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53686,
     "whisper_review_pending_sources": 36673,
-    "upload_pending_checkpoints": 114,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51885,
     "subtitle_followup_pending_sources": 51885
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T03:56:30Z",
+      "databaseId": 43554145990,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T03:55:47Z",
+      "databaseId": 43554089021,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T03:55:07Z",
+      "databaseId": 43554036178,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T03:55:05Z",
+      "databaseId": 43554032044,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-14T03:54:10Z",
       "databaseId": 43553960270,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +64,7 @@
       "createdAt": "2026-11-14T03:52:27Z",
       "databaseId": 43553828126,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -60,11 +92,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T03:51:34Z",
       "databaseId": 43553754146,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T03:42:46Z",
-      "databaseId": 43553026968,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-14T03:42:43Z",
-      "databaseId": 43553022789,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T03:42:40Z",
-      "databaseId": 43553019481,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T03:42:25Z",
-      "databaseId": 43552997969,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -385610,6 +385610,11 @@
         "episode_id": 109346,
         "display_name": "black-ish S04E16 - 16. epizoda CZ Titulky",
         "video_id": 31023099
+      },
+      {
+        "episode_id": 60702,
+        "display_name": "The Gloaming S01E03 - The Casting of the Bones CZ Titulky",
+        "video_id": 31023409
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -770937,6 +770942,11 @@
         "episode_id": 109346,
         "display_name": "black-ish S04E16 - 16. epizoda CZ Titulky",
         "video_id": 31023099
+      },
+      {
+        "episode_id": 60702,
+        "display_name": "The Gloaming S01E03 - The Casting of the Bones CZ Titulky",
+        "video_id": 31023409
       }
     ],
     "prepared_not_upload_ready": [
