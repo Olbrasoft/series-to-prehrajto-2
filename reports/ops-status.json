@@ -1,30 +1,110 @@
 {
   "counts": {
     "backlog_episodes": 109307,
-    "manifest_upload_ready_episodes": 7,
-    "uploaded_episodes": 82370,
-    "prepared_source_episodes": 68835,
+    "manifest_upload_ready_episodes": 5,
+    "uploaded_episodes": 82373,
+    "prepared_source_episodes": 68830,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 41,
+    "language_audited_sources": 45,
     "language_whisper_attempted_sources": 41,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53662,
     "whisper_review_pending_sources": 36569,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51947,
     "subtitle_followup_pending_sources": 51947
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T22:42:32Z",
+      "databaseId": 43649496326,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T22:42:27Z",
+      "databaseId": 43649488890,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T22:42:22Z",
+      "databaseId": 43649480740,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-14T22:41:58Z",
+      "databaseId": 43649446003,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-14T22:41:11Z",
+      "databaseId": 43649378782,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T22:38:27Z",
+      "databaseId": 43649147631,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T22:36:37Z",
+      "databaseId": 43648996046,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-14T22:36:37Z",
+      "databaseId": 43648995387,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T22:36:07Z",
+      "databaseId": 43648952743,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-14T22:36:06Z",
+      "databaseId": 43648951406,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-14T22:34:59Z",
       "databaseId": 43648849446,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -36,19 +116,19 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T22:34:53Z",
       "databaseId": 43648841168,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T22:32:50Z",
       "databaseId": 43648656960,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -64,7 +144,7 @@
       "createdAt": "2026-11-14T22:32:37Z",
       "databaseId": 43648638075,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -98,86 +178,6 @@
       "headBranch": "main",
       "status": "pending",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T22:31:03Z",
-      "databaseId": 43648497308,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T22:30:59Z",
-      "databaseId": 43648491532,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T22:30:57Z",
-      "databaseId": 43648487836,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T22:30:32Z",
-      "databaseId": 43648449167,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T22:29:49Z",
-      "databaseId": 43648380592,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T22:26:31Z",
-      "databaseId": 43648109836,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T22:25:10Z",
-      "databaseId": 43647994716,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T22:25:07Z",
-      "databaseId": 43647989826,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-14T22:25:05Z",
-      "databaseId": 43647986592,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T22:24:59Z",
-      "databaseId": 43647976232,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -202332,6 +202332,16 @@
         "video_id": 31040372
       },
       {
+        "episode_id": 1477,
+        "display_name": "Winx Club S06E01 - Inspirace Sirenixu CZ Dabing",
+        "video_id": 31041031
+      },
+      {
+        "episode_id": 1488,
+        "display_name": "Winx Club S06E12 - Třpyt ve stínech CZ Dabing",
+        "video_id": 31040999
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -386260,6 +386270,11 @@
         "episode_id": 105707,
         "display_name": "Everything Sucks! S01E01 - Plutonium CZ Titulky",
         "video_id": 31040776
+      },
+      {
+        "episode_id": 50035,
+        "display_name": "TURN: Washington's Spies S04E03 - 3. epizoda CZ Dabing",
+        "video_id": 31040994
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -588309,6 +588324,16 @@
         "video_id": 31040372
       },
       {
+        "episode_id": 1477,
+        "display_name": "Winx Club S06E01 - Inspirace Sirenixu CZ Dabing",
+        "video_id": 31041031
+      },
+      {
+        "episode_id": 1488,
+        "display_name": "Winx Club S06E12 - Třpyt ve stínech CZ Dabing",
+        "video_id": 31040999
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -772237,6 +772262,11 @@
         "episode_id": 105707,
         "display_name": "Everything Sucks! S01E01 - Plutonium CZ Titulky",
         "video_id": 31040776
+      },
+      {
+        "episode_id": 50035,
+        "display_name": "TURN: Washington's Spies S04E03 - 3. epizoda CZ Dabing",
+        "video_id": 31040994
       }
     ],
     "prepared_not_upload_ready": [
@@ -773398,6 +773428,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
+    "disabled": 4,
     "ok": 40,
     "resolve_failed": 1
   },
