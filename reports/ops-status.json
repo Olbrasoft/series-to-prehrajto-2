@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109441,
-    "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 82220,
-    "prepared_source_episodes": 68924,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 82221,
+    "prepared_source_episodes": 68923,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
@@ -21,6 +21,54 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T00:58:10Z",
+      "databaseId": 43537617140,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T00:54:42Z",
+      "databaseId": 43537269575,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-14T00:54:41Z",
+      "databaseId": 43537268434,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T00:54:38Z",
+      "databaseId": 43537262909,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T00:54:35Z",
+      "databaseId": 43537258012,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T00:54:33Z",
+      "databaseId": 43537254554,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-14T00:52:40Z",
       "databaseId": 43537052269,
       "headBranch": "main",
@@ -28,11 +76,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T00:52:01Z",
       "databaseId": 43536983141,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -64,7 +112,7 @@
       "createdAt": "2026-11-14T00:47:40Z",
       "databaseId": 43536520441,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T00:45:34Z",
-      "databaseId": 43536331457,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T00:45:10Z",
-      "databaseId": 43536281722,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T00:42:59Z",
-      "databaseId": 43536040696,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T00:42:35Z",
-      "databaseId": 43535993626,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T00:42:32Z",
-      "databaseId": 43535989258,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T00:41:55Z",
-      "databaseId": 43535925772,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -385510,6 +385510,11 @@
         "episode_id": 109363,
         "display_name": "black-ish S03E23 - 23. epizoda CZ Titulky",
         "video_id": 31021787
+      },
+      {
+        "episode_id": 196098,
+        "display_name": "Goofyho tlupa S01E34 - Goofy v domě není pro mě CZ Titulky",
+        "video_id": 31022045
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -770737,6 +770742,11 @@
         "episode_id": 109363,
         "display_name": "black-ish S03E23 - 23. epizoda CZ Titulky",
         "video_id": 31021787
+      },
+      {
+        "episode_id": 196098,
+        "display_name": "Goofyho tlupa S01E34 - Goofy v domě není pro mě CZ Titulky",
+        "video_id": 31022045
       }
     ],
     "prepared_not_upload_ready": [
