@@ -2,37 +2,69 @@
   "counts": {
     "backlog_episodes": 109307,
     "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 82384,
-    "prepared_source_episodes": 68825,
+    "uploaded_episodes": 82385,
+    "prepared_source_episodes": 68831,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 20,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53660,
-    "whisper_review_pending_sources": 36564,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53659,
+    "whisper_review_pending_sources": 36562,
     "upload_pending_checkpoints": 113,
-    "subtitle_followup_sources": 51949,
-    "subtitle_followup_pending_sources": 51949
+    "subtitle_followup_sources": 51950,
+    "subtitle_followup_pending_sources": 51950
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-14T23:42:40Z",
-      "databaseId": 43654588808,
+      "createdAt": "2026-11-14T23:49:22Z",
+      "databaseId": 43655133806,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
+      "status": "pending",
+      "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T23:49:10Z",
+      "databaseId": 43655118201,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T23:48:43Z",
+      "databaseId": 43655079907,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T23:44:02Z",
+      "databaseId": 43654698387,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T23:42:40Z",
+      "databaseId": 43654588808,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-14T23:42:37Z",
       "databaseId": 43654584276,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -48,7 +80,7 @@
       "createdAt": "2026-11-14T23:42:33Z",
       "databaseId": 43654579291,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -64,7 +96,7 @@
       "createdAt": "2026-11-14T23:41:42Z",
       "databaseId": 43654509349,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -100,11 +132,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T23:39:10Z",
       "databaseId": 43654303513,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-14T23:33:02Z",
-      "databaseId": 43653797839,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T23:32:57Z",
-      "databaseId": 43653791601,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T23:32:50Z",
-      "databaseId": 43653780527,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T23:32:44Z",
-      "databaseId": 43653772328,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "prepare-descriptions"
     }
   ],
   "gaps": {
@@ -202360,6 +202360,11 @@
         "episode_id": 1516,
         "display_name": "Winx Club S07E13 - Tajemství jednorožce CZ Dabing",
         "video_id": 31042135
+      },
+      {
+        "episode_id": 1520,
+        "display_name": "Winx Club S07E17 - Záchrana minisvěta CZ Dabing",
+        "video_id": 31042405
       },
       {
         "episode_id": 114182,
@@ -588409,6 +588414,11 @@
         "video_id": 31042135
       },
       {
+        "episode_id": 1520,
+        "display_name": "Winx Club S07E17 - Záchrana minisvěta CZ Dabing",
+        "video_id": 31042405
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -773538,16 +773548,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 19,
-    "resolve_failed": 1
+    "ok": 9,
+    "resolve_failed": 31
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35466,
+    "needs_whisper": 35463,
     "whisper_confirmed_cz": 3863,
-    "whisper_non_cz_needs_subtitles": 13233,
-    "whisper_failed": 1098
+    "whisper_non_cz_needs_subtitles": 13234,
+    "whisper_failed": 1099
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51949
+    "needs_subtitle_setup_after_prehrajto_processing": 51950
   }
 }
