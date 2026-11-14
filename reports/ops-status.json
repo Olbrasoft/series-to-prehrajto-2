@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109333,
     "manifest_upload_ready_episodes": 4,
-    "uploaded_episodes": 82337,
+    "uploaded_episodes": 82339,
     "prepared_source_episodes": 68905,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,41 +14,105 @@
     "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53670,
     "whisper_review_pending_sources": 36596,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51927,
     "subtitle_followup_pending_sources": 51927
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-14T18:27:58Z",
-      "databaseId": 43626741384,
+      "createdAt": "2026-11-14T18:33:21Z",
+      "databaseId": 43627250088,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T18:33:19Z",
+      "databaseId": 43627246645,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-14T18:27:53Z",
-      "databaseId": 43626733756,
+      "createdAt": "2026-11-14T18:33:16Z",
+      "databaseId": 43627241731,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T18:33:13Z",
+      "databaseId": 43627236820,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T18:31:58Z",
+      "databaseId": 43627115579,
       "headBranch": "main",
       "status": "pending",
       "workflowName": "prepare-manifest"
     },
     {
       "conclusion": "",
-      "createdAt": "2026-11-14T18:26:59Z",
-      "databaseId": 43626654753,
+      "createdAt": "2026-11-14T18:31:36Z",
+      "databaseId": 43627081091,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T18:31:24Z",
+      "databaseId": 43627062937,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-14T18:30:09Z",
+      "databaseId": 43626935840,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T18:27:58Z",
+      "databaseId": 43626741384,
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
+      "createdAt": "2026-11-14T18:27:53Z",
+      "databaseId": 43626733756,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T18:26:59Z",
+      "databaseId": 43626654753,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-14T18:26:15Z",
       "databaseId": 43626590623,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -56,15 +120,15 @@
       "createdAt": "2026-11-14T18:26:11Z",
       "databaseId": 43626584831,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T18:24:16Z",
       "databaseId": 43626407166,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -80,7 +144,7 @@
       "createdAt": "2026-11-14T18:23:17Z",
       "databaseId": 43626318439,
       "headBranch": "main",
-      "status": "pending",
+      "status": "queued",
       "workflowName": "prepare-sources"
     },
     {
@@ -96,7 +160,7 @@
       "createdAt": "2026-11-14T18:23:01Z",
       "databaseId": 43626293074,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "process-whisper-review"
     },
     {
@@ -114,70 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T18:20:42Z",
-      "databaseId": 43626072472,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T18:20:05Z",
-      "databaseId": 43626007649,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T18:20:04Z",
-      "databaseId": 43626006128,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T18:20:00Z",
-      "databaseId": 43625999181,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T18:19:47Z",
-      "databaseId": 43625979578,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T18:17:08Z",
-      "databaseId": 43625735952,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T18:16:18Z",
-      "databaseId": 43625656384,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T18:16:14Z",
-      "databaseId": 43625650714,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -202242,6 +202242,11 @@
         "video_id": 31036441
       },
       {
+        "episode_id": 87880,
+        "display_name": "Zpátky do práce S04E05 - Jak přilákat veverku CZ Titulky",
+        "video_id": 31036758
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -386095,6 +386100,11 @@
         "episode_id": 102778,
         "display_name": "Dobrodružství Brisco Countyho Jr. S01E26 - 26. epizoda CZ Titulky",
         "video_id": 31036247
+      },
+      {
+        "episode_id": 130334,
+        "display_name": "Páteční večeře S04E03 - 3. epizoda CZ Dabing",
+        "video_id": 31036701
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -588054,6 +588064,11 @@
         "video_id": 31036441
       },
       {
+        "episode_id": 87880,
+        "display_name": "Zpátky do práce S04E05 - Jak přilákat veverku CZ Titulky",
+        "video_id": 31036758
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -771907,6 +771922,11 @@
         "episode_id": 102778,
         "display_name": "Dobrodružství Brisco Countyho Jr. S01E26 - 26. epizoda CZ Titulky",
         "video_id": 31036247
+      },
+      {
+        "episode_id": 130334,
+        "display_name": "Páteční večeře S04E03 - 3. epizoda CZ Dabing",
+        "video_id": 31036701
       }
     ],
     "prepared_not_upload_ready": [
