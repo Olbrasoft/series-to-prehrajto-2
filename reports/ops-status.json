@@ -1,24 +1,64 @@
 {
   "counts": {
     "backlog_episodes": 109441,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 82227,
-    "prepared_source_episodes": 68944,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 82228,
+    "prepared_source_episodes": 68942,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 42,
+    "language_audited_sources": 41,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53688,
-    "whisper_review_pending_sources": 36684,
-    "upload_pending_checkpoints": 112,
+    "whisper_review_pending_sources": 36685,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51875,
     "subtitle_followup_pending_sources": 51875
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T01:57:00Z",
+      "databaseId": 43543538808,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T01:56:12Z",
+      "databaseId": 43543467755,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T01:56:08Z",
+      "databaseId": 43543462305,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T01:53:06Z",
+      "databaseId": 43543188757,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T01:53:03Z",
+      "databaseId": 43543184145,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "",
       "createdAt": "2026-11-14T01:52:11Z",
@@ -40,15 +80,15 @@
       "createdAt": "2026-11-14T01:51:38Z",
       "databaseId": 43543055963,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T01:51:31Z",
       "databaseId": 43543045371,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -68,11 +108,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T01:50:45Z",
       "databaseId": 43542976718,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -124,11 +164,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T01:47:49Z",
       "databaseId": 43542698490,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "failure",
-      "createdAt": "2026-11-14T01:42:23Z",
-      "databaseId": 43542184347,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T01:41:50Z",
-      "databaseId": 43542129070,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T01:41:33Z",
-      "databaseId": 43542101221,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T01:40:57Z",
-      "databaseId": 43542040680,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T01:40:01Z",
-      "databaseId": 43541941374,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
     }
   ],
   "gaps": {
@@ -201990,6 +201990,11 @@
         "episode_id": 7328,
         "display_name": "Agent Elvis S01E09 - Bezmezná touha CZ Dabing",
         "video_id": 31022447
+      },
+      {
+        "episode_id": 84437,
+        "display_name": "Sedmé nebe S04E17 - 17. epizoda CZ Dabing",
+        "video_id": 31022499
       },
       {
         "episode_id": 114182,
@@ -587254,6 +587259,11 @@
         "video_id": 31022447
       },
       {
+        "episode_id": 84437,
+        "display_name": "Sedmé nebe S04E17 - 17. epizoda CZ Dabing",
+        "video_id": 31022499
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -771968,13 +771978,14 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 41,
+    "disabled": 1,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35595,
+    "needs_whisper": 35596,
     "whisper_confirmed_cz": 3834,
-    "whisper_non_cz_needs_subtitles": 13170,
+    "whisper_non_cz_needs_subtitles": 13169,
     "whisper_failed": 1089
   },
   "subtitle_followup_statuses": {
