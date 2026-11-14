@@ -2,29 +2,61 @@
   "counts": {
     "backlog_episodes": 109351,
     "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 82334,
-    "prepared_source_episodes": 68929,
+    "uploaded_episodes": 82335,
+    "prepared_source_episodes": 68935,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 42,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 24,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
-    "whisper_review_sources": 53671,
-    "whisper_review_pending_sources": 36604,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
+    "whisper_review_sources": 53670,
+    "whisper_review_pending_sources": 36601,
     "upload_pending_checkpoints": 113,
-    "subtitle_followup_sources": 51923,
-    "subtitle_followup_pending_sources": 51923
+    "subtitle_followup_sources": 51924,
+    "subtitle_followup_pending_sources": 51924
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T17:59:36Z",
+      "databaseId": 43624076235,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T17:59:08Z",
+      "databaseId": 43624036882,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T17:59:02Z",
+      "databaseId": 43624028414,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T17:57:21Z",
+      "databaseId": 43623883605,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-14T17:54:56Z",
       "databaseId": 43623671369,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -72,7 +104,7 @@
       "createdAt": "2026-11-14T17:52:25Z",
       "databaseId": 43623449630,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "sync"
     },
     {
@@ -116,11 +148,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T17:49:49Z",
       "databaseId": 43623213481,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T17:44:04Z",
-      "databaseId": 43622702492,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T17:44:01Z",
-      "databaseId": 43622697482,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T17:43:58Z",
-      "databaseId": 43622693900,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T17:42:01Z",
-      "databaseId": 43622520317,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -386080,6 +386080,11 @@
         "episode_id": 130318,
         "display_name": "Páteční večeře S01E05 - 5. epizoda CZ Dabing",
         "video_id": 31036145
+      },
+      {
+        "episode_id": 124906,
+        "display_name": "Zrůdno S02E10 - 10. epizoda CZ Titulky",
+        "video_id": 31036189
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -771877,6 +771882,11 @@
         "episode_id": 130318,
         "display_name": "Páteční večeře S01E05 - 5. epizoda CZ Dabing",
         "video_id": 31036145
+      },
+      {
+        "episode_id": 124906,
+        "display_name": "Zrůdno S02E10 - 10. epizoda CZ Titulky",
+        "video_id": 31036189
       }
     ],
     "prepared_not_upload_ready": [
@@ -773038,17 +773048,16 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 4,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35506,
+    "needs_whisper": 35503,
     "whisper_confirmed_cz": 3857,
-    "whisper_non_cz_needs_subtitles": 13210,
+    "whisper_non_cz_needs_subtitles": 13212,
     "whisper_failed": 1098
   },
   "subtitle_followup_statuses": {
-    "needs_subtitle_setup_after_prehrajto_processing": 51923
+    "needs_subtitle_setup_after_prehrajto_processing": 51924
   }
 }
