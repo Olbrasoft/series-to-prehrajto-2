@@ -1,8 +1,8 @@
 {
   "counts": {
     "backlog_episodes": 109441,
-    "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 82231,
+    "manifest_upload_ready_episodes": 0,
+    "uploaded_episodes": 82232,
     "prepared_source_episodes": 68949,
     "description_series": 60,
     "description_episodes": 753,
@@ -21,18 +21,66 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-14T02:24:42Z",
-      "databaseId": 43546145826,
+      "createdAt": "2026-11-14T02:27:54Z",
+      "databaseId": 43546449869,
       "headBranch": "main",
-      "status": "queued",
+      "status": "pending",
       "workflowName": "sync"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T02:27:48Z",
+      "databaseId": 43546440222,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T02:27:33Z",
+      "databaseId": 43546416089,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T02:26:19Z",
+      "databaseId": 43546300457,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-14T02:26:04Z",
+      "databaseId": 43546277075,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T02:25:22Z",
+      "databaseId": 43546209351,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T02:24:42Z",
+      "databaseId": 43546145826,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-14T02:24:05Z",
       "databaseId": 43546092049,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -44,19 +92,19 @@
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T02:23:38Z",
       "databaseId": 43546048077,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T02:23:31Z",
       "databaseId": 43546037261,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T02:18:17Z",
-      "databaseId": 43545543596,
-      "headBranch": "main",
-      "status": "pending",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T02:17:55Z",
-      "databaseId": 43545507356,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T02:16:24Z",
-      "databaseId": 43545358785,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-14T02:16:18Z",
-      "databaseId": 43545349731,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T02:15:35Z",
-      "databaseId": 43545276019,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T02:15:30Z",
-      "databaseId": 43545267901,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
     }
   ],
   "gaps": {
@@ -202005,6 +202005,11 @@
         "episode_id": 157184,
         "display_name": "Undone S02E04 - 4. epizoda CZ Titulky",
         "video_id": 31022571
+      },
+      {
+        "episode_id": 124900,
+        "display_name": "Zrůdno S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 31022746
       },
       {
         "episode_id": 114182,
@@ -587287,6 +587292,11 @@
         "episode_id": 157184,
         "display_name": "Undone S02E04 - 4. epizoda CZ Titulky",
         "video_id": 31022571
+      },
+      {
+        "episode_id": 124900,
+        "display_name": "Zrůdno S02E04 - 4. epizoda CZ Titulky",
+        "video_id": 31022746
       },
       {
         "episode_id": 114182,
