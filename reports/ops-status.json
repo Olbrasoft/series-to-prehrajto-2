@@ -1,9 +1,9 @@
 {
   "counts": {
     "backlog_episodes": 109441,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 82233,
-    "prepared_source_episodes": 68941,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 82235,
+    "prepared_source_episodes": 68940,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53687,
     "whisper_review_pending_sources": 36684,
-    "upload_pending_checkpoints": 114,
+    "upload_pending_checkpoints": 112,
     "subtitle_followup_sources": 51880,
     "subtitle_followup_pending_sources": 51880
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T02:42:15Z",
+      "databaseId": 43547758871,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T02:41:11Z",
+      "databaseId": 43547665111,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T02:39:28Z",
+      "databaseId": 43547512093,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-14T02:38:27Z",
       "databaseId": 43547424348,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -36,11 +60,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T02:36:52Z",
       "databaseId": 43547283562,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -52,11 +76,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T02:36:42Z",
       "databaseId": 43547267475,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -76,11 +100,11 @@
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T02:36:35Z",
       "databaseId": 43547256835,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T02:32:18Z",
-      "databaseId": 43546859482,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T02:31:27Z",
-      "databaseId": 43546777880,
-      "headBranch": "main",
-      "status": "queued",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-14T02:31:21Z",
-      "databaseId": 43546769294,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
     }
   ],
   "gaps": {
@@ -202017,6 +202017,11 @@
         "video_id": 31022817
       },
       {
+        "episode_id": 164052,
+        "display_name": "Právník za dolar S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 31022873
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -385575,6 +385580,11 @@
         "episode_id": 157182,
         "display_name": "Undone S02E02 - 2. epizoda CZ Titulky",
         "video_id": 31022619
+      },
+      {
+        "episode_id": 155126,
+        "display_name": "Masameer County S01E01 - Zmrzlina CZ Titulky",
+        "video_id": 31022869
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -587309,6 +587319,11 @@
         "video_id": 31022817
       },
       {
+        "episode_id": 164052,
+        "display_name": "Právník za dolar S01E07 - 7. epizoda CZ Titulky",
+        "video_id": 31022873
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -770867,6 +770882,11 @@
         "episode_id": 157182,
         "display_name": "Undone S02E02 - 2. epizoda CZ Titulky",
         "video_id": 31022619
+      },
+      {
+        "episode_id": 155126,
+        "display_name": "Masameer County S01E01 - Zmrzlina CZ Titulky",
+        "video_id": 31022869
       }
     ],
     "prepared_not_upload_ready": [
