@@ -2,37 +2,53 @@
   "counts": {
     "backlog_episodes": 109307,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 82363,
+    "uploaded_episodes": 82364,
     "prepared_source_episodes": 68879,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 30,
-    "language_whisper_attempted_sources": 20,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53665,
     "whisper_review_pending_sources": 36575,
-    "upload_pending_checkpoints": 113,
+    "upload_pending_checkpoints": 112,
     "subtitle_followup_sources": 51942,
     "subtitle_followup_pending_sources": 51942
   },
   "workflow_runs": [
     {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T21:38:41Z",
+      "databaseId": 43643901787,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T21:38:24Z",
+      "databaseId": 43643879246,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
       "conclusion": "",
       "createdAt": "2026-11-14T21:38:13Z",
       "databaseId": 43643863504,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T21:37:33Z",
       "databaseId": 43643808668,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -160,24 +176,8 @@
       "createdAt": "2026-11-14T21:30:50Z",
       "databaseId": 43643210021,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T21:30:06Z",
-      "databaseId": 43643133495,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T21:29:14Z",
-      "databaseId": 43643056993,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "backfill-subtitles"
     }
   ],
   "gaps": {
@@ -202310,6 +202310,11 @@
         "episode_id": 97849,
         "display_name": "Catastrophe S02E03 - 3. epizoda CZ Titulky",
         "video_id": 31039160
+      },
+      {
+        "episode_id": 50037,
+        "display_name": "TURN: Washington's Spies S04E02 - 2. epizoda CZ Dabing",
+        "video_id": 31039590
       },
       {
         "episode_id": 114182,
@@ -588254,6 +588259,11 @@
         "video_id": 31039160
       },
       {
+        "episode_id": 50037,
+        "display_name": "TURN: Washington's Spies S04E02 - 2. epizoda CZ Dabing",
+        "video_id": 31039590
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -773328,8 +773338,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 10,
-    "ok": 19,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
