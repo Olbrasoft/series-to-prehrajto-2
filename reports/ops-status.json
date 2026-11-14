@@ -14,17 +14,41 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53675,
     "whisper_review_pending_sources": 36624,
-    "upload_pending_checkpoints": 112,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51912,
     "subtitle_followup_pending_sources": 51912
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T13:20:20Z",
+      "databaseId": 43599254825,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T13:19:31Z",
+      "databaseId": 43599182641,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T13:19:28Z",
+      "databaseId": 43599178224,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-14T13:17:56Z",
       "databaseId": 43599049349,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -44,11 +68,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T13:14:34Z",
       "databaseId": 43598769369,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T13:07:44Z",
-      "databaseId": 43598192214,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T13:07:41Z",
-      "databaseId": 43598187457,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T13:04:40Z",
-      "databaseId": 43597924770,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
