@@ -1,46 +1,102 @@
 {
   "counts": {
     "backlog_episodes": 109351,
-    "manifest_upload_ready_episodes": 6,
-    "uploaded_episodes": 82324,
-    "prepared_source_episodes": 68929,
+    "manifest_upload_ready_episodes": 2,
+    "uploaded_episodes": 82327,
+    "prepared_source_episodes": 68926,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 51,
-    "language_whisper_attempted_sources": 45,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53672,
     "whisper_review_pending_sources": 36608,
-    "upload_pending_checkpoints": 114,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51922,
     "subtitle_followup_pending_sources": 51922
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T16:04:10Z",
+      "databaseId": 43613561484,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T16:04:07Z",
+      "databaseId": 43613558087,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T16:03:33Z",
+      "databaseId": 43613506984,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T16:03:20Z",
+      "databaseId": 43613484395,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T16:01:42Z",
+      "databaseId": 43613332258,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "audit-language"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T16:01:17Z",
+      "databaseId": 43613291641,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T16:01:14Z",
+      "databaseId": 43613286627,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-14T15:59:15Z",
       "databaseId": 43613093994,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T15:59:00Z",
       "databaseId": 43613070460,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T15:58:29Z",
       "databaseId": 43613028615,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -122,62 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T15:52:13Z",
-      "databaseId": 43612483753,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T15:52:10Z",
-      "databaseId": 43612478166,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T15:51:35Z",
-      "databaseId": 43612426190,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T15:49:41Z",
-      "databaseId": 43612257520,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-14T15:49:36Z",
-      "databaseId": 43612249749,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T15:49:32Z",
-      "databaseId": 43612244986,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T15:48:48Z",
-      "databaseId": 43612182475,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
     }
   ],
   "gaps": {
@@ -202222,6 +202222,11 @@
         "video_id": 31033576
       },
       {
+        "episode_id": 180476,
+        "display_name": "The Gilgo Beach Killer: House of Secrets S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 31033607
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -386030,6 +386035,16 @@
         "episode_id": 178338,
         "display_name": "Cochinas S01E05 - 5. epizoda CZ Titulky",
         "video_id": 31033193
+      },
+      {
+        "episode_id": 124903,
+        "display_name": "Zrůdno S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 31033641
+      },
+      {
+        "episode_id": 180898,
+        "display_name": "White Teeth S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 31033589
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -587969,6 +587984,11 @@
         "video_id": 31033576
       },
       {
+        "episode_id": 180476,
+        "display_name": "The Gilgo Beach Killer: House of Secrets S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 31033607
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -771777,6 +771797,16 @@
         "episode_id": 178338,
         "display_name": "Cochinas S01E05 - 5. epizoda CZ Titulky",
         "video_id": 31033193
+      },
+      {
+        "episode_id": 124903,
+        "display_name": "Zrůdno S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 31033641
+      },
+      {
+        "episode_id": 180898,
+        "display_name": "White Teeth S01E03 - 3. epizoda CZ Titulky",
+        "video_id": 31033589
       }
     ],
     "prepared_not_upload_ready": [
@@ -772938,8 +772968,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 44,
-    "disabled": 6,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
