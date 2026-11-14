@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109307,
     "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 82362,
+    "uploaded_episodes": 82363,
     "prepared_source_episodes": 68897,
     "description_series": 60,
     "description_episodes": 753,
@@ -19,6 +19,46 @@
     "subtitle_followup_pending_sources": 51942
   },
   "workflow_runs": [
+    {
+      "conclusion": "skipped",
+      "createdAt": "2026-11-14T21:20:47Z",
+      "databaseId": 43642320693,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "prepare-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T21:20:21Z",
+      "databaseId": 43642280102,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T21:20:18Z",
+      "databaseId": 43642274913,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "external-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T21:20:15Z",
+      "databaseId": 43642270774,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T21:20:12Z",
+      "databaseId": 43642265687,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
     {
       "conclusion": "success",
       "createdAt": "2026-11-14T21:17:33Z",
@@ -44,11 +84,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T21:15:28Z",
       "databaseId": 43641839447,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -88,7 +128,7 @@
       "createdAt": "2026-11-14T21:13:25Z",
       "databaseId": 43641660698,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "queued",
       "workflowName": "sync"
     },
     {
@@ -124,11 +164,11 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T21:11:07Z",
       "databaseId": 43641452690,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -138,46 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T21:10:54Z",
-      "databaseId": 43641431422,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T21:10:51Z",
-      "databaseId": 43641425598,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-14T21:09:55Z",
-      "databaseId": 43641338195,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T21:09:17Z",
-      "databaseId": 43641282970,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T21:09:13Z",
-      "databaseId": 43641275584,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -386220,6 +386220,11 @@
         "episode_id": 130342,
         "display_name": "Páteční večeře S05E04 - 4. epizoda CZ Dabing",
         "video_id": 31039168
+      },
+      {
+        "episode_id": 97851,
+        "display_name": "Catastrophe S03E03 - 3. epizoda CZ Titulky",
+        "video_id": 31039267
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -772157,6 +772162,11 @@
         "episode_id": 130342,
         "display_name": "Páteční večeře S05E04 - 4. epizoda CZ Dabing",
         "video_id": 31039168
+      },
+      {
+        "episode_id": 97851,
+        "display_name": "Catastrophe S03E03 - 3. epizoda CZ Titulky",
+        "video_id": 31039267
       }
     ],
     "prepared_not_upload_ready": [
