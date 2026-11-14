@@ -1,17 +1,17 @@
 {
   "counts": {
     "backlog_episodes": 109368,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 82312,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 82313,
     "prepared_source_episodes": 68949,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 25,
-    "language_whisper_attempted_sources": 23,
-    "language_pending_whisper_sources": 2624,
+    "language_audited_sources": 40,
+    "language_whisper_attempted_sources": 40,
+    "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53674,
     "whisper_review_pending_sources": 36620,
     "upload_pending_checkpoints": 112,
@@ -21,18 +21,34 @@
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-14T13:56:38Z",
-      "databaseId": 43602274306,
+      "createdAt": "2026-11-14T13:59:39Z",
+      "databaseId": 43602510077,
       "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "update-descriptions"
+      "workflowName": "ops-watchdog"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T13:58:03Z",
+      "databaseId": 43602385216,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T13:56:38Z",
+      "databaseId": 43602274306,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-14T13:56:03Z",
       "databaseId": 43602227015,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -80,7 +96,7 @@
       "createdAt": "2026-11-14T13:55:03Z",
       "databaseId": 43602145777,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-manifest"
     },
     {
@@ -162,22 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "external-subtitles"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-14T13:49:56Z",
-      "databaseId": 43601728460,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T13:47:56Z",
-      "databaseId": 43601561833,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -202195,6 +202195,11 @@
         "episode_id": 102765,
         "display_name": "Dobrodružství Brisco Countyho Jr. S01E12 - 12. epizoda CZ Titulky",
         "video_id": 31030945
+      },
+      {
+        "episode_id": 159357,
+        "display_name": "BASTARD‼ -Heavy Metal, Dark Fantasy- S01E14 - Dojatá k slzám CZ Dabing",
+        "video_id": 31031057
       },
       {
         "episode_id": 114182,
@@ -587884,6 +587889,11 @@
         "video_id": 31030945
       },
       {
+        "episode_id": 159357,
+        "display_name": "BASTARD‼ -Heavy Metal, Dark Fantasy- S01E14 - Dojatá k slzám CZ Dabing",
+        "video_id": 31031057
+      },
+      {
         "episode_id": 114182,
         "display_name": "Three-body S01E30 - 30. epizoda CZ Titulky",
         "video_id": 27840276
@@ -772818,8 +772828,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 22,
-    "disabled": 2,
+    "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
