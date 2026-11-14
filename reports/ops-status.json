@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109333,
     "manifest_upload_ready_episodes": 3,
-    "uploaded_episodes": 82354,
+    "uploaded_episodes": 82355,
     "prepared_source_episodes": 68931,
     "description_series": 60,
     "description_episodes": 753,
@@ -21,10 +21,34 @@
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T20:14:00Z",
+      "databaseId": 43636389164,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T20:13:41Z",
+      "databaseId": 43636363282,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T20:12:47Z",
+      "databaseId": 43636279990,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-14T20:12:17Z",
       "databaseId": 43636231035,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-14T20:11:45Z",
       "databaseId": 43636181356,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "prepare-sources"
     },
     {
@@ -44,11 +68,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T20:10:47Z",
       "databaseId": 43636093643,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "update-descriptions"
     },
     {
@@ -68,19 +92,19 @@
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T20:10:01Z",
       "databaseId": 43636019580,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T20:09:55Z",
       "databaseId": 43636011133,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -153,30 +177,6 @@
       "databaseId": 43635425296,
       "headBranch": "main",
       "status": "in_progress",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T20:03:25Z",
-      "databaseId": 43635414979,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T20:03:19Z",
-      "databaseId": 43635406846,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-status"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T20:03:02Z",
-      "databaseId": 43635379018,
-      "headBranch": "main",
-      "status": "completed",
       "workflowName": "prepare-manifest"
     }
   ],
@@ -202295,6 +202295,11 @@
         "episode_id": 130332,
         "display_name": "Páteční večeře S04E01 - 1. epizoda CZ Dabing",
         "video_id": 31038163
+      },
+      {
+        "episode_id": 97848,
+        "display_name": "Catastrophe S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 31038229
       },
       {
         "episode_id": 114182,
@@ -588192,6 +588197,11 @@
         "episode_id": 130332,
         "display_name": "Páteční večeře S04E01 - 1. epizoda CZ Dabing",
         "video_id": 31038163
+      },
+      {
+        "episode_id": 97848,
+        "display_name": "Catastrophe S02E01 - 1. epizoda CZ Titulky",
+        "video_id": 31038229
       },
       {
         "episode_id": 114182,
