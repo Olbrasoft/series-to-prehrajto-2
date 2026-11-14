@@ -1,38 +1,70 @@
 {
   "counts": {
     "backlog_episodes": 109421,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 82242,
+    "manifest_upload_ready_episodes": 4,
+    "uploaded_episodes": 82243,
     "prepared_source_episodes": 68903,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 41,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
+    "language_audited_sources": 40,
     "language_whisper_attempted_sources": 40,
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53686,
-    "whisper_review_pending_sources": 36673,
-    "upload_pending_checkpoints": 114,
+    "whisper_review_pending_sources": 36670,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51885,
     "subtitle_followup_pending_sources": 51885
   },
   "workflow_runs": [
     {
       "conclusion": "",
-      "createdAt": "2026-11-14T04:03:50Z",
-      "databaseId": 43554749980,
+      "createdAt": "2026-11-14T04:05:29Z",
+      "databaseId": 43554886664,
       "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "ops-status"
+      "status": "pending",
+      "workflowName": "prepare-descriptions"
     },
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T04:05:20Z",
+      "databaseId": 43554873104,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T04:04:52Z",
+      "databaseId": 43554830580,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T04:04:47Z",
+      "databaseId": 43554824404,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T04:03:50Z",
+      "databaseId": 43554749980,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "ops-status"
+    },
+    {
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T04:03:43Z",
       "databaseId": 43554740291,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -40,7 +72,7 @@
       "createdAt": "2026-11-14T04:01:37Z",
       "databaseId": 43554564575,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "audit-language"
     },
     {
@@ -52,11 +84,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T04:00:10Z",
       "databaseId": 43554432431,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "process-whisper-review"
     },
     {
@@ -92,11 +124,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T03:58:04Z",
       "databaseId": 43554266636,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T03:54:10Z",
-      "databaseId": 43553960270,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T03:52:27Z",
-      "databaseId": 43553828126,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-sources"
-    },
-    {
-      "conclusion": "skipped",
-      "createdAt": "2026-11-14T03:51:52Z",
-      "databaseId": 43553780403,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-subtitles"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T03:51:51Z",
-      "databaseId": 43553778763,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "sync"
     }
   ],
   "gaps": {
@@ -385620,6 +385620,11 @@
         "episode_id": 196099,
         "display_name": "Goofyho tlupa S01E35 - Nashledanou, pane Goofy CZ Dabing",
         "video_id": 31023419
+      },
+      {
+        "episode_id": 81690,
+        "display_name": "Kung Fu: Legenda pokračuje S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 31023487
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -770957,6 +770962,11 @@
         "episode_id": 196099,
         "display_name": "Goofyho tlupa S01E35 - Nashledanou, pane Goofy CZ Dabing",
         "video_id": 31023419
+      },
+      {
+        "episode_id": 81690,
+        "display_name": "Kung Fu: Legenda pokračuje S01E03 - 3. epizoda CZ Dabing",
+        "video_id": 31023487
       }
     ],
     "prepared_not_upload_ready": [
@@ -772118,13 +772128,12 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "disabled": 2,
     "ok": 39,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
-    "needs_whisper": 35583,
-    "whisper_confirmed_cz": 3840,
+    "needs_whisper": 35580,
+    "whisper_confirmed_cz": 3843,
     "whisper_non_cz_needs_subtitles": 13173,
     "whisper_failed": 1090
   },
