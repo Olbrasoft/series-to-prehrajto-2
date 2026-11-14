@@ -1,30 +1,78 @@
 {
   "counts": {
     "backlog_episodes": 109402,
-    "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 82282,
-    "prepared_source_episodes": 68939,
+    "manifest_upload_ready_episodes": 1,
+    "uploaded_episodes": 82284,
+    "prepared_source_episodes": 68937,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 40,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 40,
-    "language_whisper_attempted_sources": 40,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53678,
     "whisper_review_pending_sources": 36641,
-    "upload_pending_checkpoints": 114,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51900,
     "subtitle_followup_pending_sources": 51900
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-14T08:42:05Z",
+      "databaseId": 43577057907,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T08:42:01Z",
+      "databaseId": 43577053220,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T08:41:51Z",
+      "databaseId": 43577039043,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T08:41:47Z",
+      "databaseId": 43577034691,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T08:39:12Z",
+      "databaseId": 43576832006,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-14T08:39:09Z",
+      "databaseId": 43576828154,
+      "headBranch": "main",
+      "status": "completed",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
       "createdAt": "2026-11-14T08:38:39Z",
       "databaseId": 43576792203,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -36,11 +84,11 @@
       "workflowName": "prepare-sources"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T08:36:31Z",
       "databaseId": 43576630326,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -52,11 +100,11 @@
       "workflowName": "prepare-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T08:33:20Z",
       "databaseId": 43576371837,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -68,11 +116,11 @@
       "workflowName": "process-whisper-review"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T08:33:02Z",
       "databaseId": 43576349816,
       "headBranch": "main",
-      "status": "queued",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -100,11 +148,11 @@
       "workflowName": "ops-status"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-14T08:32:11Z",
       "databaseId": 43576282467,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -116,11 +164,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T08:31:22Z",
       "databaseId": 43576215404,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
@@ -130,54 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T08:29:41Z",
-      "databaseId": 43576076692,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T08:29:39Z",
-      "databaseId": 43576073591,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T08:28:47Z",
-      "databaseId": 43576013295,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "backfill-subtitles"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T08:27:57Z",
-      "databaseId": 43575952895,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T08:26:30Z",
-      "databaseId": 43575846257,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "",
-      "createdAt": "2026-11-14T08:26:27Z",
-      "databaseId": 43575841142,
-      "headBranch": "main",
-      "status": "in_progress",
-      "workflowName": "prepare-manifest"
     }
   ],
   "gaps": {
@@ -385820,6 +385820,16 @@
         "episode_id": 125539,
         "display_name": "Mladí jezdci S02E03 - 3. epizoda CZ Dabing",
         "video_id": 31025419
+      },
+      {
+        "episode_id": 124898,
+        "display_name": "Zrůdno S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 31025541
+      },
+      {
+        "episode_id": 1231,
+        "display_name": "Můj malý Pony: Přátelství je magické S05E11 - Nepovedený večírek CZ Dabing",
+        "video_id": 31025550
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -771357,6 +771367,16 @@
         "episode_id": 125539,
         "display_name": "Mladí jezdci S02E03 - 3. epizoda CZ Dabing",
         "video_id": 31025419
+      },
+      {
+        "episode_id": 124898,
+        "display_name": "Zrůdno S02E02 - 2. epizoda CZ Titulky",
+        "video_id": 31025541
+      },
+      {
+        "episode_id": 1231,
+        "display_name": "Můj malý Pony: Přátelství je magické S05E11 - Nepovedený večírek CZ Dabing",
+        "video_id": 31025550
       }
     ],
     "prepared_not_upload_ready": [
@@ -772518,7 +772538,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 39,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
