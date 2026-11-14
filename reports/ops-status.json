@@ -2,7 +2,7 @@
   "counts": {
     "backlog_episodes": 109381,
     "manifest_upload_ready_episodes": 1,
-    "uploaded_episodes": 82296,
+    "uploaded_episodes": 82297,
     "prepared_source_episodes": 68953,
     "description_series": 60,
     "description_episodes": 753,
@@ -14,11 +14,35 @@
     "language_pending_whisper_sources": 2604,
     "whisper_review_sources": 53678,
     "whisper_review_pending_sources": 36640,
-    "upload_pending_checkpoints": 113,
+    "upload_pending_checkpoints": 112,
     "subtitle_followup_sources": 51905,
     "subtitle_followup_pending_sources": 51905
   },
   "workflow_runs": [
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T10:36:50Z",
+      "databaseId": 43586115247,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "update-descriptions"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T10:36:47Z",
+      "databaseId": 43586111649,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "process-whisper-review"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-14T10:36:31Z",
+      "databaseId": 43586092680,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-sources"
+    },
     {
       "conclusion": "skipped",
       "createdAt": "2026-11-14T10:36:06Z",
@@ -32,7 +56,7 @@
       "createdAt": "2026-11-14T10:36:05Z",
       "databaseId": 43586057721,
       "headBranch": "main",
-      "status": "pending",
+      "status": "in_progress",
       "workflowName": "ops-watchdog"
     },
     {
@@ -40,15 +64,15 @@
       "createdAt": "2026-11-14T10:35:50Z",
       "databaseId": 43586038847,
       "headBranch": "main",
-      "status": "queued",
+      "status": "in_progress",
       "workflowName": "backfill-subtitles"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-14T10:35:11Z",
       "databaseId": 43585984342,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-watchdog"
     },
     {
@@ -154,30 +178,6 @@
       "headBranch": "main",
       "status": "in_progress",
       "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T10:29:07Z",
-      "databaseId": 43585486066,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T10:28:45Z",
-      "databaseId": 43585458088,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "update-descriptions"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T10:28:41Z",
-      "databaseId": 43585453771,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "process-whisper-review"
     }
   ],
   "gaps": {
@@ -385890,6 +385890,11 @@
         "episode_id": 196107,
         "display_name": "Goofyho tlupa S01E45 - Nástrahy velkoměsta CZ Dabing",
         "video_id": 31027342
+      },
+      {
+        "episode_id": 107586,
+        "display_name": "The Coroner S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 31027486
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -771497,6 +771502,11 @@
         "episode_id": 196107,
         "display_name": "Goofyho tlupa S01E45 - Nástrahy velkoměsta CZ Dabing",
         "video_id": 31027342
+      },
+      {
+        "episode_id": 107586,
+        "display_name": "The Coroner S02E07 - 7. epizoda CZ Titulky",
+        "video_id": 31027486
       }
     ],
     "prepared_not_upload_ready": [
