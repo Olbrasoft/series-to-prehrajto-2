@@ -2,29 +2,61 @@
   "counts": {
     "backlog_episodes": 109307,
     "manifest_upload_ready_episodes": 2,
-    "uploaded_episodes": 82391,
+    "uploaded_episodes": 82392,
     "prepared_source_episodes": 68840,
     "description_series": 60,
     "description_episodes": 753,
     "description_errors": 39,
     "language_audit_rows": 0,
     "language_queue_sources": 2644,
-    "language_audited_sources": 42,
-    "language_whisper_attempted_sources": 42,
-    "language_pending_whisper_sources": 2604,
+    "language_audited_sources": 20,
+    "language_whisper_attempted_sources": 20,
+    "language_pending_whisper_sources": 2624,
     "whisper_review_sources": 53658,
     "whisper_review_pending_sources": 36560,
-    "upload_pending_checkpoints": 114,
+    "upload_pending_checkpoints": 113,
     "subtitle_followup_sources": 51951,
     "subtitle_followup_pending_sources": 51951
   },
   "workflow_runs": [
     {
       "conclusion": "",
+      "createdAt": "2026-11-15T00:12:05Z",
+      "databaseId": 43656986153,
+      "headBranch": "main",
+      "status": "queued",
+      "workflowName": "backfill-subtitles"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-15T00:11:27Z",
+      "databaseId": 43656934353,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "ops-watchdog"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-15T00:11:22Z",
+      "databaseId": 43656926863,
+      "headBranch": "main",
+      "status": "pending",
+      "workflowName": "prepare-manifest"
+    },
+    {
+      "conclusion": "",
+      "createdAt": "2026-11-15T00:11:15Z",
+      "databaseId": 43656918060,
+      "headBranch": "main",
+      "status": "in_progress",
+      "workflowName": "sync"
+    },
+    {
+      "conclusion": "success",
       "createdAt": "2026-11-15T00:08:47Z",
       "databaseId": 43656714080,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "ops-status"
     },
     {
@@ -36,11 +68,11 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "cancelled",
       "createdAt": "2026-11-15T00:07:22Z",
       "databaseId": 43656596639,
       "headBranch": "main",
-      "status": "pending",
+      "status": "completed",
       "workflowName": "prepare-manifest"
     },
     {
@@ -84,11 +116,11 @@
       "workflowName": "prepare-manifest"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-15T00:03:07Z",
       "databaseId": 43656238893,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "sync"
     },
     {
@@ -100,19 +132,19 @@
       "workflowName": "update-descriptions"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-15T00:02:09Z",
       "databaseId": 43656162617,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "audit-language"
     },
     {
-      "conclusion": "",
+      "conclusion": "success",
       "createdAt": "2026-11-15T00:02:02Z",
       "databaseId": 43656152753,
       "headBranch": "main",
-      "status": "in_progress",
+      "status": "completed",
       "workflowName": "backfill-subtitles"
     },
     {
@@ -146,38 +178,6 @@
       "headBranch": "main",
       "status": "completed",
       "workflowName": "process-whisper-review"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T23:57:51Z",
-      "databaseId": 43655808418,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "audit-language"
-    },
-    {
-      "conclusion": "success",
-      "createdAt": "2026-11-14T23:57:42Z",
-      "databaseId": 43655796040,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T23:57:36Z",
-      "databaseId": 43655788884,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "prepare-manifest"
-    },
-    {
-      "conclusion": "cancelled",
-      "createdAt": "2026-11-14T23:56:51Z",
-      "databaseId": 43655731315,
-      "headBranch": "main",
-      "status": "completed",
-      "workflowName": "ops-watchdog"
     }
   ],
   "gaps": {
@@ -386365,6 +386365,11 @@
         "episode_id": 50039,
         "display_name": "TURN: Washington's Spies S04E05 - 5. epizoda CZ Dabing",
         "video_id": 31042940
+      },
+      {
+        "episode_id": 1483,
+        "display_name": "Winx Club S06E07 - Ztracená knihovna CZ Dabing",
+        "video_id": 31042995
       }
     ],
     "uploaded_not_marked_description_updated": [
@@ -772447,6 +772452,11 @@
         "episode_id": 50039,
         "display_name": "TURN: Washington's Spies S04E05 - 5. epizoda CZ Dabing",
         "video_id": 31042940
+      },
+      {
+        "episode_id": 1483,
+        "display_name": "Winx Club S06E07 - Ztracená knihovna CZ Dabing",
+        "video_id": 31042995
       }
     ],
     "prepared_not_upload_ready": [
@@ -773608,8 +773618,7 @@
   },
   "language_verdicts": {},
   "language_whisper_statuses": {
-    "ok": 40,
-    "sample_failed": 1,
+    "ok": 19,
     "resolve_failed": 1
   },
   "whisper_review_statuses": {
